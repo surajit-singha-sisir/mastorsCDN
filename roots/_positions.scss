@@ -1,0 +1,46 @@
+/* ----------------------------------------------------------------
+POSITION CLASSES
+----------------------------------------------------------------
+*/
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.static {
+  position: static;
+}
+
+.sticky {
+  position: sticky;
+}
+.sticky-top {
+  top: 0;
+  position: sticky;
+}
+
+/* ----------------------------------------------------------------
+POSITION CENTER CLASSES
+----------------------------------------------------------------
+*/
+
+
+.pos-center-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pos-left-center {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}

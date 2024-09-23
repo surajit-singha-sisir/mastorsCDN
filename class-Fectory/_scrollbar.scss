@@ -1,0 +1,20 @@
+
+
+// SCROLLBAR TEMPLATE - 1
+
+*::-webkit-scrollbar {
+    width: 0.4rem; /* Width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #e2e2e2; /* Color of the scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #9c8787; /* Color of the scrollbar thumb */
+    border-radius: 1rem; /* Rounded corners of the scrollbar thumb */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #806e6e; /* Color of the scrollbar thumb on hover */
+}

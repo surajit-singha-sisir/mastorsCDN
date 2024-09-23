@@ -1,0 +1,1507 @@
+@use "../variables-Fectory/rem-vars" as *;
+// ALL TEXT VARIABLES
+
+/* //FONT-SIZE TOP RIGHT BOTTOM LEFT */
+.f-00 {
+	font-size: $rem00;
+}
+.f-01 {
+	font-size: $rem01;
+}
+.f-02 {
+	font-size: $rem02;
+}
+.f-03 {
+	font-size: $rem03;
+}
+.f-04 {
+	font-size: $rem04;
+}
+.f-05 {
+	font-size: $rem05;
+}
+.f-06 {
+	font-size: $rem06;
+}
+.f-07 {
+	font-size: $rem07;
+}
+.f-08 {
+	font-size: $rem08;
+}
+.f-09 {
+	font-size: $rem09;
+}
+.f-10 {
+	font-size: $rem10;
+}
+.f-11 {
+	font-size: $rem11;
+}
+.f-12 {
+	font-size: $rem12;
+}
+.f-13 {
+	font-size: $rem13;
+}
+.f-14 {
+	font-size: $rem14;
+}
+.f-15 {
+	font-size: $rem15;
+}
+.f-16 {
+	font-size: $rem16;
+}
+.f-17 {
+	font-size: $rem17;
+}
+.f-18 {
+	font-size: $rem18;
+}
+.f-19 {
+	font-size: $rem19;
+}
+.f-20 {
+	font-size: $rem20;
+}
+.f-21 {
+	font-size: $rem21;
+}
+.f-22 {
+	font-size: $rem22;
+}
+.f-23 {
+	font-size: $rem23;
+}
+.f-24 {
+	font-size: $rem24;
+}
+.f-25 {
+	font-size: $rem25;
+}
+.f-26 {
+	font-size: $rem26;
+}
+.f-27 {
+	font-size: $rem27;
+}
+.f-28 {
+	font-size: $rem28;
+}
+.f-29 {
+	font-size: $rem29;
+}
+.f-30 {
+	font-size: $rem30;
+}
+.f-31 {
+	font-size: $rem31;
+}
+.f-32 {
+	font-size: $rem32;
+}
+.f-33 {
+	font-size: $rem33;
+}
+.f-34 {
+	font-size: $rem34;
+}
+.f-35 {
+	font-size: $rem35;
+}
+.f-36 {
+	font-size: $rem36;
+}
+.f-37 {
+	font-size: $rem37;
+}
+.f-38 {
+	font-size: $rem38;
+}
+.f-39 {
+	font-size: $rem39;
+}
+.f-40 {
+	font-size: $rem40;
+}
+.f-41 {
+	font-size: $rem41;
+}
+.f-42 {
+	font-size: $rem42;
+}
+.f-43 {
+	font-size: $rem43;
+}
+.f-44 {
+	font-size: $rem44;
+}
+.f-45 {
+	font-size: $rem45;
+}
+.f-46 {
+	font-size: $rem46;
+}
+.f-47 {
+	font-size: $rem47;
+}
+.f-48 {
+	font-size: $rem48;
+}
+.f-49 {
+	font-size: $rem49;
+}
+.f-50 {
+	font-size: $rem50;
+}
+.f-51 {
+	font-size: $rem51;
+}
+.f-52 {
+	font-size: $rem52;
+}
+.f-53 {
+	font-size: $rem53;
+}
+.f-54 {
+	font-size: $rem54;
+}
+.f-55 {
+	font-size: $rem55;
+}
+.f-56 {
+	font-size: $rem56;
+}
+.f-57 {
+	font-size: $rem57;
+}
+.f-58 {
+	font-size: $rem58;
+}
+.f-59 {
+	font-size: $rem59;
+}
+.f-60 {
+	font-size: $rem60;
+}
+.f-61 {
+	font-size: $rem61;
+}
+.f-62 {
+	font-size: $rem62;
+}
+.f-63 {
+	font-size: $rem63;
+}
+.f-64 {
+	font-size: $rem64;
+}
+.f-65 {
+	font-size: $rem65;
+}
+.f-66 {
+	font-size: $rem66;
+}
+.f-67 {
+	font-size: $rem67;
+}
+.f-68 {
+	font-size: $rem68;
+}
+.f-69 {
+	font-size: $rem69;
+}
+.f-70 {
+	font-size: $rem70;
+}
+.f-71 {
+	font-size: $rem71;
+}
+.f-72 {
+	font-size: $rem72;
+}
+.f-73 {
+	font-size: $rem73;
+}
+.f-74 {
+	font-size: $rem74;
+}
+.f-75 {
+	font-size: $rem75;
+}
+.f-76 {
+	font-size: $rem76;
+}
+.f-77 {
+	font-size: $rem77;
+}
+.f-78 {
+	font-size: $rem78;
+}
+.f-79 {
+	font-size: $rem79;
+}
+.f-80 {
+	font-size: $rem80;
+}
+.f-81 {
+	font-size: $rem81;
+}
+.f-82 {
+	font-size: $rem82;
+}
+.f-83 {
+	font-size: $rem83;
+}
+.f-84 {
+	font-size: $rem84;
+}
+.f-85 {
+	font-size: $rem85;
+}
+.f-86 {
+	font-size: $rem86;
+}
+.f-87 {
+	font-size: $rem87;
+}
+.f-88 {
+	font-size: $rem88;
+}
+.f-89 {
+	font-size: $rem89;
+}
+.f-90 {
+	font-size: $rem90;
+}
+.f-91 {
+	font-size: $rem91;
+}
+.f-92 {
+	font-size: $rem92;
+}
+.f-93 {
+	font-size: $rem93;
+}
+.f-94 {
+	font-size: $rem94;
+}
+.f-95 {
+	font-size: $rem95;
+}
+.f-96 {
+	font-size: $rem96;
+}
+.f-97 {
+	font-size: $rem97;
+}
+.f-98 {
+	font-size: $rem98;
+}
+.f-99 {
+	font-size: $rem99;
+}
+.f-100 {
+	font-size: $rem100;
+}
+.f-101 {
+	font-size: $rem101;
+}
+.f-102 {
+	font-size: $rem102;
+}
+.f-103 {
+	font-size: $rem103;
+}
+.f-104 {
+	font-size: $rem104;
+}
+.f-105 {
+	font-size: $rem105;
+}
+.f-106 {
+	font-size: $rem106;
+}
+.f-107 {
+	font-size: $rem107;
+}
+.f-108 {
+	font-size: $rem108;
+}
+.f-109 {
+	font-size: $rem109;
+}
+.f-110 {
+	font-size: $rem110;
+}
+.f-111 {
+	font-size: $rem111;
+}
+.f-112 {
+	font-size: $rem112;
+}
+.f-113 {
+	font-size: $rem113;
+}
+.f-114 {
+	font-size: $rem114;
+}
+.f-115 {
+	font-size: $rem115;
+}
+.f-116 {
+	font-size: $rem116;
+}
+.f-117 {
+	font-size: $rem117;
+}
+.f-118 {
+	font-size: $rem118;
+}
+.f-119 {
+	font-size: $rem119;
+}
+.f-120 {
+	font-size: $rem120;
+}
+.f-121 {
+	font-size: $rem121;
+}
+.f-122 {
+	font-size: $rem122;
+}
+.f-123 {
+	font-size: $rem123;
+}
+.f-124 {
+	font-size: $rem124;
+}
+.f-125 {
+	font-size: $rem125;
+}
+.f-126 {
+	font-size: $rem126;
+}
+.f-127 {
+	font-size: $rem127;
+}
+.f-128 {
+	font-size: $rem128;
+}
+.f-129 {
+	font-size: $rem129;
+}
+.f-130 {
+	font-size: $rem130;
+}
+.f-131 {
+	font-size: $rem131;
+}
+.f-132 {
+	font-size: $rem132;
+}
+.f-133 {
+	font-size: $rem133;
+}
+.f-134 {
+	font-size: $rem134;
+}
+.f-135 {
+	font-size: $rem135;
+}
+.f-136 {
+	font-size: $rem136;
+}
+.f-137 {
+	font-size: $rem137;
+}
+.f-138 {
+	font-size: $rem138;
+}
+.f-139 {
+	font-size: $rem139;
+}
+.f-140 {
+	font-size: $rem140;
+}
+.f-141 {
+	font-size: $rem141;
+}
+.f-142 {
+	font-size: $rem142;
+}
+.f-143 {
+	font-size: $rem143;
+}
+.f-144 {
+	font-size: $rem144;
+}
+.f-145 {
+	font-size: $rem145;
+}
+.f-146 {
+	font-size: $rem146;
+}
+.f-147 {
+	font-size: $rem147;
+}
+.f-148 {
+	font-size: $rem148;
+}
+.f-149 {
+	font-size: $rem149;
+}
+.f-150 {
+	font-size: $rem150;
+}
+.f-151 {
+	font-size: $rem151;
+}
+.f-152 {
+	font-size: $rem152;
+}
+.f-153 {
+	font-size: $rem153;
+}
+.f-154 {
+	font-size: $rem154;
+}
+.f-155 {
+	font-size: $rem155;
+}
+.f-156 {
+	font-size: $rem156;
+}
+.f-157 {
+	font-size: $rem157;
+}
+.f-158 {
+	font-size: $rem158;
+}
+.f-159 {
+	font-size: $rem159;
+}
+.f-160 {
+	font-size: $rem160;
+}
+.f-161 {
+	font-size: $rem161;
+}
+.f-162 {
+	font-size: $rem162;
+}
+.f-163 {
+	font-size: $rem163;
+}
+.f-164 {
+	font-size: $rem164;
+}
+.f-165 {
+	font-size: $rem165;
+}
+.f-166 {
+	font-size: $rem166;
+}
+.f-167 {
+	font-size: $rem167;
+}
+.f-168 {
+	font-size: $rem168;
+}
+.f-169 {
+	font-size: $rem169;
+}
+.f-170 {
+	font-size: $rem170;
+}
+.f-171 {
+	font-size: $rem171;
+}
+.f-172 {
+	font-size: $rem172;
+}
+.f-173 {
+	font-size: $rem173;
+}
+.f-174 {
+	font-size: $rem174;
+}
+.f-175 {
+	font-size: $rem175;
+}
+.f-176 {
+	font-size: $rem176;
+}
+.f-177 {
+	font-size: $rem177;
+}
+.f-178 {
+	font-size: $rem178;
+}
+.f-179 {
+	font-size: $rem179;
+}
+.f-180 {
+	font-size: $rem180;
+}
+.f-181 {
+	font-size: $rem181;
+}
+.f-182 {
+	font-size: $rem182;
+}
+.f-183 {
+	font-size: $rem183;
+}
+.f-184 {
+	font-size: $rem184;
+}
+.f-185 {
+	font-size: $rem185;
+}
+.f-186 {
+	font-size: $rem186;
+}
+.f-187 {
+	font-size: $rem187;
+}
+.f-188 {
+	font-size: $rem188;
+}
+.f-189 {
+	font-size: $rem189;
+}
+.f-190 {
+	font-size: $rem190;
+}
+.f-191 {
+	font-size: $rem191;
+}
+.f-192 {
+	font-size: $rem192;
+}
+.f-193 {
+	font-size: $rem193;
+}
+.f-194 {
+	font-size: $rem194;
+}
+.f-195 {
+	font-size: $rem195;
+}
+.f-196 {
+	font-size: $rem196;
+}
+.f-197 {
+	font-size: $rem197;
+}
+.f-198 {
+	font-size: $rem198;
+}
+.f-199 {
+	font-size: $rem199;
+}
+.f-200 {
+	font-size: $rem200;
+}
+.f-201 {
+	font-size: $rem201;
+}
+.f-202 {
+	font-size: $rem202;
+}
+.f-203 {
+	font-size: $rem203;
+}
+.f-204 {
+	font-size: $rem204;
+}
+.f-205 {
+	font-size: $rem205;
+}
+.f-206 {
+	font-size: $rem206;
+}
+.f-207 {
+	font-size: $rem207;
+}
+.f-208 {
+	font-size: $rem208;
+}
+.f-209 {
+	font-size: $rem209;
+}
+.f-210 {
+	font-size: $rem210;
+}
+.f-211 {
+	font-size: $rem211;
+}
+.f-212 {
+	font-size: $rem212;
+}
+.f-213 {
+	font-size: $rem213;
+}
+.f-214 {
+	font-size: $rem214;
+}
+.f-215 {
+	font-size: $rem215;
+}
+.f-216 {
+	font-size: $rem216;
+}
+.f-217 {
+	font-size: $rem217;
+}
+.f-218 {
+	font-size: $rem218;
+}
+.f-219 {
+	font-size: $rem219;
+}
+.f-220 {
+	font-size: $rem220;
+}
+.f-221 {
+	font-size: $rem221;
+}
+.f-222 {
+	font-size: $rem222;
+}
+.f-223 {
+	font-size: $rem223;
+}
+.f-224 {
+	font-size: $rem224;
+}
+.f-225 {
+	font-size: $rem225;
+}
+.f-226 {
+	font-size: $rem226;
+}
+.f-227 {
+	font-size: $rem227;
+}
+.f-228 {
+	font-size: $rem228;
+}
+.f-229 {
+	font-size: $rem229;
+}
+.f-230 {
+	font-size: $rem230;
+}
+.f-231 {
+	font-size: $rem231;
+}
+.f-232 {
+	font-size: $rem232;
+}
+.f-233 {
+	font-size: $rem233;
+}
+.f-234 {
+	font-size: $rem234;
+}
+.f-235 {
+	font-size: $rem235;
+}
+.f-236 {
+	font-size: $rem236;
+}
+.f-237 {
+	font-size: $rem237;
+}
+.f-238 {
+	font-size: $rem238;
+}
+.f-239 {
+	font-size: $rem239;
+}
+.f-240 {
+	font-size: $rem240;
+}
+.f-241 {
+	font-size: $rem241;
+}
+.f-242 {
+	font-size: $rem242;
+}
+.f-243 {
+	font-size: $rem243;
+}
+.f-244 {
+	font-size: $rem244;
+}
+.f-245 {
+	font-size: $rem245;
+}
+.f-246 {
+	font-size: $rem246;
+}
+.f-247 {
+	font-size: $rem247;
+}
+.f-248 {
+	font-size: $rem248;
+}
+.f-249 {
+	font-size: $rem249;
+}
+.f-250 {
+	font-size: $rem250;
+}
+.f-251 {
+	font-size: $rem251;
+}
+.f-252 {
+	font-size: $rem252;
+}
+.f-253 {
+	font-size: $rem253;
+}
+.f-254 {
+	font-size: $rem254;
+}
+.f-255 {
+	font-size: $rem255;
+}
+.f-256 {
+	font-size: $rem256;
+}
+.f-257 {
+	font-size: $rem257;
+}
+.f-258 {
+	font-size: $rem258;
+}
+.f-259 {
+	font-size: $rem259;
+}
+.f-260 {
+	font-size: $rem260;
+}
+.f-261 {
+	font-size: $rem261;
+}
+.f-262 {
+	font-size: $rem262;
+}
+.f-263 {
+	font-size: $rem263;
+}
+.f-264 {
+	font-size: $rem264;
+}
+.f-265 {
+	font-size: $rem265;
+}
+.f-266 {
+	font-size: $rem266;
+}
+.f-267 {
+	font-size: $rem267;
+}
+.f-268 {
+	font-size: $rem268;
+}
+.f-269 {
+	font-size: $rem269;
+}
+.f-270 {
+	font-size: $rem270;
+}
+.f-271 {
+	font-size: $rem271;
+}
+.f-272 {
+	font-size: $rem272;
+}
+.f-273 {
+	font-size: $rem273;
+}
+.f-274 {
+	font-size: $rem274;
+}
+.f-275 {
+	font-size: $rem275;
+}
+.f-276 {
+	font-size: $rem276;
+}
+.f-277 {
+	font-size: $rem277;
+}
+.f-278 {
+	font-size: $rem278;
+}
+.f-279 {
+	font-size: $rem279;
+}
+.f-280 {
+	font-size: $rem280;
+}
+.f-281 {
+	font-size: $rem281;
+}
+.f-282 {
+	font-size: $rem282;
+}
+.f-283 {
+	font-size: $rem283;
+}
+.f-284 {
+	font-size: $rem284;
+}
+.f-285 {
+	font-size: $rem285;
+}
+.f-286 {
+	font-size: $rem286;
+}
+.f-287 {
+	font-size: $rem287;
+}
+.f-288 {
+	font-size: $rem288;
+}
+.f-289 {
+	font-size: $rem289;
+}
+.f-290 {
+	font-size: $rem290;
+}
+.f-291 {
+	font-size: $rem291;
+}
+.f-292 {
+	font-size: $rem292;
+}
+.f-293 {
+	font-size: $rem293;
+}
+.f-294 {
+	font-size: $rem294;
+}
+.f-295 {
+	font-size: $rem295;
+}
+.f-296 {
+	font-size: $rem296;
+}
+.f-297 {
+	font-size: $rem297;
+}
+.f-298 {
+	font-size: $rem298;
+}
+.f-299 {
+	font-size: $rem299;
+}
+.f-300 {
+	font-size: $rem300;
+}
+.f-301 {
+	font-size: $rem301;
+}
+.f-302 {
+	font-size: $rem302;
+}
+.f-303 {
+	font-size: $rem303;
+}
+.f-304 {
+	font-size: $rem304;
+}
+.f-305 {
+	font-size: $rem305;
+}
+.f-306 {
+	font-size: $rem306;
+}
+.f-307 {
+	font-size: $rem307;
+}
+.f-308 {
+	font-size: $rem308;
+}
+.f-309 {
+	font-size: $rem309;
+}
+.f-310 {
+	font-size: $rem310;
+}
+.f-311 {
+	font-size: $rem311;
+}
+.f-312 {
+	font-size: $rem312;
+}
+.f-313 {
+	font-size: $rem313;
+}
+.f-314 {
+	font-size: $rem314;
+}
+.f-315 {
+	font-size: $rem315;
+}
+.f-316 {
+	font-size: $rem316;
+}
+.f-317 {
+	font-size: $rem317;
+}
+.f-318 {
+	font-size: $rem318;
+}
+.f-319 {
+	font-size: $rem319;
+}
+.f-320 {
+	font-size: $rem320;
+}
+.f-321 {
+	font-size: $rem321;
+}
+.f-322 {
+	font-size: $rem322;
+}
+.f-323 {
+	font-size: $rem323;
+}
+.f-324 {
+	font-size: $rem324;
+}
+.f-325 {
+	font-size: $rem325;
+}
+.f-326 {
+	font-size: $rem326;
+}
+.f-327 {
+	font-size: $rem327;
+}
+.f-328 {
+	font-size: $rem328;
+}
+.f-329 {
+	font-size: $rem329;
+}
+.f-330 {
+	font-size: $rem330;
+}
+.f-331 {
+	font-size: $rem331;
+}
+.f-332 {
+	font-size: $rem332;
+}
+.f-333 {
+	font-size: $rem333;
+}
+.f-334 {
+	font-size: $rem334;
+}
+.f-335 {
+	font-size: $rem335;
+}
+.f-336 {
+	font-size: $rem336;
+}
+.f-337 {
+	font-size: $rem337;
+}
+.f-338 {
+	font-size: $rem338;
+}
+.f-339 {
+	font-size: $rem339;
+}
+.f-340 {
+	font-size: $rem340;
+}
+.f-341 {
+	font-size: $rem341;
+}
+.f-342 {
+	font-size: $rem342;
+}
+.f-343 {
+	font-size: $rem343;
+}
+.f-344 {
+	font-size: $rem344;
+}
+.f-345 {
+	font-size: $rem345;
+}
+.f-346 {
+	font-size: $rem346;
+}
+.f-347 {
+	font-size: $rem347;
+}
+.f-348 {
+	font-size: $rem348;
+}
+.f-349 {
+	font-size: $rem349;
+}
+.f-350 {
+	font-size: $rem350;
+}
+.f-351 {
+	font-size: $rem351;
+}
+.f-352 {
+	font-size: $rem352;
+}
+.f-353 {
+	font-size: $rem353;
+}
+.f-354 {
+	font-size: $rem354;
+}
+.f-355 {
+	font-size: $rem355;
+}
+.f-356 {
+	font-size: $rem356;
+}
+.f-357 {
+	font-size: $rem357;
+}
+.f-358 {
+	font-size: $rem358;
+}
+.f-359 {
+	font-size: $rem359;
+}
+.f-360 {
+	font-size: $rem360;
+}
+.f-361 {
+	font-size: $rem361;
+}
+.f-362 {
+	font-size: $rem362;
+}
+.f-363 {
+	font-size: $rem363;
+}
+.f-364 {
+	font-size: $rem364;
+}
+.f-365 {
+	font-size: $rem365;
+}
+.f-366 {
+	font-size: $rem366;
+}
+.f-367 {
+	font-size: $rem367;
+}
+.f-368 {
+	font-size: $rem368;
+}
+.f-369 {
+	font-size: $rem369;
+}
+.f-370 {
+	font-size: $rem370;
+}
+.f-371 {
+	font-size: $rem371;
+}
+.f-372 {
+	font-size: $rem372;
+}
+.f-373 {
+	font-size: $rem373;
+}
+.f-374 {
+	font-size: $rem374;
+}
+.f-375 {
+	font-size: $rem375;
+}
+.f-376 {
+	font-size: $rem376;
+}
+.f-377 {
+	font-size: $rem377;
+}
+.f-378 {
+	font-size: $rem378;
+}
+.f-379 {
+	font-size: $rem379;
+}
+.f-380 {
+	font-size: $rem380;
+}
+.f-381 {
+	font-size: $rem381;
+}
+.f-382 {
+	font-size: $rem382;
+}
+.f-383 {
+	font-size: $rem383;
+}
+.f-384 {
+	font-size: $rem384;
+}
+.f-385 {
+	font-size: $rem385;
+}
+.f-386 {
+	font-size: $rem386;
+}
+.f-387 {
+	font-size: $rem387;
+}
+.f-388 {
+	font-size: $rem388;
+}
+.f-389 {
+	font-size: $rem389;
+}
+.f-390 {
+	font-size: $rem390;
+}
+.f-391 {
+	font-size: $rem391;
+}
+.f-392 {
+	font-size: $rem392;
+}
+.f-393 {
+	font-size: $rem393;
+}
+.f-394 {
+	font-size: $rem394;
+}
+.f-395 {
+	font-size: $rem395;
+}
+.f-396 {
+	font-size: $rem396;
+}
+.f-397 {
+	font-size: $rem397;
+}
+.f-398 {
+	font-size: $rem398;
+}
+.f-399 {
+	font-size: $rem399;
+}
+.f-400 {
+	font-size: $rem400;
+}
+.f-401 {
+	font-size: $rem401;
+}
+.f-402 {
+	font-size: $rem402;
+}
+.f-403 {
+	font-size: $rem403;
+}
+.f-404 {
+	font-size: $rem404;
+}
+.f-405 {
+	font-size: $rem405;
+}
+.f-406 {
+	font-size: $rem406;
+}
+.f-407 {
+	font-size: $rem407;
+}
+.f-408 {
+	font-size: $rem408;
+}
+.f-409 {
+	font-size: $rem409;
+}
+.f-410 {
+	font-size: $rem410;
+}
+.f-411 {
+	font-size: $rem411;
+}
+.f-412 {
+	font-size: $rem412;
+}
+.f-413 {
+	font-size: $rem413;
+}
+.f-414 {
+	font-size: $rem414;
+}
+.f-415 {
+	font-size: $rem415;
+}
+.f-416 {
+	font-size: $rem416;
+}
+.f-417 {
+	font-size: $rem417;
+}
+.f-418 {
+	font-size: $rem418;
+}
+.f-419 {
+	font-size: $rem419;
+}
+.f-420 {
+	font-size: $rem420;
+}
+.f-421 {
+	font-size: $rem421;
+}
+.f-422 {
+	font-size: $rem422;
+}
+.f-423 {
+	font-size: $rem423;
+}
+.f-424 {
+	font-size: $rem424;
+}
+.f-425 {
+	font-size: $rem425;
+}
+.f-426 {
+	font-size: $rem426;
+}
+.f-427 {
+	font-size: $rem427;
+}
+.f-428 {
+	font-size: $rem428;
+}
+.f-429 {
+	font-size: $rem429;
+}
+.f-430 {
+	font-size: $rem430;
+}
+.f-431 {
+	font-size: $rem431;
+}
+.f-432 {
+	font-size: $rem432;
+}
+.f-433 {
+	font-size: $rem433;
+}
+.f-434 {
+	font-size: $rem434;
+}
+.f-435 {
+	font-size: $rem435;
+}
+.f-436 {
+	font-size: $rem436;
+}
+.f-437 {
+	font-size: $rem437;
+}
+.f-438 {
+	font-size: $rem438;
+}
+.f-439 {
+	font-size: $rem439;
+}
+.f-440 {
+	font-size: $rem440;
+}
+.f-441 {
+	font-size: $rem441;
+}
+.f-442 {
+	font-size: $rem442;
+}
+.f-443 {
+	font-size: $rem443;
+}
+.f-444 {
+	font-size: $rem444;
+}
+.f-445 {
+	font-size: $rem445;
+}
+.f-446 {
+	font-size: $rem446;
+}
+.f-447 {
+	font-size: $rem447;
+}
+.f-448 {
+	font-size: $rem448;
+}
+.f-449 {
+	font-size: $rem449;
+}
+.f-450 {
+	font-size: $rem450;
+}
+.f-451 {
+	font-size: $rem451;
+}
+.f-452 {
+	font-size: $rem452;
+}
+.f-453 {
+	font-size: $rem453;
+}
+.f-454 {
+	font-size: $rem454;
+}
+.f-455 {
+	font-size: $rem455;
+}
+.f-456 {
+	font-size: $rem456;
+}
+.f-457 {
+	font-size: $rem457;
+}
+.f-458 {
+	font-size: $rem458;
+}
+.f-459 {
+	font-size: $rem459;
+}
+.f-460 {
+	font-size: $rem460;
+}
+.f-461 {
+	font-size: $rem461;
+}
+.f-462 {
+	font-size: $rem462;
+}
+.f-463 {
+	font-size: $rem463;
+}
+.f-464 {
+	font-size: $rem464;
+}
+.f-465 {
+	font-size: $rem465;
+}
+.f-466 {
+	font-size: $rem466;
+}
+.f-467 {
+	font-size: $rem467;
+}
+.f-468 {
+	font-size: $rem468;
+}
+.f-469 {
+	font-size: $rem469;
+}
+.f-470 {
+	font-size: $rem470;
+}
+.f-471 {
+	font-size: $rem471;
+}
+.f-472 {
+	font-size: $rem472;
+}
+.f-473 {
+	font-size: $rem473;
+}
+.f-474 {
+	font-size: $rem474;
+}
+.f-475 {
+	font-size: $rem475;
+}
+.f-476 {
+	font-size: $rem476;
+}
+.f-477 {
+	font-size: $rem477;
+}
+.f-478 {
+	font-size: $rem478;
+}
+.f-479 {
+	font-size: $rem479;
+}
+.f-480 {
+	font-size: $rem480;
+}
+.f-481 {
+	font-size: $rem481;
+}
+.f-482 {
+	font-size: $rem482;
+}
+.f-483 {
+	font-size: $rem483;
+}
+.f-484 {
+	font-size: $rem484;
+}
+.f-485 {
+	font-size: $rem485;
+}
+.f-486 {
+	font-size: $rem486;
+}
+.f-487 {
+	font-size: $rem487;
+}
+.f-488 {
+	font-size: $rem488;
+}
+.f-489 {
+	font-size: $rem489;
+}
+.f-490 {
+	font-size: $rem490;
+}
+.f-491 {
+	font-size: $rem491;
+}
+.f-492 {
+	font-size: $rem492;
+}
+.f-493 {
+	font-size: $rem493;
+}
+.f-494 {
+	font-size: $rem494;
+}
+.f-495 {
+	font-size: $rem495;
+}
+.f-496 {
+	font-size: $rem496;
+}
+.f-497 {
+	font-size: $rem497;
+}
+.f-498 {
+	font-size: $rem498;
+}
+.f-499 {
+	font-size: $rem499;
+}
+.f-500 {
+	font-size: $rem500;
+}

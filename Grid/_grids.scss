@@ -1,0 +1,24 @@
+@use "../variables-Fectory/rem-vars" as *;
+
+/* ----------------------------------------------------------------
+DISPLAY CLASSES
+----------------------------------------------------------------
+*/
+
+.grid {
+    display: grid;
+}
+.gridRow{
+    grid-auto-flow: row;
+}
+.gridRowReverse{
+    grid-auto-flow: row-reverse;
+}
+
+.gridColumn{
+    grid-auto-flow: column;
+}
+
+.gridColumnReverse{
+    grid-auto-flow: column-reverse;
+}

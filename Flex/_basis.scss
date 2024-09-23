@@ -1,0 +1,3042 @@
+@use "../variables-Fectory/rem-vars" as *;
+
+.f-basis- {
+&auto {
+    flex-basis: auto;
+}
+
+&content {
+    flex-basis: content;
+}
+
+&min-content {
+    flex-basis: min-content;
+}
+
+&max-content {
+    flex-basis: max-content;
+}
+
+&fit-content {
+    flex-basis: fit-content;
+}
+
+&fill {
+    flex-basis: fill;
+}
+
+&none {
+    flex-basis: none;
+}
+
+/* FLEX GAP */
+&00rem{
+    flex-basis: $rem00;
+}
+&01rem{
+    flex-basis: $rem01;
+}
+&02rem{
+    flex-basis: $rem02;
+}
+&03rem{
+    flex-basis: $rem03;
+}
+&04rem{
+    flex-basis: $rem04;
+}
+&05rem{
+    flex-basis: $rem05;
+}
+&06rem{
+    flex-basis: $rem06;
+}
+&07rem{
+    flex-basis: $rem07;
+}
+&08rem{
+    flex-basis: $rem08;
+}
+&09rem{
+    flex-basis: $rem09;
+}
+&10rem{
+    flex-basis: $rem10;
+}
+&11rem{
+    flex-basis: $rem11;
+}
+&12rem{
+    flex-basis: $rem12;
+}
+&13rem{
+    flex-basis: $rem13;
+}
+&14rem{
+    flex-basis: $rem14;
+}
+&15rem{
+    flex-basis: $rem15;
+}
+&16rem{
+    flex-basis: $rem16;
+}
+&17rem{
+    flex-basis: $rem17;
+}
+&18rem{
+    flex-basis: $rem18;
+}
+&19rem{
+    flex-basis: $rem19;
+}
+&20rem{
+    flex-basis: $rem20;
+}
+&21rem{
+    flex-basis: $rem21;
+}
+&22rem{
+    flex-basis: $rem22;
+}
+&23rem{
+    flex-basis: $rem23;
+}
+&24rem{
+    flex-basis: $rem24;
+}
+&25rem{
+    flex-basis: $rem25;
+}
+&26rem{
+    flex-basis: $rem26;
+}
+&27rem{
+    flex-basis: $rem27;
+}
+&28rem{
+    flex-basis: $rem28;
+}
+&29rem{
+    flex-basis: $rem29;
+}
+&30rem{
+    flex-basis: $rem30;
+}
+&31rem{
+    flex-basis: $rem31;
+}
+&32rem{
+    flex-basis: $rem32;
+}
+&33rem{
+    flex-basis: $rem33;
+}
+&34rem{
+    flex-basis: $rem34;
+}
+&35rem{
+    flex-basis: $rem35;
+}
+&36rem{
+    flex-basis: $rem36;
+}
+&37rem{
+    flex-basis: $rem37;
+}
+&38rem{
+    flex-basis: $rem38;
+}
+&39rem{
+    flex-basis: $rem39;
+}
+&40rem{
+    flex-basis: $rem40;
+}
+&41rem{
+    flex-basis: $rem41;
+}
+&42rem{
+    flex-basis: $rem42;
+}
+&43rem{
+    flex-basis: $rem43;
+}
+&44rem{
+    flex-basis: $rem44;
+}
+&45rem{
+    flex-basis: $rem45;
+}
+&46rem{
+    flex-basis: $rem46;
+}
+&47rem{
+    flex-basis: $rem47;
+}
+&48rem{
+    flex-basis: $rem48;
+}
+&49rem{
+    flex-basis: $rem49;
+}
+&50rem{
+    flex-basis: $rem50;
+}
+&51rem{
+    flex-basis: $rem51;
+}
+&52rem{
+    flex-basis: $rem52;
+}
+&53rem{
+    flex-basis: $rem53;
+}
+&54rem{
+    flex-basis: $rem54;
+}
+&55rem{
+    flex-basis: $rem55;
+}
+&56rem{
+    flex-basis: $rem56;
+}
+&57rem{
+    flex-basis: $rem57;
+}
+&58rem{
+    flex-basis: $rem58;
+}
+&59rem{
+    flex-basis: $rem59;
+}
+&60rem{
+    flex-basis: $rem60;
+}
+&61rem{
+    flex-basis: $rem61;
+}
+&62rem{
+    flex-basis: $rem62;
+}
+&63rem{
+    flex-basis: $rem63;
+}
+&64rem{
+    flex-basis: $rem64;
+}
+&65rem{
+    flex-basis: $rem65;
+}
+&66rem{
+    flex-basis: $rem66;
+}
+&67rem{
+    flex-basis: $rem67;
+}
+&68rem{
+    flex-basis: $rem68;
+}
+&69rem{
+    flex-basis: $rem69;
+}
+&70rem{
+    flex-basis: $rem70;
+}
+&71rem{
+    flex-basis: $rem71;
+}
+&72rem{
+    flex-basis: $rem72;
+}
+&73rem{
+    flex-basis: $rem73;
+}
+&74rem{
+    flex-basis: $rem74;
+}
+&75rem{
+    flex-basis: $rem75;
+}
+&76rem{
+    flex-basis: $rem76;
+}
+&77rem{
+    flex-basis: $rem77;
+}
+&78rem{
+    flex-basis: $rem78;
+}
+&79rem{
+    flex-basis: $rem79;
+}
+&80rem{
+    flex-basis: $rem80;
+}
+&81rem{
+    flex-basis: $rem81;
+}
+&82rem{
+    flex-basis: $rem82;
+}
+&83rem{
+    flex-basis: $rem83;
+}
+&84rem{
+    flex-basis: $rem84;
+}
+&85rem{
+    flex-basis: $rem85;
+}
+&86rem{
+    flex-basis: $rem86;
+}
+&87rem{
+    flex-basis: $rem87;
+}
+&88rem{
+    flex-basis: $rem88;
+}
+&89rem{
+    flex-basis: $rem89;
+}
+&90rem{
+    flex-basis: $rem90;
+}
+&91rem{
+    flex-basis: $rem91;
+}
+&92rem{
+    flex-basis: $rem92;
+}
+&93rem{
+    flex-basis: $rem93;
+}
+&94rem{
+    flex-basis: $rem94;
+}
+&95rem{
+    flex-basis: $rem95;
+}
+&96rem{
+    flex-basis: $rem96;
+}
+&97rem{
+    flex-basis: $rem97;
+}
+&98rem{
+    flex-basis: $rem98;
+}
+&99rem{
+    flex-basis: $rem99;
+}
+&100rem{
+    flex-basis: $rem100;
+}
+&101rem{
+    flex-basis: $rem101;
+}
+&102rem{
+    flex-basis: $rem102;
+}
+&103rem{
+    flex-basis: $rem103;
+}
+&104rem{
+    flex-basis: $rem104;
+}
+&105rem{
+    flex-basis: $rem105;
+}
+&106rem{
+    flex-basis: $rem106;
+}
+&107rem{
+    flex-basis: $rem107;
+}
+&108rem{
+    flex-basis: $rem108;
+}
+&109rem{
+    flex-basis: $rem109;
+}
+&110rem{
+    flex-basis: $rem110;
+}
+&111rem{
+    flex-basis: $rem111;
+}
+&112rem{
+    flex-basis: $rem112;
+}
+&113rem{
+    flex-basis: $rem113;
+}
+&114rem{
+    flex-basis: $rem114;
+}
+&115rem{
+    flex-basis: $rem115;
+}
+&116rem{
+    flex-basis: $rem116;
+}
+&117rem{
+    flex-basis: $rem117;
+}
+&118rem{
+    flex-basis: $rem118;
+}
+&119rem{
+    flex-basis: $rem119;
+}
+&120rem{
+    flex-basis: $rem120;
+}
+&121rem{
+    flex-basis: $rem121;
+}
+&122rem{
+    flex-basis: $rem122;
+}
+&123rem{
+    flex-basis: $rem123;
+}
+&124rem{
+    flex-basis: $rem124;
+}
+&125rem{
+    flex-basis: $rem125;
+}
+&126rem{
+    flex-basis: $rem126;
+}
+&127rem{
+    flex-basis: $rem127;
+}
+&128rem{
+    flex-basis: $rem128;
+}
+&129rem{
+    flex-basis: $rem129;
+}
+&130rem{
+    flex-basis: $rem130;
+}
+&131rem{
+    flex-basis: $rem131;
+}
+&132rem{
+    flex-basis: $rem132;
+}
+&133rem{
+    flex-basis: $rem133;
+}
+&134rem{
+    flex-basis: $rem134;
+}
+&135rem{
+    flex-basis: $rem135;
+}
+&136rem{
+    flex-basis: $rem136;
+}
+&137rem{
+    flex-basis: $rem137;
+}
+&138rem{
+    flex-basis: $rem138;
+}
+&139rem{
+    flex-basis: $rem139;
+}
+&140rem{
+    flex-basis: $rem140;
+}
+&141rem{
+    flex-basis: $rem141;
+}
+&142rem{
+    flex-basis: $rem142;
+}
+&143rem{
+    flex-basis: $rem143;
+}
+&144rem{
+    flex-basis: $rem144;
+}
+&145rem{
+    flex-basis: $rem145;
+}
+&146rem{
+    flex-basis: $rem146;
+}
+&147rem{
+    flex-basis: $rem147;
+}
+&148rem{
+    flex-basis: $rem148;
+}
+&149rem{
+    flex-basis: $rem149;
+}
+&150rem{
+    flex-basis: $rem150;
+}
+&151rem{
+    flex-basis: $rem151;
+}
+&152rem{
+    flex-basis: $rem152;
+}
+&153rem{
+    flex-basis: $rem153;
+}
+&154rem{
+    flex-basis: $rem154;
+}
+&155rem{
+    flex-basis: $rem155;
+}
+&156rem{
+    flex-basis: $rem156;
+}
+&157rem{
+    flex-basis: $rem157;
+}
+&158rem{
+    flex-basis: $rem158;
+}
+&159rem{
+    flex-basis: $rem159;
+}
+&160rem{
+    flex-basis: $rem160;
+}
+&161rem{
+    flex-basis: $rem161;
+}
+&162rem{
+    flex-basis: $rem162;
+}
+&163rem{
+    flex-basis: $rem163;
+}
+&164rem{
+    flex-basis: $rem164;
+}
+&165rem{
+    flex-basis: $rem165;
+}
+&166rem{
+    flex-basis: $rem166;
+}
+&167rem{
+    flex-basis: $rem167;
+}
+&168rem{
+    flex-basis: $rem168;
+}
+&169rem{
+    flex-basis: $rem169;
+}
+&170rem{
+    flex-basis: $rem170;
+}
+&171rem{
+    flex-basis: $rem171;
+}
+&172rem{
+    flex-basis: $rem172;
+}
+&173rem{
+    flex-basis: $rem173;
+}
+&174rem{
+    flex-basis: $rem174;
+}
+&175rem{
+    flex-basis: $rem175;
+}
+&176rem{
+    flex-basis: $rem176;
+}
+&177rem{
+    flex-basis: $rem177;
+}
+&178rem{
+    flex-basis: $rem178;
+}
+&179rem{
+    flex-basis: $rem179;
+}
+&180rem{
+    flex-basis: $rem180;
+}
+&181rem{
+    flex-basis: $rem181;
+}
+&182rem{
+    flex-basis: $rem182;
+}
+&183rem{
+    flex-basis: $rem183;
+}
+&184rem{
+    flex-basis: $rem184;
+}
+&185rem{
+    flex-basis: $rem185;
+}
+&186rem{
+    flex-basis: $rem186;
+}
+&187rem{
+    flex-basis: $rem187;
+}
+&188rem{
+    flex-basis: $rem188;
+}
+&189rem{
+    flex-basis: $rem189;
+}
+&190rem{
+    flex-basis: $rem190;
+}
+&191rem{
+    flex-basis: $rem191;
+}
+&192rem{
+    flex-basis: $rem192;
+}
+&193rem{
+    flex-basis: $rem193;
+}
+&194rem{
+    flex-basis: $rem194;
+}
+&195rem{
+    flex-basis: $rem195;
+}
+&196rem{
+    flex-basis: $rem196;
+}
+&197rem{
+    flex-basis: $rem197;
+}
+&198rem{
+    flex-basis: $rem198;
+}
+&199rem{
+    flex-basis: $rem199;
+}
+&200rem{
+    flex-basis: $rem200;
+}
+&201rem{
+    flex-basis: $rem201;
+}
+&202rem{
+    flex-basis: $rem202;
+}
+&203rem{
+    flex-basis: $rem203;
+}
+&204rem{
+    flex-basis: $rem204;
+}
+&205rem{
+    flex-basis: $rem205;
+}
+&206rem{
+    flex-basis: $rem206;
+}
+&207rem{
+    flex-basis: $rem207;
+}
+&208rem{
+    flex-basis: $rem208;
+}
+&209rem{
+    flex-basis: $rem209;
+}
+&210rem{
+    flex-basis: $rem210;
+}
+&211rem{
+    flex-basis: $rem211;
+}
+&212rem{
+    flex-basis: $rem212;
+}
+&213rem{
+    flex-basis: $rem213;
+}
+&214rem{
+    flex-basis: $rem214;
+}
+&215rem{
+    flex-basis: $rem215;
+}
+&216rem{
+    flex-basis: $rem216;
+}
+&217rem{
+    flex-basis: $rem217;
+}
+&218rem{
+    flex-basis: $rem218;
+}
+&219rem{
+    flex-basis: $rem219;
+}
+&220rem{
+    flex-basis: $rem220;
+}
+&221rem{
+    flex-basis: $rem221;
+}
+&222rem{
+    flex-basis: $rem222;
+}
+&223rem{
+    flex-basis: $rem223;
+}
+&224rem{
+    flex-basis: $rem224;
+}
+&225rem{
+    flex-basis: $rem225;
+}
+&226rem{
+    flex-basis: $rem226;
+}
+&227rem{
+    flex-basis: $rem227;
+}
+&228rem{
+    flex-basis: $rem228;
+}
+&229rem{
+    flex-basis: $rem229;
+}
+&230rem{
+    flex-basis: $rem230;
+}
+&231rem{
+    flex-basis: $rem231;
+}
+&232rem{
+    flex-basis: $rem232;
+}
+&233rem{
+    flex-basis: $rem233;
+}
+&234rem{
+    flex-basis: $rem234;
+}
+&235rem{
+    flex-basis: $rem235;
+}
+&236rem{
+    flex-basis: $rem236;
+}
+&237rem{
+    flex-basis: $rem237;
+}
+&238rem{
+    flex-basis: $rem238;
+}
+&239rem{
+    flex-basis: $rem239;
+}
+&240rem{
+    flex-basis: $rem240;
+}
+&241rem{
+    flex-basis: $rem241;
+}
+&242rem{
+    flex-basis: $rem242;
+}
+&243rem{
+    flex-basis: $rem243;
+}
+&244rem{
+    flex-basis: $rem244;
+}
+&245rem{
+    flex-basis: $rem245;
+}
+&246rem{
+    flex-basis: $rem246;
+}
+&247rem{
+    flex-basis: $rem247;
+}
+&248rem{
+    flex-basis: $rem248;
+}
+&249rem{
+    flex-basis: $rem249;
+}
+&250rem{
+    flex-basis: $rem250;
+}
+&251rem{
+    flex-basis: $rem251;
+}
+&252rem{
+    flex-basis: $rem252;
+}
+&253rem{
+    flex-basis: $rem253;
+}
+&254rem{
+    flex-basis: $rem254;
+}
+&255rem{
+    flex-basis: $rem255;
+}
+&256rem{
+    flex-basis: $rem256;
+}
+&257rem{
+    flex-basis: $rem257;
+}
+&258rem{
+    flex-basis: $rem258;
+}
+&259rem{
+    flex-basis: $rem259;
+}
+&260rem{
+    flex-basis: $rem260;
+}
+&261rem{
+    flex-basis: $rem261;
+}
+&262rem{
+    flex-basis: $rem262;
+}
+&263rem{
+    flex-basis: $rem263;
+}
+&264rem{
+    flex-basis: $rem264;
+}
+&265rem{
+    flex-basis: $rem265;
+}
+&266rem{
+    flex-basis: $rem266;
+}
+&267rem{
+    flex-basis: $rem267;
+}
+&268rem{
+    flex-basis: $rem268;
+}
+&269rem{
+    flex-basis: $rem269;
+}
+&270rem{
+    flex-basis: $rem270;
+}
+&271rem{
+    flex-basis: $rem271;
+}
+&272rem{
+    flex-basis: $rem272;
+}
+&273rem{
+    flex-basis: $rem273;
+}
+&274rem{
+    flex-basis: $rem274;
+}
+&275rem{
+    flex-basis: $rem275;
+}
+&276rem{
+    flex-basis: $rem276;
+}
+&277rem{
+    flex-basis: $rem277;
+}
+&278rem{
+    flex-basis: $rem278;
+}
+&279rem{
+    flex-basis: $rem279;
+}
+&280rem{
+    flex-basis: $rem280;
+}
+&281rem{
+    flex-basis: $rem281;
+}
+&282rem{
+    flex-basis: $rem282;
+}
+&283rem{
+    flex-basis: $rem283;
+}
+&284rem{
+    flex-basis: $rem284;
+}
+&285rem{
+    flex-basis: $rem285;
+}
+&286rem{
+    flex-basis: $rem286;
+}
+&287rem{
+    flex-basis: $rem287;
+}
+&288rem{
+    flex-basis: $rem288;
+}
+&289rem{
+    flex-basis: $rem289;
+}
+&290rem{
+    flex-basis: $rem290;
+}
+&291rem{
+    flex-basis: $rem291;
+}
+&292rem{
+    flex-basis: $rem292;
+}
+&293rem{
+    flex-basis: $rem293;
+}
+&294rem{
+    flex-basis: $rem294;
+}
+&295rem{
+    flex-basis: $rem295;
+}
+&296rem{
+    flex-basis: $rem296;
+}
+&297rem{
+    flex-basis: $rem297;
+}
+&298rem{
+    flex-basis: $rem298;
+}
+&299rem{
+    flex-basis: $rem299;
+}
+&300rem{
+    flex-basis: $rem300;
+}
+&301rem{
+    flex-basis: $rem301;
+}
+&302rem{
+    flex-basis: $rem302;
+}
+&303rem{
+    flex-basis: $rem303;
+}
+&304rem{
+    flex-basis: $rem304;
+}
+&305rem{
+    flex-basis: $rem305;
+}
+&306rem{
+    flex-basis: $rem306;
+}
+&307rem{
+    flex-basis: $rem307;
+}
+&308rem{
+    flex-basis: $rem308;
+}
+&309rem{
+    flex-basis: $rem309;
+}
+&310rem{
+    flex-basis: $rem310;
+}
+&311rem{
+    flex-basis: $rem311;
+}
+&312rem{
+    flex-basis: $rem312;
+}
+&313rem{
+    flex-basis: $rem313;
+}
+&314rem{
+    flex-basis: $rem314;
+}
+&315rem{
+    flex-basis: $rem315;
+}
+&316rem{
+    flex-basis: $rem316;
+}
+&317rem{
+    flex-basis: $rem317;
+}
+&318rem{
+    flex-basis: $rem318;
+}
+&319rem{
+    flex-basis: $rem319;
+}
+&320rem{
+    flex-basis: $rem320;
+}
+&321rem{
+    flex-basis: $rem321;
+}
+&322rem{
+    flex-basis: $rem322;
+}
+&323rem{
+    flex-basis: $rem323;
+}
+&324rem{
+    flex-basis: $rem324;
+}
+&325rem{
+    flex-basis: $rem325;
+}
+&326rem{
+    flex-basis: $rem326;
+}
+&327rem{
+    flex-basis: $rem327;
+}
+&328rem{
+    flex-basis: $rem328;
+}
+&329rem{
+    flex-basis: $rem329;
+}
+&330rem{
+    flex-basis: $rem330;
+}
+&331rem{
+    flex-basis: $rem331;
+}
+&332rem{
+    flex-basis: $rem332;
+}
+&333rem{
+    flex-basis: $rem333;
+}
+&334rem{
+    flex-basis: $rem334;
+}
+&335rem{
+    flex-basis: $rem335;
+}
+&336rem{
+    flex-basis: $rem336;
+}
+&337rem{
+    flex-basis: $rem337;
+}
+&338rem{
+    flex-basis: $rem338;
+}
+&339rem{
+    flex-basis: $rem339;
+}
+&340rem{
+    flex-basis: $rem340;
+}
+&341rem{
+    flex-basis: $rem341;
+}
+&342rem{
+    flex-basis: $rem342;
+}
+&343rem{
+    flex-basis: $rem343;
+}
+&344rem{
+    flex-basis: $rem344;
+}
+&345rem{
+    flex-basis: $rem345;
+}
+&346rem{
+    flex-basis: $rem346;
+}
+&347rem{
+    flex-basis: $rem347;
+}
+&348rem{
+    flex-basis: $rem348;
+}
+&349rem{
+    flex-basis: $rem349;
+}
+&350rem{
+    flex-basis: $rem350;
+}
+&351rem{
+    flex-basis: $rem351;
+}
+&352rem{
+    flex-basis: $rem352;
+}
+&353rem{
+    flex-basis: $rem353;
+}
+&354rem{
+    flex-basis: $rem354;
+}
+&355rem{
+    flex-basis: $rem355;
+}
+&356rem{
+    flex-basis: $rem356;
+}
+&357rem{
+    flex-basis: $rem357;
+}
+&358rem{
+    flex-basis: $rem358;
+}
+&359rem{
+    flex-basis: $rem359;
+}
+&360rem{
+    flex-basis: $rem360;
+}
+&361rem{
+    flex-basis: $rem361;
+}
+&362rem{
+    flex-basis: $rem362;
+}
+&363rem{
+    flex-basis: $rem363;
+}
+&364rem{
+    flex-basis: $rem364;
+}
+&365rem{
+    flex-basis: $rem365;
+}
+&366rem{
+    flex-basis: $rem366;
+}
+&367rem{
+    flex-basis: $rem367;
+}
+&368rem{
+    flex-basis: $rem368;
+}
+&369rem{
+    flex-basis: $rem369;
+}
+&370rem{
+    flex-basis: $rem370;
+}
+&371rem{
+    flex-basis: $rem371;
+}
+&372rem{
+    flex-basis: $rem372;
+}
+&373rem{
+    flex-basis: $rem373;
+}
+&374rem{
+    flex-basis: $rem374;
+}
+&375rem{
+    flex-basis: $rem375;
+}
+&376rem{
+    flex-basis: $rem376;
+}
+&377rem{
+    flex-basis: $rem377;
+}
+&378rem{
+    flex-basis: $rem378;
+}
+&379rem{
+    flex-basis: $rem379;
+}
+&380rem{
+    flex-basis: $rem380;
+}
+&381rem{
+    flex-basis: $rem381;
+}
+&382rem{
+    flex-basis: $rem382;
+}
+&383rem{
+    flex-basis: $rem383;
+}
+&384rem{
+    flex-basis: $rem384;
+}
+&385rem{
+    flex-basis: $rem385;
+}
+&386rem{
+    flex-basis: $rem386;
+}
+&387rem{
+    flex-basis: $rem387;
+}
+&388rem{
+    flex-basis: $rem388;
+}
+&389rem{
+    flex-basis: $rem389;
+}
+&390rem{
+    flex-basis: $rem390;
+}
+&391rem{
+    flex-basis: $rem391;
+}
+&392rem{
+    flex-basis: $rem392;
+}
+&393rem{
+    flex-basis: $rem393;
+}
+&394rem{
+    flex-basis: $rem394;
+}
+&395rem{
+    flex-basis: $rem395;
+}
+&396rem{
+    flex-basis: $rem396;
+}
+&397rem{
+    flex-basis: $rem397;
+}
+&398rem{
+    flex-basis: $rem398;
+}
+&399rem{
+    flex-basis: $rem399;
+}
+&400rem{
+    flex-basis: $rem400;
+}
+&401rem{
+    flex-basis: $rem401;
+}
+&402rem{
+    flex-basis: $rem402;
+}
+&403rem{
+    flex-basis: $rem403;
+}
+&404rem{
+    flex-basis: $rem404;
+}
+&405rem{
+    flex-basis: $rem405;
+}
+&406rem{
+    flex-basis: $rem406;
+}
+&407rem{
+    flex-basis: $rem407;
+}
+&408rem{
+    flex-basis: $rem408;
+}
+&409rem{
+    flex-basis: $rem409;
+}
+&410rem{
+    flex-basis: $rem410;
+}
+&411rem{
+    flex-basis: $rem411;
+}
+&412rem{
+    flex-basis: $rem412;
+}
+&413rem{
+    flex-basis: $rem413;
+}
+&414rem{
+    flex-basis: $rem414;
+}
+&415rem{
+    flex-basis: $rem415;
+}
+&416rem{
+    flex-basis: $rem416;
+}
+&417rem{
+    flex-basis: $rem417;
+}
+&418rem{
+    flex-basis: $rem418;
+}
+&419rem{
+    flex-basis: $rem419;
+}
+&420rem{
+    flex-basis: $rem420;
+}
+&421rem{
+    flex-basis: $rem421;
+}
+&422rem{
+    flex-basis: $rem422;
+}
+&423rem{
+    flex-basis: $rem423;
+}
+&424rem{
+    flex-basis: $rem424;
+}
+&425rem{
+    flex-basis: $rem425;
+}
+&426rem{
+    flex-basis: $rem426;
+}
+&427rem{
+    flex-basis: $rem427;
+}
+&428rem{
+    flex-basis: $rem428;
+}
+&429rem{
+    flex-basis: $rem429;
+}
+&430rem{
+    flex-basis: $rem430;
+}
+&431rem{
+    flex-basis: $rem431;
+}
+&432rem{
+    flex-basis: $rem432;
+}
+&433rem{
+    flex-basis: $rem433;
+}
+&434rem{
+    flex-basis: $rem434;
+}
+&435rem{
+    flex-basis: $rem435;
+}
+&436rem{
+    flex-basis: $rem436;
+}
+&437rem{
+    flex-basis: $rem437;
+}
+&438rem{
+    flex-basis: $rem438;
+}
+&439rem{
+    flex-basis: $rem439;
+}
+&440rem{
+    flex-basis: $rem440;
+}
+&441rem{
+    flex-basis: $rem441;
+}
+&442rem{
+    flex-basis: $rem442;
+}
+&443rem{
+    flex-basis: $rem443;
+}
+&444rem{
+    flex-basis: $rem444;
+}
+&445rem{
+    flex-basis: $rem445;
+}
+&446rem{
+    flex-basis: $rem446;
+}
+&447rem{
+    flex-basis: $rem447;
+}
+&448rem{
+    flex-basis: $rem448;
+}
+&449rem{
+    flex-basis: $rem449;
+}
+&450rem{
+    flex-basis: $rem450;
+}
+&451rem{
+    flex-basis: $rem451;
+}
+&452rem{
+    flex-basis: $rem452;
+}
+&453rem{
+    flex-basis: $rem453;
+}
+&454rem{
+    flex-basis: $rem454;
+}
+&455rem{
+    flex-basis: $rem455;
+}
+&456rem{
+    flex-basis: $rem456;
+}
+&457rem{
+    flex-basis: $rem457;
+}
+&458rem{
+    flex-basis: $rem458;
+}
+&459rem{
+    flex-basis: $rem459;
+}
+&460rem{
+    flex-basis: $rem460;
+}
+&461rem{
+    flex-basis: $rem461;
+}
+&462rem{
+    flex-basis: $rem462;
+}
+&463rem{
+    flex-basis: $rem463;
+}
+&464rem{
+    flex-basis: $rem464;
+}
+&465rem{
+    flex-basis: $rem465;
+}
+&466rem{
+    flex-basis: $rem466;
+}
+&467rem{
+    flex-basis: $rem467;
+}
+&468rem{
+    flex-basis: $rem468;
+}
+&469rem{
+    flex-basis: $rem469;
+}
+&470rem{
+    flex-basis: $rem470;
+}
+&471rem{
+    flex-basis: $rem471;
+}
+&472rem{
+    flex-basis: $rem472;
+}
+&473rem{
+    flex-basis: $rem473;
+}
+&474rem{
+    flex-basis: $rem474;
+}
+&475rem{
+    flex-basis: $rem475;
+}
+&476rem{
+    flex-basis: $rem476;
+}
+&477rem{
+    flex-basis: $rem477;
+}
+&478rem{
+    flex-basis: $rem478;
+}
+&479rem{
+    flex-basis: $rem479;
+}
+&480rem{
+    flex-basis: $rem480;
+}
+&481rem{
+    flex-basis: $rem481;
+}
+&482rem{
+    flex-basis: $rem482;
+}
+&483rem{
+    flex-basis: $rem483;
+}
+&484rem{
+    flex-basis: $rem484;
+}
+&485rem{
+    flex-basis: $rem485;
+}
+&486rem{
+    flex-basis: $rem486;
+}
+&487rem{
+    flex-basis: $rem487;
+}
+&488rem{
+    flex-basis: $rem488;
+}
+&489rem{
+    flex-basis: $rem489;
+}
+&490rem{
+    flex-basis: $rem490;
+}
+&491rem{
+    flex-basis: $rem491;
+}
+&492rem{
+    flex-basis: $rem492;
+}
+&493rem{
+    flex-basis: $rem493;
+}
+&494rem{
+    flex-basis: $rem494;
+}
+&495rem{
+    flex-basis: $rem495;
+}
+&496rem{
+    flex-basis: $rem496;
+}
+&497rem{
+    flex-basis: $rem497;
+}
+&498rem{
+    flex-basis: $rem498;
+}
+&499rem{
+    flex-basis: $rem499;
+}
+&500rem{
+    flex-basis: $rem500;
+}
+
+//   FLEX-BASIS IN PERCENTAGE
+&00, &0{
+	flex-basis: 0%;
+}
+&01 ,&1{
+	flex-basis: 1%;
+}
+&02,&2{
+	flex-basis: 2%;
+}
+&03,&3{
+	flex-basis: 3%;
+}
+&04,&4{
+	flex-basis: 4%;
+}
+&05,&5{
+	flex-basis: 5%;
+}
+&06,&6{
+	flex-basis: 6%;
+}
+&07,&7{
+	flex-basis: 7%;
+}
+&08,&8{
+	flex-basis: 8%;
+}
+&09,&9{
+	flex-basis: 9%;
+}
+&10{
+	flex-basis: 10%;
+}
+&11{
+	flex-basis: 11%;
+}
+&12{
+	flex-basis: 12%;
+}
+&13{
+	flex-basis: 13%;
+}
+&14{
+	flex-basis: 14%;
+}
+&15{
+	flex-basis: 15%;
+}
+&16{
+	flex-basis: 16%;
+}
+&17{
+	flex-basis: 17%;
+}
+&18{
+	flex-basis: 18%;
+}
+&19{
+	flex-basis: 19%;
+}
+&20{
+	flex-basis: 20%;
+}
+&21{
+	flex-basis: 21%;
+}
+&22{
+	flex-basis: 22%;
+}
+&23{
+	flex-basis: 23%;
+}
+&24{
+	flex-basis: 24%;
+}
+&25{
+	flex-basis: 25%;
+}
+&26{
+	flex-basis: 26%;
+}
+&27{
+	flex-basis: 27%;
+}
+&28{
+	flex-basis: 28%;
+}
+&29{
+	flex-basis: 29%;
+}
+&30{
+	flex-basis: 30%;
+}
+&31{
+	flex-basis: 31%;
+}
+&32{
+	flex-basis: 32%;
+}
+&33{
+	flex-basis: 33%;
+}
+&34{
+	flex-basis: 34%;
+}
+&35{
+	flex-basis: 35%;
+}
+&36{
+	flex-basis: 36%;
+}
+&37{
+	flex-basis: 37%;
+}
+&38{
+	flex-basis: 38%;
+}
+&39{
+	flex-basis: 39%;
+}
+&40{
+	flex-basis: 40%;
+}
+&41{
+	flex-basis: 41%;
+}
+&42{
+	flex-basis: 42%;
+}
+&43{
+	flex-basis: 43%;
+}
+&44{
+	flex-basis: 44%;
+}
+&45{
+	flex-basis: 45%;
+}
+&46{
+	flex-basis: 46%;
+}
+&47{
+	flex-basis: 47%;
+}
+&48{
+	flex-basis: 48%;
+}
+&49{
+	flex-basis: 49%;
+}
+&50{
+	flex-basis: 50%;
+}
+&51{
+	flex-basis: 51%;
+}
+&52{
+	flex-basis: 52%;
+}
+&53{
+	flex-basis: 53%;
+}
+&54{
+	flex-basis: 54%;
+}
+&55{
+	flex-basis: 55%;
+}
+&56{
+	flex-basis: 56%;
+}
+&57{
+	flex-basis: 57%;
+}
+&58{
+	flex-basis: 58%;
+}
+&59{
+	flex-basis: 59%;
+}
+&60{
+	flex-basis: 60%;
+}
+&61{
+	flex-basis: 61%;
+}
+&62{
+	flex-basis: 62%;
+}
+&63{
+	flex-basis: 63%;
+}
+&64{
+	flex-basis: 64%;
+}
+&65{
+	flex-basis: 65%;
+}
+&66{
+	flex-basis: 66%;
+}
+&67{
+	flex-basis: 67%;
+}
+&68{
+	flex-basis: 68%;
+}
+&69{
+	flex-basis: 69%;
+}
+&70{
+	flex-basis: 70%;
+}
+&71{
+	flex-basis: 71%;
+}
+&72{
+	flex-basis: 72%;
+}
+&73{
+	flex-basis: 73%;
+}
+&74{
+	flex-basis: 74%;
+}
+&75{
+	flex-basis: 75%;
+}
+&76{
+	flex-basis: 76%;
+}
+&77{
+	flex-basis: 77%;
+}
+&78{
+	flex-basis: 78%;
+}
+&79{
+	flex-basis: 79%;
+}
+&80{
+	flex-basis: 80%;
+}
+&81{
+	flex-basis: 81%;
+}
+&82{
+	flex-basis: 82%;
+}
+&83{
+	flex-basis: 83%;
+}
+&84{
+	flex-basis: 84%;
+}
+&85{
+	flex-basis: 85%;
+}
+&86{
+	flex-basis: 86%;
+}
+&87{
+	flex-basis: 87%;
+}
+&88{
+	flex-basis: 88%;
+}
+&89{
+	flex-basis: 89%;
+}
+&90{
+	flex-basis: 90%;
+}
+&91{
+	flex-basis: 91%;
+}
+&92{
+	flex-basis: 92%;
+}
+&93{
+	flex-basis: 93%;
+}
+&94{
+	flex-basis: 94%;
+}
+&95{
+	flex-basis: 95%;
+}
+&96{
+	flex-basis: 96%;
+}
+&97{
+	flex-basis: 97%;
+}
+&98{
+	flex-basis: 98%;
+}
+&99{
+	flex-basis: 99%;
+}
+&100, &full{
+	flex-basis: 100%;
+}
+&101{
+	flex-basis: 101%;
+}
+&102{
+	flex-basis: 102%;
+}
+&103{
+	flex-basis: 103%;
+}
+&104{
+	flex-basis: 104%;
+}
+&105{
+	flex-basis: 105%;
+}
+&106{
+	flex-basis: 106%;
+}
+&107{
+	flex-basis: 107%;
+}
+&108{
+	flex-basis: 108%;
+}
+&109{
+	flex-basis: 109%;
+}
+&110{
+	flex-basis: 110%;
+}
+&111{
+	flex-basis: 111%;
+}
+&112{
+	flex-basis: 112%;
+}
+&113{
+	flex-basis: 113%;
+}
+&114{
+	flex-basis: 114%;
+}
+&115{
+	flex-basis: 115%;
+}
+&116{
+	flex-basis: 116%;
+}
+&117{
+	flex-basis: 117%;
+}
+&118{
+	flex-basis: 118%;
+}
+&119{
+	flex-basis: 119%;
+}
+&120{
+	flex-basis: 120%;
+}
+&121{
+	flex-basis: 121%;
+}
+&122{
+	flex-basis: 122%;
+}
+&123{
+	flex-basis: 123%;
+}
+&124{
+	flex-basis: 124%;
+}
+&125{
+	flex-basis: 125%;
+}
+&126{
+	flex-basis: 126%;
+}
+&127{
+	flex-basis: 127%;
+}
+&128{
+	flex-basis: 128%;
+}
+&129{
+	flex-basis: 129%;
+}
+&130{
+	flex-basis: 130%;
+}
+&131{
+	flex-basis: 131%;
+}
+&132{
+	flex-basis: 132%;
+}
+&133{
+	flex-basis: 133%;
+}
+&134{
+	flex-basis: 134%;
+}
+&135{
+	flex-basis: 135%;
+}
+&136{
+	flex-basis: 136%;
+}
+&137{
+	flex-basis: 137%;
+}
+&138{
+	flex-basis: 138%;
+}
+&139{
+	flex-basis: 139%;
+}
+&140{
+	flex-basis: 140%;
+}
+&141{
+	flex-basis: 141%;
+}
+&142{
+	flex-basis: 142%;
+}
+&143{
+	flex-basis: 143%;
+}
+&144{
+	flex-basis: 144%;
+}
+&145{
+	flex-basis: 145%;
+}
+&146{
+	flex-basis: 146%;
+}
+&147{
+	flex-basis: 147%;
+}
+&148{
+	flex-basis: 148%;
+}
+&149{
+	flex-basis: 149%;
+}
+&150{
+	flex-basis: 150%;
+}
+&151{
+	flex-basis: 151%;
+}
+&152{
+	flex-basis: 152%;
+}
+&153{
+	flex-basis: 153%;
+}
+&154{
+	flex-basis: 154%;
+}
+&155{
+	flex-basis: 155%;
+}
+&156{
+	flex-basis: 156%;
+}
+&157{
+	flex-basis: 157%;
+}
+&158{
+	flex-basis: 158%;
+}
+&159{
+	flex-basis: 159%;
+}
+&160{
+	flex-basis: 160%;
+}
+&161{
+	flex-basis: 161%;
+}
+&162{
+	flex-basis: 162%;
+}
+&163{
+	flex-basis: 163%;
+}
+&164{
+	flex-basis: 164%;
+}
+&165{
+	flex-basis: 165%;
+}
+&166{
+	flex-basis: 166%;
+}
+&167{
+	flex-basis: 167%;
+}
+&168{
+	flex-basis: 168%;
+}
+&169{
+	flex-basis: 169%;
+}
+&170{
+	flex-basis: 170%;
+}
+&171{
+	flex-basis: 171%;
+}
+&172{
+	flex-basis: 172%;
+}
+&173{
+	flex-basis: 173%;
+}
+&174{
+	flex-basis: 174%;
+}
+&175{
+	flex-basis: 175%;
+}
+&176{
+	flex-basis: 176%;
+}
+&177{
+	flex-basis: 177%;
+}
+&178{
+	flex-basis: 178%;
+}
+&179{
+	flex-basis: 179%;
+}
+&180{
+	flex-basis: 180%;
+}
+&181{
+	flex-basis: 181%;
+}
+&182{
+	flex-basis: 182%;
+}
+&183{
+	flex-basis: 183%;
+}
+&184{
+	flex-basis: 184%;
+}
+&185{
+	flex-basis: 185%;
+}
+&186{
+	flex-basis: 186%;
+}
+&187{
+	flex-basis: 187%;
+}
+&188{
+	flex-basis: 188%;
+}
+&189{
+	flex-basis: 189%;
+}
+&190{
+	flex-basis: 190%;
+}
+&191{
+	flex-basis: 191%;
+}
+&192{
+	flex-basis: 192%;
+}
+&193{
+	flex-basis: 193%;
+}
+&194{
+	flex-basis: 194%;
+}
+&195{
+	flex-basis: 195%;
+}
+&196{
+	flex-basis: 196%;
+}
+&197{
+	flex-basis: 197%;
+}
+&198{
+	flex-basis: 198%;
+}
+&199{
+	flex-basis: 199%;
+}
+&200{
+	flex-basis: 200%;
+}
+&201{
+	flex-basis: 201%;
+}
+&202{
+	flex-basis: 202%;
+}
+&203{
+	flex-basis: 203%;
+}
+&204{
+	flex-basis: 204%;
+}
+&205{
+	flex-basis: 205%;
+}
+&206{
+	flex-basis: 206%;
+}
+&207{
+	flex-basis: 207%;
+}
+&208{
+	flex-basis: 208%;
+}
+&209{
+	flex-basis: 209%;
+}
+&210{
+	flex-basis: 210%;
+}
+&211{
+	flex-basis: 211%;
+}
+&212{
+	flex-basis: 212%;
+}
+&213{
+	flex-basis: 213%;
+}
+&214{
+	flex-basis: 214%;
+}
+&215{
+	flex-basis: 215%;
+}
+&216{
+	flex-basis: 216%;
+}
+&217{
+	flex-basis: 217%;
+}
+&218{
+	flex-basis: 218%;
+}
+&219{
+	flex-basis: 219%;
+}
+&220{
+	flex-basis: 220%;
+}
+&221{
+	flex-basis: 221%;
+}
+&222{
+	flex-basis: 222%;
+}
+&223{
+	flex-basis: 223%;
+}
+&224{
+	flex-basis: 224%;
+}
+&225{
+	flex-basis: 225%;
+}
+&226{
+	flex-basis: 226%;
+}
+&227{
+	flex-basis: 227%;
+}
+&228{
+	flex-basis: 228%;
+}
+&229{
+	flex-basis: 229%;
+}
+&230{
+	flex-basis: 230%;
+}
+&231{
+	flex-basis: 231%;
+}
+&232{
+	flex-basis: 232%;
+}
+&233{
+	flex-basis: 233%;
+}
+&234{
+	flex-basis: 234%;
+}
+&235{
+	flex-basis: 235%;
+}
+&236{
+	flex-basis: 236%;
+}
+&237{
+	flex-basis: 237%;
+}
+&238{
+	flex-basis: 238%;
+}
+&239{
+	flex-basis: 239%;
+}
+&240{
+	flex-basis: 240%;
+}
+&241{
+	flex-basis: 241%;
+}
+&242{
+	flex-basis: 242%;
+}
+&243{
+	flex-basis: 243%;
+}
+&244{
+	flex-basis: 244%;
+}
+&245{
+	flex-basis: 245%;
+}
+&246{
+	flex-basis: 246%;
+}
+&247{
+	flex-basis: 247%;
+}
+&248{
+	flex-basis: 248%;
+}
+&249{
+	flex-basis: 249%;
+}
+&250{
+	flex-basis: 250%;
+}
+&251{
+	flex-basis: 251%;
+}
+&252{
+	flex-basis: 252%;
+}
+&253{
+	flex-basis: 253%;
+}
+&254{
+	flex-basis: 254%;
+}
+&255{
+	flex-basis: 255%;
+}
+&256{
+	flex-basis: 256%;
+}
+&257{
+	flex-basis: 257%;
+}
+&258{
+	flex-basis: 258%;
+}
+&259{
+	flex-basis: 259%;
+}
+&260{
+	flex-basis: 260%;
+}
+&261{
+	flex-basis: 261%;
+}
+&262{
+	flex-basis: 262%;
+}
+&263{
+	flex-basis: 263%;
+}
+&264{
+	flex-basis: 264%;
+}
+&265{
+	flex-basis: 265%;
+}
+&266{
+	flex-basis: 266%;
+}
+&267{
+	flex-basis: 267%;
+}
+&268{
+	flex-basis: 268%;
+}
+&269{
+	flex-basis: 269%;
+}
+&270{
+	flex-basis: 270%;
+}
+&271{
+	flex-basis: 271%;
+}
+&272{
+	flex-basis: 272%;
+}
+&273{
+	flex-basis: 273%;
+}
+&274{
+	flex-basis: 274%;
+}
+&275{
+	flex-basis: 275%;
+}
+&276{
+	flex-basis: 276%;
+}
+&277{
+	flex-basis: 277%;
+}
+&278{
+	flex-basis: 278%;
+}
+&279{
+	flex-basis: 279%;
+}
+&280{
+	flex-basis: 280%;
+}
+&281{
+	flex-basis: 281%;
+}
+&282{
+	flex-basis: 282%;
+}
+&283{
+	flex-basis: 283%;
+}
+&284{
+	flex-basis: 284%;
+}
+&285{
+	flex-basis: 285%;
+}
+&286{
+	flex-basis: 286%;
+}
+&287{
+	flex-basis: 287%;
+}
+&288{
+	flex-basis: 288%;
+}
+&289{
+	flex-basis: 289%;
+}
+&290{
+	flex-basis: 290%;
+}
+&291{
+	flex-basis: 291%;
+}
+&292{
+	flex-basis: 292%;
+}
+&293{
+	flex-basis: 293%;
+}
+&294{
+	flex-basis: 294%;
+}
+&295{
+	flex-basis: 295%;
+}
+&296{
+	flex-basis: 296%;
+}
+&297{
+	flex-basis: 297%;
+}
+&298{
+	flex-basis: 298%;
+}
+&299{
+	flex-basis: 299%;
+}
+&300{
+	flex-basis: 300%;
+}
+&301{
+	flex-basis: 301%;
+}
+&302{
+	flex-basis: 302%;
+}
+&303{
+	flex-basis: 303%;
+}
+&304{
+	flex-basis: 304%;
+}
+&305{
+	flex-basis: 305%;
+}
+&306{
+	flex-basis: 306%;
+}
+&307{
+	flex-basis: 307%;
+}
+&308{
+	flex-basis: 308%;
+}
+&309{
+	flex-basis: 309%;
+}
+&310{
+	flex-basis: 310%;
+}
+&311{
+	flex-basis: 311%;
+}
+&312{
+	flex-basis: 312%;
+}
+&313{
+	flex-basis: 313%;
+}
+&314{
+	flex-basis: 314%;
+}
+&315{
+	flex-basis: 315%;
+}
+&316{
+	flex-basis: 316%;
+}
+&317{
+	flex-basis: 317%;
+}
+&318{
+	flex-basis: 318%;
+}
+&319{
+	flex-basis: 319%;
+}
+&320{
+	flex-basis: 320%;
+}
+&321{
+	flex-basis: 321%;
+}
+&322{
+	flex-basis: 322%;
+}
+&323{
+	flex-basis: 323%;
+}
+&324{
+	flex-basis: 324%;
+}
+&325{
+	flex-basis: 325%;
+}
+&326{
+	flex-basis: 326%;
+}
+&327{
+	flex-basis: 327%;
+}
+&328{
+	flex-basis: 328%;
+}
+&329{
+	flex-basis: 329%;
+}
+&330{
+	flex-basis: 330%;
+}
+&331{
+	flex-basis: 331%;
+}
+&332{
+	flex-basis: 332%;
+}
+&333{
+	flex-basis: 333%;
+}
+&334{
+	flex-basis: 334%;
+}
+&335{
+	flex-basis: 335%;
+}
+&336{
+	flex-basis: 336%;
+}
+&337{
+	flex-basis: 337%;
+}
+&338{
+	flex-basis: 338%;
+}
+&339{
+	flex-basis: 339%;
+}
+&340{
+	flex-basis: 340%;
+}
+&341{
+	flex-basis: 341%;
+}
+&342{
+	flex-basis: 342%;
+}
+&343{
+	flex-basis: 343%;
+}
+&344{
+	flex-basis: 344%;
+}
+&345{
+	flex-basis: 345%;
+}
+&346{
+	flex-basis: 346%;
+}
+&347{
+	flex-basis: 347%;
+}
+&348{
+	flex-basis: 348%;
+}
+&349{
+	flex-basis: 349%;
+}
+&350{
+	flex-basis: 350%;
+}
+&351{
+	flex-basis: 351%;
+}
+&352{
+	flex-basis: 352%;
+}
+&353{
+	flex-basis: 353%;
+}
+&354{
+	flex-basis: 354%;
+}
+&355{
+	flex-basis: 355%;
+}
+&356{
+	flex-basis: 356%;
+}
+&357{
+	flex-basis: 357%;
+}
+&358{
+	flex-basis: 358%;
+}
+&359{
+	flex-basis: 359%;
+}
+&360{
+	flex-basis: 360%;
+}
+&361{
+	flex-basis: 361%;
+}
+&362{
+	flex-basis: 362%;
+}
+&363{
+	flex-basis: 363%;
+}
+&364{
+	flex-basis: 364%;
+}
+&365{
+	flex-basis: 365%;
+}
+&366{
+	flex-basis: 366%;
+}
+&367{
+	flex-basis: 367%;
+}
+&368{
+	flex-basis: 368%;
+}
+&369{
+	flex-basis: 369%;
+}
+&370{
+	flex-basis: 370%;
+}
+&371{
+	flex-basis: 371%;
+}
+&372{
+	flex-basis: 372%;
+}
+&373{
+	flex-basis: 373%;
+}
+&374{
+	flex-basis: 374%;
+}
+&375{
+	flex-basis: 375%;
+}
+&376{
+	flex-basis: 376%;
+}
+&377{
+	flex-basis: 377%;
+}
+&378{
+	flex-basis: 378%;
+}
+&379{
+	flex-basis: 379%;
+}
+&380{
+	flex-basis: 380%;
+}
+&381{
+	flex-basis: 381%;
+}
+&382{
+	flex-basis: 382%;
+}
+&383{
+	flex-basis: 383%;
+}
+&384{
+	flex-basis: 384%;
+}
+&385{
+	flex-basis: 385%;
+}
+&386{
+	flex-basis: 386%;
+}
+&387{
+	flex-basis: 387%;
+}
+&388{
+	flex-basis: 388%;
+}
+&389{
+	flex-basis: 389%;
+}
+&390{
+	flex-basis: 390%;
+}
+&391{
+	flex-basis: 391%;
+}
+&392{
+	flex-basis: 392%;
+}
+&393{
+	flex-basis: 393%;
+}
+&394{
+	flex-basis: 394%;
+}
+&395{
+	flex-basis: 395%;
+}
+&396{
+	flex-basis: 396%;
+}
+&397{
+	flex-basis: 397%;
+}
+&398{
+	flex-basis: 398%;
+}
+&399{
+	flex-basis: 399%;
+}
+&400{
+	flex-basis: 400%;
+}
+&401{
+	flex-basis: 401%;
+}
+&402{
+	flex-basis: 402%;
+}
+&403{
+	flex-basis: 403%;
+}
+&404{
+	flex-basis: 404%;
+}
+&405{
+	flex-basis: 405%;
+}
+&406{
+	flex-basis: 406%;
+}
+&407{
+	flex-basis: 407%;
+}
+&408{
+	flex-basis: 408%;
+}
+&409{
+	flex-basis: 409%;
+}
+&410{
+	flex-basis: 410%;
+}
+&411{
+	flex-basis: 411%;
+}
+&412{
+	flex-basis: 412%;
+}
+&413{
+	flex-basis: 413%;
+}
+&414{
+	flex-basis: 414%;
+}
+&415{
+	flex-basis: 415%;
+}
+&416{
+	flex-basis: 416%;
+}
+&417{
+	flex-basis: 417%;
+}
+&418{
+	flex-basis: 418%;
+}
+&419{
+	flex-basis: 419%;
+}
+&420{
+	flex-basis: 420%;
+}
+&421{
+	flex-basis: 421%;
+}
+&422{
+	flex-basis: 422%;
+}
+&423{
+	flex-basis: 423%;
+}
+&424{
+	flex-basis: 424%;
+}
+&425{
+	flex-basis: 425%;
+}
+&426{
+	flex-basis: 426%;
+}
+&427{
+	flex-basis: 427%;
+}
+&428{
+	flex-basis: 428%;
+}
+&429{
+	flex-basis: 429%;
+}
+&430{
+	flex-basis: 430%;
+}
+&431{
+	flex-basis: 431%;
+}
+&432{
+	flex-basis: 432%;
+}
+&433{
+	flex-basis: 433%;
+}
+&434{
+	flex-basis: 434%;
+}
+&435{
+	flex-basis: 435%;
+}
+&436{
+	flex-basis: 436%;
+}
+&437{
+	flex-basis: 437%;
+}
+&438{
+	flex-basis: 438%;
+}
+&439{
+	flex-basis: 439%;
+}
+&440{
+	flex-basis: 440%;
+}
+&441{
+	flex-basis: 441%;
+}
+&442{
+	flex-basis: 442%;
+}
+&443{
+	flex-basis: 443%;
+}
+&444{
+	flex-basis: 444%;
+}
+&445{
+	flex-basis: 445%;
+}
+&446{
+	flex-basis: 446%;
+}
+&447{
+	flex-basis: 447%;
+}
+&448{
+	flex-basis: 448%;
+}
+&449{
+	flex-basis: 449%;
+}
+&450{
+	flex-basis: 450%;
+}
+&451{
+	flex-basis: 451%;
+}
+&452{
+	flex-basis: 452%;
+}
+&453{
+	flex-basis: 453%;
+}
+&454{
+	flex-basis: 454%;
+}
+&455{
+	flex-basis: 455%;
+}
+&456{
+	flex-basis: 456%;
+}
+&457{
+	flex-basis: 457%;
+}
+&458{
+	flex-basis: 458%;
+}
+&459{
+	flex-basis: 459%;
+}
+&460{
+	flex-basis: 460%;
+}
+&461{
+	flex-basis: 461%;
+}
+&462{
+	flex-basis: 462%;
+}
+&463{
+	flex-basis: 463%;
+}
+&464{
+	flex-basis: 464%;
+}
+&465{
+	flex-basis: 465%;
+}
+&466{
+	flex-basis: 466%;
+}
+&467{
+	flex-basis: 467%;
+}
+&468{
+	flex-basis: 468%;
+}
+&469{
+	flex-basis: 469%;
+}
+&470{
+	flex-basis: 470%;
+}
+&471{
+	flex-basis: 471%;
+}
+&472{
+	flex-basis: 472%;
+}
+&473{
+	flex-basis: 473%;
+}
+&474{
+	flex-basis: 474%;
+}
+&475{
+	flex-basis: 475%;
+}
+&476{
+	flex-basis: 476%;
+}
+&477{
+	flex-basis: 477%;
+}
+&478{
+	flex-basis: 478%;
+}
+&479{
+	flex-basis: 479%;
+}
+&480{
+	flex-basis: 480%;
+}
+&481{
+	flex-basis: 481%;
+}
+&482{
+	flex-basis: 482%;
+}
+&483{
+	flex-basis: 483%;
+}
+&484{
+	flex-basis: 484%;
+}
+&485{
+	flex-basis: 485%;
+}
+&486{
+	flex-basis: 486%;
+}
+&487{
+	flex-basis: 487%;
+}
+&488{
+	flex-basis: 488%;
+}
+&489{
+	flex-basis: 489%;
+}
+&490{
+	flex-basis: 490%;
+}
+&491{
+	flex-basis: 491%;
+}
+&492{
+	flex-basis: 492%;
+}
+&493{
+	flex-basis: 493%;
+}
+&494{
+	flex-basis: 494%;
+}
+&495{
+	flex-basis: 495%;
+}
+&496{
+	flex-basis: 496%;
+}
+&497{
+	flex-basis: 497%;
+}
+&498{
+	flex-basis: 498%;
+}
+&499{
+	flex-basis: 499%;
+}
+&500{
+	flex-basis: 500%;
+}
+
+}

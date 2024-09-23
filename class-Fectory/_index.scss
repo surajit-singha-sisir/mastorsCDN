@@ -1,0 +1,18 @@
+@use "../variables-Fectory/rem-vars" as *;
+@forward "scrollbar";
+@forward "column-2-flex";
+
+
+
+// MARGIN VARIABLE
+@forward "margins";
+
+// PADDING VARIABLES
+@forward "paddings";
+
+ 
+// ABSOLUTE LEFT TOP RIGHT BOTTOM
+// @forward "leftTopRightBottoms";
+
+
+@forward "transforms";

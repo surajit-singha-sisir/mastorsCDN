@@ -1,0 +1,1045 @@
+/* ----------------------------------------------------------------
+BACKGROUND COLOR SETS
+----------------------------------------------------------------
+*/
+.f-Black,
+.Black,
+.f-Bla,
+.f-Blk,
+.f-Kalo,
+.f-000000,
+.কালো {
+  color: #000000;
+}
+
+.f-White,
+.f-Whi,
+.f-Wht,
+.f-Sada,
+.f-ffffff,
+.সাদা {
+  color: #ffffff;
+}
+
+.f-Red,
+.f-Re,
+.f-Rd,
+.f-Lal,
+.f-ff0000,
+.লাল {
+  color: #ff0000;
+}
+
+.f-Green,
+.f-Gre,
+.f-Grn,
+.f-Sobuj,
+.f-00ff00,
+.সবুজ {
+  color: #00ff00;
+}
+
+.f-Blue,
+.f-Blu,
+.f-Ble,
+.f-Nil,
+.f-0000ff,
+.নীল {
+  color: #0000ff;
+}
+
+.f-Orange,
+.f-Ora,
+.f-Org,
+.f-Komola,
+.f-ffa500,
+.কমলা {
+  color: #ffa500;
+}
+
+.f-Yellow,
+.f-Yel,
+.f-Ylw,
+.f-Holud,
+.f-ffff00,
+.হলুদ {
+  color: #ffff00;
+}
+
+.f-Purple,
+.f-Pur,
+.f-Prp,
+.f-Jam,
+.f-800080,
+.জামুন {
+  color: #800080;
+}
+
+.f-Cyan,
+.f-Cya,
+.f-Cyn,
+.f-Firoz,
+.f-00ffff,
+.ফিরোজা {
+  color: #00ffff;
+}
+
+.f-Gray,
+.f-Gra,
+.f-Gry,
+.f-Surma,
+.f-808080,
+.ধূসর {
+  color: #808080;
+}
+
+.f-Silver,
+.f-Sil,
+.f-Slv,
+.f-Chandi,
+.f-c0c0c0,
+.রুপা {
+  color: #c0c0c0;
+}
+
+.f-Maroon,
+.f-Mar,
+.f-Mrn,
+.f-Gorom,
+.f-800000,
+.গাঢ়-লাল {
+  color: #800000;
+}
+
+.f-Olive,
+.f-Oli,
+.f-Olv,
+.f-808000,
+.অলিভ {
+  color: #808000;
+}
+
+.f-Teal,
+.f-Tea,
+.f-Tel,
+.f-Nilgiri,
+.f-008080,
+.নীল-সবুজ {
+  color: #008080;
+}
+
+.f-Navy,
+.f-Nav,
+.f-Nvy,
+.f-Nabi,
+.f-000080,
+.নেভি {
+  color: #000080;
+}
+
+.f-Fuchsia,
+.f-Fuc,
+.f-Fsh,
+.f-Gorib,
+.f-ff00ff,
+.ফুসিয়া {
+  color: #ff00ff;
+}
+
+.f-Pink,
+.f-Pin,
+.f-Pnk,
+.f-Gulabi,
+.f-ffc0cb,
+.গোলাপি {
+  color: #ffc0cb;
+}
+
+.f-YellowGreen,
+.f-YelGre,
+.f-YGr,
+.f-HoludSobuji,
+.f-9acd32,
+.হলুদ-সবুজ {
+  color: #9acd32;
+}
+
+.f-OliveDrab,
+.f-OliDra,
+.f-ODb,
+.f-6b8e23,
+.অলিভ-ড্র্যাব {
+  color: #6b8e23;
+}
+
+.f-GreenYellow,
+.f-GreYel,
+.f-GYl,
+.f-adff2f,
+.সবুজ-হলুদ {
+  color: #adff2f;
+}
+
+.f-LimeGreen,
+.f-LimGre,
+.f-LGr,
+.f-Paal,
+.f-32cd32,
+.লেবুর-সবুজ {
+  color: #32cd32;
+}
+
+.f-PaleGreen,
+.f-PalGre,
+.f-PGr,
+.f-98fb98,
+.ফিকে-সবুজ {
+  color: #98fb98;
+}
+
+.f-DarkSeaGreen,
+.f-DarSeaGre,
+.f-DGr,
+.f-GaroSomudroSobuj,
+.f-8fbc8f,
+.গাঢ়-সাগর-সবুজ {
+  color: #8fbc8f;
+}
+
+.f-MediumSeaGreen,
+.f-MedSeaGre,
+.f-MGr,
+.f-3cb371,
+.মাঝারি-সাগর-সবুজ {
+  color: #3cb371;
+}
+
+.f-SeaGreen,
+.f-SeaGre,
+.f-SGr,
+.f-Samudrik,
+.f-2e8b57,
+.সাগর-সবুজ {
+  color: #2e8b57;
+}
+
+.f-ForestGreen,
+.f-ForGre,
+.f-FGr,
+.f-Jungle,
+.f-228b22,
+.জঙ্গল-সবুজ {
+  color: #228b22;
+}
+
+.f-LightGray,
+.f-LigGra,
+.f-LGr,
+.f-Halka,
+.f-d3d3d3,
+.হালকা-ধূসর {
+  color: #d3d3d3;
+}
+
+.f-LightCoral,
+.f-LigCor,
+.f-LCo,
+.f-Halka2,
+.f-f08080,
+.হালকা-করাল {
+  color: #f08080;
+}
+
+.f-LightSalmon,
+.f-LigSal,
+.f-LSa,
+.f-Ranga,
+.f-ffa07a,
+.হালকা-সালমনের {
+  color: #ffa07a;
+}
+
+.f-LightPink,
+.f-LigPin,
+.f-LPn,
+.f-Gulabi,
+.f-ffb6c1,
+.হালকা-গোলাপি {
+  color: #ffb6c1;
+}
+
+.f-LightGoldenRodYellow,
+.f-LigRodYel,
+.f-LGY,
+.f-Gora,
+.f-fafad2,
+.হালকা-স্বর্ণ-হলুদ {
+  color: #fafad2;
+}
+
+.f-LightSteelBlue,
+.f-LigSteBlu,
+.f-LSB,
+.f-b0c4de,
+.হালকা-স্টীল-নীল {
+  color: #b0c4de;
+}
+
+.f-LightSkyBlue,
+.f-LigSkyBlu,
+.f-LSk,
+.f-Aasman,
+.f-87cefa,
+.হালকা-আকাশ-নীল {
+  color: #87cefa;
+}
+
+.f-Lavender,
+.f-Lav,
+.f-Bangla,
+.f-e6e6fa,
+.ল্যাভেন্ডার {
+  color: #e6e6fa;
+}
+
+.f-MistyRose,
+.f-MisRos,
+.f-MRo,
+.f-Gulabi,
+.f-ffe4e1,
+.ঝাপসা-গোলাপি {
+  color: #ffe4e1;
+}
+
+.f-NavajoWhite,
+.f-NavWhi,
+.f-NWh,
+.f-Poori,
+.f-ffdead,
+.নাভাজো-সাদা {
+  color: #ffdead;
+}
+
+.f-Wheat,
+.f-Whe,
+.f-Ghee,
+.f-f5deb3,
+.গম {
+  color: #f5deb3;
+}
+
+.f-AntiqueWhite,
+.f-AntWhi,
+.f-AWh,
+.f-Paakhi,
+.f-faebd7,
+.প্রাচীন-সাদা {
+  color: #faebd7;
+}
+
+.f-Cornsilk,
+.f-Cor,
+.f-Maach,
+.f-fff8dc,
+.ভুট্টার-শুকনো {
+  color: #fff8dc;
+}
+
+.f-Khaki,
+.f-Kha,
+.f-f0e68c,
+.খাকি {
+  color: #f0e68c;
+}
+
+.f-Beige,
+.f-Bei,
+.f-f5f5dc,
+.বেজ {
+  color: #f5f5dc;
+}
+
+.f-PapayaWhip,
+.f-PapWhi,
+.f-PWh,
+.f-Papaya,
+.f-ffefd5,
+.পাপায়া {
+  color: #ffefd5;
+}
+
+.f-BlanchedAlmond,
+.f-BlaAlm,
+.f-BAl,
+.f-Almond,
+.f-ffebcd,
+.ব্লাঞ্চড-আলমন্ড {
+  color: #ffebcd;
+}
+
+.f-HoneyDew,
+.f-HonDew,
+.f-HDe,
+.f-Honey,
+.f-f0fff0,
+.হানি-ডিউ {
+  color: #f0fff0;
+}
+
+.f-MintCream,
+.f-MinCre,
+.f-MCr,
+.f-Mint,
+.f-f5fffa,
+.মিন্ট-ক্রীম {
+  color: #f5fffa;
+}
+
+.f-AliceBlue,
+.f-AliBlu,
+.f-ABl,
+.f-Alice,
+.f-f0f8ff,
+.অ্যালিস-নীল {
+  color: #f0f8ff;
+}
+
+.f-Tomato,
+.f-Tom,
+.f-Tmt,
+.f-ff6347,
+.টমেটো {
+  color: #ff6347;
+}
+
+.f-Orchid,
+.f-Orc,
+.f-da70d6,
+.অর্কিড {
+  color: #da70d6;
+}
+
+.f-Turquoise,
+.f-Tur,
+.f-Tqz,
+.f-40e0d0,
+.টারকোইজ {
+  color: #40e0d0;
+}
+
+.f-DarkRed,
+.f-DarRe,
+.f-DRd,
+.f-Dag,
+.f-8b0000,
+.গাঢ়-লাল {
+  color: #8b0000;
+}
+
+.f-DarkBlue,
+.f-DarBlu,
+.f-DBl,
+.f-GaroNil,
+.f-00008b,
+.গাঢ়-নীল {
+  color: #00008b;
+}
+
+.f-DarkGreen,
+.f-DarGre,
+.f-DGr,
+.f-Dhushar,
+.f-006400,
+.গাঢ়-সবুজ {
+  color: #006400;
+}
+
+.f-Indigo,
+.f-Ind,
+.f-Nay,
+.f-4b0082,
+.ইন্ডিগো {
+  color: #4b0082;
+}
+
+.f-Violet,
+.f-Vio,
+.f-Bangla,
+.f-ee82ee,
+.ভায়োলেট {
+  color: #ee82ee;
+}
+
+.f-Peru,
+.f-Per,
+.f-cd853f,
+.পেরু {
+  color: #cd853f;
+}
+
+.f-Chocolate,
+.f-Cho,
+.f-d2691e,
+.চকোলেট {
+  color: #d2691e;
+}
+
+.f-Gold,
+.f-Gol,
+.f-Sona,
+.f-ffd700,
+.সোনালী {
+  color: #ffd700;
+}
+
+.f-Plum,
+.f-Plu,
+.f-Bengali,
+.f-dda0dd,
+.প্রম {
+  color: #dda0dd;
+}
+
+.f-Sienna,
+.f-Sie,
+.f-Keshari,
+.f-a0522d,
+.সিয়েনা {
+  color: #a0522d;
+}
+
+.f-Salmon,
+.f-Sal,
+.f-Ranga,
+.f-fa8072,
+.সালমন {
+  color: #fa8072;
+}
+
+.f-Snow,
+.f-Sno,
+.f-Barish,
+.f-fffafa,
+.তুষার {
+  color: #fffafa;
+}
+
+.f-Tan,
+.f-Brown,
+.f-d2b48c,
+.ট্যান {
+  color: #d2b48c;
+}
+
+.f-MediumPurple,
+.f-MedPur,
+.f-MPr,
+.f-9370db,
+.মাঝারি-বেগুনি {
+  color: #9370db;
+}
+
+.f-MediumOrchid,
+.f-MedOrc,
+.f-MOr,
+.f-ba55d3,
+.মাঝারি-অর্কিড {
+  color: #ba55d3;
+}
+
+.f-MediumTurquoise,
+.f-MedTur,
+.f-MTq,
+.f-48d1cc,
+.মাঝারি-টারকোইজ {
+  color: #48d1cc;
+}
+
+.f-SlateBlue,
+.f-SlaBlu,
+.f-SBl,
+.f-6a5acd,
+.স্লেট-ব্লু {
+  color: #6a5acd;
+}
+
+.f-SlateGray,
+.f-SlaGra,
+.f-SGr,
+.f-708090,
+.স্লেট-গ্রে {
+  color: #708090;
+}
+
+.f-SpringGreen,
+.f-SprGre,
+.f-SGr,
+.f-Nobob,
+.f-00ff7f,
+.স্প্রিং-গ্রিন {
+  color: #00ff7f;
+}
+
+.f-SandyBrown,
+.f-SanBro,
+.f-SBr,
+.f-Sandy,
+.f-f4a460,
+.স্যান্ডি-ব্রাউন {
+  color: #f4a460;
+}
+
+
+// ALL IN A SCSS VARIABLE FORMAT
+$f-Black: #000000;
+$Black: #000000;
+$f-Bla: #000000;
+$f-Blk: #000000;
+$f-Kalo: #000000;
+$f-000000: #000000;
+$কালো: #000000;
+
+$f-White: #ffffff;
+$f-Whi: #ffffff;
+$f-Wht: #ffffff;
+$f-Sada: #ffffff;
+$f-ffffff: #ffffff;
+$সাদা: #ffffff;
+
+$f-Red: #ff0000;
+$f-Re: #ff0000;
+$f-Rd: #ff0000;
+$f-Lal: #ff0000;
+$f-ff0000: #ff0000;
+$লাল: #ff0000;
+
+$f-Green: #00ff00;
+$f-Gre: #00ff00;
+$f-Grn: #00ff00;
+$f-Sobuj: #00ff00;
+$f-00ff00: #00ff00;
+$সবুজ: #00ff00;
+
+$f-Blue: #0000ff;
+$f-Blu: #0000ff;
+$f-Ble: #0000ff;
+$f-Nil: #0000ff;
+$f-0000ff: #0000ff;
+$নীল: #0000ff;
+
+
+
+$f-Orange: #ffa500;
+$f-Ora: #ffa500;
+$f-Org: #ffa500;
+$f-Komola: #ffa500;
+$f-ffa500: #ffa500;
+$নীল: #ffa500;
+
+
+
+$f-Yellow: #ffff00;
+$f-Yel: #ffff00;
+$f-Ylw: #ffff00;
+$f-Holud: #ffff00;
+$f-ffff00: #ffff00;
+$হলুদ: #ffff00;
+
+$f-Purple: #800080;
+$f-Pur: #800080;
+$f-Prp: #800080;
+$f-Jam: #800080;
+$f-800080: #800080;
+$জামুন: #800080;
+
+$f-Cyan: #00ffff;
+$f-Cya: #00ffff;
+$f-Cyn: #00ffff;
+$f-Firoz: #00ffff;
+$f-00ffff: #00ffff;
+$ফিরোজা: #00ffff;
+
+$f-Gray: #808080;
+$f-Gra: #808080;
+$f-Gry: #808080;
+$f-Surma: #808080;
+$f-808080: #808080;
+$ধূসর: #808080;
+
+$f-Silver: #c0c0c0;
+$f-Sil: #c0c0c0;
+$f-Slv: #c0c0c0;
+$f-Chandi: #c0c0c0;
+$f-c0c0c0: #c0c0c0;
+$রুপা: #c0c0c0;
+
+$f-Maroon: #800000;
+$f-Mar: #800000;
+$f-Mrn: #800000;
+$f-Gorom: #800000;
+$f-800000: #800000;
+$গাঢ়-লাল: #800000;
+
+$f-Olive: #808000;
+$f-Oli: #808000;
+$f-Olv: #808000;
+$f-808000: #808000;
+$অলিভ: #808000;
+
+$f-Teal: #008080;
+$f-Tea: #008080;
+$f-Tel: #008080;
+$f-Nilgiri: #008080;
+$f-008080: #008080;
+$নীল-সবুজ: #008080;
+
+$f-Navy: #000080;
+$f-Nav: #000080;
+$f-Nvy: #000080;
+$f-Nabi: #000080;
+$f-000080: #000080;
+$নেভি: #000080;
+
+$f-Fuchsia: #ff00ff;
+$f-Fuc: #ff00ff;
+$f-Fsh: #ff00ff;
+$f-Gorib: #ff00ff;
+$f-ff00ff: #ff00ff;
+$ফুসিয়া: #ff00ff;
+
+$f-Pink: #ffc0cb;
+$f-Pin: #ffc0cb;
+$f-Pnk: #ffc0cb;
+$f-Gulabi: #ffc0cb;
+$f-ffc0cb: #ffc0cb;
+$গোলাপি: #ffc0cb;
+
+$f-YellowGreen: #9acd32;
+$f-YelGre: #9acd32;
+$f-YGr: #9acd32;
+$f-HoludSobuji: #9acd32;
+$f-9acd32: #9acd32;
+$হলুদ-সবুজ: #9acd32;
+
+$f-OliveDrab: #6b8e23;
+$f-OliDra: #6b8e23;
+$f-ODb: #6b8e23;
+$f-6b8e23: #6b8e23;
+$অলিভ-ড্র্যাব: #6b8e23;
+
+$f-GreenYellow: #adff2f;
+$f-GreYel: #adff2f;
+$f-GYl: #adff2f;
+$f-adff2f: #adff2f;
+$সবুজ-হলুদ: #adff2f;
+
+$f-LimeGreen: #32cd32;
+$f-LimGre: #32cd32;
+$f-LGr: #32cd32;
+$f-Paal: #32cd32;
+$f-32cd32: #32cd32;
+$লেবুর-সবুজ: #32cd32;
+
+$f-PaleGreen: #98fb98;
+$f-PalGre: #98fb98;
+$f-PGr: #98fb98;
+$f-98fb98: #98fb98;
+$ফিকে-সবুজ: #98fb98;
+
+$f-DarkSeaGreen: #8fbc8f;
+$f-DarSeaGre: #8fbc8f;
+$f-DGr: #8fbc8f;
+$f-GaroSomudroSobuj: #8fbc8f;
+$f-8fbc8f: #8fbc8f;
+$গাঢ়-সাগর-সবুজ: #8fbc8f;
+
+$f-MediumSeaGreen: #3cb371;
+$f-MedSeaGre: #3cb371;
+$f-MGr: #3cb371;
+$f-3cb371: #3cb371;
+$মাঝারি-সাগর-সবুজ: #3cb371;
+
+$f-SeaGreen: #2e8b57;
+$f-SeaGre: #2e8b57;
+$f-SGr: #2e8b57;
+$f-Samudrik: #2e8b57;
+$f-2e8b57: #2e8b57;
+$সাগর-সবুজ: #2e8b57;
+
+$f-ForestGreen: #228b22;
+$f-ForGre: #228b22;
+$f-FGr: #228b22;
+$f-Jungle: #228b22;
+$f-228b22: #228b22;
+$জঙ্গল-সবুজ: #228b22;
+
+$f-LightGray: #d3d3d3;
+$f-LigGra: #d3d3d3;
+$f-LGr: #d3d3d3;
+$f-Halka: #d3d3d3;
+$f-d3d3d3: #d3d3d3;
+$হালকা-ধূসর: #d3d3d3;
+
+$f-LightCoral: #f08080;
+$f-LigCor: #f08080;
+$f-LCo: #f08080;
+$f-Halka2: #f08080;
+$f-f08080: #f08080;
+$হালকা-করাল: #f08080;
+
+$f-LightSalmon: #ffa07a;
+$f-LigSal: #ffa07a;
+$f-LSa: #ffa07a;
+$f-Ranga: #ffa07a;
+$f-ffa07a: #ffa07a;
+$হালকা-সালমনের: #ffa07a;
+
+$f-LightPink: #ffb6c1;
+$f-LigPin: #ffb6c1;
+$f-LPn: #ffb6c1;
+$f-Gulabi: #ffb6c1;
+$f-ffb6c1: #ffb6c1;
+$হালকা-গোলাপি: #ffb6c1;
+
+$f-LightGoldenRodYellow: #fafad2;
+$f-LigRodYel: #fafad2;
+$f-LGY: #fafad2;
+$f-Gora: #fafad2;
+$f-fafad2: #fafad2;
+$হালকা-স্বর্ণ-হলুদ: #fafad2;
+
+$f-LightSteelBlue: #b0c4de;
+$f-LigSteBlu: #b0c4de;
+$f-LSB: #b0c4de;
+$f-b0c4de: #b0c4de;
+$হালকা-স্টীল-নীল: #b0c4de;
+
+$f-LightSkyBlue: #87cefa;
+$f-LigSkyBlu: #87cefa;
+$f-LSk: #87cefa;
+$f-Aasman: #87cefa;
+$f-87cefa: #87cefa;
+$হালকা-আকাশ-নীল: #87cefa;
+
+$f-Lavender: #e6e6fa;
+$f-Lav: #e6e6fa;
+$f-Bangla: #e6e6fa;
+$f-e6e6fa: #e6e6fa;
+$ল্যাভেন্ডার: #e6e6fa;
+
+$f-MistyRose: #ffe4e1;
+$f-MisRos: #ffe4e1;
+$f-MRo: #ffe4e1;
+$f-Gulabi: #ffe4e1;
+$f-ffe4e1: #ffe4e1;
+$ঝাপসা-গোলাপি: #ffe4e1;
+
+$f-NavajoWhite: #ffdead;
+$f-NavWhi: #ffdead;
+$f-NWh: #ffdead;
+$f-Poori: #ffdead;
+$f-ffdead: #ffdead;
+$নাভাজো-সাদা: #ffdead;
+
+$f-Wheat: #f5deb3;
+$f-Whe: #f5deb3;
+$f-Ghee: #f5deb3;
+$f-f5deb3: #f5deb3;
+$গম: #f5deb3;
+
+$f-AntiqueWhite: #faebd7;
+$f-AntWhi: #faebd7;
+$f-AWh: #faebd7;
+$f-Paakhi: #faebd7;
+$f-faebd7: #faebd7;
+$প্রাচীন-সাদা: #faebd7;
+
+$f-Cornsilk: #fff8dc;
+$f-Cor: #fff8dc;
+$f-Maach: #fff8dc;
+$f-fff8dc: #fff8dc;
+$ভুট্টার-শুকনো: #fff8dc;
+
+$f-Khaki: #f0e68c;
+$f-Kha: #f0e68c;
+$f-f0e68c: #f0e68c;
+$খাকি: #f0e68c;
+
+$f-Beige: #f5f5dc;
+$f-Bei: #f5f5dc;
+$f-f5f5dc: #f5f5dc;
+$বেজ: #f5f5dc;
+
+$f-PapayaWhip: #ffefd5;
+$f-PapWhi: #ffefd5;
+$f-PWh: #ffefd5;
+$f-Papaya: #ffefd5;
+$f-ffefd5: #ffefd5;
+$পাপায়া: #ffefd5;
+
+$f-BlanchedAlmond: #ffebcd;
+$f-BlaAlm: #ffebcd;
+$f-BAl: #ffebcd;
+$f-Almond: #ffebcd;
+$f-ffebcd: #ffebcd;
+$ব্লাঞ্চড-আলমন্ড: #ffebcd;
+
+$f-HoneyDew: #f0fff0;
+$f-HonDew: #f0fff0;
+$f-HDe: #f0fff0;
+$f-Honey: #f0fff0;
+$f-f0fff0: #f0fff0;
+$হানি-ডিউ: #f0fff0;
+
+$f-MintCream: #f5fffa;
+$f-MinCre: #f5fffa;
+$f-MCr: #f5fffa;
+$f-Mint: #f5fffa;
+$f-f5fffa: #f5fffa;
+$মিন্ট-ক্রীম: #f5fffa;
+
+$f-AliceBlue: #f0f8ff;
+$f-AliBlu: #f0f8ff;
+$f-ABl: #f0f8ff;
+$f-Alice: #f0f8ff;
+$f-f0f8ff: #f0f8ff;
+$অ্যালিস-নীল: #f0f8ff;
+
+$f-Tomato: #ff6347;
+$f-Tom: #ff6347;
+$f-Tmt: #ff6347;
+$f-ff6347: #ff6347;
+$টমেটো: #ff6347;
+
+$f-Orchid: #da70d6;
+$f-Orc: #da70d6;
+$f-da70d6: #da70d6;
+$অর্কিড: #da70d6;
+
+$f-Turquoise: #40e0d0;
+$f-Tur: #40e0d0;
+$f-Tqz: #40e0d0;
+$f-40e0d0: #40e0d0;
+$টারকোইজ: #40e0d0;
+
+$f-DarkRed: #8b0000;
+$f-DarRe: #8b0000;
+$f-DRd: #8b0000;
+$f-Dag: #8b0000;
+$f-8b0000: #8b0000;
+$গাঢ়-লাল: #8b0000;
+
+$f-DarkBlue: #00008b;
+$f-DarBlu: #00008b;
+$f-DBl: #00008b;
+$f-GaroNil: #00008b;
+$f-00008b: #00008b;
+$গাঢ়-নীল: #00008b;
+
+$f-DarkGreen: #006400;
+$f-DarGre: #006400;
+$f-DGr: #006400;
+$f-Dhushar: #006400;
+$f-006400: #006400;
+$গাঢ়-সবুজ: #006400;
+
+$f-Indigo: #4b0082;
+$f-Ind: #4b0082;
+$f-Nay: #4b0082;
+$f-4b0082: #4b0082;
+$ইন্ডিগো: #4b0082;
+
+$f-Violet: #ee82ee;
+$f-Vio: #ee82ee;
+$f-Bangla: #ee82ee;
+$f-ee82ee: #ee82ee;
+$ভায়োলেট: #ee82ee;
+
+$f-Peru: #cd853f;
+$f-Per: #cd853f;
+$f-cd853f: #cd853f;
+$পেরু: #cd853f;
+
+$f-Chocolate: #d2691e;
+$f-Cho: #d2691e;
+$f-d2691e: #d2691e;
+$চকোলেট: #d2691e;
+
+$f-Gold: #ffd700;
+$f-Gol: #ffd700;
+$f-Sona: #ffd700;
+$f-ffd700: #ffd700;
+$সোনালী: #ffd700;
+
+$f-Plum: #dda0dd;
+$f-Plu: #dda0dd;
+$f-Bengali: #dda0dd;
+$f-dda0dd: #dda0dd;
+$প্রম: #dda0dd;
+
+$f-Sienna: #a0522d;
+$f-Sie: #a0522d;
+$f-Keshari: #a0522d;
+$f-a0522d: #a0522d;
+$সিয়েনা: #a0522d;
+
+$f-Salmon: #fa8072;
+$f-Sal: #fa8072;
+$f-Ranga: #fa8072;
+$f-fa8072: #fa8072;
+$সালমন: #fa8072;
+
+$f-Snow: #fffafa;
+$f-Sno: #fffafa;
+$f-Barish: #fffafa;
+$f-fffafa: #fffafa;
+$তুষার: #fffafa;
+
+$f-Tan: #d2b48c;
+$f-Brown: #d2b48c;
+$f-d2b48c: #d2b48c;
+$ট্যান: #d2b48c;
+
+$f-MediumPurple: #9370db;
+$f-MedPur: #9370db;
+$f-MPr: #9370db;
+$f-9370db: #9370db;
+$মাঝারি-বেগুনি: #9370db;
+
+$f-MediumOrchid: #ba55d3;
+$f-MedOrc: #ba55d3;
+$f-MOr: #ba55d3;
+$f-ba55d3: #ba55d3;
+$মাঝারি-অর্কিড: #ba55d3;
+
+$f-MediumTurquoise: #48d1cc;
+$f-MedTur: #48d1cc;
+$f-MTq: #48d1cc;
+$f-48d1cc: #48d1cc;
+$মাঝারি-টারকোইজ: #48d1cc;
+
+$f-SlateBlue: #6a5acd;
+$f-SlaBlu: #6a5acd;
+$f-SBl: #6a5acd;
+$f-6a5acd: #6a5acd;
+$স্লেট-ব্লু: #6a5acd;
+
+$f-SlateGray: #708090;
+$f-SlaGra: #708090;
+$f-SGr: #708090;
+$f-708090: #708090;
+$স্লেট-গ্রে: #708090;
+
+$f-SpringGreen: #00ff7f;
+$f-SprGre: #00ff7f;
+$f-SGr: #00ff7f;
+$f-Nobob: #00ff7f;
+$f-00ff7f: #00ff7f;
+$স্প্রিং-গ্রিন: #00ff7f;
+
+$f-SandyBrown: #f4a460;
+$f-SanBro: #f4a460;
+$f-SBr: #f4a460;
+$f-Sandy: #f4a460;
+$f-f4a460: #f4a460;
+$স্যান্ডি-ব্রাউন: #f4a460;

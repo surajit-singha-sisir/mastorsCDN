@@ -1,0 +1,170 @@
+/* 1 BIG AND OTHERS 1FR GRID RESPONSIVE DESIGN */
+
+// CATEGORY GRID HTML
+/*
+<div class="categoryGrid">
+    <!-- CAT NEWS 1 -->
+    <a href="#" class="newsItem catGrid1">
+        <div class="newsContant position__Relative">
+            <div class="newsImage newsIMG">
+                <img class="img__100" src="https://dummyimage.com/800x600" alt="">
+            </div>
+            <p class=" text__Align_Justify overlayStatic">
+            
+            </p>
+        </div>
+    </a>
+
+    <!-- CAT NEWS 2 -->
+    <a href="#" class="newsItem">
+        <div class="newsImage">
+            <img class="img__100" src="https://dummyimage.com/800x600" alt="">
+        </div>
+        <p class="text__Ellipsis_2"></p>
+    </a>
+    
+</div>
+*/
+
+/* CATEGORY PAGE START */
+
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    overflow-wrap: anywhere;
+
+    .overlayStatic {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: rgb(255, 255, 255);
+        z-index: 1;
+        padding: 0 1rem;
+        border-radius: 0.3rem;
+    }
+
+    .newsImage {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.6rem;
+        border-radius: 0.3rem;
+
+        & img {
+            display: block;
+            transition: all 0.4s ease-in-out;
+            object-fit: cover;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .newsContant p:last-child {
+        font-size: 1.3rem;
+        text-shadow: 1px 2px 4px #000000b7;
+        padding-bottom: 0.5rem;
+    }
+
+    & > :first-child {
+        grid-column: 1 / span 3;
+        grid-row: span 2;
+    }
+
+    & > :nth-child(2) {
+        grid-column: 4;
+    }
+
+    & > :nth-child(3) {
+        grid-column: 5;
+    }
+
+    & > :nth-child(4) {
+        grid-row: 2;
+        grid-column: 4;
+    }
+
+    & > :nth-child(n + 4) {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .newsIMG div {
+        display: block;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .overlayStatic {
+        position: relative;
+        background: none;
+        color: black;
+        padding: 0;
+    }
+
+    .newsContant p:last-child {
+        font-size: 1.5rem !important;
+        text-shadow: none;
+        padding-bottom: 0.5rem;
+    }
+
+    .newsIMG p {
+        text-shadow: none !important;
+        margin-top: 0.8rem;
+        font-size: 1.5rem !important;
+    }
+
+    .newsItem p:nth-child(n + 2) {
+        font-size: 1.3rem;
+    }
+
+    .categoryGrid {
+        grid-template-columns: auto auto auto;
+        gap: 0.5rem;
+        overflow-wrap: anywhere;
+    }
+
+    .categoryGrid :nth-child(1) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+
+    .categoryGrid > :nth-child(n + 2) {
+        grid-column: span 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .categoryGrid {
+        grid-template-columns: auto auto;
+    }
+
+    .categoryGrid > :nth-child(1) {
+        grid-row: 1;
+    }
+
+    .categoryGrid > :nth-child(n + 2) {
+        grid-column: span 1;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .categoryGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .categoryGrid > :nth-child(n) {
+        grid-column: span 1;
+    }
+
+    .overlayStatic {
+        font-size: 1rem !important;
+    }
+}
+
+/* CATEGORY PAGE END */

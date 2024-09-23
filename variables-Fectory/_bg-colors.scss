@@ -1,0 +1,1024 @@
+/* ----------------------------------------------------------------
+BACKGROUND COLOR SETS
+----------------------------------------------------------------
+*/
+.bg-Black,
+.bg-Bla,
+.bg-Blk,
+.bg-Kalo,
+.bg-000000,
+.পেছন-কালো {
+  background-color: #000000;
+}
+
+.bg-White,
+.bg-Whi,
+.bg-Wht,
+.bg-Sada,
+.bg-ffffff,
+.পেছন-সাদা {
+  background-color: #ffffff;
+}
+
+.bg-Red,
+.bg-Re,
+.bg-Rd,
+.bg-Lal,
+.bg-ff0000,
+.পেছন-লাল {
+  background-color: #ff0000;
+}
+
+.bg-Green,
+.bg-Gre,
+.bg-Grn,
+.bg-Sobuj,
+.bg-00ff00,
+.পেছন-সবুজ {
+  background-color: #00ff00;
+}
+
+.bg-Blue,
+.bg-Blu,
+.bg-Ble,
+.bg-Nil,
+.bg-0000ff,
+.পেছন-নীল {
+  background-color: #0000ff;
+}
+
+.bg-Yellow,
+.bg-Yel,
+.bg-Ylw,
+.bg-Holud,
+.bg-ffff00,
+.পেছন-হলুদ {
+  background-color: #ffff00;
+}
+
+.bg-Purple,
+.bg-Pur,
+.bg-Prp,
+.bg-Jam,
+.bg-800080,
+.পেছন-জামুন {
+  background-color: #800080;
+}
+
+.bg-Cyan,
+.bg-Cya,
+.bg-Cyn,
+.bg-Firoz,
+.bg-00ffff,
+.পেছন-ফিরোজা {
+  background-color: #00ffff;
+}
+
+.bg-Gray,
+.bg-Gra,
+.bg-Gry,
+.bg-Surma,
+.bg-808080,
+.পেছন-ধূসর {
+  background-color: #808080;
+}
+
+.bg-Silver,
+.bg-Sil,
+.bg-Slv,
+.bg-Chandi,
+.bg-c0c0c0,
+.পেছন-রুপা {
+  background-color: #c0c0c0;
+}
+
+.bg-Maroon,
+.bg-Mar,
+.bg-Mrn,
+.bg-Gorom,
+.bg-800000,
+.পেছন-গাঢ়-লাল {
+  background-color: #800000;
+}
+
+.bg-Olive,
+.bg-Oli,
+.bg-Olv,
+.bg-808000,
+.পেছন-অলিভ {
+  background-color: #808000;
+}
+
+.bg-Teal,
+.bg-Tea,
+.bg-Tel,
+.bg-Nilgiri,
+.bg-008080,
+.পেছন-নীল-সবুজ {
+  background-color: #008080;
+}
+
+.bg-Navy,
+.bg-Nav,
+.bg-Nvy,
+.bg-Nabi,
+.bg-000080,
+.পেছন-নেভি {
+  background-color: #000080;
+}
+
+.bg-Fuchsia,
+.bg-Fuc,
+.bg-Fsh,
+.bg-Gorib,
+.bg-ff00ff,
+.পেছন-ফুসিয়া {
+  background-color: #ff00ff;
+}
+
+.bg-Pink,
+.bg-Pin,
+.bg-Pnk,
+.bg-Gulabi,
+.bg-ffc0cb,
+.পেছন-গোলাপি {
+  background-color: #ffc0cb;
+}
+
+.bg-YellowGreen,
+.bg-YelGre,
+.bg-YGr,
+.bg-HoludSobuji,
+.bg-9acd32,
+.পেছন-হলুদ-সবুজ {
+  background-color: #9acd32;
+}
+
+.bg-OliveDrab,
+.bg-OliDra,
+.bg-ODb,
+.bg-6b8e23,
+.পেছন-অলিভ-ড্র্যাব {
+  background-color: #6b8e23;
+}
+
+.bg-GreenYellow,
+.bg-GreYel,
+.bg-GYl,
+.bg-adff2f,
+.পেছন-সবুজ-হলুদ {
+  background-color: #adff2f;
+}
+
+.bg-LimeGreen,
+.bg-LimGre,
+.bg-LGr,
+.bg-Paal,
+.bg-32cd32,
+.পেছন-লেবুর-সবুজ {
+  background-color: #32cd32;
+}
+
+.bg-PaleGreen,
+.bg-PalGre,
+.bg-PGr,
+.bg-98fb98,
+.পেছন-ফিকে-সবুজ {
+  background-color: #98fb98;
+}
+
+.bg-DarkSeaGreen,
+.bg-DarSeaGre,
+.bg-DGr,
+.bg-GaroSomudroSobuj,
+.bg-8fbc8f,
+.পেছন-গাঢ়-সাগর-সবুজ {
+  background-color: #8fbc8f;
+}
+
+.bg-MediumSeaGreen,
+.bg-MedSeaGre,
+.bg-MGr,
+.bg-3cb371,
+.পেছন-মাঝারি-সাগর-সবুজ {
+  background-color: #3cb371;
+}
+
+.bg-SeaGreen,
+.bg-SeaGre,
+.bg-SGr,
+.bg-Samudrik,
+.bg-2e8b57,
+.পেছন-সাগর-সবুজ {
+  background-color: #2e8b57;
+}
+
+.bg-ForestGreen,
+.bg-ForGre,
+.bg-FGr,
+.bg-Jungle,
+.bg-228b22,
+.পেছন-জঙ্গল-সবুজ {
+  background-color: #228b22;
+}
+
+.bg-LightGray,
+.bg-LigGra,
+.bg-LGr,
+.bg-Halka,
+.bg-d3d3d3,
+.পেছন-হালকা-ধূসর {
+  background-color: #d3d3d3;
+}
+
+.bg-LightCoral,
+.bg-LigCor,
+.bg-LCo,
+.bg-Halka2,
+.bg-f08080,
+.পেছন-হালকা-করাল {
+  background-color: #f08080;
+}
+
+.bg-LightSalmon,
+.bg-LigSal,
+.bg-LSa,
+.bg-Ranga,
+.bg-ffa07a,
+.পেছন-হালকা-সালমনের {
+  background-color: #ffa07a;
+}
+
+.bg-LightPink,
+.bg-LigPin,
+.bg-LPn,
+.bg-Gulabi,
+.bg-ffb6c1,
+.পেছন-হালকা-গোলাপি {
+  background-color: #ffb6c1;
+}
+
+.bg-LightGoldenRodYellow,
+.bg-LigRodYel,
+.bg-LGY,
+.bg-Gora,
+.bg-fafad2,
+.পেছন-হালকা-স্বর্ণ-হলুদ {
+  background-color: #fafad2;
+}
+
+.bg-LightSteelBlue,
+.bg-LigSteBlu,
+.bg-LSB,
+.bg-b0c4de,
+.পেছন-হালকা-স্টীল-নীল {
+  background-color: #b0c4de;
+}
+
+.bg-LightSkyBlue,
+.bg-LigSkyBlu,
+.bg-LSk,
+.bg-Aasman,
+.bg-87cefa,
+.পেছন-হালকা-আকাশ-নীল {
+  background-color: #87cefa;
+}
+
+.bg-Lavender,
+.bg-Lav,
+.bg-Bangla,
+.bg-e6e6fa,
+.পেছন-ল্যাভেন্ডার {
+  background-color: #e6e6fa;
+}
+
+.bg-MistyRose,
+.bg-MisRos,
+.bg-MRo,
+.bg-Gulabi,
+.bg-ffe4e1,
+.পেছন-ঝাপসা-গোলাপি {
+  background-color: #ffe4e1;
+}
+
+.bg-NavajoWhite,
+.bg-NavWhi,
+.bg-NWh,
+.bg-Poori,
+.bg-ffdead,
+.পেছন-নাভাজো-সাদা {
+  background-color: #ffdead;
+}
+
+.bg-Wheat,
+.bg-Whe,
+.bg-Ghee,
+.bg-f5deb3,
+.পেছন-গম {
+  background-color: #f5deb3;
+}
+
+.bg-AntiqueWhite,
+.bg-AntWhi,
+.bg-AWh,
+.bg-Paakhi,
+.bg-faebd7,
+.পেছন-প্রাচীন-সাদা {
+  background-color: #faebd7;
+}
+
+.bg-Cornsilk,
+.bg-Cor,
+.bg-Maach,
+.bg-fff8dc,
+.পেছন-ভুট্টার-শুকনো {
+  background-color: #fff8dc;
+}
+
+.bg-Khaki,
+.bg-Kha,
+.bg-f0e68c,
+.পেছন-খাকি {
+  background-color: #f0e68c;
+}
+
+.bg-Beige,
+.bg-Bei,
+.bg-f5f5dc,
+.পেছন-বেজ {
+  background-color: #f5f5dc;
+}
+
+.bg-PapayaWhip,
+.bg-PapWhi,
+.bg-PWh,
+.bg-Papaya,
+.bg-ffefd5,
+.পেছন-পাপায়া {
+  background-color: #ffefd5;
+}
+
+.bg-BlanchedAlmond,
+.bg-BlaAlm,
+.bg-BAl,
+.bg-Almond,
+.bg-ffebcd,
+.পেছন-ব্লাঞ্চড-আলমন্ড {
+  background-color: #ffebcd;
+}
+
+.bg-HoneyDew,
+.bg-HonDew,
+.bg-HDe,
+.bg-Honey,
+.bg-f0fff0,
+.পেছন-হানি-ডিউ {
+  background-color: #f0fff0;
+}
+
+.bg-MintCream,
+.bg-MinCre,
+.bg-MCr,
+.bg-Mint,
+.bg-f5fffa,
+.পেছন-মিন্ট-ক্রীম {
+  background-color: #f5fffa;
+}
+
+.bg-AliceBlue,
+.bg-AliBlu,
+.bg-ABl,
+.bg-Alice,
+.bg-f0f8ff,
+.পেছন-অ্যালিস-নীল {
+  background-color: #f0f8ff;
+}
+
+.bg-Tomato,
+.bg-Tom,
+.bg-Tmt,
+.bg-ff6347,
+.পেছন-টমেটো {
+  background-color: #ff6347;
+}
+
+.bg-Orchid,
+.bg-Orc,
+.bg-da70d6,
+.পেছন-অর্কিড {
+  background-color: #da70d6;
+}
+
+.bg-Turquoise,
+.bg-Tur,
+.bg-Tqz,
+.bg-40e0d0,
+.পেছন-টারকোইজ {
+  background-color: #40e0d0;
+}
+
+.bg-DarkRed,
+.bg-DarRe,
+.bg-DRd,
+.bg-Dag,
+.bg-8b0000,
+.পেছন-গাঢ়-লাল {
+  background-color: #8b0000;
+}
+
+.bg-DarkBlue,
+.bg-DarBlu,
+.bg-DBl,
+.bg-GaroNil,
+.bg-00008b,
+.পেছন-গাঢ়-নীল {
+  background-color: #00008b;
+}
+
+.bg-DarkGreen,
+.bg-DarGre,
+.bg-DGr,
+.bg-Dhushar,
+.bg-006400,
+.পেছন-গাঢ়-সবুজ {
+  background-color: #006400;
+}
+
+.bg-Indigo,
+.bg-Ind,
+.bg-Nay,
+.bg-4b0082,
+.পেছন-ইন্ডিগো {
+  background-color: #4b0082;
+}
+
+.bg-Violet,
+.bg-Vio,
+.bg-Bangla,
+.bg-ee82ee,
+.পেছন-ভায়োলেট {
+  background-color: #ee82ee;
+}
+
+.bg-Peru,
+.bg-Per,
+.bg-cd853f,
+.পেছন-পেরু {
+  background-color: #cd853f;
+}
+
+.bg-Chocolate,
+.bg-Cho,
+.bg-d2691e,
+.পেছন-চকোলেট {
+  background-color: #d2691e;
+}
+
+.bg-Gold,
+.bg-Gol,
+.bg-Sona,
+.bg-ffd700,
+.পেছন-সোনালী {
+  background-color: #ffd700;
+}
+
+.bg-Plum,
+.bg-Plu,
+.bg-Bengali,
+.bg-dda0dd,
+.পেছন-প্রম {
+  background-color: #dda0dd;
+}
+
+.bg-Sienna,
+.bg-Sie,
+.bg-Keshari,
+.bg-a0522d,
+.পেছন-সিয়েনা {
+  background-color: #a0522d;
+}
+
+.bg-Salmon,
+.bg-Sal,
+.bg-Ranga,
+.bg-fa8072,
+.পেছন-সালমন {
+  background-color: #fa8072;
+}
+
+.bg-Snow,
+.bg-Sno,
+.bg-Barish,
+.bg-fffafa,
+.পেছন-তুষার {
+  background-color: #fffafa;
+}
+
+.bg-Tan,
+.bg-Brown,
+.bg-d2b48c,
+.পেছন-ট্যান {
+  background-color: #d2b48c;
+}
+
+.bg-MediumPurple,
+.bg-MedPur,
+.bg-MPr,
+.bg-9370db,
+.পেছন-মাঝারি-বেগুনি {
+  background-color: #9370db;
+}
+
+.bg-MediumOrchid,
+.bg-MedOrc,
+.bg-MOr,
+.bg-ba55d3,
+.পেছন-মাঝারি-অর্কিড {
+  background-color: #ba55d3;
+}
+
+.bg-MediumTurquoise,
+.bg-MedTur,
+.bg-MTq,
+.bg-48d1cc,
+.পেছন-মাঝারি-টারকোইজ {
+  background-color: #48d1cc;
+}
+
+.bg-SlateBlue,
+.bg-SlaBlu,
+.bg-SBl,
+.bg-6a5acd,
+.পেছন-স্লেট-ব্লু {
+  background-color: #6a5acd;
+}
+
+.bg-SlateGray,
+.bg-SlaGra,
+.bg-SGr,
+.bg-708090,
+.পেছন-স্লেট-গ্রে {
+  background-color: #708090;
+}
+
+.bg-SpringGreen,
+.bg-SprGre,
+.bg-SGr,
+.bg-Nobob,
+.bg-00ff7f,
+.পেছন-স্প্রিং-গ্রিন {
+  background-color: #00ff7f;
+}
+
+.bg-SandyBrown,
+.bg-SanBro,
+.bg-SBr,
+.bg-Sandy,
+.bg-f4a460,
+.পেছন-স্যান্ডি-ব্রাউন {
+  background-color: #f4a460;
+}
+
+
+// ALL IN A SCSS VARIABLE FORMAT
+$bg-Black: #000000;
+$bg-Bla: #000000;
+$bg-Blk: #000000;
+$bg-Kalo: #000000;
+$bg-000000: #000000;
+$পেছন-কালো: #000000;
+
+$bg-White: #ffffff;
+$bg-Whi: #ffffff;
+$bg-Wht: #ffffff;
+$bg-Sada: #ffffff;
+$bg-ffffff: #ffffff;
+$পেছন-সাদা: #ffffff;
+
+$bg-Red: #ff0000;
+$bg-Re: #ff0000;
+$bg-Rd: #ff0000;
+$bg-Lal: #ff0000;
+$bg-ff0000: #ff0000;
+$পেছন-লাল: #ff0000;
+
+$bg-Green: #00ff00;
+$bg-Gre: #00ff00;
+$bg-Grn: #00ff00;
+$bg-Sobuj: #00ff00;
+$bg-00ff00: #00ff00;
+$পেছন-সবুজ: #00ff00;
+
+$bg-Blue: #0000ff;
+$bg-Blu: #0000ff;
+$bg-Ble: #0000ff;
+$bg-Nil: #0000ff;
+$bg-0000ff: #0000ff;
+$পেছন-নীল: #0000ff;
+
+$bg-Yellow: #ffff00;
+$bg-Yel: #ffff00;
+$bg-Ylw: #ffff00;
+$bg-Holud: #ffff00;
+$bg-ffff00: #ffff00;
+$পেছন-হলুদ: #ffff00;
+
+$bg-Purple: #800080;
+$bg-Pur: #800080;
+$bg-Prp: #800080;
+$bg-Jam: #800080;
+$bg-800080: #800080;
+$পেছন-জামুন: #800080;
+
+$bg-Cyan: #00ffff;
+$bg-Cya: #00ffff;
+$bg-Cyn: #00ffff;
+$bg-Firoz: #00ffff;
+$bg-00ffff: #00ffff;
+$পেছন-ফিরোজা: #00ffff;
+
+$bg-Gray: #808080;
+$bg-Gra: #808080;
+$bg-Gry: #808080;
+$bg-Surma: #808080;
+$bg-808080: #808080;
+$পেছন-ধূসর: #808080;
+
+$bg-Silver: #c0c0c0;
+$bg-Sil: #c0c0c0;
+$bg-Slv: #c0c0c0;
+$bg-Chandi: #c0c0c0;
+$bg-c0c0c0: #c0c0c0;
+$পেছন-রুপা: #c0c0c0;
+
+$bg-Maroon: #800000;
+$bg-Mar: #800000;
+$bg-Mrn: #800000;
+$bg-Gorom: #800000;
+$bg-800000: #800000;
+$পেছন-গাঢ়-লাল: #800000;
+
+$bg-Olive: #808000;
+$bg-Oli: #808000;
+$bg-Olv: #808000;
+$bg-808000: #808000;
+$পেছন-অলিভ: #808000;
+
+$bg-Teal: #008080;
+$bg-Tea: #008080;
+$bg-Tel: #008080;
+$bg-Nilgiri: #008080;
+$bg-008080: #008080;
+$পেছন-নীল-সবুজ: #008080;
+
+$bg-Navy: #000080;
+$bg-Nav: #000080;
+$bg-Nvy: #000080;
+$bg-Nabi: #000080;
+$bg-000080: #000080;
+$পেছন-নেভি: #000080;
+
+$bg-Fuchsia: #ff00ff;
+$bg-Fuc: #ff00ff;
+$bg-Fsh: #ff00ff;
+$bg-Gorib: #ff00ff;
+$bg-ff00ff: #ff00ff;
+$পেছন-ফুসিয়া: #ff00ff;
+
+$bg-Pink: #ffc0cb;
+$bg-Pin: #ffc0cb;
+$bg-Pnk: #ffc0cb;
+$bg-Gulabi: #ffc0cb;
+$bg-ffc0cb: #ffc0cb;
+$পেছন-গোলাপি: #ffc0cb;
+
+$bg-YellowGreen: #9acd32;
+$bg-YelGre: #9acd32;
+$bg-YGr: #9acd32;
+$bg-HoludSobuji: #9acd32;
+$bg-9acd32: #9acd32;
+$পেছন-হলুদ-সবুজ: #9acd32;
+
+$bg-OliveDrab: #6b8e23;
+$bg-OliDra: #6b8e23;
+$bg-ODb: #6b8e23;
+$bg-6b8e23: #6b8e23;
+$পেছন-অলিভ-ড্র্যাব: #6b8e23;
+
+$bg-GreenYellow: #adff2f;
+$bg-GreYel: #adff2f;
+$bg-GYl: #adff2f;
+$bg-adff2f: #adff2f;
+$পেছন-সবুজ-হলুদ: #adff2f;
+
+$bg-LimeGreen: #32cd32;
+$bg-LimGre: #32cd32;
+$bg-LGr: #32cd32;
+$bg-Paal: #32cd32;
+$bg-32cd32: #32cd32;
+$পেছন-লেবুর-সবুজ: #32cd32;
+
+$bg-PaleGreen: #98fb98;
+$bg-PalGre: #98fb98;
+$bg-PGr: #98fb98;
+$bg-98fb98: #98fb98;
+$পেছন-ফিকে-সবুজ: #98fb98;
+
+$bg-DarkSeaGreen: #8fbc8f;
+$bg-DarSeaGre: #8fbc8f;
+$bg-DGr: #8fbc8f;
+$bg-GaroSomudroSobuj: #8fbc8f;
+$bg-8fbc8f: #8fbc8f;
+$পেছন-গাঢ়-সাগর-সবুজ: #8fbc8f;
+
+$bg-MediumSeaGreen: #3cb371;
+$bg-MedSeaGre: #3cb371;
+$bg-MGr: #3cb371;
+$bg-3cb371: #3cb371;
+$পেছন-মাঝারি-সাগর-সবুজ: #3cb371;
+
+$bg-SeaGreen: #2e8b57;
+$bg-SeaGre: #2e8b57;
+$bg-SGr: #2e8b57;
+$bg-Samudrik: #2e8b57;
+$bg-2e8b57: #2e8b57;
+$পেছন-সাগর-সবুজ: #2e8b57;
+
+$bg-ForestGreen: #228b22;
+$bg-ForGre: #228b22;
+$bg-FGr: #228b22;
+$bg-Jungle: #228b22;
+$bg-228b22: #228b22;
+$পেছন-জঙ্গল-সবুজ: #228b22;
+
+$bg-LightGray: #d3d3d3;
+$bg-LigGra: #d3d3d3;
+$bg-LGr: #d3d3d3;
+$bg-Halka: #d3d3d3;
+$bg-d3d3d3: #d3d3d3;
+$পেছন-হালকা-ধূসর: #d3d3d3;
+
+$bg-LightCoral: #f08080;
+$bg-LigCor: #f08080;
+$bg-LCo: #f08080;
+$bg-Halka2: #f08080;
+$bg-f08080: #f08080;
+$পেছন-হালকা-করাল: #f08080;
+
+$bg-LightSalmon: #ffa07a;
+$bg-LigSal: #ffa07a;
+$bg-LSa: #ffa07a;
+$bg-Ranga: #ffa07a;
+$bg-ffa07a: #ffa07a;
+$পেছন-হালকা-সালমনের: #ffa07a;
+
+$bg-LightPink: #ffb6c1;
+$bg-LigPin: #ffb6c1;
+$bg-LPn: #ffb6c1;
+$bg-Gulabi: #ffb6c1;
+$bg-ffb6c1: #ffb6c1;
+$পেছন-হালকা-গোলাপি: #ffb6c1;
+
+$bg-LightGoldenRodYellow: #fafad2;
+$bg-LigRodYel: #fafad2;
+$bg-LGY: #fafad2;
+$bg-Gora: #fafad2;
+$bg-fafad2: #fafad2;
+$পেছন-হালকা-স্বর্ণ-হলুদ: #fafad2;
+
+$bg-LightSteelBlue: #b0c4de;
+$bg-LigSteBlu: #b0c4de;
+$bg-LSB: #b0c4de;
+$bg-b0c4de: #b0c4de;
+$পেছন-হালকা-স্টীল-নীল: #b0c4de;
+
+$bg-LightSkyBlue: #87cefa;
+$bg-LigSkyBlu: #87cefa;
+$bg-LSk: #87cefa;
+$bg-Aasman: #87cefa;
+$bg-87cefa: #87cefa;
+$পেছন-হালকা-আকাশ-নীল: #87cefa;
+
+$bg-Lavender: #e6e6fa;
+$bg-Lav: #e6e6fa;
+$bg-Bangla: #e6e6fa;
+$bg-e6e6fa: #e6e6fa;
+$পেছন-ল্যাভেন্ডার: #e6e6fa;
+
+$bg-MistyRose: #ffe4e1;
+$bg-MisRos: #ffe4e1;
+$bg-MRo: #ffe4e1;
+$bg-Gulabi: #ffe4e1;
+$bg-ffe4e1: #ffe4e1;
+$পেছন-ঝাপসা-গোলাপি: #ffe4e1;
+
+$bg-NavajoWhite: #ffdead;
+$bg-NavWhi: #ffdead;
+$bg-NWh: #ffdead;
+$bg-Poori: #ffdead;
+$bg-ffdead: #ffdead;
+$পেছন-নাভাজো-সাদা: #ffdead;
+
+$bg-Wheat: #f5deb3;
+$bg-Whe: #f5deb3;
+$bg-Ghee: #f5deb3;
+$bg-f5deb3: #f5deb3;
+$পেছন-গম: #f5deb3;
+
+$bg-AntiqueWhite: #faebd7;
+$bg-AntWhi: #faebd7;
+$bg-AWh: #faebd7;
+$bg-Paakhi: #faebd7;
+$bg-faebd7: #faebd7;
+$পেছন-প্রাচীন-সাদা: #faebd7;
+
+$bg-Cornsilk: #fff8dc;
+$bg-Cor: #fff8dc;
+$bg-Maach: #fff8dc;
+$bg-fff8dc: #fff8dc;
+$পেছন-ভুট্টার-শুকনো: #fff8dc;
+
+$bg-Khaki: #f0e68c;
+$bg-Kha: #f0e68c;
+$bg-f0e68c: #f0e68c;
+$পেছন-খাকি: #f0e68c;
+
+$bg-Beige: #f5f5dc;
+$bg-Bei: #f5f5dc;
+$bg-f5f5dc: #f5f5dc;
+$পেছন-বেজ: #f5f5dc;
+
+$bg-PapayaWhip: #ffefd5;
+$bg-PapWhi: #ffefd5;
+$bg-PWh: #ffefd5;
+$bg-Papaya: #ffefd5;
+$bg-ffefd5: #ffefd5;
+$পেছন-পাপায়া: #ffefd5;
+
+$bg-BlanchedAlmond: #ffebcd;
+$bg-BlaAlm: #ffebcd;
+$bg-BAl: #ffebcd;
+$bg-Almond: #ffebcd;
+$bg-ffebcd: #ffebcd;
+$পেছন-ব্লাঞ্চড-আলমন্ড: #ffebcd;
+
+$bg-HoneyDew: #f0fff0;
+$bg-HonDew: #f0fff0;
+$bg-HDe: #f0fff0;
+$bg-Honey: #f0fff0;
+$bg-f0fff0: #f0fff0;
+$পেছন-হানি-ডিউ: #f0fff0;
+
+$bg-MintCream: #f5fffa;
+$bg-MinCre: #f5fffa;
+$bg-MCr: #f5fffa;
+$bg-Mint: #f5fffa;
+$bg-f5fffa: #f5fffa;
+$পেছন-মিন্ট-ক্রীম: #f5fffa;
+
+$bg-AliceBlue: #f0f8ff;
+$bg-AliBlu: #f0f8ff;
+$bg-ABl: #f0f8ff;
+$bg-Alice: #f0f8ff;
+$bg-f0f8ff: #f0f8ff;
+$পেছন-অ্যালিস-নীল: #f0f8ff;
+
+$bg-Tomato: #ff6347;
+$bg-Tom: #ff6347;
+$bg-Tmt: #ff6347;
+$bg-ff6347: #ff6347;
+$পেছন-টমেটো: #ff6347;
+
+$bg-Orchid: #da70d6;
+$bg-Orc: #da70d6;
+$bg-da70d6: #da70d6;
+$পেছন-অর্কিড: #da70d6;
+
+$bg-Turquoise: #40e0d0;
+$bg-Tur: #40e0d0;
+$bg-Tqz: #40e0d0;
+$bg-40e0d0: #40e0d0;
+$পেছন-টারকোইজ: #40e0d0;
+
+$bg-DarkRed: #8b0000;
+$bg-DarRe: #8b0000;
+$bg-DRd: #8b0000;
+$bg-Dag: #8b0000;
+$bg-8b0000: #8b0000;
+$পেছন-গাঢ়-লাল: #8b0000;
+
+$bg-DarkBlue: #00008b;
+$bg-DarBlu: #00008b;
+$bg-DBl: #00008b;
+$bg-GaroNil: #00008b;
+$bg-00008b: #00008b;
+$পেছন-গাঢ়-নীল: #00008b;
+
+$bg-DarkGreen: #006400;
+$bg-DarGre: #006400;
+$bg-DGr: #006400;
+$bg-Dhushar: #006400;
+$bg-006400: #006400;
+$পেছন-গাঢ়-সবুজ: #006400;
+
+$bg-Indigo: #4b0082;
+$bg-Ind: #4b0082;
+$bg-Nay: #4b0082;
+$bg-4b0082: #4b0082;
+$পেছন-ইন্ডিগো: #4b0082;
+
+$bg-Violet: #ee82ee;
+$bg-Vio: #ee82ee;
+$bg-Bangla: #ee82ee;
+$bg-ee82ee: #ee82ee;
+$পেছন-ভায়োলেট: #ee82ee;
+
+$bg-Peru: #cd853f;
+$bg-Per: #cd853f;
+$bg-cd853f: #cd853f;
+$পেছন-পেরু: #cd853f;
+
+$bg-Chocolate: #d2691e;
+$bg-Cho: #d2691e;
+$bg-d2691e: #d2691e;
+$পেছন-চকোলেট: #d2691e;
+
+$bg-Gold: #ffd700;
+$bg-Gol: #ffd700;
+$bg-Sona: #ffd700;
+$bg-ffd700: #ffd700;
+$পেছন-সোনালী: #ffd700;
+
+$bg-Plum: #dda0dd;
+$bg-Plu: #dda0dd;
+$bg-Bengali: #dda0dd;
+$bg-dda0dd: #dda0dd;
+$পেছন-প্রম: #dda0dd;
+
+$bg-Sienna: #a0522d;
+$bg-Sie: #a0522d;
+$bg-Keshari: #a0522d;
+$bg-a0522d: #a0522d;
+$পেছন-সিয়েনা: #a0522d;
+
+$bg-Salmon: #fa8072;
+$bg-Sal: #fa8072;
+$bg-Ranga: #fa8072;
+$bg-fa8072: #fa8072;
+$পেছন-সালমন: #fa8072;
+
+$bg-Snow: #fffafa;
+$bg-Sno: #fffafa;
+$bg-Barish: #fffafa;
+$bg-fffafa: #fffafa;
+$পেছন-তুষার: #fffafa;
+
+$bg-Tan: #d2b48c;
+$bg-Brown: #d2b48c;
+$bg-d2b48c: #d2b48c;
+$পেছন-ট্যান: #d2b48c;
+
+$bg-MediumPurple: #9370db;
+$bg-MedPur: #9370db;
+$bg-MPr: #9370db;
+$bg-9370db: #9370db;
+$পেছন-মাঝারি-বেগুনি: #9370db;
+
+$bg-MediumOrchid: #ba55d3;
+$bg-MedOrc: #ba55d3;
+$bg-MOr: #ba55d3;
+$bg-ba55d3: #ba55d3;
+$পেছন-মাঝারি-অর্কিড: #ba55d3;
+
+$bg-MediumTurquoise: #48d1cc;
+$bg-MedTur: #48d1cc;
+$bg-MTq: #48d1cc;
+$bg-48d1cc: #48d1cc;
+$পেছন-মাঝারি-টারকোইজ: #48d1cc;
+
+$bg-SlateBlue: #6a5acd;
+$bg-SlaBlu: #6a5acd;
+$bg-SBl: #6a5acd;
+$bg-6a5acd: #6a5acd;
+$পেছন-স্লেট-ব্লু: #6a5acd;
+
+$bg-SlateGray: #708090;
+$bg-SlaGra: #708090;
+$bg-SGr: #708090;
+$bg-708090: #708090;
+$পেছন-স্লেট-গ্রে: #708090;
+
+$bg-SpringGreen: #00ff7f;
+$bg-SprGre: #00ff7f;
+$bg-SGr: #00ff7f;
+$bg-Nobob: #00ff7f;
+$bg-00ff7f: #00ff7f;
+$পেছন-স্প্রিং-গ্রিন: #00ff7f;
+
+$bg-SandyBrown: #f4a460;
+$bg-SanBro: #f4a460;
+$bg-SBr: #f4a460;
+$bg-Sandy: #f4a460;
+$bg-f4a460: #f4a460;
+$পেছন-স্যান্ডি-ব্রাউন: #f4a460;
+

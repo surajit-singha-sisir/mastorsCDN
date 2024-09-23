@@ -1,0 +1,472 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'K2D';
+}
+
+
+/* -------- SLIDER 1 START -----------
+    ------------------------------------ */
+.slider1Container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #222629;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.slider1Container h2:first-child {
+    color: white;
+    font-size: clamp(1rem, 1rem + 0.7936vw, 1.2vw);
+}
+
+.innerSlider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* SET HEIGHT */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13131a;
+}
+
+.pictures {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    display: flex;
+    width: inherit;
+    /* transition: all 0.3s ease; */
+}
+
+.pictures #imgBg {
+    position: absolute;
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+    aspect-ratio: 16/9;
+}
+
+
+.details {
+    position: absolute;
+    width: 60%;
+    height: inherit;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.textDetails {
+    color: white;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    flex-direction: column;
+    z-index: 1;
+    font-size: 1rem;
+    text-align: justify;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.textDetails > p:not(:last-child) {
+    margin: 0;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px dotted #ffffff75;
+    text-shadow: 2px 2px 2px #443e3f;
+
+}
+
+.textDetails h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.textDetails .plot {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: block-axis;
+    overflow: hidden;
+}
+
+.details .poster {
+    position: absolute;
+    right: 5%;
+    width: 22vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.details .poster .posterImg {
+    position: relative;
+    aspect-ratio: 1;
+    width: inherit;
+    height: auto;
+}
+
+.details .poster img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 4px 8px 2px #20202085;
+}
+
+
+.innerSlider .arrows {
+    position: absolute;
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    bottom: 2%;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.innerSlider .arrows .absArrow {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    background-color: gold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.innerSlider .arrows .absArrow img {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.innerSlider .arrows .absArrow:active {
+    background-color: #fffb00;
+}
+
+.innerSlider .arrows .leftArrow:active img {
+    left: 45%;
+    transition: all 0.1s ease;
+}
+
+.innerSlider .arrows .rightArrow:active img {
+    left: 55%;
+    transition: all 0.1s ease;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+::selection {
+    background-color: #1f87e2;
+}
+
+
+.fadeLeft {
+    animation: fadeLeft 0.6s linear;
+}
+
+
+@keyframes fadeLeft {
+    0% {
+        right: -100%;
+    }
+
+    60% {
+        right: 10%;
+    }
+
+    80% {
+        right: -2%;
+    }
+
+    90% {
+        right: 5%;
+    }
+
+    100% {
+        right: -2%;
+    }
+}
+
+.zoomIn {
+    transition: all 0.3s ease;
+    animation: zoomIn 0.2s linear;
+}
+
+@keyframes zoomIn {
+    0% {
+        width: 110%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* TRAILER WATCH */
+
+.textDetails .bottomLinks a {
+    position: relative;
+    max-width: 8rem;
+    min-width: 2rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    float: left;
+    text-decoration: none;
+    color: white;
+    border: 1px dotted white;
+    background-color: #b3a8aa6c;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px #0000008c;
+
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #64b5ef 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bgMove linear 5s infinite;
+}
+
+
+
+.textDetails .bottomLinks a:hover {
+    border: 1px dotted #5cd1ee;
+    background-color: #3bffff50;
+}
+
+.textDetails .bottomLinks a:active {
+    color: #e5ff00;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: -2000px;
+    }
+
+    100% {
+        background-position: 300px;
+    }
+}
+
+.bottomLinks {
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    z-index: 2;
+}
+
+.bottomLinks a:nth-child(1) {
+    z-index: 2;
+}
+.bottomLinks a:nth-child(2)::after {
+    content: 'IMDB';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fffb00;
+    padding: 0.1rem;
+    color: red;
+    font-size: 0.6rem;
+    z-index: 2;
+}
+
+.bottomLinks a:nth-child(3)::after {
+    content: 'RT';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00ff6a;
+    padding: 0.1rem;
+    color: red;
+    font-size: 0.6rem;
+    z-index: 2;
+}
+.bottomLinks a:nth-child(4)::after {
+    content: 'MPAA';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #a6ff00;
+    padding: 0.1rem;
+    color: red;
+    font-size: 0.6rem;
+    z-index: 2;
+}
+
+.iframeTube {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000000c9;
+    z-index: 3;
+}
+
+.iframeTube iframe {
+    aspect-ratio: 5/3;
+    width: 60vw;
+    height: max-content;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: inherit;
+    animation: topDown 0.5s ease;
+}
+
+.iframeTube .cross {
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 2%;
+    top: 2%;
+    background-color: #949292;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.iframeTube .cross p {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.iframeTube .cross:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+@keyframes topDown {
+    0% {
+        top: -100%;
+        left: 50%;
+    }
+
+    80% {
+        top: 70%;
+    }
+}
+
+.upFade {
+    animation: upFade 0.5s ease;
+}
+
+@keyframes upFade {
+    20% {
+        top: 70%;
+    }
+
+    100% {
+        top: -200%;
+        left: 50%;
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    .details {
+        width: 80%;
+    }
+    .details .poster {
+        width: 30vw;
+    }
+
+}
+@media screen and (max-width:720px) {
+    .textDetails {
+        font-size: 1rem;
+    }
+    .details {
+        width: 90%;
+    }
+    .details .poster {
+        width: 40vw;
+    }
+
+}
+@media screen and (max-width:420px) {
+    .textDetails {
+        font-size: 1rem;
+    }
+    .details {
+        width: 95%;
+    }
+    .details .poster {
+        width: 40vw;
+    }
+}
+@media screen and (max-width:320px) {
+    .textDetails {
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+    .details {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .details .poster {
+        display: none !important;
+    }
+    .innerSlider {
+        height: 70vh;
+    }
+
+}
+@media screen and (max-width:290px) {
+    .textDetails {
+        width: 90%;
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+    .details {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .innerSlider {
+        height: 80vh;
+    }
+
+}
+/* -------- SLIDER 1 END -----------
+    ------------------------------------ */

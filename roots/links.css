@@ -1,0 +1,27 @@
+.link__underline {
+  text-decoration: none;
+}
+
+.link__underline:hover {
+  text-decoration: none;
+}
+
+.link__dashed:hover {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+
+.link__dashed {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+
+.link__dashed {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
+.link__dashed:hover {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}/*# sourceMappingURL=links.css.map */

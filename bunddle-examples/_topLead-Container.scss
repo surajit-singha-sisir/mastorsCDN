@@ -1,0 +1,162 @@
+/* <!----------------------------------------- 
+            TOP LEAD CONTAINER START 
+--------------------------------------------->
+    <div class="TopLeadContainer">
+        <div class="openLead">
+            <!-- FIRST ITEM -->
+            <a href="#" class="item1">
+                <div class="leadcontent">
+                    <img src=""
+                        alt="Image">
+                    <div class="overlay">
+                        <h3></h3>
+                    </div>
+                </div>
+            </a>
+
+            <!-- SECOND ITEMS -->
+            <a href="#" class="item2">
+                <div class="leadcontent">
+                    <img src="" alt="Image">
+                    <div class="overlay">
+                        <h4></h4>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="item3">
+                <div class="leadcontent">
+                    <img src=""
+                        alt="Image">
+                    <div class="overlay">
+                        <h4></h4>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="item4">
+                <div class="leadcontent">
+                    <img src=""
+                        alt="Image">
+                    <div class="overlay">
+                        <h4></h4>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="item5">
+                <div class="leadcontent">
+                    <img src="" alt="Image">
+                    <div class="overlay">
+                        <h4></h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- TOP LEAD CONTAINER START --> */
+
+/* TOP LEAD CONTAINER */
+.TopLeadContainer {
+    & .openLead {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:
+            "item1 item1 item2 item3"
+            "item1 item1 item4 item5";
+        width: 90%;
+        margin-bottom: 20px !important;
+        margin: 0 auto;
+
+        & .item1 {
+            grid-area: item1;
+        }
+        & .item2 {
+            grid-area: item2;
+            width: calc(100% - 0.5rem);
+        }
+
+        & .item3 {
+            grid-area: item3;
+            width: calc(100% - 0.5rem);
+        }
+
+        & .item4 {
+            grid-area: item4;
+            width: calc(100% - 0.5rem);
+        }
+
+        & .item5 {
+            grid-area: item5;
+            width: calc(100% - 0.5rem);
+        }
+    }
+
+    /* overlay image  */
+    .leadcontent {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        background-color: #ccc;
+
+        & img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            margin-bottom: -0.4rem;
+            transition: transform 0.6s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+    }
+
+    .overlay__100 {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        color: rgb(255, 255, 255);
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.8) 100%);
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: rgb(255, 255, 255);
+        z-index: 1;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.8) 100%);
+
+        & h3 {
+            padding: 1rem;
+        }
+        & h4 {
+            padding: 0.5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    /* //TOP LEAD CONTAINER */
+    .TopLeadContainer .openLead {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "item1 item1"
+            "item2 item3"
+            "item4 item5";
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .TopLeadContainer .openLead {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        & a img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

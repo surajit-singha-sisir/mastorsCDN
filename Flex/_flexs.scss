@@ -1,0 +1,769 @@
+@use "../variables-Fectory/rem-vars" as *;
+
+/* ----------------------------------------------------------------
+DISPLAY CLASSES
+----------------------------------------------------------------
+*/
+
+/* //FLEX DISPLAY */
+
+.flex,
+.d-flex,
+.f {
+  display: flex;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.f-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+.f-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.f-just-start {
+  justify-content: flex-start;
+}
+
+.f-just-end {
+  justify-content: flex-end;
+}
+
+.f-just-center {
+  justify-content: center;
+}
+
+.f-just-between {
+  justify-content: space-between;
+}
+
+.f-just-around {
+  justify-content: space-around;
+}
+
+.f-just-evenly {
+  justify-content: space-evenly;
+}
+
+/* Justify Self - Flexbox */
+
+.f-just-self-start {
+  justify-self: start;
+}
+
+.f-just-self-end {
+  justify-self: end;
+}
+
+.f-just-self-center {
+  justify-self: center;
+}
+
+.f-just-self-stretch {
+  justify-self: stretch;
+}
+
+.f-just-self-auto {
+  justify-self: auto;
+}
+
+/* Justify Items - CSS Grid */
+
+.f-just-items-start {
+  justify-items: start;
+}
+
+.f-just-items-end {
+  justify-items: end;
+}
+
+.f-just-items-center {
+  justify-items: center;
+}
+
+.f-just-items-stretch {
+  justify-items: stretch;
+}
+
+.f-just-items-auto {
+  justify-items: auto;
+}
+
+.f-just-tracks-auto {
+  justify-tracks: inherit;
+}
+
+/* Justify Tracks - CSS Grid */
+
+.f-just-tracks-start {
+  justify-tracks: start;
+}
+
+.f-just-tracks-end {
+  justify-tracks: end;
+}
+
+.f-just-tracks-center {
+  justify-tracks: center;
+}
+
+.f-just-tracks-stretch {
+  justify-tracks: stretch;
+}
+
+.f-just-tracks-between {
+  justify-tracks: space-between;
+}
+
+.f-just-tracks-around {
+  justify-tracks: space-around;
+}
+
+.f-just-tracks-evenly {
+  justify-tracks: space-evenly;
+}
+
+.f-just-tracks-inherit {
+  justify-tracks: inherit;
+}
+
+.f-just-tracks-initial {
+  justify-tracks: initial;
+}
+
+.f-just-tracks-revert {
+  justify-tracks: revert;
+}
+
+.f-just-tracks-unset {
+  justify-tracks: unset;
+}
+
+
+
+
+/* Align Content - Flexbox */
+
+.f-align-content-start {
+  align-content: flex-start;
+}
+
+.f-align-content-end {
+  align-content: flex-end;
+}
+
+.f-align-content-center {
+  align-content: center;
+}
+
+.f-align-content-between {
+  align-content: space-between;
+}
+
+.f-align-content-around {
+  align-content: space-around;
+}
+
+.f-align-content-stretch {
+  align-content: stretch;
+}
+
+.f-align-content-baseline {
+  align-content: baseline;
+}
+
+.f-align-content-normal {
+  align-content: normal;
+}
+
+.f-align-content-inherit {
+  align-content: inherit;
+}
+
+.f-align-content-initial {
+  align-content: initial;
+}
+
+.f-align-content-revert {
+  align-content: revert;
+}
+
+.f-align-content-unset {
+  align-content: unset;
+}
+
+
+
+/* Align Items - Flexbox */
+
+.f-align-items-start {
+  align-items: flex-start;
+}
+
+.f-align-items-end {
+  align-items: flex-end;
+}
+
+.f-align-items-center {
+  align-items: center;
+}
+
+.f-align-items-baseline {
+  align-items: baseline;
+}
+
+.f-align-items-stretch {
+  align-items: stretch;
+}
+
+.f-align-items-auto {
+  align-items: auto;
+}
+
+.f-align-items-inherit {
+  align-items: inherit;
+}
+
+.f-align-items-initial {
+  align-items: initial;
+}
+
+.f-align-items-revert {
+  align-items: revert;
+}
+
+.f-align-items-unset {
+  align-items: unset;
+}
+
+
+
+
+/* Align Self - Flexbox */
+
+.f-align-self-auto {
+  align-self: auto;
+}
+
+.f-align-self-start {
+  align-self: flex-start;
+}
+
+.f-align-self-end {
+  align-self: flex-end;
+}
+
+.f-align-self-center {
+  align-self: center;
+}
+
+.f-align-self-baseline {
+  align-self: baseline;
+}
+
+.f-align-self-stretch {
+  align-self: stretch;
+}
+
+.f-align-self-inherit {
+  align-self: inherit;
+}
+
+.f-align-self-initial {
+  align-self: initial;
+}
+
+.f-align-self-revert {
+  align-self: revert;
+}
+
+.f-align-self-unset {
+  align-self: unset;
+}
+
+/* Flex Order */
+/* Flex Order */
+
+.f-order- {
+  &0 {
+    order: 0;
+  }
+
+  &1 {
+    order: 1;
+  }
+
+  &2 {
+    order: 2;
+  }
+
+  &3 {
+    order: 3;
+  }
+
+  &4 {
+    order: 4;
+  }
+
+  &5 {
+    order: 5;
+  }
+
+  &first {
+    order: -1;
+  }
+
+  &last {
+    order: 1e+9;
+  }
+
+  &auto {
+    order: auto;
+  }
+
+  &inherit {
+    order: inherit;
+  }
+
+  &initial {
+    order: initial;
+  }
+
+  &revert {
+    order: revert;
+  }
+
+  &unset {
+    order: unset;
+  }
+}
+
+/* Flex Shorthand */
+
+.f-flex- {
+  &1 {
+    flex: 1 1 0%;
+  }
+
+  &auto {
+    flex: 1 1 auto;
+  }
+
+  &initial {
+    flex: 0 1 auto;
+  }
+
+  &0,
+  &none {
+    flex: 0 0 auto;
+  }
+
+  &grow-0 {
+    flex-grow: 0;
+  }
+
+  &grow-1 {
+    flex-grow: 1;
+  }
+
+  &shrink-0 {
+    flex-shrink: 0;
+  }
+
+  &shrink-1 {
+    flex-shrink: 1;
+  }
+
+  &inherit {
+    flex: inherit;
+  }
+
+  &initial {
+    flex: initial;
+  }
+
+  &revert {
+    flex: revert;
+  }
+
+  &unset {
+    flex: unset;
+  }
+
+  &md {
+    flex: 50%;
+  }
+
+  // 8 COLUMN FLEX
+  &xxs {
+    flex: 12.5%;
+  }
+
+  &xs {
+    flex: 25%;
+  }
+
+  &sm {
+    flex: 37.5%;
+  }
+
+  &normal,
+  &half,
+  &50 {
+    flex: 50%;
+  }
+
+  &lg {
+    flex: 62.5%;
+  }
+
+  &xl {
+    flex: 75%;
+  }
+
+  &xxl {
+    flex: 87.5%;
+  }
+
+  &xxxl,
+  %full {
+    flex: 100%;
+  }
+
+  &12-1 {
+    flex: 8.33%;
+  }
+
+  &12-2 {
+    flex: 16.67%;
+  }
+
+  &12-3 {
+    flex: 25%;
+  }
+
+  &12-4 {
+    flex: 33.33%;
+  }
+
+  &12-5 {
+    flex: 41.67%;
+  }
+
+  &12-6 {
+    flex: 50%;
+  }
+
+  &12-7 {
+    flex: 58.33%;
+  }
+
+  &12-8 {
+    flex: 66.67%;
+  }
+
+  &12-9 {
+    flex: 75%;
+  }
+
+  &12-10 {
+    flex: 83.33%;
+  }
+
+  &12-11 {
+    flex: 91.67%;
+  }
+
+  &11-1 {
+    flex: 9.091%;
+  }
+
+  &11-2 {
+    flex: 18.182%;
+  }
+
+  &11-3 {
+    flex: 27.273%;
+  }
+
+  &11-4 {
+    flex: 36.364%;
+  }
+
+  &11-5 {
+    flex: 45.455%;
+  }
+
+  &11-6 {
+    flex: 54.545%;
+  }
+
+  &11-7 {
+    flex: 63.636%;
+  }
+
+  &11-8 {
+    flex: 72.727%;
+  }
+
+  &11-9 {
+    flex: 81.818%;
+  }
+
+  &11-10 {
+    flex: 90.909%;
+  }
+
+  &10-1 {
+    flex: 10%;
+  }
+
+  &10-2 {
+    flex: 20%;
+  }
+
+  &10-3 {
+    flex: 30%;
+  }
+
+  &10-4 {
+    flex: 40%;
+  }
+
+  &10-5 {
+    flex: 50%;
+  }
+
+  &10-6 {
+    flex: 60%;
+  }
+
+  &10-7 {
+    flex: 70%;
+  }
+
+  &10-8 {
+    flex: 80%;
+  }
+
+  &10-9 {
+    flex: 90%;
+  }
+
+  &9-1 {
+    flex: 11.111%;
+  }
+
+  &9-2 {
+    flex: 22.222%;
+  }
+
+  &9-3 {
+    flex: 33.333%;
+  }
+
+  &9-4 {
+    flex: 44.444%;
+  }
+
+  &9-5 {
+    flex: 55.556%;
+  }
+
+  &9-6 {
+    flex: 66.667%;
+  }
+
+  &9-7 {
+    flex: 77.778%;
+  }
+
+  &9-8 {
+    flex: 88.889%;
+  }
+
+  &8-1 {
+    flex: 14.286%;
+  }
+
+  &8-2 {
+    flex: 28.571%;
+  }
+
+  &8-3 {
+    flex: 42.857%;
+  }
+
+  &8-4 {
+    flex: 57.143%;
+  }
+
+  &8-5 {
+    flex: 71.429%;
+  }
+
+  &8-6 {
+    flex: 85.714%;
+  }
+
+
+  &7-1 {
+    flex: 14.286%;
+  }
+
+  &7-2 {
+    flex: 28.571%;
+  }
+
+  &7-3 {
+    flex: 42.857%;
+  }
+
+  &7-4 {
+    flex: 57.143%;
+  }
+
+  &7-5 {
+    flex: 71.429%;
+  }
+
+  &7-6 {
+    flex: 85.714%;
+  }
+
+  &6-1 {
+    flex: 16.667%;
+  }
+
+  &6-2 {
+    flex: 33.333%;
+  }
+
+  &6-3 {
+    flex: 50%;
+  }
+
+  &6-4 {
+    flex: 66.667%;
+  }
+
+  &6-5 {
+    flex: 83.335%;
+  }
+
+  &5-1 {
+    flex: 20%;
+  }
+
+  &5-2 {
+    flex: 40%;
+  }
+
+  &5-3 {
+    flex: 60%;
+  }
+
+  &5-4 {
+    flex: 80%;
+  }
+
+
+  &4-1 {
+    flex: 25%;
+  }
+
+  &4-2 {
+    flex: 50%;
+  }
+
+  &4-3 {
+    flex: 75%;
+  }
+
+  &3-1 {
+    flex: 33.333%;
+  }
+
+  &3-2 {
+    flex: 66.667%;
+  }
+}
+
+
+
+
+/* Flex Wrap */
+
+.f- {
+  &nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &wrap {
+    flex-wrap: wrap;
+  }
+
+  &wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  &wrap-inherit {
+    flex-wrap: inherit;
+  }
+
+  &wrap-initial {
+    flex-wrap: initial;
+  }
+
+  &wrap-revert {
+    flex-wrap: revert;
+  }
+
+  &wrap-unset {
+    flex-wrap: unset;
+  }
+}
+
+/* Flex Direction */
+
+.f-dir- {
+  &row {
+    flex-direction: row;
+  }
+
+  &row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &column {
+    flex-direction: column;
+  }
+
+  &column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &inherit {
+    flex-direction: inherit;
+  }
+
+  &initial {
+    flex-direction: initial;
+  }
+
+  &revert {
+    flex-direction: revert;
+  }
+
+  &unset {
+    flex-direction: unset;
+  }
+}

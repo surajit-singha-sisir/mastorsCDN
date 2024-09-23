@@ -1,0 +1,145 @@
+@use "../text-design/fontColors-vars" as *;
+/* ----------------------------------------------------------------
+HOVER EFFECTS
+----------------------------------------------------------------
+*/
+
+/* TEXT HOVER */
+
+/* White Hover Effect */
+.t-hov-White:hover {
+    color: $f-White;
+}
+
+/* Black Hover Effect */
+.t-hov-Black:hover {
+    color: $f-Black;
+}
+
+/* Blue Hover Effect */
+.t-hov-Blue:hover {
+    color: $f-Blue;
+}
+
+/* Red Hover Effect */
+.t-hov-Red:hover {
+    color: $f-Red;
+}
+
+/* Green Hover Effect */
+.t-hov-Green:hover {
+    color: $f-Green;
+}
+
+/* Yellow Hover Effect */
+.t-hov-Yellow:hover {
+    color: $f-Yellow;
+}
+
+/* Orange Hover Effect */
+.t-hov-Orange:hover {
+    color: $f-Orange;
+}
+
+/* Purple Hover Effect */
+.t-hov-Purple:hover {
+    color: $f-Purple;
+}
+
+/* Pink Hover Effect */
+.t-hov-Pink:hover {
+    color: $f-Pink;
+}
+
+/* Teal Hover Effect */
+.t-hov-Teal:hover {
+    color: $f-Teal;
+}
+
+/* Brown Hover Effect */
+.t-hov-Brown:hover {
+    color: $f-Brown;
+}
+
+/* Gray Hover Effect */
+.t-hov-Gray:hover {
+    color: $f-Gray;
+}
+
+/* Cyan Hover Effect */
+.t-hov-Cyan:hover {
+    color: $f-Cyan;
+}
+
+
+/* Gold Hover Effect */
+.t-hov-Gold:hover {
+    color: $f-Gold;
+}
+
+/* Indigo Hover Effect */
+.t-hov-Indigo:hover {
+    color: $f-Indigo;
+}
+
+/* Violet Hover Effect */
+.t-hov-Violet:hover {
+    color: $f-Violet;
+}
+
+/* Salmon Hover Effect */
+
+.t-hov-Salmon:hover {
+    color: $f-Salmon;
+}
+
+/* Light Salmon Hover Effect */
+
+.t-hov-LightSalmon:hover {
+    color: $f-LightSalmon;
+}
+
+/* Light Pink Hover Effect */
+
+.t-hov-LightPink:hover {
+    color: $f-LightPink;
+}
+
+/* Light Coral Hover Effect */
+
+.t-hov-LightCoral:hover {
+    color: $f-LightCoral;
+}
+
+
+/* Light Golden Rod Yellow Hover Effect */
+
+.t-hov-LightGoldenRodYellow:hover {
+    color: $f-LightGoldenRodYellow;
+}
+
+/* Light Steel Blue Hover Effect */
+
+.t-hov-LightSteelBlue:hover {
+    color: $f-LightSteelBlue;
+}
+
+
+/* Light Sky Blue Hover Effect */
+
+.t-hov-LightSkyBlue:hover {
+    color: $f-LightSkyBlue;
+}
+
+/* Light Light Magenta Hover Effect */
+
+
+
+//TEXT SHADOW
+.t-shadow-Black {
+    text-shadow: 2px 2px 2px $f-Black;
+}
+
+.t-shadow-Gray {
+    text-shadow: 2px 2px 2px $f-Gray;
+}

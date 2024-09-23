@@ -1,0 +1,13 @@
+// IMAGE MANIPULATION CSS
+.res-logo {
+    position: relative;
+    width: auto;
+    height: 2rem;
+    aspect-ratio: 1;
+
+    img {
+        height: inherit;
+        width: inherit;
+        aspect-ratio: 1;
+    }
+}

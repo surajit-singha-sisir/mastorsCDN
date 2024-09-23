@@ -1,0 +1,10 @@
+// ZERO EVERYTHING
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    print-color-adjust: exact; //Exact Print Color
+}
