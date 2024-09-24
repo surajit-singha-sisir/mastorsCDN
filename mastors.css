@@ -48177,95 +48177,73 @@ Z-INDEX CLASSES
 CURSOR CLASSES
 ----------------------------------------------------------------
 */
-.cursor__Default {
+.cur-default {
   cursor: default;
 }
-
-.cursor__Pointer {
+.cur-pointer {
   cursor: pointer;
 }
-
-.cursor__Wait {
+.cur-wait {
   cursor: wait;
 }
-
-.cursor__Text {
+.cur-text {
   cursor: text;
 }
-
-.cursor__Crosshair {
+.cur-crosshair {
   cursor: crosshair;
 }
-
-.cursor__Help {
+.cur-help {
   cursor: help;
 }
-
-.cursor__Move {
+.cur-move {
   cursor: move;
 }
-
-.cursor__NotAllowed {
+.cur-notAllowed {
   cursor: not-allowed;
 }
-
-.cursor__ZoomIn {
+.cur-zoomIn {
   cursor: zoom-in;
 }
-
-.cursor__ZoomOut {
+.cur-zoomOut {
   cursor: zoom-out;
 }
-
-.cursor__Grab {
+.cur-grab {
   cursor: grab;
 }
-
-.cursor__Grabbing {
+.cur-grabbing {
   cursor: grabbing;
 }
-
-.cursor__AllScroll {
+.cur-allScroll {
   cursor: all-scroll;
 }
-
-.cursor__ColResize {
+.cur-colResize {
   cursor: col-resize;
 }
-
-.cursor__RowResize {
+.cur-rowResize {
   cursor: row-resize;
 }
-
-.cursor__NResize {
+.cur-nResize {
   cursor: n-resize;
 }
-
-.cursor__NEResize {
+.cur-neResize {
   cursor: ne-resize;
 }
-
-.cursor__EResize {
+.cur-eResize {
   cursor: e-resize;
 }
-
-.cursor__SEResize {
+.cur-seResize {
   cursor: se-resize;
 }
-
-.cursor__SResize {
+.cur-sResize {
   cursor: s-resize;
 }
-
-.cursor__SWResize {
+.cur-swResize {
   cursor: sw-resize;
 }
-
-.cursor__WResize {
+.cur-wResize {
   cursor: w-resize;
 }
-
-.cursor__NWResize {
+.cur-nwResize {
   cursor: nw-resize;
 }
 

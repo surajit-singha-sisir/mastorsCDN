@@ -3,94 +3,96 @@ CURSOR CLASSES
 ----------------------------------------------------------------
 */
 
-.cursor__Default {
-    cursor: default;
-}
+.cur- {
+    &default {
+        cursor: default;
+    }
 
-.cursor__Pointer {
-    cursor: pointer;
-}
+    &pointer {
+        cursor: pointer;
+    }
 
-.cursor__Wait {
-    cursor: wait;
-}
+    &wait {
+        cursor: wait;
+    }
 
-.cursor__Text {
-    cursor: text;
-}
+    &text {
+        cursor: text;
+    }
 
-.cursor__Crosshair {
-    cursor: crosshair;
-}
+    &crosshair {
+        cursor: crosshair;
+    }
 
-.cursor__Help {
-    cursor: help;
-}
+    &help {
+        cursor: help;
+    }
 
-.cursor__Move {
-    cursor: move;
-}
+    &move {
+        cursor: move;
+    }
 
-.cursor__NotAllowed {
-    cursor: not-allowed;
-}
+    &notAllowed {
+        cursor: not-allowed;
+    }
 
-.cursor__ZoomIn {
-    cursor: zoom-in;
-}
+    &zoomIn {
+        cursor: zoom-in;
+    }
 
-.cursor__ZoomOut {
-    cursor: zoom-out;
-}
+    &zoomOut {
+        cursor: zoom-out;
+    }
 
-.cursor__Grab {
-    cursor: grab;
-}
+    &grab {
+        cursor: grab;
+    }
 
-.cursor__Grabbing {
-    cursor: grabbing;
-}
+    &grabbing {
+        cursor: grabbing;
+    }
 
-.cursor__AllScroll {
-    cursor: all-scroll;
-}
+    &allScroll {
+        cursor: all-scroll;
+    }
 
-.cursor__ColResize {
-    cursor: col-resize;
-}
+    &colResize {
+        cursor: col-resize;
+    }
 
-.cursor__RowResize {
-    cursor: row-resize;
-}
+    &rowResize {
+        cursor: row-resize;
+    }
 
-.cursor__NResize {
-    cursor: n-resize;
-}
+    &nResize {
+        cursor: n-resize;
+    }
 
-.cursor__NEResize {
-    cursor: ne-resize;
-}
+    &neResize {
+        cursor: ne-resize;
+    }
 
-.cursor__EResize {
-    cursor: e-resize;
-}
+    &eResize {
+        cursor: e-resize;
+    }
 
-.cursor__SEResize {
-    cursor: se-resize;
-}
+    &seResize {
+        cursor: se-resize;
+    }
 
-.cursor__SResize {
-    cursor: s-resize;
-}
+    &sResize {
+        cursor: s-resize;
+    }
 
-.cursor__SWResize {
-    cursor: sw-resize;
-}
+    &swResize {
+        cursor: sw-resize;
+    }
 
-.cursor__WResize {
-    cursor: w-resize;
-}
+    &wResize {
+        cursor: w-resize;
+    }
 
-.cursor__NWResize {
-    cursor: nw-resize;
+    &nwResize {
+        cursor: nw-resize;
+    }
 }
