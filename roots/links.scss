@@ -1,18 +1,82 @@
-.link__underline{
-    text-decoration: none;
+.link-u {
+    text-decoration: underline;
 }
-.link__underline:hover{
-    text-decoration: none;
+
+.link-u:hover {
+    text-decoration: underline;
 }
-.link__dashed:hover{
+
+.link-dash-hov:hover {
     text-decoration: dashed;
 }
-.link__dashed{
+
+.link-dash {
     text-decoration: dashed;
 }
-.link__dashed{
-    text-decoration:dotted;
+
+.link-dot {
+    text-decoration: dotted;
 }
-.link__dashed:hover{
-    text-decoration:dotted;
+
+.link-dot-hov:hover {
+    text-decoration: dotted;
+}
+
+
+
+
+.link-none {
+    text-decoration: none;
+}
+
+.link-none-hov:hover {
+    text-decoration: none;
+}
+
+.link-overline {
+    text-decoration: overline;
+}
+
+.link-overline-hov:hover {
+    text-decoration: overline;
+}
+
+.link-line-through {
+    text-decoration: line-through;
+}
+
+.link-line-through-hov:hover {
+    text-decoration: line-through;
+}
+
+.link-double {
+    text-decoration: double;
+}
+
+.link-double-hov:hover {
+    text-decoration: double;
+}
+
+.link-wavy {
+    text-decoration: wavy;
+}
+
+.link-wavy-hov:hover {
+    text-decoration: wavy;
+}
+
+.link-solid {
+    text-decoration: solid;
+}
+
+.link-solid-hov:hover {
+    text-decoration: solid;
+}
+
+.link-blink {
+    text-decoration: blink;
+}
+
+.link-blink-hov:hover {
+    text-decoration: blink;
 }

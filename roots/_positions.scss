@@ -32,15 +32,65 @@ POSITION CENTER CLASSES
 ----------------------------------------------------------------
 */
 
-
+/* Center-Center */
 .pos-center-center {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
+/* Left-Center */
 .pos-left-center {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
+}
+
+/* Right-Center */
+.pos-right-center {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* Top-Center */
+.pos-top-center {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+/* Bottom-Center */
+.pos-bottom-center {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
+/* Top-Left */
+.pos-top-left {
+  left: 0;
+  top: 0;
+  transform: translate(0, 0);
+}
+
+/* Top-Right */
+.pos-top-right {
+  right: 0;
+  top: 0;
+  transform: translate(0, 0);
+}
+
+/* Bottom-Left */
+.pos-bottom-left {
+  left: 0;
+  bottom: 0;
+  transform: translate(0, 0);
+}
+
+/* Bottom-Right */
+.pos-bottom-right {
+  right: 0;
+  bottom: 0;
+  transform: translate(0, 0);
 }

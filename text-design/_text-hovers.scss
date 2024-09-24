@@ -1,145 +1,194 @@
 @use "../text-design/fontColors-vars" as *;
-/* ----------------------------------------------------------------
-HOVER EFFECTS
-----------------------------------------------------------------
-*/
 
 /* TEXT HOVER */
 
 /* White Hover Effect */
 .t-hov-White:hover {
-    color: $f-White;
+    color: $t-White;
 }
 
 /* Black Hover Effect */
 .t-hov-Black:hover {
-    color: $f-Black;
+    color: $t-Black;
 }
 
 /* Blue Hover Effect */
 .t-hov-Blue:hover {
-    color: $f-Blue;
+    color: $t-Blue;
 }
 
 /* Red Hover Effect */
 .t-hov-Red:hover {
-    color: $f-Red;
+    color: $t-Red;
 }
 
 /* Green Hover Effect */
 .t-hov-Green:hover {
-    color: $f-Green;
+    color: $t-Green;
 }
 
 /* Yellow Hover Effect */
 .t-hov-Yellow:hover {
-    color: $f-Yellow;
+    color: $t-Yellow;
 }
 
 /* Orange Hover Effect */
 .t-hov-Orange:hover {
-    color: $f-Orange;
+    color: $t-Orange;
 }
 
 /* Purple Hover Effect */
 .t-hov-Purple:hover {
-    color: $f-Purple;
+    color: $t-Purple;
 }
 
 /* Pink Hover Effect */
 .t-hov-Pink:hover {
-    color: $f-Pink;
+    color: $t-Pink;
 }
 
 /* Teal Hover Effect */
 .t-hov-Teal:hover {
-    color: $f-Teal;
+    color: $t-Teal;
 }
 
 /* Brown Hover Effect */
 .t-hov-Brown:hover {
-    color: $f-Brown;
+    color: $t-Brown;
 }
 
 /* Gray Hover Effect */
 .t-hov-Gray:hover {
-    color: $f-Gray;
+    color: $t-Gray;
 }
 
 /* Cyan Hover Effect */
 .t-hov-Cyan:hover {
-    color: $f-Cyan;
+    color: $t-Cyan;
 }
 
 
 /* Gold Hover Effect */
 .t-hov-Gold:hover {
-    color: $f-Gold;
+    color: $t-Gold;
 }
 
 /* Indigo Hover Effect */
 .t-hov-Indigo:hover {
-    color: $f-Indigo;
+    color: $t-Indigo;
 }
 
 /* Violet Hover Effect */
 .t-hov-Violet:hover {
-    color: $f-Violet;
+    color: $t-Violet;
 }
 
 /* Salmon Hover Effect */
 
 .t-hov-Salmon:hover {
-    color: $f-Salmon;
+    color: $t-Salmon;
 }
 
 /* Light Salmon Hover Effect */
 
 .t-hov-LightSalmon:hover {
-    color: $f-LightSalmon;
+    color: $t-LightSalmon;
 }
 
 /* Light Pink Hover Effect */
 
 .t-hov-LightPink:hover {
-    color: $f-LightPink;
+    color: $t-LightPink;
 }
 
 /* Light Coral Hover Effect */
 
 .t-hov-LightCoral:hover {
-    color: $f-LightCoral;
+    color: $t-LightCoral;
 }
 
 
 /* Light Golden Rod Yellow Hover Effect */
 
 .t-hov-LightGoldenRodYellow:hover {
-    color: $f-LightGoldenRodYellow;
+    color: $t-LightGoldenRodYellow;
 }
 
 /* Light Steel Blue Hover Effect */
 
 .t-hov-LightSteelBlue:hover {
-    color: $f-LightSteelBlue;
+    color: $t-LightSteelBlue;
 }
 
 
 /* Light Sky Blue Hover Effect */
 
 .t-hov-LightSkyBlue:hover {
-    color: $f-LightSkyBlue;
+    color: $t-LightSkyBlue;
 }
 
-/* Light Light Magenta Hover Effect */
 
 
 
-//TEXT SHADOW
-.t-shadow-Black {
-    text-shadow: 2px 2px 2px $f-Black;
-}
+// TEXT SHADOW
+.t-shad- {
+    &Black {
+        text-shadow: 2px 2px 2px $t-Black;
+    }
 
-.t-shadow-Gray {
-    text-shadow: 2px 2px 2px $f-Gray;
+    &Gray {
+        text-shadow: 2px 2px 2px $t-Gray;
+    }
+
+    &White {
+        text-shadow: 2px 2px 2px $t-White;
+    }
+
+    &Red {
+        text-shadow: 2px 2px 2px $t-Red;
+    }
+
+    &Green {
+        text-shadow: 2px 2px 2px $t-Green;
+    }
+
+    &Blue {
+        text-shadow: 2px 2px 2px $t-Blue;
+    }
+
+    &Yellow {
+        text-shadow: 2px 2px 2px $t-Yellow;
+    }
+
+    &Cyan {
+        text-shadow: 2px 2px 2px $t-Cyan;
+    }
+
+    &Magenta {
+        text-shadow: 2px 2px 2px $t-Magenta;
+    }
+
+    &Purple {
+        text-shadow: 2px 2px 2px $t-Purple;
+    }
+
+    &Orange {
+        text-shadow: 2px 2px 2px $t-Orange;
+    }
+
+    &Pink {
+        text-shadow: 2px 2px 2px $t-Pink;
+    }
+
+    &Gold {
+        text-shadow: 2px 2px 2px $t-Gold;
+    }
+
+    &Silver {
+        text-shadow: 2px 2px 2px $t-Silver;
+    }
+
+    &Brown {
+        text-shadow: 2px 2px 2px $t-Brown;
+    }
 }
