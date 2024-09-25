@@ -48521,6 +48521,10 @@ CURSOR CLASSES
   display: flex;
 }
 
+.margin-auto, .mar-auto, .m-auto {
+  margin: auto;
+}
+
 .mar-l-inherit, .m-l-inherit, .m-left-inherit {
   margin-left: inherit;
 }

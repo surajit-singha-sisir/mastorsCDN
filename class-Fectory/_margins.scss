@@ -1,5 +1,11 @@
 @use "../variables-Fectory/rem-vars" as *;
 
+// AUTO MARGIN
+.margin-auto, .mar-auto, .m-auto {
+	margin: auto;
+}
+
+
 
 // USEFULL CLASSES
 .mar-l-, .m-l-, .m-left- {
