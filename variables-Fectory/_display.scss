@@ -1,5 +1,6 @@
 .display-none,
-.d-none {
+.d-none,
+.hide {
     display: none;
 }
 
@@ -21,4 +22,19 @@
 .display-inline-block,
 .d-inline-block {
     display: inline-block;
+}
+
+.show {
+    display: block !important;
+    ;
+}
+
+.o-none,
+.o-hide,
+.o-o,
+.opa-o,
+.op-none,
+.op-hide,
+.op-o {
+    opacity: 0;
 }
