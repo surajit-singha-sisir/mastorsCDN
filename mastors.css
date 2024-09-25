@@ -25187,6 +25187,31 @@ HEIGHT IN REM SIZE
   min-height: fit-content;
 }
 
+.display-none,
+.d-none {
+  display: none;
+}
+
+.display-block,
+.d-block {
+  display: block;
+}
+
+.display-inherit,
+.d-inherit {
+  display: inherit;
+}
+
+.display-inline,
+.d-inline {
+  display: inline;
+}
+
+.display-inline-block,
+.d-inline-block {
+  display: inline-block;
+}
+
 :root {
   --white: #ffffff;
   --black: #000000;
