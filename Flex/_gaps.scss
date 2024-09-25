@@ -1,1509 +1,2013 @@
 @use "../variables-Fectory/rem-vars" as *;
 
 /* //FLEX GAP */
-.gapNone {
+.gapNone,
+.gap-none {
     gap: 0;
 }
-.gap-00 {
-    gap: $rem00;
-}
-.gap-01 {
-    gap: $rem01;
-}
-.gap-02 {
-    gap: $rem02;
-}
-.gap-03 {
-    gap: $rem03;
-}
-.gap-04 {
-    gap: $rem04;
-}
-.gap-05 {
-    gap: $rem05;
-}
-.gap-06 {
-    gap: $rem06;
-}
-.gap-07 {
-    gap: $rem07;
-}
-.gap-08 {
-    gap: $rem08;
-}
-.gap-09 {
-    gap: $rem09;
-}
-.gap-10 {
-    gap: $rem10;
-}
-.gap-11 {
-    gap: $rem11;
-}
-.gap-12 {
-    gap: $rem12;
-}
-.gap-13 {
-    gap: $rem13;
-}
-.gap-14 {
-    gap: $rem14;
-}
-.gap-15 {
-    gap: $rem15;
-}
-.gap-16 {
-    gap: $rem16;
-}
-.gap-17 {
-    gap: $rem17;
-}
-.gap-18 {
-    gap: $rem18;
-}
-.gap-19 {
-    gap: $rem19;
-}
-.gap-20 {
-    gap: $rem20;
-}
-.gap-21 {
-    gap: $rem21;
-}
-.gap-22 {
-    gap: $rem22;
-}
-.gap-23 {
-    gap: $rem23;
-}
-.gap-24 {
-    gap: $rem24;
-}
-.gap-25 {
-    gap: $rem25;
-}
-.gap-26 {
-    gap: $rem26;
-}
-.gap-27 {
-    gap: $rem27;
-}
-.gap-28 {
-    gap: $rem28;
-}
-.gap-29 {
-    gap: $rem29;
-}
-.gap-30 {
-    gap: $rem30;
-}
-.gap-31 {
-    gap: $rem31;
-}
-.gap-32 {
-    gap: $rem32;
-}
-.gap-33 {
-    gap: $rem33;
-}
-.gap-34 {
-    gap: $rem34;
-}
-.gap-35 {
-    gap: $rem35;
-}
-.gap-36 {
-    gap: $rem36;
-}
-.gap-37 {
-    gap: $rem37;
-}
-.gap-38 {
-    gap: $rem38;
-}
-.gap-39 {
-    gap: $rem39;
-}
-.gap-40 {
-    gap: $rem40;
-}
-.gap-41 {
-    gap: $rem41;
-}
-.gap-42 {
-    gap: $rem42;
-}
-.gap-43 {
-    gap: $rem43;
-}
-.gap-44 {
-    gap: $rem44;
-}
-.gap-45 {
-    gap: $rem45;
-}
-.gap-46 {
-    gap: $rem46;
-}
-.gap-47 {
-    gap: $rem47;
-}
-.gap-48 {
-    gap: $rem48;
-}
-.gap-49 {
-    gap: $rem49;
-}
-.gap-50 {
-    gap: $rem50;
-}
-.gap-51 {
-    gap: $rem51;
-}
-.gap-52 {
-    gap: $rem52;
-}
-.gap-53 {
-    gap: $rem53;
-}
-.gap-54 {
-    gap: $rem54;
-}
-.gap-55 {
-    gap: $rem55;
-}
-.gap-56 {
-    gap: $rem56;
-}
-.gap-57 {
-    gap: $rem57;
-}
-.gap-58 {
-    gap: $rem58;
-}
-.gap-59 {
-    gap: $rem59;
-}
-.gap-60 {
-    gap: $rem60;
-}
-.gap-61 {
-    gap: $rem61;
-}
-.gap-62 {
-    gap: $rem62;
-}
-.gap-63 {
-    gap: $rem63;
-}
-.gap-64 {
-    gap: $rem64;
-}
-.gap-65 {
-    gap: $rem65;
-}
-.gap-66 {
-    gap: $rem66;
-}
-.gap-67 {
-    gap: $rem67;
-}
-.gap-68 {
-    gap: $rem68;
-}
-.gap-69 {
-    gap: $rem69;
-}
-.gap-70 {
-    gap: $rem70;
-}
-.gap-71 {
-    gap: $rem71;
-}
-.gap-72 {
-    gap: $rem72;
-}
-.gap-73 {
-    gap: $rem73;
-}
-.gap-74 {
-    gap: $rem74;
-}
-.gap-75 {
-    gap: $rem75;
-}
-.gap-76 {
-    gap: $rem76;
-}
-.gap-77 {
-    gap: $rem77;
-}
-.gap-78 {
-    gap: $rem78;
-}
-.gap-79 {
-    gap: $rem79;
-}
-.gap-80 {
-    gap: $rem80;
-}
-.gap-81 {
-    gap: $rem81;
-}
-.gap-82 {
-    gap: $rem82;
-}
-.gap-83 {
-    gap: $rem83;
-}
-.gap-84 {
-    gap: $rem84;
-}
-.gap-85 {
-    gap: $rem85;
-}
-.gap-86 {
-    gap: $rem86;
-}
-.gap-87 {
-    gap: $rem87;
-}
-.gap-88 {
-    gap: $rem88;
-}
-.gap-89 {
-    gap: $rem89;
-}
-.gap-90 {
-    gap: $rem90;
-}
-.gap-91 {
-    gap: $rem91;
-}
-.gap-92 {
-    gap: $rem92;
-}
-.gap-93 {
-    gap: $rem93;
-}
-.gap-94 {
-    gap: $rem94;
-}
-.gap-95 {
-    gap: $rem95;
-}
-.gap-96 {
-    gap: $rem96;
-}
-.gap-97 {
-    gap: $rem97;
-}
-.gap-98 {
-    gap: $rem98;
-}
-.gap-99 {
-    gap: $rem99;
-}
-.gap-100 {
-    gap: $rem100;
-}
-.gap-101 {
-    gap: $rem101;
-}
-.gap-102 {
-    gap: $rem102;
-}
-.gap-103 {
-    gap: $rem103;
-}
-.gap-104 {
-    gap: $rem104;
-}
-.gap-105 {
-    gap: $rem105;
-}
-.gap-106 {
-    gap: $rem106;
-}
-.gap-107 {
-    gap: $rem107;
-}
-.gap-108 {
-    gap: $rem108;
-}
-.gap-109 {
-    gap: $rem109;
-}
-.gap-110 {
-    gap: $rem110;
-}
-.gap-111 {
-    gap: $rem111;
-}
-.gap-112 {
-    gap: $rem112;
-}
-.gap-113 {
-    gap: $rem113;
-}
-.gap-114 {
-    gap: $rem114;
-}
-.gap-115 {
-    gap: $rem115;
-}
-.gap-116 {
-    gap: $rem116;
-}
-.gap-117 {
-    gap: $rem117;
-}
-.gap-118 {
-    gap: $rem118;
-}
-.gap-119 {
-    gap: $rem119;
-}
-.gap-120 {
-    gap: $rem120;
-}
-.gap-121 {
-    gap: $rem121;
-}
-.gap-122 {
-    gap: $rem122;
-}
-.gap-123 {
-    gap: $rem123;
-}
-.gap-124 {
-    gap: $rem124;
-}
-.gap-125 {
-    gap: $rem125;
-}
-.gap-126 {
-    gap: $rem126;
-}
-.gap-127 {
-    gap: $rem127;
-}
-.gap-128 {
-    gap: $rem128;
-}
-.gap-129 {
-    gap: $rem129;
-}
-.gap-130 {
-    gap: $rem130;
-}
-.gap-131 {
-    gap: $rem131;
-}
-.gap-132 {
-    gap: $rem132;
-}
-.gap-133 {
-    gap: $rem133;
-}
-.gap-134 {
-    gap: $rem134;
-}
-.gap-135 {
-    gap: $rem135;
-}
-.gap-136 {
-    gap: $rem136;
-}
-.gap-137 {
-    gap: $rem137;
-}
-.gap-138 {
-    gap: $rem138;
-}
-.gap-139 {
-    gap: $rem139;
-}
-.gap-140 {
-    gap: $rem140;
-}
-.gap-141 {
-    gap: $rem141;
-}
-.gap-142 {
-    gap: $rem142;
-}
-.gap-143 {
-    gap: $rem143;
-}
-.gap-144 {
-    gap: $rem144;
-}
-.gap-145 {
-    gap: $rem145;
-}
-.gap-146 {
-    gap: $rem146;
-}
-.gap-147 {
-    gap: $rem147;
-}
-.gap-148 {
-    gap: $rem148;
-}
-.gap-149 {
-    gap: $rem149;
-}
-.gap-150 {
-    gap: $rem150;
-}
-.gap-151 {
-    gap: $rem151;
-}
-.gap-152 {
-    gap: $rem152;
-}
-.gap-153 {
-    gap: $rem153;
-}
-.gap-154 {
-    gap: $rem154;
-}
-.gap-155 {
-    gap: $rem155;
-}
-.gap-156 {
-    gap: $rem156;
-}
-.gap-157 {
-    gap: $rem157;
-}
-.gap-158 {
-    gap: $rem158;
-}
-.gap-159 {
-    gap: $rem159;
-}
-.gap-160 {
-    gap: $rem160;
-}
-.gap-161 {
-    gap: $rem161;
-}
-.gap-162 {
-    gap: $rem162;
-}
-.gap-163 {
-    gap: $rem163;
-}
-.gap-164 {
-    gap: $rem164;
-}
-.gap-165 {
-    gap: $rem165;
-}
-.gap-166 {
-    gap: $rem166;
-}
-.gap-167 {
-    gap: $rem167;
-}
-.gap-168 {
-    gap: $rem168;
-}
-.gap-169 {
-    gap: $rem169;
-}
-.gap-170 {
-    gap: $rem170;
-}
-.gap-171 {
-    gap: $rem171;
-}
-.gap-172 {
-    gap: $rem172;
-}
-.gap-173 {
-    gap: $rem173;
-}
-.gap-174 {
-    gap: $rem174;
-}
-.gap-175 {
-    gap: $rem175;
-}
-.gap-176 {
-    gap: $rem176;
-}
-.gap-177 {
-    gap: $rem177;
-}
-.gap-178 {
-    gap: $rem178;
-}
-.gap-179 {
-    gap: $rem179;
-}
-.gap-180 {
-    gap: $rem180;
-}
-.gap-181 {
-    gap: $rem181;
-}
-.gap-182 {
-    gap: $rem182;
-}
-.gap-183 {
-    gap: $rem183;
-}
-.gap-184 {
-    gap: $rem184;
-}
-.gap-185 {
-    gap: $rem185;
-}
-.gap-186 {
-    gap: $rem186;
-}
-.gap-187 {
-    gap: $rem187;
-}
-.gap-188 {
-    gap: $rem188;
-}
-.gap-189 {
-    gap: $rem189;
-}
-.gap-190 {
-    gap: $rem190;
-}
-.gap-191 {
-    gap: $rem191;
-}
-.gap-192 {
-    gap: $rem192;
-}
-.gap-193 {
-    gap: $rem193;
-}
-.gap-194 {
-    gap: $rem194;
-}
-.gap-195 {
-    gap: $rem195;
-}
-.gap-196 {
-    gap: $rem196;
-}
-.gap-197 {
-    gap: $rem197;
-}
-.gap-198 {
-    gap: $rem198;
-}
-.gap-199 {
-    gap: $rem199;
-}
-.gap-200 {
-    gap: $rem200;
-}
-.gap-201 {
-    gap: $rem201;
-}
-.gap-202 {
-    gap: $rem202;
-}
-.gap-203 {
-    gap: $rem203;
-}
-.gap-204 {
-    gap: $rem204;
-}
-.gap-205 {
-    gap: $rem205;
-}
-.gap-206 {
-    gap: $rem206;
-}
-.gap-207 {
-    gap: $rem207;
-}
-.gap-208 {
-    gap: $rem208;
-}
-.gap-209 {
-    gap: $rem209;
-}
-.gap-210 {
-    gap: $rem210;
-}
-.gap-211 {
-    gap: $rem211;
-}
-.gap-212 {
-    gap: $rem212;
-}
-.gap-213 {
-    gap: $rem213;
-}
-.gap-214 {
-    gap: $rem214;
-}
-.gap-215 {
-    gap: $rem215;
-}
-.gap-216 {
-    gap: $rem216;
-}
-.gap-217 {
-    gap: $rem217;
-}
-.gap-218 {
-    gap: $rem218;
-}
-.gap-219 {
-    gap: $rem219;
-}
-.gap-220 {
-    gap: $rem220;
-}
-.gap-221 {
-    gap: $rem221;
-}
-.gap-222 {
-    gap: $rem222;
-}
-.gap-223 {
-    gap: $rem223;
-}
-.gap-224 {
-    gap: $rem224;
-}
-.gap-225 {
-    gap: $rem225;
-}
-.gap-226 {
-    gap: $rem226;
-}
-.gap-227 {
-    gap: $rem227;
-}
-.gap-228 {
-    gap: $rem228;
-}
-.gap-229 {
-    gap: $rem229;
-}
-.gap-230 {
-    gap: $rem230;
-}
-.gap-231 {
-    gap: $rem231;
-}
-.gap-232 {
-    gap: $rem232;
-}
-.gap-233 {
-    gap: $rem233;
-}
-.gap-234 {
-    gap: $rem234;
-}
-.gap-235 {
-    gap: $rem235;
-}
-.gap-236 {
-    gap: $rem236;
-}
-.gap-237 {
-    gap: $rem237;
-}
-.gap-238 {
-    gap: $rem238;
-}
-.gap-239 {
-    gap: $rem239;
-}
-.gap-240 {
-    gap: $rem240;
-}
-.gap-241 {
-    gap: $rem241;
-}
-.gap-242 {
-    gap: $rem242;
-}
-.gap-243 {
-    gap: $rem243;
-}
-.gap-244 {
-    gap: $rem244;
-}
-.gap-245 {
-    gap: $rem245;
-}
-.gap-246 {
-    gap: $rem246;
-}
-.gap-247 {
-    gap: $rem247;
-}
-.gap-248 {
-    gap: $rem248;
-}
-.gap-249 {
-    gap: $rem249;
-}
-.gap-250 {
-    gap: $rem250;
-}
-.gap-251 {
-    gap: $rem251;
-}
-.gap-252 {
-    gap: $rem252;
-}
-.gap-253 {
-    gap: $rem253;
-}
-.gap-254 {
-    gap: $rem254;
-}
-.gap-255 {
-    gap: $rem255;
-}
-.gap-256 {
-    gap: $rem256;
-}
-.gap-257 {
-    gap: $rem257;
-}
-.gap-258 {
-    gap: $rem258;
-}
-.gap-259 {
-    gap: $rem259;
-}
-.gap-260 {
-    gap: $rem260;
-}
-.gap-261 {
-    gap: $rem261;
-}
-.gap-262 {
-    gap: $rem262;
-}
-.gap-263 {
-    gap: $rem263;
-}
-.gap-264 {
-    gap: $rem264;
-}
-.gap-265 {
-    gap: $rem265;
-}
-.gap-266 {
-    gap: $rem266;
-}
-.gap-267 {
-    gap: $rem267;
-}
-.gap-268 {
-    gap: $rem268;
-}
-.gap-269 {
-    gap: $rem269;
-}
-.gap-270 {
-    gap: $rem270;
-}
-.gap-271 {
-    gap: $rem271;
-}
-.gap-272 {
-    gap: $rem272;
-}
-.gap-273 {
-    gap: $rem273;
-}
-.gap-274 {
-    gap: $rem274;
-}
-.gap-275 {
-    gap: $rem275;
-}
-.gap-276 {
-    gap: $rem276;
-}
-.gap-277 {
-    gap: $rem277;
-}
-.gap-278 {
-    gap: $rem278;
-}
-.gap-279 {
-    gap: $rem279;
-}
-.gap-280 {
-    gap: $rem280;
-}
-.gap-281 {
-    gap: $rem281;
-}
-.gap-282 {
-    gap: $rem282;
-}
-.gap-283 {
-    gap: $rem283;
-}
-.gap-284 {
-    gap: $rem284;
-}
-.gap-285 {
-    gap: $rem285;
-}
-.gap-286 {
-    gap: $rem286;
-}
-.gap-287 {
-    gap: $rem287;
-}
-.gap-288 {
-    gap: $rem288;
-}
-.gap-289 {
-    gap: $rem289;
-}
-.gap-290 {
-    gap: $rem290;
-}
-.gap-291 {
-    gap: $rem291;
-}
-.gap-292 {
-    gap: $rem292;
-}
-.gap-293 {
-    gap: $rem293;
-}
-.gap-294 {
-    gap: $rem294;
-}
-.gap-295 {
-    gap: $rem295;
-}
-.gap-296 {
-    gap: $rem296;
-}
-.gap-297 {
-    gap: $rem297;
-}
-.gap-298 {
-    gap: $rem298;
-}
-.gap-299 {
-    gap: $rem299;
-}
-.gap-300 {
-    gap: $rem300;
-}
-.gap-301 {
-    gap: $rem301;
-}
-.gap-302 {
-    gap: $rem302;
-}
-.gap-303 {
-    gap: $rem303;
-}
-.gap-304 {
-    gap: $rem304;
-}
-.gap-305 {
-    gap: $rem305;
-}
-.gap-306 {
-    gap: $rem306;
-}
-.gap-307 {
-    gap: $rem307;
-}
-.gap-308 {
-    gap: $rem308;
-}
-.gap-309 {
-    gap: $rem309;
-}
-.gap-310 {
-    gap: $rem310;
-}
-.gap-311 {
-    gap: $rem311;
-}
-.gap-312 {
-    gap: $rem312;
-}
-.gap-313 {
-    gap: $rem313;
-}
-.gap-314 {
-    gap: $rem314;
-}
-.gap-315 {
-    gap: $rem315;
-}
-.gap-316 {
-    gap: $rem316;
-}
-.gap-317 {
-    gap: $rem317;
-}
-.gap-318 {
-    gap: $rem318;
-}
-.gap-319 {
-    gap: $rem319;
-}
-.gap-320 {
-    gap: $rem320;
-}
-.gap-321 {
-    gap: $rem321;
-}
-.gap-322 {
-    gap: $rem322;
-}
-.gap-323 {
-    gap: $rem323;
-}
-.gap-324 {
-    gap: $rem324;
-}
-.gap-325 {
-    gap: $rem325;
-}
-.gap-326 {
-    gap: $rem326;
-}
-.gap-327 {
-    gap: $rem327;
-}
-.gap-328 {
-    gap: $rem328;
-}
-.gap-329 {
-    gap: $rem329;
-}
-.gap-330 {
-    gap: $rem330;
-}
-.gap-331 {
-    gap: $rem331;
-}
-.gap-332 {
-    gap: $rem332;
-}
-.gap-333 {
-    gap: $rem333;
-}
-.gap-334 {
-    gap: $rem334;
-}
-.gap-335 {
-    gap: $rem335;
-}
-.gap-336 {
-    gap: $rem336;
-}
-.gap-337 {
-    gap: $rem337;
-}
-.gap-338 {
-    gap: $rem338;
-}
-.gap-339 {
-    gap: $rem339;
-}
-.gap-340 {
-    gap: $rem340;
-}
-.gap-341 {
-    gap: $rem341;
-}
-.gap-342 {
-    gap: $rem342;
-}
-.gap-343 {
-    gap: $rem343;
-}
-.gap-344 {
-    gap: $rem344;
-}
-.gap-345 {
-    gap: $rem345;
-}
-.gap-346 {
-    gap: $rem346;
-}
-.gap-347 {
-    gap: $rem347;
-}
-.gap-348 {
-    gap: $rem348;
-}
-.gap-349 {
-    gap: $rem349;
-}
-.gap-350 {
-    gap: $rem350;
-}
-.gap-351 {
-    gap: $rem351;
-}
-.gap-352 {
-    gap: $rem352;
-}
-.gap-353 {
-    gap: $rem353;
-}
-.gap-354 {
-    gap: $rem354;
-}
-.gap-355 {
-    gap: $rem355;
-}
-.gap-356 {
-    gap: $rem356;
-}
-.gap-357 {
-    gap: $rem357;
-}
-.gap-358 {
-    gap: $rem358;
-}
-.gap-359 {
-    gap: $rem359;
-}
-.gap-360 {
-    gap: $rem360;
-}
-.gap-361 {
-    gap: $rem361;
-}
-.gap-362 {
-    gap: $rem362;
-}
-.gap-363 {
-    gap: $rem363;
-}
-.gap-364 {
-    gap: $rem364;
-}
-.gap-365 {
-    gap: $rem365;
-}
-.gap-366 {
-    gap: $rem366;
-}
-.gap-367 {
-    gap: $rem367;
-}
-.gap-368 {
-    gap: $rem368;
-}
-.gap-369 {
-    gap: $rem369;
-}
-.gap-370 {
-    gap: $rem370;
-}
-.gap-371 {
-    gap: $rem371;
-}
-.gap-372 {
-    gap: $rem372;
-}
-.gap-373 {
-    gap: $rem373;
-}
-.gap-374 {
-    gap: $rem374;
-}
-.gap-375 {
-    gap: $rem375;
-}
-.gap-376 {
-    gap: $rem376;
-}
-.gap-377 {
-    gap: $rem377;
-}
-.gap-378 {
-    gap: $rem378;
-}
-.gap-379 {
-    gap: $rem379;
-}
-.gap-380 {
-    gap: $rem380;
-}
-.gap-381 {
-    gap: $rem381;
-}
-.gap-382 {
-    gap: $rem382;
-}
-.gap-383 {
-    gap: $rem383;
-}
-.gap-384 {
-    gap: $rem384;
-}
-.gap-385 {
-    gap: $rem385;
-}
-.gap-386 {
-    gap: $rem386;
-}
-.gap-387 {
-    gap: $rem387;
-}
-.gap-388 {
-    gap: $rem388;
-}
-.gap-389 {
-    gap: $rem389;
-}
-.gap-390 {
-    gap: $rem390;
-}
-.gap-391 {
-    gap: $rem391;
-}
-.gap-392 {
-    gap: $rem392;
-}
-.gap-393 {
-    gap: $rem393;
-}
-.gap-394 {
-    gap: $rem394;
-}
-.gap-395 {
-    gap: $rem395;
-}
-.gap-396 {
-    gap: $rem396;
-}
-.gap-397 {
-    gap: $rem397;
-}
-.gap-398 {
-    gap: $rem398;
-}
-.gap-399 {
-    gap: $rem399;
-}
-.gap-400 {
-    gap: $rem400;
-}
-.gap-401 {
-    gap: $rem401;
-}
-.gap-402 {
-    gap: $rem402;
-}
-.gap-403 {
-    gap: $rem403;
-}
-.gap-404 {
-    gap: $rem404;
-}
-.gap-405 {
-    gap: $rem405;
-}
-.gap-406 {
-    gap: $rem406;
-}
-.gap-407 {
-    gap: $rem407;
-}
-.gap-408 {
-    gap: $rem408;
-}
-.gap-409 {
-    gap: $rem409;
-}
-.gap-410 {
-    gap: $rem410;
-}
-.gap-411 {
-    gap: $rem411;
-}
-.gap-412 {
-    gap: $rem412;
-}
-.gap-413 {
-    gap: $rem413;
-}
-.gap-414 {
-    gap: $rem414;
-}
-.gap-415 {
-    gap: $rem415;
-}
-.gap-416 {
-    gap: $rem416;
-}
-.gap-417 {
-    gap: $rem417;
-}
-.gap-418 {
-    gap: $rem418;
-}
-.gap-419 {
-    gap: $rem419;
-}
-.gap-420 {
-    gap: $rem420;
-}
-.gap-421 {
-    gap: $rem421;
-}
-.gap-422 {
-    gap: $rem422;
-}
-.gap-423 {
-    gap: $rem423;
-}
-.gap-424 {
-    gap: $rem424;
-}
-.gap-425 {
-    gap: $rem425;
-}
-.gap-426 {
-    gap: $rem426;
-}
-.gap-427 {
-    gap: $rem427;
-}
-.gap-428 {
-    gap: $rem428;
-}
-.gap-429 {
-    gap: $rem429;
-}
-.gap-430 {
-    gap: $rem430;
-}
-.gap-431 {
-    gap: $rem431;
-}
-.gap-432 {
-    gap: $rem432;
-}
-.gap-433 {
-    gap: $rem433;
-}
-.gap-434 {
-    gap: $rem434;
-}
-.gap-435 {
-    gap: $rem435;
-}
-.gap-436 {
-    gap: $rem436;
-}
-.gap-437 {
-    gap: $rem437;
-}
-.gap-438 {
-    gap: $rem438;
-}
-.gap-439 {
-    gap: $rem439;
-}
-.gap-440 {
-    gap: $rem440;
-}
-.gap-441 {
-    gap: $rem441;
-}
-.gap-442 {
-    gap: $rem442;
-}
-.gap-443 {
-    gap: $rem443;
-}
-.gap-444 {
-    gap: $rem444;
-}
-.gap-445 {
-    gap: $rem445;
-}
-.gap-446 {
-    gap: $rem446;
-}
-.gap-447 {
-    gap: $rem447;
-}
-.gap-448 {
-    gap: $rem448;
-}
-.gap-449 {
-    gap: $rem449;
-}
-.gap-450 {
-    gap: $rem450;
-}
-.gap-451 {
-    gap: $rem451;
-}
-.gap-452 {
-    gap: $rem452;
-}
-.gap-453 {
-    gap: $rem453;
-}
-.gap-454 {
-    gap: $rem454;
-}
-.gap-455 {
-    gap: $rem455;
-}
-.gap-456 {
-    gap: $rem456;
-}
-.gap-457 {
-    gap: $rem457;
-}
-.gap-458 {
-    gap: $rem458;
-}
-.gap-459 {
-    gap: $rem459;
-}
-.gap-460 {
-    gap: $rem460;
-}
-.gap-461 {
-    gap: $rem461;
-}
-.gap-462 {
-    gap: $rem462;
-}
-.gap-463 {
-    gap: $rem463;
-}
-.gap-464 {
-    gap: $rem464;
-}
-.gap-465 {
-    gap: $rem465;
-}
-.gap-466 {
-    gap: $rem466;
-}
-.gap-467 {
-    gap: $rem467;
-}
-.gap-468 {
-    gap: $rem468;
-}
-.gap-469 {
-    gap: $rem469;
-}
-.gap-470 {
-    gap: $rem470;
-}
-.gap-471 {
-    gap: $rem471;
-}
-.gap-472 {
-    gap: $rem472;
-}
-.gap-473 {
-    gap: $rem473;
-}
-.gap-474 {
-    gap: $rem474;
-}
-.gap-475 {
-    gap: $rem475;
-}
-.gap-476 {
-    gap: $rem476;
-}
-.gap-477 {
-    gap: $rem477;
-}
-.gap-478 {
-    gap: $rem478;
-}
-.gap-479 {
-    gap: $rem479;
-}
-.gap-480 {
-    gap: $rem480;
-}
-.gap-481 {
-    gap: $rem481;
-}
-.gap-482 {
-    gap: $rem482;
-}
-.gap-483 {
-    gap: $rem483;
-}
-.gap-484 {
-    gap: $rem484;
-}
-.gap-485 {
-    gap: $rem485;
-}
-.gap-486 {
-    gap: $rem486;
-}
-.gap-487 {
-    gap: $rem487;
-}
-.gap-488 {
-    gap: $rem488;
-}
-.gap-489 {
-    gap: $rem489;
-}
-.gap-490 {
-    gap: $rem490;
-}
-.gap-491 {
-    gap: $rem491;
-}
-.gap-492 {
-    gap: $rem492;
-}
-.gap-493 {
-    gap: $rem493;
-}
-.gap-494 {
-    gap: $rem494;
-}
-.gap-495 {
-    gap: $rem495;
-}
-.gap-496 {
-    gap: $rem496;
-}
-.gap-497 {
-    gap: $rem497;
-}
-.gap-498 {
-    gap: $rem498;
-}
-.gap-499 {
-    gap: $rem499;
-}
-.gap-500 {
-    gap: $rem500;
+
+.gap-, .g-, .gap--, .g-- {
+    &00 {
+        gap: $rem00;
+    }
+
+    &01 {
+        gap: $rem01;
+    }
+
+    &02 {
+        gap: $rem02;
+    }
+
+    &03 {
+        gap: $rem03;
+    }
+
+    &04 {
+        gap: $rem04;
+    }
+
+    &05 {
+        gap: $rem05;
+    }
+
+    &06 {
+        gap: $rem06;
+    }
+
+    &07 {
+        gap: $rem07;
+    }
+
+    &08 {
+        gap: $rem08;
+    }
+
+    &09 {
+        gap: $rem09;
+    }
+
+    &10 {
+        gap: $rem10;
+    }
+
+    &11 {
+        gap: $rem11;
+    }
+
+    &12 {
+        gap: $rem12;
+    }
+
+    &13 {
+        gap: $rem13;
+    }
+
+    &14 {
+        gap: $rem14;
+    }
+
+    &15 {
+        gap: $rem15;
+    }
+
+    &16 {
+        gap: $rem16;
+    }
+
+    &17 {
+        gap: $rem17;
+    }
+
+    &18 {
+        gap: $rem18;
+    }
+
+    &19 {
+        gap: $rem19;
+    }
+
+    &20 {
+        gap: $rem20;
+    }
+
+    &21 {
+        gap: $rem21;
+    }
+
+    &22 {
+        gap: $rem22;
+    }
+
+    &23 {
+        gap: $rem23;
+    }
+
+    &24 {
+        gap: $rem24;
+    }
+
+    &25 {
+        gap: $rem25;
+    }
+
+    &26 {
+        gap: $rem26;
+    }
+
+    &27 {
+        gap: $rem27;
+    }
+
+    &28 {
+        gap: $rem28;
+    }
+
+    &29 {
+        gap: $rem29;
+    }
+
+    &30 {
+        gap: $rem30;
+    }
+
+    &31 {
+        gap: $rem31;
+    }
+
+    &32 {
+        gap: $rem32;
+    }
+
+    &33 {
+        gap: $rem33;
+    }
+
+    &34 {
+        gap: $rem34;
+    }
+
+    &35 {
+        gap: $rem35;
+    }
+
+    &36 {
+        gap: $rem36;
+    }
+
+    &37 {
+        gap: $rem37;
+    }
+
+    &38 {
+        gap: $rem38;
+    }
+
+    &39 {
+        gap: $rem39;
+    }
+
+    &40 {
+        gap: $rem40;
+    }
+
+    &41 {
+        gap: $rem41;
+    }
+
+    &42 {
+        gap: $rem42;
+    }
+
+    &43 {
+        gap: $rem43;
+    }
+
+    &44 {
+        gap: $rem44;
+    }
+
+    &45 {
+        gap: $rem45;
+    }
+
+    &46 {
+        gap: $rem46;
+    }
+
+    &47 {
+        gap: $rem47;
+    }
+
+    &48 {
+        gap: $rem48;
+    }
+
+    &49 {
+        gap: $rem49;
+    }
+
+    &50 {
+        gap: $rem50;
+    }
+
+    &51 {
+        gap: $rem51;
+    }
+
+    &52 {
+        gap: $rem52;
+    }
+
+    &53 {
+        gap: $rem53;
+    }
+
+    &54 {
+        gap: $rem54;
+    }
+
+    &55 {
+        gap: $rem55;
+    }
+
+    &56 {
+        gap: $rem56;
+    }
+
+    &57 {
+        gap: $rem57;
+    }
+
+    &58 {
+        gap: $rem58;
+    }
+
+    &59 {
+        gap: $rem59;
+    }
+
+    &60 {
+        gap: $rem60;
+    }
+
+    &61 {
+        gap: $rem61;
+    }
+
+    &62 {
+        gap: $rem62;
+    }
+
+    &63 {
+        gap: $rem63;
+    }
+
+    &64 {
+        gap: $rem64;
+    }
+
+    &65 {
+        gap: $rem65;
+    }
+
+    &66 {
+        gap: $rem66;
+    }
+
+    &67 {
+        gap: $rem67;
+    }
+
+    &68 {
+        gap: $rem68;
+    }
+
+    &69 {
+        gap: $rem69;
+    }
+
+    &70 {
+        gap: $rem70;
+    }
+
+    &71 {
+        gap: $rem71;
+    }
+
+    &72 {
+        gap: $rem72;
+    }
+
+    &73 {
+        gap: $rem73;
+    }
+
+    &74 {
+        gap: $rem74;
+    }
+
+    &75 {
+        gap: $rem75;
+    }
+
+    &76 {
+        gap: $rem76;
+    }
+
+    &77 {
+        gap: $rem77;
+    }
+
+    &78 {
+        gap: $rem78;
+    }
+
+    &79 {
+        gap: $rem79;
+    }
+
+    &80 {
+        gap: $rem80;
+    }
+
+    &81 {
+        gap: $rem81;
+    }
+
+    &82 {
+        gap: $rem82;
+    }
+
+    &83 {
+        gap: $rem83;
+    }
+
+    &84 {
+        gap: $rem84;
+    }
+
+    &85 {
+        gap: $rem85;
+    }
+
+    &86 {
+        gap: $rem86;
+    }
+
+    &87 {
+        gap: $rem87;
+    }
+
+    &88 {
+        gap: $rem88;
+    }
+
+    &89 {
+        gap: $rem89;
+    }
+
+    &90 {
+        gap: $rem90;
+    }
+
+    &91 {
+        gap: $rem91;
+    }
+
+    &92 {
+        gap: $rem92;
+    }
+
+    &93 {
+        gap: $rem93;
+    }
+
+    &94 {
+        gap: $rem94;
+    }
+
+    &95 {
+        gap: $rem95;
+    }
+
+    &96 {
+        gap: $rem96;
+    }
+
+    &97 {
+        gap: $rem97;
+    }
+
+    &98 {
+        gap: $rem98;
+    }
+
+    &99 {
+        gap: $rem99;
+    }
+
+    &100 {
+        gap: $rem100;
+    }
+
+    &101 {
+        gap: $rem101;
+    }
+
+    &102 {
+        gap: $rem102;
+    }
+
+    &103 {
+        gap: $rem103;
+    }
+
+    &104 {
+        gap: $rem104;
+    }
+
+    &105 {
+        gap: $rem105;
+    }
+
+    &106 {
+        gap: $rem106;
+    }
+
+    &107 {
+        gap: $rem107;
+    }
+
+    &108 {
+        gap: $rem108;
+    }
+
+    &109 {
+        gap: $rem109;
+    }
+
+    &110 {
+        gap: $rem110;
+    }
+
+    &111 {
+        gap: $rem111;
+    }
+
+    &112 {
+        gap: $rem112;
+    }
+
+    &113 {
+        gap: $rem113;
+    }
+
+    &114 {
+        gap: $rem114;
+    }
+
+    &115 {
+        gap: $rem115;
+    }
+
+    &116 {
+        gap: $rem116;
+    }
+
+    &117 {
+        gap: $rem117;
+    }
+
+    &118 {
+        gap: $rem118;
+    }
+
+    &119 {
+        gap: $rem119;
+    }
+
+    &120 {
+        gap: $rem120;
+    }
+
+    &121 {
+        gap: $rem121;
+    }
+
+    &122 {
+        gap: $rem122;
+    }
+
+    &123 {
+        gap: $rem123;
+    }
+
+    &124 {
+        gap: $rem124;
+    }
+
+    &125 {
+        gap: $rem125;
+    }
+
+    &126 {
+        gap: $rem126;
+    }
+
+    &127 {
+        gap: $rem127;
+    }
+
+    &128 {
+        gap: $rem128;
+    }
+
+    &129 {
+        gap: $rem129;
+    }
+
+    &130 {
+        gap: $rem130;
+    }
+
+    &131 {
+        gap: $rem131;
+    }
+
+    &132 {
+        gap: $rem132;
+    }
+
+    &133 {
+        gap: $rem133;
+    }
+
+    &134 {
+        gap: $rem134;
+    }
+
+    &135 {
+        gap: $rem135;
+    }
+
+    &136 {
+        gap: $rem136;
+    }
+
+    &137 {
+        gap: $rem137;
+    }
+
+    &138 {
+        gap: $rem138;
+    }
+
+    &139 {
+        gap: $rem139;
+    }
+
+    &140 {
+        gap: $rem140;
+    }
+
+    &141 {
+        gap: $rem141;
+    }
+
+    &142 {
+        gap: $rem142;
+    }
+
+    &143 {
+        gap: $rem143;
+    }
+
+    &144 {
+        gap: $rem144;
+    }
+
+    &145 {
+        gap: $rem145;
+    }
+
+    &146 {
+        gap: $rem146;
+    }
+
+    &147 {
+        gap: $rem147;
+    }
+
+    &148 {
+        gap: $rem148;
+    }
+
+    &149 {
+        gap: $rem149;
+    }
+
+    &150 {
+        gap: $rem150;
+    }
+
+    &151 {
+        gap: $rem151;
+    }
+
+    &152 {
+        gap: $rem152;
+    }
+
+    &153 {
+        gap: $rem153;
+    }
+
+    &154 {
+        gap: $rem154;
+    }
+
+    &155 {
+        gap: $rem155;
+    }
+
+    &156 {
+        gap: $rem156;
+    }
+
+    &157 {
+        gap: $rem157;
+    }
+
+    &158 {
+        gap: $rem158;
+    }
+
+    &159 {
+        gap: $rem159;
+    }
+
+    &160 {
+        gap: $rem160;
+    }
+
+    &161 {
+        gap: $rem161;
+    }
+
+    &162 {
+        gap: $rem162;
+    }
+
+    &163 {
+        gap: $rem163;
+    }
+
+    &164 {
+        gap: $rem164;
+    }
+
+    &165 {
+        gap: $rem165;
+    }
+
+    &166 {
+        gap: $rem166;
+    }
+
+    &167 {
+        gap: $rem167;
+    }
+
+    &168 {
+        gap: $rem168;
+    }
+
+    &169 {
+        gap: $rem169;
+    }
+
+    &170 {
+        gap: $rem170;
+    }
+
+    &171 {
+        gap: $rem171;
+    }
+
+    &172 {
+        gap: $rem172;
+    }
+
+    &173 {
+        gap: $rem173;
+    }
+
+    &174 {
+        gap: $rem174;
+    }
+
+    &175 {
+        gap: $rem175;
+    }
+
+    &176 {
+        gap: $rem176;
+    }
+
+    &177 {
+        gap: $rem177;
+    }
+
+    &178 {
+        gap: $rem178;
+    }
+
+    &179 {
+        gap: $rem179;
+    }
+
+    &180 {
+        gap: $rem180;
+    }
+
+    &181 {
+        gap: $rem181;
+    }
+
+    &182 {
+        gap: $rem182;
+    }
+
+    &183 {
+        gap: $rem183;
+    }
+
+    &184 {
+        gap: $rem184;
+    }
+
+    &185 {
+        gap: $rem185;
+    }
+
+    &186 {
+        gap: $rem186;
+    }
+
+    &187 {
+        gap: $rem187;
+    }
+
+    &188 {
+        gap: $rem188;
+    }
+
+    &189 {
+        gap: $rem189;
+    }
+
+    &190 {
+        gap: $rem190;
+    }
+
+    &191 {
+        gap: $rem191;
+    }
+
+    &192 {
+        gap: $rem192;
+    }
+
+    &193 {
+        gap: $rem193;
+    }
+
+    &194 {
+        gap: $rem194;
+    }
+
+    &195 {
+        gap: $rem195;
+    }
+
+    &196 {
+        gap: $rem196;
+    }
+
+    &197 {
+        gap: $rem197;
+    }
+
+    &198 {
+        gap: $rem198;
+    }
+
+    &199 {
+        gap: $rem199;
+    }
+
+    &200 {
+        gap: $rem200;
+    }
+
+    &201 {
+        gap: $rem201;
+    }
+
+    &202 {
+        gap: $rem202;
+    }
+
+    &203 {
+        gap: $rem203;
+    }
+
+    &204 {
+        gap: $rem204;
+    }
+
+    &205 {
+        gap: $rem205;
+    }
+
+    &206 {
+        gap: $rem206;
+    }
+
+    &207 {
+        gap: $rem207;
+    }
+
+    &208 {
+        gap: $rem208;
+    }
+
+    &209 {
+        gap: $rem209;
+    }
+
+    &210 {
+        gap: $rem210;
+    }
+
+    &211 {
+        gap: $rem211;
+    }
+
+    &212 {
+        gap: $rem212;
+    }
+
+    &213 {
+        gap: $rem213;
+    }
+
+    &214 {
+        gap: $rem214;
+    }
+
+    &215 {
+        gap: $rem215;
+    }
+
+    &216 {
+        gap: $rem216;
+    }
+
+    &217 {
+        gap: $rem217;
+    }
+
+    &218 {
+        gap: $rem218;
+    }
+
+    &219 {
+        gap: $rem219;
+    }
+
+    &220 {
+        gap: $rem220;
+    }
+
+    &221 {
+        gap: $rem221;
+    }
+
+    &222 {
+        gap: $rem222;
+    }
+
+    &223 {
+        gap: $rem223;
+    }
+
+    &224 {
+        gap: $rem224;
+    }
+
+    &225 {
+        gap: $rem225;
+    }
+
+    &226 {
+        gap: $rem226;
+    }
+
+    &227 {
+        gap: $rem227;
+    }
+
+    &228 {
+        gap: $rem228;
+    }
+
+    &229 {
+        gap: $rem229;
+    }
+
+    &230 {
+        gap: $rem230;
+    }
+
+    &231 {
+        gap: $rem231;
+    }
+
+    &232 {
+        gap: $rem232;
+    }
+
+    &233 {
+        gap: $rem233;
+    }
+
+    &234 {
+        gap: $rem234;
+    }
+
+    &235 {
+        gap: $rem235;
+    }
+
+    &236 {
+        gap: $rem236;
+    }
+
+    &237 {
+        gap: $rem237;
+    }
+
+    &238 {
+        gap: $rem238;
+    }
+
+    &239 {
+        gap: $rem239;
+    }
+
+    &240 {
+        gap: $rem240;
+    }
+
+    &241 {
+        gap: $rem241;
+    }
+
+    &242 {
+        gap: $rem242;
+    }
+
+    &243 {
+        gap: $rem243;
+    }
+
+    &244 {
+        gap: $rem244;
+    }
+
+    &245 {
+        gap: $rem245;
+    }
+
+    &246 {
+        gap: $rem246;
+    }
+
+    &247 {
+        gap: $rem247;
+    }
+
+    &248 {
+        gap: $rem248;
+    }
+
+    &249 {
+        gap: $rem249;
+    }
+
+    &250 {
+        gap: $rem250;
+    }
+
+    &251 {
+        gap: $rem251;
+    }
+
+    &252 {
+        gap: $rem252;
+    }
+
+    &253 {
+        gap: $rem253;
+    }
+
+    &254 {
+        gap: $rem254;
+    }
+
+    &255 {
+        gap: $rem255;
+    }
+
+    &256 {
+        gap: $rem256;
+    }
+
+    &257 {
+        gap: $rem257;
+    }
+
+    &258 {
+        gap: $rem258;
+    }
+
+    &259 {
+        gap: $rem259;
+    }
+
+    &260 {
+        gap: $rem260;
+    }
+
+    &261 {
+        gap: $rem261;
+    }
+
+    &262 {
+        gap: $rem262;
+    }
+
+    &263 {
+        gap: $rem263;
+    }
+
+    &264 {
+        gap: $rem264;
+    }
+
+    &265 {
+        gap: $rem265;
+    }
+
+    &266 {
+        gap: $rem266;
+    }
+
+    &267 {
+        gap: $rem267;
+    }
+
+    &268 {
+        gap: $rem268;
+    }
+
+    &269 {
+        gap: $rem269;
+    }
+
+    &270 {
+        gap: $rem270;
+    }
+
+    &271 {
+        gap: $rem271;
+    }
+
+    &272 {
+        gap: $rem272;
+    }
+
+    &273 {
+        gap: $rem273;
+    }
+
+    &274 {
+        gap: $rem274;
+    }
+
+    &275 {
+        gap: $rem275;
+    }
+
+    &276 {
+        gap: $rem276;
+    }
+
+    &277 {
+        gap: $rem277;
+    }
+
+    &278 {
+        gap: $rem278;
+    }
+
+    &279 {
+        gap: $rem279;
+    }
+
+    &280 {
+        gap: $rem280;
+    }
+
+    &281 {
+        gap: $rem281;
+    }
+
+    &282 {
+        gap: $rem282;
+    }
+
+    &283 {
+        gap: $rem283;
+    }
+
+    &284 {
+        gap: $rem284;
+    }
+
+    &285 {
+        gap: $rem285;
+    }
+
+    &286 {
+        gap: $rem286;
+    }
+
+    &287 {
+        gap: $rem287;
+    }
+
+    &288 {
+        gap: $rem288;
+    }
+
+    &289 {
+        gap: $rem289;
+    }
+
+    &290 {
+        gap: $rem290;
+    }
+
+    &291 {
+        gap: $rem291;
+    }
+
+    &292 {
+        gap: $rem292;
+    }
+
+    &293 {
+        gap: $rem293;
+    }
+
+    &294 {
+        gap: $rem294;
+    }
+
+    &295 {
+        gap: $rem295;
+    }
+
+    &296 {
+        gap: $rem296;
+    }
+
+    &297 {
+        gap: $rem297;
+    }
+
+    &298 {
+        gap: $rem298;
+    }
+
+    &299 {
+        gap: $rem299;
+    }
+
+    &300 {
+        gap: $rem300;
+    }
+
+    &301 {
+        gap: $rem301;
+    }
+
+    &302 {
+        gap: $rem302;
+    }
+
+    &303 {
+        gap: $rem303;
+    }
+
+    &304 {
+        gap: $rem304;
+    }
+
+    &305 {
+        gap: $rem305;
+    }
+
+    &306 {
+        gap: $rem306;
+    }
+
+    &307 {
+        gap: $rem307;
+    }
+
+    &308 {
+        gap: $rem308;
+    }
+
+    &309 {
+        gap: $rem309;
+    }
+
+    &310 {
+        gap: $rem310;
+    }
+
+    &311 {
+        gap: $rem311;
+    }
+
+    &312 {
+        gap: $rem312;
+    }
+
+    &313 {
+        gap: $rem313;
+    }
+
+    &314 {
+        gap: $rem314;
+    }
+
+    &315 {
+        gap: $rem315;
+    }
+
+    &316 {
+        gap: $rem316;
+    }
+
+    &317 {
+        gap: $rem317;
+    }
+
+    &318 {
+        gap: $rem318;
+    }
+
+    &319 {
+        gap: $rem319;
+    }
+
+    &320 {
+        gap: $rem320;
+    }
+
+    &321 {
+        gap: $rem321;
+    }
+
+    &322 {
+        gap: $rem322;
+    }
+
+    &323 {
+        gap: $rem323;
+    }
+
+    &324 {
+        gap: $rem324;
+    }
+
+    &325 {
+        gap: $rem325;
+    }
+
+    &326 {
+        gap: $rem326;
+    }
+
+    &327 {
+        gap: $rem327;
+    }
+
+    &328 {
+        gap: $rem328;
+    }
+
+    &329 {
+        gap: $rem329;
+    }
+
+    &330 {
+        gap: $rem330;
+    }
+
+    &331 {
+        gap: $rem331;
+    }
+
+    &332 {
+        gap: $rem332;
+    }
+
+    &333 {
+        gap: $rem333;
+    }
+
+    &334 {
+        gap: $rem334;
+    }
+
+    &335 {
+        gap: $rem335;
+    }
+
+    &336 {
+        gap: $rem336;
+    }
+
+    &337 {
+        gap: $rem337;
+    }
+
+    &338 {
+        gap: $rem338;
+    }
+
+    &339 {
+        gap: $rem339;
+    }
+
+    &340 {
+        gap: $rem340;
+    }
+
+    &341 {
+        gap: $rem341;
+    }
+
+    &342 {
+        gap: $rem342;
+    }
+
+    &343 {
+        gap: $rem343;
+    }
+
+    &344 {
+        gap: $rem344;
+    }
+
+    &345 {
+        gap: $rem345;
+    }
+
+    &346 {
+        gap: $rem346;
+    }
+
+    &347 {
+        gap: $rem347;
+    }
+
+    &348 {
+        gap: $rem348;
+    }
+
+    &349 {
+        gap: $rem349;
+    }
+
+    &350 {
+        gap: $rem350;
+    }
+
+    &351 {
+        gap: $rem351;
+    }
+
+    &352 {
+        gap: $rem352;
+    }
+
+    &353 {
+        gap: $rem353;
+    }
+
+    &354 {
+        gap: $rem354;
+    }
+
+    &355 {
+        gap: $rem355;
+    }
+
+    &356 {
+        gap: $rem356;
+    }
+
+    &357 {
+        gap: $rem357;
+    }
+
+    &358 {
+        gap: $rem358;
+    }
+
+    &359 {
+        gap: $rem359;
+    }
+
+    &360 {
+        gap: $rem360;
+    }
+
+    &361 {
+        gap: $rem361;
+    }
+
+    &362 {
+        gap: $rem362;
+    }
+
+    &363 {
+        gap: $rem363;
+    }
+
+    &364 {
+        gap: $rem364;
+    }
+
+    &365 {
+        gap: $rem365;
+    }
+
+    &366 {
+        gap: $rem366;
+    }
+
+    &367 {
+        gap: $rem367;
+    }
+
+    &368 {
+        gap: $rem368;
+    }
+
+    &369 {
+        gap: $rem369;
+    }
+
+    &370 {
+        gap: $rem370;
+    }
+
+    &371 {
+        gap: $rem371;
+    }
+
+    &372 {
+        gap: $rem372;
+    }
+
+    &373 {
+        gap: $rem373;
+    }
+
+    &374 {
+        gap: $rem374;
+    }
+
+    &375 {
+        gap: $rem375;
+    }
+
+    &376 {
+        gap: $rem376;
+    }
+
+    &377 {
+        gap: $rem377;
+    }
+
+    &378 {
+        gap: $rem378;
+    }
+
+    &379 {
+        gap: $rem379;
+    }
+
+    &380 {
+        gap: $rem380;
+    }
+
+    &381 {
+        gap: $rem381;
+    }
+
+    &382 {
+        gap: $rem382;
+    }
+
+    &383 {
+        gap: $rem383;
+    }
+
+    &384 {
+        gap: $rem384;
+    }
+
+    &385 {
+        gap: $rem385;
+    }
+
+    &386 {
+        gap: $rem386;
+    }
+
+    &387 {
+        gap: $rem387;
+    }
+
+    &388 {
+        gap: $rem388;
+    }
+
+    &389 {
+        gap: $rem389;
+    }
+
+    &390 {
+        gap: $rem390;
+    }
+
+    &391 {
+        gap: $rem391;
+    }
+
+    &392 {
+        gap: $rem392;
+    }
+
+    &393 {
+        gap: $rem393;
+    }
+
+    &394 {
+        gap: $rem394;
+    }
+
+    &395 {
+        gap: $rem395;
+    }
+
+    &396 {
+        gap: $rem396;
+    }
+
+    &397 {
+        gap: $rem397;
+    }
+
+    &398 {
+        gap: $rem398;
+    }
+
+    &399 {
+        gap: $rem399;
+    }
+
+    &400 {
+        gap: $rem400;
+    }
+
+    &401 {
+        gap: $rem401;
+    }
+
+    &402 {
+        gap: $rem402;
+    }
+
+    &403 {
+        gap: $rem403;
+    }
+
+    &404 {
+        gap: $rem404;
+    }
+
+    &405 {
+        gap: $rem405;
+    }
+
+    &406 {
+        gap: $rem406;
+    }
+
+    &407 {
+        gap: $rem407;
+    }
+
+    &408 {
+        gap: $rem408;
+    }
+
+    &409 {
+        gap: $rem409;
+    }
+
+    &410 {
+        gap: $rem410;
+    }
+
+    &411 {
+        gap: $rem411;
+    }
+
+    &412 {
+        gap: $rem412;
+    }
+
+    &413 {
+        gap: $rem413;
+    }
+
+    &414 {
+        gap: $rem414;
+    }
+
+    &415 {
+        gap: $rem415;
+    }
+
+    &416 {
+        gap: $rem416;
+    }
+
+    &417 {
+        gap: $rem417;
+    }
+
+    &418 {
+        gap: $rem418;
+    }
+
+    &419 {
+        gap: $rem419;
+    }
+
+    &420 {
+        gap: $rem420;
+    }
+
+    &421 {
+        gap: $rem421;
+    }
+
+    &422 {
+        gap: $rem422;
+    }
+
+    &423 {
+        gap: $rem423;
+    }
+
+    &424 {
+        gap: $rem424;
+    }
+
+    &425 {
+        gap: $rem425;
+    }
+
+    &426 {
+        gap: $rem426;
+    }
+
+    &427 {
+        gap: $rem427;
+    }
+
+    &428 {
+        gap: $rem428;
+    }
+
+    &429 {
+        gap: $rem429;
+    }
+
+    &430 {
+        gap: $rem430;
+    }
+
+    &431 {
+        gap: $rem431;
+    }
+
+    &432 {
+        gap: $rem432;
+    }
+
+    &433 {
+        gap: $rem433;
+    }
+
+    &434 {
+        gap: $rem434;
+    }
+
+    &435 {
+        gap: $rem435;
+    }
+
+    &436 {
+        gap: $rem436;
+    }
+
+    &437 {
+        gap: $rem437;
+    }
+
+    &438 {
+        gap: $rem438;
+    }
+
+    &439 {
+        gap: $rem439;
+    }
+
+    &440 {
+        gap: $rem440;
+    }
+
+    &441 {
+        gap: $rem441;
+    }
+
+    &442 {
+        gap: $rem442;
+    }
+
+    &443 {
+        gap: $rem443;
+    }
+
+    &444 {
+        gap: $rem444;
+    }
+
+    &445 {
+        gap: $rem445;
+    }
+
+    &446 {
+        gap: $rem446;
+    }
+
+    &447 {
+        gap: $rem447;
+    }
+
+    &448 {
+        gap: $rem448;
+    }
+
+    &449 {
+        gap: $rem449;
+    }
+
+    &450 {
+        gap: $rem450;
+    }
+
+    &451 {
+        gap: $rem451;
+    }
+
+    &452 {
+        gap: $rem452;
+    }
+
+    &453 {
+        gap: $rem453;
+    }
+
+    &454 {
+        gap: $rem454;
+    }
+
+    &455 {
+        gap: $rem455;
+    }
+
+    &456 {
+        gap: $rem456;
+    }
+
+    &457 {
+        gap: $rem457;
+    }
+
+    &458 {
+        gap: $rem458;
+    }
+
+    &459 {
+        gap: $rem459;
+    }
+
+    &460 {
+        gap: $rem460;
+    }
+
+    &461 {
+        gap: $rem461;
+    }
+
+    &462 {
+        gap: $rem462;
+    }
+
+    &463 {
+        gap: $rem463;
+    }
+
+    &464 {
+        gap: $rem464;
+    }
+
+    &465 {
+        gap: $rem465;
+    }
+
+    &466 {
+        gap: $rem466;
+    }
+
+    &467 {
+        gap: $rem467;
+    }
+
+    &468 {
+        gap: $rem468;
+    }
+
+    &469 {
+        gap: $rem469;
+    }
+
+    &470 {
+        gap: $rem470;
+    }
+
+    &471 {
+        gap: $rem471;
+    }
+
+    &472 {
+        gap: $rem472;
+    }
+
+    &473 {
+        gap: $rem473;
+    }
+
+    &474 {
+        gap: $rem474;
+    }
+
+    &475 {
+        gap: $rem475;
+    }
+
+    &476 {
+        gap: $rem476;
+    }
+
+    &477 {
+        gap: $rem477;
+    }
+
+    &478 {
+        gap: $rem478;
+    }
+
+    &479 {
+        gap: $rem479;
+    }
+
+    &480 {
+        gap: $rem480;
+    }
+
+    &481 {
+        gap: $rem481;
+    }
+
+    &482 {
+        gap: $rem482;
+    }
+
+    &483 {
+        gap: $rem483;
+    }
+
+    &484 {
+        gap: $rem484;
+    }
+
+    &485 {
+        gap: $rem485;
+    }
+
+    &486 {
+        gap: $rem486;
+    }
+
+    &487 {
+        gap: $rem487;
+    }
+
+    &488 {
+        gap: $rem488;
+    }
+
+    &489 {
+        gap: $rem489;
+    }
+
+    &490 {
+        gap: $rem490;
+    }
+
+    &491 {
+        gap: $rem491;
+    }
+
+    &492 {
+        gap: $rem492;
+    }
+
+    &493 {
+        gap: $rem493;
+    }
+
+    &494 {
+        gap: $rem494;
+    }
+
+    &495 {
+        gap: $rem495;
+    }
+
+    &496 {
+        gap: $rem496;
+    }
+
+    &497 {
+        gap: $rem497;
+    }
+
+    &498 {
+        gap: $rem498;
+    }
+
+    &499 {
+        gap: $rem499;
+    }
+
+    &500 {
+        gap: $rem500;
+    }
 }
