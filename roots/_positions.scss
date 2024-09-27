@@ -27,6 +27,261 @@ POSITION CLASSES
   position: sticky;
 }
 
+
+
+
+
+
+
+
+
+// USEFULL CLASSES
+.l- {
+	&inherit {
+		left: inherit;
+	}
+
+	&auto {
+		left: auto;
+	}
+
+	&initial {
+		left: initial;
+	}
+
+	&unset {
+		left: unset;
+	}
+
+
+	// USUALL CLASSES
+	&xxs {
+		left: 0.125rem;
+	}
+
+	&xs,
+	&tiny {
+		left: 0.25rem;
+	}
+
+	&sm,
+	&small {
+		left: 0.5rem;
+	}
+
+	&md,
+	&normal {
+		left: 1rem;
+	}
+
+	&lg,
+	&big {
+		left: 1.5rem;
+	}
+
+	&xl,
+	&bigger {
+		left: 2rem;
+	}
+
+	&xxl,
+	&biggest {
+		left: 2.5rem;
+	}
+
+	&xxxl,
+	&gient {
+		left: 3rem;
+	}
+}
+
+.r- {
+	&inherit {
+		right: inherit;
+	}
+
+	&auto {
+		right: auto;
+	}
+
+	&initial {
+		right: initial;
+	}
+
+	&unset {
+		right: unset;
+	}
+
+
+	// USUALL CLASSES
+	&xxs {
+		right: 0.125rem;
+	}
+
+	&xs,
+	&tiny {
+		right: 0.25rem;
+	}
+
+	&sm,
+	&small {
+		right: 0.5rem;
+	}
+
+	&md,
+	&normal {
+		right: 1rem;
+	}
+
+	&lg,
+	&big {
+		right: 1.5rem;
+	}
+
+	&xl,
+	&bigger {
+		right: 2rem;
+	}
+
+	&xxl,
+	&biggest {
+		right: 2.5rem;
+	}
+
+	&xxxl,
+	&gient {
+		right: 3rem;
+	}
+}
+
+.t- {
+	&inherit {
+		top: inherit;
+	}
+
+	&auto {
+		top: auto;
+	}
+
+	&initial {
+		top: initial;
+	}
+
+	&unset {
+		top: unset;
+	}
+
+
+	// USUALL CLASSES
+	&xxs {
+		top: 0.125rem;
+	}
+
+	&xs,
+	&tiny {
+		top: 0.25rem;
+	}
+
+	&sm,
+	&small {
+		top: 0.5rem;
+	}
+
+	&md,
+	&normal {
+		top: 1rem;
+	}
+
+	&lg,
+	&big {
+		top: 1.5rem;
+	}
+
+	&xl,
+	&bigger {
+		top: 2rem;
+	}
+
+	&xxl,
+	&biggest {
+		top: 2.5rem;
+	}
+
+	&xxxl,
+	&gient {
+		top: 3rem;
+	}
+}
+
+.b- {
+	&inherit {
+		bottom: inherit;
+	}
+
+	&auto {
+		bottom: auto;
+	}
+
+	&initial {
+		bottom: initial;
+	}
+
+	&unset {
+		bottom: unset;
+	}
+
+
+	// USUALL CLASSES
+	&xxs {
+		bottom: 0.125rem;
+	}
+
+	&xs,
+	&tiny {
+		bottom: 0.25rem;
+	}
+
+	&sm,
+	&small {
+		bottom: 0.5rem;
+	}
+
+	&md,
+	&normal {
+		bottom: 1rem;
+	}
+
+	&lg,
+	&big {
+		bottom: 1.5rem;
+	}
+
+	&xl,
+	&bigger {
+		bottom: 2rem;
+	}
+
+	&xxl,
+	&biggest {
+		bottom: 2.5rem;
+	}
+
+	&xxxl,
+	&gient {
+		bottom: 3rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------------------------------
 POSITION CENTER CLASSES
 ----------------------------------------------------------------
