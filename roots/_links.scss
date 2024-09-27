@@ -1,82 +1,84 @@
-.link-u {
-    text-decoration: underline;
-}
+.link- {
+    &u {
+        text-decoration: underline;
+    }
 
-.link-u:hover {
-    text-decoration: underline;
-}
+    &u:hover {
+        text-decoration: underline;
+    }
 
-.link-dash-hov:hover {
-    text-decoration: dashed;
-}
+    &dash-hov:hover {
+        text-decoration: dashed;
+    }
 
-.link-dash {
-    text-decoration: dashed;
-}
+    &dash {
+        text-decoration: dashed;
+    }
 
-.link-dot {
-    text-decoration: dotted;
-}
+    &dot {
+        text-decoration: dotted;
+    }
 
-.link-dot-hov:hover {
-    text-decoration: dotted;
-}
-
-
+    &dot-hov:hover {
+        text-decoration: dotted;
+    }
 
 
-.link-none {
-    text-decoration: none;
-}
 
-.link-none-hov:hover {
-    text-decoration: none;
-}
 
-.link-overline {
-    text-decoration: overline;
-}
+    &none {
+        text-decoration: none;
+    }
 
-.link-overline-hov:hover {
-    text-decoration: overline;
-}
+    &none-hov:hover {
+        text-decoration: none;
+    }
 
-.link-line-through {
-    text-decoration: line-through;
-}
+    &overline {
+        text-decoration: overline;
+    }
 
-.link-line-through-hov:hover {
-    text-decoration: line-through;
-}
+    &overline-hov:hover {
+        text-decoration: overline;
+    }
 
-.link-double {
-    text-decoration: double;
-}
+    &line-through {
+        text-decoration: line-through;
+    }
 
-.link-double-hov:hover {
-    text-decoration: double;
-}
+    &line-through-hov:hover {
+        text-decoration: line-through;
+    }
 
-.link-wavy {
-    text-decoration: wavy;
-}
+    &double {
+        text-decoration: double;
+    }
 
-.link-wavy-hov:hover {
-    text-decoration: wavy;
-}
+    &double-hov:hover {
+        text-decoration: double;
+    }
 
-.link-solid {
-    text-decoration: solid;
-}
+    &wavy {
+        text-decoration: wavy;
+    }
 
-.link-solid-hov:hover {
-    text-decoration: solid;
-}
+    &wavy-hov:hover {
+        text-decoration: wavy;
+    }
 
-.link-blink {
-    text-decoration: blink;
-}
+    &solid {
+        text-decoration: solid;
+    }
 
-.link-blink-hov:hover {
-    text-decoration: blink;
+    &solid-hov:hover {
+        text-decoration: solid;
+    }
+
+    &blink {
+        text-decoration: blink;
+    }
+
+    &blink-hov:hover {
+        text-decoration: blink;
+    }
 }
