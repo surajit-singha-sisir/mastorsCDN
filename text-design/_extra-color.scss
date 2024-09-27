@@ -1,0 +1,525 @@
+@use "../roots/root-default" as *;
+
+.White {
+    color: var(--white);
+}
+
+.Black {
+    color: var(--black);
+}
+
+.Red {
+    color: var(--red);
+}
+
+.Green {
+    color: var(--green);
+}
+
+.Blue {
+    color: var(--blue);
+}
+
+.Yellow {
+    color: var(--yellow);
+}
+
+.Cyan {
+    color: var(--cyan);
+}
+
+.Magenta {
+    color: var(--magenta);
+}
+
+.Gray {
+    color: var(--gray);
+}
+
+.Silver {
+    color: var(--silver);
+}
+
+.Maroon {
+    color: var(--maroon);
+}
+
+.Olive {
+    color: var(--olive);
+}
+
+.Lime {
+    color: var(--lime);
+}
+
+.Teal {
+    color: var(--teal);
+}
+
+.Navy {
+    color: var(--navy);
+}
+
+.Purple {
+    color: var(--purple);
+}
+
+.Aqua {
+    color: var(--aqua);
+}
+
+.Fuchsia {
+    color: var(--fuchsia);
+}
+
+.Orange {
+    color: var(--orange);
+}
+
+.Brown {
+    color: var(--brown);
+}
+
+.Pink {
+    color: var(--pink);
+}
+
+.Gold {
+    color: var(--gold);
+}
+
+.Beige {
+    color: var(--beige);
+}
+
+.Ivory {
+    color: var(--ivory);
+}
+
+.Lavender {
+    color: var(--lavender);
+}
+
+.Turquoise {
+    color: var(--turquoise);
+}
+
+.Peach {
+    color: var(--peach);
+}
+
+.Coral {
+    color: var(--coral);
+}
+
+.Crimson {
+    color: var(--crimson);
+}
+
+.Khaki {
+    color: var(--khaki);
+}
+
+.Salmon {
+    color: var(--salmon);
+}
+
+.Plum {
+    color: var(--plum);
+}
+
+.Orchid {
+    color: var(--orchid);
+}
+
+.Chocolate {
+    color: var(--chocolate);
+}
+
+.Tan {
+    color: var(--tan);
+}
+
+.Sienna {
+    color: var(--sienna);
+}
+
+.Indigo {
+    color: var(--indigo);
+}
+
+.LimeGreen {
+    color: var(--limegreen);
+}
+
+.ForestGreen {
+    color: var(--forestgreen);
+}
+
+.DarkGreen {
+    color: var(--darkgreen);
+}
+
+.MidnightBlue {
+    color: var(--midnightblue);
+}
+
+.DodgerBlue {
+    color: var(--dodgerblue);
+}
+
+.SlateGray {
+    color: var(--slategray);
+}
+
+.RosyBrown {
+    color: var(--rosybrown);
+}
+
+.Firebrick {
+    color: var(--firebrick);
+}
+
+.Tomato {
+    color: var(--tomato);
+}
+
+.SeaGreen {
+    color: var(--seagreen);
+}
+
+.PaleGoldenRod {
+    color: var(--palegoldenrod);
+}
+
+.DarkOrange {
+    color: var(--darkorange);
+}
+
+.LightCoral {
+    color: var(--lightcoral);
+}
+
+.DeepPink {
+    color: var(--deeppink);
+}
+
+.HotPink {
+    color: var(--hotpink);
+}
+
+.LightSeaGreen {
+    color: var(--lightseagreen);
+}
+
+.RoyalBlue {
+    color: var(--royalblue);
+}
+
+.Peru {
+    color: var(--peru);
+}
+
+.SlateBlue {
+    color: var(--slateblue);
+}
+
+.SpringGreen {
+    color: var(--springgreen);
+}
+
+.SteelBlue {
+    color: var(--steelblue);
+}
+
+.DarkSlateGray {
+    color: var(--darkslategray);
+}
+
+.PaleVioletRed {
+    color: var(--palevioletred);
+}
+
+.GoldenRod {
+    color: var(--goldenrod);
+}
+
+.Violet {
+    color: var(--violet);
+}
+
+.LightPink {
+    color: var(--lightpink);
+}
+
+
+// COLOR VARIENTS
+// Gray Shades
+$gray-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Gray- {
+  @each $shade in $gray-shades {
+    &#{$shade} {
+      color: var(--gray-#{$shade});
+    }
+  }
+}
+
+// Red Shades
+$red-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Red- {
+  @each $shade in $red-shades {
+    &#{$shade} {
+      color: var(--red-#{$shade});
+    }
+  }
+}
+
+// Orange Shades
+$orange-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Orange- {
+  @each $shade in $orange-shades {
+    &#{$shade} {
+      color: var(--orange-#{$shade});
+    }
+  }
+}
+
+// Yellow Shades
+$yellow-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Yellow- {
+  @each $shade in $yellow-shades {
+    &#{$shade} {
+      color: var(--yellow-#{$shade});
+    }
+  }
+}
+
+// Green Shades
+$green-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Green- {
+  @each $shade in $green-shades {
+    &#{$shade} {
+      color: var(--green-#{$shade});
+    }
+  }
+}
+
+// Teal Shades
+$teal-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Teal- {
+  @each $shade in $teal-shades {
+    &#{$shade} {
+      color: var(--teal-#{$shade});
+    }
+  }
+}
+
+// Blue Shades
+$blue-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Blue- {
+  @each $shade in $blue-shades {
+    &#{$shade} {
+      color: var(--blue-#{$shade});
+    }
+  }
+}
+
+// Indigo Shades
+$indigo-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Indigo- {
+  @each $shade in $indigo-shades {
+    &#{$shade} {
+      color: var(--indigo-#{$shade});
+    }
+  }
+}
+
+// Purple Shades
+$purple-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Purple- {
+  @each $shade in $purple-shades {
+    &#{$shade} {
+      color: var(--purple-#{$shade});
+    }
+  }
+}
+
+// Pink Shades
+$pink-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Pink- {
+  @each $shade in $pink-shades {
+    &#{$shade} {
+      color: var(--pink-#{$shade});
+    }
+  }
+}
+
+// Brown Shades
+$brown-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Brown- {
+  @each $shade in $brown-shades {
+    &#{$shade} {
+      color: var(--brown-#{$shade});
+    }
+  }
+}
+
+// Gold Shades
+$gold-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Gold- {
+  @each $shade in $gold-shades {
+    &#{$shade} {
+      color: var(--gold-#{$shade});
+    }
+  }
+}
+
+// Silver Shades
+$silver-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Silver- {
+  @each $shade in $silver-shades {
+    &#{$shade} {
+      color: var(--silver-#{$shade});
+    }
+  }
+}
+
+// Bronze Shades
+$bronze-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Bronze- {
+  @each $shade in $bronze-shades {
+    &#{$shade} {
+      color: var(--bronze-#{$shade});
+    }
+  }
+}
+
+// Cyan Shades
+$cyan-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Cyan- {
+  @each $shade in $cyan-shades {
+    &#{$shade} {
+      color: var(--cyan-#{$shade});
+    }
+  }
+}
+
+// Lime Shades
+$lime-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Lime- {
+  @each $shade in $lime-shades {
+    &#{$shade} {
+      color: var(--lime-#{$shade});
+    }
+  }
+}
+
+// Coral Shades
+$coral-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Coral- {
+  @each $shade in $coral-shades {
+    &#{$shade} {
+      color: var(--coral-#{$shade});
+    }
+  }
+}
+
+// Magenta Shades
+$magenta-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Magenta- {
+  @each $shade in $magenta-shades {
+    &#{$shade} {
+      color: var(--magenta-#{$shade});
+    }
+  }
+}
+
+// Lavender Shades
+$lavender-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Lavender- {
+  @each $shade in $lavender-shades {
+    &#{$shade} {
+      color: var(--lavender-#{$shade});
+    }
+  }
+}
+
+// Turquoise Shades
+$turquoise-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Turquoise- {
+  @each $shade in $turquoise-shades {
+    &#{$shade} {
+      color: var(--turquoise-#{$shade});
+    }
+  }
+}
+
+// Crimson Shades
+$crimson-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Crimson- {
+  @each $shade in $crimson-shades {
+    &#{$shade} {
+      color: var(--crimson-#{$shade});
+    }
+  }
+}
+
+// Navy Shades
+$navy-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Navy- {
+  @each $shade in $navy-shades {
+    &#{$shade} {
+      color: var(--navy-#{$shade});
+    }
+  }
+}
+
+// Mint Shades
+$mint-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Mint- {
+  @each $shade in $mint-shades {
+    &#{$shade} {
+      color: var(--mint-#{$shade});
+    }
+  }
+}
+
+// Peach Shades
+$peach-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Peach- {
+  @each $shade in $peach-shades {
+    &#{$shade} {
+      color: var(--peach-#{$shade});
+    }
+  }
+}
+
+// Mustard Shades
+$mustard-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Mustard- {
+  @each $shade in $mustard-shades {
+    &#{$shade} {
+      color: var(--mustard-#{$shade});
+    }
+  }
+}
+
+// Emerald Shades (Extended Greens)
+$emerald-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Emerald- {
+  @each $shade in $emerald-shades {
+    &#{$shade} {
+      color: var(--emerald-#{$shade});
+    }
+  }
+}
+
+// Violet Shades (Extended Purples)
+$violet-shades: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+.Violet- {
+  @each $shade in $violet-shades {
+    &#{$shade} {
+      color: var(--violet-#{$shade});
+    }
+  }
+}
