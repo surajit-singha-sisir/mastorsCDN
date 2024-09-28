@@ -193694,7 +193694,7 @@ DISPLAY CLASSES
 .grid-res-container {
   display: grid;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
 }
 .g-res-container [class^=column],
 .grid-res-container [class^=column] {
