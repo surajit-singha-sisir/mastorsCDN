@@ -1,15 +1,5 @@
 // SCALE
-.scale-- {
-    @for $i from 0 through 2 {
-        @for $j from 0 through 9 {
-            $scale: '-' + $i + calc($j / 10);
 
-            &#{$i}#{$i} {
-                transform: scale(#{$scale});
-            }
-        }
-    }
-}
 
 .scale- {
     @for $i from 0 through 2 {

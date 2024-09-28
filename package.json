@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "sass": "^1.79.4"
+  },
+  "scripts": {
+    "build": "sass mastors.scss mastors.css",
+    "watch": "sass --watch mastors.scss mastors.css"
   }
 }
