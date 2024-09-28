@@ -5,9 +5,7 @@
 .grid-res-container {
     display: grid;
     max-width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-    grid-gap: 1rem;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 
     & [class ^="column"] {
         grid-column: span 1;
