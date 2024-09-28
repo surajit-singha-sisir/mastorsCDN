@@ -1,0 +1,79 @@
+@use "../variables-Fectory/rem-vars" as *;
+.img- {
+    // IMAGE WIDHT IN (%)
+	@for $i from 0 through 100 {
+		$class: if($i < 10, '0#{$i}', '#{$i}');
+		$img: '#{$i}%';
+
+		&#{$class} {
+			width: #{$img};
+		}
+	}
+    // IMAGE WIDHT IN (VH)
+    @for $i from 0 through 100 {
+        $class: if( $i < 10, '0#{$i}', #{$i});
+        $img: #{$i}vh;
+
+        &vh-#{$class} {
+            width: #{$img};
+        }
+    }
+    // IMAGE WIDHT IN (VW)
+    @for $i from 0 through 100 {
+        $class: if( $i < 10, '0#{$i}', #{$i});
+        $img: #{$i}vw;
+
+        &vw-#{$class} {
+            width: #{$img};
+        }
+    }
+    // IMAGE WIDHT IN (REM)
+    @for $i from 0 through 100 {
+        $class: if( $i < 10, '0#{$i}', #{$i});
+        $img: if( $i < 10, '$rem0#{$i}', '$rem#{$i}');
+
+        &-#{$class} {
+            width: #{$img};
+        }
+    }
+}
+
+.img- {
+    // IMAGE WIDHT IN (%)
+	@for $i from 0 through 100 {
+		$class: if($i < 10, '0#{$i}', '#{$i}');
+		$img: '#{$i}%';
+
+		&#{$class} {
+			height: #{$img};
+		}
+	}
+    // IMAGE WIDHT IN (VH)
+    @for $i from 0 through 100 {
+        $class: if( $i < 10, '0#{$i}', #{$i});
+        $img: #{$i}vh;
+
+        &vh-#{$class} {
+            height: #{$img};
+        }
+    }
+    // IMAGE WIDHT IN (VW)
+    @for $i from 0 through 100 {
+        $class: if( $i < 10, '0#{$i}', #{$i});
+        $img: #{$i}vw;
+
+        &vw-#{$class} {
+            height: #{$img};
+        }
+    }
+    // IMAGE WIDHT IN (REM)
+    @for $i from 0 through 100 {
+        $class: if( $i < 10, '0#{$i}', #{$i});
+        $img: if( $i < 10, '$rem0#{$i}', '$rem#{$i}');
+
+        &-#{$class} {
+            height: #{$img};
+        }
+    }
+}
+
