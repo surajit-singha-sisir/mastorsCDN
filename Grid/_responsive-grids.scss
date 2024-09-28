@@ -1,441 +1,95 @@
 @use "../Media-query/mediaqueries" as *;
 
+$grids: (
+    '.g-res-container',
+    '.grid-res-container',
+    '.g-res-2-col-container',
+    '.grid-res-2-col-container',
+    '.g-res-3-col-container',
+    '.grid-res-3-col-container',
+    '.g-res-4-col-container',
+    '.grid-res-4-col-container',
+    '.g-res-5-col-container',
+    '.grid-res-5-col-container',
+    '.g-res-6-col-container',
+    '.grid-res-6-col-container',
+    '.g-res-7-col-container',
+    '.grid-res-7-col-container',
+    '.g-res-8-col-container',
+    '.grid-res-8-col-container',
+    '.g-res-9-col-container',
+    '.grid-res-9-col-container',
+    '.g-res-10-col-container',
+    '.grid-res-10-col-container'
+);
 
-.g-res-container,
-.grid-res-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: auto;
+@each $grid in $grids {
+    $varient: null;
 
-    & [class ^="column"] {
-        grid-column: span 1;
+  @if $grid == '.g-res-container' or $grid == '.grid-res-container' {
+    $varient: "repeat(auto-fill, minmax(200px, 1fr))";
+  } @else if $grid == '.g-res-2-col-container' or $grid == '.grid-res-2-col-container' {
+    $varient: "repeat(2, 1fr)";
+  } @else if $grid == '.g-res-3-col-container' or $grid == '.grid-res-3-col-container' {
+    $varient: "repeat(3, 1fr)";
+  }
+
+    #{$grid} {
+        display: grid;
+        width: 100%;
+      @if $varient != null {
+      grid-template-columns: #{$varient};
     }
+        grid-template-rows: auto;
 
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    & [class *="span-5"] {
-        grid-column: span 5;
-    }
-
-    & [class *="span-6"] {
-        grid-column: span 6;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
+        & [class^="column"] {
             grid-column: span 1;
         }
-    }
-}
 
-
-
-
-.g-res-2-col-container,
-.grid-res-2-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
+        & [class*="span-1"] {
             grid-column: span 1;
         }
-    }
-}
 
-
-
-.g-res-3-col-container,
-.grid-res-3-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        & [class*="span-2"] {
+            grid-column: span 2;
         }
-    }
-}
 
-
-.g-res-4-col-container,
-.grid-res-4-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        & [class*="span-3"] {
+            grid-column: span 3;
         }
-    }
-}
 
-
-
-.g-res-5-col-container,
-.grid-res-5-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    & [class *="span-5"] {
-        grid-column: span 5;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        & [class*="span-4"] {
+            grid-column: span 4;
         }
-    }
-}
 
-
-
-.g-res-6-col-container,
-.grid-res-6-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    & [class *="span-5"] {
-        grid-column: span 5;
-    }
-
-    & [class *="span-6"] {
-        grid-column: span 6;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        & [class*="span-5"] {
+            grid-column: span 5;
         }
-    }
-}
 
-
-
-
-.g-res-7-col-container,
-.grid-res-7-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    & [class *="span-5"] {
-        grid-column: span 5;
-    }
-
-    & [class *="span-6"] {
-        grid-column: span 6;
-    }
-
-    & [class *="span-7"] {
-        grid-column: span 7;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        & [class*="span-6"] {
+            grid-column: span 6;
         }
-    }
-}
 
-
-
-.g-res-8-col-container,
-.grid-res-8-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    & [class *="span-5"] {
-        grid-column: span 5;
-    }
-
-    & [class *="span-6"] {
-        grid-column: span 6;
-    }
-
-    & [class *="span-7"] {
-        grid-column: span 7;
-    }
-
-    & [class *="span-8"] {
-        grid-column: span 8;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        & [class*="span-7"] {
+            grid-column: span 7;
         }
-    }
-}
 
-
-
-.g-res-9-col-container,
-.grid-res-9-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    & [class *="span-5"] {
-        grid-column: span 5;
-    }
-
-    & [class *="span-6"] {
-        grid-column: span 6;
-    }
-
-    & [class *="span-7"] {
-        grid-column: span 7;
-    }
-
-    & [class *="span-8"] {
-        grid-column: span 8;
-    }
-
-    & [class *="span-9"] {
-        grid-column: span 9;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        & [class*="span-8"] {
+            grid-column: span 8;
         }
-    }
-}
 
+        & [class*="span-9"] {
+            grid-column: span 9;
+        }
 
+        & [class*="span-10"] {
+            grid-column: span 10;
+        }
 
-.g-res-10-col-container,
-.grid-res-10-col-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: auto;
-
-    & [class ^="column"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-1"] {
-        grid-column: span 1;
-    }
-
-    & [class *="span-2"] {
-        grid-column: span 2;
-    }
-
-    & [class *="span-3"] {
-        grid-column: span 3;
-    }
-
-    & [class *="span-4"] {
-        grid-column: span 4;
-    }
-
-    & [class *="span-5"] {
-        grid-column: span 5;
-    }
-
-    & [class *="span-6"] {
-        grid-column: span 6;
-    }
-
-    & [class *="span-7"] {
-        grid-column: span 7;
-    }
-
-    & [class *="span-8"] {
-        grid-column: span 8;
-    }
-
-    & [class *="span-9"] {
-        grid-column: span 9;
-    }
-
-    & [class *="span-10"] {
-        grid-column: span 10;
-    }
-
-    @include tablet {
-        & [class *="span-"] {
-            grid-column: span 1;
+        @include tablet {
+            & [class*="span-"] {
+                grid-column: span 1;
+            }
         }
     }
 }
