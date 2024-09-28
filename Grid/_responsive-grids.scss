@@ -1,45 +1,28 @@
 @use "../Media-query/mediaqueries" as *;
 
 $grids: (
-    '.g-res-container',
-    '.grid-res-container',
-    '.g-res-2-col-container',
-    '.grid-res-2-col-container',
-    '.g-res-3-col-container',
-    '.grid-res-3-col-container',
-    '.g-res-4-col-container',
-    '.grid-res-4-col-container',
-    '.g-res-5-col-container',
-    '.grid-res-5-col-container',
-    '.g-res-6-col-container',
-    '.grid-res-6-col-container',
-    '.g-res-7-col-container',
-    '.grid-res-7-col-container',
-    '.g-res-8-col-container',
-    '.grid-res-8-col-container',
-    '.g-res-9-col-container',
-    '.grid-res-9-col-container',
-    '.g-res-10-col-container',
-    '.grid-res-10-col-container'
+    ('.g-res-container', '.grid-res-container', "repeat(auto-fill, minmax(200px, 1fr))"),
+    ('.g-res-2-col-container', '.grid-res-2-col-container', "repeat(2, 1fr)"),
+    ('.g-res-3-col-container', '.grid-res-3-col-container', "repeat(3, 1fr)"),
+    ('.g-res-4-col-container', '.grid-res-4-col-container', "repeat(4, 1fr)"),
+    ('.g-res-5-col-container', '.grid-res-5-col-container', "repeat(5, 1fr)"),
+    ('.g-res-6-col-container', '.grid-res-6-col-container', "repeat(6, 1fr)"),
+    ('.g-res-7-col-container', '.grid-res-7-col-container', "repeat(7, 1fr)"),
+    ('.g-res-8-col-container', '.grid-res-8-col-container', "repeat(8, 1fr)"),
+    ('.g-res-9-col-container', '.grid-res-9-col-container', "repeat(9, 1fr)"),
+    ('.g-res-10-col-container', '.grid-res-10-col-container', "repeat(10, 1fr)")
 );
 
 @each $grid in $grids {
-    $varient: null;
+    $grid-1: nth($grid, 1);
+    $grid-2: nth($grid, 2);
+    $varient: nth($grid, 3);
 
-  @if $grid == '.g-res-container' or $grid == '.grid-res-container' {
-    $varient: "repeat(auto-fill, minmax(200px, 1fr))";
-  } @else if $grid == '.g-res-2-col-container' or $grid == '.grid-res-2-col-container' {
-    $varient: "repeat(2, 1fr)";
-  } @else if $grid == '.g-res-3-col-container' or $grid == '.grid-res-3-col-container' {
-    $varient: "repeat(3, 1fr)";
-  }
-
-    #{$grid} {
+    #{$grid-1},
+    #{$grid-2} {
         display: grid;
         width: 100%;
-      @if $varient != null {
-      grid-template-columns: #{$varient};
-    }
+        grid-template-columns: #{$varient};
         grid-template-rows: auto;
 
         & [class^="column"] {
