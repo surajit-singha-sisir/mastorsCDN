@@ -90837,6 +90837,312 @@ HEIGHT IN REM SIZE
   flex: 1;
 }
 
+.margin-auto,
+.mar-auto,
+.m-auto {
+  margin: auto;
+}
+
+.mar-l-inherit,
+.m-l-inherit,
+.m-left-inherit {
+  margin-left: inherit;
+}
+.mar-l-auto,
+.m-l-auto,
+.m-left-auto {
+  margin-left: auto;
+}
+.mar-l-initial,
+.m-l-initial,
+.m-left-initial {
+  margin-left: initial;
+}
+.mar-l-unset,
+.m-l-unset,
+.m-left-unset {
+  margin-left: unset;
+}
+.mar-l-xxs,
+.m-l-xxs,
+.m-left-xxs {
+  margin-left: 0.125rem;
+}
+.mar-l-xs, .mar-l-tiny,
+.m-l-xs,
+.m-l-tiny,
+.m-left-xs,
+.m-left-tiny {
+  margin-left: 0.25rem;
+}
+.mar-l-sm, .mar-l-small,
+.m-l-sm,
+.m-l-small,
+.m-left-sm,
+.m-left-small {
+  margin-left: 0.5rem;
+}
+.mar-l-md, .mar-l-normal,
+.m-l-md,
+.m-l-normal,
+.m-left-md,
+.m-left-normal {
+  margin-left: 1rem;
+}
+.mar-l-lg, .mar-l-big,
+.m-l-lg,
+.m-l-big,
+.m-left-lg,
+.m-left-big {
+  margin-left: 1.5rem;
+}
+.mar-l-xl, .mar-l-bigger,
+.m-l-xl,
+.m-l-bigger,
+.m-left-xl,
+.m-left-bigger {
+  margin-left: 2rem;
+}
+.mar-l-xxl, .mar-l-biggest,
+.m-l-xxl,
+.m-l-biggest,
+.m-left-xxl,
+.m-left-biggest {
+  margin-left: 2.5rem;
+}
+.mar-l-xxxl, .mar-l-gient,
+.m-l-xxxl,
+.m-l-gient,
+.m-left-xxxl,
+.m-left-gient {
+  margin-left: 3rem;
+}
+
+.mar-r-inherit,
+.m-r-inherit,
+.m-right-inherit {
+  margin-right: inherit;
+}
+.mar-r-auto,
+.m-r-auto,
+.m-right-auto {
+  margin-right: auto;
+}
+.mar-r-initial,
+.m-r-initial,
+.m-right-initial {
+  margin-right: initial;
+}
+.mar-r-unset,
+.m-r-unset,
+.m-right-unset {
+  margin-right: unset;
+}
+.mar-r-xxs,
+.m-r-xxs,
+.m-right-xxs {
+  margin-right: 0.125rem;
+}
+.mar-r-xs, .mar-r-tiny,
+.m-r-xs,
+.m-r-tiny,
+.m-right-xs,
+.m-right-tiny {
+  margin-right: 0.25rem;
+}
+.mar-r-sm, .mar-r-small,
+.m-r-sm,
+.m-r-small,
+.m-right-sm,
+.m-right-small {
+  margin-right: 0.5rem;
+}
+.mar-r-md, .mar-r-normal,
+.m-r-md,
+.m-r-normal,
+.m-right-md,
+.m-right-normal {
+  margin-right: 1rem;
+}
+.mar-r-lg, .mar-r-big,
+.m-r-lg,
+.m-r-big,
+.m-right-lg,
+.m-right-big {
+  margin-right: 1.5rem;
+}
+.mar-r-xl, .mar-r-bigger,
+.m-r-xl,
+.m-r-bigger,
+.m-right-xl,
+.m-right-bigger {
+  margin-right: 2rem;
+}
+.mar-r-xxl, .mar-r-biggest,
+.m-r-xxl,
+.m-r-biggest,
+.m-right-xxl,
+.m-right-biggest {
+  margin-right: 2.5rem;
+}
+.mar-r-xxxl, .mar-r-gient,
+.m-r-xxxl,
+.m-r-gient,
+.m-right-xxxl,
+.m-right-gient {
+  margin-right: 3rem;
+}
+
+.mar-t-inherit,
+.m-t-inherit,
+.m-top-inherit {
+  margin-top: inherit;
+}
+.mar-t-auto,
+.m-t-auto,
+.m-top-auto {
+  margin-top: auto;
+}
+.mar-t-initial,
+.m-t-initial,
+.m-top-initial {
+  margin-top: initial;
+}
+.mar-t-unset,
+.m-t-unset,
+.m-top-unset {
+  margin-top: unset;
+}
+.mar-t-xxs,
+.m-t-xxs,
+.m-top-xxs {
+  margin-top: 0.125rem;
+}
+.mar-t-xs, .mar-t-tiny,
+.m-t-xs,
+.m-t-tiny,
+.m-top-xs,
+.m-top-tiny {
+  margin-top: 0.25rem;
+}
+.mar-t-sm, .mar-t-small,
+.m-t-sm,
+.m-t-small,
+.m-top-sm,
+.m-top-small {
+  margin-top: 0.5rem;
+}
+.mar-t-md, .mar-t-normal,
+.m-t-md,
+.m-t-normal,
+.m-top-md,
+.m-top-normal {
+  margin-top: 1rem;
+}
+.mar-t-lg, .mar-t-big,
+.m-t-lg,
+.m-t-big,
+.m-top-lg,
+.m-top-big {
+  margin-top: 1.5rem;
+}
+.mar-t-xl, .mar-t-bigger,
+.m-t-xl,
+.m-t-bigger,
+.m-top-xl,
+.m-top-bigger {
+  margin-top: 2rem;
+}
+.mar-t-xxl, .mar-t-biggest,
+.m-t-xxl,
+.m-t-biggest,
+.m-top-xxl,
+.m-top-biggest {
+  margin-top: 2.5rem;
+}
+.mar-t-xxxl, .mar-t-gient,
+.m-t-xxxl,
+.m-t-gient,
+.m-top-xxxl,
+.m-top-gient {
+  margin-top: 3rem;
+}
+
+.mar-b-inherit,
+.m-b-inherit,
+.m-bottom-inherit {
+  margin-bottom: inherit;
+}
+.mar-b-auto,
+.m-b-auto,
+.m-bottom-auto {
+  margin-bottom: auto;
+}
+.mar-b-initial,
+.m-b-initial,
+.m-bottom-initial {
+  margin-bottom: initial;
+}
+.mar-b-unset,
+.m-b-unset,
+.m-bottom-unset {
+  margin-bottom: unset;
+}
+.mar-b-xxs,
+.m-b-xxs,
+.m-bottom-xxs {
+  margin-bottom: 0.125rem;
+}
+.mar-b-xs, .mar-b-tiny,
+.m-b-xs,
+.m-b-tiny,
+.m-bottom-xs,
+.m-bottom-tiny {
+  margin-bottom: 0.25rem;
+}
+.mar-b-sm, .mar-b-small,
+.m-b-sm,
+.m-b-small,
+.m-bottom-sm,
+.m-bottom-small {
+  margin-bottom: 0.5rem;
+}
+.mar-b-md, .mar-b-normal,
+.m-b-md,
+.m-b-normal,
+.m-bottom-md,
+.m-bottom-normal {
+  margin-bottom: 1rem;
+}
+.mar-b-lg, .mar-b-big,
+.m-b-lg,
+.m-b-big,
+.m-bottom-lg,
+.m-bottom-big {
+  margin-bottom: 1.5rem;
+}
+.mar-b-xl, .mar-b-bigger,
+.m-b-xl,
+.m-b-bigger,
+.m-bottom-xl,
+.m-bottom-bigger {
+  margin-bottom: 2rem;
+}
+.mar-b-xxl, .mar-b-biggest,
+.m-b-xxl,
+.m-b-biggest,
+.m-bottom-xxl,
+.m-bottom-biggest {
+  margin-bottom: 2.5rem;
+}
+.mar-b-xxxl, .mar-b-gient,
+.m-b-xxxl,
+.m-b-gient,
+.m-bottom-xxxl,
+.m-bottom-gient {
+  margin-bottom: 3rem;
+}
+
 .mar-l-00,
 .m-l-00,
 .m-left-00 {
