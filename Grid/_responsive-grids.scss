@@ -1,8 +1,8 @@
 @use "../Media-query/mediaqueries" as *;
 
 
-.g-container,
-.grid-container {
+.g-res-container,
+.grid-res-container {
     display: grid;
     max-width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
@@ -35,10 +35,6 @@
 
     & [class *="span-6"] {
         grid-column: span 6;
-    }
-
-    & [class *="column"] {
-        background-color: aqua;
     }
 
     @include tablet {
