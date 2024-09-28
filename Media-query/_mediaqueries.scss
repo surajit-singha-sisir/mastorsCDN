@@ -1,0 +1,47 @@
+@mixin mediaqueries($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin mobile-s {
+    @include mediaqueries(320px) {
+        @content;
+    }
+}
+
+@mixin mobile-m {
+    @include mediaqueries(375px) {
+        @content;
+    }
+}
+
+@mixin mobile-l {
+    @include mediaqueries(425px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @include mediaqueries(768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @include mediaqueries(1024px) {
+        @content;
+    }
+}
+
+@mixin laptop-l {
+    @include mediaqueries(1440px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @include mediaqueries(2560px) {
+        @content;
+    }
+}

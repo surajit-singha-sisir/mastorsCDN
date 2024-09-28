@@ -193669,6 +193669,11 @@ DISPLAY CLASSES
 DISPLAY CLASSES
 ----------------------------------------------------------------
 */
+.g,
+.grid {
+  display: grid;
+}
+
 .grid {
   display: grid;
 }
@@ -193687,6 +193692,53 @@ DISPLAY CLASSES
 
 .gridColumnReverse {
   grid-auto-flow: column-reverse;
+}
+
+.g-container,
+.grid-container {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+.g-container [class^=column],
+.grid-container [class^=column] {
+  grid-column: span 1;
+}
+.g-container [class*=span-1],
+.grid-container [class*=span-1] {
+  grid-column: span 1;
+}
+.g-container [class*=span-2],
+.grid-container [class*=span-2] {
+  grid-column: span 2;
+}
+.g-container [class*=span-3],
+.grid-container [class*=span-3] {
+  grid-column: span 3;
+}
+.g-container [class*=span-4],
+.grid-container [class*=span-4] {
+  grid-column: span 4;
+}
+.g-container [class*=span-5],
+.grid-container [class*=span-5] {
+  grid-column: span 5;
+}
+.g-container [class*=span-6],
+.grid-container [class*=span-6] {
+  grid-column: span 6;
+}
+.g-container [class*=column],
+.grid-container [class*=column] {
+  background-color: aqua;
+}
+@media only screen and (max-width: 768px) {
+  .g-container [class*=span-],
+  .grid-container [class*=span-] {
+    grid-column: span 1;
+  }
 }
 
 /* PROJECT GALLERY START */
@@ -193830,10 +193882,6 @@ DISPLAY CLASSES
   height: inherit;
 }
 
-/* ----------------------------------------------------------------
-IMAGE (Unit-%) IN PERCENTAGE
-----------------------------------------------------------------
-*/
 .img-h-auto {
   height: auto;
 }
