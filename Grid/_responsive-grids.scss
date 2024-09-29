@@ -69,10 +69,14 @@ $grids: (
             grid-column: span 10;
         }
 
-        @include tablet {
-            & [class*="span-"] {
-                grid-column: span 1;
-            }
+    }
+
+
+    @include tablet {
+
+        #{$grid-1},
+        #{$grid-2} {
+            grid-template-columns: repeat(1fr);
         }
     }
 }

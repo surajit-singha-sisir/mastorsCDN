@@ -193741,13 +193741,13 @@ DISPLAY CLASSES
 .grid-res-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-container [class*=span-],
-  .grid-res-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-container,
+  .grid-res-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-2-col-container,
 .grid-res-2-col-container {
   display: grid;
@@ -193799,13 +193799,13 @@ DISPLAY CLASSES
 .grid-res-2-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-2-col-container [class*=span-],
-  .grid-res-2-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-2-col-container,
+  .grid-res-2-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-3-col-container,
 .grid-res-3-col-container {
   display: grid;
@@ -193857,13 +193857,13 @@ DISPLAY CLASSES
 .grid-res-3-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-3-col-container [class*=span-],
-  .grid-res-3-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-3-col-container,
+  .grid-res-3-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-4-col-container,
 .grid-res-4-col-container {
   display: grid;
@@ -193915,13 +193915,13 @@ DISPLAY CLASSES
 .grid-res-4-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-4-col-container [class*=span-],
-  .grid-res-4-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-4-col-container,
+  .grid-res-4-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-5-col-container,
 .grid-res-5-col-container {
   display: grid;
@@ -193973,13 +193973,13 @@ DISPLAY CLASSES
 .grid-res-5-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-5-col-container [class*=span-],
-  .grid-res-5-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-5-col-container,
+  .grid-res-5-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-6-col-container,
 .grid-res-6-col-container {
   display: grid;
@@ -194031,13 +194031,13 @@ DISPLAY CLASSES
 .grid-res-6-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-6-col-container [class*=span-],
-  .grid-res-6-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-6-col-container,
+  .grid-res-6-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-7-col-container,
 .grid-res-7-col-container {
   display: grid;
@@ -194089,13 +194089,13 @@ DISPLAY CLASSES
 .grid-res-7-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-7-col-container [class*=span-],
-  .grid-res-7-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-7-col-container,
+  .grid-res-7-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-8-col-container,
 .grid-res-8-col-container {
   display: grid;
@@ -194147,13 +194147,13 @@ DISPLAY CLASSES
 .grid-res-8-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-8-col-container [class*=span-],
-  .grid-res-8-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-8-col-container,
+  .grid-res-8-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-9-col-container,
 .grid-res-9-col-container {
   display: grid;
@@ -194205,13 +194205,13 @@ DISPLAY CLASSES
 .grid-res-9-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-9-col-container [class*=span-],
-  .grid-res-9-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-9-col-container,
+  .grid-res-9-col-container {
+    grid-template-columns: repeat(1fr);
   }
 }
-
 .g-res-10-col-container,
 .grid-res-10-col-container {
   display: grid;
@@ -194263,13 +194263,13 @@ DISPLAY CLASSES
 .grid-res-10-col-container [class*=span-10] {
   grid-column: span 10;
 }
+
 @media only screen and (max-width: 768px) {
-  .g-res-10-col-container [class*=span-],
-  .grid-res-10-col-container [class*=span-] {
-    grid-column: span 1;
+  .g-res-10-col-container,
+  .grid-res-10-col-container {
+    grid-template-columns: 1fr;
   }
 }
-
 /* PROJECT GALLERY START */
 .projectGallery {
   position: relative;
