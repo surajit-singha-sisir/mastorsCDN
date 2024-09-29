@@ -76,7 +76,7 @@ $grids: (
 
         #{$grid-1},
         #{$grid-2} {
-            grid-template-columns: repeat(1fr);
+            grid-template-columns: 1fr;
         }
     }
 }

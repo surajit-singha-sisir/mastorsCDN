@@ -185891,6 +185891,34 @@ BACKGROUND COLOR SETS
 }
 
 /* //FONT-SIZE TOP RIGHT BOTTOM LEFT */
+.text--xxs {
+  font-size: 0.2rem;
+}
+.text--xs {
+  font-size: 0.4rem;
+}
+.text--s {
+  font-size: 0.8rem;
+}
+.text--n, .text--normal, .text--general {
+  font-size: 1rem;
+}
+.text--m {
+  font-size: 1.2rem;
+}
+.text--l {
+  font-size: 1.6rem;
+}
+.text--xl {
+  font-size: 2rem;
+}
+.text--xxl {
+  font-size: 3rem;
+}
+.text--xxxl {
+  font-size: 4rem;
+}
+
 .text--00 {
   font-size: 0rem;
 }
@@ -193745,7 +193773,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-container,
   .grid-res-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-2-col-container,
@@ -193803,7 +193831,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-2-col-container,
   .grid-res-2-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-3-col-container,
@@ -193861,7 +193889,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-3-col-container,
   .grid-res-3-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-4-col-container,
@@ -193919,7 +193947,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-4-col-container,
   .grid-res-4-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-5-col-container,
@@ -193977,7 +194005,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-5-col-container,
   .grid-res-5-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-6-col-container,
@@ -194035,7 +194063,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-6-col-container,
   .grid-res-6-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-7-col-container,
@@ -194093,7 +194121,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-7-col-container,
   .grid-res-7-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-8-col-container,
@@ -194151,7 +194179,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-8-col-container,
   .grid-res-8-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-9-col-container,
@@ -194209,7 +194237,7 @@ DISPLAY CLASSES
 @media only screen and (max-width: 768px) {
   .g-res-9-col-container,
   .grid-res-9-col-container {
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: 1fr;
   }
 }
 .g-res-10-col-container,
