@@ -4,6 +4,9 @@ IMAGE (Unit-%) IN PERCENTAGE
 ----------------------------------------------------------------
 */
 .w- {
+  &fill {
+    width: -webkit-fill-available;
+  }
   &00 {
     width: 0%;
   }
@@ -1510,6 +1513,9 @@ IMAGE (Unit-%) IN PERCENTAGE
 }
 //HEIGHT IN PERCENTAGE
 .h- {
+  &fill {
+    height: -webkit-fill-available;
+  }
   &00 {
     height: 0%;
   }

@@ -67450,6 +67450,9 @@ BACKGROUND COLOR SETS
 IMAGE (Unit-%) IN PERCENTAGE
 ----------------------------------------------------------------
 */
+.w-fill {
+  width: -webkit-fill-available;
+}
 .w-00 {
   width: 0%;
 }
@@ -68954,6 +68957,9 @@ IMAGE (Unit-%) IN PERCENTAGE
   width: 500%;
 }
 
+.h-fill {
+  height: -webkit-fill-available;
+}
 .h-00 {
   height: 0%;
 }
@@ -185916,7 +185922,7 @@ BACKGROUND COLOR SETS
   font-size: 2rem;
 }
 .text--xxxl {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .text--00 {
