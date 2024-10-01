@@ -3,6 +3,10 @@
         text-decoration: underline;
     }
 
+    &hov-u:hover {
+        text-decoration: underline;
+    }
+
     &u:hover {
         text-decoration: underline;
     }
@@ -12,6 +16,10 @@
     }
 
     &dash {
+        text-decoration: dashed;
+    }
+
+    &hov-dash:hover {
         text-decoration: dashed;
     }
 
