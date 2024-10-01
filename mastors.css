@@ -65529,6 +65529,9 @@ CURSOR CLASSES
 .link-u {
   text-decoration: underline;
 }
+.link-hov-u:hover {
+  text-decoration: underline;
+}
 .link-u:hover {
   text-decoration: underline;
 }
@@ -65536,6 +65539,9 @@ CURSOR CLASSES
   text-decoration: dashed;
 }
 .link-dash {
+  text-decoration: dashed;
+}
+.link-hov-dash:hover {
   text-decoration: dashed;
 }
 .link-dot {
