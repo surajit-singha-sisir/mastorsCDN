@@ -1,0 +1,691 @@
+@use "../variables-Fectory/rem-vars" as *;
+
+// AUTO MARGIN
+.padding-auto,
+.pad-auto {
+    padding: auto;
+}
+
+// USEFULL CLASSES
+
+.pad-l- {
+    &inherit {
+        padding-left: inherit;
+    }
+
+    &auto {
+        padding-left: auto;
+    }
+
+    &initial {
+        padding-left: initial;
+    }
+
+    &unset {
+        padding-left: unset;
+    }
+
+    // USUALL CLASSES
+    &xxs {
+        padding-left: 0.125rem;
+    }
+
+    &xs,
+    &tiny {
+        padding-left: 0.25rem;
+    }
+
+    &sm,
+    &small {
+        padding-left: 0.5rem;
+    }
+
+    &md,
+    &normal {
+        padding-left: 1rem;
+    }
+
+    &lg,
+    &big {
+        padding-left: 1.5rem;
+    }
+
+    &xl,
+    &bigger {
+        padding-left: 2rem;
+    }
+
+    &xxl,
+    &biggest {
+        padding-left: 2.5rem;
+    }
+
+    &xxxl,
+    &gient {
+        padding-left: 3rem;
+    }
+}
+
+.pad-r- {
+    &inherit {
+        padding-right: inherit;
+    }
+
+    &auto {
+        padding-right: auto;
+    }
+
+    &initial {
+        padding-right: initial;
+    }
+
+    &unset {
+        padding-right: unset;
+    }
+
+    // USUALL CLASSES
+    &xxs {
+        padding-right: 0.125rem;
+    }
+
+    &xs,
+    &tiny {
+        padding-right: 0.25rem;
+    }
+
+    &sm,
+    &small {
+        padding-right: 0.5rem;
+    }
+
+    &md,
+    &normal {
+        padding-right: 1rem;
+    }
+
+    &lg,
+    &big {
+        padding-right: 1.5rem;
+    }
+
+    &xl,
+    &bigger {
+        padding-right: 2rem;
+    }
+
+    &xxl,
+    &biggest {
+        padding-right: 2.5rem;
+    }
+
+    &xxxl,
+    &gient {
+        padding-right: 3rem;
+    }
+}
+
+.pad-t- {
+    &inherit {
+        padding-top: inherit;
+    }
+
+    &auto {
+        padding-top: auto;
+    }
+
+    &initial {
+        padding-top: initial;
+    }
+
+    &unset {
+        padding-top: unset;
+    }
+
+    // USUALL CLASSES
+    &xxs {
+        padding-top: 0.125rem;
+    }
+
+    &xs,
+    &tiny {
+        padding-top: 0.25rem;
+    }
+
+    &sm,
+    &small {
+        padding-top: 0.5rem;
+    }
+
+    &md,
+    &normal {
+        padding-top: 1rem;
+    }
+
+    &lg,
+    &big {
+        padding-top: 1.5rem;
+    }
+
+    &xl,
+    &bigger {
+        padding-top: 2rem;
+    }
+
+    &xxl,
+    &biggest {
+        padding-top: 2.5rem;
+    }
+
+    &xxxl,
+    &gient {
+        padding-top: 3rem;
+    }
+}
+
+.pad-b- {
+    &inherit {
+        padding-bottom: inherit;
+    }
+
+    &auto {
+        padding-bottom: auto;
+    }
+
+    &initial {
+        padding-bottom: initial;
+    }
+
+    &unset {
+        padding-bottom: unset;
+    }
+
+    // USUALL CLASSES
+    &xxs {
+        padding-bottom: 0.125rem;
+    }
+
+    &xs,
+    &tiny {
+        padding-bottom: 0.25rem;
+    }
+
+    &sm,
+    &small {
+        padding-bottom: 0.5rem;
+    }
+
+    &md,
+    &normal {
+        padding-bottom: 1rem;
+    }
+
+    &lg,
+    &big {
+        padding-bottom: 1.5rem;
+    }
+
+    &xl,
+    &bigger {
+        padding-bottom: 2rem;
+    }
+
+    &xxl,
+    &biggest {
+        padding-bottom: 2.5rem;
+    }
+
+    &xxxl,
+    &gient {
+        padding-bottom: 3rem;
+    }
+}
+
+// ----------------------------------
+//          (%) MARGIN
+// ----------------------------------
+
+// PADDING LEFT (%)
+.pad-l- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-left: #{$percent};
+        }
+    }
+}
+
+// PADDING RIGHT (%)
+.pad-r- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-right: #{$percent};
+        }
+    }
+}
+
+// PADDING TOP (%)
+.pad-t- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-top: #{$percent};
+        }
+    }
+}
+
+// PADDING BOTTOM (%)
+.pad-b- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-bottom: #{$percent};
+        }
+    }
+}
+
+// PADDING TOP-RIGHT (%)
+.pad-tr-,
+.pad-rt- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-top: #{$percent};
+            padding-right: #{$percent};
+        }
+    }
+}
+
+// PADDING TOP-BOTTOM (%)
+.pad-tb-,
+.pad-bt- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-top: #{$percent};
+            padding-bottom: #{$percent};
+        }
+    }
+}
+
+// PADDING RIGHT-BOTTOM (%)
+.pad-rb-,
+.pad-br- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-right: #{$percent};
+            padding-bottom: #{$percent};
+        }
+    }
+}
+
+// PADDING RIGHT-LEFT (%)
+.pad-rl-,
+.pad-lr- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-right: #{$percent};
+            padding-left: #{$percent};
+        }
+    }
+}
+
+// PADDING BOTTOM-LEFT (%)
+.pad-bl-,
+.pad-lb- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-bottom: #{$percent};
+            padding-left: #{$percent};
+        }
+    }
+}
+
+// PADDING TOP-BOTTOM-RIGHT (%)
+.pad-trb-,
+.pad-tbr-,
+.pad-brt-,
+.pad-btr-,
+.pad-rtb-,
+.pad-rbt- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-top: #{$percent};
+            padding-bottom: #{$percent};
+            padding-right: #{$percent};
+        }
+    }
+}
+
+// PADDING TOP-BOTTOM-LEFT (%)
+.pad-tlb-,
+.pad-tbl-,
+.pad-blt-,
+.pad-btl-,
+.pad-ltb-,
+.pad-lbt- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-top: #{$percent};
+            padding-bottom: #{$percent};
+            padding-left: #{$percent};
+        }
+    }
+}
+
+// PADDING LEFT-RIGHT-TOP (%)
+.pad-trl-,
+.pad-tlr-,
+.pad-lrt-,
+.pad-ltr-,
+.pad-rtl-,
+.pad-rlt- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-left: #{$percent};
+            padding-right: #{$percent};
+            padding-top: #{$percent};
+        }
+    }
+}
+
+// PADDING LEFT-RIGHT-BOTTOM (%)
+.pad-brl-,
+.pad-blr-,
+.pad-lrb-,
+.pad-lbr-,
+.pad-rbl-,
+.pad-rlb- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding-left: #{$percent};
+            padding-right: #{$percent};
+            padding-bottom: #{$percent};
+        }
+    }
+}
+
+// PADDING ALL (%)
+.pad- {
+    @for $i from 0 through 150 {
+        $class: if($i < 10, "0#{$i}", "#{$i}");
+        $percent: if($i < 10, "0#{$i}%", "#{$i}%");
+
+        &#{$class} {
+            padding: #{$percent};
+        }
+    }
+}
+
+// ----------------------------------
+//          (REM) MARGIN
+// ----------------------------------
+
+// PADDING LEFT (REM)
+
+.pad-l-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-left: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING RIGHT (REM)
+.pad-r-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-right: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING TOP (REM)
+.pad-t-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-top: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING BOTTOM (REM)
+.pad-b-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-bottom: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING TOP-RIGHT (REM)
+.pad-tr--,
+.pad-rt-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-top: #{$rem}rem;
+                padding-right: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING TOP-BOTTOM (REM)
+.pad-tb--,
+.pad-bt-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-top: #{$rem}rem;
+                padding-bottom: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING RIGHT-BOTTOM (REM)
+.pad-rb--,
+.pad-br-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-right: #{$rem}rem;
+                padding-bottom: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING RIGHT-LEFT (REM)
+.pad-rl--,
+.pad-lr-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-right: #{$rem}rem;
+                padding-left: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING BOTTOM-LEFT (REM)
+.pad-bl--,
+.pad-lb-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-bottom: #{$rem}rem;
+                padding-left: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING TOP-BOTTOM-RIGHT (REM)
+.pad-trb--,
+.pad-tbr--,
+.pad-brt--,
+.pad-btr--,
+.pad-rtb--,
+.pad-rbt-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-top: #{$rem}rem;
+                padding-bottom: #{$rem}rem;
+                padding-right: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING TOP-BOTTOM-LEFT (REM)
+.pad-tlb--,
+.pad-tbl--,
+.pad-blt--,
+.pad-btl--,
+.pad-ltb--,
+.pad-lbt-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-top: #{$rem}rem;
+                padding-bottom: #{$rem}rem;
+                padding-left: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING LEFT-RIGHT-TOP (REM)
+.pad-trl--,
+.pad-tlr--,
+.pad-lrt--,
+.pad-ltr--,
+.pad-rtl--,
+.pad-rlt-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-left: #{$rem}rem;
+                padding-right: #{$rem}rem;
+                padding-top: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING LEFT-RIGHT-BOTTOM (REM)
+.pad-brl--,
+.pad-blr--,
+.pad-lrb--,
+.pad-lbr--,
+.pad-rbl--,
+.pad-rlb-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding-left: #{$rem}rem;
+                padding-right: #{$rem}rem;
+                padding-bottom: #{$rem}rem;
+            }
+        }
+    }
+}
+
+// PADDING ALL (REM)
+
+.pad-- {
+    @for $i from 0 through 30 {
+        @for $j from 0 through 9 {
+            $class: #{$i}#{$j};
+            $rem: $i + calc($j / 10);
+
+            &#{$class} {
+                padding: #{$rem}rem;
+            }
+        }
+    }
+}
