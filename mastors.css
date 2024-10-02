@@ -198469,46 +198469,6 @@ HEIGHT IN REM SIZE
   padding: 30.9rem;
 }
 
-@media screen and (min-width: 2560px) {
-  .res-container {
-    max-width: 1920px !important;
-  }
-}
-@media screen and (min-width: 1920px) and (max-width: 2559px) {
-  .res-container {
-    max-width: 1440px !important;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 1919px) {
-  .res-container {
-    max-width: 1280px !important;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .res-container {
-    max-width: 960px !important;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .res-container {
-    max-width: 720px !important;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .res-container {
-    max-width: 540px !important;
-  }
-}
-@media screen and (min-width: 360px) and (max-width: 575px) {
-  .res-container {
-    max-width: 340px !important;
-  }
-}
-@media screen and (max-width: 359px) {
-  .res-container {
-    max-width: 280px !important;
-  }
-}
 .scale-00 {
   transform: scale(0);
 }
@@ -208783,19 +208743,19 @@ DISPLAY CLASSES
 
 @media screen and (min-width: 180px) and (max-width: 220px) {
   .res-container {
-    max-width: 200px !important;
+    max-width: 100% !important;
     transition: all 0.3s ease-in-out;
   }
 }
 @media screen and (min-width: 221px) and (max-width: 320px) {
   .res-container {
-    max-width: 200px !important;
+    max-width: 220px !important;
     transition: all 0.3s ease-in-out;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 520px) {
   .res-container {
-    max-width: 300px !important;
+    max-width: 310px !important;
     transition: all 0.3s ease-in-out;
   }
 }
