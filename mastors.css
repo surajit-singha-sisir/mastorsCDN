@@ -208749,13 +208749,13 @@ DISPLAY CLASSES
 }
 @media screen and (min-width: 221px) and (max-width: 320px) {
   .res-container {
-    max-width: 220px !important;
+    max-width: 95% !important;
     transition: all 0.3s ease-in-out;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 520px) {
   .res-container {
-    max-width: 310px !important;
+    max-width: 95% !important;
     transition: all 0.3s ease-in-out;
   }
 }

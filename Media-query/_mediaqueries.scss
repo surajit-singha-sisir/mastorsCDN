@@ -98,7 +98,7 @@
 
 @mixin mob-m {
     @include mobile-m {
-        max-width: 220px !important;
+        max-width: 95% !important;
         transition: all 0.3s ease-in-out;
         @content;
     }
@@ -106,7 +106,7 @@
 
 @mixin mob-l {
     @include mobile-l {
-        max-width: 310px !important;
+        max-width: 95% !important;
         transition: all 0.3s ease-in-out;
         @content;
     }
