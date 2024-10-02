@@ -207274,6 +207274,62 @@ DISPLAY CLASSES
   grid-auto-flow: column-reverse;
 }
 
+@media screen and (min-width: 180px) and (max-width: 220px) {
+  .res-container {
+    max-width: 200px !important;
+  }
+}
+@media screen and (min-width: 221px) and (max-width: 320px) {
+  .res-container {
+    max-width: 200px !important;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 520px) {
+  .res-container {
+    max-width: 300px !important;
+  }
+}
+@media screen and (min-width: 521px) and (max-width: 720px) {
+  .res-container {
+    max-width: 500px !important;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 920px) {
+  .res-container {
+    max-width: 700px !important;
+  }
+}
+@media screen and (min-width: 921px) and (max-width: 1020px) {
+  .res-container {
+    max-width: 900px !important;
+  }
+}
+@media screen and (min-width: 1021px) and (max-width: 1220px) {
+  .res-container {
+    max-width: 1000px !important;
+  }
+}
+@media screen and (min-width: 1221px) and (max-width: 1420px) {
+  .res-container {
+    max-width: 1200px !important;
+  }
+}
+@media screen and (min-width: 1421px) and (max-width: 1620px) {
+  .res-container {
+    max-width: 1400px !important;
+  }
+}
+@media screen and (min-width: 1621px) and (max-width: 2020px) {
+  .res-container {
+    max-width: 1600px !important;
+  }
+}
+@media screen and (min-width: 2021px) and (max-width: 2420px) {
+  .res-container {
+    max-width: 2000px !important;
+  }
+}
+
 .g-res-container,
 .grid-res-container {
   display: grid;
@@ -207326,7 +207382,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-container,
   .grid-res-container {
     grid-template-columns: 1fr;
@@ -207384,7 +207440,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-2-col-container,
   .grid-res-2-col-container {
     grid-template-columns: 1fr;
@@ -207442,7 +207498,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-3-col-container,
   .grid-res-3-col-container {
     grid-template-columns: 1fr;
@@ -207500,7 +207556,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-4-col-container,
   .grid-res-4-col-container {
     grid-template-columns: 1fr;
@@ -207558,7 +207614,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-5-col-container,
   .grid-res-5-col-container {
     grid-template-columns: 1fr;
@@ -207616,7 +207672,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-6-col-container,
   .grid-res-6-col-container {
     grid-template-columns: 1fr;
@@ -207674,7 +207730,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-7-col-container,
   .grid-res-7-col-container {
     grid-template-columns: 1fr;
@@ -207732,7 +207788,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-8-col-container,
   .grid-res-8-col-container {
     grid-template-columns: 1fr;
@@ -207790,7 +207846,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-9-col-container,
   .grid-res-9-col-container {
     grid-template-columns: 1fr;
@@ -207848,7 +207904,7 @@ DISPLAY CLASSES
   grid-column: span 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 521px) and (max-width: 720px) {
   .g-res-10-col-container,
   .grid-res-10-col-container {
     grid-template-columns: 1fr;
