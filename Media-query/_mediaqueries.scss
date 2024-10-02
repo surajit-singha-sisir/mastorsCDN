@@ -90,7 +90,7 @@
 // WIDTH RESPOSIVENESS
 @mixin mob-s {
     @include mobile-s {
-        max-width: 200px !important;
+        max-width: 100% !important;
         transition: all 0.3s ease-in-out;
         @content;
     }
@@ -98,7 +98,7 @@
 
 @mixin mob-m {
     @include mobile-m {
-        max-width: 200px !important;
+        max-width: 220px !important;
         transition: all 0.3s ease-in-out;
         @content;
     }
@@ -106,7 +106,7 @@
 
 @mixin mob-l {
     @include mobile-l {
-        max-width: 300px !important;
+        max-width: 310px !important;
         transition: all 0.3s ease-in-out;
         @content;
     }
