@@ -91,6 +91,7 @@
 @mixin mob-s {
     @include mobile-s {
         max-width: 200px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -98,6 +99,7 @@
 @mixin mob-m {
     @include mobile-m {
         max-width: 200px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -105,6 +107,7 @@
 @mixin mob-l {
     @include mobile-l {
         max-width: 300px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -112,6 +115,7 @@
 @mixin tab {
     @include tablet {
         max-width: 500px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -119,6 +123,7 @@
 @mixin tab-l {
     @include tablet-l {
         max-width: 700px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -126,6 +131,7 @@
 @mixin lap {
     @include laptop {
         max-width: 900px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -133,6 +139,7 @@
 @mixin lap-l {
     @include laptop-l {
         max-width: 1000px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -140,6 +147,7 @@
 @mixin desk {
     @include desktop {
         max-width: 1200px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -147,6 +155,7 @@
 @mixin desk-l {
     @include desktop-l {
         max-width: 1400px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -154,6 +163,7 @@
 @mixin desk-xl {
     @include desktop-xl {
         max-width: 1600px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -161,6 +171,7 @@
 @mixin desk-xxl {
     @include desktop-xxl {
         max-width: 2000px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }
@@ -168,6 +179,7 @@
 @mixin desk-xxxl {
     @include desktop-xxl {
         width: 2400px !important;
+        transition: all 0.3s ease-in-out;
         @content;
     }
 }

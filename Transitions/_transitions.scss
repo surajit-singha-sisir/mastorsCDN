@@ -1,0 +1,1124 @@
+.tran- {
+
+    // 0.1s Transitions
+    &all-01-ease {
+        transition: all 0.1s ease;
+    }
+
+    &all-01-ease-in {
+        transition: all 0.1s ease-in;
+    }
+
+    &all-01-ease-out {
+        transition: all 0.1s ease-out;
+    }
+
+    &all-01-ease-in-out {
+        transition: all 0.1s ease-in-out;
+    }
+
+    &all-01-linear {
+        transition: all 0.1s linear;
+    }
+
+    &all-01-steps {
+        transition: all 0.1s steps(1, start);
+    }
+
+    // 0.2s Transitions
+    &all-02-ease {
+        transition: all 0.2s ease;
+    }
+
+    &all-02-ease-in {
+        transition: all 0.2s ease-in;
+    }
+
+    &all-02-ease-out {
+        transition: all 0.2s ease-out;
+    }
+
+    &all-02-ease-in-out {
+        transition: all 0.2s ease-in-out;
+    }
+
+    &all-02-linear {
+        transition: all 0.2s linear;
+    }
+
+    &all-02-steps {
+        transition: all 0.2s steps(1, start);
+    }
+
+    // 0.5s Transitions
+    &all-05-ease {
+        transition: all 0.5s ease;
+    }
+
+    &all-05-ease-in {
+        transition: all 0.5s ease-in;
+    }
+
+    &all-05-ease-out {
+        transition: all 0.5s ease-out;
+    }
+
+    &all-05-ease-in-out {
+        transition: all 0.5s ease-in-out;
+    }
+
+    &all-05-linear {
+        transition: all 0.5s linear;
+    }
+
+    &all-05-steps {
+        transition: all 0.5s steps(1, start);
+    }
+
+    // 1s Transitions
+    &all-10-ease {
+        transition: all 1s ease;
+    }
+
+    &all-10-ease-in {
+        transition: all 1s ease-in;
+    }
+
+    &all-10-ease-out {
+        transition: all 1s ease-out;
+    }
+
+    &all-10-ease-in-out {
+        transition: all 1s ease-in-out;
+    }
+
+    &all-10-linear {
+        transition: all 1s linear;
+    }
+
+    &all-10-steps {
+        transition: all 1s steps(1, start);
+    }
+
+    // 1.1s to 1.9s Transitions
+    &all-11-ease {
+        transition: all 1.1s ease;
+    }
+
+    &all-11-ease-in {
+        transition: all 1.1s ease-in;
+    }
+
+    &all-11-ease-out {
+        transition: all 1.1s ease-out;
+    }
+
+    &all-11-ease-in-out {
+        transition: all 1.1s ease-in-out;
+    }
+
+    &all-11-linear {
+        transition: all 1.1s linear;
+    }
+
+    &all-11-steps {
+        transition: all 1.1s steps(2, start);
+    }
+
+    &all-12-ease {
+        transition: all 1.2s ease;
+    }
+
+    &all-12-ease-in {
+        transition: all 1.2s ease-in;
+    }
+
+    &all-12-ease-out {
+        transition: all 1.2s ease-out;
+    }
+
+    &all-12-ease-in-out {
+        transition: all 1.2s ease-in-out;
+    }
+
+    &all-12-linear {
+        transition: all 1.2s linear;
+    }
+
+    &all-12-steps {
+        transition: all 1.2s steps(2, start);
+    }
+
+    &all-13-ease {
+        transition: all 1.3s ease;
+    }
+
+    &all-13-ease-in {
+        transition: all 1.3s ease-in;
+    }
+
+    &all-13-ease-out {
+        transition: all 1.3s ease-out;
+    }
+
+    &all-13-ease-in-out {
+        transition: all 1.3s ease-in-out;
+    }
+
+    &all-13-linear {
+        transition: all 1.3s linear;
+    }
+
+    &all-13-steps {
+        transition: all 1.3s steps(2, start);
+    }
+
+    &all-14-ease {
+        transition: all 1.4s ease;
+    }
+
+    &all-14-ease-in {
+        transition: all 1.4s ease-in;
+    }
+
+    &all-14-ease-out {
+        transition: all 1.4s ease-out;
+    }
+
+    &all-14-ease-in-out {
+        transition: all 1.4s ease-in-out;
+    }
+
+    &all-14-linear {
+        transition: all 1.4s linear;
+    }
+
+    &all-14-steps {
+        transition: all 1.4s steps(2, start);
+    }
+
+    &all-15-ease {
+        transition: all 1.5s ease;
+    }
+
+    &all-15-ease-in {
+        transition: all 1.5s ease-in;
+    }
+
+    &all-15-ease-out {
+        transition: all 1.5s ease-out;
+    }
+
+    &all-15-ease-in-out {
+        transition: all 1.5s ease-in-out;
+    }
+
+    &all-15-linear {
+        transition: all 1.5s linear;
+    }
+
+    &all-15-steps {
+        transition: all 1.5s steps(2, start);
+    }
+
+    &all-16-ease {
+        transition: all 1.6s ease;
+    }
+
+    &all-16-ease-in {
+        transition: all 1.6s ease-in;
+    }
+
+    &all-16-ease-out {
+        transition: all 1.6s ease-out;
+    }
+
+    &all-16-ease-in-out {
+        transition: all 1.6s ease-in-out;
+    }
+
+    &all-16-linear {
+        transition: all 1.6s linear;
+    }
+
+    &all-16-steps {
+        transition: all 1.6s steps(2, start);
+    }
+
+    &all-17-ease {
+        transition: all 1.7s ease;
+    }
+
+    &all-17-ease-in {
+        transition: all 1.7s ease-in;
+    }
+
+    &all-17-ease-out {
+        transition: all 1.7s ease-out;
+    }
+
+    &all-17-ease-in-out {
+        transition: all 1.7s ease-in-out;
+    }
+
+    &all-17-linear {
+        transition: all 1.7s linear;
+    }
+
+    &all-17-steps {
+        transition: all 1.7s steps(2, start);
+    }
+
+    &all-18-ease {
+        transition: all 1.8s ease;
+    }
+
+    &all-18-ease-in {
+        transition: all 1.8s ease-in;
+    }
+
+    &all-18-ease-out {
+        transition: all 1.8s ease-out;
+    }
+
+    &all-18-ease-in-out {
+        transition: all 1.8s ease-in-out;
+    }
+
+    &all-18-linear {
+        transition: all 1.8s linear;
+    }
+
+    &all-18-steps {
+        transition: all 1.8s steps(2, start);
+    }
+
+    &all-19-ease {
+        transition: all 1.9s ease;
+    }
+
+    &all-19-ease-in {
+        transition: all 1.9s ease-in;
+    }
+
+    &all-19-ease-out {
+        transition: all 1.9s ease-out;
+    }
+
+    &all-19-ease-in-out {
+        transition: all 1.9s ease-in-out;
+    }
+
+    &all-19-linear {
+        transition: all 1.9s linear;
+    }
+
+    &all-19-steps {
+        transition: all 1.9s steps(2, start);
+    }
+
+    // 2s Transitions
+    &all-20-ease {
+        transition: all 2s ease;
+    }
+
+    &all-20-ease-in {
+        transition: all 2s ease-in;
+    }
+
+    &all-20-ease-out {
+        transition: all 2s ease-out;
+    }
+
+    &all-20-ease-in-out {
+        transition: all 2s ease-in-out;
+    }
+
+    &all-20-linear {
+        transition: all 2s linear;
+    }
+
+    &all-20-steps {
+        transition: all 2s steps(2, start);
+    }
+
+    // 2.1s to 2.9s Transitions
+    &all-21-ease {
+        transition: all 2.1s ease;
+    }
+
+    &all-21-ease-in {
+        transition: all 2.1s ease-in;
+    }
+
+    &all-21-ease-out {
+        transition: all 2.1s ease-out;
+    }
+
+    &all-21-ease-in-out {
+        transition: all 2.1s ease-in-out;
+    }
+
+    &all-21-linear {
+        transition: all 2.1s linear;
+    }
+
+    &all-21-steps {
+        transition: all 2.1s steps(3, start);
+    }
+
+    &all-22-ease {
+        transition: all 2.2s ease;
+    }
+
+    &all-22-ease-in {
+        transition: all 2.2s ease-in;
+    }
+
+    &all-22-ease-out {
+        transition: all 2.2s ease-out;
+    }
+
+    &all-22-ease-in-out {
+        transition: all 2.2s ease-in-out;
+    }
+
+    &all-22-linear {
+        transition: all 2.2s linear;
+    }
+
+    &all-22-steps {
+        transition: all 2.2s steps(3, start);
+    }
+
+    &all-23-ease {
+        transition: all 2.3s ease;
+    }
+
+    &all-23-ease-in {
+        transition: all 2.3s ease-in;
+    }
+
+    &all-23-ease-out {
+        transition: all 2.3s ease-out;
+    }
+
+    &all-23-ease-in-out {
+        transition: all 2.3s ease-in-out;
+    }
+
+    &all-23-linear {
+        transition: all 2.3s linear;
+    }
+
+    &all-23-steps {
+        transition: all 2.3s steps(3, start);
+    }
+
+    &all-24-ease {
+        transition: all 2.4s ease;
+    }
+
+    &all-24-ease-in {
+        transition: all 2.4s ease-in;
+    }
+
+    &all-24-ease-out {
+        transition: all 2.4s ease-out;
+    }
+
+    &all-24-ease-in-out {
+        transition: all 2.4s ease-in-out;
+    }
+
+    &all-24-linear {
+        transition: all 2.4s linear;
+    }
+
+    &all-24-steps {
+        transition: all 2.4s steps(3, start);
+    }
+
+    &all-25-ease {
+        transition: all 2.5s ease;
+    }
+
+    &all-25-ease-in {
+        transition: all 2.5s ease-in;
+    }
+
+    &all-25-ease-out {
+        transition: all 2.5s ease-out;
+    }
+
+    &all-25-ease-in-out {
+        transition: all 2.5s ease-in-out;
+    }
+
+    &all-25-linear {
+        transition: all 2.5s linear;
+    }
+
+    &all-25-steps {
+        transition: all 2.5s steps(3, start);
+    }
+
+    &all-26-ease {
+        transition: all 2.6s ease;
+    }
+
+    &all-26-ease-in {
+        transition: all 2.6s ease-in;
+    }
+
+    &all-26-ease-out {
+        transition: all 2.6s ease-out;
+    }
+
+    &all-26-ease-in-out {
+        transition: all 2.6s ease-in-out;
+    }
+
+    &all-26-linear {
+        transition: all 2.6s linear;
+    }
+
+    &all-26-steps {
+        transition: all 2.6s steps(3, start);
+    }
+
+    &all-27-ease {
+        transition: all 2.7s ease;
+    }
+
+    &all-27-ease-in {
+        transition: all 2.7s ease-in;
+    }
+
+    &all-27-ease-out {
+        transition: all 2.7s ease-out;
+    }
+
+    &all-27-ease-in-out {
+        transition: all 2.7s ease-in-out;
+    }
+
+    &all-27-linear {
+        transition: all 2.7s linear;
+    }
+
+    &all-27-steps {
+        transition: all 2.7s steps(3, start);
+    }
+
+    &all-28-ease {
+        transition: all 2.8s ease;
+    }
+
+    &all-28-ease-in {
+        transition: all 2.8s ease-in;
+    }
+
+    &all-28-ease-out {
+        transition: all 2.8s ease-out;
+    }
+
+    &all-28-ease-in-out {
+        transition: all 2.8s ease-in-out;
+    }
+
+    &all-28-linear {
+        transition: all 2.8s linear;
+    }
+
+    &all-28-steps {
+        transition: all 2.8s steps(3, start);
+    }
+
+    &all-29-ease {
+        transition: all 2.9s ease;
+    }
+
+    &all-29-ease-in {
+        transition: all 2.9s ease-in;
+    }
+
+    &all-29-ease-out {
+        transition: all 2.9s ease-out;
+    }
+
+    &all-29-ease-in-out {
+        transition: all 2.9s ease-in-out;
+    }
+
+    &all-29-linear {
+        transition: all 2.9s linear;
+    }
+
+    &all-29-steps {
+        transition: all 2.9s steps(3, start);
+    }
+
+    // 3s Transitions
+    &all-30-ease {
+        transition: all 3s ease;
+    }
+
+    &all-30-ease-in {
+        transition: all 3s ease-in;
+    }
+
+    &all-30-ease-out {
+        transition: all 3s ease-out;
+    }
+
+    &all-30-ease-in-out {
+        transition: all 3s ease-in-out;
+    }
+
+    &all-30-linear {
+        transition: all 3s linear;
+    }
+
+    &all-30-steps {
+        transition: all 3s steps(3, start);
+    }
+
+    // 3.1s to 3.9s Transitions
+    &all-31-ease {
+        transition: all 3.1s ease;
+    }
+
+    &all-31-ease-in {
+        transition: all 3.1s ease-in;
+    }
+
+    &all-31-ease-out {
+        transition: all 3.1s ease-out;
+    }
+
+    &all-31-ease-in-out {
+        transition: all 3.1s ease-in-out;
+    }
+
+    &all-31-linear {
+        transition: all 3.1s linear;
+    }
+
+    &all-31-steps {
+        transition: all 3.1s steps(4, start);
+    }
+
+    &all-32-ease {
+        transition: all 3.2s ease;
+    }
+
+    &all-32-ease-in {
+        transition: all 3.2s ease-in;
+    }
+
+    &all-32-ease-out {
+        transition: all 3.2s ease-out;
+    }
+
+    &all-32-ease-in-out {
+        transition: all 3.2s ease-in-out;
+    }
+
+    &all-32-linear {
+        transition: all 3.2s linear;
+    }
+
+    &all-32-steps {
+        transition: all 3.2s steps(4, start);
+    }
+
+    &all-33-ease {
+        transition: all 3.3s ease;
+    }
+
+    &all-33-ease-in {
+        transition: all 3.3s ease-in;
+    }
+
+    &all-33-ease-out {
+        transition: all 3.3s ease-out;
+    }
+
+    &all-33-ease-in-out {
+        transition: all 3.3s ease-in-out;
+    }
+
+    &all-33-linear {
+        transition: all 3.3s linear;
+    }
+
+    &all-33-steps {
+        transition: all 3.3s steps(4, start);
+    }
+
+    &all-34-ease {
+        transition: all 3.4s ease;
+    }
+
+    &all-34-ease-in {
+        transition: all 3.4s ease-in;
+    }
+
+    &all-34-ease-out {
+        transition: all 3.4s ease-out;
+    }
+
+    &all-34-ease-in-out {
+        transition: all 3.4s ease-in-out;
+    }
+
+    &all-34-linear {
+        transition: all 3.4s linear;
+    }
+
+    &all-34-steps {
+        transition: all 3.4s steps(4, start);
+    }
+
+    &all-35-ease {
+        transition: all 3.5s ease;
+    }
+
+    &all-35-ease-in {
+        transition: all 3.5s ease-in;
+    }
+
+    &all-35-ease-out {
+        transition: all 3.5s ease-out;
+    }
+
+    &all-35-ease-in-out {
+        transition: all 3.5s ease-in-out;
+    }
+
+    &all-35-linear {
+        transition: all 3.5s linear;
+    }
+
+    &all-35-steps {
+        transition: all 3.5s steps(4, start);
+    }
+
+    &all-36-ease {
+        transition: all 3.6s ease;
+    }
+
+    &all-36-ease-in {
+        transition: all 3.6s ease-in;
+    }
+
+    &all-36-ease-out {
+        transition: all 3.6s ease-out;
+    }
+
+    &all-36-ease-in-out {
+        transition: all 3.6s ease-in-out;
+    }
+
+    &all-36-linear {
+        transition: all 3.6s linear;
+    }
+
+    &all-36-steps {
+        transition: all 3.6s steps(4, start);
+    }
+
+    &all-37-ease {
+        transition: all 3.7s ease;
+    }
+
+    &all-37-ease-in {
+        transition: all 3.7s ease-in;
+    }
+
+    &all-37-ease-out {
+        transition: all 3.7s ease-out;
+    }
+
+    &all-37-ease-in-out {
+        transition: all 3.7s ease-in-out;
+    }
+
+    &all-37-linear {
+        transition: all 3.7s linear;
+    }
+
+    &all-37-steps {
+        transition: all 3.7s steps(4, start);
+    }
+
+    &all-38-ease {
+        transition: all 3.8s ease;
+    }
+
+    &all-38-ease-in {
+        transition: all 3.8s ease-in;
+    }
+
+    &all-38-ease-out {
+        transition: all 3.8s ease-out;
+    }
+
+    &all-38-ease-in-out {
+        transition: all 3.8s ease-in-out;
+    }
+
+    &all-38-linear {
+        transition: all 3.8s linear;
+    }
+
+    &all-38-steps {
+        transition: all 3.8s steps(4, start);
+    }
+
+    &all-39-ease {
+        transition: all 3.9s ease;
+    }
+
+    &all-39-ease-in {
+        transition: all 3.9s ease-in;
+    }
+
+    &all-39-ease-out {
+        transition: all 3.9s ease-out;
+    }
+
+    &all-39-ease-in-out {
+        transition: all 3.9s ease-in-out;
+    }
+
+    &all-39-linear {
+        transition: all 3.9s linear;
+    }
+
+    &all-39-steps {
+        transition: all 3.9s steps(4, start);
+    }
+
+    // 4s Transitions
+    &all-40-ease {
+        transition: all 4s ease;
+    }
+
+    &all-40-ease-in {
+        transition: all 4s ease-in;
+    }
+
+    &all-40-ease-out {
+        transition: all 4s ease-out;
+    }
+
+    &all-40-ease-in-out {
+        transition: all 4s ease-in-out;
+    }
+
+    &all-40-linear {
+        transition: all 4s linear;
+    }
+
+    &all-40-steps {
+        transition: all 4s steps(4, start);
+    }
+
+    // 4.1s to 4.9s Transitions
+    &all-41-ease {
+        transition: all 4.1s ease;
+    }
+
+    &all-41-ease-in {
+        transition: all 4.1s ease-in;
+    }
+
+    &all-41-ease-out {
+        transition: all 4.1s ease-out;
+    }
+
+    &all-41-ease-in-out {
+        transition: all 4.1s ease-in-out;
+    }
+
+    &all-41-linear {
+        transition: all 4.1s linear;
+    }
+
+    &all-41-steps {
+        transition: all 4.1s steps(5, start);
+    }
+
+    &all-42-ease {
+        transition: all 4.2s ease;
+    }
+
+    &all-42-ease-in {
+        transition: all 4.2s ease-in;
+    }
+
+    &all-42-ease-out {
+        transition: all 4.2s ease-out;
+    }
+
+    &all-42-ease-in-out {
+        transition: all 4.2s ease-in-out;
+    }
+
+    &all-42-linear {
+        transition: all 4.2s linear;
+    }
+
+    &all-42-steps {
+        transition: all 4.2s steps(5, start);
+    }
+
+    &all-43-ease {
+        transition: all 4.3s ease;
+    }
+
+    &all-43-ease-in {
+        transition: all 4.3s ease-in;
+    }
+
+    &all-43-ease-out {
+        transition: all 4.3s ease-out;
+    }
+
+    &all-43-ease-in-out {
+        transition: all 4.3s ease-in-out;
+    }
+
+    &all-43-linear {
+        transition: all 4.3s linear;
+    }
+
+    &all-43-steps {
+        transition: all 4.3s steps(5, start);
+    }
+
+    &all-44-ease {
+        transition: all 4.4s ease;
+    }
+
+    &all-44-ease-in {
+        transition: all 4.4s ease-in;
+    }
+
+    &all-44-ease-out {
+        transition: all 4.4s ease-out;
+    }
+
+    &all-44-ease-in-out {
+        transition: all 4.4s ease-in-out;
+    }
+
+    &all-44-linear {
+        transition: all 4.4s linear;
+    }
+
+    &all-44-steps {
+        transition: all 4.4s steps(5, start);
+    }
+
+    &all-45-ease {
+        transition: all 4.5s ease;
+    }
+
+    &all-45-ease-in {
+        transition: all 4.5s ease-in;
+    }
+
+    &all-45-ease-out {
+        transition: all 4.5s ease-out;
+    }
+
+    &all-45-ease-in-out {
+        transition: all 4.5s ease-in-out;
+    }
+
+    &all-45-linear {
+        transition: all 4.5s linear;
+    }
+
+    &all-45-steps {
+        transition: all 4.5s steps(5, start);
+    }
+
+    &all-46-ease {
+        transition: all 4.6s ease;
+    }
+
+    &all-46-ease-in {
+        transition: all 4.6s ease-in;
+    }
+
+    &all-46-ease-out {
+        transition: all 4.6s ease-out;
+    }
+
+    &all-46-ease-in-out {
+        transition: all 4.6s ease-in-out;
+    }
+
+    &all-46-linear {
+        transition: all 4.6s linear;
+    }
+
+    &all-46-steps {
+        transition: all 4.6s steps(5, start);
+    }
+
+    &all-47-ease {
+        transition: all 4.7s ease;
+    }
+
+    &all-47-ease-in {
+        transition: all 4.7s ease-in;
+    }
+
+    &all-47-ease-out {
+        transition: all 4.7s ease-out;
+    }
+
+    &all-47-ease-in-out {
+        transition: all 4.7s ease-in-out;
+    }
+
+    &all-47-linear {
+        transition: all 4.7s linear;
+    }
+
+    &all-47-steps {
+        transition: all 4.7s steps(5, start);
+    }
+
+    &all-48-ease {
+        transition: all 4.8s ease;
+    }
+
+    &all-48-ease-in {
+        transition: all 4.8s ease-in;
+    }
+
+    &all-48-ease-out {
+        transition: all 4.8s ease-out;
+    }
+
+    &all-48-ease-in-out {
+        transition: all 4.8s ease-in-out;
+    }
+
+    &all-48-linear {
+        transition: all 4.8s linear;
+    }
+
+    &all-48-steps {
+        transition: all 4.8s steps(5, start);
+    }
+
+    &all-49-ease {
+        transition: all 4.9s ease;
+    }
+
+    &all-49-ease-in {
+        transition: all 4.9s ease-in;
+    }
+
+    &all-49-ease-out {
+        transition: all 4.9s ease-out;
+    }
+
+    &all-49-ease-in-out {
+        transition: all 4.9s ease-in-out;
+    }
+
+    &all-49-linear {
+        transition: all 4.9s linear;
+    }
+
+    &all-49-steps {
+        transition: all 4.9s steps(5, start);
+    }
+
+    // 5s Transitions
+    &all-50-ease {
+        transition: all 5s ease;
+    }
+
+    &all-50-ease-in {
+        transition: all 5s ease-in;
+    }
+
+    &all-50-ease-out {
+        transition: all 5s ease-out;
+    }
+
+    &all-50-ease-in-out {
+        transition: all 5s ease-in-out;
+    }
+
+    &all-50-linear {
+        transition: all 5s linear;
+    }
+
+    &all-50-steps {
+        transition: all 5s steps(5, start);
+    }
+
+
+
+
+
+    &bounce,
+    &samp-1 {
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+
+    &accelerate-stop,
+    &samp-2 {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &fast-in-slow-out,
+    &samp-3 {
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1.5);
+    }
+
+    &elastic,
+    &samp-4 {
+        transition: all 0.5s cubic-bezier(0.25, 1.5, 0.5, -0.75);
+    }
+
+    &sharp-ease-out,
+    &samp-5 {
+        transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+
+    &fast-bounce,
+    &samp-6 {
+        transition: all 0.3s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+    }
+
+    &ease-out-back,
+    &samp-7 {
+        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &slow-start-snap-end,
+    &samp-8 {
+        transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    &quick-start-end,
+    &samp-9 {
+        transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
+    }
+
+    &springy,
+    &samp-10 {
+        transition: all 0.5s cubic-bezier(0.65, -0.4, 0.35, 1.6);
+    }
+}
