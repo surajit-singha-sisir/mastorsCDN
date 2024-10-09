@@ -199648,6 +199648,307 @@ DISPLAY CLASSES
   border-bottom: 5px solid;
 }
 
+.b-White {
+  border-color: #fff;
+}
+.b-Black {
+  border-color: #000;
+}
+.b-Gray {
+  border-color: #ccc;
+}
+.b-Silver {
+  border-color: #ddd;
+}
+.b-Gold {
+  border-color: #ffd700;
+}
+.b-Maroon {
+  border-color: #800000;
+}
+.b-Red {
+  border-color: #ff0000;
+}
+.b-Orange {
+  border-color: #ff6347;
+}
+.b-Yellow {
+  border-color: #ffff00;
+}
+.b-Green {
+  border-color: #008000;
+}
+.b-Blue {
+  border-color: #0000ff;
+}
+.b-Indigo {
+  border-color: #4b0082;
+}
+.b-Violet {
+  border-color: #ee82ee;
+}
+.b-Purple {
+  border-color: #800080;
+}
+.b-Pink {
+  border-color: #ffc0cb;
+}
+.b-Brown {
+  border-color: #a52a2a;
+}
+.b-Cyan {
+  border-color: #00ffff;
+}
+.b-Magenta {
+  border-color: #ff00ff;
+}
+.b-Teal {
+  border-color: #008080;
+}
+.b-Lime {
+  border-color: #00ff00;
+}
+.b-Olive {
+  border-color: #808000;
+}
+.b-Navy {
+  border-color: #000080;
+}
+.b-Coral {
+  border-color: #ff7f50;
+}
+.b-Beige {
+  border-color: #f5f5dc;
+}
+.b-Mint {
+  border-color: #98ff98;
+}
+.b-Lavender {
+  border-color: #e6e6fa;
+}
+.b-Turquoise {
+  border-color: #40e0d0;
+}
+.b-Khaki {
+  border-color: #f0e68c;
+}
+.b-Chocolate {
+  border-color: #d2691e;
+}
+.b-Salmon {
+  border-color: #fa8072;
+}
+.b-Crimson {
+  border-color: #dc143c;
+}
+.b-Plum {
+  border-color: #dda0dd;
+}
+.b-Orchid {
+  border-color: #da70d6;
+}
+.b-Honeydew {
+  border-color: #f0fff0;
+}
+.b-Aquamarine {
+  border-color: #7fffd4;
+}
+.b-Chartreuse {
+  border-color: #7fff00;
+}
+.b-Ivory {
+  border-color: #fffff0;
+}
+.b-Tan {
+  border-color: #d2b48c;
+}
+.b-Sienna {
+  border-color: #a0522d;
+}
+.b-SeaGreen {
+  border-color: #2e8b57;
+}
+.b-DarkRed {
+  border-color: #8b0000;
+}
+.b-DarkGreen {
+  border-color: #006400;
+}
+.b-DarkBlue {
+  border-color: #00008b;
+}
+.b-DarkOrange {
+  border-color: #ff8c00;
+}
+.b-DarkCyan {
+  border-color: #008b8b;
+}
+.b-DarkMagenta {
+  border-color: #8b008b;
+}
+.b-DarkViolet {
+  border-color: #9400d3;
+}
+.b-Peach {
+  border-color: #ffdab9;
+}
+.b-Lemon {
+  border-color: #fff44f;
+}
+.b-SkyBlue {
+  border-color: #87ceeb;
+}
+.b-LightBlue {
+  border-color: #add8e6;
+}
+.b-LightCoral {
+  border-color: #f08080;
+}
+.b-LightGray {
+  border-color: #d3d3d3;
+}
+.b-LightPink {
+  border-color: #ffb6c1;
+}
+.b-LightGreen {
+  border-color: #90ee90;
+}
+.b-LightYellow {
+  border-color: #ffffe0;
+}
+.b-LightCyan {
+  border-color: #e0ffff;
+}
+.b-LightGoldenrodYellow {
+  border-color: #fafad2;
+}
+.b-PaleGoldenrod {
+  border-color: #eee8aa;
+}
+.b-PaleGreen {
+  border-color: #98fb98;
+}
+.b-PaleTurquoise {
+  border-color: #afeeee;
+}
+.b-PaleVioletRed {
+  border-color: #db7093;
+}
+.b-Thistle {
+  border-color: #d8bfd8;
+}
+.b-Tomato {
+  border-color: #ff6347;
+}
+.b-SlateBlue {
+  border-color: #6a5acd;
+}
+.b-SlateGray {
+  border-color: #708090;
+}
+.b-SteelBlue {
+  border-color: #4682b4;
+}
+.b-RosyBrown {
+  border-color: #bc8f8f;
+}
+.b-SandyBrown {
+  border-color: #f4a460;
+}
+.b-Goldenrod {
+  border-color: #daa520;
+}
+.b-PowderBlue {
+  border-color: #b0e0e6;
+}
+.b-RebeccaPurple {
+  border-color: #663399;
+}
+.b-Seashell {
+  border-color: #fff5ee;
+}
+.b-Snow {
+  border-color: #fffafa;
+}
+.b-Wheat {
+  border-color: #f5deb3;
+}
+.b-Moccasin {
+  border-color: #ffe4b5;
+}
+.b-DodgerBlue {
+  border-color: #1e90ff;
+}
+.b-DeepSkyBlue {
+  border-color: #00bfff;
+}
+.b-RoyalBlue {
+  border-color: #4169e1;
+}
+.b-ForestGreen {
+  border-color: #228b22;
+}
+.b-SpringGreen {
+  border-color: #00ff7f;
+}
+.b-MediumSeaGreen {
+  border-color: #3cb371;
+}
+.b-MediumPurple {
+  border-color: #9370db;
+}
+.b-MediumOrchid {
+  border-color: #ba55d3;
+}
+.b-MediumTurquoise {
+  border-color: #48d1cc;
+}
+.b-MediumSlateBlue {
+  border-color: #7b68ee;
+}
+.b-FireBrick {
+  border-color: #b22222;
+}
+.b-DeepPink {
+  border-color: #ff1493;
+}
+.b-HotPink {
+  border-color: #ff69b4;
+}
+.b-LawnGreen {
+  border-color: #7cfc00;
+}
+.b-Linen {
+  border-color: #faf0e6;
+}
+.b-OldLace {
+  border-color: #fdf5e6;
+}
+.b-PapayaWhip {
+  border-color: #ffefd5;
+}
+.b-AntiqueWhite {
+  border-color: #faebd7;
+}
+.b-Azure {
+  border-color: #f0ffff;
+}
+.b-Bisque {
+  border-color: #ffe4c4;
+}
+.b-DarkKhaki {
+  border-color: #bdb76b;
+}
+.b-DarkOliveGreen {
+  border-color: #556b2f;
+}
+.b-DarkSlateBlue {
+  border-color: #483d8b;
+}
+.b-DarkSlateGray {
+  border-color: #2f4f4f;
+}
+
 /* ----------------------------------------------------------------
 BORDERS
 ----------------------------------------------------------------
@@ -214187,6 +214488,1023 @@ BORDERS
   outline-offset: 10px solid;
   outline-color: #000000;
   outline-style: solid;
+}
+
+.b-hov-l:hover {
+  border-left: 1px solid;
+}
+
+.b-hov-l-0:hover,
+.b-hov-l--0:hover {
+  border-left: 0px solid;
+}
+.b-hov-l-1:hover,
+.b-hov-l--1:hover {
+  border-left: 1px solid;
+}
+.b-hov-l-2:hover,
+.b-hov-l--2:hover {
+  border-left: 2px solid;
+}
+.b-hov-l-3:hover,
+.b-hov-l--3:hover {
+  border-left: 3px solid;
+}
+.b-hov-l-4:hover,
+.b-hov-l--4:hover {
+  border-left: 4px solid;
+}
+.b-hov-l-5:hover,
+.b-hov-l--5:hover {
+  border-left: 5px solid;
+}
+
+.b-hov-t:hover {
+  border-top: 1px solid;
+}
+
+.b-hov-t-0:hover,
+.b-hov-t--0:hover {
+  border-top: 0px solid;
+}
+.b-hov-t-1:hover,
+.b-hov-t--1:hover {
+  border-top: 1px solid;
+}
+.b-hov-t-2:hover,
+.b-hov-t--2:hover {
+  border-top: 2px solid;
+}
+.b-hov-t-3:hover,
+.b-hov-t--3:hover {
+  border-top: 3px solid;
+}
+.b-hov-t-4:hover,
+.b-hov-t--4:hover {
+  border-top: 4px solid;
+}
+.b-hov-t-5:hover,
+.b-hov-t--5:hover {
+  border-top: 5px solid;
+}
+
+.b-hov-r:hover {
+  border-right: 1px solid;
+}
+
+.b-hov-r-0:hover,
+.b-hov-r--0:hover {
+  border-right: 0px solid;
+}
+.b-hov-r-1:hover,
+.b-hov-r--1:hover {
+  border-right: 1px solid;
+}
+.b-hov-r-2:hover,
+.b-hov-r--2:hover {
+  border-right: 2px solid;
+}
+.b-hov-r-3:hover,
+.b-hov-r--3:hover {
+  border-right: 3px solid;
+}
+.b-hov-r-4:hover,
+.b-hov-r--4:hover {
+  border-right: 4px solid;
+}
+.b-hov-r-5:hover,
+.b-hov-r--5:hover {
+  border-right: 5px solid;
+}
+
+.b-hov-b:hover {
+  border-bottom: 1px solid;
+}
+
+.b-hov-b-0:hover,
+.b-hov-b--0:hover {
+  border-bottom: 0px solid;
+}
+.b-hov-b-1:hover,
+.b-hov-b--1:hover {
+  border-bottom: 1px solid;
+}
+.b-hov-b-2:hover,
+.b-hov-b--2:hover {
+  border-bottom: 2px solid;
+}
+.b-hov-b-3:hover,
+.b-hov-b--3:hover {
+  border-bottom: 3px solid;
+}
+.b-hov-b-4:hover,
+.b-hov-b--4:hover {
+  border-bottom: 4px solid;
+}
+.b-hov-b-5:hover,
+.b-hov-b--5:hover {
+  border-bottom: 5px solid;
+}
+
+.border-hov:hover,
+.border-hov-all:hover,
+.b-hov-all:hover {
+  border: 1px solid;
+}
+
+.b-hov-0:hover,
+.b-hov--0:hover {
+  border: 0px solid;
+}
+.b-hov-1:hover,
+.b-hov--1:hover {
+  border: 1px solid;
+}
+.b-hov-2:hover,
+.b-hov--2:hover {
+  border: 2px solid;
+}
+.b-hov-3:hover,
+.b-hov--3:hover {
+  border: 3px solid;
+}
+.b-hov-4:hover,
+.b-hov--4:hover {
+  border: 4px solid;
+}
+.b-hov-5:hover,
+.b-hov--5:hover {
+  border: 5px solid;
+}
+
+.b-hov-lr:hover,
+.b-hov-rl:hover {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.b-hov-lr-0:hover,
+.b-hov-lr--0:hover,
+.b-hov-rl-0:hover,
+.b-hov-rl--0:hover {
+  border-left: 0px solid;
+  border-right: 0px solid;
+}
+.b-hov-lr-1:hover,
+.b-hov-lr--1:hover,
+.b-hov-rl-1:hover,
+.b-hov-rl--1:hover {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+.b-hov-lr-2:hover,
+.b-hov-lr--2:hover,
+.b-hov-rl-2:hover,
+.b-hov-rl--2:hover {
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+.b-hov-lr-3:hover,
+.b-hov-lr--3:hover,
+.b-hov-rl-3:hover,
+.b-hov-rl--3:hover {
+  border-left: 3px solid;
+  border-right: 3px solid;
+}
+.b-hov-lr-4:hover,
+.b-hov-lr--4:hover,
+.b-hov-rl-4:hover,
+.b-hov-rl--4:hover {
+  border-left: 4px solid;
+  border-right: 4px solid;
+}
+.b-hov-lr-5:hover,
+.b-hov-lr--5:hover,
+.b-hov-rl-5:hover,
+.b-hov-rl--5:hover {
+  border-left: 5px solid;
+  border-right: 5px solid;
+}
+
+.b-hov-tb:hover,
+.b-hov-bt:hover {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.b-hov-tb-0:hover,
+.b-hov-tb--0:hover,
+.b-hov-bt-0:hover,
+.b-hov-bt--0:hover {
+  border-top: 0px solid;
+  border-bottom: 0px solid;
+}
+.b-hov-tb-1:hover,
+.b-hov-tb--1:hover,
+.b-hov-bt-1:hover,
+.b-hov-bt--1:hover {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.b-hov-tb-2:hover,
+.b-hov-tb--2:hover,
+.b-hov-bt-2:hover,
+.b-hov-bt--2:hover {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.b-hov-tb-3:hover,
+.b-hov-tb--3:hover,
+.b-hov-bt-3:hover,
+.b-hov-bt--3:hover {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+}
+.b-hov-tb-4:hover,
+.b-hov-tb--4:hover,
+.b-hov-bt-4:hover,
+.b-hov-bt--4:hover {
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+}
+.b-hov-tb-5:hover,
+.b-hov-tb--5:hover,
+.b-hov-bt-5:hover,
+.b-hov-bt--5:hover {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+}
+
+.b-hov-lt:hover,
+.b-hov-tl:hover {
+  border-left: 1px solid;
+  border-top: 1px solid;
+}
+
+.b-hov-lt-0:hover,
+.b-hov-lt--0:hover,
+.b-hov-tl-0:hover,
+.b-hov-tl--0:hover {
+  border-left: 0px solid;
+  border-top: 0px solid;
+}
+.b-hov-lt-1:hover,
+.b-hov-lt--1:hover,
+.b-hov-tl-1:hover,
+.b-hov-tl--1:hover {
+  border-left: 1px solid;
+  border-top: 1px solid;
+}
+.b-hov-lt-2:hover,
+.b-hov-lt--2:hover,
+.b-hov-tl-2:hover,
+.b-hov-tl--2:hover {
+  border-left: 2px solid;
+  border-top: 2px solid;
+}
+.b-hov-lt-3:hover,
+.b-hov-lt--3:hover,
+.b-hov-tl-3:hover,
+.b-hov-tl--3:hover {
+  border-left: 3px solid;
+  border-top: 3px solid;
+}
+.b-hov-lt-4:hover,
+.b-hov-lt--4:hover,
+.b-hov-tl-4:hover,
+.b-hov-tl--4:hover {
+  border-left: 4px solid;
+  border-top: 4px solid;
+}
+.b-hov-lt-5:hover,
+.b-hov-lt--5:hover,
+.b-hov-tl-5:hover,
+.b-hov-tl--5:hover {
+  border-left: 5px solid;
+  border-top: 5px solid;
+}
+
+.b-hov-rt:hover,
+.b-hov-tr:hover {
+  border-right: 1px solid;
+  border-top: 1px solid;
+}
+
+.b-hov-rt-0:hover,
+.b-hov-rt--0:hover,
+.b-hov-tr-0:hover,
+.b-hov-tr--0:hover {
+  border-right: 0px solid;
+  border-top: 0px solid;
+}
+.b-hov-rt-1:hover,
+.b-hov-rt--1:hover,
+.b-hov-tr-1:hover,
+.b-hov-tr--1:hover {
+  border-right: 1px solid;
+  border-top: 1px solid;
+}
+.b-hov-rt-2:hover,
+.b-hov-rt--2:hover,
+.b-hov-tr-2:hover,
+.b-hov-tr--2:hover {
+  border-right: 2px solid;
+  border-top: 2px solid;
+}
+.b-hov-rt-3:hover,
+.b-hov-rt--3:hover,
+.b-hov-tr-3:hover,
+.b-hov-tr--3:hover {
+  border-right: 3px solid;
+  border-top: 3px solid;
+}
+.b-hov-rt-4:hover,
+.b-hov-rt--4:hover,
+.b-hov-tr-4:hover,
+.b-hov-tr--4:hover {
+  border-right: 4px solid;
+  border-top: 4px solid;
+}
+.b-hov-rt-5:hover,
+.b-hov-rt--5:hover,
+.b-hov-tr-5:hover,
+.b-hov-tr--5:hover {
+  border-right: 5px solid;
+  border-top: 5px solid;
+}
+
+.b-hov-rt:hover,
+.b-hov-tr:hover {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.b-hov-rt-0:hover,
+.b-hov-rt--0:hover,
+.b-hov-tr-0:hover,
+.b-hov-tr--0:hover {
+  border-right: 0px solid;
+  border-bottom: 0px solid;
+}
+.b-hov-rt-1:hover,
+.b-hov-rt--1:hover,
+.b-hov-tr-1:hover,
+.b-hov-tr--1:hover {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+.b-hov-rt-2:hover,
+.b-hov-rt--2:hover,
+.b-hov-tr-2:hover,
+.b-hov-tr--2:hover {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+.b-hov-rt-3:hover,
+.b-hov-rt--3:hover,
+.b-hov-tr-3:hover,
+.b-hov-tr--3:hover {
+  border-right: 3px solid;
+  border-bottom: 3px solid;
+}
+.b-hov-rt-4:hover,
+.b-hov-rt--4:hover,
+.b-hov-tr-4:hover,
+.b-hov-tr--4:hover {
+  border-right: 4px solid;
+  border-bottom: 4px solid;
+}
+.b-hov-rt-5:hover,
+.b-hov-rt--5:hover,
+.b-hov-tr-5:hover,
+.b-hov-tr--5:hover {
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+}
+
+.b-hov-ltr:hover,
+.b-hov-lrt:hover,
+.b-hov-tlr:hover,
+.b-hov-trl:hover,
+.b-hov-rlt:hover,
+.b-hov-rtl:hover {
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.b-hov-ltr-0:hover,
+.b-hov-lrt-0:hover,
+.b-hov-tlr-0:hover,
+.b-hov-trl-0:hover,
+.b-hov-rlt-0:hover,
+.b-hov-rtl-0:hover,
+.b-hov-ltr--0:hover,
+.b-hov-lrt--0:hover,
+.b-hov-tlr--0:hover,
+.b-hov-trl--0:hover,
+.b-hov-rlt--0:hover,
+.b-hov-rtl--0:hover {
+  border-left: 0px solid;
+  border-top: 0px solid;
+  border-right: 0px solid;
+}
+.b-hov-ltr-1:hover,
+.b-hov-lrt-1:hover,
+.b-hov-tlr-1:hover,
+.b-hov-trl-1:hover,
+.b-hov-rlt-1:hover,
+.b-hov-rtl-1:hover,
+.b-hov-ltr--1:hover,
+.b-hov-lrt--1:hover,
+.b-hov-tlr--1:hover,
+.b-hov-trl--1:hover,
+.b-hov-rlt--1:hover,
+.b-hov-rtl--1:hover {
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+.b-hov-ltr-2:hover,
+.b-hov-lrt-2:hover,
+.b-hov-tlr-2:hover,
+.b-hov-trl-2:hover,
+.b-hov-rlt-2:hover,
+.b-hov-rtl-2:hover,
+.b-hov-ltr--2:hover,
+.b-hov-lrt--2:hover,
+.b-hov-tlr--2:hover,
+.b-hov-trl--2:hover,
+.b-hov-rlt--2:hover,
+.b-hov-rtl--2:hover {
+  border-left: 2px solid;
+  border-top: 2px solid;
+  border-right: 2px solid;
+}
+.b-hov-ltr-3:hover,
+.b-hov-lrt-3:hover,
+.b-hov-tlr-3:hover,
+.b-hov-trl-3:hover,
+.b-hov-rlt-3:hover,
+.b-hov-rtl-3:hover,
+.b-hov-ltr--3:hover,
+.b-hov-lrt--3:hover,
+.b-hov-tlr--3:hover,
+.b-hov-trl--3:hover,
+.b-hov-rlt--3:hover,
+.b-hov-rtl--3:hover {
+  border-left: 3px solid;
+  border-top: 3px solid;
+  border-right: 3px solid;
+}
+.b-hov-ltr-4:hover,
+.b-hov-lrt-4:hover,
+.b-hov-tlr-4:hover,
+.b-hov-trl-4:hover,
+.b-hov-rlt-4:hover,
+.b-hov-rtl-4:hover,
+.b-hov-ltr--4:hover,
+.b-hov-lrt--4:hover,
+.b-hov-tlr--4:hover,
+.b-hov-trl--4:hover,
+.b-hov-rlt--4:hover,
+.b-hov-rtl--4:hover {
+  border-left: 4px solid;
+  border-top: 4px solid;
+  border-right: 4px solid;
+}
+.b-hov-ltr-5:hover,
+.b-hov-lrt-5:hover,
+.b-hov-tlr-5:hover,
+.b-hov-trl-5:hover,
+.b-hov-rlt-5:hover,
+.b-hov-rtl-5:hover,
+.b-hov-ltr--5:hover,
+.b-hov-lrt--5:hover,
+.b-hov-tlr--5:hover,
+.b-hov-trl--5:hover,
+.b-hov-rlt--5:hover,
+.b-hov-rtl--5:hover {
+  border-left: 5px solid;
+  border-top: 5px solid;
+  border-right: 5px solid;
+}
+
+.b-hov-btr:hover,
+.b-hov-brt:hover,
+.b-hov-tbr:hover,
+.b-hov-trb:hover,
+.b-hov-rbt:hover,
+.b-hov-rtb {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.b-hov-btr-0:hover,
+.b-hov-brt-0:hover,
+.b-hov-tbr-0:hover,
+.b-hov-trb-0:hover,
+.b-hov-rbt-0:hover,
+.b-hov-rtb-0:hover,
+.b-hov-btr--0:hover,
+.b-hov-brt--0:hover,
+.b-hov-tbr--0:hover,
+.b-hov-trb--0:hover,
+.b-hov-rbt--0:hover,
+.b-hov-rtb--0:hover {
+  border-top: 0px solid;
+  border-right: 0px solid;
+  border-bottom: 0px solid;
+}
+.b-hov-btr-1:hover,
+.b-hov-brt-1:hover,
+.b-hov-tbr-1:hover,
+.b-hov-trb-1:hover,
+.b-hov-rbt-1:hover,
+.b-hov-rtb-1:hover,
+.b-hov-btr--1:hover,
+.b-hov-brt--1:hover,
+.b-hov-tbr--1:hover,
+.b-hov-trb--1:hover,
+.b-hov-rbt--1:hover,
+.b-hov-rtb--1:hover {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+.b-hov-btr-2:hover,
+.b-hov-brt-2:hover,
+.b-hov-tbr-2:hover,
+.b-hov-trb-2:hover,
+.b-hov-rbt-2:hover,
+.b-hov-rtb-2:hover,
+.b-hov-btr--2:hover,
+.b-hov-brt--2:hover,
+.b-hov-tbr--2:hover,
+.b-hov-trb--2:hover,
+.b-hov-rbt--2:hover,
+.b-hov-rtb--2:hover {
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+.b-hov-btr-3:hover,
+.b-hov-brt-3:hover,
+.b-hov-tbr-3:hover,
+.b-hov-trb-3:hover,
+.b-hov-rbt-3:hover,
+.b-hov-rtb-3:hover,
+.b-hov-btr--3:hover,
+.b-hov-brt--3:hover,
+.b-hov-tbr--3:hover,
+.b-hov-trb--3:hover,
+.b-hov-rbt--3:hover,
+.b-hov-rtb--3:hover {
+  border-top: 3px solid;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
+}
+.b-hov-btr-4:hover,
+.b-hov-brt-4:hover,
+.b-hov-tbr-4:hover,
+.b-hov-trb-4:hover,
+.b-hov-rbt-4:hover,
+.b-hov-rtb-4:hover,
+.b-hov-btr--4:hover,
+.b-hov-brt--4:hover,
+.b-hov-tbr--4:hover,
+.b-hov-trb--4:hover,
+.b-hov-rbt--4:hover,
+.b-hov-rtb--4:hover {
+  border-top: 4px solid;
+  border-right: 4px solid;
+  border-bottom: 4px solid;
+}
+.b-hov-btr-5:hover,
+.b-hov-brt-5:hover,
+.b-hov-tbr-5:hover,
+.b-hov-trb-5:hover,
+.b-hov-rbt-5:hover,
+.b-hov-rtb-5:hover,
+.b-hov-btr--5:hover,
+.b-hov-brt--5:hover,
+.b-hov-tbr--5:hover,
+.b-hov-trb--5:hover,
+.b-hov-rbt--5:hover,
+.b-hov-rtb--5:hover {
+  border-top: 5px solid;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+}
+
+.b-hov-btl:hover,
+.b-hov-blt:hover,
+.b-hov-tbl:hover,
+.b-hov-tlb:hover,
+.b-hov-lbt:hover,
+.b-hov-ltb {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.b-hov-btl-0:hover,
+.b-hov-blt-0:hover,
+.b-hov-tbl-0:hover,
+.b-hov-tlb-0:hover,
+.b-hov-lbt-0:hover,
+.b-hov-ltb-0:hover,
+.b-hov-btl--0:hover,
+.b-hov-blt--0:hover,
+.b-hov-tbl--0:hover,
+.b-hov-tlb--0:hover,
+.b-hov-lbt--0:hover,
+.b-hov-ltb--0:hover {
+  border-top: 0px solid;
+  border-right: 0px solid;
+  border-bottom: 0px solid;
+}
+.b-hov-btl-1:hover,
+.b-hov-blt-1:hover,
+.b-hov-tbl-1:hover,
+.b-hov-tlb-1:hover,
+.b-hov-lbt-1:hover,
+.b-hov-ltb-1:hover,
+.b-hov-btl--1:hover,
+.b-hov-blt--1:hover,
+.b-hov-tbl--1:hover,
+.b-hov-tlb--1:hover,
+.b-hov-lbt--1:hover,
+.b-hov-ltb--1:hover {
+  border-top: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+.b-hov-btl-2:hover,
+.b-hov-blt-2:hover,
+.b-hov-tbl-2:hover,
+.b-hov-tlb-2:hover,
+.b-hov-lbt-2:hover,
+.b-hov-ltb-2:hover,
+.b-hov-btl--2:hover,
+.b-hov-blt--2:hover,
+.b-hov-tbl--2:hover,
+.b-hov-tlb--2:hover,
+.b-hov-lbt--2:hover,
+.b-hov-ltb--2:hover {
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+.b-hov-btl-3:hover,
+.b-hov-blt-3:hover,
+.b-hov-tbl-3:hover,
+.b-hov-tlb-3:hover,
+.b-hov-lbt-3:hover,
+.b-hov-ltb-3:hover,
+.b-hov-btl--3:hover,
+.b-hov-blt--3:hover,
+.b-hov-tbl--3:hover,
+.b-hov-tlb--3:hover,
+.b-hov-lbt--3:hover,
+.b-hov-ltb--3:hover {
+  border-top: 3px solid;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
+}
+.b-hov-btl-4:hover,
+.b-hov-blt-4:hover,
+.b-hov-tbl-4:hover,
+.b-hov-tlb-4:hover,
+.b-hov-lbt-4:hover,
+.b-hov-ltb-4:hover,
+.b-hov-btl--4:hover,
+.b-hov-blt--4:hover,
+.b-hov-tbl--4:hover,
+.b-hov-tlb--4:hover,
+.b-hov-lbt--4:hover,
+.b-hov-ltb--4:hover {
+  border-top: 4px solid;
+  border-right: 4px solid;
+  border-bottom: 4px solid;
+}
+.b-hov-btl-5:hover,
+.b-hov-blt-5:hover,
+.b-hov-tbl-5:hover,
+.b-hov-tlb-5:hover,
+.b-hov-lbt-5:hover,
+.b-hov-ltb-5:hover,
+.b-hov-btl--5:hover,
+.b-hov-blt--5:hover,
+.b-hov-tbl--5:hover,
+.b-hov-tlb--5:hover,
+.b-hov-lbt--5:hover,
+.b-hov-ltb--5:hover {
+  border-top: 5px solid;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+}
+
+.b-hov-White:hover {
+  border-color: #fff;
+}
+.b-hov-Black:hover {
+  border-color: #000;
+}
+.b-hov-Gray:hover {
+  border-color: #ccc;
+}
+.b-hov-Silver:hover {
+  border-color: #ddd;
+}
+.b-hov-Gold:hover {
+  border-color: #ffd700;
+}
+.b-hov-Maroon:hover {
+  border-color: #800000;
+}
+.b-hov-Red:hover {
+  border-color: #ff0000;
+}
+.b-hov-Orange:hover {
+  border-color: #ff6347;
+}
+.b-hov-Yellow:hover {
+  border-color: #ffff00;
+}
+.b-hov-Green:hover {
+  border-color: #008000;
+}
+.b-hov-Blue:hover {
+  border-color: #0000ff;
+}
+.b-hov-Indigo:hover {
+  border-color: #4b0082;
+}
+.b-hov-Violet:hover {
+  border-color: #ee82ee;
+}
+.b-hov-Purple:hover {
+  border-color: #800080;
+}
+.b-hov-Pink:hover {
+  border-color: #ffc0cb;
+}
+.b-hov-Brown:hover {
+  border-color: #a52a2a;
+}
+.b-hov-Cyan:hover {
+  border-color: #00ffff;
+}
+.b-hov-Magenta:hover {
+  border-color: #ff00ff;
+}
+.b-hov-Teal:hover {
+  border-color: #008080;
+}
+.b-hov-Lime:hover {
+  border-color: #00ff00;
+}
+.b-hov-Olive:hover {
+  border-color: #808000;
+}
+.b-hov-Navy:hover {
+  border-color: #000080;
+}
+.b-hov-Coral:hover {
+  border-color: #ff7f50;
+}
+.b-hov-Beige:hover {
+  border-color: #f5f5dc;
+}
+.b-hov-Mint:hover {
+  border-color: #98ff98;
+}
+.b-hov-Lavender:hover {
+  border-color: #e6e6fa;
+}
+.b-hov-Turquoise:hover {
+  border-color: #40e0d0;
+}
+.b-hov-Khaki:hover {
+  border-color: #f0e68c;
+}
+.b-hov-Chocolate:hover {
+  border-color: #d2691e;
+}
+.b-hov-Salmon:hover {
+  border-color: #fa8072;
+}
+.b-hov-Crimson:hover {
+  border-color: #dc143c;
+}
+.b-hov-Plum:hover {
+  border-color: #dda0dd;
+}
+.b-hov-Orchid:hover {
+  border-color: #da70d6;
+}
+.b-hov-Honeydew:hover {
+  border-color: #f0fff0;
+}
+.b-hov-Aquamarine:hover {
+  border-color: #7fffd4;
+}
+.b-hov-Chartreuse:hover {
+  border-color: #7fff00;
+}
+.b-hov-Ivory:hover {
+  border-color: #fffff0;
+}
+.b-hov-Tan:hover {
+  border-color: #d2b48c;
+}
+.b-hov-Sienna:hover {
+  border-color: #a0522d;
+}
+.b-hov-SeaGreen:hover {
+  border-color: #2e8b57;
+}
+.b-hov-DarkRed:hover {
+  border-color: #8b0000;
+}
+.b-hov-DarkGreen:hover {
+  border-color: #006400;
+}
+.b-hov-DarkBlue:hover {
+  border-color: #00008b;
+}
+.b-hov-DarkOrange:hover {
+  border-color: #ff8c00;
+}
+.b-hov-DarkCyan:hover {
+  border-color: #008b8b;
+}
+.b-hov-DarkMagenta:hover {
+  border-color: #8b008b;
+}
+.b-hov-DarkViolet:hover {
+  border-color: #9400d3;
+}
+.b-hov-Peach:hover {
+  border-color: #ffdab9;
+}
+.b-hov-Lemon:hover {
+  border-color: #fff44f;
+}
+.b-hov-SkyBlue:hover {
+  border-color: #87ceeb;
+}
+.b-hov-LightBlue:hover {
+  border-color: #add8e6;
+}
+.b-hov-LightCoral:hover {
+  border-color: #f08080;
+}
+.b-hov-LightGray:hover {
+  border-color: #d3d3d3;
+}
+.b-hov-LightPink:hover {
+  border-color: #ffb6c1;
+}
+.b-hov-LightGreen:hover {
+  border-color: #90ee90;
+}
+.b-hov-LightYellow:hover {
+  border-color: #ffffe0;
+}
+.b-hov-LightCyan:hover {
+  border-color: #e0ffff;
+}
+.b-hov-LightGoldenrodYellow:hover {
+  border-color: #fafad2;
+}
+.b-hov-PaleGoldenrod:hover {
+  border-color: #eee8aa;
+}
+.b-hov-PaleGreen:hover {
+  border-color: #98fb98;
+}
+.b-hov-PaleTurquoise:hover {
+  border-color: #afeeee;
+}
+.b-hov-PaleVioletRed:hover {
+  border-color: #db7093;
+}
+.b-hov-Thistle:hover {
+  border-color: #d8bfd8;
+}
+.b-hov-Tomato:hover {
+  border-color: #ff6347;
+}
+.b-hov-SlateBlue:hover {
+  border-color: #6a5acd;
+}
+.b-hov-SlateGray:hover {
+  border-color: #708090;
+}
+.b-hov-SteelBlue:hover {
+  border-color: #4682b4;
+}
+.b-hov-RosyBrown:hover {
+  border-color: #bc8f8f;
+}
+.b-hov-SandyBrown:hover {
+  border-color: #f4a460;
+}
+.b-hov-Goldenrod:hover {
+  border-color: #daa520;
+}
+.b-hov-PowderBlue:hover {
+  border-color: #b0e0e6;
+}
+.b-hov-RebeccaPurple:hover {
+  border-color: #663399;
+}
+.b-hov-Seashell:hover {
+  border-color: #fff5ee;
+}
+.b-hov-Snow:hover {
+  border-color: #fffafa;
+}
+.b-hov-Wheat:hover {
+  border-color: #f5deb3;
+}
+.b-hov-Moccasin:hover {
+  border-color: #ffe4b5;
+}
+.b-hov-DodgerBlue:hover {
+  border-color: #1e90ff;
+}
+.b-hov-DeepSkyBlue:hover {
+  border-color: #00bfff;
+}
+.b-hov-RoyalBlue:hover {
+  border-color: #4169e1;
+}
+.b-hov-ForestGreen:hover {
+  border-color: #228b22;
+}
+.b-hov-SpringGreen:hover {
+  border-color: #00ff7f;
+}
+.b-hov-MediumSeaGreen:hover {
+  border-color: #3cb371;
+}
+.b-hov-MediumPurple:hover {
+  border-color: #9370db;
+}
+.b-hov-MediumOrchid:hover {
+  border-color: #ba55d3;
+}
+.b-hov-MediumTurquoise:hover {
+  border-color: #48d1cc;
+}
+.b-hov-MediumSlateBlue:hover {
+  border-color: #7b68ee;
+}
+.b-hov-FireBrick:hover {
+  border-color: #b22222;
+}
+.b-hov-DeepPink:hover {
+  border-color: #ff1493;
+}
+.b-hov-HotPink:hover {
+  border-color: #ff69b4;
+}
+.b-hov-LawnGreen:hover {
+  border-color: #7cfc00;
+}
+.b-hov-Linen:hover {
+  border-color: #faf0e6;
+}
+.b-hov-OldLace:hover {
+  border-color: #fdf5e6;
+}
+.b-hov-PapayaWhip:hover {
+  border-color: #ffefd5;
+}
+.b-hov-AntiqueWhite:hover {
+  border-color: #faebd7;
+}
+.b-hov-Azure:hover {
+  border-color: #f0ffff;
+}
+.b-hov-Bisque:hover {
+  border-color: #ffe4c4;
+}
+.b-hov-DarkKhaki:hover {
+  border-color: #bdb76b;
+}
+.b-hov-DarkOliveGreen:hover {
+  border-color: #556b2f;
+}
+.b-hov-DarkSlateBlue:hover {
+  border-color: #483d8b;
+}
+.b-hov-DarkSlateGray:hover {
+  border-color: #2f4f4f;
 }
 
 /*# sourceMappingURL=mastors.css.map */
