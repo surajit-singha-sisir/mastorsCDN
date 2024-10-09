@@ -188005,6 +188005,38 @@ BACKGROUND COLOR SETS
   text-align: inherit;
 }
 
+.i, .text-i {
+  font-style: italic;
+}
+
+.b, .text-b {
+  font-weight: bold;
+}
+
+.u, .text-u {
+  text-decoration: underline;
+}
+
+.text-o {
+  text-decoration: overline;
+}
+
+.d, .text-d {
+  text-decoration: line-through;
+}
+
+.text-dd {
+  text-decoration: double;
+}
+
+.text-w {
+  text-decoration: wavy;
+}
+
+.text-s {
+  text-decoration: solid;
+}
+
 .White {
   color: var(--white);
 }
@@ -189011,6 +189043,10 @@ BACKGROUND COLOR SETS
 }
 .Violet-900 {
   color: var(--violet-900);
+}
+
+.b, .text-b {
+  font-weight: 600;
 }
 
 /* ----------------------------------------------------------------
@@ -215505,6 +215541,130 @@ BORDERS
 }
 .b-hov-DarkSlateGray:hover {
   border-color: #2f4f4f;
+}
+
+.bg-hov-Black:hover, .bg-hov-Bla:hover, .bg-hov-Blk:hover, .bg-hov-Kalo:hover, .bg-hov-000000:hover, .bg-hov-পেছন-কালো:hover {
+  background-color: #000000;
+}
+.bg-hov-White:hover, .bg-hov-Whi:hover, .bg-hov-Wht:hover, .bg-hov-Sada:hover, .bg-hov-ffffff:hover, .bg-hov-পেছন-সাদা:hover {
+  background-color: #ffffff;
+}
+.bg-hov-Red:hover, .bg-hov-Re:hover, .bg-hov-Rd:hover, .bg-hov-Lal:hover, .bg-hov-ff0000:hover, .bg-hov-পেছন-লাল:hover {
+  background-color: #ff0000;
+}
+.bg-hov-Green:hover, .bg-hov-Gre:hover, .bg-hov-Grn:hover, .bg-hov-Sobuj:hover, .bg-hov-00ff00:hover, .bg-hov-পেছন-সবুজ:hover {
+  background-color: #00ff00;
+}
+.bg-hov-Blue:hover, .bg-hov-Blu:hover, .bg-hov-Ble:hover, .bg-hov-Nil:hover, .bg-hov-0000ff:hover, .bg-hov-পেছন-নীল:hover {
+  background-color: #0000ff;
+}
+.bg-hov-Yellow:hover, .bg-hov-Yel:hover, .bg-hov-Ylw:hover, .bg-hov-Holud:hover, .bg-hov-ffff00:hover, .bg-hov-পেছন-হলুদ:hover {
+  background-color: #ffff00;
+}
+.bg-hov-Purple:hover, .bg-hov-Pur:hover, .bg-hov-Prp:hover, .bg-hov-Jam:hover, .bg-hov-800080:hover, .bg-hov-পেছন-জামুন:hover {
+  background-color: #800080;
+}
+.bg-hov-Cyan:hover, .bg-hov-Cya:hover, .bg-hov-Cyn:hover, .bg-hov-Firoz:hover, .bg-hov-00ffff:hover, .bg-hov-পেছন-ফিরোজা:hover {
+  background-color: #00ffff;
+}
+.bg-hov-Gray:hover, .bg-hov-Gra:hover, .bg-hov-Gry:hover, .bg-hov-Surma:hover, .bg-hov-808080:hover, .bg-hov-পেছন-ধূসর:hover {
+  background-color: #808080;
+}
+.bg-hov-Silver:hover, .bg-hov-Sil:hover, .bg-hov-Slv:hover, .bg-hov-Chandi:hover, .bg-hov-c0c0c0:hover, .bg-hov-পেছন-রুপা:hover {
+  background-color: #c0c0c0;
+}
+.bg-hov-Maroon:hover, .bg-hov-Mar:hover, .bg-hov-Mrn:hover, .bg-hov-Gorom:hover, .bg-hov-800000:hover, .bg-hov-পেছন-গাঢ়-লাল:hover {
+  background-color: #800000;
+}
+.bg-hov-Olive:hover, .bg-hov-Oli:hover, .bg-hov-Olv:hover, .bg-hov-808000:hover, .bg-hov-পেছন-অলিভ:hover {
+  background-color: #808000;
+}
+.bg-hov-Teal:hover, .bg-hov-Tea:hover, .bg-hov-Tel:hover, .bg-hov-Nilgiri:hover, .bg-hov-008080:hover, .bg-hov-পেছন-নীল-সবুজ:hover {
+  background-color: #008080;
+}
+.bg-hov-Navy:hover, .bg-hov-Nav:hover, .bg-hov-Nvy:hover, .bg-hov-Nabi:hover, .bg-hov-000080:hover, .bg-hov-পেছন-নেভি:hover {
+  background-color: #000080;
+}
+.bg-hov-Fuchsia:hover, .bg-hov-Fuc:hover, .bg-hov-Fsh:hover, .bg-hov-Gorib:hover, .bg-hov-ff00ff:hover, .bg-hov-পেছন-ফুসিয়া:hover {
+  background-color: #ff00ff;
+}
+.bg-hov-Pink:hover, .bg-hov-Pin:hover, .bg-hov-Pnk:hover, .bg-hov-Gulabi:hover, .bg-hov-ffc0cb:hover, .bg-hov-পেছন-গোলাপি:hover {
+  background-color: #ffc0cb;
+}
+.bg-hov-YellowGreen:hover, .bg-hov-YelGre:hover, .bg-hov-YGr:hover, .bg-hov-HoludSobuji:hover, .bg-hov-9acd32:hover, .bg-hov-পেছন-হলুদ-সবুজ:hover {
+  background-color: #9acd32;
+}
+.bg-hov-OliveDrab:hover, .bg-hov-OliDra:hover, .bg-hov-ODb:hover, .bg-hov-6b8e23:hover, .bg-hov-পেছন-অলিভ-ড্র্যাব:hover {
+  background-color: #6b8e23;
+}
+.bg-hov-GreenYellow:hover, .bg-hov-GreYel:hover, .bg-hov-GYl:hover, .bg-hov-adff2f:hover, .bg-hov-পেছন-সবুজ-হলুদ:hover {
+  background-color: #adff2f;
+}
+.bg-hov-LimeGreen:hover, .bg-hov-LimGre:hover, .bg-hov-LGr:hover, .bg-hov-Paal:hover, .bg-hov-32cd32:hover, .bg-hov-পেছন-লেবুর-সবুজ:hover {
+  background-color: #32cd32;
+}
+.bg-hov-PaleGreen:hover, .bg-hov-PalGre:hover, .bg-hov-PGr:hover, .bg-hov-98fb98:hover, .bg-hov-পেছন-ফিকে-সবুজ:hover {
+  background-color: #98fb98;
+}
+.bg-hov-DarkSeaGreen:hover, .bg-hov-DarSeaGre:hover, .bg-hov-DGr:hover, .bg-hov-GaroSomudroSobuj:hover, .bg-hov-8fbc8f:hover, .bg-hov-পেছন-গাঢ়-সাগর-সবুজ:hover {
+  background-color: #8fbc8f;
+}
+.bg-hov-MediumSeaGreen:hover, .bg-hov-MedSeaGre:hover, .bg-hov-MGr:hover, .bg-hov-3cb371:hover, .bg-hov-পেছন-মাঝারি-সাগর-সবুজ:hover {
+  background-color: #3cb371;
+}
+.bg-hov-SeaGreen:hover, .bg-hov-SeaGre:hover, .bg-hov-SGr:hover, .bg-hov-Samudrik:hover, .bg-hov-2e8b57:hover, .bg-hov-পেছন-সাগর-সবুজ:hover {
+  background-color: #2e8b57;
+}
+.bg-hov-ForestGreen:hover, .bg-hov-ForGre:hover, .bg-hov-FGr:hover, .bg-hov-Jungle:hover, .bg-hov-228b22:hover, .bg-hov-পেছন-জঙ্গল-সবুজ:hover {
+  background-color: #228b22;
+}
+.bg-hov-LightGray:hover, .bg-hov-LigGra:hover, .bg-hov-LGr:hover, .bg-hov-Halka:hover, .bg-hov-d3d3d3:hover, .bg-hov-পেছন-হালকা-ধূসর:hover {
+  background-color: #d3d3d3;
+}
+.bg-hov-LightCoral:hover, .bg-hov-LigCor:hover, .bg-hov-LCo:hover, .bg-hov-Halka2:hover, .bg-hov-f08080:hover, .bg-hov-পেছন-হালকা-করাল:hover {
+  background-color: #f08080;
+}
+.bg-hov-LightSalmon:hover, .bg-hov-LigSal:hover, .bg-hov-LSa:hover, .bg-hov-Ranga:hover, .bg-hov-ffa07a:hover, .bg-hov-পেছন-হালকা-সালমনের:hover {
+  background-color: #ffa07a;
+}
+.bg-hov-LightPink:hover, .bg-hov-LigPin:hover, .bg-hov-LPn:hover, .bg-hov-Gulabi:hover, .bg-hov-ffb6c1:hover, .bg-hov-পেছন-হালকা-গোলাপি:hover {
+  background-color: #ffb6c1;
+}
+.bg-hov-LightGoldenRodYellow:hover, .bg-hov-LigRodYel:hover, .bg-hov-LGY:hover, .bg-hov-Gora:hover, .bg-hov-fafad2:hover, .bg-hov-পেছন-হালকা-স্বর্ণ-হলুদ:hover {
+  background-color: #fafad2;
+}
+.bg-hov-LightSteelBlue:hover, .bg-hov-LigSteBlu:hover, .bg-hov-LSB:hover, .bg-hov-b0c4de:hover, .bg-hov-পেছন-হালকা-স্টীল-নীল:hover {
+  background-color: #b0c4de;
+}
+.bg-hov-LightSkyBlue:hover, .bg-hov-LigSkyBlu:hover, .bg-hov-LSk:hover, .bg-hov-Aasman:hover, .bg-hov-87cefa:hover, .bg-hov-পেছন-হালকা-আকাশ-নীল:hover {
+  background-color: #87cefa;
+}
+.bg-hov-Lavender:hover, .bg-hov-Lav:hover, .bg-hov-Bangla:hover, .bg-hov-e6e6fa:hover, .bg-hov-পেছন-ল্যাভেন্ডার:hover {
+  background-color: #e6e6fa;
+}
+.bg-hov-MistyRose:hover, .bg-hov-MisRos:hover, .bg-hov-MRo:hover, .bg-hov-Gulabi:hover, .bg-hov-ffe4e1:hover, .bg-hov-পেছন-ঝাপসা-গোলাপি:hover {
+  background-color: #ffe4e1;
+}
+.bg-hov-NavajoWhite:hover, .bg-hov-NavWhi:hover, .bg-hov-NWh:hover, .bg-hov-Poori:hover, .bg-hov-ffdead:hover, .bg-hov-পেছন-নাভাজো-সাদা:hover {
+  background-color: #ffdead;
+}
+.bg-hov-Wheat:hover, .bg-hov-Whe:hover, .bg-hov-Ghee:hover, .bg-hov-f5deb3:hover, .bg-hov-পেছন-গম:hover {
+  background-color: #f5deb3;
+}
+.bg-hov-AntiqueWhite:hover, .bg-hov-AntWhi:hover, .bg-hov-AWh:hover, .bg-hov-Paakhi:hover, .bg-hov-faebd7:hover, .bg-hov-পেছন-প্রাচীন-সাদা:hover {
+  background-color: #faebd7;
+}
+.bg-hov-Cornsilk:hover, .bg-hov-Cor:hover, .bg-hov-Maach:hover, .bg-hov-fff8dc:hover, .bg-hov-পেছন-ভুট্টার-শুকনো:hover {
+  background-color: #fff8dc;
+}
+.bg-hov-Khaki:hover, .bg-hov-Kha:hover, .bg-hov-f0e68c:hover, .bg-hov-পেছন-খাকি:hover {
+  background-color: #f0e68c;
+}
+.bg-hov-Beige:hover, .bg-hov-Bei:hover, .bg-hov-f5f5dc:hover, .bg-hov-পেছন-বেজ:hover {
+  background-color: #f5f5dc;
+}
+.bg-hov-PapayaWhip:hover, .bg-hov-PapWhi:hover, .bg-hov-PWh:hover, .bg-hov-Papaya:hover, .bg-hov-ffefd5:hover, .bg-hov-পেছন-পেঁপে-উইপ:hover {
+  background-color: #ffefd5;
 }
 
 /*# sourceMappingURL=mastors.css.map */

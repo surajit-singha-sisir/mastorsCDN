@@ -84,3 +84,35 @@
 .text-inherit {
 	text-align: inherit;
 }
+
+.i, .text-i {
+	font-style: italic;
+}
+
+.b, .text-b {
+    font-weight: bold;
+}
+
+.u, .text-u {
+    text-decoration: underline;
+}
+
+.text-o {
+    text-decoration: overline;
+}
+
+.d, .text-d {
+    text-decoration: line-through;
+}
+
+.text-dd {
+    text-decoration: double;
+}
+
+.text-w {
+    text-decoration: wavy;
+}
+
+.text-s {
+    text-decoration: solid;
+}
