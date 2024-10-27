@@ -21,6 +21,12 @@ Include the CSS file in your HTML head:
 <script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.05/mastors.js"></script>
 ```
 
+### Latest Version
+Use the latest version. Include the CSS file link in your HTML head:
+
+```html
+<link rel="stylesheet" href="https://surajit-singha-sisir.github.io/mastorsCDN/mastors.css">
+```
 
 ### Install with npm
 To install via npm, run:
