@@ -5,5 +5,29 @@
   "scripts": {
     "build": "sass mastors.scss mastors.css",
     "watch": "sass --watch mastors.scss mastors.css"
-  }
+  },
+  "name": "mastorscdn",
+  "version": "1.0.0",
+  "description": "An Opensource Front-end Framework",
+  "main": "mastors.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surajit-singha-sisir/mastorsCDN.git"
+  },
+  "keywords": [
+    "framework",
+    "front-end",
+    "framework",
+    "responsive",
+    "web",
+    "design",
+    "framework"
+  ],
+  "author": "Surajit Singha Sisir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surajit-singha-sisir/mastorsCDN/issues"
+  },
+  "homepage": "https://github.com/surajit-singha-sisir/mastorsCDN#readme"
 }
