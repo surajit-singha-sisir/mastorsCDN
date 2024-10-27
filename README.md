@@ -15,25 +15,25 @@ git clone https://github.com/surajit-singha-sisir/mastorsCDN.git
 ### Install with npm
 To install via npm, run:
 ```bash
-npm install mastorsCDN
+npm install mastorscdn@1.0.0
 ```
 
 ### Install with yarn
 To install via yarn, run:
 ```bash
-yarn add mastorsCDN
+yarn add mastorscdn@1.0.0
 ```
 
 ### Install with Composer
 To install via Composer, use:
 ```bash
-composer require surajit-singha-sisir/mastorsCDN
+composer require surajit-singha-sisir/mastorscdn@1.0.0
 ```
 
 ### Install with NuGet
 For CSS:
 ```bash
-Install-Package mastorsCDN
+Install-Package mastorscdn@1.0.0
 ```
 
 ### Install with NuGet
@@ -42,12 +42,12 @@ To install **mastorsCDN** using NuGet, you can use the following commands:
 
 For CSS:
 ```bash
-Install-Package mastorsCDN
+Install-Package mastorscdn@1.0.0
 ```
 
 For SCSS:
 ```bash
-Install-Package mastorsCDN.sass
+Install-Package mastorscdn@1.0.0.scss
 ```
 
 ### Usage
