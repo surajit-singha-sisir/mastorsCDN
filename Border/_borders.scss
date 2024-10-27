@@ -7649,7 +7649,7 @@ BORDERS
 
 
 /* BORDER RADIUS */
-.border-rad-- {
+.border-rad--, .b-rad-- {
 	&00 {
 		border-radius: $rem00;
 	}
@@ -9654,7 +9654,9 @@ BORDERS
 		border-radius: $rem500;
 	}
 }
-
+.border-rad-50, .b-rad-50 {
+	border-radius: 50%;
+}
 
 
 

@@ -4,44 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position</title>
+    <title>Combo Box with Filtering and Chevron Toggle</title>
     <link rel="stylesheet" href="mastors.css">
+    <script type="module" src="mastors.js"></script>
 </head>
-
 <style>
-    body {
-        background-color: black;
-        color: #949494;
+    input {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
     }
 </style>
+<body class="relative pad--20">
 
-<body class="g-res-container gap-10">
-    <div class="span-2">
-        <h2>Column 1</h2>
-        <img class="img-w-res" src="https://dummyimage.com/800x600" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy nibh euismod tincidunt. Donec
-            pulvinar, sapien sed fermentum tristique, felis mi condimentum neque, vel elementum velit turpis sed
-            erat. Pellentesque eget neque a neque laoreet malesuada. Sed vel lacus vel velit feugiat ultricies.</p>
-    </div>
-    <div class="span-3">
-        <h2>Column 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy nibh euismod tincidunt. Donec
-            pulvinar, sapien sed fermentum tristique, felis mi condimentum neque, vel elementum velit turpis sed
-            erat. Pellentesque eget neque a neque laoreet malesuada. Sed vel lac
-        </p>
-    </div>
-    <div class="span-2">
-        <h2>Column 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy nibh euismod tincidunt. Donec
-            pulvinar, sapien sed fermentum tristique, felis mi condimentum neque, vel elementum velit turpis sed
-            erat. Pellentesque eget neque a neque laoreet malesuada. Sed vel lacus vel velit feugiat ultricies.</p>
-    </div>
-    <div class="span-3">
-        <h2>Column 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy nibh euismod tincidunt. Donec
-            pulvinar, sapien sed fermentum tristique, felis mi condimentum neque, vel elementum velit turpis sed
-            erat. Pellentesque eget neque a neque laoreet malesuada
-        </p>
+    <div class="combo-box">
+        <input type="text" class="combo-input border-red b-1 b-rad--10" placeholder="Select an option...">
+        <span class="chevron-icon">&#9662;</span> <!-- Down arrow -->
+        <ul class="combo-options">
+            <li class="combo-option">Option 1</li>
+            <li class="combo-option">Option 2</li>
+            <li class="combo-option">Option 3</li>
+            <li class="combo-option">Option 4</li>
+            <li class="combo-option">Option 5</li>
+            <li class="combo-option">Option 6</li>
+            <li class="combo-option">Option 7</li>
+            <li class="combo-option">Option 8</li>
+            <li class="combo-option">Option 9</li>
+            <li class="combo-option">Option 10</li>
+            <li class="combo-option">Option 11</li>
+            <li class="combo-option">Option 12</li>
+            <li class="no-data" style="display: none;">No data found!</li>
+        </ul>
     </div>
 </body>
 
