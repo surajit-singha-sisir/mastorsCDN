@@ -18,7 +18,7 @@ Include the CSS file in your HTML head:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.4/mastors.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.4/mastors.js">
+<script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.4/mastors.js"></script>
 ```
 
 
