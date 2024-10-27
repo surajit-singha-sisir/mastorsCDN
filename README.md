@@ -12,6 +12,16 @@ To directly clone this repository, use:
 ```bash
 git clone https://github.com/surajit-singha-sisir/mastorsCDN.git
 ```
+
+### Direct Include in Head
+Include the CSS file in your HTML head:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.4/mastors.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.4/mastors.js">
+```
+
+
 ### Install with npm
 To install via npm, run:
 ```bash
