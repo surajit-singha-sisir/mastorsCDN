@@ -47,7 +47,7 @@ Install-Package mastorsCDN
 
 For SCSS:
 ```bash
-Install-Package mastorsCDN.Sass
+Install-Package mastorsCDN.sass
 ```
 
 ### Usage
