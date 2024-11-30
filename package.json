@@ -4,7 +4,7 @@
   },
   "scripts": {
     "build": "sass mastors.scss mastors.css",
-    "watch": "sass --watch mastors.scss mastors.css"
+    "sass": "sass --watch mastors.scss mastors.css"
   },
   "name": "mastorscdn",
   "version": "1.0.0",
