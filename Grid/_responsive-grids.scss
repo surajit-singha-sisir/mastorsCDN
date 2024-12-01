@@ -75,7 +75,7 @@ $grids: (
     @include tablet-l {
         #{$grid-1},
         #{$grid-2} {
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1fr 1fr !important;
         }
     }
 }
