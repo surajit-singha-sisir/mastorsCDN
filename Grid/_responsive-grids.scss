@@ -68,14 +68,34 @@ $grids: (
         & [class*="span-10"] {
             grid-column: span 10;
         }
-
     }
 
 
-    @include tablet-l {
+    @include tablet {
         #{$grid-1},
         #{$grid-2} {
-            grid-template-columns: 1fr 1fr !important;
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    @include mobile-l {
+        #{$grid-1},
+        #{$grid-2} {
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    @include mobile-m {
+        #{$grid-1},
+        #{$grid-2} {
+            grid-template-columns: 1fr !important;
+        }
+    }
+
+    @include mobile-s {
+        #{$grid-1},
+        #{$grid-2} {
+            grid-template-columns: 1fr !important;
         }
     }
 }
