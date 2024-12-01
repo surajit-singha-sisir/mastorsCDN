@@ -66,9 +66,9 @@ input[type="text"] {
     background-color: transparent;
     z-index: 5;
     padding: 0 1rem;
-    // font-size: 1.2rem;
+    font-size: 1rem;
     outline: none;
-    color: #808080;
+    color: #3e3e3e;
 
     &:hover {
       border: transparent;
@@ -95,7 +95,7 @@ input[type="text"] {
       align-items: center;
       height: 100%;
       color: #464646;
-      background-color: #cbcbcb;
+      background-color: #e9e9e9;
     }
   }
 }

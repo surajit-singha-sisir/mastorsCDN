@@ -1,7 +1,7 @@
 // USES
 /* <div class="combo-box">
         <input type="text" class="combo-input b-Blue b-1 b-rad--05" placeholder="Select an option...">
-        <span class="chevron-icon"><img src="Resources/svg/chevron.svg" alt=""></span>
+        <span class="chevron-icon"><img src="https://surajit-singha-sisir.github.io/mastorsCDN/Resources/svg/chevron.svg" alt=""></span>
         <ul class="combo-options">
             <li class="combo-option"></li>
             <li class="no-data" style="display: none;">No data found!</li>

@@ -185109,7 +185109,9 @@ HEIGHT IN REM SIZE
 }
 .combo-box .combo-input {
   width: 100%;
-  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #3e3e3e;
+  padding: 0.5rem 1rem;
 }
 .combo-box .chevron-icon {
   display: flex;
@@ -215782,8 +215784,9 @@ input[type=text]::placeholder {
   background-color: transparent;
   z-index: 5;
   padding: 0 1rem;
+  font-size: 1rem;
   outline: none;
-  color: #808080;
+  color: #3e3e3e;
 }
 .text-input .inputbox:hover {
   border: transparent;
@@ -215807,7 +215810,7 @@ input[type=text]::placeholder {
   align-items: center;
   height: 100%;
   color: #464646;
-  background-color: #cbcbcb;
+  background-color: #e9e9e9;
 }
 
 .checkbox {
