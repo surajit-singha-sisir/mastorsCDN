@@ -185105,12 +185105,15 @@ HEIGHT IN REM SIZE
 
 .combo-box {
   position: relative;
+  height: max-content;
 }
 .combo-box .combo-input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
 }
 .combo-box .chevron-icon {
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -185121,12 +185124,17 @@ HEIGHT IN REM SIZE
 .combo-box .chevron-icon.open {
   transform: translateY(-50%) rotate(180deg);
 }
+.combo-box .chevron-icon img {
+  width: 0.8rem;
+  aspect-ratio: 1;
+  transition: transform 0.3s ease;
+}
 .combo-box .combo-options {
   display: none;
   position: absolute;
   top: 40px;
   width: 100%;
-  max-height: 150px;
+  max-height: 10rem;
   overflow-y: auto;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -185142,6 +185150,9 @@ HEIGHT IN REM SIZE
 }
 .combo-box .combo-options .combo-option:hover {
   background-color: #f1f1f1;
+}
+.combo-box .combo-options .no-data {
+  padding: 0.7rem;
 }
 
 /* // GALLERY CAROUSAL */
@@ -215737,7 +215748,7 @@ input[type=text]::placeholder {
   color: #8a8a8a;
 }
 
-.input-container {
+.text-input {
   position: relative;
   height: 2.5rem;
   width: 100%;
@@ -215745,10 +215756,10 @@ input[type=text]::placeholder {
   border-radius: 0.3rem;
   overflow: hidden;
 }
-.input-container:hover {
+.text-input:hover {
   border: 1px solid #ccc;
 }
-.input-container label {
+.text-input label {
   position: absolute;
   top: 50%;
   left: 1rem;
@@ -215760,7 +215771,7 @@ input[type=text]::placeholder {
   transition: 0.3s ease-in-out;
   pointer-events: none;
 }
-.input-container .inputbox {
+.text-input .inputbox {
   position: absolute;
   top: 50%;
   left: 0;
@@ -215774,20 +215785,20 @@ input[type=text]::placeholder {
   outline: none;
   color: #808080;
 }
-.input-container .inputbox:hover {
+.text-input .inputbox:hover {
   border: transparent;
 }
-.input-container .inputbox:focus {
+.text-input .inputbox:focus {
   box-shadow: none;
   border: none;
   outline: none;
 }
-.input-container:focus-within {
+.text-input:focus-within {
   border: transparent;
   outline: none;
   box-shadow: #d2e2fb 0px 0px 0px 2px;
 }
-.input-container:focus-within label {
+.text-input:focus-within label {
   top: 50%;
   transform: translateY(-50%);
   left: 0rem;
@@ -215797,6 +215808,107 @@ input[type=text]::placeholder {
   height: 100%;
   color: #464646;
   background-color: #cbcbcb;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  height: 2.2rem;
+  transition: all 0.2s ease;
+}
+.checkbox input[type=checkbox] {
+  display: none;
+}
+.checkbox input[type=checkbox]:focus + .checkbox input[type=checkbox]::before {
+  outline: none;
+  box-shadow: #928aff 0 0 0 1rem;
+  z-index: 6;
+}
+.checkbox label {
+  position: relative;
+  padding-left: 2rem;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+}
+.checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  aspect-ratio: 1;
+  background-color: transparent;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease;
+}
+.checkbox input[type=checkbox]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.7rem;
+  aspect-ratio: 1;
+  background: url(Resources/svg/checkbox-tick.svg) no-repeat center;
+  background-size: contain;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.checkbox input[type=checkbox]:checked + label::before {
+  background-color: #261cb7;
+  transition: all 0.2s ease;
+}
+
+.radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  height: 2rem;
+}
+.radio input[type=radio] {
+  display: none;
+}
+.radio label {
+  position: relative;
+  padding-left: 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+.radio label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.2rem;
+  aspect-ratio: 1;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease;
+}
+.radio input[type=radio]:checked + label::before {
+  background-color: #261cb7;
+  border-color: #007bff;
+  transition: all 0.2s ease;
+}
+.radio input[type=radio]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.7rem;
+  aspect-ratio: 1;
+  background: url(Resources/svg/checkbox-tick.svg) no-repeat center;
+  background-size: contain;
+  z-index: 2;
+  transition: all 0.2s ease;
 }
 
 /*# sourceMappingURL=mastors.css.map */
