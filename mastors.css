@@ -188059,15 +188059,18 @@ BACKGROUND COLOR SETS
   text-align: inherit;
 }
 
-.i, .text-i {
+.i,
+.text-i {
   font-style: italic;
 }
 
-.b, .text-b {
+.b,
+.text-b {
   font-weight: bold;
 }
 
-.u, .text-u {
+.u,
+.text-u {
   text-decoration: underline;
 }
 
@@ -188075,7 +188078,8 @@ BACKGROUND COLOR SETS
   text-decoration: overline;
 }
 
-.d, .text-d {
+.d,
+.text-d {
   text-decoration: line-through;
 }
 
@@ -188089,6 +188093,11 @@ BACKGROUND COLOR SETS
 
 .text-s {
   text-decoration: solid;
+}
+
+.star::after, .staric::after, .star-sign::after, .mandatory::after {
+  content: "*";
+  color: #ff0000;
 }
 
 .White {
