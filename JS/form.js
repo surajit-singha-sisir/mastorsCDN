@@ -1,30 +1,31 @@
 print = console.log;
 document.addEventListener("DOMContentLoaded", () => {
-  const inputContainer = document.querySelectorAll("#text-input");
-  print(inputContainer);
-  inputContainer.forEach((input) => {
-    const label = input.querySelector("label");
-    const labelWidth = label.offsetWidth;
-    print(labelWidth);
+  const inputContainers = document.querySelectorAll("#text-input");
 
-    const style = `
-  <style>
-  .text-input:focus-within .inputbox {
-            left: ${labelWidth}px;
-            transition: 0.3s ease-in-out;
-        }
-        </style>`;
-    document.head.insertAdjacentHTML("beforeend", style);
+  // Ensure a single style block is created
+  let dynamicStyle =
+    document.getElementById("dynamic-style") || document.createElement("style");
+  if (!dynamicStyle.id) {
+    dynamicStyle.id = "dynamic-style";
+    document.head.appendChild(dynamicStyle);
+  }
+
+  inputContainers.forEach((input) => {
+    const label = input.querySelector("label");
     const inputbox = input.querySelector(".inputbox");
 
-    inputbox.addEventListener("input", function () {
-      const label = input.querySelector("label");
-
-      if (inputbox.value.trim()) {
-        label.classList.add("hide");
-      } else {
-        label.classList.remove("hide");
+    // Update dynamic style based on label width
+    const labelWidth = label.offsetWidth;
+    dynamicStyle.textContent = `
+      .text-input:focus-within .inputbox {
+        left: ${labelWidth}px;
+        transition: 0.3s ease-in-out;
       }
+    `;
+
+    // Toggle label visibility based on input value
+    inputbox.addEventListener("input", () => {
+      label.classList.toggle("hide", !!inputbox.value.trim());
     });
   });
 });
