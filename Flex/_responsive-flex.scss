@@ -1,0 +1,28 @@
+/* RESPONSIVE FLEX  */
+.f-res-container {
+  display: flex;
+}
+.f-res-container > div {
+  min-width: 12rem;
+  flex: 1;
+}
+.f-res {
+  display: flex;
+
+  & > div,
+  & > span,
+  & > section,
+  & > p,
+  & > aside {
+    min-width: 10rem;
+    flex: 1;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .f-res {
+    flex-wrap: wrap;
+  }
+  .f-res-container {
+    flex-wrap: wrap;
+  }
+}
