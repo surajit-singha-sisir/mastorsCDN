@@ -1,29 +1,52 @@
 .grid {
-    display: grid;
+  display: grid;
 }
-.gridRow{
-    grid-auto-flow: row;
+.gridRow {
+  grid-auto-flow: row;
 }
 .gridRowReverse {
-    grid-auto-flow: row;
-    direction: rtl; /* Reverse the order of items */
+  grid-auto-flow: row;
+  direction: rtl; /* Reverse the order of items */
 }
 
-.gridColumn{
-    grid-auto-flow: column;
+.gridColumn {
+  grid-auto-flow: column;
 }
 
-.gridColumnReverse{
-    grid-auto-flow: column-reverse;
+.gridColumnReverse {
+  grid-auto-flow: column-reverse;
 }
 
-.transform__Center{
-    left: -50%;
-    top: -50%;
-    transform: translate(-50%, -50%);
+.transform__Center {
+  left: -50%;
+  top: -50%;
+  transform: translate(-50%, -50%);
 }
-.transform__LeftCenter{
-    left: 0%;
-    top: -50%;
-    transform: translate(-50%, -50%);
+.transform__LeftCenter {
+  left: 0%;
+  top: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.v-space {
+  margin-bottom: 1rem;
+}
+
+.h-space {
+  margin-left: 1rem;
+}
+
+.vh-space {
+  margin: 1rem 0;
+}
+.v-space-l {
+  margin-bottom: 1.5rem;
+}
+
+.h-space-l {
+  margin-left: 1.5rem;
+}
+
+.vh-space-l {
+  margin: 1.5rem 0;
 }
