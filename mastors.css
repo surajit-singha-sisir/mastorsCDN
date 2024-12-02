@@ -185103,60 +185103,6 @@ HEIGHT IN REM SIZE
   transform: rotate(360deg);
 }
 
-.combo-box {
-  position: relative;
-  height: max-content;
-}
-.combo-box .combo-input {
-  width: 100%;
-  font-size: 1rem;
-  color: #3e3e3e;
-  padding: 0.5rem 1rem;
-}
-.combo-box .chevron-icon {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-.combo-box .chevron-icon.open {
-  transform: translateY(-50%) rotate(180deg);
-}
-.combo-box .chevron-icon img {
-  width: 0.8rem;
-  aspect-ratio: 1;
-  transition: transform 0.3s ease;
-}
-.combo-box .combo-options {
-  display: none;
-  position: absolute;
-  top: 40px;
-  width: 100%;
-  max-height: 10rem;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  z-index: 1000;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.combo-box .combo-options .combo-option {
-  padding: 8px;
-  cursor: pointer;
-}
-.combo-box .combo-options .combo-option:hover {
-  background-color: #f1f1f1;
-}
-.combo-box .combo-options .no-data {
-  padding: 0.7rem;
-}
-
 /* // GALLERY CAROUSAL */
 /* <!-- GALLERY CONTAINER START -->
     <section class="gallery">
@@ -188096,7 +188042,7 @@ BACKGROUND COLOR SETS
 }
 
 .star::after, .staric::after, .star-sign::after, .mandatory::after {
-  content: "*";
+  content: "  *";
   color: #ff0000;
 }
 
@@ -215943,7 +215889,7 @@ input[type=text]::placeholder {
   position: relative;
   height: 2.5rem;
   width: 100%;
-  border: 1px solid #dedede;
+  border: 1px solid #ccc;
   border-radius: 0.3rem;
   overflow: hidden;
 }
@@ -216106,14 +216052,15 @@ input[type=text]::placeholder {
 .option {
   position: relative;
   width: 100%;
-  height: 2.2rem;
+  max-height: 2.5rem;
 }
 .option select {
   display: block;
   width: 100%;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  color: #333;
+  height: 100%;
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  color: #363636;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -216129,7 +216076,7 @@ input[type=text]::placeholder {
   box-shadow: #d2e2fb 0px 0px 0px 2px;
 }
 .option select option {
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 .option::after {
@@ -216144,6 +216091,85 @@ input[type=text]::placeholder {
   background-size: contain;
   z-index: 2;
   transition: all 0.2s ease;
+}
+
+.combo-box {
+  position: relative;
+  height: max-content;
+}
+.combo-box .combo-input {
+  width: 100%;
+  font-size: 0.95rem;
+  color: #3e3e3e;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+}
+.combo-box .combo-input::placeholder {
+  color: #363636;
+}
+.combo-box .chevron-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.combo-box .chevron-icon.open {
+  transform: translateY(-50%) rotate(180deg);
+}
+.combo-box .chevron-icon img {
+  width: 0.8rem;
+  aspect-ratio: 1;
+  transition: transform 0.3s ease;
+}
+.combo-box .combo-options {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  max-height: 10rem;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #c7c7c7 #f1f1f1;
+  /* Webkit Browsers (Chrome, Edge, Safari) */
+  /* Edge/Other Modern Browsers */
+}
+.combo-box .combo-options .combo-option {
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: #363636;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+.combo-box .combo-options .combo-option:hover {
+  color: #fff;
+  background-color: #1967d2;
+}
+.combo-box .combo-options .no-data {
+  padding: 0.7rem;
+}
+.combo-box .combo-options::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.combo-box .combo-options::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+.combo-box .combo-options::-ms-scrollbar {
+  width: 8px;
+  color: #888;
 }
 
 /*# sourceMappingURL=mastors.css.map */

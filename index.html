@@ -16,8 +16,11 @@
 
 <body class="relative pad--20">
 
+    <style>
+
+    </style>
     <div class="combo-box w-100">
-        <input type="text" class="combo-input b-Blue b-1 b-rad--05" placeholder="Select an option...">
+        <input type="text" class="combo-input b-Blue b-1 b-rad--05" placeholder="-- Select --">
         <span class="chevron-icon"><img
                 src="https://surajit-singha-sisir.github.io/mastorsCDN/Resources/svg/chevron.svg" alt=""></span>
         <ul class="combo-options">
@@ -60,12 +63,6 @@
 
 
 
-    <style>
-
-    </style>
-
-
-
     <div class="f gap-10">
         <div class="radio" target-bg="44ddef">
             <input type="radio" name="radio">
@@ -80,6 +77,7 @@
 
     <div class="option">
         <select>
+            <option value="select">-- Select --</option>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
@@ -98,6 +96,52 @@
             Dummy
         </aside>
     </div>
+
+
+    <!-- CATEGORY -->
+    <section class="b-e pad--10 bg-main f gap-10">
+        <!-- CATEGORY -->
+        <div class="combo-box w-100">
+            <input type="text" class="combo-input" placeholder="-- Select --">
+            <span class="chevron-icon"><img
+                    src="https://surajit-singha-sisir.github.io/mastorsCDN/Resources/svg/chevron.svg" alt=""></span>
+            <ul class="combo-options" style="display: none;">
+                <li class="combo-option">Option 1</li>
+                <li class="combo-option">Option 2</li>
+                <li class="combo-option">Option 3</li>
+                <li class="combo-option">Option 4</li>
+                <li class="combo-option">Option 5</li>
+                <li class="combo-option">Option 6</li>
+                <li class="combo-option">Option 7</li>
+                <li class="combo-option">Option 8</li>
+                <li class="combo-option">Option 9</li>
+                <li class="combo-option">Option 10</li>
+                <li class="combo-option">Option 11</li>
+                <li class="combo-option">Option 12</li>
+                <li class="no-data" style="display: none;">No data found!</li>
+            </ul>
+        </div>
+        <!-- SUB-CATEGORY -->
+        <div class="option">
+            <select>
+                <option value="option1">-- Select --</option>
+                <option value="option1">Sub Cat 1</option>
+                <option value="option2">Sub Cat 2</option>
+                <option value="option3">Sub Cat 3</option>
+                <option value="option4">Sub Cat 4</option>
+            </select>
+        </div>
+        <!-- SUB-SUB-CATEGORY -->
+        <div class="option">
+            <select>
+                <option value="option1">-- Select --</option>
+                <option value="option1">Sub Sub 1</option>
+                <option value="option2">Sub Sub 2</option>
+                <option value="option3">Sub Sub 3</option>
+                <option value="option4">Sub Sub 4</option>
+            </select>
+        </div>
+    </section>
 
 </body>
 

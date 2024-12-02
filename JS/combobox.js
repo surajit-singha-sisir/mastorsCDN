@@ -15,6 +15,23 @@ function initializeComboBox(comboBox) {
   const options = comboBox.querySelectorAll(".combo-option:not(.no-data)");
   const noDataMessage = optionsContainer.querySelector(".no-data");
   const chevronIcon = comboBox.querySelector(".chevron-icon");
+  let escPressCount = 0; // Counter for consecutive Esc key presses
+  let escTimer = null; // Timer to reset the counter
+
+  // Function to update dropdown position dynamically
+  const updateDropdownPosition = () => {
+    const rect = input.getBoundingClientRect();
+    const spaceBelow = window.innerHeight - rect.bottom;
+    const dropdownHeight = optionsContainer.offsetHeight || 160; // 10rem in px (fallback)
+
+    if (spaceBelow < dropdownHeight) {
+      // Show above if not enough space below
+      optionsContainer.style.top = `-${dropdownHeight}px`;
+    } else {
+      // Show below
+      optionsContainer.style.top = `${input.offsetHeight}px`;
+    }
+  };
 
   // Update visibility of options and no data message based on input
   const updateVisibility = () => {
@@ -30,9 +47,11 @@ function initializeComboBox(comboBox) {
     noDataMessage.style.display = anyVisible ? "none" : "block"; // Show/hide no data message
     optionsContainer.style.display = anyVisible || filter ? "block" : "none"; // Show/hide options container
     chevronIcon.classList.toggle("open", anyVisible); // Toggle chevron icon
+    updateDropdownPosition(); // Adjust position on visibility change
   };
 
   input.addEventListener("focus", () => {
+    updateDropdownPosition(); // Always update position on focus
     optionsContainer.style.display = "block";
     chevronIcon.classList.add("open");
     updateVisibility();
@@ -40,15 +59,33 @@ function initializeComboBox(comboBox) {
 
   chevronIcon.addEventListener("click", () => {
     const isOpen = optionsContainer.style.display === "block";
-    optionsContainer.style.display = isOpen ? "none" : "block";
-    chevronIcon.classList.toggle("open", !isOpen);
+    if (!isOpen) {
+      updateDropdownPosition(); // Adjust position before opening
+      optionsContainer.style.display = "block";
+      chevronIcon.classList.add("open");
+    } else {
+      optionsContainer.style.display = "none";
+      chevronIcon.classList.remove("open");
+    }
   });
 
   input.addEventListener("keyup", (e) => {
     if (e.key === "Escape") {
-      input.value = ""; // Clear input on Escape key press
-      updateVisibility();
+      escPressCount++;
+      clearTimeout(escTimer); // Reset the timer on each Esc press
+      escTimer = setTimeout(() => {
+        escPressCount = 0; // Reset the counter if no second Esc press within time limit
+      }, 300); // 300ms window for second Esc key press
+
+      if (escPressCount === 2) {
+        input.value = ""; // Clear input on double Escape key press
+        updateVisibility();
+        escPressCount = 0; // Reset the counter after successful double press
+      }
+    } else {
+      escPressCount = 0; // Reset counter if any other key is pressed
     }
+
     updateVisibility(); // Update visibility on keyup
   });
 
