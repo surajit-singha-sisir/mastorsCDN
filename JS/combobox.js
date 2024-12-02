@@ -68,26 +68,15 @@ function initializeComboBox(comboBox) {
       chevronIcon.classList.remove("open");
     }
   });
+input.addEventListener("keyup", (e) => {
+  if (e.key === "Escape") {
+    input.value = ""; // Clear the input field
+    updateVisibility(); // Update the visibility of options
+  } else {
+    updateVisibility(); // Update visibility for other keyup events
+  }
+});
 
-  input.addEventListener("keyup", (e) => {
-    if (e.key === "Escape") {
-      escPressCount++;
-      clearTimeout(escTimer); // Reset the timer on each Esc press
-      escTimer = setTimeout(() => {
-        escPressCount = 0; // Reset the counter if no second Esc press within time limit
-      }, 300); // 300ms window for second Esc key press
-
-      if (escPressCount === 2) {
-        input.value = ""; // Clear input on double Escape key press
-        updateVisibility();
-        escPressCount = 0; // Reset the counter after successful double press
-      }
-    } else {
-      escPressCount = 0; // Reset counter if any other key is pressed
-    }
-
-    updateVisibility(); // Update visibility on keyup
-  });
 
   document.addEventListener("click", (e) => {
     if (!comboBox.contains(e.target)) {
