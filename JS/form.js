@@ -2,26 +2,32 @@ print = console.log;
 document.addEventListener("DOMContentLoaded", () => {
   const inputContainers = document.querySelectorAll("#text-input");
 
-  // Ensure a single style block is created
-  let dynamicStyle =
-    document.getElementById("dynamic-style") || document.createElement("style");
-  if (!dynamicStyle.id) {
-    dynamicStyle.id = "dynamic-style";
-    document.head.appendChild(dynamicStyle);
-  }
-
   inputContainers.forEach((input) => {
     const label = input.querySelector("label");
     const inputbox = input.querySelector(".inputbox");
 
-    // Update dynamic style based on label width
-    const labelWidth = label.offsetWidth;
-    dynamicStyle.textContent = `
-      .text-input:focus-within .inputbox {
-        left: ${labelWidth}px;
-        transition: 0.3s ease-in-out;
+    inputbox.addEventListener("focus", () => {
+      const labelWidth = label.offsetWidth;
+
+      // Create dynamic style for the focused input
+      const style = document.createElement("style");
+      style.id = "dynamic-style";
+      style.textContent = `
+        .text-input:focus-within .inputbox {
+          left: ${labelWidth}px;
+          transition: 0.3s ease-in-out;
+        }
+      `;
+      document.head.appendChild(style);
+    });
+
+    inputbox.addEventListener("blur", () => {
+      // Remove dynamic style when focus is lost
+      const dynamicStyle = document.getElementById("dynamic-style");
+      if (dynamicStyle) {
+        dynamicStyle.remove();
       }
-    `;
+    });
 
     // Toggle label visibility based on input value
     inputbox.addEventListener("input", () => {
@@ -29,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 // CHECKBOX UNIQUE ID AND FOR ATTR
 document.querySelectorAll(".checkbox").forEach((checkboxDiv, index) => {
