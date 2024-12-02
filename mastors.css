@@ -215925,6 +215925,7 @@ input[type=text]::placeholder {
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
+  padding: 0 0.5rem;
   color: #3e3e3e;
   z-index: 1;
   transition: 0.3s ease-in-out;
