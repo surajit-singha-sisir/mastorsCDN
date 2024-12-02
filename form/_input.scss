@@ -48,9 +48,9 @@ input[type="text"] {
     left: 1rem;
     transform: translateY(-50%);
     padding: 0 0.5rem;
-    color: #8a8a8a;
+    color: #3e3e3e;
     z-index: 1;
-    background-color: #fff;
+    // background-color: #fff;
     transition: 0.3s ease-in-out;
     pointer-events: none;
   }
@@ -96,6 +96,7 @@ input[type="text"] {
       height: 100%;
       color: #464646;
       background-color: #e9e9e9;
+      transition: all 0.2s ease;
     }
   }
 }
