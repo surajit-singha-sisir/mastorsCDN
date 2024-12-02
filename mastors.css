@@ -50484,6 +50484,30 @@ POSITION CENTER CLASSES
   bottom: 20rem;
 }
 
+.v-space {
+  margin-bottom: 1rem;
+}
+
+.h-space {
+  margin-left: 1rem;
+}
+
+.vh-space {
+  margin: 1rem 0;
+}
+
+.v-space-l {
+  margin-bottom: 1.5rem;
+}
+
+.h-space-l {
+  margin-left: 1.5rem;
+}
+
+.vh-space-l {
+  margin: 1.5rem 0;
+}
+
 /* ----------------------------------------------------------------
 Z-INDEX CLASSES
 ----------------------------------------------------------------
