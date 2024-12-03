@@ -90,7 +90,6 @@
         </select>
     </div>
 
-
     <!-- CATEGORY -->
     <section class="b-e pad--10 bg-main f gap-10">
         <!-- CATEGORY -->
@@ -136,40 +135,48 @@
         </div>
     </section>
 
-
-
-
-
-
-
     <style>
-        
+        .select-option-1 {
+            min-width: 10rem;
+            max-width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .select-option-1 input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            outline: none;
+            background-color: transparent;
+            color: #000;
+        }
+        .select-option-1 .option {
+            width: 5rem;
+            background-color: transparent;
+        }
+        .select-option-1 .option::after {
+            right: 0;
+        }
+        .select-option-1 .option select {
+            border-radius: 0;
+            background-color: #124aff;
+            color: #fff;
+            width: inherit;
+        }
     </style>
-    <section class="f-res gap-10 b-1 pad--20">
-
-        <div>
-            <img class="w-100" src="Resources/svg/chevron.svg" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque pariatur libero voluptates perferendis quia.
-            Laboriosam ullam, aliquid, vero quasi distinctio facere explicabo ipsam exercitationem, deleniti amet
-            maiores. Molestias, velit asperiores?
-            <div>
-            <img class="w-100" src="Resources/svg/chevron.svg" alt="">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam consequatur, porro minus impedit recusandae veniam reprehenderit quas neque omnis distinctio aspernatur aliquid, ea quaerat provident earum quo! Odit, enim optio?
-            </div>
-        </div>
-
-        <div>
-            <img class="w-100" src="Resources/svg/chevron.svg" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque pariatur libero voluptates perferendis quia.
-            Laboriosam ullam, aliquid, vero quasi distinctio facere explicabo ipsam exercitationem, deleniti amet
-            maiores. Molestias, velit asperiores?
-        </div>
-
-        <div>
-            <img class="w-100" src="Resources/svg/chevron.svg" alt="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque pariatur libero voluptates perferendis quia.
-            Laboriosam ullam, aliquid, vero quasi distinctio facere explicabo ipsam exercitationem, deleniti amet
-            maiores. Molestias, velit asperiores?
+    <section class="select-option-1 pad-tb--20 w--200">
+        <input type="text" name="" id="" placeholder="Total Quantity">
+        <div class="option">
+            <select>
+                <option value="option1">-- Select --</option>
+                <option value="option1">Sub Cat 1</option>
+                <option value="option2">Sub Cat 2</option>
+                <option value="option3">Sub Cat 3</option>
+                <option value="option4">Sub Cat 4</option>
+            </select>
         </div>
     </section>
 </body>
