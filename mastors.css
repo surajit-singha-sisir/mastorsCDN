@@ -194250,7 +194250,7 @@ DISPLAY CLASSES
 }
 
 .f-res-container > div {
-  min-width: 12rem;
+  min-width: 5rem;
   flex: 1;
 }
 
@@ -194258,7 +194258,7 @@ DISPLAY CLASSES
   display: flex;
 }
 .f-res > div, .f-res > span, .f-res > section, .f-res > p, .f-res > aside {
-  min-width: 10rem;
+  min-width: 15rem;
   flex: 1;
 }
 
