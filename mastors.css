@@ -194258,7 +194258,7 @@ DISPLAY CLASSES
   display: flex;
 }
 .f-res > div, .f-res > span, .f-res > section, .f-res > p, .f-res > aside {
-  min-width: 15rem;
+  min-width: 6rem;
   flex: 1;
 }
 

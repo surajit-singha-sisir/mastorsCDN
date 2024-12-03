@@ -14,10 +14,11 @@
   & > section,
   & > p,
   & > aside {
-    min-width: 15rem;
+    min-width: 6rem;
     flex: 1;
   }
 }
+
 @media screen and (max-width: 1080px) {
   .f-res {
     flex-wrap: wrap;
