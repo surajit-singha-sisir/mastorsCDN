@@ -215910,7 +215910,9 @@ BORDERS
   background-color: #ffefd5;
 }
 
-input[type=text] {
+input[type=text],
+input[type=number],
+input[type=password] {
   position: relative;
   display: block;
   border: 1px solid #dfdfdf;
@@ -215921,16 +215923,22 @@ input[type=text] {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-input[type=text]:hover {
+input[type=text]:hover,
+input[type=number]:hover,
+input[type=password]:hover {
   border: 1px solid #ccc;
   outline: none;
 }
-input[type=text]:focus {
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=password]:focus {
   box-shadow: #d2e2fb 0px 0px 0px 2px;
   border: 1px solid #ccc;
   outline: none;
 }
-input[type=text]::placeholder {
+input[type=text]::placeholder,
+input[type=number]::placeholder,
+input[type=password]::placeholder {
   font-size: 0.9rem;
   color: #8a8a8a;
 }
@@ -216097,6 +216105,44 @@ input[type=text]::placeholder {
   background-size: contain;
   z-index: 2;
   transition: all 0.2s ease;
+}
+
+.select-option-1 {
+  min-width: 10rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.select-option-1 input {
+  width: 100%;
+  padding: 0.5rem !important;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: transparent;
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+  color: #000;
+}
+.select-option-1 .option {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: transparent;
+}
+.select-option-1 .option::after {
+  background: url(https://surajit-singha-sisir.github.io/mastorsCDN/Resources/svg/chevron-white.svg) no-repeat center;
+  background-size: contain;
+}
+.select-option-1 .option select {
+  border-radius: 0;
+  background-color: #0942ff;
+  color: #fff;
+  width: inherit;
+}
+.select-option-1 .option:hover::after {
+  background-color: #0942ff;
 }
 
 .option {

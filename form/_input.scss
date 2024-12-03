@@ -1,7 +1,9 @@
 @use "../variables-Fectory/rem-vars" as *;
 
 // NORMAL INPUT BOX
-input[type="text"] {
+input[type="text"],
+input[type="number"],
+input[type="password"] {
   position: relative;
   display: block;
   border: 1px solid #dfdfdf;
@@ -213,6 +215,51 @@ input[type="text"] {
       background-size: contain;
       z-index: 2;
       transition: all 0.2s ease;
+    }
+  }
+}
+
+// SELECT OPTION-1
+.select-option-1 {
+  min-width: 10rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  & input {
+    width: 100%;
+    padding: 0.5rem !important;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: transparent;
+    border-radius: 0;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+  }
+
+  & .option {
+    width: 6rem;
+    height: 2.5rem;
+    background-color: transparent;
+
+    &::after {
+      background: url(https://surajit-singha-sisir.github.io/mastorsCDN/Resources/svg/chevron-white.svg)
+        no-repeat center;
+      background-size: contain;
+    }
+
+    & select {
+      border-radius: 0;
+      background-color: #0942ff;
+      color: #fff;
+      width: inherit;
+    }
+
+    &:hover::after {
+      background-color: #0942ff;
     }
   }
 }
