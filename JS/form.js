@@ -1,6 +1,27 @@
-print = console.log;
-document.addEventListener("DOMContentLoaded", () => {
-  // ANIMATED INPUTBOX
+// Function to forcefully ensure that the DOM is ready and the functions are executed
+function forceLoadFunctions() {
+  if (document.readyState === 'loading') {
+    // If the DOM is not ready, wait for it to load
+    document.addEventListener('DOMContentLoaded', initializeAllFunctions);
+  } else {
+    // If DOM is already ready, run functions immediately
+    initializeAllFunctions();
+  }
+}
+
+function initializeAllFunctions() {
+  try {
+    initializeInputBoxes();
+    initializeCheckboxes();
+    initializeRadioButtons();
+  } catch (error) {
+    // If any part of the initialization fails, retry after a short delay
+    console.error("Error during initialization, retrying...", error);
+    setTimeout(initializeAllFunctions, 100); // Retry after 100ms
+  }
+}
+
+function initializeInputBoxes() {
   const inputContainers = document.querySelectorAll("#text-input");
 
   inputContainers.forEach((input) => {
@@ -35,8 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
       label.classList.toggle("hide", !!inputbox.value.trim());
     });
   });
+}
 
-  // CHECKBOX UNIQUE ID AND FOR ATTR
+function initializeCheckboxes() {
   document.querySelectorAll(".checkbox").forEach((checkboxDiv, index) => {
     const checkbox = checkboxDiv.querySelector('input[type="checkbox"]');
     const label = checkboxDiv.querySelector("label");
@@ -56,15 +78,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const styleSheet = document.styleSheets[0];
       const cssRule = `
       input[type="checkbox"]#${checkbox.id}:checked + label::before {
-        background-color: #${targetBg};
+        background-color: ${targetBg};
         border-color: #${targetBg};
       }
     `;
       styleSheet.insertRule(cssRule, styleSheet.cssRules.length);
     }
   });
+}
 
-  // RADIO GROUP
+function initializeRadioButtons() {
   document.querySelectorAll(".radio").forEach((radioDiv, index) => {
     const radio = radioDiv.querySelector('input[type="radio"]');
     const label = radioDiv.querySelector("label");
@@ -91,4 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
       styleSheet.insertRule(cssRule, styleSheet.cssRules.length);
     }
   });
-});
+}
+
+// Run the function to enforce loading
+forceLoadFunctions();
