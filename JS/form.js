@@ -1,5 +1,6 @@
 print = console.log;
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  // ANIMATED INPUTBOX
   const inputContainers = document.querySelectorAll("#text-input");
 
   inputContainers.forEach((input) => {
