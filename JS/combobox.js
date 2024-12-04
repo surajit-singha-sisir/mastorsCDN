@@ -10,7 +10,7 @@
 
 // CODE
 
-window.addEventListener("load", function () {
+document.addEventListener("DOMContentLoaded", function () {
   function initializeComboBox(comboBox) {
     const input = comboBox.querySelector(".combo-input");
     const optionsContainer = comboBox.querySelector(".combo-options");
