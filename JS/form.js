@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   initializeInputBoxes();
   initializeCheckboxes();
   initializeRadioButtons();
