@@ -1,8 +1,19 @@
+// window.addEventListener("load", () => {
+//   initializeInputBoxes();
+//   initializeCheckboxes();
+//   initializeRadioButtons();
+//   combobox();
+// });
+
+// Wait for the full page (including images, styles, etc.) to load
 window.addEventListener("load", () => {
-  initializeInputBoxes();
-  initializeCheckboxes();
-  initializeRadioButtons();
-  combobox();
+  // Delay the execution of the functions by 1 second (1000 milliseconds)
+  setTimeout(() => {
+    initializeInputBoxes();
+    initializeCheckboxes();
+    initializeRadioButtons();
+    combobox();
+  }, 1000); // 1000 ms = 1 second
 });
 
 // USES
