@@ -1,25 +1,8 @@
-// Function to forcefully ensure that the DOM is ready and the functions are executed
-function forceLoadFunctions() {
-  if (document.readyState === 'loading') {
-    // If the DOM is not ready, wait for it to load
-    document.addEventListener('DOMContentLoaded', initializeAllFunctions);
-  } else {
-    // If DOM is already ready, run functions immediately
-    initializeAllFunctions();
-  }
-}
-
-function initializeAllFunctions() {
-  try {
-    initializeInputBoxes();
-    initializeCheckboxes();
-    initializeRadioButtons();
-  } catch (error) {
-    // If any part of the initialization fails, retry after a short delay
-    console.error("Error during initialization, retrying...", error);
-    setTimeout(initializeAllFunctions, 100); // Retry after 100ms
-  }
-}
+document.addEventListener("DOMContentLoaded", () => {
+  initializeInputBoxes();
+  initializeCheckboxes();
+  initializeRadioButtons();
+});
 
 function initializeInputBoxes() {
   const inputContainers = document.querySelectorAll("#text-input");
@@ -115,6 +98,3 @@ function initializeRadioButtons() {
     }
   });
 }
-
-// Run the function to enforce loading
-forceLoadFunctions();
