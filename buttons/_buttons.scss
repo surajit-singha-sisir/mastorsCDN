@@ -16,6 +16,8 @@ $color-normal: #4caf50;
 $color-primary: #007bff;
 $color-secondary: #6c757d;
 $color-info: #17a2b8;
+$color-white: #fff;
+$color-lightdark: #5e5e5e;
 
 .btn {
   display: inline-block;
@@ -26,7 +28,7 @@ $color-info: #17a2b8;
   cursor: pointer;
   border: none;
   text-decoration: none;
-  color: #fff;
+  color: $color-white;
   transition: all 0.3s ease;
 
   // Button Sizes
@@ -464,7 +466,7 @@ $color-info: #17a2b8;
     }
   }
   &-white {
-    background-color: #fff;
+    background-color: $color-white;
     color: $color-secondary;
 
     &:hover {
@@ -489,7 +491,6 @@ $color-info: #17a2b8;
   }
 
   // OUTLINE CLASSES
-  // Primary Button Outline
   &-outline-primary {
     background-color: transparent;
     color: $color-primary;
@@ -497,17 +498,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-primary;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-primary, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-primary, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
     }
   }
@@ -520,17 +521,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-secondary;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-secondary, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-secondary, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.5);
     }
   }
@@ -543,17 +544,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-normal;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-normal, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-normal, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
     }
   }
@@ -566,17 +567,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-tension;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-tension, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-tension, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.5);
     }
   }
@@ -589,17 +590,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-anxious;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-anxious, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-anxious, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.5);
     }
   }
@@ -612,17 +613,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-info;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-info, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-info, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.5);
     }
   }
@@ -630,7 +631,7 @@ $color-info: #17a2b8;
   // Light Button Outline
   &-outline-light {
     background-color: transparent;
-    color: $color-light;
+    color: $color-lightdark;
     border: 1px solid $color-light;
 
     &:hover {
@@ -658,17 +659,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-dark;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-dark, 10%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-dark, 10%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(33, 33, 33, 0.5);
     }
   }
@@ -681,17 +682,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-rain;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-rain, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-rain, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
     }
   }
@@ -704,17 +705,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-hot;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-hot, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-hot, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.5);
     }
   }
@@ -727,17 +728,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-love;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-love, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-love, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.5);
     }
   }
@@ -750,17 +751,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-cold;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-cold, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-cold, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(3, 169, 244, 0.5);
     }
   }
@@ -773,17 +774,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-night;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-night, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-night, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.5);
     }
   }
@@ -796,17 +797,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-sleep;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-sleep, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-sleep, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.5);
     }
   }
@@ -814,7 +815,7 @@ $color-info: #17a2b8;
   // Happy Button Outline
   &-outline-happy {
     background-color: transparent;
-    color: $color-happy;
+    color: $color-lightdark;
     border: 1px solid $color-happy;
 
     &:hover {
@@ -842,17 +843,17 @@ $color-info: #17a2b8;
 
     &:hover {
       background-color: $color-approve;
-      color: #fff;
+      color: $color-white;
     }
 
     &:active {
       background-color: darken($color-approve, 15%);
-      color: #fff;
+      color: $color-white;
     }
 
     &:focus {
       background-color: darken($color-approve, 15%);
-      color: #fff;
+      color: $color-white;
       box-shadow: 0 0 0 2px rgba(139, 195, 74, 0.5);
     }
   }

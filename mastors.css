@@ -206203,7 +206203,7 @@ input[type=password]::placeholder {
 }
 .btn-outline-light {
   background-color: transparent;
-  color: #ffeb3b;
+  color: #5e5e5e;
   border: 1px solid #ffeb3b;
 }
 .btn-outline-light:hover {
@@ -206347,7 +206347,7 @@ input[type=password]::placeholder {
 }
 .btn-outline-happy {
   background-color: transparent;
-  color: #ffeb3b;
+  color: #5e5e5e;
   border: 1px solid #ffeb3b;
 }
 .btn-outline-happy:hover {
