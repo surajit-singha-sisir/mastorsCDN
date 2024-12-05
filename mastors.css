@@ -206103,11 +206103,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-primary:active {
-  background-color: #0056b3;
+  background-color: rgb(0, 86.1, 178.5);
   color: #fff;
 }
 .btn-outline-primary:focus {
-  background-color: #0056b3;
+  background-color: rgb(0, 86.1, 178.5);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
 }
@@ -206121,11 +206121,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-secondary:active {
-  background-color: #545b62;
+  background-color: rgb(72.5407725322, 78.5858369099, 83.9592274678);
   color: #fff;
 }
 .btn-outline-secondary:focus {
-  background-color: #545b62;
+  background-color: rgb(72.5407725322, 78.5858369099, 83.9592274678);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.5);
 }
@@ -206139,11 +206139,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-success:active {
-  background-color: #388e3c;
+  background-color: rgb(52.8366533865, 121.6633466135, 55.6175298805);
   color: #fff;
 }
 .btn-outline-success:focus {
-  background-color: #388e3c;
+  background-color: rgb(52.8366533865, 121.6633466135, 55.6175298805);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
 }
@@ -206157,11 +206157,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-danger:active {
-  background-color: #c62828;
+  background-color: rgb(149.8095238095, 31.6904761905, 31.6904761905);
   color: #fff;
 }
 .btn-outline-danger:focus {
-  background-color: #c62828;
+  background-color: rgb(149.8095238095, 31.6904761905, 31.6904761905);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.5);
 }
@@ -206175,11 +206175,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-warning:active {
-  background-color: #f57c00;
+  background-color: rgb(178.5, 106.4, 0);
   color: #fff;
 }
 .btn-outline-warning:focus {
-  background-color: #f57c00;
+  background-color: rgb(178.5, 106.4, 0);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.5);
 }
@@ -206193,17 +206193,17 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-info:active {
-  background-color: #117a8b;
+  background-color: rgb(14.5, 102.1304347826, 116);
   color: #fff;
 }
 .btn-outline-info:focus {
-  background-color: #117a8b;
+  background-color: rgb(14.5, 102.1304347826, 116);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.5);
 }
 .btn-outline-light {
   background-color: transparent;
-  color: #3a3a3a;
+  color: #ffeb3b;
   border: 1px solid #ffeb3b;
 }
 .btn-outline-light:hover {
@@ -206211,11 +206211,11 @@ input[type=password]::placeholder {
   color: #212121;
 }
 .btn-outline-light:active {
-  background-color: #fbc02d;
+  background-color: rgb(255, 229.7959183673, 8);
   color: #212121;
 }
 .btn-outline-light:focus {
-  background-color: #fbc02d;
+  background-color: rgb(255, 229.7959183673, 8);
   color: #212121;
   box-shadow: 0 0 0 2px rgba(255, 235, 59, 0.5);
 }
@@ -206229,11 +206229,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-dark:active {
-  background-color: #1b1b1b;
+  background-color: rgb(7.5, 7.5, 7.5);
   color: #fff;
 }
 .btn-outline-dark:focus {
-  background-color: #1b1b1b;
+  background-color: rgb(7.5, 7.5, 7.5);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(33, 33, 33, 0.5);
 }
@@ -206247,11 +206247,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-calm:active {
-  background-color: #1976d2;
+  background-color: rgb(10.2307692308, 109.9807692308, 189.2692307692);
   color: #fff;
 }
 .btn-outline-calm:focus {
-  background-color: #1976d2;
+  background-color: rgb(10.2307692308, 109.9807692308, 189.2692307692);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
 }
@@ -206265,11 +206265,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-warm:active {
-  background-color: #e64a19;
+  background-color: rgb(212.5, 50.9615384615, 0);
   color: #fff;
 }
 .btn-outline-warm:focus {
-  background-color: #e64a19;
+  background-color: rgb(212.5, 50.9615384615, 0);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.5);
 }
@@ -206283,11 +206283,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-love:active {
-  background-color: #c2185b;
+  background-color: rgb(169.8886639676, 16.6113360324, 68.7105263158);
   color: #fff;
 }
 .btn-outline-love:focus {
-  background-color: #c2185b;
+  background-color: rgb(169.8886639676, 16.6113360324, 68.7105263158);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.5);
 }
@@ -206301,11 +206301,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-cold:active {
-  background-color: #0288d1;
+  background-color: rgb(2.0708502024, 116.6578947368, 168.4291497976);
   color: #fff;
 }
 .btn-outline-cold:focus {
-  background-color: #0288d1;
+  background-color: rgb(2.0708502024, 116.6578947368, 168.4291497976);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(3, 169, 244, 0.5);
 }
@@ -206319,11 +206319,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-night:active {
-  background-color: #1a252f;
+  background-color: rgb(16.8548387097, 23.75, 30.6451612903);
   color: #fff;
 }
 .btn-outline-night:focus {
-  background-color: #1a252f;
+  background-color: rgb(16.8548387097, 23.75, 30.6451612903);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.5);
 }
@@ -206337,17 +206337,17 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-sleep:active {
-  background-color: #303f9f;
+  background-color: rgb(43.2479508197, 55.6045081967, 124.2520491803);
   color: #fff;
 }
 .btn-outline-sleep:focus {
-  background-color: #303f9f;
+  background-color: rgb(43.2479508197, 55.6045081967, 124.2520491803);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.5);
 }
 .btn-outline-happy {
   background-color: transparent;
-  color: #3a3a3a;
+  color: #ffeb3b;
   border: 1px solid #ffeb3b;
 }
 .btn-outline-happy:hover {
@@ -206355,11 +206355,11 @@ input[type=password]::placeholder {
   color: #212121;
 }
 .btn-outline-happy:active {
-  background-color: #fbc02d;
+  background-color: rgb(255, 229.7959183673, 8);
   color: #212121;
 }
 .btn-outline-happy:focus {
-  background-color: #fbc02d;
+  background-color: rgb(255, 229.7959183673, 8);
   color: #212121;
   box-shadow: 0 0 0 2px rgba(255, 235, 59, 0.5);
 }
@@ -206373,11 +206373,11 @@ input[type=password]::placeholder {
   color: #fff;
 }
 .btn-outline-approve:active {
-  background-color: #689f38;
+  background-color: rgb(99.8443983402, 144.5746887967, 47.9253112033);
   color: #fff;
 }
 .btn-outline-approve:focus {
-  background-color: #689f38;
+  background-color: rgb(99.8443983402, 144.5746887967, 47.9253112033);
   color: #fff;
   box-shadow: 0 0 0 2px rgba(139, 195, 74, 0.5);
 }

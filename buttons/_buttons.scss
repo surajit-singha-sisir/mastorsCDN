@@ -489,24 +489,24 @@ $color-info: #17a2b8;
   }
 
   // OUTLINE CLASSES
-  
+  // Primary Button Outline
   &-outline-primary {
     background-color: transparent;
-    color: #007bff;
-    border: 1px solid #007bff;
+    color: $color-primary;
+    border: 1px solid $color-primary;
 
     &:hover {
-      background-color: #007bff;
+      background-color: $color-primary;
       color: #fff;
     }
 
     &:active {
-      background-color: #0056b3;
+      background-color: darken($color-primary, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #0056b3;
+      background-color: darken($color-primary, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
     }
@@ -515,21 +515,21 @@ $color-info: #17a2b8;
   // Secondary Button Outline
   &-outline-secondary {
     background-color: transparent;
-    color: #6c757d;
-    border: 1px solid #6c757d;
+    color: $color-secondary;
+    border: 1px solid $color-secondary;
 
     &:hover {
-      background-color: #6c757d;
+      background-color: $color-secondary;
       color: #fff;
     }
 
     &:active {
-      background-color: #545b62;
+      background-color: darken($color-secondary, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #545b62;
+      background-color: darken($color-secondary, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.5);
     }
@@ -538,21 +538,21 @@ $color-info: #17a2b8;
   // Success Button Outline
   &-outline-success {
     background-color: transparent;
-    color: #4caf50;
-    border: 1px solid #4caf50;
+    color: $color-normal;
+    border: 1px solid $color-normal;
 
     &:hover {
-      background-color: #4caf50;
+      background-color: $color-normal;
       color: #fff;
     }
 
     &:active {
-      background-color: #388e3c;
+      background-color: darken($color-normal, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #388e3c;
+      background-color: darken($color-normal, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5);
     }
@@ -561,21 +561,21 @@ $color-info: #17a2b8;
   // Danger Button Outline
   &-outline-danger {
     background-color: transparent;
-    color: #d32f2f;
-    border: 1px solid #d32f2f;
+    color: $color-tension;
+    border: 1px solid $color-tension;
 
     &:hover {
-      background-color: #d32f2f;
+      background-color: $color-tension;
       color: #fff;
     }
 
     &:active {
-      background-color: #c62828;
+      background-color: darken($color-tension, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #c62828;
+      background-color: darken($color-tension, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.5);
     }
@@ -584,21 +584,21 @@ $color-info: #17a2b8;
   // Warning Button Outline
   &-outline-warning {
     background-color: transparent;
-    color: #ff9800;
-    border: 1px solid #ff9800;
+    color: $color-anxious;
+    border: 1px solid $color-anxious;
 
     &:hover {
-      background-color: #ff9800;
+      background-color: $color-anxious;
       color: #fff;
     }
 
     &:active {
-      background-color: #f57c00;
+      background-color: darken($color-anxious, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #f57c00;
+      background-color: darken($color-anxious, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.5);
     }
@@ -607,21 +607,21 @@ $color-info: #17a2b8;
   // Info Button Outline
   &-outline-info {
     background-color: transparent;
-    color: #17a2b8;
-    border: 1px solid #17a2b8;
+    color: $color-info;
+    border: 1px solid $color-info;
 
     &:hover {
-      background-color: #17a2b8;
+      background-color: $color-info;
       color: #fff;
     }
 
     &:active {
-      background-color: #117a8b;
+      background-color: darken($color-info, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #117a8b;
+      background-color: darken($color-info, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(23, 162, 184, 0.5);
     }
@@ -630,22 +630,22 @@ $color-info: #17a2b8;
   // Light Button Outline
   &-outline-light {
     background-color: transparent;
-    color: #3a3a3a;
-    border: 1px solid #ffeb3b;
+    color: $color-light;
+    border: 1px solid $color-light;
 
     &:hover {
-      background-color: #ffeb3b;
-      color: #212121;
+      background-color: $color-light;
+      color: $color-dark;
     }
 
     &:active {
-      background-color: #fbc02d;
-      color: #212121;
+      background-color: darken($color-light, 10%);
+      color: $color-dark;
     }
 
     &:focus {
-      background-color: #fbc02d;
-      color: #212121;
+      background-color: darken($color-light, 10%);
+      color: $color-dark;
       box-shadow: 0 0 0 2px rgba(255, 235, 59, 0.5);
     }
   }
@@ -653,21 +653,21 @@ $color-info: #17a2b8;
   // Dark Button Outline
   &-outline-dark {
     background-color: transparent;
-    color: #212121;
-    border: 1px solid #212121;
+    color: $color-dark;
+    border: 1px solid $color-dark;
 
     &:hover {
-      background-color: #212121;
+      background-color: $color-dark;
       color: #fff;
     }
 
     &:active {
-      background-color: #1b1b1b;
+      background-color: darken($color-dark, 10%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #1b1b1b;
+      background-color: darken($color-dark, 10%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(33, 33, 33, 0.5);
     }
@@ -676,43 +676,44 @@ $color-info: #17a2b8;
   // Calm Button Outline
   &-outline-calm {
     background-color: transparent;
-    color: #2196f3;
-    border: 1px solid #2196f3;
+    color: $color-rain;
+    border: 1px solid $color-rain;
 
     &:hover {
-      background-color: #2196f3;
+      background-color: $color-rain;
       color: #fff;
     }
 
     &:active {
-      background-color: #1976d2;
+      background-color: darken($color-rain, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #1976d2;
+      background-color: darken($color-rain, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.5);
     }
   }
+
   // Warm Button Outline
   &-outline-warm {
     background-color: transparent;
-    color: #ff5722;
-    border: 1px solid #ff5722;
+    color: $color-hot;
+    border: 1px solid $color-hot;
 
     &:hover {
-      background-color: #ff5722;
+      background-color: $color-hot;
       color: #fff;
     }
 
     &:active {
-      background-color: #e64a19;
+      background-color: darken($color-hot, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #e64a19;
+      background-color: darken($color-hot, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.5);
     }
@@ -721,21 +722,21 @@ $color-info: #17a2b8;
   // Love Button Outline
   &-outline-love {
     background-color: transparent;
-    color: #e91e63;
-    border: 1px solid #e91e63;
+    color: $color-love;
+    border: 1px solid $color-love;
 
     &:hover {
-      background-color: #e91e63;
+      background-color: $color-love;
       color: #fff;
     }
 
     &:active {
-      background-color: #c2185b;
+      background-color: darken($color-love, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #c2185b;
+      background-color: darken($color-love, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(233, 30, 99, 0.5);
     }
@@ -744,21 +745,21 @@ $color-info: #17a2b8;
   // Cold Button Outline
   &-outline-cold {
     background-color: transparent;
-    color: #03a9f4;
-    border: 1px solid #03a9f4;
+    color: $color-cold;
+    border: 1px solid $color-cold;
 
     &:hover {
-      background-color: #03a9f4;
+      background-color: $color-cold;
       color: #fff;
     }
 
     &:active {
-      background-color: #0288d1;
+      background-color: darken($color-cold, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #0288d1;
+      background-color: darken($color-cold, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(3, 169, 244, 0.5);
     }
@@ -767,21 +768,21 @@ $color-info: #17a2b8;
   // Night Button Outline
   &-outline-night {
     background-color: transparent;
-    color: #2c3e50;
-    border: 1px solid #2c3e50;
+    color: $color-night;
+    border: 1px solid $color-night;
 
     &:hover {
-      background-color: #2c3e50;
+      background-color: $color-night;
       color: #fff;
     }
 
     &:active {
-      background-color: #1a252f;
+      background-color: darken($color-night, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #1a252f;
+      background-color: darken($color-night, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.5);
     }
@@ -790,21 +791,21 @@ $color-info: #17a2b8;
   // Sleep Button Outline
   &-outline-sleep {
     background-color: transparent;
-    color: #3f51b5;
-    border: 1px solid #3f51b5;
+    color: $color-sleep;
+    border: 1px solid $color-sleep;
 
     &:hover {
-      background-color: #3f51b5;
+      background-color: $color-sleep;
       color: #fff;
     }
 
     &:active {
-      background-color: #303f9f;
+      background-color: darken($color-sleep, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #303f9f;
+      background-color: darken($color-sleep, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.5);
     }
@@ -813,22 +814,22 @@ $color-info: #17a2b8;
   // Happy Button Outline
   &-outline-happy {
     background-color: transparent;
-    color: #3a3a3a;
-    border: 1px solid #ffeb3b;
+    color: $color-happy;
+    border: 1px solid $color-happy;
 
     &:hover {
-      background-color: #ffeb3b;
-      color: #212121;
+      background-color: $color-happy;
+      color: $color-dark;
     }
 
     &:active {
-      background-color: #fbc02d;
-      color: #212121;
+      background-color: darken($color-happy, 10%);
+      color: $color-dark;
     }
 
     &:focus {
-      background-color: #fbc02d;
-      color: #212121;
+      background-color: darken($color-happy, 10%);
+      color: $color-dark;
       box-shadow: 0 0 0 2px rgba(255, 235, 59, 0.5);
     }
   }
@@ -836,21 +837,21 @@ $color-info: #17a2b8;
   // Approve Button Outline
   &-outline-approve {
     background-color: transparent;
-    color: #8bc34a;
-    border: 1px solid #8bc34a;
+    color: $color-approve;
+    border: 1px solid $color-approve;
 
     &:hover {
-      background-color: #8bc34a;
+      background-color: $color-approve;
       color: #fff;
     }
 
     &:active {
-      background-color: #689f38;
+      background-color: darken($color-approve, 15%);
       color: #fff;
     }
 
     &:focus {
-      background-color: #689f38;
+      background-color: darken($color-approve, 15%);
       color: #fff;
       box-shadow: 0 0 0 2px rgba(139, 195, 74, 0.5);
     }
