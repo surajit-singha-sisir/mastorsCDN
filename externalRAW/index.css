@@ -1,0 +1,60 @@
+.ibg {
+  background-color: #222222;
+}
+
+:root {
+  --bg-light: #ffffff;
+  --text-light: #000000;
+  --bg-dark: #121212;
+  --text-dark: #ffffff;
+  --transition-duration: 0.3s;
+}
+
+/* JSU */
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.theme-toggle-container {
+  position: relative;
+}
+
+.theme-toggle {
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform var(--transition-duration);
+}
+
+.theme-toggle:active {
+  transform: scale(0.9);
+}
+
+.theme-icon {
+  display: none;
+}
+
+body.light-mode .light-icon,
+body.dark-mode .dark-icon {
+  display: inline;
+}
+
+
+.dropShadow {
+  box-shadow: 0px 1px 3px #000000ad;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}

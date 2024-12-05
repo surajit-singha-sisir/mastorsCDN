@@ -1,0 +1,7 @@
+White BG:
+Mastors = #EE2561
+CDN = #00AAD0
+
+Dark BG:
+Mastors = #F6F18E
+CDN = #51C3D4
