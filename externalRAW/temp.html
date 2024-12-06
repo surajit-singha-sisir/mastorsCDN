@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nev Bar 1</title>
+    <link rel="stylesheet" href="../mastors.css">
+</head>
+<style>
+    body {
+        background-color: #1f1f1f;
+    }
+    header.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        color: rgb(31, 31, 31);
+        background-color: attr(targer-bg);
+    }
+
+    .header-1 {}
+</style>
+
+<body>
+
+    <header class="header header-1" id="header-1" msr-bg="#cee" msr-color="#100">
+        <section class="">
+            <div class="logo w--70">
+                <img class="w-100" src="../Resources/svg/logo/mastorsCDN-whitebg.svg" alt="Logo">
+            </div>
+        </section>
+    </header>
+</body>
+<script>
+    
+    function addStyle(className, properties) {
+        let styleTag = document.querySelector("head > style");
+        if(!styleTag) {
+            styleTag = document.createElement('style');
+            document.head.appendChild(styleTag);
+        }
+        styleTag.textContent += `.${className} {${properties}}`;
+    }
+
+
+    function header() {
+        const header = document.getElementById('header-1');
+        const bg = header.getAttribute('msr-bg').replace(/[\s#]+/g,"");
+        const color = header.getAttribute('msr-color').replace(/[\s#]+/g,"");
+        
+        header.style.backgroundColor = `#${bg}`;
+        header.style.color = `#${color}`;
+
+
+
+    } header();
+</script>
+
+</html>
