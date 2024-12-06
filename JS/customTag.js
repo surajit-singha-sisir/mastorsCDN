@@ -1,35 +1,4 @@
-// Define a generic class for all `msr-` custom tags
-class MsrBaseElement extends HTMLElement {
-  constructor() {
-    super();
-
-    // Automatically set the aria-label attribute
-    const tagName = this.tagName.toLowerCase();
-    if (!this.hasAttribute("aria-label")) {
-      const label = tagName.replace("msr-", ""); // Extract the part after "msr-"
-      this.setAttribute("aria-label", label); // Assign aria-label dynamically
-    }
-
-    // Attach a shadow DOM (optional, for scoped styles)
-    const shadow = this.attachShadow({ mode: "open" });
-    shadow.innerHTML = `
-            <style>
-                :host, :root {
-                    --rem: 16;
-                }
-                *, ::before, ::after {
-                    box-sizing: border-box;
-                    scroll-behavior: smooth;
-                    margin: 0px;
-                    padding: 0px;
-                }
-            </style>
-            <slot></slot>
-        `;
-  }
-}
-
-// Automatically register all `msr-` tags
+// Dynamically create and define custom elements for all `msr-` tags
 const msrTags = [
   "msr-navbar",
   "msr-title",
@@ -52,7 +21,26 @@ const msrTags = [
 ];
 
 msrTags.forEach((tagName) => {
+  // Check if the custom element is already defined
   if (!customElements.get(tagName)) {
-    customElements.define(tagName, MsrBaseElement);
+    // Define a unique class for each tag
+    customElements.define(
+      tagName,
+      class extends HTMLElement {
+        constructor() {
+          super();
+
+          // Automatically set the aria-label attribute
+          if (!this.hasAttribute("aria-label")) {
+            const label = tagName.replace("msr-", ""); // Extract the part after "msr-"
+            this.setAttribute("aria-label", label); // Assign aria-label dynamically
+          }
+
+          // Attach a shadow DOM (optional, for scoped styles)
+          const shadow = this.attachShadow({ mode: "open" });
+          shadow.innerHTML = `<slot></slot>`;
+        }
+      }
+    );
   }
 });
