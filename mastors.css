@@ -205735,7 +205735,7 @@ input[type=password]::placeholder {
   cursor: pointer;
   border: none;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .btn-xsm {
   padding: 0.15rem 0.25rem;
