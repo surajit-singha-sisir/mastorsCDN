@@ -205737,6 +205737,10 @@ input[type=password]::placeholder {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+.btn-xsm {
+  padding: 0.15rem 0.25rem;
+  font-size: 0.45rem;
+}
 .btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -209061,7 +209065,6 @@ input[type=password]::placeholder {
   color: #007bff;
   text-decoration: underline;
   border: none;
-  padding: 0;
 }
 .btn-link:hover {
   color: rgb(0, 110.7, 229.5);

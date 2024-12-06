@@ -165,6 +165,10 @@ $color-electric-purple: #bf00ff;
   transition: all 0.3s ease;
 
   // Button Sizes
+  &-xsm {
+    padding: 0.15rem 0.25rem;
+    font-size: 0.45rem;
+  }
   &-sm {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
@@ -209,12 +213,8 @@ $color-electric-purple: #bf00ff;
         rain: $color-rain,
         anxious: $color-anxious,
         right: $color-right,
-        // Added right
-        wrong:
-          $color-wrong,
-        // Added wrong
-        light-gray:
-          $color-light-gray,
+        wrong: $color-wrong,
+        light-gray: $color-light-gray,
         gray: $color-gray,
         dark-gray: $color-dark-gray,
         silver: $color-silver,
