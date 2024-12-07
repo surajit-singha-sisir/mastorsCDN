@@ -1,32 +1,71 @@
 .display-none,
 .d-none,
 .hide {
-    display: none;
+  display: none;
+}
+
+.display-nonei,
+.d-nonei,
+.hidei {
+  display: none !important;
 }
 
 .display-block,
-.d-block {
-    display: block;
+.d-block,
+.display-blocki,
+.d-blocki {
+  display: block !important;
 }
 
 .display-inherit,
-.d-inherit {
-    display: inherit;
+.d-inherit,
+.d-i {
+  display: inherit;
+}
+.display-inheriti,
+.d-inheriti,
+.d-ii {
+  display: inherit !important;
 }
 
 .display-inline,
-.d-inline {
-    display: inline;
+.d-inline,
+.d-in {
+  display: inline;
+}
+
+.display-inlinei,
+.d-inlinei,
+.d-ini {
+  display: inline !important;
 }
 
 .display-inline-block,
 .d-inline-block {
-    display: inline-block;
+  display: inline-block;
 }
 
 .show {
-    display: block !important;
-    ;
+  display: block !important;
+}
+
+.o-1,
+.o-show,
+.o-1,
+.opa-1,
+.op-show,
+.op-1,
+.opacity-1 {
+  opacity: 1;
+}
+.o-1i,
+.o-showi,
+.o-1i,
+.opa-1i,
+.op-showi,
+.op-1,
+.opacity-1i {
+  opacity: 1 !important;
 }
 
 .o-none,
@@ -35,6 +74,18 @@
 .opa-o,
 .op-none,
 .op-hide,
-.op-o {
-    opacity: 0;
+.op-o,
+.opacity-0 {
+  opacity: 0;
+}
+
+.o-nonei,
+.o-hidei,
+.o-oi,
+.opa-oi,
+.op-nonei,
+.op-hidei,
+.op-oi,
+.opacity-0i {
+  opacity: 0 !important;
 }
