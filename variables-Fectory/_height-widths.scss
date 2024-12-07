@@ -97,7 +97,7 @@ WIDTH IN REM SIZE
 }
 
 .w-- {
-  @for $i from 0 through 10 {
+  @for $i from 0 through 30 {
     @for $j from 0 through 9 {
       $class: #{$i}#{$j};
       $rem: $i + calc($j / 10);
@@ -114,7 +114,7 @@ HEIGHT IN REM SIZE
 ----------------------------------------------------------------
 */
 .h-- {
-  @for $i from 0 through 10 {
+  @for $i from 0 through 30 {
     @for $j from 0 through 9 {
       $class: #{$i}#{$j};
       $rem: $i + calc($j / 10);
@@ -185,7 +185,7 @@ HEIGHT IN REM SIZE
 
 // IMPORTANT CLASSES
 .w- {
-  @for $i from 0 through 200 {
+  @for $i from 0 through 300 {
     $class: if($i < 10, "0#{$i}i", "#{$i}i");
     $percent: if($i < 10, "0#{$i} !important", "#{$i} !important");
 
@@ -201,7 +201,7 @@ HEIGHT IN REM SIZE
 
 //HEIGHT IN PERCENTAGE
 .h- {
-  @for $i from 0 through 200 {
+  @for $i from 0 through 300 {
     $class: if($i < 10, "0#{$i}i", "#{$i}i");
     $percent: if($i < 10, "0#{$i} !important", "#{$i} !important");
 
@@ -218,7 +218,7 @@ HEIGHT IN REM SIZE
 // REM IMPORTANT
 
 .w-- {
-  @for $i from 0 through 10 {
+  @for $i from 0 through 30 {
     @for $j from 0 through 9 {
       $class: #{$i}#{$j}i;
       $rem: $i + calc($j / 10);
@@ -231,7 +231,7 @@ HEIGHT IN REM SIZE
 }
 
 .h-- {
-  @for $i from 0 through 10 {
+  @for $i from 0 through 30 {
     @for $j from 0 through 9 {
       $class: #{$i}#{$j}i;
       $rem: $i + calc($j / 10);
