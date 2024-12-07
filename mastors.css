@@ -212243,7 +212243,7 @@ input[type=password]::placeholder {
     width: 10rem;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .header-2-col .col-1 {
     margin-right: 4.5rem;
   }
