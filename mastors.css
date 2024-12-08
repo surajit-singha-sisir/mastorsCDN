@@ -212412,7 +212412,7 @@ div.ham-animated span {
 }
 div.ham-animated span:nth-child(1) {
   top: 0.9rem;
-  left: 0.26rem;
+  left: 0.4rem;
   transform: rotate(45deg);
   transition: all 0.2s ease;
 }
@@ -212422,7 +212422,7 @@ div.ham-animated span:nth-child(2) {
 }
 div.ham-animated span:nth-child(3) {
   top: 0.9rem;
-  left: 0.26rem;
+  left: 0.4rem;
   transform: rotate(-45deg);
   transition: all 0.2s ease;
 }

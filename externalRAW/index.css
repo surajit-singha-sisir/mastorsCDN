@@ -106,7 +106,7 @@ nav.nav {
 /* JSU */
 .media-main {
   width: calc(100% - 12.5rem) !important;
-  margin-left: 13rem !important;
+  margin-left: 11rem !important;
   transition: all 0.3s ease;
 }
 
