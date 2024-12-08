@@ -4,191 +4,271 @@
 
 /* White Hover Effect */
 .text-hov-White:hover {
-    color: $text-White;
+  color: $text-White;
 }
 
 /* Black Hover Effect */
 .text-hov-Black:hover {
-    color: $text-Black;
+  color: $text-Black;
 }
 
 /* Blue Hover Effect */
 .text-hov-Blue:hover {
-    color: $text-Blue;
+  color: $text-Blue;
 }
 
 /* Red Hover Effect */
 .text-hov-Red:hover {
-    color: $text-Red;
+  color: $text-Red;
 }
 
 /* Green Hover Effect */
 .text-hov-Green:hover {
-    color: $text-Green;
+  color: $text-Green;
 }
 
 /* Yellow Hover Effect */
 .text-hov-Yellow:hover {
-    color: $text-Yellow;
+  color: $text-Yellow;
 }
 
 /* Orange Hover Effect */
 .text-hov-Orange:hover {
-    color: $text-Orange;
+  color: $text-Orange;
 }
 
 /* Purple Hover Effect */
 .text-hov-Purple:hover {
-    color: $text-Purple;
+  color: $text-Purple;
 }
 
 /* Pink Hover Effect */
 .text-hov-Pink:hover {
-    color: $text-Pink;
+  color: $text-Pink;
 }
 
 /* Teal Hover Effect */
 .text-hov-Teal:hover {
-    color: $text-Teal;
+  color: $text-Teal;
 }
 
 /* Brown Hover Effect */
 .text-hov-Brown:hover {
-    color: $text-Brown;
+  color: $text-Brown;
 }
 
 /* Gray Hover Effect */
 .text-hov-Gray:hover {
-    color: $text-Gray;
+  color: $text-Gray;
 }
 
 /* Cyan Hover Effect */
 .text-hov-Cyan:hover {
-    color: $text-Cyan;
+  color: $text-Cyan;
 }
-
 
 /* Gold Hover Effect */
 .text-hov-Gold:hover {
-    color: $text-Gold;
+  color: $text-Gold;
 }
 
 /* Indigo Hover Effect */
 .text-hov-Indigo:hover {
-    color: $text-Indigo;
+  color: $text-Indigo;
 }
 
 /* Violet Hover Effect */
 .text-hov-Violet:hover {
-    color: $text-Violet;
+  color: $text-Violet;
 }
 
 /* Salmon Hover Effect */
 
 .text-hov-Salmon:hover {
-    color: $text-Salmon;
+  color: $text-Salmon;
 }
 
 /* Light Salmon Hover Effect */
 
 .text-hov-LightSalmon:hover {
-    color: $text-LightSalmon;
+  color: $text-LightSalmon;
 }
 
 /* Light Pink Hover Effect */
 
 .text-hov-LightPink:hover {
-    color: $text-LightPink;
+  color: $text-LightPink;
 }
 
 /* Light Coral Hover Effect */
 
 .text-hov-LightCoral:hover {
-    color: $text-LightCoral;
+  color: $text-LightCoral;
 }
-
 
 /* Light Golden Rod Yellow Hover Effect */
 
 .text-hov-LightGoldenRodYellow:hover {
-    color: $text-LightGoldenRodYellow;
+  color: $text-LightGoldenRodYellow;
 }
 
 /* Light Steel Blue Hover Effect */
 
 .text-hov-LightSteelBlue:hover {
-    color: $text-LightSteelBlue;
+  color: $text-LightSteelBlue;
 }
-
 
 /* Light Sky Blue Hover Effect */
 
 .text-hov-LightSkyBlue:hover {
-    color: $text-LightSkyBlue;
+  color: $text-LightSkyBlue;
 }
 
-
-
-
 // TEXT SHADOW
-.text-shad- {
-    &Black {
-        text-shadow: 2px 2px 2px $text-Black;
-    }
+.text-shad-,
+.text-shadow- {
+  &Black {
+    text-shadow: 2px 2px 2px $text-Black;
+  }
 
-    &Gray {
-        text-shadow: 2px 2px 2px $text-Gray;
-    }
+  &Gray {
+    text-shadow: 2px 2px 2px $text-Gray;
+  }
 
-    &White {
-        text-shadow: 2px 2px 2px $text-White;
-    }
+  &White {
+    text-shadow: 2px 2px 2px $text-White;
+  }
 
-    &Red {
-        text-shadow: 2px 2px 2px $text-Red;
-    }
+  &Red {
+    text-shadow: 2px 2px 2px $text-Red;
+  }
 
-    &Green {
-        text-shadow: 2px 2px 2px $text-Green;
-    }
+  &Green {
+    text-shadow: 2px 2px 2px $text-Green;
+  }
 
-    &Blue {
-        text-shadow: 2px 2px 2px $text-Blue;
-    }
+  &Blue {
+    text-shadow: 2px 2px 2px $text-Blue;
+  }
 
-    &Yellow {
-        text-shadow: 2px 2px 2px $text-Yellow;
-    }
+  &Yellow {
+    text-shadow: 2px 2px 2px $text-Yellow;
+  }
 
-    &Cyan {
-        text-shadow: 2px 2px 2px $text-Cyan;
-    }
+  &Cyan {
+    text-shadow: 2px 2px 2px $text-Cyan;
+  }
 
-    &Magenta {
-        text-shadow: 2px 2px 2px $text-Magenta;
-    }
+  &Magenta {
+    text-shadow: 2px 2px 2px $text-Magenta;
+  }
 
-    &Purple {
-        text-shadow: 2px 2px 2px $text-Purple;
-    }
+  &Purple {
+    text-shadow: 2px 2px 2px $text-Purple;
+  }
 
-    &Orange {
-        text-shadow: 2px 2px 2px $text-Orange;
-    }
+  &Orange {
+    text-shadow: 2px 2px 2px $text-Orange;
+  }
 
-    &Pink {
-        text-shadow: 2px 2px 2px $text-Pink;
-    }
+  &Pink {
+    text-shadow: 2px 2px 2px $text-Pink;
+  }
 
-    &Gold {
-        text-shadow: 2px 2px 2px $text-Gold;
-    }
+  &Gold {
+    text-shadow: 2px 2px 2px $text-Gold;
+  }
 
-    &Silver {
-        text-shadow: 2px 2px 2px $text-Silver;
-    }
+  &Silver {
+    text-shadow: 2px 2px 2px $text-Silver;
+  }
 
-    &Brown {
-        text-shadow: 2px 2px 2px $text-Brown;
+  &Brown {
+    text-shadow: 2px 2px 2px $text-Brown;
+  }
+}
+.text- {
+  &u {
+    text-decoration: underline;
+  }
+  &o {
+    text-decoration: overline;
+  }
+  &l {
+    text-decoration: line-through;
+  }
+  &n,
+  &none {
+    text-decoration: none;
+  }
+  &dotted {
+    text-decoration: underline dotted;
+  }
+  &dashed {
+    text-decoration: underline dashed;
+  }
+  &double {
+    text-decoration: underline double;
+  }
+  &wavy {
+    text-decoration: underline wavy;
+  }
+  &u-overline {
+    text-decoration: underline overline;
+  }
+  &u-dotted {
+    text-decoration: underline overline dotted;
+  }
+  &u-dashed {
+    text-decoration: underline overline dashed;
+  }
+  &u-double {
+    text-decoration: underline overline double;
+  }
+  &u-wavy {
+    text-decoration: underline overline wavy;
+  }
+
+  &hov- {
+    &u:hover {
+      text-decoration: underline;
     }
+    &o:hover {
+      text-decoration: overline;
+    }
+    &l:hover {
+      text-decoration: line-through;
+    }
+    &n:hover,
+    &none:hover {
+      text-decoration: none;
+    }
+    &dotted:hover {
+      text-decoration: underline dotted;
+    }
+    &dashed:hover {
+      text-decoration: underline dashed;
+    }
+    &double:hover {
+      text-decoration: underline double;
+    }
+    &wavy:hover {
+      text-decoration: underline wavy;
+    }
+    &u-overline:hover {
+      text-decoration: underline overline;
+    }
+    &u-dotted:hover {
+      text-decoration: underline overline dotted;
+    }
+    &u-dashed:hover {
+      text-decoration: underline overline dashed;
+    }
+    &u-double:hover {
+      text-decoration: underline overline double;
+    }
+    &u-wavy:hover {
+      text-decoration: underline overline wavy;
+    }
+  }
 }

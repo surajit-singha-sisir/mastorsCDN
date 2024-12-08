@@ -178750,50 +178750,144 @@ BACKGROUND COLOR SETS
   color: #87cefa;
 }
 
-.text-shad-Black {
+.text-shad-Black,
+.text-shadow-Black {
   text-shadow: 2px 2px 2px #000000;
 }
-.text-shad-Gray {
+.text-shad-Gray,
+.text-shadow-Gray {
   text-shadow: 2px 2px 2px #808080;
 }
-.text-shad-White {
+.text-shad-White,
+.text-shadow-White {
   text-shadow: 2px 2px 2px #ffffff;
 }
-.text-shad-Red {
+.text-shad-Red,
+.text-shadow-Red {
   text-shadow: 2px 2px 2px #ff0000;
 }
-.text-shad-Green {
+.text-shad-Green,
+.text-shadow-Green {
   text-shadow: 2px 2px 2px #00ff00;
 }
-.text-shad-Blue {
+.text-shad-Blue,
+.text-shadow-Blue {
   text-shadow: 2px 2px 2px #0000ff;
 }
-.text-shad-Yellow {
+.text-shad-Yellow,
+.text-shadow-Yellow {
   text-shadow: 2px 2px 2px #ffff00;
 }
-.text-shad-Cyan {
+.text-shad-Cyan,
+.text-shadow-Cyan {
   text-shadow: 2px 2px 2px #00ffff;
 }
-.text-shad-Magenta {
+.text-shad-Magenta,
+.text-shadow-Magenta {
   text-shadow: 2px 2px 2px #ff00ff;
 }
-.text-shad-Purple {
+.text-shad-Purple,
+.text-shadow-Purple {
   text-shadow: 2px 2px 2px #800080;
 }
-.text-shad-Orange {
+.text-shad-Orange,
+.text-shadow-Orange {
   text-shadow: 2px 2px 2px #ffa500;
 }
-.text-shad-Pink {
+.text-shad-Pink,
+.text-shadow-Pink {
   text-shadow: 2px 2px 2px #ffc0cb;
 }
-.text-shad-Gold {
+.text-shad-Gold,
+.text-shadow-Gold {
   text-shadow: 2px 2px 2px #ffd700;
 }
-.text-shad-Silver {
+.text-shad-Silver,
+.text-shadow-Silver {
   text-shadow: 2px 2px 2px #c0c0c0;
 }
-.text-shad-Brown {
+.text-shad-Brown,
+.text-shadow-Brown {
   text-shadow: 2px 2px 2px #d2b48c;
+}
+
+.text-u {
+  text-decoration: underline;
+}
+.text-o {
+  text-decoration: overline;
+}
+.text-l {
+  text-decoration: line-through;
+}
+.text-n, .text-none {
+  text-decoration: none;
+}
+.text-dotted {
+  text-decoration: underline dotted;
+}
+.text-dashed {
+  text-decoration: underline dashed;
+}
+.text-double {
+  text-decoration: underline double;
+}
+.text-wavy {
+  text-decoration: underline wavy;
+}
+.text-u-overline {
+  text-decoration: underline overline;
+}
+.text-u-dotted {
+  text-decoration: underline overline dotted;
+}
+.text-u-dashed {
+  text-decoration: underline overline dashed;
+}
+.text-u-double {
+  text-decoration: underline overline double;
+}
+.text-u-wavy {
+  text-decoration: underline overline wavy;
+}
+.text-hov-u:hover {
+  text-decoration: underline;
+}
+.text-hov-o:hover {
+  text-decoration: overline;
+}
+.text-hov-l:hover {
+  text-decoration: line-through;
+}
+.text-hov-n:hover, .text-hov-none:hover {
+  text-decoration: none;
+}
+.text-hov-dotted:hover {
+  text-decoration: underline dotted;
+}
+.text-hov-dashed:hover {
+  text-decoration: underline dashed;
+}
+.text-hov-double:hover {
+  text-decoration: underline double;
+}
+.text-hov-wavy:hover {
+  text-decoration: underline wavy;
+}
+.text-hov-u-overline:hover {
+  text-decoration: underline overline;
+}
+.text-hov-u-dotted:hover {
+  text-decoration: underline overline dotted;
+}
+.text-hov-u-dashed:hover {
+  text-decoration: underline overline dashed;
+}
+.text-hov-u-double:hover {
+  text-decoration: underline overline double;
+}
+.text-hov-u-wavy:hover {
+  text-decoration: underline overline wavy;
 }
 
 /* //FONT-SIZE TOP RIGHT BOTTOM LEFT */
