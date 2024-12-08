@@ -62,6 +62,7 @@ a {
 .cdn-hamb {
   position: relative;
   border: 1px solid #2e2e2e !important;
+  z-index: 11;
 }
 
 /* MAIN DESIGN */
@@ -85,6 +86,7 @@ nav.nav {
   scrollbar-width: none;
   scroll-behavior: smooth;
   padding-bottom: 4rem;
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
@@ -105,8 +107,8 @@ nav.nav {
 }
 /* JSU */
 .media-main {
-  width: calc(100% - 12.5rem) !important;
-  margin-left: 11rem !important;
+  /* width: calc(100% - 12.5rem) !important;
+  margin-left: 11rem !important; */
   transition: all 0.3s ease;
 }
 

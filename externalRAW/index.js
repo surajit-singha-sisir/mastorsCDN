@@ -60,20 +60,20 @@ function handleSwipe() {
 
 // Click event handler
 function handleClick(event) {
-  const hamburger = document.querySelector(".hamburger");
+  const hamburger = document.querySelector("#hambID");
   const nav = document.getElementById("media-nav");
 
-  if (hamburger.contains(event.target) || nav.contains(event.target)) {
+  if (hamburger.contains(event.target) ) {
     hambFunc(hamburger);
-  } else if (!nav.contains(event.target) && nav.classList.contains("media-nav")) {
+  } else if (!nav.contains(event.target) ) {
     hambFunc(hamburger);
   }
 }
 
 // Initialize controls
 function initializeMenuControls() {
-  document.addEventListener("click", handleClick);
   handleSwipe();
+  document.addEventListener("click", handleClick);
 }
 
 // Toggle menu classes

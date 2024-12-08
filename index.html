@@ -16,9 +16,9 @@
 
 <body class="bg w-100 h-auto">
 
-    <header class="fixed h--50 t-00 l-00 w-100 ibg pad-tb--10 z-10 dropShadow f f-just-between f-align-items-center">
+    <header class="fixed h--50 t-00 l-00 w-100 ibg pad-tb--10 z-10 dropShadow f f-just-between f-align-items-center z-11">
         <section class="m-l--15 f gap-10">
-            <div class="hamburger cdn-hamb">
+            <div class="hamburger cdn-hamb" id="hambID">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -27,7 +27,7 @@
                 <img class="w-100" src="./Resources/svg/logo/mastorsCDN-darkbg.svg" alt="Logo">
             </div>
         </section>
-        
+
         <section class="m-r--15">
             <div class="theme-toggle-container">
                 <button id="theme-toggle" class="btn btn-outline-warning theme-toggle" aria-label="Toggle Theme">
@@ -83,7 +83,7 @@
     <!-- MAIN START -->
     <main class="main relative m-l--110 m-r--15 m-t--60" id="media-main">
 
-        <div class="button-container">
+        <div id="button" class="button-container">
             <!-- Primary Buttons -->
             <button type="button" class="btn btn-xsm btn-primary" aria-label="Primary">Primary</button>
             <button type="button" class="btn btn-sm btn-primary" aria-label="Primary">Primary</button>
