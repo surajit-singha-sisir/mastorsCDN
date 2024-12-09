@@ -4,8 +4,8 @@
 
 :root {
   --bg-light: #ffffff;
-  --text-light: #000000;
-  --bg-dark: #121212;
+  --text-light: #1d1d1d;
+  --bg-dark: #292929;
   --text-dark: #ffffff;
   --transition-duration: 0.3s;
 }
@@ -140,4 +140,130 @@ nav.nav .left-nav li:last-child {
   overflow-x: hidden;
   overflow-y: scroll;
   transition: all 0.3s ease;
+}
+
+/* COPY CODE CSS */
+.msr-jsContainer {
+  position: relative;
+  width: max-content;
+}
+
+@media screen and (max-width: 1080px) {
+  .msr-jsContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.msr-copyCode {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -2rem;
+  background-color: #c9c9c9;
+  background-color: #a7a7a7;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.msr-copyCode:hover {
+  background-color: #7f7f7f;
+  transition: all 0.2s ease;
+}
+/* JSU */
+.click-smoke::before {
+  content: attr(target-smoke);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.7rem;
+  background-color: #7f7f7f;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  animation: smoke 1s ease;
+}
+
+@keyframes smoke {
+  0% {
+    bottom: 50%;
+    opacity: 1;
+  }
+  100% {
+    bottom: 150%;
+    opacity: 0;
+  }
+}
+
+/* BUTTON CONTAINER */
+.button-container,
+.buttons-group {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.m-doc-flex {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.msr-needToCopy {
+  margin: 1rem 0;
+  overflow: scroll;
+  width: 100%;
+  scrollbar-width: none;
+}
+.msr-needToCopy code[class*="language-"] {
+  display: block;
+  width: 100%;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  background: #eeeeee;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+}
+
+/* DOCUMENTAITON TEXT DESIGNS */
+table.cdn-table {
+  width: 70%;
+  border-collapse: collapse;
+  padding: 1rem 0;
+}
+.cdn-table th,
+.cdn-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+table.cdn-table th {
+  background-color: #f4f4f4;
+}
+
+table.cdn-table td > code {
+  background-color: #e6e6e6;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+table.cdn-table td > code:hover {
+  background-color: #bdbdbd;
+}
+
+@media screen and (max-width: 1080px) {
+  table.cdn-table {
+    width: 100%;
+  }
 }

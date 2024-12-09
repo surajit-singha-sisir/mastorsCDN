@@ -1,6 +1,6 @@
 // NAV-1 JS
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
   function initializeHamburgerMenu() {
     const hamburger = document.querySelector(".hamburger");
     const ul = document.querySelector(".header-2-col .col-2");

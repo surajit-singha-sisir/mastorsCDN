@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void Use Cases Example</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Void Use Cases Example</h1>
+
+    <!-- Prevent Link Navigation -->
+    <h2>Prevent Link Navigation</h2>
+    <a href="javascript:void(0)" onclick="alert('Link clicked!')">Click me to prevent navigation</a>
+
+    <br><br>
+
+    <!-- Restart Animations -->
+    <h2>Restart Animations</h2>
+    <button id="restartButton">Restart Animation</button>
+    <div id="animationBox"
+        style="width: 100px; height: 100px; background-color: lightblue; animation: move 3s infinite;">
+        Animated Box
+    </div>
+
+    <br><br>
+
+    <!-- Bookmarklets -->
+    <h2>Bookmarklets</h2>
+    <a href="javascript:void(alert('Hi!'))">Click me for bookmarklet</a>
+
+    <br><br>
+
+    <!-- Ignore Function Results -->
+    <h2>Ignore Function Results</h2>
+    <button onclick="voidFunction()">Click me to ignore function result</button>
+
+    <br><br>
+
+    <!-- Debugging Suppression -->
+    <h2>Debugging Suppression</h2>
+    <button onclick="suppressDebugging()">Click to suppress debugging</button>
+
+    <br><br>
+
+    <h2>Event Listener No-op</h2>
+    <button id="noOpButton">Click me for no-op</button>
+    <script>
+
+        document.getElementById('restartButton').addEventListener('click', function () {
+            const box = document.getElementById('animationBox');
+            box.style.animation = 'none';
+            box.offsetWidth;
+            box.style.animation = '';
+        });
+
+        // Ignore Function Results
+        function voidFunction() {
+            return 'This result is ignored';
+        }
+
+        // Debugging Suppression
+        function suppressDebugging() {
+            void console.log('Suppress output'); // No output in console
+        }
+
+        // Event Listener No-op
+        document.getElementById('noOpButton').addEventListener('click', function () {
+            void handleClick();
+        });
+
+        function handleClick() {
+            console.log('This is a no-op handler');
+        }
+    </script>
+
+</body>
+
+</html>
