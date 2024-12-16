@@ -1,7 +1,27 @@
 /* ----------------------------------------------------------------
 BACKGROUND COLOR SETS
-----------------------------------------------------------------
+-------------------------------------------------------------------
 */
+.transparent {
+  background-color: transparent;
+  color: transparent;
+}
+.transparenti {
+  background-color: transparent !important;
+  color: transparent !important;
+}
+.bg-0,
+.bg-o,
+.bg-nill,
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-0i,
+.bg-oi,
+.bg-nilli,
+.bg-transparenti {
+  background-color: transparent !important;
+}
 .bg-Black,
 .bg-Bla,
 .bg-Blk,
@@ -1020,4 +1040,3 @@ $bg-SBr: #f4a460;
 $bg-Sandy: #f4a460;
 $bg-f4a460: #f4a460;
 $পেছন-স্যান্ডি-ব্রাউন: #f4a460;
-

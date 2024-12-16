@@ -1,257 +1,307 @@
 @use "../roots/root-default" as *;
 
+.text-0, .text-transparent, .text-o, .text-none {
+  color: transparent;
+}
+.text-0i, .text-transparenti, .text-oi, .text-nonei {
+  color: transparent !important;
+}
 .White {
-    color: var(--white);
+  color: var(--white);
 }
 
 .Black {
-    color: var(--black);
+  color: var(--black);
 }
 
 .Red {
-    color: var(--red);
+  color: var(--red);
 }
 
 .Green {
-    color: var(--green);
+  color: var(--green);
 }
 
 .Blue {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .Yellow {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .Cyan {
-    color: var(--cyan);
+  color: var(--cyan);
 }
 
 .Magenta {
-    color: var(--magenta);
+  color: var(--magenta);
 }
 
 .Gray {
-    color: var(--gray);
+  color: var(--gray);
 }
 
 .Silver {
-    color: var(--silver);
+  color: var(--silver);
 }
 
 .Maroon {
-    color: var(--maroon);
+  color: var(--maroon);
 }
 
 .Olive {
-    color: var(--olive);
+  color: var(--olive);
 }
 
 .Lime {
-    color: var(--lime);
+  color: var(--lime);
 }
 
 .Teal {
-    color: var(--teal);
+  color: var(--teal);
 }
 
 .Navy {
-    color: var(--navy);
+  color: var(--navy);
 }
 
 .Purple {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 .Aqua {
-    color: var(--aqua);
+  color: var(--aqua);
 }
 
 .Fuchsia {
-    color: var(--fuchsia);
+  color: var(--fuchsia);
 }
 
 .Orange {
-    color: var(--orange);
+  color: var(--orange);
 }
 
 .Brown {
-    color: var(--brown);
+  color: var(--brown);
 }
 
 .Pink {
-    color: var(--pink);
+  color: var(--pink);
 }
 
 .Gold {
-    color: var(--gold);
+  color: var(--gold);
 }
 
 .Beige {
-    color: var(--beige);
+  color: var(--beige);
 }
 
 .Ivory {
-    color: var(--ivory);
+  color: var(--ivory);
 }
 
 .Lavender {
-    color: var(--lavender);
+  color: var(--lavender);
 }
 
 .Turquoise {
-    color: var(--turquoise);
+  color: var(--turquoise);
 }
 
 .Peach {
-    color: var(--peach);
+  color: var(--peach);
 }
 
 .Coral {
-    color: var(--coral);
+  color: var(--coral);
 }
 
 .Crimson {
-    color: var(--crimson);
+  color: var(--crimson);
 }
 
 .Khaki {
-    color: var(--khaki);
+  color: var(--khaki);
 }
 
 .Salmon {
-    color: var(--salmon);
+  color: var(--salmon);
 }
 
 .Plum {
-    color: var(--plum);
+  color: var(--plum);
 }
 
 .Orchid {
-    color: var(--orchid);
+  color: var(--orchid);
 }
 
 .Chocolate {
-    color: var(--chocolate);
+  color: var(--chocolate);
 }
 
 .Tan {
-    color: var(--tan);
+  color: var(--tan);
 }
 
 .Sienna {
-    color: var(--sienna);
+  color: var(--sienna);
 }
 
 .Indigo {
-    color: var(--indigo);
+  color: var(--indigo);
 }
 
 .LimeGreen {
-    color: var(--limegreen);
+  color: var(--limegreen);
 }
 
 .ForestGreen {
-    color: var(--forestgreen);
+  color: var(--forestgreen);
 }
 
 .DarkGreen {
-    color: var(--darkgreen);
+  color: var(--darkgreen);
 }
 
 .MidnightBlue {
-    color: var(--midnightblue);
+  color: var(--midnightblue);
 }
 
 .DodgerBlue {
-    color: var(--dodgerblue);
+  color: var(--dodgerblue);
 }
 
 .SlateGray {
-    color: var(--slategray);
+  color: var(--slategray);
 }
 
 .RosyBrown {
-    color: var(--rosybrown);
+  color: var(--rosybrown);
 }
 
 .Firebrick {
-    color: var(--firebrick);
+  color: var(--firebrick);
 }
 
 .Tomato {
-    color: var(--tomato);
+  color: var(--tomato);
 }
 
 .SeaGreen {
-    color: var(--seagreen);
+  color: var(--seagreen);
 }
 
 .PaleGoldenRod {
-    color: var(--palegoldenrod);
+  color: var(--palegoldenrod);
 }
 
 .DarkOrange {
-    color: var(--darkorange);
+  color: var(--darkorange);
 }
 
 .LightCoral {
-    color: var(--lightcoral);
+  color: var(--lightcoral);
 }
 
 .DeepPink {
-    color: var(--deeppink);
+  color: var(--deeppink);
 }
 
 .HotPink {
-    color: var(--hotpink);
+  color: var(--hotpink);
 }
 
 .LightSeaGreen {
-    color: var(--lightseagreen);
+  color: var(--lightseagreen);
 }
 
 .RoyalBlue {
-    color: var(--royalblue);
+  color: var(--royalblue);
 }
 
 .Peru {
-    color: var(--peru);
+  color: var(--peru);
 }
 
 .SlateBlue {
-    color: var(--slateblue);
+  color: var(--slateblue);
 }
 
 .SpringGreen {
-    color: var(--springgreen);
+  color: var(--springgreen);
 }
 
 .SteelBlue {
-    color: var(--steelblue);
+  color: var(--steelblue);
 }
 
 .DarkSlateGray {
-    color: var(--darkslategray);
+  color: var(--darkslategray);
 }
 
 .PaleVioletRed {
-    color: var(--palevioletred);
+  color: var(--palevioletred);
 }
 
 .GoldenRod {
-    color: var(--goldenrod);
+  color: var(--goldenrod);
 }
 
 .Violet {
-    color: var(--violet);
+  color: var(--violet);
 }
 
 .LightPink {
-    color: var(--lightpink);
+  color: var(--lightpink);
+}
+.lightGray {
+  color: var(--light-gray);
+}
+.darkGray {
+  color: var(--dark-gray);
+}
+.dark {
+  color: var(--dark);
+}
+.lightDark {
+  color: var(--light-dark);
+}
+.darkDark {
+  color: var(--dark-dark);
+}
+.darkSlateGray {
+  color: var(--dark-slate-gray);
+}
+.darkBlue {
+  color: var(--dark-blue);
+}
+.darkGreen {
+  color: var(--dark-green);
+}
+.darkRed {
+  color: var(--dark-red);
+}
+.darkCyan {
+  color: var(--dark-cyan);
+}
+.darkMagenta {
+  color: var(--dark-magenta);
 }
 
+.darkGoldenrod {
+  color: var(--dark-goldenrod);
+}
+
+.veryDarkGray {
+  color: var(--very-dark-gray);
+}
+
+.offBlack {
+  color: var(--off-black);
+}
 
 // COLOR VARIENTS
 // Gray Shades
