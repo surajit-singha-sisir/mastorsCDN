@@ -1,192 +1,123 @@
 @use "../text-design/fontColors-vars" as *;
 
 /* TEXT HOVER */
-
-/* White Hover Effect */
-.text-hov-White:hover {
-  color: $text-White;
-}
-
-/* Black Hover Effect */
-.text-hov-Black:hover {
-  color: $text-Black;
-}
-
-/* Blue Hover Effect */
-.text-hov-Blue:hover {
-  color: $text-Blue;
-}
-
-/* Red Hover Effect */
-.text-hov-Red:hover {
-  color: $text-Red;
-}
-
-/* Green Hover Effect */
-.text-hov-Green:hover {
-  color: $text-Green;
-}
-
-/* Yellow Hover Effect */
-.text-hov-Yellow:hover {
-  color: $text-Yellow;
-}
-
-/* Orange Hover Effect */
-.text-hov-Orange:hover {
-  color: $text-Orange;
-}
-
-/* Purple Hover Effect */
-.text-hov-Purple:hover {
-  color: $text-Purple;
-}
-
-/* Pink Hover Effect */
-.text-hov-Pink:hover {
-  color: $text-Pink;
-}
-
-/* Teal Hover Effect */
-.text-hov-Teal:hover {
-  color: $text-Teal;
-}
-
-/* Brown Hover Effect */
-.text-hov-Brown:hover {
-  color: $text-Brown;
-}
-
-/* Gray Hover Effect */
-.text-hov-Gray:hover {
-  color: $text-Gray;
-}
-
-/* Cyan Hover Effect */
-.text-hov-Cyan:hover {
-  color: $text-Cyan;
-}
-
-/* Gold Hover Effect */
-.text-hov-Gold:hover {
-  color: $text-Gold;
-}
-
-/* Indigo Hover Effect */
-.text-hov-Indigo:hover {
-  color: $text-Indigo;
-}
-
-/* Violet Hover Effect */
-.text-hov-Violet:hover {
-  color: $text-Violet;
-}
-
-/* Salmon Hover Effect */
-
-.text-hov-Salmon:hover {
-  color: $text-Salmon;
-}
-
-/* Light Salmon Hover Effect */
-
-.text-hov-LightSalmon:hover {
-  color: $text-LightSalmon;
-}
-
-/* Light Pink Hover Effect */
-
-.text-hov-LightPink:hover {
-  color: $text-LightPink;
-}
-
-/* Light Coral Hover Effect */
-
-.text-hov-LightCoral:hover {
-  color: $text-LightCoral;
-}
-
-/* Light Golden Rod Yellow Hover Effect */
-
-.text-hov-LightGoldenRodYellow:hover {
-  color: $text-LightGoldenRodYellow;
-}
-
-/* Light Steel Blue Hover Effect */
-
-.text-hov-LightSteelBlue:hover {
-  color: $text-LightSteelBlue;
-}
-
-/* Light Sky Blue Hover Effect */
-
-.text-hov-LightSkyBlue:hover {
-  color: $text-LightSkyBlue;
-}
-
-// TEXT SHADOW
-.text-shad-,
-.text-shadow- {
-  &Black {
-    text-shadow: 2px 2px 2px $text-Black;
+@each $color,
+  $value
+    in (
+      Brown: $brown,
+      Silver: $silver,
+      Maroon: $maroon,
+      Olive: $olive,
+      Navy: $navy,
+      YellowGreen: $yellowGreen,
+      OliveDrab: $oliveDrab,
+      GreenYellow: $greenYellow,
+      LimeGreen: $limeGreen,
+      PaleGreen: $paleGreen,
+      DarkSeaGreen: $darkSeaGreen,
+      MediumSeaGreen: $mediumSeaGreen,
+      SeaGreen: $seaGreen,
+      ForestGreen: $forestGreen,
+      LightGray: $lightGray,
+      Lavender: $lavender,
+      MistyRose: $mistyRose,
+      NavajoWhite: $navajoWhite,
+      Wheat: $wheat,
+      AntiqueWhite: $antiqueWhite,
+      Cornsilk: $cornsilk,
+      Khaki: $khaki,
+      Beige: $beige,
+      PapayaWhip: $papayaWhip,
+      BlanchedAlmond: $blanchedAlmond,
+      HoneyDew: $honeyDew,
+      MintCream: $mintCream,
+      AliceBlue: $aliceBlue,
+      Tomato: $tomato,
+      Orchid: $orchid,
+      Turquoise: $turquoise,
+      DarkRed: $darkRed,
+      DarkBlue: $darkBlue,
+      DarkGreen: $darkGreen,
+      Peru: $peru,
+      Chocolate: $chocolate,
+      Plum: $plum,
+      Sienna: $sienna,
+      Snow: $snow,
+      Tan: $tan,
+      MediumPurple: $mediumPurple,
+      MediumOrchid: $mediumOrchid,
+      MediumTurquoise: $mediumTurquoise,
+      SlateBlue: $slateBlue,
+      SlateGray: $slateGray,
+      SpringGreen: $springGreen,
+      SandyBrown: $sandyBrown,
+      Crimson: $crimson,
+      DeepPink: $deepPink,
+      DodgerBlue: $dodgerBlue,
+      Gold: $gold,
+      IndianRed: $indianRed,
+      LightCoral: $lightCoral,
+      LightSalmon: $lightSalmon,
+      LightSeaGreen: $lightSeaGreen,
+      Lime: $lime,
+      Magenta: $magenta,
+      Orange: $orange,
+      Orangered: $orangered,
+      PaleTurquoise: $paleTurquoise,
+      RoyalBlue: $royalBlue,
+      SkyBlue: $skyBlue,
+      SteelBlue: $steelBlue,
+      Violet: $violet,
+      Teal: $teal,
+      White: $white,
+      Black: $black,
+      Red: $red,
+      Green: $green,
+      Blue: $blue,
+      Yellow: $yellow,
+      Cyan: $cyan,
+      Gray: $gray,
+      DarkGray: $darkGray,
+      Dark: $dark,
+      LightDark: $lightDark,
+      DarkDark: $darkDark,
+      DarkSlateGray: $darkSlateGray,
+      DarkCyan: $darkCyan,
+      DarkMagenta: $darkMagenta,
+      DarkGoldenrod: $darkGoldenrod,
+      VeryDarkGray: $veryDarkGray,
+      OffBlack: $offBlack,
+      MidnightBlue: $midnightBlue,
+      RosyBrown: $rosyBrown,
+      Firebrick: $firebrick,
+      PaleGoldenrod: $paleGoldenrod,
+      DarkOrange: $darkOrange,
+      HotPink: $hotPink,
+      PaleVioletRed: $paleVioletRed,
+      Goldenrod: $goldenrod,
+      LightPink: $lightPink
+    )
+{
+  .text-hov-#{$color}:hover {
+    color: $value;
   }
 
-  &Gray {
-    text-shadow: 2px 2px 2px $text-Gray;
+  // Basic text shadow using color
+  .text-shad-#{$color}, .text-shadow-#{$color} {
+    text-shadow: 2px 2px 4px $value;
   }
 
-  &White {
-    text-shadow: 2px 2px 2px $text-White;
-  }
-
-  &Red {
-    text-shadow: 2px 2px 2px $text-Red;
-  }
-
-  &Green {
-    text-shadow: 2px 2px 2px $text-Green;
-  }
-
-  &Blue {
-    text-shadow: 2px 2px 2px $text-Blue;
-  }
-
-  &Yellow {
-    text-shadow: 2px 2px 2px $text-Yellow;
-  }
-
-  &Cyan {
-    text-shadow: 2px 2px 2px $text-Cyan;
-  }
-
-  &Magenta {
-    text-shadow: 2px 2px 2px $text-Magenta;
-  }
-
-  &Purple {
-    text-shadow: 2px 2px 2px $text-Purple;
-  }
-
-  &Orange {
-    text-shadow: 2px 2px 2px $text-Orange;
-  }
-
-  &Pink {
-    text-shadow: 2px 2px 2px $text-Pink;
-  }
-
-  &Gold {
-    text-shadow: 2px 2px 2px $text-Gold;
-  }
-
-  &Silver {
-    text-shadow: 2px 2px 2px $text-Silver;
-  }
-
-  &Brown {
-    text-shadow: 2px 2px 2px $text-Brown;
+  // SHADOW ON HOVER
+  .text-shad-hov-#{$color}:hover, .text-shadow-hov-#{$color}:hover {
+    text-shadow: 2px 2px 4px $value;
   }
 }
+
+
+
+
+
+
 .text- {
   &u {
     text-decoration: underline;

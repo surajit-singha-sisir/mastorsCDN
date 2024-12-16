@@ -17,7 +17,21 @@
   --yellow: #ffff00;
   --cyan: #00ffff;
   --magenta: #ff00ff;
-  --gray: #808080;
+  --gray: #808080; /* Standard Gray */
+  --light-gray: #d3d3d3; /* Light Gray */
+  --dark-gray: #a9a9a9; /* Dark Gray */
+  --dark: #a9a9a9; /* Base Dark */
+  --light-dark: #c0c0c0; /* Light Dark (Closer to Gray) */
+  --dark-dark: #707070; /* Dark Dark (Closer to Black) */
+  --dark-slate-gray: #2f4f4f;
+  --dark-blue: #00008b;
+  --dark-green: #006400;
+  --dark-red: #8b0000;
+  --dark-cyan: #008b8b;
+  --dark-magenta: #8b008b;
+  --dark-goldenrod: #b8860b;
+  --very-dark-gray: #1c1c1c;
+  --off-black: #101010;
   --silver: #c0c0c0;
   --maroon: #800000;
   --olive: #808000;
@@ -52347,8 +52361,32 @@ CURSOR CLASSES
 
 /* ----------------------------------------------------------------
 BACKGROUND COLOR SETS
-----------------------------------------------------------------
+-------------------------------------------------------------------
 */
+.transparent {
+  background-color: transparent;
+  color: transparent;
+}
+
+.transparenti {
+  background-color: transparent !important;
+  color: transparent !important;
+}
+
+.bg-0,
+.bg-o,
+.bg-nill,
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-0i,
+.bg-oi,
+.bg-nilli,
+.bg-transparenti {
+  background-color: transparent !important;
+}
+
 .bg-Black,
 .bg-Bla,
 .bg-Blk,
@@ -178045,770 +178083,1847 @@ WIDTH IN REM SIZE
 /* CATEGORY PAGE END */
 /* ----------------------------------------------------------------
 BACKGROUND COLOR SETS
-----------------------------------------------------------------
+-------------------------------------------------------------------
 */
-.text-Black,
-.Black,
-.text-Bla,
-.text-Blk,
-.text-Kalo,
-.text-000000,
-.কালো {
-  color: #000000;
+.text-Brown {
+  color: #a52a2a;
 }
 
-.text-White,
-.text-Whi,
-.text-Wht,
-.text-Sada,
-.text-ffffff,
-.সাদা {
-  color: #ffffff;
+.text-Browni {
+  color: #a52a2a !important;
 }
 
-.text-Red,
-.text-Re,
-.text-Rd,
-.text-Lal,
-.text-ff0000,
-.লাল {
-  color: #ff0000;
-}
-
-.text-Green,
-.text-Gre,
-.text-Grn,
-.text-Sobuj,
-.text-00ff00,
-.সবুজ {
-  color: #00ff00;
-}
-
-.text-Blue,
-.text-Blu,
-.text-Ble,
-.text-Nil,
-.text-0000ff,
-.নীল {
-  color: #0000ff;
-}
-
-.text-Orange,
-.text-Ora,
-.text-Org,
-.text-Komola,
-.text-ffa500,
-.কমলা {
-  color: #ffa500;
-}
-
-.text-Yellow,
-.text-Yel,
-.text-Ylw,
-.text-Holud,
-.text-ffff00,
-.হলুদ {
-  color: #ffff00;
-}
-
-.text-Purple,
-.text-Pur,
-.text-Prp,
-.text-Jam,
-.text-800080,
-.জামুন {
-  color: #800080;
-}
-
-.text-Cyan,
-.text-Cya,
-.text-Cyn,
-.text-Firoz,
-.text-00ffff,
-.ফিরোজা {
-  color: #00ffff;
-}
-
-.text-Gray,
-.text-Gra,
-.text-Gry,
-.text-Surma,
-.text-808080,
-.ধূসর {
-  color: #808080;
-}
-
-.text-Silver,
-.text-Sil,
-.text-Slv,
-.text-Chandi,
-.text-c0c0c0,
-.রুপা {
+.text-Silver {
   color: #c0c0c0;
 }
 
-.text-Maroon,
-.text-Mar,
-.text-Mrn,
-.text-Gorom,
-.text-800000,
-.গাঢ়-লাল {
+.text-Silveri {
+  color: #c0c0c0 !important;
+}
+
+.text-Maroon {
   color: #800000;
 }
 
-.text-Olive,
-.text-Oli,
-.text-Olv,
-.text-808000,
-.অলিভ {
+.text-Marooni {
+  color: #800000 !important;
+}
+
+.text-Olive {
   color: #808000;
 }
 
-.text-Teal,
-.text-Tea,
-.text-Tel,
-.text-Nilgiri,
-.text-008080,
-.নীল-সবুজ {
-  color: #008080;
+.text-Olivei {
+  color: #808000 !important;
 }
 
-.text-Navy,
-.text-Nav,
-.text-Nvy,
-.text-Nabi,
-.text-000080,
-.নেভি {
+.text-Navy {
   color: #000080;
 }
 
-.text-Fuchsia,
-.text-Fuc,
-.text-Fsh,
-.text-Gorib,
-.text-ff00ff,
-.ফুসিয়া {
-  color: #ff00ff;
+.text-Navyi {
+  color: #000080 !important;
 }
 
-.text-Pink,
-.text-Pin,
-.text-Pnk,
-.text-Gulabi,
-.text-ffc0cb,
-.গোলাপি {
-  color: #ffc0cb;
-}
-
-.text-YellowGreen,
-.text-YelGre,
-.text-YGr,
-.text-HoludSobuji,
-.text-9acd32,
-.হলুদ-সবুজ {
+.text-YellowGreen {
   color: #9acd32;
 }
 
-.text-OliveDrab,
-.text-OliDra,
-.text-ODb,
-.text-6b8e23,
-.অলিভ-ড্র্যাব {
+.text-YellowGreeni {
+  color: #9acd32 !important;
+}
+
+.text-OliveDrab {
   color: #6b8e23;
 }
 
-.text-GreenYellow,
-.text-GreYel,
-.text-GYl,
-.text-adff2f,
-.সবুজ-হলুদ {
+.text-OliveDrabi {
+  color: #6b8e23 !important;
+}
+
+.text-GreenYellow {
   color: #adff2f;
 }
 
-.text-LimeGreen,
-.text-LimGre,
-.text-LGr,
-.text-Paal,
-.text-32cd32,
-.লেবুর-সবুজ {
+.text-GreenYellowi {
+  color: #adff2f !important;
+}
+
+.text-LimeGreen {
   color: #32cd32;
 }
 
-.text-PaleGreen,
-.text-PalGre,
-.text-PGr,
-.text-98fb98,
-.ফিকে-সবুজ {
+.text-LimeGreeni {
+  color: #32cd32 !important;
+}
+
+.text-PaleGreen {
   color: #98fb98;
 }
 
-.text-DarkSeaGreen,
-.text-DarSeaGre,
-.text-DGr,
-.text-GaroSomudroSobuj,
-.text-8fbc8f,
-.গাঢ়-সাগর-সবুজ {
+.text-PaleGreeni {
+  color: #98fb98 !important;
+}
+
+.text-DarkSeaGreen {
   color: #8fbc8f;
 }
 
-.text-MediumSeaGreen,
-.text-MedSeaGre,
-.text-MGr,
-.text-3cb371,
-.মাঝারি-সাগর-সবুজ {
+.text-DarkSeaGreeni {
+  color: #8fbc8f !important;
+}
+
+.text-MediumSeaGreen {
   color: #3cb371;
 }
 
-.text-SeaGreen,
-.text-SeaGre,
-.text-SGr,
-.text-Samudrik,
-.text-2e8b57,
-.সাগর-সবুজ {
+.text-MediumSeaGreeni {
+  color: #3cb371 !important;
+}
+
+.text-SeaGreen {
   color: #2e8b57;
 }
 
-.text-ForestGreen,
-.text-ForGre,
-.text-FGr,
-.text-Jungle,
-.text-228b22,
-.জঙ্গল-সবুজ {
+.text-SeaGreeni {
+  color: #2e8b57 !important;
+}
+
+.text-ForestGreen {
   color: #228b22;
 }
 
-.text-LightGray,
-.text-LigGra,
-.text-LGr,
-.text-Halka,
-.text-d3d3d3,
-.হালকা-ধূসর {
+.text-ForestGreeni {
+  color: #228b22 !important;
+}
+
+.text-LightGray {
   color: #d3d3d3;
 }
 
-.text-LightCoral,
-.text-LigCor,
-.text-LCo,
-.text-Halka2,
-.text-f08080,
-.হালকা-করাল {
-  color: #f08080;
+.text-LightGrayi {
+  color: #d3d3d3 !important;
 }
 
-.text-LightSalmon,
-.text-LigSal,
-.text-LSa,
-.text-Ranga,
-.text-ffa07a,
-.হালকা-সালমনের {
-  color: #ffa07a;
-}
-
-.text-LightPink,
-.text-LigPin,
-.text-LPn,
-.text-Gulabi,
-.text-ffb6c1,
-.হালকা-গোলাপি {
-  color: #ffb6c1;
-}
-
-.text-LightGoldenRodYellow,
-.text-LigRodYel,
-.text-LGY,
-.text-Gora,
-.text-fafad2,
-.হালকা-স্বর্ণ-হলুদ {
-  color: #fafad2;
-}
-
-.text-LightSteelBlue,
-.text-LigSteBlu,
-.text-LSB,
-.text-b0c4de,
-.হালকা-স্টীল-নীল {
-  color: #b0c4de;
-}
-
-.text-LightSkyBlue,
-.text-LigSkyBlu,
-.text-LSk,
-.text-Aasman,
-.text-87cefa,
-.হালকা-আকাশ-নীল {
-  color: #87cefa;
-}
-
-.text-Lavender,
-.text-Lav,
-.text-Bangla,
-.text-e6e6fa,
-.ল্যাভেন্ডার {
+.text-Lavender {
   color: #e6e6fa;
 }
 
-.text-MistyRose,
-.text-MisRos,
-.text-MRo,
-.text-Gulabi,
-.text-ffe4e1,
-.ঝাপসা-গোলাপি {
+.text-Lavenderi {
+  color: #e6e6fa !important;
+}
+
+.text-MistyRose {
   color: #ffe4e1;
 }
 
-.text-NavajoWhite,
-.text-NavWhi,
-.text-NWh,
-.text-Poori,
-.text-ffdead,
-.নাভাজো-সাদা {
+.text-MistyRosei {
+  color: #ffe4e1 !important;
+}
+
+.text-NavajoWhite {
   color: #ffdead;
 }
 
-.text-Wheat,
-.text-Whe,
-.text-Ghee,
-.text-f5deb3,
-.গম {
+.text-NavajoWhitei {
+  color: #ffdead !important;
+}
+
+.text-Wheat {
   color: #f5deb3;
 }
 
-.text-AntiqueWhite,
-.text-AntWhi,
-.text-AWh,
-.text-Paakhi,
-.text-faebd7,
-.প্রাচীন-সাদা {
+.text-Wheati {
+  color: #f5deb3 !important;
+}
+
+.text-AntiqueWhite {
   color: #faebd7;
 }
 
-.text-Cornsilk,
-.text-Cor,
-.text-Maach,
-.text-fff8dc,
-.ভুট্টার-শুকনো {
+.text-AntiqueWhitei {
+  color: #faebd7 !important;
+}
+
+.text-Cornsilk {
   color: #fff8dc;
 }
 
-.text-Khaki,
-.text-Kha,
-.text-f0e68c,
-.খাকি {
+.text-Cornsilki {
+  color: #fff8dc !important;
+}
+
+.text-Khaki {
   color: #f0e68c;
 }
 
-.text-Beige,
-.text-Bei,
-.text-f5f5dc,
-.বেজ {
+.text-Khakii {
+  color: #f0e68c !important;
+}
+
+.text-Beige {
   color: #f5f5dc;
 }
 
-.text-PapayaWhip,
-.text-PapWhi,
-.text-PWh,
-.text-Papaya,
-.text-ffefd5,
-.পাপায়া {
+.text-Beigei {
+  color: #f5f5dc !important;
+}
+
+.text-PapayaWhip {
   color: #ffefd5;
 }
 
-.text-BlanchedAlmond,
-.text-BlaAlm,
-.text-BAl,
-.text-Almond,
-.text-ffebcd,
-.ব্লাঞ্চড-আলমন্ড {
+.text-PapayaWhipi {
+  color: #ffefd5 !important;
+}
+
+.text-BlanchedAlmond {
   color: #ffebcd;
 }
 
-.text-HoneyDew,
-.text-HonDew,
-.text-HDe,
-.text-Honey,
-.text-f0fff0,
-.হানি-ডিউ {
+.text-BlanchedAlmondi {
+  color: #ffebcd !important;
+}
+
+.text-HoneyDew {
   color: #f0fff0;
 }
 
-.text-MintCream,
-.text-MinCre,
-.text-MCr,
-.text-Mint,
-.text-f5fffa,
-.মিন্ট-ক্রীম {
+.text-HoneyDewi {
+  color: #f0fff0 !important;
+}
+
+.text-MintCream {
   color: #f5fffa;
 }
 
-.text-AliceBlue,
-.text-AliBlu,
-.text-ABl,
-.text-Alice,
-.text-f0f8ff,
-.অ্যালিস-নীল {
+.text-MintCreami {
+  color: #f5fffa !important;
+}
+
+.text-AliceBlue {
   color: #f0f8ff;
 }
 
-.text-Tomato,
-.text-Tom,
-.text-Tmt,
-.text-ff6347,
-.টমেটো {
+.text-AliceBluei {
+  color: #f0f8ff !important;
+}
+
+.text-Tomato {
   color: #ff6347;
 }
 
-.text-Orchid,
-.text-Orc,
-.text-da70d6,
-.অর্কিড {
+.text-Tomatoi {
+  color: #ff6347 !important;
+}
+
+.text-Orchid {
   color: #da70d6;
 }
 
-.text-Turquoise,
-.text-Tur,
-.text-Tqz,
-.text-40e0d0,
-.টারকোইজ {
+.text-Orchidi {
+  color: #da70d6 !important;
+}
+
+.text-Turquoise {
   color: #40e0d0;
 }
 
-.text-DarkRed,
-.text-DarRe,
-.text-DRd,
-.text-Dag,
-.text-8b0000,
-.গাঢ়-লাল {
+.text-Turquoisei {
+  color: #40e0d0 !important;
+}
+
+.text-DarkRed {
   color: #8b0000;
 }
 
-.text-DarkBlue,
-.text-DarBlu,
-.text-DBl,
-.text-GaroNil,
-.text-00008b,
-.গাঢ়-নীল {
+.text-DarkRedi {
+  color: #8b0000 !important;
+}
+
+.text-DarkBlue {
   color: #00008b;
 }
 
-.text-DarkGreen,
-.text-DarGre,
-.text-DGr,
-.text-Dhushar,
-.text-006400,
-.গাঢ়-সবুজ {
+.text-DarkBluei {
+  color: #00008b !important;
+}
+
+.text-DarkGreen {
   color: #006400;
 }
 
-.text-Indigo,
-.text-Ind,
-.text-Nay,
-.text-4b0082,
-.ইন্ডিগো {
-  color: #4b0082;
+.text-DarkGreeni {
+  color: #006400 !important;
 }
 
-.text-Violet,
-.text-Vio,
-.text-Bangla,
-.text-ee82ee,
-.ভায়োলেট {
-  color: #ee82ee;
-}
-
-.text-Peru,
-.text-Per,
-.text-cd853f,
-.পেরু {
+.text-Peru {
   color: #cd853f;
 }
 
-.text-Chocolate,
-.text-Cho,
-.text-d2691e,
-.চকোলেট {
+.text-Perui {
+  color: #cd853f !important;
+}
+
+.text-Chocolate {
   color: #d2691e;
 }
 
-.text-Gold,
-.text-Gol,
-.text-Sona,
-.text-ffd700,
-.সোনালী {
-  color: #ffd700;
+.text-Chocolatei {
+  color: #d2691e !important;
 }
 
-.text-Plum,
-.text-Plu,
-.text-Bengali,
-.text-dda0dd,
-.প্রম {
+.text-Plum {
   color: #dda0dd;
 }
 
-.text-Sienna,
-.text-Sie,
-.text-Keshari,
-.text-a0522d,
-.সিয়েনা {
+.text-Plumi {
+  color: #dda0dd !important;
+}
+
+.text-Sienna {
   color: #a0522d;
 }
 
-.text-Salmon,
-.text-Sal,
-.text-Ranga,
-.text-fa8072,
-.সালমন {
-  color: #fa8072;
+.text-Siennai {
+  color: #a0522d !important;
 }
 
-.text-Snow,
-.text-Sno,
-.text-Barish,
-.text-fffafa,
-.তুষার {
+.text-Snow {
   color: #fffafa;
 }
 
-.text-Tan,
-.text-Brown,
-.text-d2b48c,
-.ট্যান {
+.text-Snowi {
+  color: #fffafa !important;
+}
+
+.text-Tan {
   color: #d2b48c;
 }
 
-.text-MediumPurple,
-.text-MedPur,
-.text-MPr,
-.text-9370db,
-.মাঝারি-বেগুনি {
+.text-Tani {
+  color: #d2b48c !important;
+}
+
+.text-MediumPurple {
   color: #9370db;
 }
 
-.text-MediumOrchid,
-.text-MedOrc,
-.text-MOr,
-.text-ba55d3,
-.মাঝারি-অর্কিড {
+.text-MediumPurplei {
+  color: #9370db !important;
+}
+
+.text-MediumOrchid {
   color: #ba55d3;
 }
 
-.text-MediumTurquoise,
-.text-MedTur,
-.text-MTq,
-.text-48d1cc,
-.মাঝারি-টারকোইজ {
+.text-MediumOrchidi {
+  color: #ba55d3 !important;
+}
+
+.text-MediumTurquoise {
   color: #48d1cc;
 }
 
-.text-SlateBlue,
-.text-SlaBlu,
-.text-SBl,
-.text-6a5acd,
-.স্লেট-ব্লু {
+.text-MediumTurquoisei {
+  color: #48d1cc !important;
+}
+
+.text-SlateBlue {
   color: #6a5acd;
 }
 
-.text-SlateGray,
-.text-SlaGra,
-.text-SGr,
-.text-708090,
-.স্লেট-গ্রে {
+.text-SlateBluei {
+  color: #6a5acd !important;
+}
+
+.text-SlateGray {
   color: #708090;
 }
 
-.text-SpringGreen,
-.text-SprGre,
-.text-SGr,
-.text-Nobob,
-.text-00ff7f,
-.স্প্রিং-গ্রিন {
+.text-SlateGrayi {
+  color: #708090 !important;
+}
+
+.text-SpringGreen {
   color: #00ff7f;
 }
 
-.text-SandyBrown,
-.text-SanBro,
-.text-SBr,
-.text-Sandy,
-.text-f4a460,
-.স্যান্ডি-ব্রাউন {
+.text-SpringGreeni {
+  color: #00ff7f !important;
+}
+
+.text-SandyBrown {
   color: #f4a460;
 }
 
-/* TEXT HOVER */
-/* White Hover Effect */
-.text-hov-White:hover {
-  color: #ffffff;
+.text-SandyBrowni {
+  color: #f4a460 !important;
 }
 
-/* Black Hover Effect */
-.text-hov-Black:hover {
-  color: #000000;
+.text-Crimson {
+  color: #dc143c;
 }
 
-/* Blue Hover Effect */
-.text-hov-Blue:hover {
-  color: #0000ff;
+.text-Crimsoni {
+  color: #dc143c !important;
 }
 
-/* Red Hover Effect */
-.text-hov-Red:hover {
-  color: #ff0000;
+.text-DeepPink {
+  color: #ff1493;
 }
 
-/* Green Hover Effect */
-.text-hov-Green:hover {
+.text-DeepPinki {
+  color: #ff1493 !important;
+}
+
+.text-DodgerBlue {
+  color: #1e90ff;
+}
+
+.text-DodgerBluei {
+  color: #1e90ff !important;
+}
+
+.text-Gold {
+  color: #ffd700;
+}
+
+.text-Goldi {
+  color: #ffd700 !important;
+}
+
+.text-IndianRed {
+  color: #cd5c5c;
+}
+
+.text-IndianRedi {
+  color: #cd5c5c !important;
+}
+
+.text-LightCoral {
+  color: #f08080;
+}
+
+.text-LightCorali {
+  color: #f08080 !important;
+}
+
+.text-LightSalmon {
+  color: #ffa07a;
+}
+
+.text-LightSalmoni {
+  color: #ffa07a !important;
+}
+
+.text-LightSeaGreen {
+  color: #20b2aa;
+}
+
+.text-LightSeaGreeni {
+  color: #20b2aa !important;
+}
+
+.text-Lime {
   color: #00ff00;
 }
 
-/* Yellow Hover Effect */
-.text-hov-Yellow:hover {
-  color: #ffff00;
+.text-Limei {
+  color: #00ff00 !important;
 }
 
-/* Orange Hover Effect */
-.text-hov-Orange:hover {
+.text-Magenta {
+  color: #ff00cc;
+}
+
+.text-Magentai {
+  color: #ff00cc !important;
+}
+
+.text-Orange {
   color: #ffa500;
 }
 
-/* Purple Hover Effect */
-.text-hov-Purple:hover {
-  color: #800080;
+.text-Orangei {
+  color: #ffa500 !important;
 }
 
-/* Pink Hover Effect */
-.text-hov-Pink:hover {
-  color: #ffc0cb;
+.text-Orangered {
+  color: #ff4500;
 }
 
-/* Teal Hover Effect */
-.text-hov-Teal:hover {
+.text-Orangeredi {
+  color: #ff4500 !important;
+}
+
+.text-PaleTurquoise {
+  color: #afeeee;
+}
+
+.text-PaleTurquoisei {
+  color: #afeeee !important;
+}
+
+.text-RoyalBlue {
+  color: #4169e1;
+}
+
+.text-RoyalBluei {
+  color: #4169e1 !important;
+}
+
+.text-SkyBlue {
+  color: #87ceeb;
+}
+
+.text-SkyBluei {
+  color: #87ceeb !important;
+}
+
+.text-SteelBlue {
+  color: #4682b4;
+}
+
+.text-SteelBluei {
+  color: #4682b4 !important;
+}
+
+.text-Violet {
+  color: #ee82ee;
+}
+
+.text-Violeti {
+  color: #ee82ee !important;
+}
+
+.text-Teal {
   color: #008080;
 }
 
-/* Brown Hover Effect */
-.text-hov-Brown:hover {
-  color: #d2b48c;
+.text-Teali {
+  color: #008080 !important;
 }
 
-/* Gray Hover Effect */
-.text-hov-Gray:hover {
-  color: #808080;
+.text-White {
+  color: #ffffff;
 }
 
-/* Cyan Hover Effect */
-.text-hov-Cyan:hover {
+.text-Whitei {
+  color: #ffffff !important;
+}
+
+.text-Black {
+  color: #000000;
+}
+
+.text-Blacki {
+  color: #000000 !important;
+}
+
+.text-Red {
+  color: #ff0000;
+}
+
+.text-Redi {
+  color: #ff0000 !important;
+}
+
+.text-Green {
+  color: #00ff00;
+}
+
+.text-Greeni {
+  color: #00ff00 !important;
+}
+
+.text-Blue {
+  color: #0000ff;
+}
+
+.text-Bluei {
+  color: #0000ff !important;
+}
+
+.text-Yellow {
+  color: #ffff00;
+}
+
+.text-Yellowi {
+  color: #ffff00 !important;
+}
+
+.text-Cyan {
   color: #00ffff;
 }
 
-/* Gold Hover Effect */
+.text-Cyani {
+  color: #00ffff !important;
+}
+
+.text-Gray {
+  color: #808080;
+}
+
+.text-Grayi {
+  color: #808080 !important;
+}
+
+.text-DarkGray {
+  color: #a9a9a9;
+}
+
+.text-DarkGrayi {
+  color: #a9a9a9 !important;
+}
+
+.text-Dark {
+  color: #a9a9a9;
+}
+
+.text-Darki {
+  color: #a9a9a9 !important;
+}
+
+.text-LightDark {
+  color: #c0c0c0;
+}
+
+.text-LightDarki {
+  color: #c0c0c0 !important;
+}
+
+.text-DarkDark {
+  color: #707070;
+}
+
+.text-DarkDarki {
+  color: #707070 !important;
+}
+
+.text-DarkSlateGray {
+  color: #2f4f4f;
+}
+
+.text-DarkSlateGrayi {
+  color: #2f4f4f !important;
+}
+
+.text-DarkCyan {
+  color: #008b8b;
+}
+
+.text-DarkCyani {
+  color: #008b8b !important;
+}
+
+.text-DarkMagenta {
+  color: #8b008b;
+}
+
+.text-DarkMagentai {
+  color: #8b008b !important;
+}
+
+.text-DarkGoldenrod {
+  color: #b8860b;
+}
+
+.text-DarkGoldenrodi {
+  color: #b8860b !important;
+}
+
+.text-VeryDarkGray {
+  color: #1c1c1c;
+}
+
+.text-VeryDarkGrayi {
+  color: #1c1c1c !important;
+}
+
+.text-OffBlack {
+  color: #101010;
+}
+
+.text-OffBlacki {
+  color: #101010 !important;
+}
+
+.text-MidnightBlue {
+  color: #191970;
+}
+
+.text-MidnightBluei {
+  color: #191970 !important;
+}
+
+.text-RosyBrown {
+  color: #bc8f8f;
+}
+
+.text-RosyBrowni {
+  color: #bc8f8f !important;
+}
+
+.text-Firebrick {
+  color: #b22222;
+}
+
+.text-Firebricki {
+  color: #b22222 !important;
+}
+
+.text-PaleGoldenrod {
+  color: #eee8aa;
+}
+
+.text-PaleGoldenrodi {
+  color: #eee8aa !important;
+}
+
+.text-DarkOrange {
+  color: #ff8c00;
+}
+
+.text-DarkOrangei {
+  color: #ff8c00 !important;
+}
+
+.text-HotPink {
+  color: #ff69b4;
+}
+
+.text-HotPinki {
+  color: #ff69b4 !important;
+}
+
+.text-PaleVioletRed {
+  color: #db7093;
+}
+
+.text-PaleVioletRedi {
+  color: #db7093 !important;
+}
+
+.text-Goldenrod {
+  color: #daa520;
+}
+
+.text-Goldenrodi {
+  color: #daa520 !important;
+}
+
+.text-LightPink {
+  color: #ffb6c1;
+}
+
+.text-LightPinki {
+  color: #ffb6c1 !important;
+}
+
+/* TEXT HOVER */
+.text-hov-Brown:hover {
+  color: #a52a2a;
+}
+
+.text-shad-Brown, .text-shadow-Brown {
+  text-shadow: 2px 2px 4px #a52a2a;
+}
+
+.text-shad-hov-Brown:hover, .text-shadow-hov-Brown:hover {
+  text-shadow: 2px 2px 4px #a52a2a;
+}
+
+.text-hov-Silver:hover {
+  color: #c0c0c0;
+}
+
+.text-shad-Silver, .text-shadow-Silver {
+  text-shadow: 2px 2px 4px #c0c0c0;
+}
+
+.text-shad-hov-Silver:hover, .text-shadow-hov-Silver:hover {
+  text-shadow: 2px 2px 4px #c0c0c0;
+}
+
+.text-hov-Maroon:hover {
+  color: #800000;
+}
+
+.text-shad-Maroon, .text-shadow-Maroon {
+  text-shadow: 2px 2px 4px #800000;
+}
+
+.text-shad-hov-Maroon:hover, .text-shadow-hov-Maroon:hover {
+  text-shadow: 2px 2px 4px #800000;
+}
+
+.text-hov-Olive:hover {
+  color: #808000;
+}
+
+.text-shad-Olive, .text-shadow-Olive {
+  text-shadow: 2px 2px 4px #808000;
+}
+
+.text-shad-hov-Olive:hover, .text-shadow-hov-Olive:hover {
+  text-shadow: 2px 2px 4px #808000;
+}
+
+.text-hov-Navy:hover {
+  color: #000080;
+}
+
+.text-shad-Navy, .text-shadow-Navy {
+  text-shadow: 2px 2px 4px #000080;
+}
+
+.text-shad-hov-Navy:hover, .text-shadow-hov-Navy:hover {
+  text-shadow: 2px 2px 4px #000080;
+}
+
+.text-hov-YellowGreen:hover {
+  color: #9acd32;
+}
+
+.text-shad-YellowGreen, .text-shadow-YellowGreen {
+  text-shadow: 2px 2px 4px #9acd32;
+}
+
+.text-shad-hov-YellowGreen:hover, .text-shadow-hov-YellowGreen:hover {
+  text-shadow: 2px 2px 4px #9acd32;
+}
+
+.text-hov-OliveDrab:hover {
+  color: #6b8e23;
+}
+
+.text-shad-OliveDrab, .text-shadow-OliveDrab {
+  text-shadow: 2px 2px 4px #6b8e23;
+}
+
+.text-shad-hov-OliveDrab:hover, .text-shadow-hov-OliveDrab:hover {
+  text-shadow: 2px 2px 4px #6b8e23;
+}
+
+.text-hov-GreenYellow:hover {
+  color: #adff2f;
+}
+
+.text-shad-GreenYellow, .text-shadow-GreenYellow {
+  text-shadow: 2px 2px 4px #adff2f;
+}
+
+.text-shad-hov-GreenYellow:hover, .text-shadow-hov-GreenYellow:hover {
+  text-shadow: 2px 2px 4px #adff2f;
+}
+
+.text-hov-LimeGreen:hover {
+  color: #32cd32;
+}
+
+.text-shad-LimeGreen, .text-shadow-LimeGreen {
+  text-shadow: 2px 2px 4px #32cd32;
+}
+
+.text-shad-hov-LimeGreen:hover, .text-shadow-hov-LimeGreen:hover {
+  text-shadow: 2px 2px 4px #32cd32;
+}
+
+.text-hov-PaleGreen:hover {
+  color: #98fb98;
+}
+
+.text-shad-PaleGreen, .text-shadow-PaleGreen {
+  text-shadow: 2px 2px 4px #98fb98;
+}
+
+.text-shad-hov-PaleGreen:hover, .text-shadow-hov-PaleGreen:hover {
+  text-shadow: 2px 2px 4px #98fb98;
+}
+
+.text-hov-DarkSeaGreen:hover {
+  color: #8fbc8f;
+}
+
+.text-shad-DarkSeaGreen, .text-shadow-DarkSeaGreen {
+  text-shadow: 2px 2px 4px #8fbc8f;
+}
+
+.text-shad-hov-DarkSeaGreen:hover, .text-shadow-hov-DarkSeaGreen:hover {
+  text-shadow: 2px 2px 4px #8fbc8f;
+}
+
+.text-hov-MediumSeaGreen:hover {
+  color: #3cb371;
+}
+
+.text-shad-MediumSeaGreen, .text-shadow-MediumSeaGreen {
+  text-shadow: 2px 2px 4px #3cb371;
+}
+
+.text-shad-hov-MediumSeaGreen:hover, .text-shadow-hov-MediumSeaGreen:hover {
+  text-shadow: 2px 2px 4px #3cb371;
+}
+
+.text-hov-SeaGreen:hover {
+  color: #2e8b57;
+}
+
+.text-shad-SeaGreen, .text-shadow-SeaGreen {
+  text-shadow: 2px 2px 4px #2e8b57;
+}
+
+.text-shad-hov-SeaGreen:hover, .text-shadow-hov-SeaGreen:hover {
+  text-shadow: 2px 2px 4px #2e8b57;
+}
+
+.text-hov-ForestGreen:hover {
+  color: #228b22;
+}
+
+.text-shad-ForestGreen, .text-shadow-ForestGreen {
+  text-shadow: 2px 2px 4px #228b22;
+}
+
+.text-shad-hov-ForestGreen:hover, .text-shadow-hov-ForestGreen:hover {
+  text-shadow: 2px 2px 4px #228b22;
+}
+
+.text-hov-LightGray:hover {
+  color: #d3d3d3;
+}
+
+.text-shad-LightGray, .text-shadow-LightGray {
+  text-shadow: 2px 2px 4px #d3d3d3;
+}
+
+.text-shad-hov-LightGray:hover, .text-shadow-hov-LightGray:hover {
+  text-shadow: 2px 2px 4px #d3d3d3;
+}
+
+.text-hov-Lavender:hover {
+  color: #e6e6fa;
+}
+
+.text-shad-Lavender, .text-shadow-Lavender {
+  text-shadow: 2px 2px 4px #e6e6fa;
+}
+
+.text-shad-hov-Lavender:hover, .text-shadow-hov-Lavender:hover {
+  text-shadow: 2px 2px 4px #e6e6fa;
+}
+
+.text-hov-MistyRose:hover {
+  color: #ffe4e1;
+}
+
+.text-shad-MistyRose, .text-shadow-MistyRose {
+  text-shadow: 2px 2px 4px #ffe4e1;
+}
+
+.text-shad-hov-MistyRose:hover, .text-shadow-hov-MistyRose:hover {
+  text-shadow: 2px 2px 4px #ffe4e1;
+}
+
+.text-hov-NavajoWhite:hover {
+  color: #ffdead;
+}
+
+.text-shad-NavajoWhite, .text-shadow-NavajoWhite {
+  text-shadow: 2px 2px 4px #ffdead;
+}
+
+.text-shad-hov-NavajoWhite:hover, .text-shadow-hov-NavajoWhite:hover {
+  text-shadow: 2px 2px 4px #ffdead;
+}
+
+.text-hov-Wheat:hover {
+  color: #f5deb3;
+}
+
+.text-shad-Wheat, .text-shadow-Wheat {
+  text-shadow: 2px 2px 4px #f5deb3;
+}
+
+.text-shad-hov-Wheat:hover, .text-shadow-hov-Wheat:hover {
+  text-shadow: 2px 2px 4px #f5deb3;
+}
+
+.text-hov-AntiqueWhite:hover {
+  color: #faebd7;
+}
+
+.text-shad-AntiqueWhite, .text-shadow-AntiqueWhite {
+  text-shadow: 2px 2px 4px #faebd7;
+}
+
+.text-shad-hov-AntiqueWhite:hover, .text-shadow-hov-AntiqueWhite:hover {
+  text-shadow: 2px 2px 4px #faebd7;
+}
+
+.text-hov-Cornsilk:hover {
+  color: #fff8dc;
+}
+
+.text-shad-Cornsilk, .text-shadow-Cornsilk {
+  text-shadow: 2px 2px 4px #fff8dc;
+}
+
+.text-shad-hov-Cornsilk:hover, .text-shadow-hov-Cornsilk:hover {
+  text-shadow: 2px 2px 4px #fff8dc;
+}
+
+.text-hov-Khaki:hover {
+  color: #f0e68c;
+}
+
+.text-shad-Khaki, .text-shadow-Khaki {
+  text-shadow: 2px 2px 4px #f0e68c;
+}
+
+.text-shad-hov-Khaki:hover, .text-shadow-hov-Khaki:hover {
+  text-shadow: 2px 2px 4px #f0e68c;
+}
+
+.text-hov-Beige:hover {
+  color: #f5f5dc;
+}
+
+.text-shad-Beige, .text-shadow-Beige {
+  text-shadow: 2px 2px 4px #f5f5dc;
+}
+
+.text-shad-hov-Beige:hover, .text-shadow-hov-Beige:hover {
+  text-shadow: 2px 2px 4px #f5f5dc;
+}
+
+.text-hov-PapayaWhip:hover {
+  color: #ffefd5;
+}
+
+.text-shad-PapayaWhip, .text-shadow-PapayaWhip {
+  text-shadow: 2px 2px 4px #ffefd5;
+}
+
+.text-shad-hov-PapayaWhip:hover, .text-shadow-hov-PapayaWhip:hover {
+  text-shadow: 2px 2px 4px #ffefd5;
+}
+
+.text-hov-BlanchedAlmond:hover {
+  color: #ffebcd;
+}
+
+.text-shad-BlanchedAlmond, .text-shadow-BlanchedAlmond {
+  text-shadow: 2px 2px 4px #ffebcd;
+}
+
+.text-shad-hov-BlanchedAlmond:hover, .text-shadow-hov-BlanchedAlmond:hover {
+  text-shadow: 2px 2px 4px #ffebcd;
+}
+
+.text-hov-HoneyDew:hover {
+  color: #f0fff0;
+}
+
+.text-shad-HoneyDew, .text-shadow-HoneyDew {
+  text-shadow: 2px 2px 4px #f0fff0;
+}
+
+.text-shad-hov-HoneyDew:hover, .text-shadow-hov-HoneyDew:hover {
+  text-shadow: 2px 2px 4px #f0fff0;
+}
+
+.text-hov-MintCream:hover {
+  color: #f5fffa;
+}
+
+.text-shad-MintCream, .text-shadow-MintCream {
+  text-shadow: 2px 2px 4px #f5fffa;
+}
+
+.text-shad-hov-MintCream:hover, .text-shadow-hov-MintCream:hover {
+  text-shadow: 2px 2px 4px #f5fffa;
+}
+
+.text-hov-AliceBlue:hover {
+  color: #f0f8ff;
+}
+
+.text-shad-AliceBlue, .text-shadow-AliceBlue {
+  text-shadow: 2px 2px 4px #f0f8ff;
+}
+
+.text-shad-hov-AliceBlue:hover, .text-shadow-hov-AliceBlue:hover {
+  text-shadow: 2px 2px 4px #f0f8ff;
+}
+
+.text-hov-Tomato:hover {
+  color: #ff6347;
+}
+
+.text-shad-Tomato, .text-shadow-Tomato {
+  text-shadow: 2px 2px 4px #ff6347;
+}
+
+.text-shad-hov-Tomato:hover, .text-shadow-hov-Tomato:hover {
+  text-shadow: 2px 2px 4px #ff6347;
+}
+
+.text-hov-Orchid:hover {
+  color: #da70d6;
+}
+
+.text-shad-Orchid, .text-shadow-Orchid {
+  text-shadow: 2px 2px 4px #da70d6;
+}
+
+.text-shad-hov-Orchid:hover, .text-shadow-hov-Orchid:hover {
+  text-shadow: 2px 2px 4px #da70d6;
+}
+
+.text-hov-Turquoise:hover {
+  color: #40e0d0;
+}
+
+.text-shad-Turquoise, .text-shadow-Turquoise {
+  text-shadow: 2px 2px 4px #40e0d0;
+}
+
+.text-shad-hov-Turquoise:hover, .text-shadow-hov-Turquoise:hover {
+  text-shadow: 2px 2px 4px #40e0d0;
+}
+
+.text-hov-DarkRed:hover {
+  color: #8b0000;
+}
+
+.text-shad-DarkRed, .text-shadow-DarkRed {
+  text-shadow: 2px 2px 4px #8b0000;
+}
+
+.text-shad-hov-DarkRed:hover, .text-shadow-hov-DarkRed:hover {
+  text-shadow: 2px 2px 4px #8b0000;
+}
+
+.text-hov-DarkBlue:hover {
+  color: #00008b;
+}
+
+.text-shad-DarkBlue, .text-shadow-DarkBlue {
+  text-shadow: 2px 2px 4px #00008b;
+}
+
+.text-shad-hov-DarkBlue:hover, .text-shadow-hov-DarkBlue:hover {
+  text-shadow: 2px 2px 4px #00008b;
+}
+
+.text-hov-DarkGreen:hover {
+  color: #006400;
+}
+
+.text-shad-DarkGreen, .text-shadow-DarkGreen {
+  text-shadow: 2px 2px 4px #006400;
+}
+
+.text-shad-hov-DarkGreen:hover, .text-shadow-hov-DarkGreen:hover {
+  text-shadow: 2px 2px 4px #006400;
+}
+
+.text-hov-Peru:hover {
+  color: #cd853f;
+}
+
+.text-shad-Peru, .text-shadow-Peru {
+  text-shadow: 2px 2px 4px #cd853f;
+}
+
+.text-shad-hov-Peru:hover, .text-shadow-hov-Peru:hover {
+  text-shadow: 2px 2px 4px #cd853f;
+}
+
+.text-hov-Chocolate:hover {
+  color: #d2691e;
+}
+
+.text-shad-Chocolate, .text-shadow-Chocolate {
+  text-shadow: 2px 2px 4px #d2691e;
+}
+
+.text-shad-hov-Chocolate:hover, .text-shadow-hov-Chocolate:hover {
+  text-shadow: 2px 2px 4px #d2691e;
+}
+
+.text-hov-Plum:hover {
+  color: #dda0dd;
+}
+
+.text-shad-Plum, .text-shadow-Plum {
+  text-shadow: 2px 2px 4px #dda0dd;
+}
+
+.text-shad-hov-Plum:hover, .text-shadow-hov-Plum:hover {
+  text-shadow: 2px 2px 4px #dda0dd;
+}
+
+.text-hov-Sienna:hover {
+  color: #a0522d;
+}
+
+.text-shad-Sienna, .text-shadow-Sienna {
+  text-shadow: 2px 2px 4px #a0522d;
+}
+
+.text-shad-hov-Sienna:hover, .text-shadow-hov-Sienna:hover {
+  text-shadow: 2px 2px 4px #a0522d;
+}
+
+.text-hov-Snow:hover {
+  color: #fffafa;
+}
+
+.text-shad-Snow, .text-shadow-Snow {
+  text-shadow: 2px 2px 4px #fffafa;
+}
+
+.text-shad-hov-Snow:hover, .text-shadow-hov-Snow:hover {
+  text-shadow: 2px 2px 4px #fffafa;
+}
+
+.text-hov-Tan:hover {
+  color: #d2b48c;
+}
+
+.text-shad-Tan, .text-shadow-Tan {
+  text-shadow: 2px 2px 4px #d2b48c;
+}
+
+.text-shad-hov-Tan:hover, .text-shadow-hov-Tan:hover {
+  text-shadow: 2px 2px 4px #d2b48c;
+}
+
+.text-hov-MediumPurple:hover {
+  color: #9370db;
+}
+
+.text-shad-MediumPurple, .text-shadow-MediumPurple {
+  text-shadow: 2px 2px 4px #9370db;
+}
+
+.text-shad-hov-MediumPurple:hover, .text-shadow-hov-MediumPurple:hover {
+  text-shadow: 2px 2px 4px #9370db;
+}
+
+.text-hov-MediumOrchid:hover {
+  color: #ba55d3;
+}
+
+.text-shad-MediumOrchid, .text-shadow-MediumOrchid {
+  text-shadow: 2px 2px 4px #ba55d3;
+}
+
+.text-shad-hov-MediumOrchid:hover, .text-shadow-hov-MediumOrchid:hover {
+  text-shadow: 2px 2px 4px #ba55d3;
+}
+
+.text-hov-MediumTurquoise:hover {
+  color: #48d1cc;
+}
+
+.text-shad-MediumTurquoise, .text-shadow-MediumTurquoise {
+  text-shadow: 2px 2px 4px #48d1cc;
+}
+
+.text-shad-hov-MediumTurquoise:hover, .text-shadow-hov-MediumTurquoise:hover {
+  text-shadow: 2px 2px 4px #48d1cc;
+}
+
+.text-hov-SlateBlue:hover {
+  color: #6a5acd;
+}
+
+.text-shad-SlateBlue, .text-shadow-SlateBlue {
+  text-shadow: 2px 2px 4px #6a5acd;
+}
+
+.text-shad-hov-SlateBlue:hover, .text-shadow-hov-SlateBlue:hover {
+  text-shadow: 2px 2px 4px #6a5acd;
+}
+
+.text-hov-SlateGray:hover {
+  color: #708090;
+}
+
+.text-shad-SlateGray, .text-shadow-SlateGray {
+  text-shadow: 2px 2px 4px #708090;
+}
+
+.text-shad-hov-SlateGray:hover, .text-shadow-hov-SlateGray:hover {
+  text-shadow: 2px 2px 4px #708090;
+}
+
+.text-hov-SpringGreen:hover {
+  color: #00ff7f;
+}
+
+.text-shad-SpringGreen, .text-shadow-SpringGreen {
+  text-shadow: 2px 2px 4px #00ff7f;
+}
+
+.text-shad-hov-SpringGreen:hover, .text-shadow-hov-SpringGreen:hover {
+  text-shadow: 2px 2px 4px #00ff7f;
+}
+
+.text-hov-SandyBrown:hover {
+  color: #f4a460;
+}
+
+.text-shad-SandyBrown, .text-shadow-SandyBrown {
+  text-shadow: 2px 2px 4px #f4a460;
+}
+
+.text-shad-hov-SandyBrown:hover, .text-shadow-hov-SandyBrown:hover {
+  text-shadow: 2px 2px 4px #f4a460;
+}
+
+.text-hov-Crimson:hover {
+  color: #dc143c;
+}
+
+.text-shad-Crimson, .text-shadow-Crimson {
+  text-shadow: 2px 2px 4px #dc143c;
+}
+
+.text-shad-hov-Crimson:hover, .text-shadow-hov-Crimson:hover {
+  text-shadow: 2px 2px 4px #dc143c;
+}
+
+.text-hov-DeepPink:hover {
+  color: #ff1493;
+}
+
+.text-shad-DeepPink, .text-shadow-DeepPink {
+  text-shadow: 2px 2px 4px #ff1493;
+}
+
+.text-shad-hov-DeepPink:hover, .text-shadow-hov-DeepPink:hover {
+  text-shadow: 2px 2px 4px #ff1493;
+}
+
+.text-hov-DodgerBlue:hover {
+  color: #1e90ff;
+}
+
+.text-shad-DodgerBlue, .text-shadow-DodgerBlue {
+  text-shadow: 2px 2px 4px #1e90ff;
+}
+
+.text-shad-hov-DodgerBlue:hover, .text-shadow-hov-DodgerBlue:hover {
+  text-shadow: 2px 2px 4px #1e90ff;
+}
+
 .text-hov-Gold:hover {
   color: #ffd700;
 }
 
-/* Indigo Hover Effect */
-.text-hov-Indigo:hover {
-  color: #4b0082;
+.text-shad-Gold, .text-shadow-Gold {
+  text-shadow: 2px 2px 4px #ffd700;
 }
 
-/* Violet Hover Effect */
-.text-hov-Violet:hover {
-  color: #ee82ee;
+.text-shad-hov-Gold:hover, .text-shadow-hov-Gold:hover {
+  text-shadow: 2px 2px 4px #ffd700;
 }
 
-/* Salmon Hover Effect */
-.text-hov-Salmon:hover {
-  color: #fa8072;
+.text-hov-IndianRed:hover {
+  color: #cd5c5c;
 }
 
-/* Light Salmon Hover Effect */
-.text-hov-LightSalmon:hover {
-  color: #ffa07a;
+.text-shad-IndianRed, .text-shadow-IndianRed {
+  text-shadow: 2px 2px 4px #cd5c5c;
 }
 
-/* Light Pink Hover Effect */
-.text-hov-LightPink:hover {
-  color: #ffb6c1;
+.text-shad-hov-IndianRed:hover, .text-shadow-hov-IndianRed:hover {
+  text-shadow: 2px 2px 4px #cd5c5c;
 }
 
-/* Light Coral Hover Effect */
 .text-hov-LightCoral:hover {
   color: #f08080;
 }
 
-/* Light Golden Rod Yellow Hover Effect */
-.text-hov-LightGoldenRodYellow:hover {
-  color: #fafad2;
+.text-shad-LightCoral, .text-shadow-LightCoral {
+  text-shadow: 2px 2px 4px #f08080;
 }
 
-/* Light Steel Blue Hover Effect */
-.text-hov-LightSteelBlue:hover {
-  color: #b0c4de;
+.text-shad-hov-LightCoral:hover, .text-shadow-hov-LightCoral:hover {
+  text-shadow: 2px 2px 4px #f08080;
 }
 
-/* Light Sky Blue Hover Effect */
-.text-hov-LightSkyBlue:hover {
-  color: #87cefa;
+.text-hov-LightSalmon:hover {
+  color: #ffa07a;
 }
 
-.text-shad-Black,
-.text-shadow-Black {
-  text-shadow: 2px 2px 2px #000000;
+.text-shad-LightSalmon, .text-shadow-LightSalmon {
+  text-shadow: 2px 2px 4px #ffa07a;
 }
-.text-shad-Gray,
-.text-shadow-Gray {
-  text-shadow: 2px 2px 2px #808080;
+
+.text-shad-hov-LightSalmon:hover, .text-shadow-hov-LightSalmon:hover {
+  text-shadow: 2px 2px 4px #ffa07a;
 }
-.text-shad-White,
-.text-shadow-White {
-  text-shadow: 2px 2px 2px #ffffff;
+
+.text-hov-LightSeaGreen:hover {
+  color: #20b2aa;
 }
-.text-shad-Red,
-.text-shadow-Red {
-  text-shadow: 2px 2px 2px #ff0000;
+
+.text-shad-LightSeaGreen, .text-shadow-LightSeaGreen {
+  text-shadow: 2px 2px 4px #20b2aa;
 }
-.text-shad-Green,
-.text-shadow-Green {
-  text-shadow: 2px 2px 2px #00ff00;
+
+.text-shad-hov-LightSeaGreen:hover, .text-shadow-hov-LightSeaGreen:hover {
+  text-shadow: 2px 2px 4px #20b2aa;
 }
-.text-shad-Blue,
-.text-shadow-Blue {
-  text-shadow: 2px 2px 2px #0000ff;
+
+.text-hov-Lime:hover {
+  color: #00ff00;
 }
-.text-shad-Yellow,
-.text-shadow-Yellow {
-  text-shadow: 2px 2px 2px #ffff00;
+
+.text-shad-Lime, .text-shadow-Lime {
+  text-shadow: 2px 2px 4px #00ff00;
 }
-.text-shad-Cyan,
-.text-shadow-Cyan {
-  text-shadow: 2px 2px 2px #00ffff;
+
+.text-shad-hov-Lime:hover, .text-shadow-hov-Lime:hover {
+  text-shadow: 2px 2px 4px #00ff00;
 }
-.text-shad-Magenta,
-.text-shadow-Magenta {
-  text-shadow: 2px 2px 2px #ff00ff;
+
+.text-hov-Magenta:hover {
+  color: #ff00cc;
 }
-.text-shad-Purple,
-.text-shadow-Purple {
-  text-shadow: 2px 2px 2px #800080;
+
+.text-shad-Magenta, .text-shadow-Magenta {
+  text-shadow: 2px 2px 4px #ff00cc;
 }
-.text-shad-Orange,
-.text-shadow-Orange {
-  text-shadow: 2px 2px 2px #ffa500;
+
+.text-shad-hov-Magenta:hover, .text-shadow-hov-Magenta:hover {
+  text-shadow: 2px 2px 4px #ff00cc;
 }
-.text-shad-Pink,
-.text-shadow-Pink {
-  text-shadow: 2px 2px 2px #ffc0cb;
+
+.text-hov-Orange:hover {
+  color: #ffa500;
 }
-.text-shad-Gold,
-.text-shadow-Gold {
-  text-shadow: 2px 2px 2px #ffd700;
+
+.text-shad-Orange, .text-shadow-Orange {
+  text-shadow: 2px 2px 4px #ffa500;
 }
-.text-shad-Silver,
-.text-shadow-Silver {
-  text-shadow: 2px 2px 2px #c0c0c0;
+
+.text-shad-hov-Orange:hover, .text-shadow-hov-Orange:hover {
+  text-shadow: 2px 2px 4px #ffa500;
 }
-.text-shad-Brown,
-.text-shadow-Brown {
-  text-shadow: 2px 2px 2px #d2b48c;
+
+.text-hov-Orangered:hover {
+  color: #ff4500;
+}
+
+.text-shad-Orangered, .text-shadow-Orangered {
+  text-shadow: 2px 2px 4px #ff4500;
+}
+
+.text-shad-hov-Orangered:hover, .text-shadow-hov-Orangered:hover {
+  text-shadow: 2px 2px 4px #ff4500;
+}
+
+.text-hov-PaleTurquoise:hover {
+  color: #afeeee;
+}
+
+.text-shad-PaleTurquoise, .text-shadow-PaleTurquoise {
+  text-shadow: 2px 2px 4px #afeeee;
+}
+
+.text-shad-hov-PaleTurquoise:hover, .text-shadow-hov-PaleTurquoise:hover {
+  text-shadow: 2px 2px 4px #afeeee;
+}
+
+.text-hov-RoyalBlue:hover {
+  color: #4169e1;
+}
+
+.text-shad-RoyalBlue, .text-shadow-RoyalBlue {
+  text-shadow: 2px 2px 4px #4169e1;
+}
+
+.text-shad-hov-RoyalBlue:hover, .text-shadow-hov-RoyalBlue:hover {
+  text-shadow: 2px 2px 4px #4169e1;
+}
+
+.text-hov-SkyBlue:hover {
+  color: #87ceeb;
+}
+
+.text-shad-SkyBlue, .text-shadow-SkyBlue {
+  text-shadow: 2px 2px 4px #87ceeb;
+}
+
+.text-shad-hov-SkyBlue:hover, .text-shadow-hov-SkyBlue:hover {
+  text-shadow: 2px 2px 4px #87ceeb;
+}
+
+.text-hov-SteelBlue:hover {
+  color: #4682b4;
+}
+
+.text-shad-SteelBlue, .text-shadow-SteelBlue {
+  text-shadow: 2px 2px 4px #4682b4;
+}
+
+.text-shad-hov-SteelBlue:hover, .text-shadow-hov-SteelBlue:hover {
+  text-shadow: 2px 2px 4px #4682b4;
+}
+
+.text-hov-Violet:hover {
+  color: #ee82ee;
+}
+
+.text-shad-Violet, .text-shadow-Violet {
+  text-shadow: 2px 2px 4px #ee82ee;
+}
+
+.text-shad-hov-Violet:hover, .text-shadow-hov-Violet:hover {
+  text-shadow: 2px 2px 4px #ee82ee;
+}
+
+.text-hov-Teal:hover {
+  color: #008080;
+}
+
+.text-shad-Teal, .text-shadow-Teal {
+  text-shadow: 2px 2px 4px #008080;
+}
+
+.text-shad-hov-Teal:hover, .text-shadow-hov-Teal:hover {
+  text-shadow: 2px 2px 4px #008080;
+}
+
+.text-hov-White:hover {
+  color: #ffffff;
+}
+
+.text-shad-White, .text-shadow-White {
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+.text-shad-hov-White:hover, .text-shadow-hov-White:hover {
+  text-shadow: 2px 2px 4px #ffffff;
+}
+
+.text-hov-Black:hover {
+  color: #000000;
+}
+
+.text-shad-Black, .text-shadow-Black {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.text-shad-hov-Black:hover, .text-shadow-hov-Black:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.text-hov-Red:hover {
+  color: #ff0000;
+}
+
+.text-shad-Red, .text-shadow-Red {
+  text-shadow: 2px 2px 4px #ff0000;
+}
+
+.text-shad-hov-Red:hover, .text-shadow-hov-Red:hover {
+  text-shadow: 2px 2px 4px #ff0000;
+}
+
+.text-hov-Green:hover {
+  color: #00ff00;
+}
+
+.text-shad-Green, .text-shadow-Green {
+  text-shadow: 2px 2px 4px #00ff00;
+}
+
+.text-shad-hov-Green:hover, .text-shadow-hov-Green:hover {
+  text-shadow: 2px 2px 4px #00ff00;
+}
+
+.text-hov-Blue:hover {
+  color: #0000ff;
+}
+
+.text-shad-Blue, .text-shadow-Blue {
+  text-shadow: 2px 2px 4px #0000ff;
+}
+
+.text-shad-hov-Blue:hover, .text-shadow-hov-Blue:hover {
+  text-shadow: 2px 2px 4px #0000ff;
+}
+
+.text-hov-Yellow:hover {
+  color: #ffff00;
+}
+
+.text-shad-Yellow, .text-shadow-Yellow {
+  text-shadow: 2px 2px 4px #ffff00;
+}
+
+.text-shad-hov-Yellow:hover, .text-shadow-hov-Yellow:hover {
+  text-shadow: 2px 2px 4px #ffff00;
+}
+
+.text-hov-Cyan:hover {
+  color: #00ffff;
+}
+
+.text-shad-Cyan, .text-shadow-Cyan {
+  text-shadow: 2px 2px 4px #00ffff;
+}
+
+.text-shad-hov-Cyan:hover, .text-shadow-hov-Cyan:hover {
+  text-shadow: 2px 2px 4px #00ffff;
+}
+
+.text-hov-Gray:hover {
+  color: #808080;
+}
+
+.text-shad-Gray, .text-shadow-Gray {
+  text-shadow: 2px 2px 4px #808080;
+}
+
+.text-shad-hov-Gray:hover, .text-shadow-hov-Gray:hover {
+  text-shadow: 2px 2px 4px #808080;
+}
+
+.text-hov-DarkGray:hover {
+  color: #a9a9a9;
+}
+
+.text-shad-DarkGray, .text-shadow-DarkGray {
+  text-shadow: 2px 2px 4px #a9a9a9;
+}
+
+.text-shad-hov-DarkGray:hover, .text-shadow-hov-DarkGray:hover {
+  text-shadow: 2px 2px 4px #a9a9a9;
+}
+
+.text-hov-Dark:hover {
+  color: #a9a9a9;
+}
+
+.text-shad-Dark, .text-shadow-Dark {
+  text-shadow: 2px 2px 4px #a9a9a9;
+}
+
+.text-shad-hov-Dark:hover, .text-shadow-hov-Dark:hover {
+  text-shadow: 2px 2px 4px #a9a9a9;
+}
+
+.text-hov-LightDark:hover {
+  color: #c0c0c0;
+}
+
+.text-shad-LightDark, .text-shadow-LightDark {
+  text-shadow: 2px 2px 4px #c0c0c0;
+}
+
+.text-shad-hov-LightDark:hover, .text-shadow-hov-LightDark:hover {
+  text-shadow: 2px 2px 4px #c0c0c0;
+}
+
+.text-hov-DarkDark:hover {
+  color: #707070;
+}
+
+.text-shad-DarkDark, .text-shadow-DarkDark {
+  text-shadow: 2px 2px 4px #707070;
+}
+
+.text-shad-hov-DarkDark:hover, .text-shadow-hov-DarkDark:hover {
+  text-shadow: 2px 2px 4px #707070;
+}
+
+.text-hov-DarkSlateGray:hover {
+  color: #2f4f4f;
+}
+
+.text-shad-DarkSlateGray, .text-shadow-DarkSlateGray {
+  text-shadow: 2px 2px 4px #2f4f4f;
+}
+
+.text-shad-hov-DarkSlateGray:hover, .text-shadow-hov-DarkSlateGray:hover {
+  text-shadow: 2px 2px 4px #2f4f4f;
+}
+
+.text-hov-DarkCyan:hover {
+  color: #008b8b;
+}
+
+.text-shad-DarkCyan, .text-shadow-DarkCyan {
+  text-shadow: 2px 2px 4px #008b8b;
+}
+
+.text-shad-hov-DarkCyan:hover, .text-shadow-hov-DarkCyan:hover {
+  text-shadow: 2px 2px 4px #008b8b;
+}
+
+.text-hov-DarkMagenta:hover {
+  color: #8b008b;
+}
+
+.text-shad-DarkMagenta, .text-shadow-DarkMagenta {
+  text-shadow: 2px 2px 4px #8b008b;
+}
+
+.text-shad-hov-DarkMagenta:hover, .text-shadow-hov-DarkMagenta:hover {
+  text-shadow: 2px 2px 4px #8b008b;
+}
+
+.text-hov-DarkGoldenrod:hover {
+  color: #b8860b;
+}
+
+.text-shad-DarkGoldenrod, .text-shadow-DarkGoldenrod {
+  text-shadow: 2px 2px 4px #b8860b;
+}
+
+.text-shad-hov-DarkGoldenrod:hover, .text-shadow-hov-DarkGoldenrod:hover {
+  text-shadow: 2px 2px 4px #b8860b;
+}
+
+.text-hov-VeryDarkGray:hover {
+  color: #1c1c1c;
+}
+
+.text-shad-VeryDarkGray, .text-shadow-VeryDarkGray {
+  text-shadow: 2px 2px 4px #1c1c1c;
+}
+
+.text-shad-hov-VeryDarkGray:hover, .text-shadow-hov-VeryDarkGray:hover {
+  text-shadow: 2px 2px 4px #1c1c1c;
+}
+
+.text-hov-OffBlack:hover {
+  color: #101010;
+}
+
+.text-shad-OffBlack, .text-shadow-OffBlack {
+  text-shadow: 2px 2px 4px #101010;
+}
+
+.text-shad-hov-OffBlack:hover, .text-shadow-hov-OffBlack:hover {
+  text-shadow: 2px 2px 4px #101010;
+}
+
+.text-hov-MidnightBlue:hover {
+  color: #191970;
+}
+
+.text-shad-MidnightBlue, .text-shadow-MidnightBlue {
+  text-shadow: 2px 2px 4px #191970;
+}
+
+.text-shad-hov-MidnightBlue:hover, .text-shadow-hov-MidnightBlue:hover {
+  text-shadow: 2px 2px 4px #191970;
+}
+
+.text-hov-RosyBrown:hover {
+  color: #bc8f8f;
+}
+
+.text-shad-RosyBrown, .text-shadow-RosyBrown {
+  text-shadow: 2px 2px 4px #bc8f8f;
+}
+
+.text-shad-hov-RosyBrown:hover, .text-shadow-hov-RosyBrown:hover {
+  text-shadow: 2px 2px 4px #bc8f8f;
+}
+
+.text-hov-Firebrick:hover {
+  color: #b22222;
+}
+
+.text-shad-Firebrick, .text-shadow-Firebrick {
+  text-shadow: 2px 2px 4px #b22222;
+}
+
+.text-shad-hov-Firebrick:hover, .text-shadow-hov-Firebrick:hover {
+  text-shadow: 2px 2px 4px #b22222;
+}
+
+.text-hov-PaleGoldenrod:hover {
+  color: #eee8aa;
+}
+
+.text-shad-PaleGoldenrod, .text-shadow-PaleGoldenrod {
+  text-shadow: 2px 2px 4px #eee8aa;
+}
+
+.text-shad-hov-PaleGoldenrod:hover, .text-shadow-hov-PaleGoldenrod:hover {
+  text-shadow: 2px 2px 4px #eee8aa;
+}
+
+.text-hov-DarkOrange:hover {
+  color: #ff8c00;
+}
+
+.text-shad-DarkOrange, .text-shadow-DarkOrange {
+  text-shadow: 2px 2px 4px #ff8c00;
+}
+
+.text-shad-hov-DarkOrange:hover, .text-shadow-hov-DarkOrange:hover {
+  text-shadow: 2px 2px 4px #ff8c00;
+}
+
+.text-hov-HotPink:hover {
+  color: #ff69b4;
+}
+
+.text-shad-HotPink, .text-shadow-HotPink {
+  text-shadow: 2px 2px 4px #ff69b4;
+}
+
+.text-shad-hov-HotPink:hover, .text-shadow-hov-HotPink:hover {
+  text-shadow: 2px 2px 4px #ff69b4;
+}
+
+.text-hov-PaleVioletRed:hover {
+  color: #db7093;
+}
+
+.text-shad-PaleVioletRed, .text-shadow-PaleVioletRed {
+  text-shadow: 2px 2px 4px #db7093;
+}
+
+.text-shad-hov-PaleVioletRed:hover, .text-shadow-hov-PaleVioletRed:hover {
+  text-shadow: 2px 2px 4px #db7093;
+}
+
+.text-hov-Goldenrod:hover {
+  color: #daa520;
+}
+
+.text-shad-Goldenrod, .text-shadow-Goldenrod {
+  text-shadow: 2px 2px 4px #daa520;
+}
+
+.text-shad-hov-Goldenrod:hover, .text-shadow-hov-Goldenrod:hover {
+  text-shadow: 2px 2px 4px #daa520;
+}
+
+.text-hov-LightPink:hover {
+  color: #ffb6c1;
+}
+
+.text-shad-LightPink, .text-shadow-LightPink {
+  text-shadow: 2px 2px 4px #ffb6c1;
+}
+
+.text-shad-hov-LightPink:hover, .text-shadow-hov-LightPink:hover {
+  text-shadow: 2px 2px 4px #ffb6c1;
 }
 
 .text-u {
@@ -180564,6 +181679,14 @@ BACKGROUND COLOR SETS
   color: #ff0000;
 }
 
+.text-0, .text-transparent, .text-o, .text-none {
+  color: transparent;
+}
+
+.text-0i, .text-transparenti, .text-oi, .text-nonei {
+  color: transparent !important;
+}
+
 .White {
   color: var(--white);
 }
@@ -180814,6 +181937,62 @@ BACKGROUND COLOR SETS
 
 .LightPink {
   color: var(--lightpink);
+}
+
+.lightGray {
+  color: var(--light-gray);
+}
+
+.darkGray {
+  color: var(--dark-gray);
+}
+
+.dark {
+  color: var(--dark);
+}
+
+.lightDark {
+  color: var(--light-dark);
+}
+
+.darkDark {
+  color: var(--dark-dark);
+}
+
+.darkSlateGray {
+  color: var(--dark-slate-gray);
+}
+
+.darkBlue {
+  color: var(--dark-blue);
+}
+
+.darkGreen {
+  color: var(--dark-green);
+}
+
+.darkRed {
+  color: var(--dark-red);
+}
+
+.darkCyan {
+  color: var(--dark-cyan);
+}
+
+.darkMagenta {
+  color: var(--dark-magenta);
+}
+
+.darkGoldenrod {
+  color: var(--dark-goldenrod);
+}
+
+.veryDarkGray {
+  color: var(--very-dark-gray);
+}
+
+.offBlack {
+  color: var(--off-black);
 }
 
 .Gray-100 {
@@ -181574,6 +182753,62 @@ BACKGROUND COLOR SETS
 
 .b, .text-b {
   font-weight: 600;
+}
+
+.text-line-height-0, .text-line-h-0, .text-lh-0, .line-height-0, .lh-0 {
+  line-height: 0;
+}
+
+.text-line-height-0i, .text-line-h-0i, .text-lh-0i, .line-height-0i, .lh-0i {
+  line-height: 0 !important;
+}
+
+.text-line-height-5, .text-line-h-5, .text-lh-5, .line-height-5, .lh-5 {
+  line-height: 0.5;
+}
+
+.text-line-height-5i, .text-line-h-5i, .text-lh-5i, .line-height-5i, .lh-5i {
+  line-height: 0.5 !important;
+}
+
+.text-line-height-10, .text-line-h-10, .text-lh-10, .line-height-10, .lh-10 {
+  line-height: 1;
+}
+
+.text-line-height-10i, .text-line-h-10i, .text-lh-10i, .line-height-10i, .lh-10i {
+  line-height: 1 !important;
+}
+
+.text-line-height-15, .text-line-h-15, .text-lh-15, .line-height-15, .lh-15 {
+  line-height: 1.5;
+}
+
+.text-line-height-15i, .text-line-h-15i, .text-lh-15i, .line-height-15i, .lh-15i {
+  line-height: 1.5 !important;
+}
+
+.text-line-height-20, .text-line-h-20, .text-lh-20, .line-height-20, .lh-20 {
+  line-height: 2;
+}
+
+.text-line-height-20i, .text-line-h-20i, .text-lh-20i, .line-height-20i, .lh-20i {
+  line-height: 2 !important;
+}
+
+.text-line-height-25, .text-line-h-25, .text-lh-25, .line-height-25, .lh-25 {
+  line-height: 2.5;
+}
+
+.text-line-height-25i, .text-line-h-25i, .text-lh-25i, .line-height-25i, .lh-25i {
+  line-height: 2.5 !important;
+}
+
+.text-line-height-30, .text-line-h-30, .text-lh-30, .line-height-30, .lh-30 {
+  line-height: 3;
+}
+
+.text-line-height-30i, .text-line-h-30i, .text-lh-30i, .line-height-30i, .lh-30i {
+  line-height: 3 !important;
 }
 
 /* ----------------------------------------------------------------
