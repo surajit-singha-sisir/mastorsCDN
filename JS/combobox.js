@@ -1,102 +1,73 @@
 // USES
 /* <div class="combo-box">
-        <input type="text" class="combo-input b-Blue b-1 b-rad--05" placeholder="Select an option...">
-        <span class="chevron-icon"><img src="https://surajit-singha-sisir.github.io/mastorsCDN/Resources/svg/chevron.svg" alt=""></span>
+        <div class="Combo-inputbox"><input type="text" class="combo-input b-Blue b-1 b-rad--05"
+                placeholder="Select another option..." data-combo-id="combo2"></div>
         <ul class="combo-options">
-            <li class="combo-option"></li>
+            <li class="combo-option">Apple</li>
             <li class="no-data" style="display: none;">No data found!</li>
         </ul>
-</div> */
+    </div> */
 
 // CODE
+window.addEventListener("load", () => {
+  // INITIALIZE ALL COMBO BOXES
+  const comboBoxes = document.querySelectorAll(".combo-box");
 
-window.addEventListener("load", function () {
-  function initializeComboBox(comboBox) {
-    const input = comboBox.querySelector(".combo-input");
-    const optionsContainer = comboBox.querySelector(".combo-options");
-    const options = comboBox.querySelectorAll(".combo-option:not(.no-data)");
-    const noDataMessage = optionsContainer.querySelector(".no-data");
-    const chevronIcon = comboBox.querySelector(".chevron-icon");
-    let escPressCount = 0; // Counter for consecutive Esc key presses
-    let escTimer = null; // Timer to reset the counter
+  comboBoxes.forEach((comboBox) => {
+    const comboInput = comboBox.querySelector(".combo-input");
+    const comboOptions = comboBox.querySelector(".combo-options");
+    const noData = comboOptions.querySelector(".no-data");
+    const comboOptionItems = comboOptions.querySelectorAll(".combo-option");
+    const inputBox = comboBox.querySelector(".Combo-inputbox"); // FOR CHEVRON ROTATION
 
-    // Function to update dropdown position dynamically
-    const updateDropdownPosition = () => {
-      const rect = input.getBoundingClientRect();
-      const spaceBelow = window.innerHeight - rect.bottom;
-      const dropdownHeight = optionsContainer.offsetHeight || 160; // 10rem in px (fallback)
-
-      if (spaceBelow < dropdownHeight) {
-        // Show above if not enough space below
-        optionsContainer.style.top = `-${dropdownHeight}px`;
-      } else {
-        // Show below
-        optionsContainer.style.top = `${input.offsetHeight}px`;
-      }
-    };
-
-    // Update visibility of options and no data message based on input
-    const updateVisibility = () => {
-      const filter = input.value.toUpperCase();
-      let anyVisible = false;
-
-      options.forEach((option) => {
-        const isVisible = option.textContent.toUpperCase().includes(filter);
-        option.style.display = isVisible ? "" : "none";
-        anyVisible = anyVisible || isVisible;
-      });
-
-      noDataMessage.style.display = anyVisible ? "none" : "block"; // Show/hide no data message
-      optionsContainer.style.display = anyVisible || filter ? "block" : "none"; // Show/hide options container
-      chevronIcon.classList.toggle("open", anyVisible); // Toggle chevron icon
-      updateDropdownPosition(); // Adjust position on visibility change
-    };
-
-    input.addEventListener("focus", () => {
-      updateDropdownPosition(); // Always update position on focus
-      optionsContainer.style.display = "block";
-      chevronIcon.classList.add("open");
-      updateVisibility();
+    // SHOW DROPDOWN ON FOCUS
+    comboInput.addEventListener("focus", () => {
+      comboOptions.style.display = "block";
+      inputBox.classList.add("open"); // ROTATE CHEVRON
     });
 
-    chevronIcon.addEventListener("click", () => {
-      const isOpen = optionsContainer.style.display === "block";
-      if (!isOpen) {
-        updateDropdownPosition(); // Adjust position before opening
-        optionsContainer.style.display = "block";
-        chevronIcon.classList.add("open");
-      } else {
-        optionsContainer.style.display = "none";
-        chevronIcon.classList.remove("open");
-      }
-    });
-    input.addEventListener("keyup", (e) => {
-      if (e.key === "Escape") {
-        input.value = ""; // Clear the input field
-        updateVisibility(); // Update the visibility of options
-      } else {
-        updateVisibility(); // Update visibility for other keyup events
-      }
-    });
-
+    // HIDE DROPDOWN ON OUTSIDE CLICK
     document.addEventListener("click", (e) => {
-      if (!comboBox.contains(e.target)) {
-        optionsContainer.style.display = "none";
-        chevronIcon.classList.remove("open");
-        noDataMessage.style.display = "none"; // Hide no data message when closed
+      if (!e.target.closest(".combo-box")) {
+        comboOptions.style.display = "none";
+        inputBox.classList.remove("open"); // RESET CHEVRON
       }
     });
 
-    options.forEach((option) => {
-      option.addEventListener("click", () => {
-        input.value = option.textContent; // Set input value
-        optionsContainer.style.display = "none";
-        chevronIcon.classList.remove("open");
-        noDataMessage.style.display = "none"; // Hide no data message after selection
+    // FILTER OPTIONS AS USER TYPES
+    comboInput.addEventListener("input", () => {
+      const inputValue = comboInput.value.toLowerCase();
+      let found = false;
+
+      comboOptionItems.forEach((item) => {
+        if (item.textContent.toLowerCase().includes(inputValue)) {
+          item.style.display = "block";
+          found = true;
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      // SHOW "NO DATA FOUND" MESSAGE IF NO MATCHES
+      noData.style.display = found ? "none" : "block";
+    });
+
+    // HANDLE OPTION SELECTION
+    comboOptionItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        comboInput.value = item.textContent;
+        comboOptions.style.display = "none";
+        inputBox.classList.remove("open"); // RESET CHEVRON
       });
     });
-  }
 
-  // Initialize all combo boxes on the page
-  document.querySelectorAll(".combo-box").forEach(initializeComboBox);
+    // CLEAR INPUT ON ESC KEY
+    comboInput.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        comboInput.value = "";
+        comboOptions.style.display = "none";
+        inputBox.classList.remove("open"); // RESET CHEVRON
+      }
+    });
+  });
 });
