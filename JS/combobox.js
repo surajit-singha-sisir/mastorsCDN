@@ -37,9 +37,14 @@ window.addEventListener("load", () => {
 
     // HIDE DROPDOWN ON OUTSIDE CLICK
     document.addEventListener("click", (e) => {
-      if (!e.target.closest(".combo-box")) {
+      if (!comboBox.contains(e.target)) {
+        // CHECK IF CLICK IS OUTSIDE THIS SPECIFIC COMBO BOX
         comboOptions.style.display = "none";
-        inputBox.classList.toggle("open"); // RESET CHEVRON
+
+        // CHECK IF inputBox EXISTS BEFORE TOGGLING
+        if (inputBox) {
+          inputBox.classList.remove("open"); // RESET CHEVRON
+        }
       }
     });
 
