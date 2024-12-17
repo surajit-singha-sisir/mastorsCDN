@@ -68,7 +68,7 @@ window.addEventListener("load", () => {
     // }
 
     // Attach event listeners
-    document.addEventListener("click", handleClick);
+    // document.addEventListener("click", handleClick);
     handleSwipe();
   }
   initializeHamburgerMenu();

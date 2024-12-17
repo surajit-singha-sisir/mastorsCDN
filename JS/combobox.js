@@ -20,11 +20,20 @@ window.addEventListener("load", () => {
     const comboOptionItems = comboOptions.querySelectorAll(".combo-option");
     const inputBox = comboBox.querySelector(".Combo-inputbox"); // FOR CHEVRON ROTATION
 
-    // SHOW DROPDOWN ON FOCUS
-    comboInput.addEventListener("focus", () => {
-      comboOptions.style.display = "block";
-      inputBox.classList.toggle("open"); // ROTATE CHEVRON
-    });
+    if (inputBox) {
+      // Crucial check!
+      // SHOW DROPDOWN ON FOCUS
+      comboInput.addEventListener("focus", () => {
+        comboOptions.style.display = "block";
+        inputBox.classList.toggle("open");
+      });
+    }
+
+    // // SHOW DROPDOWN ON FOCUS
+    // comboInput.addEventListener("focus", () => {
+    //   comboOptions.style.display = "block";
+    //   inputBox.classList.toggle("open"); // ROTATE CHEVRON
+    // });
 
     // HIDE DROPDOWN ON OUTSIDE CLICK
     document.addEventListener("click", (e) => {
