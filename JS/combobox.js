@@ -10,41 +10,25 @@
 
 // CODE
 window.addEventListener("load", () => {
-  // INITIALIZE ALL COMBO BOXES
   const comboBoxes = document.querySelectorAll(".combo-box");
 
   comboBoxes.forEach((comboBox) => {
     const comboInput = comboBox.querySelector(".combo-input");
     const comboOptions = comboBox.querySelector(".combo-options");
     const noData = comboOptions.querySelector(".no-data");
-    const comboOptionItems = comboOptions.querySelectorAll(".combo-option");
-    const inputBox = comboBox.querySelector(".Combo-inputbox"); // FOR CHEVRON ROTATION
+    const inputBox = comboBox.querySelector(".Combo-inputbox");
 
-    if (inputBox) {
-      // Crucial check!
-      // SHOW DROPDOWN ON FOCUS
-      comboInput.addEventListener("focus", () => {
-        comboOptions.style.display = "block";
-        inputBox.classList.toggle("open");
-      });
-    }
-
-    // // SHOW DROPDOWN ON FOCUS
-    // comboInput.addEventListener("focus", () => {
-    //   comboOptions.style.display = "block";
-    //   inputBox.classList.toggle("open"); // ROTATE CHEVRON
-    // });
+    // SHOW DROPDOWN ON FOCUS
+    comboInput.addEventListener("focus", () => {
+      comboOptions.style.display = "block";
+      inputBox.classList.toggle("open");
+    });
 
     // HIDE DROPDOWN ON OUTSIDE CLICK
     document.addEventListener("click", (e) => {
       if (!comboBox.contains(e.target)) {
-        // CHECK IF CLICK IS OUTSIDE THIS SPECIFIC COMBO BOX
         comboOptions.style.display = "none";
-
-        // CHECK IF inputBox EXISTS BEFORE TOGGLING
-        if (inputBox) {
-          inputBox.classList.remove("open"); // RESET CHEVRON
-        }
+        inputBox.classList.remove("open");
       }
     });
 
@@ -53,7 +37,7 @@ window.addEventListener("load", () => {
       const inputValue = comboInput.value.toLowerCase();
       let found = false;
 
-      comboOptionItems.forEach((item) => {
+      comboOptions.querySelectorAll(".combo-option").forEach((item) => {
         if (item.textContent.toLowerCase().includes(inputValue)) {
           item.style.display = "block";
           found = true;
@@ -61,20 +45,17 @@ window.addEventListener("load", () => {
           item.style.display = "none";
         }
       });
-
-      // SHOW "NO DATA FOUND" MESSAGE IF NO MATCHES
       noData.style.display = found ? "none" : "block";
     });
 
-    // HANDLE OPTION SELECTION
-    comboOptionItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        comboInput.value = item.textContent;
+    // DYNAMIC SELECTION FOR STATIC ITEMS
+    comboOptions.addEventListener("click", (e) => {
+      if (e.target.classList.contains("combo-option")) {
+        comboInput.value = e.target.textContent;
         comboOptions.style.display = "none";
-        inputBox.classList.toggle("open"); // RESET CHEVRON
-      });
+        inputBox.classList.remove("open");
+      }
     });
-
     // CLEAR INPUT ON ESC KEY
     comboInput.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
