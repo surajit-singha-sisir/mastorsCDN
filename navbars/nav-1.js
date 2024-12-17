@@ -54,18 +54,18 @@ window.addEventListener("load", () => {
     }
 
     // Handles click events
-    function handleClick(event) {
-      if (hamburger.contains(event.target)) {
-        toggleMenu(!ul.classList.contains("nav-show"));
-      } else if (hambCross.contains(event.target)) {
-        toggleMenu(false);
-      } else if (
-        !ul.contains(event.target) &&
-        ul.classList.contains("nav-show")
-      ) {
-        toggleMenu(false);
-      }
-    }
+    // function handleClick(event) {
+    //   if (hamburger.contains(event.target)) {
+    //     toggleMenu(!ul.classList.contains("nav-show"));
+    //   } else if (hambCross.contains(event.target)) {
+    //     toggleMenu(false);
+    //   } else if (
+    //     !ul.contains(event.target) &&
+    //     ul.classList.contains("nav-show")
+    //   ) {
+    //     toggleMenu(false);
+    //   }
+    // }
 
     // Attach event listeners
     document.addEventListener("click", handleClick);
