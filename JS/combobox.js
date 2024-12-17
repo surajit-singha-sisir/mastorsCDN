@@ -23,14 +23,14 @@ window.addEventListener("load", () => {
     // SHOW DROPDOWN ON FOCUS
     comboInput.addEventListener("focus", () => {
       comboOptions.style.display = "block";
-      inputBox.classList.add("open"); // ROTATE CHEVRON
+      inputBox.classList.toggle("open"); // ROTATE CHEVRON
     });
 
     // HIDE DROPDOWN ON OUTSIDE CLICK
     document.addEventListener("click", (e) => {
       if (!e.target.closest(".combo-box")) {
         comboOptions.style.display = "none";
-        inputBox.classList.remove("open"); // RESET CHEVRON
+        inputBox.classList.toggle("open"); // RESET CHEVRON
       }
     });
 
@@ -57,7 +57,7 @@ window.addEventListener("load", () => {
       item.addEventListener("click", () => {
         comboInput.value = item.textContent;
         comboOptions.style.display = "none";
-        inputBox.classList.remove("open"); // RESET CHEVRON
+        inputBox.classList.toggle("open"); // RESET CHEVRON
       });
     });
 
@@ -66,7 +66,7 @@ window.addEventListener("load", () => {
       if (e.key === "Escape") {
         comboInput.value = "";
         comboOptions.style.display = "none";
-        inputBox.classList.remove("open"); // RESET CHEVRON
+        inputBox.classList.toggle("open"); // RESET CHEVRON
       }
     });
   });
