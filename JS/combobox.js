@@ -21,21 +21,25 @@ window.addEventListener("load", () => {
     // SHOW DROPDOWN ON FOCUS
     comboInput.addEventListener("focus", () => {
       comboOptions.style.display = "block";
-      inputBox.classList.toggle("open");
+      inputBox.classList.add("open");
     });
 
     // HIDE DROPDOWN ON OUTSIDE CLICK
     document.addEventListener("click", (e) => {
       if (!comboBox.contains(e.target)) {
         comboOptions.style.display = "none";
-        inputBox.classList.remove("open");
+        if (inputBox && inputBox.classList.contains("open")) {
+          inputBox.classList.remove("open");
+        }
       }
     });
 
-    // FILTER OPTIONS AS USER TYPES
+    // FILTER OPTIONS AND SHOW DROPDOWN AS USER TYPES
     comboInput.addEventListener("input", () => {
       const inputValue = comboInput.value.toLowerCase();
       let found = false;
+
+      comboOptions.style.display = "block"; // SHOW OPTIONS ON TYPING
 
       comboOptions.querySelectorAll(".combo-option").forEach((item) => {
         if (item.textContent.toLowerCase().includes(inputValue)) {
@@ -45,6 +49,8 @@ window.addEventListener("load", () => {
           item.style.display = "none";
         }
       });
+
+      // SHOW 'NO DATA' MESSAGE IF NO MATCHES FOUND
       noData.style.display = found ? "none" : "block";
     });
 
@@ -56,12 +62,28 @@ window.addEventListener("load", () => {
         inputBox.classList.remove("open");
       }
     });
+
     // CLEAR INPUT ON ESC KEY
     comboInput.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         comboInput.value = "";
-        comboOptions.style.display = "none";
-        inputBox.classList.toggle("open"); // RESET CHEVRON
+        comboOptions.style.display = "block";
+
+        noData.style.display = "none";
+        comboOptions.querySelectorAll(".combo-option").forEach((item) => {
+          item.style.display = "block";
+        });
+      }
+    });
+
+    // HANDLE WHEN INPUT IS CLICKED AFTER CLEARING
+    comboInput.addEventListener("click", () => {
+      if (comboInput.value === "") {
+        comboOptions.style.display = "block";
+        noData.style.display = "none";
+        comboOptions.querySelectorAll(".combo-option").forEach((item) => {
+          item.style.display = "block";
+        });
       }
     });
   });

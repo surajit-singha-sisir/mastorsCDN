@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="https://surajit-singha-sisir.github.io/mastorsCDN/mastorsIcons/mastorsIcons.css"> -->
     <!-- <script type="module" src="https://surajit-singha-sisir.github.io/mastorsCDN/mastors.js"></script> -->
     <!-- <script src="./externalRAW/navbar.js"></script> -->
-    <!-- <script src="./navbars/nav-1.js"></script> -->
+    <script type="module" src="./mastors.js"></script>
     <script src="./externalRAW/index.js"></script>
 
     <!-- CODE HIGHLIGHTER -->
@@ -1330,27 +1330,23 @@
 
         <!-- CATEGORY -->
         <section class="b-e pad--10 bg-main f gap-10">
-            <!-- CATEGORY -->
+            <!-- COMBOBOX -->
             <div class="combo-box w-100">
-                <input type="text" class="combo-input" placeholder="-- Select --">
-                <span class="chevron-icon"><img
-                        src="https://surajit-singha-sisir.github.io/mastorsCDN/Resources/svg/chevron.svg" alt=""></span>
-                <ul class="combo-options" style="display: none;">
-                    <li class="combo-option">Option 1</li>
-                    <li class="combo-option">Option 2</li>
-                    <li class="combo-option">Option 3</li>
-                    <li class="combo-option">Option 4</li>
-                    <li class="combo-option">Option 5</li>
-                    <li class="combo-option">Option 6</li>
-                    <li class="combo-option">Option 7</li>
-                    <li class="combo-option">Option 8</li>
-                    <li class="combo-option">Option 9</li>
-                    <li class="combo-option">Option 10</li>
-                    <li class="combo-option">Option 11</li>
-                    <li class="combo-option">Option 12</li>
+                <div class="Combo-inputbox"><input type="text" class="combo-input b-Blue b-1 b-rad--05"
+                        placeholder="Select ..."></div>
+                <ul class="combo-options" aria-selected="">
+                    <li class="combo-option">Apple</li>
+                    <li class="combo-option">Banana</li>
+                    <li class="combo-option">Cherry</li>
+                    <li class="combo-option">Date</li>
+                    <li class="combo-option">Elderberry</li>
+                    <li class="combo-option">Fig</li>
+                    <li class="combo-option">Grape</li>
+                    <li class="combo-option">Honeydew</li>
                     <li class="no-data" style="display: none;">No data found!</li>
                 </ul>
             </div>
+            
             <!-- SUB-CATEGORY -->
             <div class="option">
                 <select>
@@ -1385,6 +1381,30 @@
             </div>
         </section>
 
+        <section>
+            <div class="dragable-image-container">
+                <span class="preview-img-container">
+                    <img src="https://img.freepik.com/free-photo/organic-cosmetic-product-with-dreamy-aesthetic-fresh-background_23-2151382816.jpg"
+                        class="draggable" draggable="true">
+                </span>
+                <span class="preview-img-container">
+                    <img src="https://img.freepik.com/premium-photo/ultra-realistic-orange-background-4k-hd-photo-product_1193781-21514.jpg"
+                        class="draggable" draggable="true">
+                </span>
+                <span class="preview-img-container">
+                    <img src="https://img.freepik.com/free-photo/3d-beauty-product-studio_23-2151401472.jpg"
+                        class="draggable" draggable="true">
+                </span>
+                <span class="preview-img-container">
+                    <img src="https://cdn.pixabay.com/photo/2022/03/17/04/57/cosmetic-products-7073743_640.jpg"
+                        class="draggable" draggable="true">
+                </span>
+                <span class="preview-img-container">
+                    <img src="https://img.freepik.com/free-photo/3d-cartoon-beauty-products_23-2151503319.jpg"
+                        class="draggable" draggable="true">
+                </span>
+            </div>
+        </section>
 
     </main>
     <!-- MAIN END -->

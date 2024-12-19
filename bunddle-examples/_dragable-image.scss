@@ -1,0 +1,62 @@
+.dragable-image-container {
+  position: relative;
+  display: flex;
+  padding: 1rem;
+}
+.draggable {
+  width: 100px;
+  height: auto;
+  cursor: grab;
+  transition: all 0.3s ease;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.preview-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #e9e9e9;
+  transition: all 0.3s ease;
+}
+
+.preview-img-container img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.preview-img-container.scaling {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.dragging-item-counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: #dde6e9;
+  text-shadow: 2px 3px 3px #747474;
+}
+
+@media screen and (max-width: 1080px) {
+  .dragging-item-counter {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .dragging-item-counter {
+    font-size: 1.5rem;
+  }
+}
