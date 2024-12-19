@@ -17,8 +17,8 @@ git clone https://github.com/surajit-singha-sisir/mastorsCDN.git
 Include the CSS file in your HTML head:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.05/mastors.css">
-<script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.05/mastors.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.06/mastors.css">
+<script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.0.06/mastors.js"></script>
 ```
 
 ### Latest Version
@@ -65,6 +65,18 @@ For SCSS:
 ```bash
 Install-Package mastorscdn@1.0.0.scss
 ```
+### MastorsCDN icons
+MastorsCDN also supports icons. You can use the icons on your webpage. For Icon use this stylesheet on the head tag. Most of the icons are added from the **"icomoon.io"** library.
+```bash
+<link rel="stylesheet" href="https://surajit-singha-sisir.github.io/mastorsCDN/mastorsIcons/mastorsIcons.css">
+```
+### How to use Icons
+If I need to use an icon then use ```m-``` icon-name. 
+```bash
+<i class="m-facebook"></i>
+```
+We will publish all the icon documentation later.
+
 
 ### Usage
 After installation, you can include **mastorsCDN** in your project as follows:
@@ -86,7 +98,7 @@ Replace ```path/to/``` with the path where mastorsCDN files are installed in you
 
 ## Features
 
-- **CSS Templates**: Includes pre-designed styles to rapidly build and style common components.
+- **CSS Templates**: Includes pre-designed styles to build and style common components rapidly.
 - **JavaScript Utilities**: Provides essential JavaScript functions for DOM manipulation, event handling, and more.
 - **Responsive Design**: Built-in support for responsive layouts, compatible across various screen sizes and devices.
 
@@ -120,7 +132,7 @@ Contributions are welcome! If you'd like to contribute, please follow these step
    ```
 6. **Submit a pull request**: Go to the original repository where you want to contribute and create a pull request, explaining the changes you made.
 
-Please ensure that your code follows the project's coding style and includes any necessary documentation to facilitate the review process.
+Please ensure your code follows the project's coding style and includes any necessary documentation to facilitate the review process.
 
 Thank you for considering contributing to **mastorsCDN**!
 
