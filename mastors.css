@@ -178084,7 +178084,6 @@ WIDTH IN REM SIZE
 .dragable-image-container {
   position: relative;
   display: flex;
-  padding: 1rem;
 }
 
 .draggable {
