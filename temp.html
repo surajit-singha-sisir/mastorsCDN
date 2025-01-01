@@ -49,42 +49,51 @@
 </body>
 
 <script>
-    function textAnimation() {
-        const fullText = document.getElementById("fullText");
-        const texts = fullText.textContent.split("");
-        fullText.textContent = "";
-        const spans = texts.map((char) => {
-            const span = document.createElement("span");
-            span.textContent = char;
-            span.style.transition = "all 0.5s ease";
-            span.style.fontSize = "1.5rem";
-            fullText.appendChild(span);
-            return span;
-        });
-
-        function animateText() {
-            spans.forEach((span, i) => {
-                setTimeout(() => {
-                    span.style.fontSize = "3rem";
-                }, i * 100);
-
-                setTimeout(() => {
-                    span.style.fontSize = "4rem";
-                }, (texts.length * 100) + i * 100);
-
-                setTimeout(() => {
-                    span.style.fontSize = "3rem";
-                }, (texts.length * 200) + i * 100);
-            });
-        }
-
-        setInterval(() => {
-            animateText();
-        }, 5000);
-        animateText();
+function textAnimation() {
+    const fullText = document.getElementById("fullText");
+    const texts = fullText.textContent.split("");
+    fullText.textContent = "";
+    
+    // Function to generate random color
+    function getRandomColor() {
+        return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`;
     }
 
-    document.addEventListener("DOMContentLoaded", textAnimation);
+    const spans = texts.map((char) => {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.transition = "all 0.5s ease";
+        span.style.fontSize = "5rem";
+        fullText.appendChild(span);
+        return span;
+    });
+
+    function animateText() {
+        spans.forEach((span, i) => {
+            setTimeout(() => {
+                span.style.fontSize = "3rem";
+                span.style.color = getRandomColor();
+            }, i * 100);
+
+            setTimeout(() => {
+                span.style.fontSize = "5rem";
+                span.style.color = getRandomColor();
+            }, (texts.length * 100) + i * 100);
+
+            setTimeout(() => {
+                span.style.fontSize = "3rem";
+                span.style.color = getRandomColor();
+            }, (texts.length * 200) + i * 100);
+        });
+    }
+
+    setInterval(() => {
+        animateText();
+    }, 5000);
+    animateText();
+}
+
+document.addEventListener("DOMContentLoaded", textAnimation);
 
 </script>
 
