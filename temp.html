@@ -1,125 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission with Image Upload</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./mastors.css">
+    <link rel="stylesheet" href="./mastorsIcons/mastorsIcons.css">
+    <script type="module" src="./mastors.js"></script>
 </head>
-<body>
-    <h1>Form Submission</h1>
-    <form id="myForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+<body style="background-color: #0a1810;">
+    <nav class="navbar-1" id="myNavbar" style="background-color: #ccc;">
+        <section class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../image/logo.png" alt="">
+                <p>Portfolio</p>
+            </a>
+            <div class="nav-items"style="background-color: #ccc;">
+                <span><a href="../research.html">Research</a><i class="m-education"></i></span>
+                <span><a href="../publication.html">Publication</a><i class="m-book"></i></span>
+                <span><a href="../cv.html">CV</a><i class="m-user"></i></span>
+                <span><a href="../photo-gallery.html">Gallery</a><i class="m-image"></i></span>
+                <span><a href="../contact.html">Contact</a><i class="m-mail1"></i></span>
+                <span><a href="../news.html">News</a><i class="m-news"></i></span>
+            </div>
 
-        <label for="monthlySalary">Monthly Salary:</label><br>
-        <input type="number" id="monthlySalary" name="monthlySalary" required><br><br>
+            <a href="javascript:void(0);" class="hamburger" onclick="toggleNavbar(this)">
+                <i class="m-m-hamburger"></i>
+            </a>
+        </section>
+        <div class="bg-dark" id="bg-dark"></div>
+    </nav>
 
-        <label for="profileImage">Upload Profile Image:</label><br>
-        <input type="file" id="profileImage123" name="profileImage" accept="image/*" required><br><br>
+    <style>
+        .cdn {
+            position: relative;
+            margin-left: 0.5rem;
+        }
+        .cdn::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1.3rem 2.5rem;
+            border-radius: 0.5rem;
+            background-color: #1e76d4;
+            z-index: -1;
+        }
+        .cdn::after {
+            content: "v1.1";
+            position: absolute;
+            bottom: 0;
+            right: -2rem;
+            font-size: 0.8rem;
+            text-shadow: 1px 1px 2px #303030;
+        }
+    </style>
 
-        <button type="submit">Submit</button>
-    </form>
+    <div class="firework-container">
+        <canvas id="fireworks"></canvas>
+        <div class="message">Happy New Year 2025!</div><br>
+        <div class="message f">Mastors <p class="cdn">CDN</p></div>
+    </div>
+    
 
-    <div id="response"></div>
-
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the form from submitting
-
-            // Get form data
-            const formData = new FormData();
-
-            // Get text data
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const monthlySalary = document.getElementById("monthlySalary").value;
-            formData.append("name", name);
-            formData.append("email", email);
-            formData.append("monthlySalary", monthlySalary);
-
-            // Get image data
-            const fileInput = document.getElementById("profileImage123");
-            const file = fileInput.files[0];
-            if (!file) {
-                alert("Please upload an image file.");
-                return;
-            }
-
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const img = new Image();
-                img.onload = function() {
-                    // Create a canvas to compress and convert the image
-                    const canvas = document.createElement("canvas");
-                    const ctx = canvas.getContext("2d");
-
-                    // Set the canvas size (compression step)
-                    const maxWidth = 800; // Set desired width
-                    const maxHeight = 800; // Set desired height
-                    let width = img.width;
-                    let height = img.height;
-
-                    if (width > height) {
-                        if (width > maxWidth) {
-                            height = (height * maxWidth) / width;
-                            width = maxWidth;
-                        }
-                    } else {
-                        if (height > maxHeight) {
-                            width = (width * maxHeight) / height;
-                            height = maxHeight;
-                        }
-                    }
-
-                    canvas.width = width;
-                    canvas.height = height;
-                    ctx.drawImage(img, 0, 0, width, height);
-
-                    // Convert the canvas content to PNG binary data
-                    canvas.toBlob(
-                        function(blob) {
-                            formData.append("profileImage", blob, "compressed_image.png");
-
-                            // Create XMLHttpRequest
-                            const xhr = new XMLHttpRequest();
-                            xhr.open("POST", "https://httpbin.org/post", true);
-
-                            xhr.onload = function() {
-                                if (xhr.status === 200) {
-                                    // Handle success response
-                                    const response = JSON.parse(xhr.responseText);
-                                    document.getElementById("response").innerText =
-                                        `Success: ${response.message}`;
-
-                                    // Reload the page after successful submission
-                                    location.reload(); // This reloads the current page
-                                } else {
-                                    // Handle error response
-                                    document.getElementById("response").innerText =
-                                        `Error: ${xhr.status} - ${xhr.statusText}`;
-                                }
-                            };
-
-                            xhr.onerror = function() {
-                                document.getElementById("response").innerText =
-                                    "Error: Failed to send the request.";
-                            };
-
-                            // Send the form data
-                            xhr.send(formData);
-                        },
-                        "image/png",
-                        0.8 // Compression quality (0 to 1)
-                    );
-                };
-
-                img.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
-        });
-    </script>
 </body>
+<script>
+    // // NAV-1 JS
+function toggleNavbar(hamb) {
+  const items = hamb.parentElement.querySelector(".nav-items");
+  const bgDark = document.getElementById("bg-dark");
+
+  if (items.classList.contains("navAnimation")) {
+    // Close navbar
+    items.classList.remove("navAnimation");
+    items.classList.add("navExitAnimation");
+    bgDark.classList.remove("bgDarkAnimation");
+    bgDark.classList.add("bgDarkExitAnimation");
+  } else {
+    items.classList.remove("navExitAnimation");
+    items.classList.add("navAnimation");
+    bgDark.classList.remove("bgDarkExitAnimation");
+    bgDark.classList.add("bgDarkAnimation");
+
+    const handleOutsideClick = (event) => {
+      if (!items.contains(event.target) && !hamb.contains(event.target)) {
+        // Close the navbar if the click is outside
+        items.classList.remove("navAnimation");
+        items.classList.add("navExitAnimation");
+        bgDark.classList.remove("bgDarkAnimation");
+        bgDark.classList.add("bgDarkExitAnimation");
+
+        document.removeEventListener("click", handleOutsideClick);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+  }
+}
+
+</script>
 </html>

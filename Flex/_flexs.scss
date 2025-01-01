@@ -767,3 +767,48 @@ DISPLAY CLASSES
     flex-direction: unset;
   }
 }
+
+// MULTIPLE FLEX PROPERTIES
+.f- {
+  &centered, &center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  } 
+  &start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+}
