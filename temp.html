@@ -17,7 +17,7 @@
                 <img src="../image/logo.png" alt="">
                 <p>Portfolio</p>
             </a>
-            <div class="nav-items"style="background-color: #ccc;">
+            <div class="nav-items" style="background-color: #ccc;">
                 <span><a href="../research.html">Research</a><i class="m-education"></i></span>
                 <span><a href="../publication.html">Publication</a><i class="m-book"></i></span>
                 <span><a href="../cv.html">CV</a><i class="m-user"></i></span>
@@ -38,6 +38,7 @@
             position: relative;
             margin-left: 0.5rem;
         }
+
         .cdn::before {
             content: "";
             position: absolute;
@@ -49,6 +50,7 @@
             background-color: #1e76d4;
             z-index: -1;
         }
+
         .cdn::after {
             content: "v1.1";
             position: absolute;
@@ -62,44 +64,45 @@
     <div class="firework-container">
         <canvas id="fireworks"></canvas>
         <div class="message">Happy New Year 2025!</div><br>
-        <div class="message f">Mastors <p class="cdn">CDN</p></div>
+        <div class="message f">Mastors <p class="cdn">CDN</p>
+        </div>
     </div>
-    
-
 </body>
+
 <script>
     // // NAV-1 JS
-function toggleNavbar(hamb) {
-  const items = hamb.parentElement.querySelector(".nav-items");
-  const bgDark = document.getElementById("bg-dark");
+    function toggleNavbar(hamb) {
+        const items = hamb.parentElement.querySelector(".nav-items");
+        const bgDark = document.getElementById("bg-dark");
 
-  if (items.classList.contains("navAnimation")) {
-    // Close navbar
-    items.classList.remove("navAnimation");
-    items.classList.add("navExitAnimation");
-    bgDark.classList.remove("bgDarkAnimation");
-    bgDark.classList.add("bgDarkExitAnimation");
-  } else {
-    items.classList.remove("navExitAnimation");
-    items.classList.add("navAnimation");
-    bgDark.classList.remove("bgDarkExitAnimation");
-    bgDark.classList.add("bgDarkAnimation");
+        if (items.classList.contains("navAnimation")) {
+            // Close navbar
+            items.classList.remove("navAnimation");
+            items.classList.add("navExitAnimation");
+            bgDark.classList.remove("bgDarkAnimation");
+            bgDark.classList.add("bgDarkExitAnimation");
+        } else {
+            items.classList.remove("navExitAnimation");
+            items.classList.add("navAnimation");
+            bgDark.classList.remove("bgDarkExitAnimation");
+            bgDark.classList.add("bgDarkAnimation");
 
-    const handleOutsideClick = (event) => {
-      if (!items.contains(event.target) && !hamb.contains(event.target)) {
-        // Close the navbar if the click is outside
-        items.classList.remove("navAnimation");
-        items.classList.add("navExitAnimation");
-        bgDark.classList.remove("bgDarkAnimation");
-        bgDark.classList.add("bgDarkExitAnimation");
+            const handleOutsideClick = (event) => {
+                if (!items.contains(event.target) && !hamb.contains(event.target)) {
+                    // Close the navbar if the click is outside
+                    items.classList.remove("navAnimation");
+                    items.classList.add("navExitAnimation");
+                    bgDark.classList.remove("bgDarkAnimation");
+                    bgDark.classList.add("bgDarkExitAnimation");
 
-        document.removeEventListener("click", handleOutsideClick);
-      }
-    };
+                    document.removeEventListener("click", handleOutsideClick);
+                }
+            };
 
-    document.addEventListener("click", handleOutsideClick);
-  }
-}
+            document.addEventListener("click", handleOutsideClick);
+        }
+    }
 
 </script>
+
 </html>
