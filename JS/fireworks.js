@@ -55,5 +55,6 @@ function fireWorks() {
   startFireworks();
   animateParticles();
 }
-document.addEventListener("DOMContentLoaded", fireWorks);
-// window.onload = fireWorks;
+// document.addEventListener("DOMContentLoaded", fireWorks);
+window.onload = fireWorks;
+

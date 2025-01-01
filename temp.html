@@ -11,28 +11,6 @@
 </head>
 
 <body style="background-color: #0a1810;">
-    <nav class="navbar-1" id="myNavbar" style="background-color: #ccc;">
-        <section class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="../image/logo.png" alt="">
-                <p>Portfolio</p>
-            </a>
-            <div class="nav-items" style="background-color: #ccc;">
-                <span><a href="../research.html">Research</a><i class="m-education"></i></span>
-                <span><a href="../publication.html">Publication</a><i class="m-book"></i></span>
-                <span><a href="../cv.html">CV</a><i class="m-user"></i></span>
-                <span><a href="../photo-gallery.html">Gallery</a><i class="m-image"></i></span>
-                <span><a href="../contact.html">Contact</a><i class="m-mail1"></i></span>
-                <span><a href="../news.html">News</a><i class="m-news"></i></span>
-            </div>
-
-            <a href="javascript:void(0);" class="hamburger" onclick="toggleNavbar(this)">
-                <i class="m-m-hamburger"></i>
-            </a>
-        </section>
-        <div class="bg-dark" id="bg-dark"></div>
-    </nav>
-
     <style>
         .cdn {
             position: relative;
@@ -63,45 +41,50 @@
 
     <div class="firework-container">
         <canvas id="fireworks"></canvas>
-        <div class="message">Happy New Year 2025!</div><br>
+        <div class="message" id="fullText">Happy New Year 2025!</div><br>
         <div class="message f">Mastors <p class="cdn">CDN</p>
         </div>
     </div>
+    <audio src="Resources/audio/fireworks.mp3" autoplay></audio>
 </body>
 
 <script>
-    // // NAV-1 JS
-    function toggleNavbar(hamb) {
-        const items = hamb.parentElement.querySelector(".nav-items");
-        const bgDark = document.getElementById("bg-dark");
+    function textAnimation() {
+        const fullText = document.getElementById("fullText");
+        const texts = fullText.textContent.split("");
+        fullText.textContent = "";
+        const spans = texts.map((char) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.style.transition = "all 0.5s ease";
+            span.style.fontSize = "1.5rem";
+            fullText.appendChild(span);
+            return span;
+        });
 
-        if (items.classList.contains("navAnimation")) {
-            // Close navbar
-            items.classList.remove("navAnimation");
-            items.classList.add("navExitAnimation");
-            bgDark.classList.remove("bgDarkAnimation");
-            bgDark.classList.add("bgDarkExitAnimation");
-        } else {
-            items.classList.remove("navExitAnimation");
-            items.classList.add("navAnimation");
-            bgDark.classList.remove("bgDarkExitAnimation");
-            bgDark.classList.add("bgDarkAnimation");
+        function animateText() {
+            spans.forEach((span, i) => {
+                setTimeout(() => {
+                    span.style.fontSize = "3rem";
+                }, i * 100);
 
-            const handleOutsideClick = (event) => {
-                if (!items.contains(event.target) && !hamb.contains(event.target)) {
-                    // Close the navbar if the click is outside
-                    items.classList.remove("navAnimation");
-                    items.classList.add("navExitAnimation");
-                    bgDark.classList.remove("bgDarkAnimation");
-                    bgDark.classList.add("bgDarkExitAnimation");
+                setTimeout(() => {
+                    span.style.fontSize = "4rem";
+                }, (texts.length * 100) + i * 100);
 
-                    document.removeEventListener("click", handleOutsideClick);
-                }
-            };
-
-            document.addEventListener("click", handleOutsideClick);
+                setTimeout(() => {
+                    span.style.fontSize = "3rem";
+                }, (texts.length * 200) + i * 100);
+            });
         }
+
+        setInterval(() => {
+            animateText();
+        }, 5000);
+        animateText();
     }
+
+    document.addEventListener("DOMContentLoaded", textAnimation);
 
 </script>
 
