@@ -65,7 +65,7 @@ For SCSS:
 ```bash
 Install-Package mastorscdn@1.0.0.scss
 ```
-### MastorsCDN icons
+### ❤️ MastorsCDN icons 🥳
 MastorsCDN also supports icons. You can use the icons on your webpage. For Icon use this stylesheet on the head tag. Most of the icons are added from the **"icomoon.io"** library.
 ```bash
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.1/mastorsIcons/mastorsIcons.css">
