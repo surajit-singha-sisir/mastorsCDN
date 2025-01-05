@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,39 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SASS Project Setup Template</title>
-    <link rel="stylesheet" href="https://surajit-singha-sisir.github.io/mastorsCDN/mastors.css">
-    <script type="module" src="https://surajit-singha-sisir.github.io/mastorsCDN/mastors.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.1/mastors.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.1/mastorsIcons/mastorsIcons.css">
+    <script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.1/mastors.js"></script>
     <link rel="stylesheet" href="../mastors.css">
 </head>
 
 <body class="w-100">
     <header class="header header-2-col header-main">
 
-        <div class="col-1">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <a class="msr-logo-div" href="#">
-                <div class="msr-logo logo-cover">
-                    <img src="../Resources/svg/logo/mastorsCDN-whitebg.svg" alt="">
+        <nav class="navbar-1" id="myNavbar" style="background-color: #b3afaf;">
+            <section class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="../image/logo.png" alt="">
+                    <p>Saif Uddin Arif's Portfolio</p>
+                </a>
+                <div class="nav-items" style="background-color: #fff;">
+                    <span><a href="education.html">Education</a><i class="m-book"></i></span>
+                    <span><a href="research.html">Research &amp; Publication</a><i class="m-education"></i></span>
+                    <span><a href="publication.html">Team &amp; Collaboration</a><i class="m-book"></i></span>
+                    <span><a href="photo-gallery.html">Travelling</a><i class="m-image"></i></span>
+                    <span><a href="contact.html">Contact</a><i class="m-mail1"></i></span>
                 </div>
-            </a>
-        </div>
 
-        <ul class="col-2" id="col-2">
-            <li><a href="#"><button class="btn btn-nav-maroon">Home</button></a></li>
-            <li><a href="#"><button class="btn btn-nav-maroon">Projects</button></a></li>
-            <li><a href="#"><button class="btn btn-nav-maroon">Menus</button></a></li>
-            <li><a href="#"><button class="btn btn-nav-maroon">About Us</button></a></li>
-            <li><a href="#"><button class="btn btn-nav-maroon">Contact</button></a></li>
-            <li class="hamb-cross hide" onclick="closeHamb(this)">&#215;</li>
-        </ul>
+                <a href="javascript:void(0);" class="hamburger" onclick="toggleNavbar(this)">
+                    <i class="m-m-hamburger"></i>
+                </a>
+            </section>
+            <div class="bg-dark" id="bg-dark"></div>
+        </nav>
     </header>
-    <main class="m-lr--15 pad-tb--10 text-just">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium asperiores voluptas earum sint accusantium neque accusamus enim quia fuga. Quam reiciendis vel aliquid. Maxime a vero ipsam sunt culpa aperiam.
-    </main>
 </body>
+<script>
+    // // NAV-1 JS
+function toggleNavbar(hamb) {
+  const items = hamb.parentElement.querySelector(".nav-items");
+  const bgDark = document.getElementById("bg-dark");
+
+  if (items.classList.contains("navAnimation")) {
+    // Close navbar
+    items.classList.remove("navAnimation");
+    items.classList.add("navExitAnimation");
+    bgDark.classList.remove("bgDarkAnimation");
+    bgDark.classList.add("bgDarkExitAnimation");
+  } else {
+    items.classList.remove("navExitAnimation");
+    items.classList.add("navAnimation");
+    bgDark.classList.remove("bgDarkExitAnimation");
+    bgDark.classList.add("bgDarkAnimation");
+
+    const handleOutsideClick = (event) => {
+      if (!items.contains(event.target) && !hamb.contains(event.target)) {
+        // Close the navbar if the click is outside
+        items.classList.remove("navAnimation");
+        items.classList.add("navExitAnimation");
+        bgDark.classList.remove("bgDarkAnimation");
+        bgDark.classList.add("bgDarkExitAnimation");
+
+        document.removeEventListener("click", handleOutsideClick);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+  }
+}
+
+</script>
 </html>
