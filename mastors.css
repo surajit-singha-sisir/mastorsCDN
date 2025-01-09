@@ -187753,39 +187753,99 @@ DISPLAY CLASSES
   justify-content: center;
   align-items: center;
 }
-.f-between {
+.f-between-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.f-around {
+.f-around-center {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.f-evenly {
+.f-evenly-center {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.f-end {
+.f-end-center {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.f-start {
+.f-start-center {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.f-top {
+.f-center-start {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-.f-bottom {
+.f-center-end {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+}
+.f-end-between {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-between;
+}
+.f-end-around {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-around;
+}
+.f-end-evenly {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-evenly;
+}
+.f-start-between {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+.f-start-around {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+.f-start-evenly {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-evenly;
+}
+.f-between-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.f-between-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.f-around-start {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.f-around-end {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.f-evenly-start {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.f-evenly-end {
+  display: flex;
+  justify-content: space-evenly;
   align-items: flex-end;
 }
 
