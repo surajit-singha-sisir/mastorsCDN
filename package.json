@@ -8,7 +8,7 @@
   },
   "name": "mastorscdn",
   "version": "1.0.0",
-  "description": "An Opensource Front-end Framework",
+  "description": "An Opensource Front-end Library",
   "main": "mastors.js",
   "devDependencies": {},
   "repository": {

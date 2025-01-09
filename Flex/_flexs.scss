@@ -147,9 +147,6 @@ DISPLAY CLASSES
   justify-tracks: unset;
 }
 
-
-
-
 /* Align Content - Flexbox */
 
 .f-align-content-start {
@@ -200,8 +197,6 @@ DISPLAY CLASSES
   align-content: unset;
 }
 
-
-
 /* Align Items - Flexbox */
 
 .f-align-items-start {
@@ -243,9 +238,6 @@ DISPLAY CLASSES
 .f-align-items-unset {
   align-items: unset;
 }
-
-
-
 
 /* Align Self - Flexbox */
 
@@ -322,7 +314,7 @@ DISPLAY CLASSES
   }
 
   &last {
-    order: 1e+9;
+    order: 1e9;
   }
 
   &auto {
@@ -614,7 +606,6 @@ DISPLAY CLASSES
     flex: 85.714%;
   }
 
-
   &7-1 {
     flex: 14.286%;
   }
@@ -675,7 +666,6 @@ DISPLAY CLASSES
     flex: 80%;
   }
 
-
   &4-1 {
     flex: 25%;
   }
@@ -696,9 +686,6 @@ DISPLAY CLASSES
     flex: 66.667%;
   }
 }
-
-
-
 
 /* Flex Wrap */
 
@@ -770,45 +757,105 @@ DISPLAY CLASSES
 
 // MULTIPLE FLEX PROPERTIES
 .f- {
-  &centered, &center {
+  &centered,
+  &center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  &between {
+  &between-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &around {
+  &around-center {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  &evenly {
+  &evenly-center {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  &end {
+  &end-center {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  } 
-  &start {
+  }
+  &start-center {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  &top {
+  &center-start {
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
-  &bottom {
+  &center-end {
     display: flex;
     justify-content: center;
     align-items: flex-end;
   }
-  
+  &end-between {
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-between;
+  }
+  &end-around {
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-around;
+  }
+  &end-evenly {
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-evenly;
+  }
+  &start-between {
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
+  }
+  &start-around {
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-around;
+  }
+  &start-evenly {
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-evenly;
+  }
+  &between-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &between-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &around-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &around-end {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  &evenly-start {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  &evenly-end {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
 }

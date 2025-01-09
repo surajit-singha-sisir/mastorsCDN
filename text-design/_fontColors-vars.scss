@@ -1,207 +1,43 @@
-// SASS Variables
-// BASIC COLORS
-$brown: #a52a2a !default;
-$silver: #c0c0c0 !default;
-$maroon: #800000 !default;
-$olive: #808000 !default;
-$navy: #000080 !default;
-$yellowGreen: #9acd32 !default;
-$oliveDrab: #6b8e23 !default;
-$greenYellow: #adff2f !default;
-$limeGreen: #32cd32 !default;
-$paleGreen: #98fb98 !default;
-$darkSeaGreen: #8fbc8f !default;
-$mediumSeaGreen: #3cb371 !default;
-$seaGreen: #2e8b57 !default;
-$forestGreen: #228b22 !default;
-$lightGray: #d3d3d3 !default;
-$lavender: #e6e6fa !default;
-$mistyRose: #ffe4e1 !default;
-$navajoWhite: #ffdead !default;
-$wheat: #f5deb3 !default;
-$antiqueWhite: #faebd7 !default;
-$cornsilk: #fff8dc !default;
-$khaki: #f0e68c !default;
-$beige: #f5f5dc !default;
-$papayaWhip: #ffefd5 !default;
-$blanchedAlmond: #ffebcd !default;
-$honeyDew: #f0fff0 !default;
-$mintCream: #f5fffa !default;
-$aliceBlue: #f0f8ff !default;
-$tomato: #ff6347 !default;
-$orchid: #da70d6 !default;
-$turquoise: #40e0d0 !default;
-$darkRed: #8b0000 !default;
-$darkBlue: #00008b !default;
-$darkGreen: #006400 !default;
-$peru: #cd853f !default;
-$chocolate: #d2691e !default;
-$plum: #dda0dd !default;
-$sienna: #a0522d !default;
-$snow: #fffafa !default;
-$tan: #d2b48c !default;
-$mediumPurple: #9370db !default;
-$mediumOrchid: #ba55d3 !default;
-$mediumTurquoise: #48d1cc !default;
-$slateBlue: #6a5acd !default;
-$slateGray: #708090 !default;
-$springGreen: #00ff7f !default;
-$sandyBrown: #f4a460 !default;
-$crimson: #dc143c !default;
-$deepPink: #ff1493 !default;
-$dodgerBlue: #1e90ff !default;
-$gold: #ffd700 !default;
-$indianRed: #cd5c5c !default;
-$lightCoral: #f08080 !default;
-$lightSalmon: #ffa07a !default;
-$lightSeaGreen: #20b2aa !default;
-$lime: #00ff00 !default;
-$magenta: #ff00cc !default;
-$orange: #ffa500 !default;
-$orangered: #ff4500 !default;
-$paleTurquoise: #afeeee !default;
-$royalBlue: #4169e1 !default;
-$skyBlue: #87ceeb !default;
-$steelBlue: #4682b4 !default;
-$violet: #ee82ee !default;
-$teal: #008080 !default;
-$white: #ffffff !default;
-$black: #000000 !default;
-$red: #ff0000 !default;
-$green: #00ff00 !default;
-$blue: #0000ff !default;
-$yellow: #ffff00 !default;
-$cyan: #00ffff !default;
-$gray: #808080 !default;
-$darkGray: #a9a9a9 !default;
-$dark: #a9a9a9 !default;
-$lightDark: #c0c0c0 !default;
-$darkDark: #707070 !default;
-$darkSlateGray: #2f4f4f !default;
-$darkCyan: #008b8b !default;
-$darkMagenta: #8b008b !default;
-$darkGoldenrod: #b8860b !default;
-$veryDarkGray: #1c1c1c !default;
-$offBlack: #101010 !default;
-$indigo: #4b0082 !default;
-$midnightBlue: #191970 !default;
-$rosyBrown: #bc8f8f !default;
-$firebrick: #b22222 !default;
-$paleGoldenrod: #eee8aa !default;
-$darkOrange: #ff8c00 !default;
-$hotPink: #ff69b4 !default;
-$paleVioletRed: #db7093 !default;
-$goldenrod: #daa520 !default;
-$lightPink: #ffb6c1 !default;
+@use "sass:color";
+@use "../roots/color-map" as *;
 
-
-
-/* ----------------------------------------------------------------
-BACKGROUND COLOR SETS
--------------------------------------------------------------------
-*/
-@each $color, $value in (
-  Brown: $brown,
-      Silver: $silver,
-      Maroon: $maroon,
-      Olive: $olive,
-      Navy: $navy,
-      YellowGreen: $yellowGreen,
-      OliveDrab: $oliveDrab,
-      GreenYellow: $greenYellow,
-      LimeGreen: $limeGreen,
-      PaleGreen: $paleGreen,
-      DarkSeaGreen: $darkSeaGreen,
-      MediumSeaGreen: $mediumSeaGreen,
-      SeaGreen: $seaGreen,
-      ForestGreen: $forestGreen,
-      LightGray: $lightGray,
-      Lavender: $lavender,
-      MistyRose: $mistyRose,
-      NavajoWhite: $navajoWhite,
-      Wheat: $wheat,
-      AntiqueWhite: $antiqueWhite,
-      Cornsilk: $cornsilk,
-      Khaki: $khaki,
-      Beige: $beige,
-      PapayaWhip: $papayaWhip,
-      BlanchedAlmond: $blanchedAlmond,
-      HoneyDew: $honeyDew,
-      MintCream: $mintCream,
-      AliceBlue: $aliceBlue,
-      Tomato: $tomato,
-      Orchid: $orchid,
-      Turquoise: $turquoise,
-      DarkRed: $darkRed,
-      DarkBlue: $darkBlue,
-      DarkGreen: $darkGreen,
-      Peru: $peru,
-      Chocolate: $chocolate,
-      Plum: $plum,
-      Sienna: $sienna,
-      Snow: $snow,
-      Tan: $tan,
-      MediumPurple: $mediumPurple,
-      MediumOrchid: $mediumOrchid,
-      MediumTurquoise: $mediumTurquoise,
-      SlateBlue: $slateBlue,
-      SlateGray: $slateGray,
-      SpringGreen: $springGreen,
-      SandyBrown: $sandyBrown,
-      Crimson: $crimson,
-      DeepPink: $deepPink,
-      DodgerBlue: $dodgerBlue,
-      Gold: $gold,
-      IndianRed: $indianRed,
-      LightCoral: $lightCoral,
-      LightSalmon: $lightSalmon,
-      LightSeaGreen: $lightSeaGreen,
-      Lime: $lime,
-      Magenta: $magenta,
-      Orange: $orange,
-      Orangered: $orangered,
-      PaleTurquoise: $paleTurquoise,
-      RoyalBlue: $royalBlue,
-      SkyBlue: $skyBlue,
-      SteelBlue: $steelBlue,
-      Violet: $violet,
-      Teal: $teal,
-      White: $white,
-      Black: $black,
-      Red: $red,
-      Green: $green,
-      Blue: $blue,
-      Yellow: $yellow,
-      Cyan: $cyan,
-      Gray: $gray,
-      DarkGray: $darkGray,
-      Dark: $dark,
-      LightDark: $lightDark,
-      DarkDark: $darkDark,
-      DarkSlateGray: $darkSlateGray,
-      DarkCyan: $darkCyan,
-      DarkMagenta: $darkMagenta,
-      DarkGoldenrod: $darkGoldenrod,
-      VeryDarkGray: $veryDarkGray,
-      OffBlack: $offBlack,
-      MidnightBlue: $midnightBlue,
-      RosyBrown: $rosyBrown,
-      Firebrick: $firebrick,
-      PaleGoldenrod: $paleGoldenrod,
-      DarkOrange: $darkOrange,
-      HotPink: $hotPink,
-      PaleVioletRed: $paleVioletRed,
-      Goldenrod: $goldenrod,
-      LightPink: $lightPink
-)
-{
+@each $color, $value in $color-map {
   .text-#{$color} {
     color: $value;
   }
   .text-#{$color}i {
     color: $value !important;
   }
+  .text-hov-#{$color}:hover {
+    color: $value;
+  }
+
+  // Basic text shadow using color
+  .text-shad-#{$color},
+  .text-shadow-#{$color} {
+    text-shadow: 2px 2px 4px $value;
+  }
+
+  // Shadow on hover
+  .text-shad-hov-#{$color}:hover,
+  .text-shadow-hov-#{$color}:hover {
+    text-shadow: 2px 2px 4px $value;
+  }
 }
 
+@mixin color-variations($color, $color-name) {
+  @for $i from 1 through 9 {
+    // Generate variations based on darkening or lightening
+    $adjusted-color: color.adjust($color, $lightness: (100 - $i * 10) * 5%);
 
+    // Generate the class for each variation
+    .#{$color-name}-#{$i * 100} {
+      color: $adjusted-color;
+    }
+  }
+}
 
+// Iterate through the color map and apply the mixin for each color
+@each $name, $color in $color-map {
+  @include color-variations($color, $name);
+}
