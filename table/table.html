@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <link rel="stylesheet" href="../mastors.css">
+    <link rel="stylesheet" href="../mastorsIcons/mastorsIcons.css">
+    <script type="module" src="script.js"></script>
+</head>
+<style>
+    .contenteditable {
+        border: 1px solid #ccc;
+        outline: none;
+        position: relative;
+        border: 1px solid #dfdfdf;
+        outline: none;
+        width: auto;
+        text-align: center;
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    .height-width {
+        width: max-content;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .getUserTable {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .getUserTable tbody tr {
+        background-color: #ffffff;
+    }
+
+    .getUserTable th {
+        color: #414141;
+    }
+
+    .getUserTable thead tr:first-child {
+        background-color: #dadada;
+    }
+
+    .getUserTable thead tr:last-child {
+        background-color: #f1eeee;
+    }
+</style>
+
+<body>
+
+    <h1 class="text-center pad--20">Grill and Glass Calculation</h1>
+    <div class="height-width f-col f-center gap-10 grillInputBox" id="grillInputBox">
+        <div class="f gap-10">
+            <input type="number" id="grillWidthInput" placeholder="Width" step="0.01">
+            <input type="number" id="grillHeightInput" placeholder="Height" step="0.01">
+        </div>
+        <input type="submit" class="btn btn-primary" id="addGrillItem">
+    </div>
+
+    <table class="table getUserTable hide" id="inputTable">
+        <thead>
+            <tr>
+                <th colspan="2">Width</th>
+                <th colspan="2">Height</th>
+                <th rowspan="2">Action</th>
+            </tr>
+            <tr>
+                <th>Width</th>
+                <th>Total</th>
+
+                <th>Height</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <table class="table table2">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Width (ft)</th>
+                <th>Height (ft)</th>
+                <th>Area (SFT)</th>
+                <th>Perimeter</th>
+                <th>Frame Length (ft-in)</th>
+                <th>Quantity</th>
+                <th>Total Frame Length</th>
+                <th>Total Glass & Grill A.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr class="trs inputTrs-">
+                <td class="uppercase code"></td>
+                <td class="width"></td>
+                <td class="height"></td>
+                <td class="area">42.00</td>
+                <td class="perimeter">26.00</td>
+                <td class="frame-length">10.7</td>
+                <td class="quantity contenteditable" contenteditable="true" oninput="validDecimal(this)">
+                </td>
+                <td class="total-frame-length">42</td>
+                <td>
+                    <span class="total-glass">168</span>
+                    <span>SFT</span>
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+</body>
+
+<script>
+
+
+
+
+
+
+    function validDecimal(element) {
+        // Allow only digits and one decimal point
+        element.textContent = element.textContent.replace(/[^0-9.]/g, '');
+
+        // Check for more than one decimal point
+        if (element.textContent.includes('.')) {
+            const parts = element.textContent.split('.');
+            if (parts.length > 2) {
+                element.textContent = parts[0] + '.' + parts[1];
+            }
+        }
+    }
+
+
+    function getTable(table) {
+        const width = table.querySelector(".width");
+
+        width.addEventListener("blur", () => {
+            let decimal;
+            let widthNumber = parseFloat(width.textContent, 10);
+            const decimals = width.textContent.split(".");
+            if (decimals[1]) {
+                decimal = (parseFloat(decimals[0])) + (parseFloat(decimals[1]) / 12);
+            }
+            decimal = Math.round(decimal);
+            width.textContent = decimal;
+        });
+
+    }
+
+</script>
+
+</html>

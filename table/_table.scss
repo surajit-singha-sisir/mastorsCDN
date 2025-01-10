@@ -1,0 +1,39 @@
+@import "../roots/color-map";
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  & thead {
+    background-color: $dark;
+
+    & th {
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border: 1px solid $silver;
+    }
+  }
+  & tr {
+    border: 1px solid $silver;
+    padding: 0.5rem;
+  }
+
+  & tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: #ececec;
+      }
+
+      &:hover {
+        background-color: #f8f8f8;
+      }
+
+      & td {
+        text-align: center;
+        padding: 0.5rem;
+        border: 1px solid $silver;
+      }
+    }
+  }
+}
