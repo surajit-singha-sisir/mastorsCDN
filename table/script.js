@@ -1,6 +1,7 @@
 import { showToast } from "https://surajit-singha-sisir.github.io/mastorsCDN/mastors.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  let rowCounter = 1;
   function inputTable() {
     const grillInputBox = document.getElementById("grillInputBox");
 
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (wDecimals[1]) {
             widthDecimal =
               parseFloat(wDecimals[1]) / 12 + parseFloat(wDecimals[0]);
-            width = Math.round(widthDecimal);
+            width = widthDecimal.toFixed(2);
           } else {
             widthDecimal = getWidth;
             width = getWidth;
@@ -34,12 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
           if (hDecimals[1]) {
             heightDecimal =
               parseFloat(hDecimals[1]) / 12 + parseFloat(hDecimals[0]);
-            height = Math.round(heightDecimal);
+            height = heightDecimal.toFixed(2);
           } else {
             heightDecimal = getHeight;
             height = getHeight;
           }
-          let rowCounter = 1;
+
           const row = `
             <tr class="inputTrs-${rowCounter}">
                 <td class="inputWidth contenteditable" contenteditable="true" oninput="validDecimal(this)">${getWidth}</td>
@@ -56,9 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
           showToast("New Data Added");
 
           table2(width, height, rowCounter);
-          rowCounter++;
 
           deletedAction(tbody);
+          rowCounter++;
+          console.log(rowCounter);
         }
       }
     });
@@ -67,10 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const table2 = document.querySelector(".table2");
       const tbody = table2.querySelector("tbody");
 
-      const area = width * height;
-      const perimeter = 2 * width + 2 * height;
-      const frameLength = 0.41 * perimeter;
-
+      const area = (width * height).toFixed(2);
+      const perimeter = (2 * width + 2 * height).toFixed(2);
+      const frameLength = (0.41 * perimeter).toFixed(2);
       const row = `
       <tr class="inputTrs-${rowCounter}">
         <td class="uppercase code">SWL-${rowCounter}</td>
@@ -89,6 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tbody.addEventListener("click", (event) => {
         if (event.target.classList.contains("quantity")) {
           const quantity = event.target;
+          console.log(quantity);
+          
           quantity.addEventListener("input", () => {
             const totalFrame = quantity.nextElementSibling;
             const totalGlass = totalFrame.nextElementSibling;
