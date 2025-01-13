@@ -31,25 +31,25 @@ Use the latest version. Include the CSS file link in your HTML head:
 ### Install with npm
 To install via npm, run:
 ```bash
-npm install mastorscdn@1.0.0
+npm install mastorscdn@1.1.0
 ```
 
 ### Install with yarn
 To install via yarn, run:
 ```bash
-yarn add mastorscdn@1.0.0
+yarn add mastorscdn@1.1.0
 ```
 
 ### Install with Composer
 To install via Composer, use:
 ```bash
-composer require surajit-singha-sisir/mastorscdn@1.0.0
+composer require surajit-singha-sisir/mastorscdn@1.1.0
 ```
 
 ### Install with NuGet
 For CSS:
 ```bash
-Install-Package mastorscdn@1.0.0
+Install-Package mastorscdn@1.1.0
 ```
 
 ### Install with NuGet
@@ -58,13 +58,18 @@ To install **mastorsCDN** using NuGet, you can use the following commands:
 
 For CSS:
 ```bash
-Install-Package mastorscdn@1.0.0
+Install-Package mastorscdn@1.1.0
 ```
 
 For SCSS:
 ```bash
-Install-Package mastorscdn@1.0.0.scss
+Install-Package mastorscdn@1.1.0.scss
 ```
+
+@Latest Version of the Package:
+```bash
+npm install mastorscdn@latest
+````
 ### ❤️ MastorsCDN icons 🥳
 MastorsCDN also supports icons. You can use the icons on your webpage. For Icon use this stylesheet on the head tag. Most of the icons are added from the **"icomoon.io"** library.
 ```bash
