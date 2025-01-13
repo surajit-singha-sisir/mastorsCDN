@@ -78,10 +78,10 @@ app.use('/mastorscdn', express.static(path.join(__dirname, 'node_modules/mastors
 ```
 ADD to index.html
 ```base
-    <!-- MASTORSCDN -->
-    <link rel="stylesheet" href="/mastorscdn/mastors.css" /> <!-- MASTORSCDN CORE-->
-    <link rel="stylesheet" href="/mastorscdn/mastorsIcons/mastorsIcons.css" /> <!-- MASTORSCDN ICONS LIBRARY-->
-    <script type="module" src="/mastorscdn/mastors.js"></script> <!-- MASTORSCDN SCRIPT -->
+<!-- MASTORSCDN -->
+<link rel="stylesheet" href="/mastorscdn/mastors.css" /> <!-- MASTORSCDN CORE-->
+<link rel="stylesheet" href="/mastorscdn/mastorsIcons/mastorsIcons.css" /> <!-- MASTORSCDN ICONS LIBRARY-->
+<script type="module" src="/mastorscdn/mastors.js"></script> <!-- MASTORSCDN SCRIPT -->
 ```
 
 ### ❤️ MastorsCDN icons 🥳
