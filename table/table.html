@@ -7,7 +7,8 @@
     <title>Table Example</title>
     <link rel="stylesheet" href="../mastors.css">
     <link rel="stylesheet" href="../mastorsIcons/mastorsIcons.css">
-    <script type="module" src="script.js"></script>
+    <!-- <script type="module" src="script.js"></script> -->
+    <script type="module" src="onevents.js"></script>
 </head>
 <style>
     .contenteditable {
@@ -42,11 +43,11 @@
     }
 
     .getUserTable tbody tr {
-        background-color: #ffffff;
+        background-color: #fcfcfc;
     }
 
     .getUserTable th {
-        color: #414141;
+        color: #414141 !important;
     }
 
     .getUserTable thead tr:first-child {
@@ -66,7 +67,7 @@
             <input type="number" id="grillWidthInput" placeholder="Width" step="0.01">
             <input type="number" id="grillHeightInput" placeholder="Height" step="0.01">
         </div>
-        <input type="submit" class="btn btn-primary" id="addGrillItem">
+        <input type="submit" class="btn btn-primary" id="addGrillItem" value="Add">
     </div>
 
     <table class="table getUserTable hide" id="inputTable">
@@ -120,45 +121,20 @@
             </tr> -->
         </tbody>
     </table>
-</body>
+    <script>
+        function validDecimal(element) {
+            // Allow only digits and one decimal point
+            element.textContent = element.textContent.replace(/[^0-9.]/g, '');
 
-<script>
-
-
-
-
-
-
-    function validDecimal(element) {
-        // Allow only digits and one decimal point
-        element.textContent = element.textContent.replace(/[^0-9.]/g, '');
-
-        // Check for more than one decimal point
-        if (element.textContent.includes('.')) {
-            const parts = element.textContent.split('.');
-            if (parts.length > 2) {
-                element.textContent = parts[0] + '.' + parts[1];
+            // Check for more than one decimal point
+            if (element.textContent.includes('.')) {
+                const parts = element.textContent.split('.');
+                if (parts.length > 2) {
+                    element.textContent = parts[0] + '.' + parts[1];
+                }
             }
         }
-    }
-
-
-    function getTable(table) {
-        const width = table.querySelector(".width");
-
-        width.addEventListener("blur", () => {
-            let decimal;
-            let widthNumber = parseFloat(width.textContent, 10);
-            const decimals = width.textContent.split(".");
-            if (decimals[1]) {
-                decimal = (parseFloat(decimals[0])) + (parseFloat(decimals[1]) / 12);
-            }
-            decimal = Math.round(decimal);
-            width.textContent = decimal;
-        });
-
-    }
-
-</script>
+    </script>
+</body>
 
 </html>
