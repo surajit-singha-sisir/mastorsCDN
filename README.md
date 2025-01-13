@@ -70,6 +70,20 @@ Install-Package mastorscdn@1.1.0.scss
 ```bash
 npm install mastorscdn@latest
 ````
+
+Add SERVE to server.js
+```base
+// MASTORSCDN SERVE
+app.use('/mastorscdn', express.static(path.join(__dirname, 'node_modules/mastorscdn')));
+```
+ADD to index.html
+```base
+    <!-- MASTORSCDN -->
+    <link rel="stylesheet" href="/mastorscdn/mastors.css" /> <!-- MASTORSCDN CORE-->
+    <link rel="stylesheet" href="/mastorscdn/mastorsIcons/mastorsIcons.css" /> <!-- MASTORSCDN ICONS LIBRARY-->
+    <script type="module" src="/mastorscdn/mastors.js"></script> <!-- MASTORSCDN SCRIPT -->
+```
+
 ### ❤️ MastorsCDN icons 🥳
 MastorsCDN also supports icons. You can use the icons on your webpage. For Icon use this stylesheet on the head tag. Most of the icons are added from the **"icomoon.io"** library.
 ```bash
