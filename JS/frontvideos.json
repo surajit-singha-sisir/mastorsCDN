@@ -1,26 +1,26 @@
 [
     {
-        "video": "https://www.youtube.com/watch?v=8uKgqqK2v4s",
+        "youtubeVideo": "8uKgqqK2v4s",
         "published_time_ago": "২ ঘন্টা আগে"
     },
     {
-        "video": "https://www.youtube.com/watch?v=Jhug34weCWs",
+        "youtubeVideo": "Jhug34weCWs",
         "published_time_ago": "১ দিন আগে"
     },
     {
-        "video": "https://www.youtube.com/watch?v=3H1TLhuaviM",
+        "youtubeVideo": "3H1TLhuaviM",
         "published_time_ago": "২ দিন আগে"
     },
     {
-        "video": "https://www.youtube.com/watch?v=aotyLwWeLk4",
+        "youtubeVideo": "aotyLwWeLk4",
         "published_time_ago": "৫ দিন আগে"
     },
     {
-        "video": "https://www.youtube.com/watch?v=VWfZ_ATXP3o",
+        "youtubeVideo": "VWfZ_ATXP3o",
         "published_time_ago": "১৫ দিন আগে"
     },
     {
-        "video": "https://www.youtube.com/watch?v=SYtUcxhKfVo",
+        "youtubeVideo": "SYtUcxhKfVo",
         "published_time_ago": "২০ দিন আগে"
     }
 ]
