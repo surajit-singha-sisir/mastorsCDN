@@ -1,3 +1,4 @@
+@use "sass:math";
 /* //TEXT ELLIPSIS CLASS */
 .text-dotted-1 {
   display: -webkit-box;
@@ -60,68 +61,174 @@
   -webkit-box-orient: block-axis;
 }
 
-/* //TEXT ALIGNS */
-
-.text-left {
-  text-align: left;
-}
-.text-center {
-  text-align: center;
-}
-.text-right {
-  text-align: right;
-}
-.text-justify {
-  text-align: justify;
-}
-.text-start {
-  text-align: start;
-}
-.text-end {
-  text-align: end;
-}
-.text-inherit {
-  text-align: inherit;
-}
-
-.i,
-.text-i {
-  font-style: italic;
+// Text alignment
+.text- {
+  &left {
+    text-align: left;
+  }
+  &center {
+    text-align: center;
+  }
+  &right {
+    text-align: right;
+  }
+  &justify {
+    text-align: justify;
+  }
+  &start {
+    text-align: start;
+  }
+  &end {
+    text-align: end;
+  }
+  &inherit {
+    text-align: inherit;
+  }
 }
 
-.b,
-.text-b {
-  font-weight: bold;
+// Font styles
+.text- {
+  &i,
+  &italic {
+    font-style: italic;
+  }
+  &n,
+  &normal {
+    font-style: normal;
+  }
+  &oblique {
+    font-style: oblique;
+  }
 }
 
-.u,
-.text-u {
-  text-decoration: underline;
+// Font weights
+.text- {
+  &b,
+  &bold {
+    font-weight: bold;
+  }
+  &normal {
+    font-weight: normal;
+  }
+  &lighter {
+    font-weight: lighter;
+  }
+  &bolder {
+    font-weight: bolder;
+  }
+
+  // Numeric weights
+  @for $i from 1 through 9 {
+    &#{$i}00 {
+      font-weight: $i * 100;
+    }
+  }
 }
 
-.text-o {
-  text-decoration: overline;
+// Text decorations
+.text- {
+  &u,
+  &underline {
+    text-decoration: underline;
+  }
+  &o,
+  &overline {
+    text-decoration: overline;
+  }
+  &d,
+  &line-through {
+    text-decoration: line-through;
+  }
+  &dd,
+  &double {
+    text-decoration: double;
+  }
+  &w,
+  &wavy {
+    text-decoration: wavy;
+  }
+  &s,
+  &solid {
+    text-decoration: solid;
+  }
+  &dotted {
+    text-decoration: dotted;
+  }
+  &dashed {
+    text-decoration: dashed;
+  }
+  &none {
+    text-decoration: none;
+  }
 }
 
-.d,
-.text-d {
-  text-decoration: line-through;
-}
+// Additional text properties
+.text- {
+  // Text transform
+  &uppercase {
+    text-transform: uppercase;
+  }
+  &lowercase {
+    text-transform: lowercase;
+  }
+  &cap {
+    text-transform: capitalize;
+  }
+  &normal {
+    text-transform: none;
+  }
 
-.text-dd {
-  text-decoration: double;
-}
+  // Word break
+  &break {
+    word-break: break-all;
+  }
+  &keep {
+    word-break: keep-all;
+  }
+  &wbnormal {
+    word-break: normal;
+  }
 
-.text-w {
-  text-decoration: wavy;
-}
+  // White space
+  &nowrap {
+    white-space: nowrap;
+  }
+  &pre {
+    white-space: pre;
+  }
+  &prewrap {
+    white-space: pre-wrap;
+  }
+  &preline {
+    white-space: pre-line;
+  }
+  &wsnormal {
+    white-space: normal;
+  }
 
-.text-s {
-  text-decoration: solid;
+  // Text overflow
+  &clip {
+    text-overflow: clip;
+  }
+  &ellipsis {
+    text-overflow: ellipsis;
+  }
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
 }
 
 // STAR OR MANDATORY INDICATOR
-.star, .staric, .star-sign, .mandatory {
+.star,
+.staric,
+.star-sign,
+.mandatory {
   &::after {
     content: "\00a0\00a0*";
     color: #ff0000;

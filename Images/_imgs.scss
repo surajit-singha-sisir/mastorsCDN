@@ -1,0 +1,97 @@
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  // Shape Classes
+  &.square {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &.circle {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &.widescreen {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &.photo {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &.classic {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  // Fit Variations
+  &.fit-contain {
+    object-fit: contain;
+  }
+
+  &.fit-cover {
+    object-fit: cover;
+  }
+
+  &.fit-fill {
+    object-fit: fill;
+  }
+
+  &.fit-scale-down {
+    object-fit: scale-down;
+  }
+
+  // Utility Modifiers
+  &.no-round {
+    border-radius: 0;
+  }
+
+  &.border {
+    border: 1px solid #ccc;
+  }
+
+  &.center {
+    object-position: center;
+  }
+
+  &.top {
+    object-position: top;
+  }
+
+  &.bottom {
+    object-position: bottom;
+  }
+
+  // Size Modifiers
+  &.w-full {
+    width: 100%;
+  }
+
+  &.w-auto {
+    width: auto;
+  }
+
+  &.h-full {
+    display: inline-block;
+    height: 100%;
+  }
+
+  &.h-auto {
+    height: auto;
+  }
+}

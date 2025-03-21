@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Utility Classes Documentation</title>
+  <!-- Prism CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <!-- Your External Stylesheet -->
+  <link rel="stylesheet" href="../mastors.css">
+</head>
+
+<body>
+  <h1 class="text-center pad--30 bg-White">MASTORSCDN BORDER DOCUMENTATION</h1>
+  <table class="table-2 border-all scroll-x">
+    <thead>
+      <tr>
+        <th>Preview</th>
+        <th>Class Name</th>
+        <th>HTML Declaration</th>
+        <th>Copy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Border Width Classes -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Sizes</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1">Content</div>
+        </td>
+        <td><code>.border-1</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1"&gt;Content&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-5">Content</div>
+        </td>
+        <td><code>.border-5</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-5"&gt;Content&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-5">Content</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Color Classes -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Colors</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-Red-500">Red Border</div>
+        </td>
+        <td><code>.b-Red-500</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-Red-500"&gt;Red Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-Red-500">Red Border</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Radius (All Sides) -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Radius (All Sides)</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-rad-05">Rounded</div>
+        </td>
+        <td><code>.b-rad-05</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-rad-05"&gt;Rounded&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-rad-05">Rounded</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-rad-25">Very Rounded</div>
+        </td>
+        <td><code>.b-rad-25</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-rad-25"&gt;Very Rounded&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-rad-25">Very Rounded</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Radius (Specific Corners) -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Radius (Specific Corners)</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-rad-lt-10">Top-Left Rounded</div>
+        </td>
+        <td><code>.b-rad-lt-10</code> or <code>.b-rad-tl-10</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-rad-lt-10"&gt;Top-Left Rounded&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-rad-lt-10">Top-Left Rounded</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-rad-br-25">Bottom-Right Rounded</div>
+        </td>
+        <td><code>.b-rad-br-25</code> or <code>.b-rad-rb-25</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-rad-br-25"&gt;Bottom-Right Rounded&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-rad-br-25">Bottom-Right Rounded</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Side Classes (Single) -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Sides (Single)</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-t-1-solid b-Red-500">Top Border</div>
+        </td>
+        <td><code>.b-t-1-solid</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-t-1-solid b-Red-500"&gt;Top Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-t-1-solid b-Red-500">Top Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-l-3-dashed b-Blue-300">Left Border</div>
+        </td>
+        <td><code>.b-l-3-dashed</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-l-3-dashed b-Blue-300"&gt;Left Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-l-3-dashed b-Blue-300">Left Border</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Side Classes (Two Sides) -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Sides (Two Sides)</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-tb-2-solid b-Green-400">Top & Bottom</div>
+        </td>
+        <td><code>.b-tb-2-solid</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-tb-2-solid b-Green-400"&gt;Top & Bottom&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-tb-2-solid b-Green-400">Top & Bottom</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-lr-4-dotted b-Purple-600">Left & Right</div>
+        </td>
+        <td><code>.b-lr-4-dotted</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-lr-4-dotted b-Purple-600"&gt;Left & Right&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-lr-4-dotted b-Purple-600">Left & Right</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Side Classes (Three Sides) -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Sides (Three Sides)</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-tbl-3-solid b-Green-300">Top, Bottom, Left</div>
+        </td>
+        <td><code>.b-tbl-3-solid</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-tbl-3-solid b-Green-300"&gt;Top, Bottom, Left&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-tbl-3-solid b-Green-300">Top, Bottom, Left</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Side Classes (All Sides) -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Sides (All Sides)</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 b-tblr-4-solid b-Purple-700">All Sides</div>
+        </td>
+        <td><code>.b-tblr-4-solid</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 b-tblr-4-solid b-Purple-700"&gt;All Sides&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 b-tblr-4-solid b-Purple-700">All Sides</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Border Opacity -->
+      <tr>
+        <td colspan="4" class="b text-center">Border Opacity</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 border-opacity-50">Semi-Opaque</div>
+        </td>
+        <td><code>.border-opacity-50</code> or <code>.b-o-50</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 border-opacity-50"&gt;Semi-Opaque&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 border-opacity-50">Semi-Opaque</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 border-opacity-25">Faint Border</div>
+        </td>
+        <td><code>.border-opacity-25</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 border-opacity-25"&gt;Faint Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 border-opacity-25">Faint Border</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Default Border Classes -->
+      <tr>
+        <td colspan="4" class="b text-center">Default Border Styles</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-all">Gray Border</div>
+        </td>
+        <td><code>.bordered-all</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-all"&gt;Gray Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-all">Gray Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered b-Red-500">Red Border</div>
+        </td>
+        <td><code>.bordered</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered b-Red-500"&gt;Red Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered b-Red-500">Red Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-thick">Thick Border</div>
+        </td>
+        <td><code>.bordered-thick</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-thick"&gt;Thick Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-thick">Thick Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-thin">Thin Border</div>
+        </td>
+        <td><code>.bordered-thin</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-thin"&gt;Thin Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-thin">Thin Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-round">Rounded Border</div>
+        </td>
+        <td><code>.bordered-round</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-round"&gt;Rounded Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-round">Rounded Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-circle">Circle</div>
+        </td>
+        <td><code>.bordered-circle</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-circle"&gt;Circle&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-circle">Circle</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative w--50 asp-1">
+            <div class="border-1 border-abs-centered"><span>Center</span></div>
+          </div>
+        </td>
+        <td><code>.border-abs-centered</code></td>
+        <td>
+          <pre><code class="language-html"><div class="relative w--50 asp-1">
+            &lt;div class="border-1 border-abs-centered"&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="border-1 border-abs-centered"&gt;&lt;span&gt;Center&lt;/span&gt;&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="relative w--50 asp-1"><div class="border-1 border-abs-centered"><span>Center</span></div></div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-dashed">Dashed Border</div>
+        </td>
+        <td><code>.bordered-dashed</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-dashed"&gt;Dashed Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-dashed">Dashed Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-dotted">Dotted Border</div>
+        </td>
+        <td><code>.bordered-dotted</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-dotted"&gt;Dotted Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-dotted">Dotted Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 bordered-shadow">Shadow Border</div>
+        </td>
+        <td><code>.bordered-shadow</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 bordered-shadow"&gt;Shadow Border&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 bordered-shadow">Shadow Border</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="border-1 asp-1" style="width: 50px;">Square</div>
+        </td>
+        <td><code>.asp-1</code> or <code>.aspect-ratio-1</code></td>
+        <td>
+          <pre><code class="language-html">&lt;div class="border-1 asp-1" style="width: 50px;"&gt;Square&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn"
+            data-code='<div class="border-1 asp-1" style="width: 50px;">Square</div>'>Copy</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Prism JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <!-- Copy to Clipboard Script -->
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const code = button.getAttribute('data-code');
+        copyToClipboard(code);
+      });
+    });
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+  </script>
+</body>
+
+</html>

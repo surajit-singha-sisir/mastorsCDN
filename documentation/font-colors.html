@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utility Classes Documentation - MastorsCDN</title>
+    <!-- Prism CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <!-- Your External Stylesheet -->
+    <link rel="stylesheet" href="../mastors.css">
+    <style>
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .section-desc {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .table-2 td,
+        .table-2 th {
+            vertical-align: middle;
+        }
+
+        .color-list {
+            column-count: 1;
+            margin: 0 auto 30px;
+        }
+
+        .color-list code {
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center pad--30 bg-White">
+        <h1>MASTORSCDN TEXT DOCUMENTATION</h1>
+        <p class="intro-text">Welcome to the MastorsCDN Text Utility Classes documentation. These classes allow you to
+            apply text colors, variations, shadows, hover effects, and font sizes to your HTML elements. Below is a list
+            of all available color names, followed by detailed examples.</p>
+        <H2 class="border-bottom">ALL AVAILABLE COLORS</H2>
+        <div class="color-list">
+            <p>
+                <code class="btn bg-Black text-White">Black</code>,
+                <code class="btn bg-Silver text-Black">Silver</code>,
+                <code class="btn bg-Gray text-White">Gray</code>,
+                <code class="btn bg-White text-Black">White</code>,
+                <code class="btn bg-Maroon text-White">Maroon</code>,
+                <code class="btn bg-Red text-White">Red</code>,
+                <code class="btn bg-Purple text-White">Purple</code>,
+                <code class="btn bg-Fuchsia text-White">Fuchsia</code>,
+                <code class="btn bg-Green text-White">Green</code>,
+                <code class="btn bg-Lime text-Black">Lime</code>,
+                <code class="btn bg-Olive text-White">Olive</code>,
+                <code class="btn bg-Yellow text-Black">Yellow</code>,
+                <code class="btn bg-Navy text-White">Navy</code>,
+                <code class="btn bg-Blue text-White">Blue</code>,
+                <code class="btn bg-Teal text-White">Teal</code>,
+                <code class="btn bg-Aqua text-Black">Aqua</code>,
+                <code class="btn bg-AliceBlue text-Black">AliceBlue</code>,
+                <code class="btn bg-AntiqueWhite text-Black">AntiqueWhite</code>,
+                <code class="btn bg-Aquamarine text-Black">Aquamarine</code>,
+                <code class="btn bg-Azure text-Black">Azure</code>,
+                <code class="btn bg-Beige text-Black">Beige</code>,
+                <code class="btn bg-Bisque text-Black">Bisque</code>,
+                <code class="btn bg-BlanchedAlmond text-Black">BlanchedAlmond</code>,
+                <code class="btn bg-BlueViolet text-White">BlueViolet</code>,
+                <code class="btn bg-Brown text-White">Brown</code>,
+                <code class="btn bg-Burlywood text-Black">Burlywood</code>,
+                <code class="btn bg-CadetBlue text-White">CadetBlue</code>,
+                <code class="btn bg-Chartreuse text-Black">Chartreuse</code>,
+                <code class="btn bg-Chocolate text-White">Chocolate</code>,
+                <code class="btn bg-Coral text-White">Coral</code>,
+                <code class="btn bg-CornflowerBlue text-White">CornflowerBlue</code>,
+                <code class="btn bg-Cornsilk text-Black">Cornsilk</code>,
+                <code class="btn bg-Crimson text-White">Crimson</code>,
+                <code class="btn bg-Cyan text-Black">Cyan</code>,
+                <code class="btn bg-DarkBlue text-White">DarkBlue</code>,
+                <code class="btn bg-DarkCyan text-White">DarkCyan</code>,
+                <code class="btn bg-DarkGoldenrod text-White">DarkGoldenrod</code>,
+                <code class="btn bg-DarkGray text-White">DarkGray</code>,
+                <code class="btn bg-DarkGreen text-White">DarkGreen</code>,
+                <code class="btn bg-DarkKhaki text-Black">DarkKhaki</code>,
+                <code class="btn bg-DarkMagenta text-White">DarkMagenta</code>,
+                <code class="btn bg-DarkOliveGreen text-White">DarkOliveGreen</code>,
+                <code class="btn bg-DarkOrange text-White">DarkOrange</code>,
+                <code class="btn bg-DarkOrchid text-White">DarkOrchid</code>,
+                <code class="btn bg-DarkRed text-White">DarkRed</code>,
+                <code class="btn bg-DarkSalmon text-White">DarkSalmon</code>,
+                <code class="btn bg-DarkSeaGreen text-Black">DarkSeaGreen</code>,
+                <code class="btn bg-DarkSlateBlue text-White">DarkSlateBlue</code>,
+                <code class="btn bg-DarkSlateGray text-White">DarkSlateGray</code>,
+                <code class="btn bg-Dark-turquoise text-Black">Dark-turquoise</code>,
+                <code class="btn bg-DarkViolet text-White">DarkViolet</code>,
+                <code class="btn bg-DeepPink text-White">DeepPink</code>,
+                <code class="btn bg-DeepSkyBlue text-Black">DeepSkyBlue</code>,
+                <code class="btn bg-DimGray text-White">DimGray</code>,
+                <code class="btn bg-DodgerBlue text-White">DodgerBlue</code>,
+                <code class="btn bg-Firebrick text-White">Firebrick</code>,
+                <code class="btn bg-FloralWhite text-Black">FloralWhite</code>,
+                <code class="btn bg-ForestGreen text-White">ForestGreen</code>,
+                <code class="btn bg-Gainsboro text-Black">Gainsboro</code>,
+                <code class="btn bg-GhostWhite text-Black">GhostWhite</code>,
+                <code class="btn bg-Gold text-Black">Gold</code>,
+                <code class="btn bg-Goldenrod text-White">Goldenrod</code>,
+                <code class="btn bg-GreenYellow text-Black">GreenYellow</code>,
+                <code class="btn bg-Honeydew text-Black">Honeydew</code>,
+                <code class="btn bg-HotPink text-White">HotPink</code>,
+                <code class="btn bg-IndianRed text-White">IndianRed</code>,
+                <code class="btn bg-Indigo text-White">Indigo</code>,
+                <code class="btn bg-Ivory text-Black">Ivory</code>,
+                <code class="btn bg-Khaki text-Black">Khaki</code>,
+                <code class="btn bg-Lavender text-Black">Lavender</code>,
+                <code class="btn bg-LavenderBlush text-Black">LavenderBlush</code>,
+                <code class="btn bg-LawnGreen text-Black">LawnGreen</code>,
+                <code class="btn bg-LemonChiffon text-Black">LemonChiffon</code>,
+                <code class="btn bg-LightBlue text-Black">LightBlue</code>,
+                <code class="btn bg-LightCoral text-White">LightCoral</code>,
+                <code class="btn bg-LightCyan text-Black">LightCyan</code>,
+                <code class="btn bg-LightGoldenrodYellow text-Black">LightGoldenrodYellow</code>,
+                <code class="btn bg-LightGray text-Black">LightGray</code>,
+                <code class="btn bg-LightGreen text-Black">LightGreen</code>,
+                <code class="btn bg-LightPink text-Black">LightPink</code>,
+                <code class="btn bg-LightSalmon text-Black">LightSalmon</code>,
+                <code class="btn bg-LightSeaGreen text-White">LightSeaGreen</code>,
+                <code class="btn bg-LightSkyBlue text-Black">LightSkyBlue</code>,
+                <code class="btn bg-LightSlateGray text-White">LightSlateGray</code>,
+                <code class="btn bg-LightSteelBlue text-Black">LightSteelBlue</code>,
+                <code class="btn bg-LightYellow text-Black">LightYellow</code>,
+                <code class="btn bg-LimeGreen text-Black">LimeGreen</code>,
+                <code class="btn bg-Linen text-Black">Linen</code>,
+                <code class="btn bg-MediumAquamarine text-Black">MediumAquamarine</code>,
+                <code class="btn bg-MediumBlue text-White">MediumBlue</code>,
+                <code class="btn bg-MediumOrchid text-White">MediumOrchid</code>,
+                <code class="btn bg-MediumPurple text-White">MediumPurple</code>,
+                <code class="btn bg-MediumSeaGreen text-White">MediumSeaGreen</code>,
+                <code class="btn bg-MediumSlateBlue text-White">MediumSlateBlue</code>,
+                <code class="btn bg-MediumSpringGreen text-Black">MediumSpringGreen</code>,
+                <code class="btn bg-MediumTurquoise text-Black">MediumTurquoise</code>,
+                <code class="btn bg-MediumVioletRed text-White">MediumVioletRed</code>,
+                <code class="btn bg-MidnightBlue text-White">MidnightBlue</code>,
+                <code class="btn bg-MintCream text-Black">MintCream</code>,
+                <code class="btn bg-MistyRose text-Black">MistyRose</code>,
+                <code class="btn bg-Moccasin text-Black">Moccasin</code>,
+                <code class="btn bg-NavajoWhite text-Black">NavajoWhite</code>,
+                <code class="btn bg-OldLace text-Black">OldLace</code>,
+                <code class="btn bg-OliveDrab text-White">OliveDrab</code>,
+                <code class="btn bg-Orange text-Black">Orange</code>,
+                <code class="btn bg-OrangeRed text-White">OrangeRed</code>,
+                <code class="btn bg-Orchid text-White">Orchid</code>,
+                <code class="btn bg-PaleGoldenrod text-Black">PaleGoldenrod</code>,
+                <code class="btn bg-PaleGreen text-Black">PaleGreen</code>,
+                <code class="btn bg-PaleTurquoise text-Black">PaleTurquoise</code>,
+                <code class="btn bg-PaleVioletRed text-White">PaleVioletRed</code>,
+                <code class="btn bg-PapayaWhip text-Black">PapayaWhip</code>,
+                <code class="btn bg-PeachPuff text-Black">PeachPuff</code>,
+                <code class="btn bg-Peru text-White">Peru</code>,
+                <code class="btn bg-Pink text-Black">Pink</code>,
+                <code class="btn bg-Plum text-Black">Plum</code>,
+                <code class="btn bg-PowderBlue text-Black">PowderBlue</code>,
+                <code class="btn bg-RosyBrown text-White">RosyBrown</code>,
+                <code class="btn bg-RoyalBlue text-White">RoyalBlue</code>,
+                <code class="btn bg-SaddleBrown text-White">SaddleBrown</code>,
+                <code class="btn bg-Salmon text-White">Salmon</code>,
+                <code class="btn bg-SandyBrown text-Black">SandyBrown</code>,
+                <code class="btn bg-SeaGreen text-White">SeaGreen</code>,
+                <code class="btn bg-SeaShell text-Black">SeaShell</code>,
+                <code class="btn bg-Sienna text-White">Sienna</code>,
+                <code class="btn bg-SkyBlue text-Black">SkyBlue</code>,
+                <code class="btn bg-SlateBlue text-White">SlateBlue</code>,
+                <code class="btn bg-SlateGray text-White">SlateGray</code>,
+                <code class="btn bg-Snow text-Black">Snow</code>,
+                <code class="btn bg-SpringGreen text-Black">SpringGreen</code>,
+                <code class="btn bg-SteelBlue text-White">SteelBlue</code>,
+                <code class="btn bg-Tan text-Black">Tan</code>,
+                <code class="btn bg-Thistle text-Black">Thistle</code>,
+                <code class="btn bg-Tomato text-White">Tomato</code>,
+                <code class="btn bg-Turquoise text-Black">Turquoise</code>,
+                <code class="btn bg-Violet text-White">Violet</code>,
+                <code class="btn bg-Wheat text-Black">Wheat</code>,
+                <code class="btn bg-WhiteSmoke text-Black">WhiteSmoke</code>,
+                <code class="btn bg-YellowGreen text-Black">YellowGreen</code>,
+                <code class="btn bg-RebeccaPurple text-White">RebeccaPurple</code>,
+                <code class="btn bg-Magenta text-White">Magenta</code>,
+                <code class="btn bg-Orangered text-White">Orangered</code>,
+                <code class="btn bg-Dark text-White">Dark</code>,
+                <code class="btn bg-LightDark text-White">LightDark</code>,
+                <code class="btn bg-DarkDark text-White">DarkDark</code>,
+                <code class="btn bg-VeryDarkGray text-White">VeryDarkGray</code>,
+                <code class="btn bg-OffBlack text-White">OffBlack</code>,
+                <code class="btn bg-CCC text-Black">CCC</code>
+            </p>
+        </div>
+    </header>
+
+    <table class="table-2 border-all scroll-x">
+        <thead>
+            <tr>
+                <th>Preview</th>
+                <th>Class Name</th>
+                <th>Description</th>
+                <th>HTML Declaration</th>
+                <th>Copy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Basic Text Colors -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Basic Text Colors</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply solid text colors using color names from the list above.</td>
+            </tr>
+            <tr>
+                <td><span class="text-Red">Red Text</span></td>
+                <td><code>.text-Red</code></td>
+                <td>Sets the text color to red.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Red"&gt;Red Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Red">Red Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-BlueViolet">BlueViolet Text</span></td>
+                <td><code>.text-BlueViolet</code></td>
+                <td>Sets the text color to blue-violet.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-BlueViolet"&gt;BlueViolet Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-BlueViolet">BlueViolet Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Text Color Variations -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Text Color Variations</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use numbered suffixes (e.g., -100, -900) for lighter or darker
+                    shades. Numbers range from 100 (lightest) to 900 (darkest).</td>
+            </tr>
+            <tr>
+                <td><span class="text-Green-300">Light Green Text</span></td>
+                <td><code>.text-Green-300</code></td>
+                <td>A lighter shade of green text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Green-300"&gt;Light Green Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Green-300">Light Green Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-Purple-700">Dark Purple Text</span></td>
+                <td><code>.text-Purple-700</code></td>
+                <td>A darker shade of purple text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Purple-700"&gt;Dark Purple Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Purple-700">Dark Purple Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Important Text Colors -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Important Text Colors</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Add an "i" suffix (e.g., .text-Teali) for important states with
+                    !important priority.</td>
+            </tr>
+            <tr>
+                <td><span class="text-Teali">Teal (Important)</span></td>
+                <td><code>.text-Teali</code></td>
+                <td>A vivid teal text color with priority.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Teali"&gt;Teal (Important)&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Teali">Teal (Important)</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Hover Text Colors -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Hover Text Colors</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use the "hov-" prefix to change text color on hover.</td>
+            </tr>
+            <tr>
+                <td><span class="text-hov-Orchid">Hover Orchid Text</span></td>
+                <td><code>.text-hov-Orchid:hover</code></td>
+                <td>Changes text to orchid on hover.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-hov-Orchid"&gt;Hover Orchid Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-hov-Orchid">Hover Orchid Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Text Shadow Classes -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Text Shadows</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply shadow effects with "shad-" or "shadow-" prefixes
+                    (interchangeable).</td>
+            </tr>
+            <tr>
+                <td><span class="text-shad-Coral">Coral Shadow Text</span></td>
+                <td><code>.text-shad-Coral</code> or <code>.text-shadow-Coral</code></td>
+                <td>Coral text with a shadow effect.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-shad-Coral"&gt;Coral Shadow Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-shad-Coral">Coral Shadow Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Hover Text Shadow Classes -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Hover Text Shadows</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use "shad-hov-" or "shadow-hov-" prefixes for shadow effects on
+                    hover.</td>
+            </tr>
+            <tr>
+                <td><span class="text-shadow-hov-SkyBlue">SkyBlue Shadow on Hover</span></td>
+                <td><code>.text-shadow-hov-SkyBlue:hover</code></td>
+                <td>A sky blue shadow effect on hover.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-shadow-hov-SkyBlue"&gt;SkyBlue Shadow on Hover&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-shadow-hov-SkyBlue">SkyBlue Shadow on Hover</span>'>Copy</button>
+                </td>
+            </tr>
+
+            <!-- Font Size Utilities -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Font Size Utilities</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply font sizes with named classes (e.g., .text-s, .text-xl) or
+                    numeric classes (e.g., .text-10 for 1rem).</td>
+            </tr>
+            <tr>
+                <td><span class="text-xl">Extra Large Text</span></td>
+                <td><code>.text-xl</code></td>
+                <td>Sets font size to 1.8rem.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-xl"&gt;Extra Large Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-xl">Extra Large Text</span>'>Copy</button></td>
+            </tr>
+        <tbody>
+            <!-- Basic Text Colors (Existing) -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Basic Text Colors</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply solid text colors using color names from the list above.</td>
+            </tr>
+            <tr>
+                <td><span class="text-Red">Red Text</span></td>
+                <td><code>.text-Red</code></td>
+                <td>Sets the text color to red.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Red"&gt;Red Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Red">Red Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-BlueViolet">BlueViolet Text</span></td>
+                <td><code>.text-BlueViolet</code></td>
+                <td>Sets the text color to blue-violet.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-BlueViolet"&gt;BlueViolet Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-BlueViolet">BlueViolet Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Text Color Variations (Existing) -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Text Color Variations</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use numbered suffixes (e.g., -100, -900) for lighter or darker
+                    shades. Numbers range from 100 (lightest) to 900 (darkest).</td>
+            </tr>
+            <tr>
+                <td><span class="text-Green-300">Light Green Text</span></td>
+                <td><code>.text-Green-300</code></td>
+                <td>A lighter shade of green text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Green-300"&gt;Light Green Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Green-300">Light Green Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-Purple-700">Dark Purple Text</span></td>
+                <td><code>.text-Purple-700</code></td>
+                <td>A darker shade of purple text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Purple-700"&gt;Dark Purple Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Purple-700">Dark Purple Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Important Text Colors (Existing) -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Important Text Colors</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Add an "i" suffix (e.g., .text-Teali) for important states with
+                    !important priority.</td>
+            </tr>
+            <tr>
+                <td><span class="text-Teali">Teal (Important)</span></td>
+                <td><code>.text-Teali</code></td>
+                <td>A vivid teal text color with priority.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-Teali"&gt;Teal (Important)&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-Teali">Teal (Important)</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Hover Text Colors (Existing) -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Hover Text Colors</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use the "hov-" prefix to change text color on hover.</td>
+            </tr>
+            <tr>
+                <td><span class="text-hov-Orchid">Hover Orchid Text</span></td>
+                <td><code>.text-hov-Orchid:hover</code></td>
+                <td>Changes text to orchid on hover.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-hov-Orchid"&gt;Hover Orchid Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-hov-Orchid">Hover Orchid Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Text Shadow Classes (Existing) -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Text Shadows</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply shadow effects with "shad-" or "shadow-" prefixes
+                    (interchangeable).</td>
+            </tr>
+            <tr>
+                <td><span class="text-shad-Coral">Coral Shadow Text</span></td>
+                <td><code>.text-shad-Coral</code> or <code>.text-shadow-Coral</code></td>
+                <td>Coral text with a shadow effect.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-shad-Coral"&gt;Coral Shadow Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-shad-Coral">Coral Shadow Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Hover Text Shadow Classes (Existing) -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Hover Text Shadows</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use "shad-hov-" or "shadow-hov-" prefixes for shadow effects on
+                    hover.</td>
+            </tr>
+            <tr>
+                <td><span class="text-shadow-hov-SkyBlue">SkyBlue Shadow on Hover</span></td>
+                <td><code>.text-shadow-hov-SkyBlue:hover</code></td>
+                <td>A sky blue shadow effect on hover.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-shadow-hov-SkyBlue"&gt;SkyBlue Shadow on Hover&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-shadow-hov-SkyBlue">SkyBlue Shadow on Hover</span>'>Copy</button>
+                </td>
+            </tr>
+
+            <!-- Text Decorations -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Text Decorations</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply text decoration styles such as underline, overline, and
+                    line-through, including variations like dotted, dashed, double, and wavy.</td>
+            </tr>
+            <tr>
+                <td><span class="text-u">Underlined Text</span></td>
+                <td><code>.text-u</code> or <code>.text-underline</code></td>
+                <td>Underlines the text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-u"&gt;Underlined Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-u">Underlined Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-o">Overlined Text</span></td>
+                <td><code>.text-o</code> or <code>.text-overline</code></td>
+                <td>Adds an overline to the text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-o"&gt;Overlined Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-o">Overlined Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-l">Line-Through Text</span></td>
+                <td><code>.text-l</code> or <code>.text-line-through</code></td>
+                <td>Strikes through the text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-l"&gt;Line-Through Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-l">Line-Through Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-dotted">Dotted Underline</span></td>
+                <td><code>.text-dotted</code></td>
+                <td>Underlines the text with a dotted line.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-dotted"&gt;Dotted Underline&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-dotted">Dotted Underline</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-wavy">Wavy Underline</span></td>
+                <td><code>.text-wavy</code></td>
+                <td>Underlines the text with a wavy line.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-wavy"&gt;Wavy Underline&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-wavy">Wavy Underline</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-u-overline">Underline and Overline</span></td>
+                <td><code>.text-u-overline</code></td>
+                <td>Applies both underline and overline.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-u-overline"&gt;Underline and Overline&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-u-overline">Underline and Overline</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Hover Text Decorations -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Hover Text Decorations</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use the "hov-" prefix to apply text decorations on hover.</td>
+            </tr>
+            <tr>
+                <td><span class="text-hov-u">Underline on Hover</span></td>
+                <td><code>.text-hov-u:hover</code></td>
+                <td>Underlines the text on hover.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-hov-u"&gt;Underline on Hover&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-hov-u">Underline on Hover</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-hov-dotted">Dotted on Hover</span></td>
+                <td><code>.text-hov-dotted:hover</code></td>
+                <td>Applies a dotted underline on hover.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-hov-dotted"&gt;Dotted on Hover&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-hov-dotted">Dotted on Hover</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Line Height -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Line Height Utilities</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Adjust line height with classes like .text-lh-{value} or
+                    .line-height-{value}. Values include 00 (0), 05 (0.5), 10 (1), 15 (1.5), 20 (2), 25 (2.5), 30 (3).
+                    Add "i" suffix for !important.</td>
+            </tr>
+            <tr>
+                <td><span class="text-lh-15">Line Height 1.5</span></td>
+                <td><code>.text-lh-15</code></td>
+                <td>Sets line height to 1.5.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-lh-15"&gt;Line Height 1.5&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-lh-15">Line Height 1.5</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-line-height-20">Line Height 2</span></td>
+                <td><code>.text-line-height-20</code></td>
+                <td>Sets line height to 2.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-line-height-20"&gt;Line Height 2&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-line-height-20">Line Height 2</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Text Ellipsis -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Text Ellipsis Utilities</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Truncate text with ellipsis after a specified number of lines
+                    (1-10) using .text-dotted-{n}.</td>
+            </tr>
+            <tr>
+                <td><span class="text-dotted-1" style="max-width: 100px; display: block;">This is a long text that will
+                        truncate</span></td>
+                <td><code>.text-dotted-1</code></td>
+                <td>Truncates text to 1 line with ellipsis.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-dotted-1"&gt;This is a long text that will truncate&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-dotted-1">This is a long text that will truncate</span>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="text-dotted-2" style="max-width: 100px; display: block;">This is a longer text that
+                        spans multiple lines and truncates</span></td>
+                <td><code>.text-dotted-2</code></td>
+                <td>Truncates text to 2 lines with ellipsis.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-dotted-2"&gt;This is a longer text that spans multiple lines and truncates&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-dotted-2">This is a longer text that spans multiple lines and truncates</span>'>Copy</button>
+                </td>
+            </tr>
+
+            <!-- Text Alignment -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Text Alignment</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Align text using classes like .text-left, .text-center,
+                    .text-right, etc.</td>
+            </tr>
+            <tr>
+                <td><span class="text-left" style="display: block;">Left Aligned</span></td>
+                <td><code>.text-left</code></td>
+                <td>Aligns text to the left.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-left"&gt;Left Aligned&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-left">Left Aligned</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-center" style="display: block;">Centered Text</span></td>
+                <td><code>.text-center</code></td>
+                <td>Centers the text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-center"&gt;Centered Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-center">Centered Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-justify" style="display: block;">Justified text spans the width</span></td>
+                <td><code>.text-justify</code></td>
+                <td>Justifies the text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-justify"&gt;Justified text spans the width&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-justify">Justified text spans the width</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Font Styles -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Font Styles</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply font styles like italic, normal, or oblique.</td>
+            </tr>
+            <tr>
+                <td><span class="text-italic">Italic Text</span></td>
+                <td><code>.text-italic</code> or <code>.text-i</code></td>
+                <td>Sets font style to italic.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-italic"&gt;Italic Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-italic">Italic Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-oblique">Oblique Text</span></td>
+                <td><code>.text-oblique</code></td>
+                <td>Sets font style to oblique.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-oblique"&gt;Oblique Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-oblique">Oblique Text</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Font Weights -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Font Weights</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Adjust font weight with named classes (e.g., .text-bold) or numeric
+                    classes (e.g., .text-700).</td>
+            </tr>
+            <tr>
+                <td><span class="text-bold">Bold Text</span></td>
+                <td><code>.text-bold</code> or <code>.text-b</code></td>
+                <td>Sets font weight to bold.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-bold"&gt;Bold Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-bold">Bold Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-600">Weight 600</span></td>
+                <td><code>.text-600</code></td>
+                <td>Sets font weight to 600.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-600"&gt;Weight 600&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-600">Weight 600</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Additional Text Properties -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Additional Text Properties</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Modify text transform, word break, white space, and text overflow.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="text-uppercase">Uppercase Text</span></td>
+                <td><code>.text-uppercase</code></td>
+                <td>Transforms text to uppercase.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-uppercase"&gt;Uppercase Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-uppercase">Uppercase Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-nowrap">No Wrap Text</span></td>
+                <td><code>.text-nowrap</code></td>
+                <td>Prevents text from wrapping.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-nowrap"&gt;No Wrap Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-nowrap">No Wrap Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-ellipsis"
+                        style="max-width: 100px; display: block; overflow: hidden; white-space: nowrap;">Ellipsis
+                        Overflow Text</span></td>
+                <td><code>.text-ellipsis</code></td>
+                <td>Truncates text with an ellipsis.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-ellipsis"&gt;Ellipsis Overflow Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-ellipsis">Ellipsis Overflow Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="star">Mandatory Field</span></td>
+                <td><code>.star</code></td>
+                <td>Adds a red asterisk after the text.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="star"&gt;Mandatory Field&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="star">Mandatory Field</span>'>Copy</button></td>
+            </tr>
+
+            <!-- Font Size Utilities (Updated) -->
+            <tr>
+                <td colspan="5">
+                    <h2 class="text-center">Font Size Utilities</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply font sizes with named classes (e.g., .text-s, .text-xl) or
+                    numeric classes (e.g., .text-10 for 1rem). Numeric sizes range from 0 to 500 (0rem to 50rem).</td>
+            </tr>
+            <tr>
+                <td><span class="text-xl">Extra Large Text</span></td>
+                <td><code>.text-xl</code></td>
+                <td>Sets font size to 1.8rem.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-xl"&gt;Extra Large Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-xl">Extra Large Text</span>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><span class="text-25">2.5rem Text</span></td>
+                <td><code>.text-25</code></td>
+                <td>Sets font size to 2.5rem.</td>
+                <td>
+                    <pre><code class="language-html">&lt;span class="text-25"&gt;2.5rem Text&lt;/span&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<span class="text-25">2.5rem Text</span>'>Copy</button></td>
+            </tr>
+        </tbody>
+        </tbody>
+    </table>
+
+    <footer class="text-center pad--30">
+        <p>Need more help? Check the <a href="#">MastorsCDN Full Documentation</a> or contact support.</p>
+    </footer>
+
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Copy to Clipboard Script -->
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const code = button.getAttribute('data-code');
+                copyToClipboard(code);
+            });
+        });
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+
+</html>

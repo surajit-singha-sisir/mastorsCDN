@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Utility Classes Documentation - MastorsCDN</title>
+  <!-- Prism CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <!-- Your External Stylesheet -->
+  <link rel="stylesheet" href="../mastors.css">
+  <style>
+    .intro-text { max-width: 800px; margin: 0 auto 30px; line-height: 1.6; }
+    .section-desc { font-style: italic; color: #555; margin-bottom: 20px; }
+    .table-2 td, .table-2 th { vertical-align: middle; }
+  </style>
+</head>
+
+<body>
+  <header class="text-center pad--30 bg-White">
+    <h1>MASTORSCDN BACKGROUND DOCUMENTATION</h1>
+    <p class="intro-text">Welcome to the MastorsCDN Background Utility Classes documentation. These classes allow you to easily apply background colors, variations, shadows, and hover effects to your HTML elements. Each class is designed to be intuitive and flexible, following a consistent naming convention. Explore the sections below to see previews, class names, and usage examples.</p>
+  </header>
+
+  <table class="table-2 border-all scroll-x">
+    <thead>
+      <tr>
+        <th>Preview</th>
+        <th>Class Name</th>
+        <th>Description</th>
+        <th>HTML Declaration</th>
+        <th>Copy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Basic Background Colors -->
+      <tr>
+        <td colspan="5" class="b text-center">Basic Background Colors</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Apply solid background colors to elements using simple, color-based class names.</td>
+      </tr>
+      <tr>
+        <td><div class="bg-Red pad--10">Red</div></td>
+        <td><code>.bg-Red</code></td>
+        <td>Sets a solid red background color.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-Red"&gt;Red&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-Red">Red</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td><div class="bg-Blue pad--10">Blue</div></td>
+        <td><code>.bg-Blue</code></td>
+        <td>Sets a solid blue background color.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-Blue"&gt;Blue&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-Blue">Blue</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Background Color Variations -->
+      <tr>
+        <td colspan="5" class="b text-center">Background Color Variations</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Use numbered suffixes (e.g., -300, -700) to apply lighter or darker shades of a base color. Numbers range from 100 (lightest) to 900 (darkest).</td>
+      </tr>
+      <tr>
+        <td><div class="bg-Red-300 pad--10">Light Red</div></td>
+        <td><code>.bg-Red-300</code></td>
+        <td>A lighter shade of red, ideal for subtle backgrounds.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-Red-300"&gt;Light Red&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-Red-300">Light Red</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td><div class="bg-Red-700 pad--10">Dark Red</div></td>
+        <td><code>.bg-Red-700</code></td>
+        <td>A darker shade of red, great for emphasis or contrast.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-Red-700"&gt;Dark Red&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-Red-700">Dark Red</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Important Background Colors -->
+      <tr>
+        <td colspan="5" class="b text-center">Important Background Colors</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Special classes with an "i" suffix (e.g., .bg-Greeni) denote important or highlighted states, often with bolder or more vivid tones.</td>
+      </tr>
+      <tr>
+        <td><div class="bg-Greeni pad--10">Green (Important)</div></td>
+        <td><code>.bg-Greeni</code></td>
+        <td>A vivid green background to signify importance or success.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-Greeni"&gt;Green (Important)&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-Greeni">Green (Important)</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Hover Background Colors -->
+      <tr>
+        <td colspan="5" class="b text-center">Hover Background Colors</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Add the "hov-" prefix to change the background color only when the user hovers over the element.</td>
+      </tr>
+      <tr>
+        <td><div class="bg-hov-Purple pad--10">Hover Purple</div></td>
+        <td><code>.bg-hov-Purple:hover</code></td>
+        <td>Changes the background to purple on hover. Default state is unaffected.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-hov-Purple"&gt;Hover Purple&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-hov-Purple">Hover Purple</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Background Shadow Classes -->
+      <tr>
+        <td colspan="5" class="b text-center">Background Shadows</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Apply shadow effects to backgrounds using "shad-" or "shadow-" prefixes. Both are interchangeable.</td>
+      </tr>
+      <tr>
+        <td><div class="bg-shad-Blue pad--10">Blue Shadow</div></td>
+        <td><code>.bg-shad-Blue</code> or <code>.bg-shadow-Blue</code></td>
+        <td>A blue background with a subtle shadow effect for depth.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-shad-Blue"&gt;Blue Shadow&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-shad-Blue">Blue Shadow</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td><div class="bg-shadow-Green pad--10">Green Shadow</div></td>
+        <td><code>.bg-shadow-Green</code></td>
+        <td>A green background with a shadow effect. (Note: Preview label corrected from "Red" to "Green".)</td>
+        <td><pre><code class="language-html">&lt;div class="bg-shadow-Green"&gt;Green Shadow&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-shadow-Green">Green Shadow</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Hover Background Shadow Classes -->
+      <tr>
+        <td colspan="5" class="b text-center">Hover Background Shadows</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Combine "shad-hov-" or "shadow-hov-" prefixes to apply shadow effects only on hover.</td>
+      </tr>
+      <tr>
+        <td><div class="bg-shad-hov-Red pad--10">Red Shadow on Hover</div></td>
+        <td><code>.bg-shad-hov-Red:hover</code></td>
+        <td>A red shadow effect appears when hovering over the element.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-shad-hov-Red"&gt;Red Shadow on Hover&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-shad-hov-Red">Red Shadow on Hover</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td><div class="bg-shadow-hov-Purple pad--10">Purple Shadow on Hover</div></td>
+        <td><code>.bg-shadow-hov-Purple:hover</code></td>
+        <td>A purple shadow effect activates on hover for interactive feedback.</td>
+        <td><pre><code class="language-html">&lt;div class="bg-shadow-hov-Purple"&gt;Purple Shadow on Hover&lt;/div&gt;</code></pre></td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="bg-shadow-hov-Purple">Purple Shadow on Hover</div>'>Copy</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer class="text-center pad--30">
+    <p>Need more help? Check the <a href="#">MastorsCDN Full Documentation</a> or contact support.</p>
+  </footer>
+
+  <!-- Prism JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <!-- Copy to Clipboard Script -->
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const code = button.getAttribute('data-code');
+        copyToClipboard(code);
+      });
+    });
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+  </script>
+</body>
+
+</html>

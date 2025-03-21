@@ -1,92 +1,57 @@
-.link- {
-    &u {
-        text-decoration: underline;
+.link-, .a- {
+  &u {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
     }
-
-    &hov-u:hover {
-        text-decoration: underline;
+  }
+  
+  &none {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
     }
-
-    &u:hover {
-        text-decoration: underline;
+  }
+  
+  &overline {
+    text-decoration: overline;
+    &:hover {
+      text-decoration: overline;
     }
-
-    &dash-hov:hover {
-        text-decoration: dashed;
+  }
+  
+  &line-through {
+    text-decoration: line-through;
+    &:hover {
+      text-decoration: line-through;
     }
-
-    &dash {
-        text-decoration: dashed;
+  }
+  
+  &dashed {
+    text-decoration: dashed;
+    &:hover {
+      text-decoration: dashed;
     }
-
-    &hov-dash:hover {
-        text-decoration: dashed;
+  }
+  
+  &dotted {
+    text-decoration: dotted;
+    &:hover {
+      text-decoration: dotted;
     }
-
-    &dot {
-        text-decoration: dotted;
+  }
+  
+  &double {
+    text-decoration: double;
+    &:hover {
+      text-decoration: double;
     }
-
-    &dot-hov:hover {
-        text-decoration: dotted;
+  }
+  
+  &wavy {
+    text-decoration: wavy;
+    &:hover {
+      text-decoration: wavy;
     }
-
-
-
-
-    &none {
-        text-decoration: none;
-    }
-
-    &none-hov:hover {
-        text-decoration: none;
-    }
-
-    &overline {
-        text-decoration: overline;
-    }
-
-    &overline-hov:hover {
-        text-decoration: overline;
-    }
-
-    &line-through {
-        text-decoration: line-through;
-    }
-
-    &line-through-hov:hover {
-        text-decoration: line-through;
-    }
-
-    &double {
-        text-decoration: double;
-    }
-
-    &double-hov:hover {
-        text-decoration: double;
-    }
-
-    &wavy {
-        text-decoration: wavy;
-    }
-
-    &wavy-hov:hover {
-        text-decoration: wavy;
-    }
-
-    &solid {
-        text-decoration: solid;
-    }
-
-    &solid-hov:hover {
-        text-decoration: solid;
-    }
-
-    &blink {
-        text-decoration: blink;
-    }
-
-    &blink-hov:hover {
-        text-decoration: blink;
-    }
+  }
 }

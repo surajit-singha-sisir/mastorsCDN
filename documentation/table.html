@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MastorsCDN Table Classes Documentation</title>
+    <link rel="stylesheet" href="../mastors.css">
+    <style>
+        li {
+            list-style: none;
+        }
+
+        .toc {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #2d3436;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+
+        
+    </style>
+</head>
+
+<body class="res-container m-auto">
+    <h1 class="text-center">MastorsCDN <code>Table</code> Classes Documentation</h1>
+    <br>
+    <!-- Table of Contents -->
+    <div class="toc res-container m-auto border-all text--m">
+        <h3>Table of Contents</h3><br>
+        <ul>
+            <li><a href="#table-class">1. <code dark-bg="#3b3b3b">.table</code> Class</a></li>
+            <li><a href="#table-2-class">2. <code dark-bg="#3b3b3b">.table-2</code> Class</a></li>
+            <li><a href="#key-differences">Key Differences Between <code dark-bg="#3b3b3b">.table</code> and <code
+                        dark-bg="#3b3b3b">.table-2</code></a></li>
+            <li><a href="#notes">Notes</a></li>
+        </ul>
+    </div>
+
+    <p class="text--m">This documentation outlines the structure, styling, and behavior of table-related classes
+        provided by the <code dark-bg="#3b3b3b">mastorsCDN</code> CSS library. Two primary table styles are supported:
+        <code dark-bg="#3b3b3b">.table</code> and <code dark-bg="#3b3b3b">.table-2</code>, each with distinct features
+        and
+        optional modifiers.
+    </p>
+
+    <h2 class="text--m" id="table-class">1. <code dark-bg="#3b3b3b">.table</code> Class</h2>
+    <p class="text--m">The <code dark-bg="#3b3b3b">.table</code> class provides a simple, clean, and fully responsive
+        table design with
+        a dark header and alternating row colors.</p><br>
+
+    <!-- Preview for .table -->
+    <h3 class="text--l">Preview</h3><br>
+    <table class="table text--l">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h3 class="text--m">Structure</h3>
+    <br>
+    <ul class="text--m">
+        <li><strong>Base Class:</strong> <code dark-bg="#3b3b3b">.table</code></li>
+        <li><strong>Elements:</strong> <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>,
+            <code>&lt;tbody&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>
+        </li>
+    </ul>
+    <br>
+
+    <br>
+    <h3 class="text--l">Styling</h3>
+    <br>
+    <ul class="text--m">
+        <li><strong>Table:</strong>
+            <ul>
+                <li><code>width: 100%</code> - Full-width table.</li>
+                <li><code>border-collapse: collapse</code> - Removes spacing between cells.</li>
+            </ul>
+        </li>
+        <li><strong>Header (<code>&lt;thead&gt;</code>):</strong>
+            <ul>
+                <li><code>background-color: $dark</code> - Dark background for the header row.</li>
+                <li><code>&lt;th&gt;</code>:
+                    <ul>
+                        <li><code>color: white</code> - White text.</li>
+                        <li><code>text-align: center</code> - Centered text.</li>
+                        <li><code>padding: 1rem</code> - Consistent padding.</li>
+                        <li><code>border: 1px solid $silver</code> - Silver border around each header cell.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Body (<code>&lt;tbody&gt;</code>):</strong>
+            <ul>
+                <li><code>&lt;tr&gt;</code>:
+                    <ul>
+                        <li><code>border: 1px solid $silver</code> - Silver border around rows.</li>
+                        <li><code>padding: 0.5rem</code> - Row padding.</li>
+                        <li><code>:nth-child(even)</code> - Even rows have a light gray background
+                            (<code>#ececec</code>).</li>
+                        <li><code>:hover</code> - Rows lighten on hover (<code>#f8f8f8</code>).</li>
+                    </ul>
+                </li>
+                <li><code>&lt;td&gt;</code>:
+                    <ul>
+                        <li><code>text-align: center</code> - Centered text.</li>
+                        <li><code>padding: 0.5rem</code> - Consistent padding.</li>
+                        <li><code>border: 1px solid $silver</code> - Silver border around each cell.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3 class="text--m">Usage Example</h3>
+    <br>
+    <pre class="text--m"><code>&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header 1&lt;/th&gt;
+      &lt;th&gt;Header 2&lt;/th&gt;
+      &lt;th&gt;Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+      &lt;td&gt;Row 1, Cell 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre><br>
+
+    <h2 id="table-2-class">2. <code dark-bg="#3b3b3b">.table-2</code> Class</h2><br>
+    <p>The <code dark-bg="#3b3b3b">.table-2</code> class offers a more modern and customizable table design with
+        scrollable options, hover effects, and additional modifiers.</p><br>
+
+    <!-- Preview for .table-2 -->
+    <h3 class="text--l">Preview</h3><br>
+    <table class="table-2 scroll-x scroll-y border-all scale-1">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <h3 class="text--l">Structure</h3><br>
+    <ul>
+        <li class="text--m"><strong>Base Class:</strong> <code dark-bg="#3b3b3b">.table-2</code></li>
+        <li class="text--m"><strong>Modifiers:</strong> <code dark-bg="#3b3b3b">.scroll-x</code>, <code
+                dark-bg="#3b3b3b">.scroll-y</code>, <code dark-bg="#3b3b3b">.border-all</code>, <code
+                dark-bg="#3b3b3b">.scale-1</code></li>
+        <li class="text--m"><strong>Elements:</strong> <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>,
+            <code>&lt;tbody&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>
+        </li>
+    </ul><br><br>
+
+    <h3 class="text--l">Styling</h3><br>
+    <ul class="text--m">
+        <li><strong>Table:</strong>
+            <ul>
+                <li><code>width: 100%</code> - Full-width table.</li>
+                <li><code>border-collapse: separate</code> - Maintains cell spacing.</li>
+                <li><code>border-spacing: 0</code> - No gaps between cells.</li>
+            </ul>
+        </li><br>
+        <li class="text--m"><strong>Header (<code>&lt;thead&gt;</code>):</strong>
+            <ul>
+                <li><code>&lt;th&gt;</code>:
+                    <ul>
+                        <li><code>background: #eeeeee</code> - Light gray background.</li>
+                        <li><code>color: #333</code> - Dark text.</li>
+                        <li><code>padding: 1rem 1.5rem</code> - Generous padding.</li>
+                        <li><code>text-align: center</code> - Centered text.</li>
+                        <li><code>text-transform: uppercase</code> - Uppercase text.</li>
+                        <li><code>:last-child</code> - No right border on the last header cell.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="text--l"><strong>Body (<code>&lt;tbody&gt;</code>):</strong><br>
+            <ul class="text--m">
+                <li><code>&lt;tr&gt;</code>:
+                    <ul>
+                        <li><code>transition: background 0.3s ease</code> - Smooth background transitions.</li>
+                        <li><code>:nth-child(even)</code> - Even rows have a light blue-gray background
+                            (<code>#f7f9fc</code>).</li>
+                        <li><code>:hover:not(:first-child)</code> - Rows darken on hover (<code>#e8ecef</code>),
+                            excluding the header.</li>
+                        <li><code>:last-child td</code> - No bottom border on the last row's cells.</li>
+                    </ul>
+                </li>
+                <li><code>&lt;td&gt;</code>:
+                    <ul>
+                        <li><code>padding: 16px 20px</code> - Spacious padding.</li>
+                        <li><code>color: #2d3436</code> - Dark gray text.</li>
+                        <li><code>vertical-align: middle</code> - Vertically centered content.</li>
+                        <li><code>transition: background 0.3s ease</code> - Smooth background transitions.</li>
+                        <li><code>:last-child</code> - No right border on the last cell.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3 class="text--l">Modifiers</h3><br>
+    <ol>
+        <li><strong><code dark-bg="#3b3b3b">.scroll-x</code></strong>:
+            <ul>
+                <li>Enables horizontal scrolling (<code>overflow-x: auto</code>).</li>
+                <li>Disables vertical scrolling (<code>overflow-y: hidden</code>).</li>
+                <li>On mobile (<code>max-width: 768px</code>), enforces <code>white-space: nowrap</code> for horizontal
+                    content.</li>
+            </ul>
+        </li>
+        <li><strong><code dark-bg="#3b3b3b">.scroll-y</code></strong>:
+            <ul>
+                <li>Enables vertical scrolling (<code>overflow-y: auto</code>).</li>
+                <li>Disables horizontal scrolling (<code>overflow-x: hidden</code>).</li>
+            </ul>
+        </li>
+        <li><strong><code dark-bg="#3b3b3b">.scroll-x.scroll-y</code></strong>:
+            <ul>
+                <li>Combines both horizontal and vertical scrolling (<code>overflow-x: auto; overflow-y: auto</code>).
+                </li>
+            </ul>
+        </li><br>
+        <li class="text--m"><strong><code dark-bg="#3b3b3b">.border-all</code></strong>:
+            <ul class="text--m">
+                <li>Adds a full border to all cells:</li>
+                <li><code>border-top: 1px solid #ccc</code> - Top border on <code>&lt;th&gt;</code>.</li>
+                <li><code>border-right: 1px solid #ccc</code> - Right border on <code>&lt;td&gt;</code> and
+                    <code>&lt;th&gt;</code>.
+                </li>
+                <li><code>border-bottom: 1px solid #ccc</code> - Bottom border on <code>&lt;td&gt;</code> and
+                    <code>&lt;th&gt;</code>.
+                </li>
+                <li><code>border-left: 1px solid #ccc</code> - Left border on first <code>&lt;td&gt;</code> and
+                    <code>&lt;th&gt;</code> in each row.
+                </li>
+                <li>Ensures the last row has a bottom border.</li>
+            </ul>
+        </li>
+        <li class="text--m"><strong><code dark-bg="#3b3b3b">.scale-1</code></strong>:
+            <ul class="text--m">
+                <li>Adds a subtle scaling effect on hover for even rows:</li>
+                <li><code>transition: transform 0.2s ease, background 0.3s ease</code> - Smooth scaling and background
+                    change.</li>
+                <li><code>:hover:not(:first-child)</code> - Scales to <code>1.01</code> and changes background to
+                    <code>#e8ecef</code>.
+                </li>
+            </ul>
+        </li>
+    </ol>
+    <br>
+    <h3 class="text--l">Scrollbar Styling</h3><br>
+    <ul class="text--m">
+        <li><strong>Webkit Scrollbars:</strong>
+            <ul>
+                <li><code>height: 12px; width: 12px</code> - Consistent scrollbar size.</li>
+                <li><strong>Track:</strong> Light gray (<code>#ecf0f1</code>) with rounded corners and subtle shadow.
+                </li>
+                <li><strong>Thumb:</strong>
+                    <ul>
+                        <li>Gradient background (<code>#34495e</code> to <code>#5d788f</code>).</li>
+                        <li><code>border: 2px solid #ecf0f1</code> - Light border.</li>
+                        <li><code>:hover</code> - Darker gradient (<code>#2c3e50</code> to <code>#4b6580</code>) with a
+                            lighter border (<code>#dfe6e9</code>).</li>
+                        <li><code>:active</code> - Solid dark color (<code>#2c3e50</code>).</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <h3 class="text--m">Responsive Behavior</h3><br>
+    <ul class="text--m">
+        <li><strong>Media Query (<code>max-width: 768px</code>):</strong>
+            <ul>
+                <li><code>display: block</code> - Table becomes a block element.</li>
+                <li><code>-webkit-overflow-scrolling: touch</code> - Smooth scrolling on mobile.</li>
+                <li><code>border: 1px solid #34495e</code> - Adds a border around the table.</li>
+                <li><code>&lt;th&gt;, &lt;td&gt;</code>:
+                    <ul>
+                        <li><code>padding: 12px</code> - Reduced padding.</li>
+                        <li><code>font-size: 0.9em</code> - Smaller text.</li>
+                    </ul>
+                </li>
+                <li><code dark-bg="#3b3b3b">.scroll-x</code> - Enforces <code>white-space: nowrap</code> for horizontal
+                    scrolling.</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <h3>Usage Example</h3><br>
+    <pre class="text--m"><code>&lt;table class="table-2 border-all scroll-x scale-1"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Column 1&lt;/th&gt;
+      &lt;th&gt;Column 2&lt;/th&gt;
+      &lt;th&gt;Column 3&lt;/th&gt;
+      &lt;th&gt;Column 4&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data 1&lt;/td&gt;
+      &lt;td&gt;Data 2&lt;/td&gt;
+      &lt;td&gt;Data 3&lt;/td&gt;
+      &lt;td&gt;Data 4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+    <h2 id="key-differences">Key Differences Between <code dark-bg="#3b3b3b">.table</code> and <code
+            dark-bg="#3b3b3b">.table-2</code></h2>
+    <table class="table-2 border-all">
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th><code dark-bg="#3b3b3b">.table</code></th>
+                <th><code dark-bg="#3b3b3b">.table-2</code></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Header Background</strong></td>
+                <td>Dark (<code>$dark</code>)</td>
+                <td>Light gray (<code>#eeeeee</code>)</td>
+            </tr>
+            <tr>
+                <td><strong>Border Collapse</strong></td>
+                <td><code>collapse</code></td>
+                <td><code>separate</code></td>
+            </tr>
+            <tr>
+                <td><strong>Row Hover Effect</strong></td>
+                <td>Lightens (<code>#f8f8f8</code>)</td>
+                <td>Darkens (<code>#e8ecef</code>)</td>
+            </tr>
+            <tr>
+                <td><strong>Modifiers</strong></td>
+                <td>None</td>
+                <td><code dark-bg="#3b3b3b">.scroll-x</code>, <code dark-bg="#3b3b3b">.scroll-y</code>, <code
+                        dark-bg="#3b3b3b">.border-all</code>, <code dark-bg="#3b3b3b">.scale-1</code></td>
+            </tr>
+            <tr>
+                <td><strong>Scrollbar Styling</strong></td>
+                <td>None</td>
+                <td>Custom Webkit scrollbars</td>
+            </tr>
+            <tr>
+                <td><strong>Responsive Design</strong></td>
+                <td>Basic</td>
+                <td>Advanced (block display, touch scrolling)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id="notes">Notes</h2>
+    <ul>
+        <li>The SCSS relies on a <code dark-bg="#3b3b3b">color-map</code> file for variables like <code>$dark</code> and
+            <code>$silver</code>. Ensure this file is correctly imported.
+        </li>
+        <li>The <code dark-bg="#3b3b3b">.table-2</code> class is more feature-rich and suitable for complex, interactive
+            tables, while <code dark-bg="#3b3b3b">.table</code> is ideal for simpler layouts.</li>
+    </ul>
+
+    <p>This documentation provides a comprehensive guide to using the table classes in your <code
+            dark-bg="#3b3b3b">mastorsCDN</code> library.</p>
+</body>
+
+</html>

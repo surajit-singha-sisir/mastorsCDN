@@ -1,169 +1,199 @@
-// IMAGE MANIPULATION CSS
 .res-logo {
-	position: relative;
-	width: auto;
-	height: 2rem;
-	aspect-ratio: 1;
+  position: relative;
+  width: auto;
+  height: 2rem;
+  aspect-ratio: 1;
 
-	img {
-		height: inherit;
-		width: inherit;
-		aspect-ratio: 1;
-	}
+  img {
+    height: inherit;
+    width: inherit;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
 }
 
 .img- {
-	&i {
-		width: inherit;
-		height: inherit;
-	}
+  &i {
+    width: inherit;
+    height: inherit;
+  }
 
-	&w-i {
-		width: inherit;
-	}
+  &w-i {
+    width: inherit;
+  }
 
-	&h-i {
-		height: inherit;
-	}
+  &h-i {
+    height: inherit;
+  }
+
+  &fit-contain {
+    object-fit: contain;
+  }
+
+  &fit-cover {
+    object-fit: cover;
+  }
+
+  &fit-fill {
+    object-fit: fill;
+  }
+
+  &fit-scale-down {
+    object-fit: scale-down;
+  }
+
+  &ar-1-1, &ar-1, &ar-square {
+    aspect-ratio: 1 / 1;
+  }
+
+  &ar-16-9 {
+    aspect-ratio: 16 / 9;
+  }
+
+  &ar-4-3 {
+    aspect-ratio: 4 / 3;
+  }
+
+  &ar-3-2 {
+    aspect-ratio: 3 / 2;
+  }
+
+  &w-full {
+    width: 100%;
+  }
+
+  &w-auto {
+    width: auto;
+  }
+
+  &h-full {
+    height: 100%;
+  }
+
+  &h-auto {
+    height: auto;
+  }
+
+  &center {
+    object-position: center;
+  }
+
+  &top {
+    object-position: top;
+  }
+
+  &bottom {
+    object-position: bottom;
+  }
+
+  &rounded {
+    border-radius: 8px;
+  }
+
+  &circle {
+    border-radius: 50%;
+  }
+
+  &border {
+    border: 1px solid #ccc;
+  }
+
+  &responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
-
 
 .img- {
-	// RESPONSIVE IMAGE
-	&h-auto {
-		height: auto;
-	}
-
-	&w-auto {
-		width: auto;
-	}
-
-	&auto {
-		width: auto;
-		height: auto;
-	}
-
-	&h-res {
-		width: auto;
-		height: 100%;
-	}
-
-	&w-res {
-		width: 100%;
-		height: auto;
-	}
-
-	&h-inherit {
-		height: inherit;
-	}
-
-	&w-inherit {
-		width: inherit;
-	}
-
-	&inherit {
-		width: inherit;
-		height: inherit;
-	}
-
-	&w- {
-		width: 100vw;
-	}
-
-	&h- {
-		height: 100vw;
-	}
-
-	&w- {
-		width: 100vh;
-	}
-
-	&h- {
-		height: 100vh;
-	}
-}
-
-
-.img-w- {
-  // IMAGE WIDHT IN (%)
-  @for $i from 0 through 100 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $img: "#{$i}%";
-
-    &#{$class} {
-      width: #{$img};
-    }
+  &i {
+    width: inherit;
+    height: inherit;
   }
-  // IMAGE WIDHT IN (VH)
-  @for $i from 0 through 100 {
-    $class: if($i < 10, "0#{$i}", #{$i});
-    $img: #{$i}vh;
 
-    &vh-#{$class} {
-      width: #{$img};
-    }
+  &w-i {
+    width: inherit;
   }
-  // IMAGE WIDHT IN (VW)
-  @for $i from 0 through 100 {
-    $class: if($i < 10, "0#{$i}", #{$i});
-    $img: #{$i}vw;
 
-    &vw-#{$class} {
-      width: #{$img};
-    }
+  &h-i {
+    height: inherit;
   }
-  // IMAGE WIDTH IN REM
-  @for $i from 0 through 20 {
-    @for $j from 0 through 9 {
-    $class: #{$i}#{$j};
 
-      $rem: $i + calc($j / 10);
-
-      &-#{$class} {
-        width: #{$rem}rem;
-      }
-    }
+  &fit-contain {
+    object-fit: contain;
   }
-}
 
-.img-h- {
-  // IMAGE WIDHT IN (%)
-  @for $i from 0 through 100 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $img: "#{$i}%";
-
-    &#{$class} {
-      height: #{$img};
-    }
+  &fit-cover {
+    object-fit: cover;
   }
-  // IMAGE WIDHT IN (VH)
-  @for $i from 0 through 100 {
-    $class: if($i < 10, "0#{$i}", #{$i});
-    $img: #{$i}vh;
 
-    &vh-#{$class} {
-      height: #{$img};
-    }
+  &fit-fill {
+    object-fit: fill;
   }
-  // IMAGE WIDHT IN (VW)
-  @for $i from 0 through 100 {
-    $class: if($i < 10, "0#{$i}", #{$i});
-    $img: #{$i}vw;
 
-    &vw-#{$class} {
-      height: #{$img};
-    }
+  &fit-scale-down {
+    object-fit: scale-down;
   }
-  // IMAGE WIDHT IN (REM)
-  @for $i from 0 through 20 {
-    @for $j from 0 through 9 {
-    $class: #{$i}#{$j};
 
-      $rem: $i + calc($j / 10);
+  &ar-1-1 {
+    aspect-ratio: 1 / 1;
+  }
 
-      &-#{$class} {
-        height: #{$rem}rem;
-      }
-    }
+  &ar-16-9 {
+    aspect-ratio: 16 / 9;
+  }
+
+  &ar-4-3 {
+    aspect-ratio: 4 / 3;
+  }
+
+  &ar-3-2 {
+    aspect-ratio: 3 / 2;
+  }
+
+  &w-full {
+    width: 100%;
+  }
+
+  &w-auto {
+    width: auto;
+  }
+
+  &h-full {
+    height: 100%;
+  }
+
+  &h-auto {
+    height: auto;
+  }
+
+  &center {
+    object-position: center;
+  }
+
+  &top {
+    object-position: top;
+  }
+
+  &bottom {
+    object-position: bottom;
+  }
+
+  &rounded {
+    border-radius: 8px;
+  }
+
+  &circle {
+    border-radius: 50%;
+  }
+
+  &border {
+    border: 1px solid #ccc;
+  }
+
+  &responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }

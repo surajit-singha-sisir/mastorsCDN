@@ -1,205 +1,209 @@
-.list-, .li- {
-    &none {
-        list-style-type: none;
-    }
+li {
+  list-style: none;
+}
+.list-,
+.li- {
+  &none {
+    list-style-type: none;
+  }
 
-    &disc {
-        list-style-type: disc;
-    }
+  &disc {
+    list-style-type: disc;
+  }
 
-    &circle {
-        list-style-type: circle;
-    }
+  &circle {
+    list-style-type: circle;
+  }
 
-    &square {
-        list-style-type: square;
-    }
+  &square {
+    list-style-type: square;
+  }
 
-    &decimal {
-        list-style-type: decimal;
-    }
+  &decimal {
+    list-style-type: decimal;
+  }
 
-    &lowerAlpha {
-        list-style-type: lower-alpha;
-    }
+  &lowerAlpha {
+    list-style-type: lower-alpha;
+  }
 
-    &upperAlpha {
-        list-style-type: upper-alpha;
-    }
+  &upperAlpha {
+    list-style-type: upper-alpha;
+  }
 
-    &lowerRoman {
-        list-style-type: lower-roman;
-    }
+  &lowerRoman {
+    list-style-type: lower-roman;
+  }
 
-    &upperRoman {
-        list-style-type: upper-roman;
-    }
+  &upperRoman {
+    list-style-type: upper-roman;
+  }
 
-    &decimalLeadingZero {
-        list-style-type: decimal-leading-zero;
-    }
+  &decimalLeadingZero {
+    list-style-type: decimal-leading-zero;
+  }
 
-    &discLeadingZero {
-        list-style-type: disc-leading-zero;
-    }
+  &discLeadingZero {
+    list-style-type: disc-leading-zero;
+  }
 
-    &circleLeadingZero {
-        list-style-type: circle-leading-zero;
-    }
+  &circleLeadingZero {
+    list-style-type: circle-leading-zero;
+  }
 
-    &squareLeadingZero {
-        list-style-type: square-leading-zero;
-    }
+  &squareLeadingZero {
+    list-style-type: square-leading-zero;
+  }
 
-    &lowerAlphaLeadingZero {
-        list-style-type: lower-alpha-leading-zero;
-    }
+  &lowerAlphaLeadingZero {
+    list-style-type: lower-alpha-leading-zero;
+  }
 
-    &upperAlphaLeadingZero {
-        list-style-type: upper-alpha-leading-zero;
-    }
+  &upperAlphaLeadingZero {
+    list-style-type: upper-alpha-leading-zero;
+  }
 
-    &lowerRomanLeadingZero {
-        list-style-type: lower-roman-leading-zero;
-    }
+  &lowerRomanLeadingZero {
+    list-style-type: lower-roman-leading-zero;
+  }
 
-    &upperRomanLeadingZero {
-        list-style-type: upper-roman-leading-zero;
-    }
+  &upperRomanLeadingZero {
+    list-style-type: upper-roman-leading-zero;
+  }
 
-    &decimalLeadingOne {
-        list-style-type: decimal-leading-one;
-    }
+  &decimalLeadingOne {
+    list-style-type: decimal-leading-one;
+  }
 
-    &discLeadingOne {
-        list-style-type: disc-leading-one;
-    }
+  &discLeadingOne {
+    list-style-type: disc-leading-one;
+  }
 
-    &circleLeadingOne {
-        list-style-type: circle-leading-one;
-    }
+  &circleLeadingOne {
+    list-style-type: circle-leading-one;
+  }
 
-    &squareLeadingOne {
-        list-style-type: square-leading-one;
-    }
+  &squareLeadingOne {
+    list-style-type: square-leading-one;
+  }
 
-    &lowerAlphaLeadingOne {
-        list-style-type: lower-alpha-leading-one;
-    }
+  &lowerAlphaLeadingOne {
+    list-style-type: lower-alpha-leading-one;
+  }
 
-    &upperAlphaLeadingOne {
-        list-style-type: upper-alpha-leading-one;
-    }
+  &upperAlphaLeadingOne {
+    list-style-type: upper-alpha-leading-one;
+  }
 
-    &lowerRomanLeadingOne {
-        list-style-type: lower-roman-leading-one;
-    }
+  &lowerRomanLeadingOne {
+    list-style-type: lower-roman-leading-one;
+  }
 
-    &upperRomanLeadingOne {
-        list-style-type: upper-roman-leading-one;
-    }
+  &upperRomanLeadingOne {
+    list-style-type: upper-roman-leading-one;
+  }
 
-    &decimalLeadingTwo {
-        list-style-type: decimal-leading-two;
-    }
+  &decimalLeadingTwo {
+    list-style-type: decimal-leading-two;
+  }
 
-    &discLeadingTwo {
-        list-style-type: disc-leading-two;
-    }
+  &discLeadingTwo {
+    list-style-type: disc-leading-two;
+  }
 
-    &circleLeadingTwo {
-        list-style-type: circle-leading-two;
-    }
+  &circleLeadingTwo {
+    list-style-type: circle-leading-two;
+  }
 
-    &squareLeadingTwo {
-        list-style-type: square-leading-two;
-    }
+  &squareLeadingTwo {
+    list-style-type: square-leading-two;
+  }
 
-    &lowerAlphaLeadingTwo {
-        list-style-type: lower-alpha-leading-two;
-    }
+  &lowerAlphaLeadingTwo {
+    list-style-type: lower-alpha-leading-two;
+  }
 
-    &upperAlphaLeadingTwo {
-        list-style-type: upper-alpha-leading-two;
-    }
+  &upperAlphaLeadingTwo {
+    list-style-type: upper-alpha-leading-two;
+  }
 
-    &lowerRomanLeadingTwo {
-        list-style-type: lower-roman-leading-two;
-    }
+  &lowerRomanLeadingTwo {
+    list-style-type: lower-roman-leading-two;
+  }
 
-    &upperRomanLeadingTwo {
-        list-style-type: upper-roman-leading-two;
-    }
+  &upperRomanLeadingTwo {
+    list-style-type: upper-roman-leading-two;
+  }
 
-    &decimalLeadingThree {
-        list-style-type: decimal-leading-three;
-    }
+  &decimalLeadingThree {
+    list-style-type: decimal-leading-three;
+  }
 
-    &discLeadingThree {
-        list-style-type: disc-leading-three;
-    }
+  &discLeadingThree {
+    list-style-type: disc-leading-three;
+  }
 
-    &circleLeadingThree {
-        list-style-type: circle-leading-three;
-    }
+  &circleLeadingThree {
+    list-style-type: circle-leading-three;
+  }
 
-    &squareLeadingThree {
-        list-style-type: square-leading-three;
-    }
+  &squareLeadingThree {
+    list-style-type: square-leading-three;
+  }
 
-    &lowerAlphaLeadingThree {
-        list-style-type: lower-alpha-leading-three;
-    }
+  &lowerAlphaLeadingThree {
+    list-style-type: lower-alpha-leading-three;
+  }
 
-    &upperAlphaLeadingThree {
-        list-style-type: upper-alpha-leading-three;
-    }
+  &upperAlphaLeadingThree {
+    list-style-type: upper-alpha-leading-three;
+  }
 
-    &lowerRomanLeadingThree {
-        list-style-type: lower-roman-leading-three;
-    }
+  &lowerRomanLeadingThree {
+    list-style-type: lower-roman-leading-three;
+  }
 
-    &upperRomanLeadingThree {
-        list-style-type: upper-roman-leading-three;
-    }
+  &upperRomanLeadingThree {
+    list-style-type: upper-roman-leading-three;
+  }
 
-    &decimalLeadingFour {
-        list-style-type: decimal-leading-four;
-    }
+  &decimalLeadingFour {
+    list-style-type: decimal-leading-four;
+  }
 
-    &discLeadingFour {
-        list-style-type: disc-leading-four;
-    }
+  &discLeadingFour {
+    list-style-type: disc-leading-four;
+  }
 
-    &circleLeadingFour {
-        list-style-type: circle-leading-four;
-    }
+  &circleLeadingFour {
+    list-style-type: circle-leading-four;
+  }
 
-    &squareLeadingFour {
-        list-style-type: square-leading-four;
-    }
+  &squareLeadingFour {
+    list-style-type: square-leading-four;
+  }
 
-    &lowerAlphaLeadingFour {
-        list-style-type: lower-alpha-leading-four;
-    }
+  &lowerAlphaLeadingFour {
+    list-style-type: lower-alpha-leading-four;
+  }
 
-    &upperAlphaLeadingFour {
-        list-style-type: upper-alpha-leading-four;
-    }
+  &upperAlphaLeadingFour {
+    list-style-type: upper-alpha-leading-four;
+  }
 
-    &lowerRomanLeadingFour {
-        list-style-type: lower-roman-leading-four;
-    }
+  &lowerRomanLeadingFour {
+    list-style-type: lower-roman-leading-four;
+  }
 
-    &upperRomanLeadingFour {
-        list-style-type: upper-roman-leading-four;
-    }
+  &upperRomanLeadingFour {
+    list-style-type: upper-roman-leading-four;
+  }
 
-    &decimalLeadingFive {
-        list-style-type: decimal-leading-five;
-    }
+  &decimalLeadingFive {
+    list-style-type: decimal-leading-five;
+  }
 
-    &discLeadingFive {
-        list-style-type: disc-leading-five;
-    }
+  &discLeadingFive {
+    list-style-type: disc-leading-five;
+  }
 }

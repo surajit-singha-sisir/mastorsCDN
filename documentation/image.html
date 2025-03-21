@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mastors.css Image Classes Documentation</title>
+    <link rel="stylesheet" href="../mastors.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 class="pad-tb--20 text-center">mastorsCDN Image Classes Documentation</h1>
+    <div class="table-container">
+        <table class="table-2 border-all">
+            <thead>
+                <tr>
+                    <th>Demo</th>
+                    <th>Description</th>
+                    <th>Code & Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Shape Classes -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Square" class="img square"></td>
+                    <td class="description">
+                        <h2>.square</h2>
+                        <pre><code class="language-css">width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 5px;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img square"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img square">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Circle" class="img circle"></td>
+                    <td class="description">
+                        <h2>.circle</h2>
+                        <pre><code class="language-css">width: 100%;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 50%;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img circle"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img circle">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x169" alt="Widescreen"
+                            class="img widescreen"></td>
+                    <td class="description">
+                        <h2>.widescreen</h2>
+                        <pre><code class="language-css">width: 100%;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+border-radius: 5px;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img widescreen"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img widescreen">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x200" alt="Photo" class="img photo"></td>
+                    <td class="description">
+                        <h2>.photo</h2>
+                        <pre><code class="language-css">width: 100%;
+aspect-ratio: 3 / 2;
+object-fit: cover;
+border-radius: 5px;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img photo">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x225" alt="Classic" class="img classic">
+                    </td>
+                    <td class="description">
+                        <h2>.classic</h2>
+                        <pre><code class="language-css">width: 100%;
+aspect-ratio: 4 / 3;
+object-fit: cover;
+border-radius: 5px;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img classic"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img classic">'>Copy</button>
+                    </td>
+                </tr>
+
+                <!-- Fit Variations -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x150" alt="Contain"
+                            class="img photo fit-contain">
+                    </td>
+                    <td class="description">
+                        <h2>.fit-contain</h2>
+                        <pre><code class="language-css">object-fit: contain;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo fit-contain"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img photo fit-contain">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x150" alt="Cover"
+                            class="img photo fit-cover"></td>
+                    <td class="description">
+                        <h2>.fit-cover</h2>
+                        <pre><code class="language-css">object-fit: cover;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo fit-cover"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img photo fit-cover">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x150" alt="Fill"
+                            class="img photo fit-fill"></td>
+                    <td class="description">
+                        <h2>.fit-fill</h2>
+                        <pre><code class="language-css">object-fit: fill;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo fit-fill"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img photo fit-fill">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x150" alt="Scale Down"
+                            class="img photo fit-scale-down"></td>
+                    <td class="description">
+                        <h2>.fit-scale-down</h2>
+                        <pre><code class="language-css">object-fit: scale-down;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo fit-scale-down"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img photo fit-scale-down">'>Copy</button>
+                    </td>
+                </tr>
+
+                <!-- Utility Modifiers -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="No Round"
+                            class="img square no-round"></td>
+                    <td class="description">
+                        <h2>.no-round</h2>
+                        <pre><code class="language-css">border-radius: 0;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img square no-round"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img square no-round">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150/fff" alt="Border"
+                            class="img square border"></td>
+                    <td class="description">
+                        <h2>.border</h2>
+                        <pre><code class="language-css">border: 1px solid #ccc;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img square border"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img square border">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x200" alt="Center"
+                            class="img photo fit-contain center"></td>
+                    <td class="description">
+                        <h2>.center</h2>
+                        <pre><code class="language-css">object-position: center;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo fit-contain center"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img photo fit-contain center">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x200" alt="Top"
+                            class="img photo fit-contain top">
+                    </td>
+                    <td class="description">
+                        <h2>.top</h2>
+                        <pre><code class="language-css">object-position: top;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo fit-contain top"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img photo fit-contain top">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x200" alt="Bottom"
+                            class="img photo fit-contain bottom"></td>
+                    <td class="description">
+                        <h2>.bottom</h2>
+                        <pre><code class="language-css">object-position: bottom;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img photo fit-contain bottom"&gt;</code></pre>
+                        <button class="copy-btn"
+                            data-code='<img src="image.jpg" class="img photo fit-contain bottom">'>Copy</button>
+                    </td>
+                </tr>
+
+                <!-- Size Modifiers -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x150" alt="Full Width" class="img w-full">
+                    </td>
+                    <td class="description">
+                        <h2>.w-full</h2>
+                        <pre><code class="language-css">width: 100%</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img w-full"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img w-full">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/300x150" alt="Auto Width" class="img w-auto">
+                    </td>
+                    <td class="description">
+                        <h2>.w-auto</h2>
+                        <pre><code class="language-css">width: auto;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img w-auto"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img w-auto">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150x300" alt="Full Height"
+                            class="img h-full"></td>
+                    <td class="description">
+                        <h2>.h-full</h2>
+                        <pre><code class="language-css">display: inline-block;
+height: 100%;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img h-full"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img h-full">'>Copy</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150x300" alt="Auto Height"
+                            class="img h-auto"></td>
+                    <td class="description">
+                        <h2>.h-auto</h2>
+                        <pre><code class="language-css">height: auto;</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img h-auto"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img h-auto">'>Copy</button>
+                    </td>
+                </tr>
+                <!-- Responsive Logo -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Responsive Logo" class="res-logo">
+                    </td>
+                    <td class="description">
+                        <h2>.res-logo</h2>
+                        <pre><code class="language-css">position: relative;
+width: auto;
+height: 2rem;
+aspect-ratio: 1;
+img {
+  height: inherit;
+  width: inherit;
+  aspect-ratio: 1;
+  object-fit: contain;
+}</code></pre>
+                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="res-logo"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="res-logo">'>Copy</button>
+                    </td>
+                </tr>
+
+                <!-- Image Inheritance -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Inherit" class="img-i"></td>
+                    <td class="description">
+                        <h2>.img-i</h2>
+                        <pre><code class="language-css">width: inherit;
+height: inherit;                   </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img-i"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img-i">'>Copy</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Width Inherit" class="img-w-i">
+                    </td>
+                    <td class="description">
+                        <h2>.img-w-i</h2>
+                        <pre><code class="language-css">width: inherit;                  </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img-w-i"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img-w-i">'>Copy</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Height Inherit" class="img-h-i">
+                    </td>
+                    <td class="description">
+                        <h2>.img-h-i</h2>
+                        <pre><code class="language-css">height: inherit;                  </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img-h-i"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img-h-i">'>Copy</button>
+                    </td>
+                </tr>
+
+                <!-- New Aspect Ratios -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Square" class="img-ar-1-1"></td>
+                    <td class="description">
+                        <h2>.img-ar-1-1, .img-ar-1, .img-ar-square</h2>
+                        <pre><code class="language-css">aspect-ratio: 1 / 1;                  </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img-ar-1-1"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img-ar-1-1">'>Copy</button>
+                    </td>
+                </tr>
+
+                <!-- New Utilities -->
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Rounded" class="img-rounded"></td>
+                    <td class="description">
+                        <h2>.img-rounded</h2>
+                        <pre><code class="language-css">border-radius: 8px;                  </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img-rounded"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img-rounded">'>Copy</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="demo-cell"><img src="https://dummyimage.com/150" alt="Responsive" class="img-responsive">
+                    </td>
+                    <td class="description">
+                        <h2>.img-responsive</h2>
+                        <pre><code class="language-css">max-width: 100%;
+height: auto;
+display: block;                    </td>
+                    <td>
+                        <pre><code class="language-html">&lt;img src="image.jpg" class="img-responsive"&gt;</code></pre>
+                        <button class="copy-btn" data-code='<img src="image.jpg" class="img-responsive">'>Copy</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Prism.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const code = this.getAttribute('data-code');
+                navigator.clipboard.writeText(code).then(() => {
+                    this.textContent = 'Copied!';
+                    this.classList.add('copied');
+                    setTimeout(() => {
+                        this.textContent = 'Copy';
+                        this.classList.remove('copied');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Utility Classes Documentation</title>
+  <!-- Prism CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <!-- Your External Stylesheet -->
+  <link rel="stylesheet" href="../mastors.css">
+  <style>
+    .code-preview {
+      margin: 1rem 0;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #f9f9f9;
+    }
+    .copy-btn {
+      float: right;
+      padding: 4px 8px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+    .copy-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+
+<body class="res-container m-auto">
+    <h1>Text Utility Classes Documentation</h1>
+    <p>This documentation covers the available SCSS utility classes for text styling, including alignment, font styles, weights, decorations, and more.</p>
+
+    <h2>Text Ellipsis (Multi-line Truncation)</h2>
+    <table class="table-2">
+        <tr><th>Class</th><th>Description</th></tr>
+        <tr><td><code>.text-dotted-1</code> to <code>.text-dotted-10</code></td><td>Truncates text after 1-10 lines with an ellipsis.</td></tr>
+    </table>
+    <div class="code-preview">
+      <button class="copy-btn" data-copy=".text-dotted-2">Copy</button>
+      <p class="text-dotted-2">This text will be truncated after 2 lines with an ellipsis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <h2>Text Alignment</h2>
+    <table class="table-2">
+        <tr><th>Class</th><th>Description</th></tr>
+        <tr><td><code>.text-left</code></td><td>Aligns text to the left</td></tr>
+        <tr><td><code>.text-center</code></td><td>Centers text</td></tr>
+        <tr><td><code>.text-right</code></td><td>Aligns text to the right</td></tr>
+        <tr><td><code>.text-justify</code></td><td>Justifies text</td></tr>
+        <tr><td><code>.text-start</code></td><td>Aligns text to the start</td></tr>
+        <tr><td><code>.text-end</code></td><td>Aligns text to the end</td></tr>
+        <tr><td><code>.text-inherit</code></td><td>Inherits text alignment</td></tr>
+    </table>
+    <div class="code-preview">
+      <button class="copy-btn" data-copy=".text-center">Copy</button>
+      <p class="text-center">This text is centered.</p>
+    </div>
+
+    <h2>Font Styles</h2>
+    <table class="table-2">
+        <tr><th>Class</th><th>Description</th></tr>
+        <tr><td><code>.text-i</code>, <code>.text-italic</code></td><td>Sets font style to italic</td></tr>
+        <tr><td><code>.text-n</code>, <code>.text-normal</code></td><td>Sets font style to normal</td></tr>
+        <tr><td><code>.text-oblique</code></td><td>Sets font style to oblique</td></tr>
+    </table>
+    <div class="code-preview">
+      <button class="copy-btn" data-copy=".text-italic">Copy</button>
+      <p class="text-italic">This text is italic.</p>
+    </div>
+
+    <h3>Usage Examples</h3>
+    <div class="code-preview">
+      <button class="copy-btn" data-copy="&lt;p class=&quot;text-center text-bold text-ellipsis&quot;&gt;Centered bold text with ellipsis&lt;/p&gt;">Copy</button>
+      <p class="text-center text-bold text-ellipsis">Centered bold text with ellipsis</p>
+    </div>
+    <pre><code class="language-html" data-copy="&lt;p class=&quot;text-center text-bold text-ellipsis&quot;&gt;Centered bold text with ellipsis&lt;/p&gt;
+&lt;span class=&quot;text-dotted-2 text-uppercase&quot;&gt;Two-line truncated UPPERCASE text&lt;/span&gt;
+&lt;label class=&quot;mandatory&quot;&gt;Required Field&lt;/label&gt;
+&lt;p class=&quot;text-500 text-dashed&quot;&gt;Medium weight text with dashed underline&lt;/p&gt;">
+&lt;p class="text-center text-bold text-ellipsis"&gt;Centered bold text with ellipsis&lt;/p&gt;
+&lt;span class="text-dotted-2 text-uppercase"&gt;Two-line truncated UPPERCASE text&lt;/span&gt;
+&lt;label class="mandatory"&gt;Required Field&lt;/label&gt;
+&lt;p class="text-500 text-dashed"&gt;Medium weight text with dashed underline&lt;/p&gt;
+    </code></pre>
+
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script>
+      document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const textToCopy = btn.getAttribute('data-copy');
+          navigator.clipboard.writeText(textToCopy).then(() => {
+            btn.textContent = 'Copied!';
+            setTimeout(() => btn.textContent = 'Copy', 2000);
+          });
+        });
+      });
+    </script>
+</body>
+
+</html>

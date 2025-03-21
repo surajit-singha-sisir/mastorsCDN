@@ -1,364 +1,278 @@
-@use "../roots/root-default" as *;
+@import "../roots/color-map";
 
-// BORDER LEFT
-.b-l {
-  border-left: 1px solid;
-}
-.b-l-,
-.b-l-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-left: #{$i}px solid;
+// Border width classes
+.border {
+  @for $i from 1 through 5 {
+    &-#{$i} {
+      border-width: #{$i}px;
     }
   }
 }
 
-// BORDER TOP
-.b-t {
-  border-top: 1px solid;
+// Border color classes using the color-variations map from color-map.scss
+@each $name, $color in $color-variations {
+  .b-#{$name} {
+    border-color: #{$color} !important;
+  }
 }
-.b-t-,
-.b-t-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-top: #{$i}px solid;
+
+// Border radius classes for all sides
+.b-rad {
+  @for $i from 1 through 100 {
+    @if $i < 10 {
+      &-0#{$i} {
+        border-radius: #{$i}px;
+      }
+    } @else {
+      &-#{$i} {
+        border-radius: #{$i}px;
+      }
     }
   }
 }
 
-// BORDER RIGHT
-.b-r {
-  border-right: 1px solid;
-}
-.b-r-,
-.b-r-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-right: #{$i}px solid;
+// Border radius classes for specific corners and combinations
+.b-rad {
+  @each $corner in (lt, tl, rt, tr, lb, bl, rb, br) {
+    @for $i from 1 through 100 {
+      @if $i < 10 {
+        &-#{$corner}-0#{$i} {
+          border-radius: 0; // Reset all first
+          @if $corner == lt or $corner == tl {
+            border-top-left-radius: #{$i}px;
+          } @else if $corner == rt or $corner == tr {
+            border-top-right-radius: #{$i}px;
+          } @else if $corner == lb or $corner == bl {
+            border-bottom-left-radius: #{$i}px;
+          } @else if $corner == rb or $corner == br {
+            border-bottom-right-radius: #{$i}px;
+          }
+        }
+      } @else {
+        &-#{$corner}-#{$i} {
+          border-radius: 0; // Reset all first
+          @if $corner == lt or $corner == tl {
+            border-top-left-radius: #{$i}px;
+          } @else if $corner == rt or $corner == tr {
+            border-top-right-radius: #{$i}px;
+          } @else if $corner == lb or $corner == bl {
+            border-bottom-left-radius: #{$i}px;
+          } @else if $corner == rb or $corner == br {
+            border-bottom-right-radius: #{$i}px;
+          }
+        }
+      }
     }
   }
 }
 
-// BORDER BOTTOM
-.b-b {
-  border-bottom: 1px solid;
-}
-.b-b-,
-.b-b-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-bottom: #{$i}px solid;
+// Border side classes with width and style combinations
+.b {
+  // Define styles to loop through
+  $styles: (
+    solid: solid,
+    dashed: dashed,
+    dotted: dotted,
+    double: double,
+    none: none,
+  );
+
+  // Single sides
+  @each $side in (t, b, l, r) {
+    @for $i from 1 through 5 {
+      @each $style-name, $style-value in $styles {
+        &-#{$side}-#{$i}-#{$style-name} {
+          @if $side == t {
+            border-top: #{$i}px #{$style-value};
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+          } @else if $side == b {
+            border-bottom: #{$i}px #{$style-value};
+            border-left: none;
+            border-right: none;
+            border-top: none;
+          } @else if $side == l {
+            border-left: #{$i}px #{$style-value};
+            border-top: none;
+            border-right: none;
+            border-bottom: none;
+          } @else if $side == r {
+            border-right: #{$i}px #{$style-value};
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+
+  // Two-side combinations
+  @each $side in (tb, lr, tl, tr, bl, br) {
+    @for $i from 1 through 5 {
+      @each $style-name, $style-value in $styles {
+        &-#{$side}-#{$i}-#{$style-name} {
+          border: none; // Reset all sides first
+          @if $side == tb {
+            border-top: #{$i}px #{$style-value};
+            border-bottom: #{$i}px #{$style-value};
+          } @else if $side == lr {
+            border-left: #{$i}px #{$style-value};
+            border-right: #{$i}px #{$style-value};
+          } @else if $side == tl {
+            border-top: #{$i}px #{$style-value};
+            border-left: #{$i}px #{$style-value};
+          } @else if $side == tr {
+            border-top: #{$i}px #{$style-value};
+            border-right: #{$i}px #{$style-value};
+          } @else if $side == bl {
+            border-bottom: #{$i}px #{$style-value};
+            border-left: #{$i}px #{$style-value};
+          } @else if $side == br {
+            border-bottom: #{$i}px #{$style-value};
+            border-right: #{$i}px #{$style-value};
+          }
+        }
+      }
+    }
+  }
+
+  // Three-side combinations
+  @each $side in (tbl, tbr, tlr, blr) {
+    @for $i from 1 through 5 {
+      @each $style-name, $style-value in $styles {
+        &-#{$side}-#{$i}-#{$style-name} {
+          border: none; // Reset all sides first
+          @if $side == tbl {
+            border-top: #{$i}px #{$style-value};
+            border-bottom: #{$i}px #{$style-value};
+            border-left: #{$i}px #{$style-value};
+          } @else if $side == tbr {
+            border-top: #{$i}px #{$style-value};
+            border-bottom: #{$i}px #{$style-value};
+            border-right: #{$i}px #{$style-value};
+          } @else if $side == tlr {
+            border-top: #{$i}px #{$style-value};
+            border-left: #{$i}px #{$style-value};
+            border-right: #{$i}px #{$style-value};
+          } @else if $side == blr {
+            border-bottom: #{$i}px #{$style-value};
+            border-left: #{$i}px #{$style-value};
+            border-right: #{$i}px #{$style-value};
+          }
+        }
+      }
+    }
+  }
+
+  // All sides
+  @for $i from 1 through 5 {
+    @each $style-name, $style-value in $styles {
+      &-tblr-#{$i}-#{$style-name} {
+        border: #{$i}px #{$style-value};
+      }
     }
   }
 }
 
-// BORDER ALL
-.border,
-.border-all,
-.b-all {
-  border: 1px solid;
+// Usage examples:
+/*
+<div class="b-t-1-solid b-Red-100 b-rad-tl-01">Red solid top border 1px with 1px top-left radius</div>
+<div class="b-lr-2-dashed b-Blue-500 b-rad-lt-10">Blue dashed left-right border 2px with 10px top-left radius</div>
+<div class="b-tbl-3-solid b-Green-300 b-rad-lt-10">Green solid top-bottom-left border 3px with 10px top-left radius</div>
+<div class="b-tblr-4-solid b-Purple-700 b-rad-br-25">Purple solid all sides border 4px with 25px bottom-right radius</div>
+*/
+
+// DEFAULT CLASSES
+// Border opacity
+.border-opacity-50,
+.b-o-50 {
+  border-color: rgba(0, 0, 0, 0.5);
 }
-.b-,
-.b-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border: #{$i}px solid;
-    }
+.border-opacity-25 {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+.border-opacity-10 {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.bordered-all {
+  border: 1px solid #{$gray};
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.bordered {
+  border: 1px solid transparent; // Placeholder border, visible when color is added
+}
+
+.bordered-thick {
+  border: 2px solid #{$gray};
+}
+
+.bordered-thin {
+  border: 0.5px solid #{$gray};
+}
+
+.bordered-round {
+  border: 1px solid #{$gray};
+  border-radius: 4px;
+}
+
+.bordered-circle {
+  min-width: 2rem;
+  max-width: 10rem;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #{$gray};
+  border-radius: 50%;
+}
+
+.border-abs-centered {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  & > * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
   }
 }
-
-// BORDER LEFT - RIGHT
-.b-lr,
-.b-rl {
-  border-left: 1px solid;
-  border-right: 1px solid;
-}
-.b-lr-,
-.b-lr--,
-.b-rl-,
-.b-rl-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-left: #{$i}px solid;
-      border-right: #{$i}px solid;
-    }
-  }
+.asp-1,
+.aspect-ratio-1 {
+  aspect-ratio: 1;
 }
 
-// BORDER TOP - BOTTOM
-.b-tb,
-.b-bt {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-}
-.b-tb-,
-.b-tb--,
-.b-bt-,
-.b-bt-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-top: #{$i}px solid;
-      border-bottom: #{$i}px solid;
-    }
-  }
+.bordered-dashed {
+  border: 1px dashed #{$gray};
 }
 
-// BORDER LEFT - TOP
-.b-lt,
-.b-tl {
-  border-left: 1px solid;
-  border-top: 1px solid;
-}
-.b-lt-,
-.b-lt--,
-.b-tl-,
-.b-tl-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-left: #{$i}px solid;
-      border-top: #{$i}px solid;
-    }
-  }
+.bordered-dotted {
+  border: 1px dotted #{$gray};
 }
 
-// BORDER RIGHT - TOP
-.b-rt,
-.b-tr {
-  border-right: 1px solid;
-  border-top: 1px solid;
-}
-.b-rt-,
-.b-rt--,
-.b-tr-,
-.b-tr-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-right: #{$i}px solid;
-      border-top: #{$i}px solid;
-    }
-  }
+.bordered-shadow {
+  border: 1px solid #{$gray};
+  box-shadow: 0 2px 4px rgba($black, 0.1);
 }
 
-// BORDER RIGHT - BOTTOM
-.b-rt,
-.b-tr {
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-}
-.b-rt-,
-.b-rt--,
-.b-tr-,
-.b-tr-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-right: #{$i}px solid;
-      border-bottom: #{$i}px solid;
-    }
-  }
-}
-
-// BORDER LEFT - TOP - RIGHT
-.b-ltr,
-.b-lrt,
-.b-tlr,
-.b-trl,
-.b-rlt,
-.b-rtl {
-  border-left: 1px solid;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
-.b-ltr-,
-.b-lrt-,
-.b-tlr-,
-.b-trl-,
-.b-rlt-,
-.b-rtl-,
-.b-ltr--,
-.b-lrt--,
-.b-tlr--,
-.b-trl--,
-.b-rlt--,
-.b-rtl-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-left: #{$i}px solid;
-      border-top: #{$i}px solid;
-      border-right: #{$i}px solid;
-    }
-  }
-}
-
-// BORDER TOP - RIGHT - BOTTOM
-.b-btr,
-.b-brt,
-.b-tbr,
-.b-trb,
-.b-rbt,
-.b-rtb {
-  border-top: 1px solid;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-}
-.b-btr-,
-.b-brt-,
-.b-tbr-,
-.b-trb-,
-.b-rbt-,
-.b-rtb-,
-.b-btr--,
-.b-brt--,
-.b-tbr--,
-.b-trb--,
-.b-rbt--,
-.b-rtb-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-top: #{$i}px solid;
-      border-right: #{$i}px solid;
-      border-bottom: #{$i}px solid;
-    }
-  }
-}
-
-// BORDER TOP - LEFT - BOTTOM
-.b-btl,
-.b-blt,
-.b-tbl,
-.b-tlb,
-.b-lbt,
-.b-ltb {
-  border-top: 1px solid;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-}
-.b-btl-,
-.b-blt-,
-.b-tbl-,
-.b-tlb-,
-.b-lbt-,
-.b-ltb-,
-.b-btl--,
-.b-blt--,
-.b-tbl--,
-.b-tlb--,
-.b-lbt--,
-.b-ltb-- {
-  @for $i from 0 through 5 {
-    &#{$i} {
-      border-top: #{$i}px solid;
-      border-right: #{$i}px solid;
-      border-bottom: #{$i}px solid;
-    }
-  }
-}
-
-
-
-
-
-
-
-// BORDER COLORS
-.b- {
-  &White { border-color: #fff; }
-  &Black { border-color: #000; }
-  &Gray { border-color: #ccc; }
-  &Silver { border-color: #ddd; }
-  &Gold { border-color: #ffd700; }
-  &Maroon { border-color: #800000; }
-  &Red { border-color: #ff0000; }
-  &Orange { border-color: #ff6347; }
-  &Yellow { border-color: #ffff00; }
-  &Green { border-color: #008000; }
-  &Blue { border-color: #0000ff; }
-  &Indigo { border-color: #4b0082; }
-  &Violet { border-color: #ee82ee; }
-  &Purple { border-color: #800080; }
-  &Pink { border-color: #ffc0cb; }
-  &Brown { border-color: #a52a2a; }
-  &Cyan { border-color: #00ffff; }
-  &Magenta { border-color: #ff00ff; }
-  &Teal { border-color: #008080; }
-  &Lime { border-color: #00ff00; }
-  &Olive { border-color: #808000; }
-  &Navy { border-color: #000080; }
-  &Coral { border-color: #ff7f50; }
-  &Beige { border-color: #f5f5dc; }
-  &Mint { border-color: #98ff98; }
-  &Lavender { border-color: #e6e6fa; }
-  &Turquoise { border-color: #40e0d0; }
-  &Khaki { border-color: #f0e68c; }
-  &Chocolate { border-color: #d2691e; }
-  &Salmon { border-color: #fa8072; }
-  &Crimson { border-color: #dc143c; }
-  &Plum { border-color: #dda0dd; }
-  &Orchid { border-color: #da70d6; }
-  &Honeydew { border-color: #f0fff0; }
-  &Aquamarine { border-color: #7fffd4; }
-  &Chartreuse { border-color: #7fff00; }
-  &Ivory { border-color: #fffff0; }
-  &Tan { border-color: #d2b48c; }
-  &Sienna { border-color: #a0522d; }
-  &SeaGreen { border-color: #2e8b57; }
-  &DarkRed { border-color: #8b0000; }
-  &DarkGreen { border-color: #006400; }
-  &DarkBlue { border-color: #00008b; }
-  &DarkOrange { border-color: #ff8c00; }
-  &DarkCyan { border-color: #008b8b; }
-  &DarkMagenta { border-color: #8b008b; }
-  &DarkViolet { border-color: #9400d3; }
-  &Peach { border-color: #ffdab9; }
-  &Lemon { border-color: #fff44f; }
-  &SkyBlue { border-color: #87ceeb; }
-  &LightBlue { border-color: #add8e6; }
-  &LightCoral { border-color: #f08080; }
-  &LightGray { border-color: #d3d3d3; }
-  &LightPink { border-color: #ffb6c1; }
-  &LightGreen { border-color: #90ee90; }
-  &LightYellow { border-color: #ffffe0; }
-  &LightCyan { border-color: #e0ffff; }
-  &LightGoldenrodYellow { border-color: #fafad2; }
-  &PaleGoldenrod { border-color: #eee8aa; }
-  &PaleGreen { border-color: #98fb98; }
-  &PaleTurquoise { border-color: #afeeee; }
-  &PaleVioletRed { border-color: #db7093; }
-  &Thistle { border-color: #d8bfd8; }
-  &Tomato { border-color: #ff6347; }
-  &SlateBlue { border-color: #6a5acd; }
-  &SlateGray { border-color: #708090; }
-  &SteelBlue { border-color: #4682b4; }
-  &RosyBrown { border-color: #bc8f8f; }
-  &SandyBrown { border-color: #f4a460; }
-  &Goldenrod { border-color: #daa520; }
-  &PowderBlue { border-color: #b0e0e6; }
-  &RebeccaPurple { border-color: #663399; }
-  &Seashell { border-color: #fff5ee; }
-  &Snow { border-color: #fffafa; }
-  &Wheat { border-color: #f5deb3; }
-  &Moccasin { border-color: #ffe4b5; }
-  &DodgerBlue { border-color: #1e90ff; }
-  &DeepSkyBlue { border-color: #00bfff; }
-  &RoyalBlue { border-color: #4169e1; }
-  &ForestGreen { border-color: #228b22; }
-  &SpringGreen { border-color: #00ff7f; }
-  &MediumSeaGreen { border-color: #3cb371; }
-  &MediumPurple { border-color: #9370db; }
-  &MediumOrchid { border-color: #ba55d3; }
-  &MediumTurquoise { border-color: #48d1cc; }
-  &MediumSlateBlue { border-color: #7b68ee; }
-  &FireBrick { border-color: #b22222; }
-  &DeepPink { border-color: #ff1493; }
-  &HotPink { border-color: #ff69b4; }
-  &LawnGreen { border-color: #7cfc00; }
-  &Linen { border-color: #faf0e6; }
-  &OldLace { border-color: #fdf5e6; }
-  &PapayaWhip { border-color: #ffefd5; }
-  &AntiqueWhite { border-color: #faebd7; }
-  &Azure { border-color: #f0ffff; }
-  &Bisque { border-color: #ffe4c4; }
-  &DarkKhaki { border-color: #bdb76b; }
-  &DarkOliveGreen { border-color: #556b2f; }
-  &DarkSlateBlue { border-color: #483d8b; }
-  &DarkSlateGray { border-color: #2f4f4f; }
+code {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  background-color: #ccc;
 }

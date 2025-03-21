@@ -1,103 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./mastors.css">
-    <link rel="stylesheet" href="./mastorsIcons/mastorsIcons.css">
-    <script type="module" src="./mastors.js"></script>
-</head>
-
-<body style="background-color: #0a1810;">
+    <title>Mastors Ecommerce - Documentation</title>
     <style>
-        .cdn {
-            position: relative;
-            margin-left: 0.5rem;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .cdn::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 1.3rem 2.5rem;
-            border-radius: 0.5rem;
-            background-color: #1e76d4;
-            z-index: -1;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        .cdn::after {
-            content: "v1.1";
-            position: absolute;
-            bottom: 0;
-            right: -2rem;
-            font-size: 0.8rem;
-            text-shadow: 1px 1px 2px #303030;
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #ffffff;
         }
 
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            height: 100%;
+            overflow-y: auto;
+            padding: 2rem 1rem;
+            transition: transform 0.3s ease;
+            position: fixed;
+            top: 0;
+            left: 0;
+            border-right: 1px solid #333;
+            transform: translateX(0); /* Visible by default on desktop */
+        }
+
+        .sidebar.hidden {
+            transform: translateX(-100%);
+        }
+
+        .sidebar-header {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+        }
+
+        .nav-list {
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+            cursor: pointer;
+        }
+
+        .nav-link:hover {
+            background-color: #2a2a2a;
+            color: #ffd700;
+        }
+
+        .submenu {
+            list-style: none;
+            padding-left: 2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .submenu.active {
+            max-height: 500px; /* Adjust based on content */
+        }
+
+        .submenu-item .nav-link {
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+        }
+
+        .has-submenu > .nav-link::after {
+            content: '▾';
+            margin-left: auto;
+        }
+
+        .has-submenu.active > .nav-link::after {
+            content: '▴';
+        }
+
+        .main-content {
+            padding: 2rem;
+            flex-grow: 1;
+            max-width: 900px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 4rem auto 1rem;
+            border-radius: 4px;
+            transition: margin-left 0.3s ease;
+        }
+
+        body.dark-mode .main-content {
+            background-color: #2a2a2a;
+            color: #ffffff;
+        }
+
+        .sidebar.hidden + .main-content {
+            margin-left: 0;
+        }
+
+        .sidebar:not(.hidden) + .main-content {
+            margin-left: 280px;
+        }
+
+        .header-controls {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            z-index: 1001;
+        }
+
+        .hamburger {
+            background: none;
+            border: none;
+            color: #000;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        body.dark-mode .hamburger {
+            color: #ffffff;
+        }
+
+        .dark-toggle {
+            background: none;
+            border: none;
+            color: #000;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        body.dark-mode .dark-toggle {
+            color: #ffffff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .main-content {
+                max-width: 700px;
+            }
+            .sidebar:not(.hidden) + .main-content {
+                margin-left: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 250px;
+                transform: translateX(-100%); /* Hidden by default on mobile */
+            }
+            .sidebar:not(.hidden) {
+                transform: translateX(0);
+            }
+            .sidebar:not(.hidden) + .main-content {
+                margin-left: 0; /* Full width when sidebar is open */
+                overflow: hidden; /* Prevent scrolling under sidebar */
+            }
+            .main-content {
+                margin: 4rem 1rem 1rem;
+            }
+            body.sidebar-open {
+                overflow: hidden; /* Prevent body scroll when sidebar is open */
+            }
+        }
     </style>
-
-    <div class="firework-container">
-        <canvas id="fireworks"></canvas>
-        <div class="message" id="fullText">Happy New Year 2025!</div><br>
-        <p class="Green-100 text--xl">HELLO WORLD</p>
-        <div class="message f">Mastors <p class="cdn">CDN</p>
-        </div>
+</head>
+<body>
+    <div class="header-controls">
+        <button class="hamburger">☰</button>
+        <button class="dark-toggle">🌙</button>
     </div>
-    <audio src="Resources/audio/fireworks.mp3" autoplay loop></audio>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2><a href="/" class="nav-link">Mastors Docs</a></h2>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="documentation/introduction" class="nav-link">Introduction</a>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Getting Started</a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="documentation/installation" class="nav-link">Installation</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/setup" class="nav-link">Setup</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/configuration" class="nav-link">Configuration</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Components</a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="documentation/button" class="nav-link">Button</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/form" class="nav-link">Form</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/card" class="nav-link">Card</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/modal" class="nav-link">Modal</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/table" class="nav-link">Table</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Layout</a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="documentation/padding" class="nav-link">Padding</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/margin" class="nav-link">Margin</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/position" class="nav-link">Position</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/grid" class="nav-link">Grid</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/flexbox" class="nav-link">Flexbox</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Utilities</a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="documentation/colors" class="nav-link">Colors</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/typography" class="nav-link">Typography</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/shadows" class="nav-link">Shadows</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="documentation/image" class="nav-link">Image</a>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Advanced Features</a>
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="documentation/animations" class="nav-link">Animations</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/transitions" class="nav-link">Transitions</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="documentation/responsive" class="nav-link">Responsive Design</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
-</body>
-<!-- 
-<script>
-    function textAnimation() {
-        const fullText = document.getElementById("fullText");
-        const texts = fullText.textContent.split("");
-        fullText.textContent = "";
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Welcome to Mastors Documentation</h1>
+            <p>This is a modern framework documentation site with submenus, mobile hamburger behavior, and overflow control.</p>
+            <!-- Your documentation content goes here -->
+        </main>
+    </div>
 
-        // Function to generate random color
-        function getRandomColor() {
-            return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")}`;
-        }
-
-        const spans = texts.map((char) => {
-            const span = document.createElement("span");
-            span.textContent = char;
-            span.style.transition = "all 0.5s ease";
-            span.style.fontSize = "5rem";
-            fullText.appendChild(span);
-            return span;
+    <script>
+        // Submenu toggle
+        document.querySelectorAll('.has-submenu > .nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent sidebar close on submenu toggle
+                const submenu = link.nextElementSibling;
+                const parent = link.parentElement;
+                parent.classList.toggle('active');
+            });
         });
 
-        function animateText() {
-            spans.forEach((span, i) => {
-                setTimeout(() => {
-                    span.style.fontSize = "3rem";
-                    span.style.color = getRandomColor();
-                }, i * 100);
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const body = document.body;
 
-                setTimeout(() => {
-                    span.style.fontSize = "5rem";
-                    span.style.color = getRandomColor();
-                }, (texts.length * 100) + i * 100);
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            sidebar.classList.toggle('hidden');
+            if (window.innerWidth <= 768) {
+                body.classList.toggle('sidebar-open');
+            }
+        });
 
-                setTimeout(() => {
-                    span.style.fontSize = "3rem";
-                    span.style.color = getRandomColor();
-                }, (texts.length * 200) + i * 100);
-            });
+        // Dark mode toggle
+        const darkToggle = document.querySelector('.dark-toggle');
+        darkToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+
+        // Prevent sidebar from closing when clicking inside it
+        sidebar.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Close sidebar when clicking outside only if it's not hidden
+        document.addEventListener('click', (e) => {
+            if (!sidebar.classList.contains('hidden') && 
+                !sidebar.contains(e.target) && 
+                !hamburger.contains(e.target) && 
+                !darkToggle.contains(e.target)) {
+                sidebar.classList.add('hidden');
+                if (window.innerWidth <= 768) {
+                    body.classList.remove('sidebar-open');
+                }
+            }
+        });
+
+        // Ensure sidebar is hidden by default on mobile
+        if (window.innerWidth <= 768) {
+            sidebar.classList.add('hidden');
         }
-
-        setInterval(() => {
-            animateText();
-        }, 5000);
-        animateText();
-    }
-
-    document.addEventListener("DOMContentLoaded", textAnimation);
-
-</script> -->
-
+    </script>
+</body>
 </html>

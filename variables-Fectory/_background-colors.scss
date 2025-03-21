@@ -1,0 +1,52 @@
+@use "sass:color";
+@use "../roots/color-map" as *;
+
+// Basic background and shadow classes
+@each $color, $value in $color-map {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .bg-#{$color}i {
+    background-color: $value !important;
+  }
+  .bg-hov-#{$color}:hover {
+    background-color: $value;
+  }
+
+  // Basic background shadow using color (box-shadow)
+  .bg-shad-#{$color},
+  .bg-shadow-#{$color} {
+    box-shadow: 2px 2px 4px $value;
+  }
+
+  // Shadow on hover
+  .bg-shad-hov-#{$color}:hover,
+  .bg-shadow-hov-#{$color}:hover {
+    box-shadow: 2px 2px 4px $value;
+  }
+}
+
+// Mixin for background variations
+@mixin bg-variations($color, $color-name) {
+  @for $i from 1 through 9 {
+    // Adjust lightness: lighter for lower numbers, darker for higher
+    $lightness: if($i <= 5, (5 - $i) * 10%, ($i - 5) * -10%);
+    $adjusted-color: color.adjust($color, $lightness: $lightness);
+
+    // Generate the class for each variation
+    .bg-#{$color-name}-#{$i * 100} {
+      background-color: $adjusted-color;
+    }
+  }
+}
+
+// Apply variations to each color
+@each $name, $color in $color-map {
+  @include bg-variations($color, $name);
+}
+
+// <div class="bg-Red">Red background</div>
+// <div class="bg-Red-300">Lighter red (+20%)</div>
+// <div class="bg-Red-700">Darker red (-20%)</div>
+// <div class="bg-hov-Red:hover">Red on hover</div>
+// <div class="bg-shad-Red">Red shadow</div>
