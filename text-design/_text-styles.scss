@@ -130,32 +130,40 @@
   &u,
   &underline {
     text-decoration: underline;
+    text-underline-offset: 5px;
   }
   &o,
   &overline {
     text-decoration: overline;
+    text-underline-offset: 5px;
   }
-  &d,
+  &through,
   &line-through {
     text-decoration: line-through;
+    text-underline-offset: 5px;
   }
   &dd,
   &double {
     text-decoration: double;
+    text-underline-offset: 5px;
   }
   &w,
   &wavy {
     text-decoration: wavy;
+    text-underline-offset: 5px;
   }
   &s,
   &solid {
     text-decoration: solid;
+    text-underline-offset: 5px;
   }
   &dotted {
     text-decoration: dotted;
+    text-underline-offset: 5px;
   }
   &dashed {
     text-decoration: dashed;
+    text-underline-offset: 5px;
   }
   &none {
     text-decoration: none;

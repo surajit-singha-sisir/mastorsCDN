@@ -1,55 +1,63 @@
-.link-, .a- {
+.link-,
+.a- {
   &u {
     text-decoration: underline;
+    text-underline-offset: 5px;
     &:hover {
       text-decoration: underline;
     }
   }
-  
+
   &none {
     text-decoration: none;
     &:hover {
       text-decoration: none;
     }
   }
-  
+
   &overline {
     text-decoration: overline;
+    text-underline-offset: 5px;
     &:hover {
       text-decoration: overline;
     }
   }
-  
+
   &line-through {
     text-decoration: line-through;
+    text-underline-offset: 5px;
     &:hover {
       text-decoration: line-through;
     }
   }
-  
+
   &dashed {
     text-decoration: dashed;
+    text-underline-offset: 5px;
     &:hover {
       text-decoration: dashed;
     }
   }
-  
+
   &dotted {
     text-decoration: dotted;
+    text-underline-offset: 5px;
     &:hover {
       text-decoration: dotted;
     }
   }
-  
+
   &double {
     text-decoration: double;
+    text-underline-offset: 5px;
     &:hover {
       text-decoration: double;
     }
   }
-  
+
   &wavy {
     text-decoration: wavy;
+    text-underline-offset: 5px;
     &:hover {
       text-decoration: wavy;
     }

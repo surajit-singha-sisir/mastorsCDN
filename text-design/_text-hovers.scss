@@ -1,12 +1,11 @@
 .text- {
   &u {
     text-decoration: underline;
+    text-underline-offset: 5px;
   }
   &o {
     text-decoration: overline;
-  }
-  &l {
-    text-decoration: line-through;
+    text-underline-offset: 5px;
   }
   &n,
   &none {
@@ -14,41 +13,53 @@
   }
   &dotted {
     text-decoration: underline dotted;
+    text-underline-offset: 5px;
   }
   &dashed {
     text-decoration: underline dashed;
+    text-underline-offset: 5px;
   }
   &double {
     text-decoration: underline double;
+    text-underline-offset: 5px;
   }
   &wavy {
     text-decoration: underline wavy;
+    text-underline-offset: 5px;
   }
   &u-overline {
     text-decoration: underline overline;
+    text-underline-offset: 5px;
   }
   &u-dotted {
     text-decoration: underline overline dotted;
+    text-underline-offset: 5px;
   }
   &u-dashed {
     text-decoration: underline overline dashed;
+    text-underline-offset: 5px;
   }
   &u-double {
     text-decoration: underline overline double;
+    text-underline-offset: 5px;
   }
   &u-wavy {
     text-decoration: underline overline wavy;
+    text-underline-offset: 5px;
   }
 
   &hov- {
     &u:hover {
       text-decoration: underline;
+      text-underline-offset: 5px;
     }
     &o:hover {
       text-decoration: overline;
+      text-underline-offset: 5px;
     }
     &l:hover {
       text-decoration: line-through;
+      text-underline-offset: 5px;
     }
     &n:hover,
     &none:hover {
@@ -56,30 +67,39 @@
     }
     &dotted:hover {
       text-decoration: underline dotted;
+      text-underline-offset: 5px;
     }
     &dashed:hover {
       text-decoration: underline dashed;
+      text-underline-offset: 5px;
     }
     &double:hover {
       text-decoration: underline double;
+      text-underline-offset: 5px;
     }
     &wavy:hover {
       text-decoration: underline wavy;
+      text-underline-offset: 5px;
     }
     &u-overline:hover {
       text-decoration: underline overline;
+      text-underline-offset: 5px;
     }
     &u-dotted:hover {
       text-decoration: underline overline dotted;
+      text-underline-offset: 5px;
     }
     &u-dashed:hover {
       text-decoration: underline overline dashed;
+      text-underline-offset: 5px;
     }
     &u-double:hover {
       text-decoration: underline overline double;
+      text-underline-offset: 5px;
     }
     &u-wavy:hover {
       text-decoration: underline overline wavy;
+      text-underline-offset: 5px;
     }
   }
 }

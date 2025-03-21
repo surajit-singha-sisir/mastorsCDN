@@ -1,788 +1,108 @@
-@use "../variables-Fectory/rem-vars" as *;
+@use 'sass:math';
 
-// AUTO MARGIN
+// Variables
+$directions: (
+  'l': 'left',
+  'r': 'right',
+  't': 'top',
+  'b': 'bottom'
+);
+
+$sizes: (
+  'xs': 0.25rem,
+  'xl': 2rem
+);
+
+$states: ('inherit', 'auto');
+
+// Mixins
+@mixin generate-margin-states($prefix, $property) {
+  @each $state in $states {
+    .#{$prefix}-#{$state} {
+      #{$property}: $state;
+    }
+  }
+}
+
+@mixin generate-margin-sizes($prefix, $property) {
+  @each $size, $value in $sizes {
+    .#{$prefix}-#{$size} {
+      #{$property}: $value;
+    }
+  }
+}
+
+@mixin generate-margin-rems($prefixes, $properties, $max: 30) {
+  @for $i from 0 through $max {
+    @for $j from 0 through 9 {
+      $value: $i + math.div($j, 10);
+      $selector: '';
+      @each $prefix in $prefixes {
+        $selector: if($selector == '', ".#{$prefix}-#{$i}#{$j}", "#{$selector}, .#{$prefix}-#{$i}#{$j}");
+      }
+      #{$selector} {
+        @each $prop in $properties {
+          margin-#{$prop}: $value * 1rem;
+        }
+      }
+    }
+  }
+}
+
+@mixin generate-negative-margin-rems($prefixes, $properties, $max: 10) {
+  @for $i from 0 through $max {
+    @for $j from 0 through 9 {
+      $value: $i + math.div($j, 10);
+      $selector: '';
+      @each $prefix in $prefixes {
+        $selector: if($selector == '', ".#{$prefix}--#{$i}#{$j}", "#{$selector}, .#{$prefix}--#{$i}#{$j}");
+      }
+      #{$selector} {
+        @each $prop in $properties {
+          margin-#{$prop}: -$value * 1rem;
+        }
+      }
+    }
+  }
+}
+
+// Auto Margins
 .margin-auto,
 .mar-auto,
 .m-auto {
-  margin: auto;
+  margin: auto !important;
 }
 
-// USEFULL CLASSES
+// Single Direction Margins
+@each $short, $full in $directions {
+  @include generate-margin-states("mar-#{$short}", "margin-#{$full}");
+  @include generate-margin-states("m-#{$short}", "margin-#{$full}");
+  @include generate-margin-states("m-#{$full}", "margin-#{$full}");
 
-.mar-l-,
-.m-l-,
-.m-left- {
-  &inherit {
-    margin-left: inherit;
-  }
+  @include generate-margin-sizes("mar-#{$short}", "margin-#{$full}");
+  @include generate-margin-sizes("m-#{$short}", "margin-#{$full}");
+  @include generate-margin-sizes("m-#{$full}", "margin-#{$full}");
 
-  &auto {
-    margin-left: auto;
-  }
-
-  &initial {
-    margin-left: initial;
-  }
-
-  &unset {
-    margin-left: unset;
-  }
-
-  // USUALL CLASSES
-  &xxs {
-    margin-left: 0.125rem;
-  }
-
-  &xs,
-  &tiny {
-    margin-left: 0.25rem;
-  }
-
-  &sm,
-  &small {
-    margin-left: 0.5rem;
-  }
-
-  &md,
-  &normal {
-    margin-left: 1rem;
-  }
-
-  &lg,
-  &big {
-    margin-left: 1.5rem;
-  }
-
-  &xl,
-  &bigger {
-    margin-left: 2rem;
-  }
-
-  &xxl,
-  &biggest {
-    margin-left: 2.5rem;
-  }
-
-  &xxxl,
-  &gient {
-    margin-left: 3rem;
-  }
+  @include generate-margin-rems(("m-#{$short}"), ($full));
+  @include generate-negative-margin-rems(("m-#{$short}"), ($full));
 }
 
-.mar-r-,
-.m-r-,
-.m-right- {
-  &inherit {
-    margin-right: inherit;
-  }
-
-  &auto {
-    margin-right: auto;
-  }
-
-  &initial {
-    margin-right: initial;
-  }
-
-  &unset {
-    margin-right: unset;
-  }
-
-  // USUALL CLASSES
-  &xxs {
-    margin-right: 0.125rem;
-  }
-
-  &xs,
-  &tiny {
-    margin-right: 0.25rem;
-  }
-
-  &sm,
-  &small {
-    margin-right: 0.5rem;
-  }
-
-  &md,
-  &normal {
-    margin-right: 1rem;
-  }
-
-  &lg,
-  &big {
-    margin-right: 1.5rem;
-  }
-
-  &xl,
-  &bigger {
-    margin-right: 2rem;
-  }
-
-  &xxl,
-  &biggest {
-    margin-right: 2.5rem;
-  }
-
-  &xxxl,
-  &gient {
-    margin-right: 3rem;
-  }
-}
-
-.mar-t-,
-.m-t-,
-.m-top- {
-  &inherit {
-    margin-top: inherit;
-  }
-
-  &auto {
-    margin-top: auto;
-  }
-
-  &initial {
-    margin-top: initial;
-  }
-
-  &unset {
-    margin-top: unset;
-  }
-
-  // USUALL CLASSES
-  &xxs {
-    margin-top: 0.125rem;
-  }
-
-  &xs,
-  &tiny {
-    margin-top: 0.25rem;
-  }
-
-  &sm,
-  &small {
-    margin-top: 0.5rem;
-  }
-
-  &md,
-  &normal {
-    margin-top: 1rem;
-  }
-
-  &lg,
-  &big {
-    margin-top: 1.5rem;
-  }
-
-  &xl,
-  &bigger {
-    margin-top: 2rem;
-  }
-
-  &xxl,
-  &biggest {
-    margin-top: 2.5rem;
-  }
-
-  &xxxl,
-  &gient {
-    margin-top: 3rem;
-  }
-}
-
-.mar-b-,
-.m-b-,
-.m-bottom- {
-  &inherit {
-    margin-bottom: inherit;
-  }
-
-  &auto {
-    margin-bottom: auto;
-  }
-
-  &initial {
-    margin-bottom: initial;
-  }
-
-  &unset {
-    margin-bottom: unset;
-  }
-
-  // USUALL CLASSES
-  &xxs {
-    margin-bottom: 0.125rem;
-  }
-
-  &xs,
-  &tiny {
-    margin-bottom: 0.25rem;
-  }
-
-  &sm,
-  &small {
-    margin-bottom: 0.5rem;
-  }
-
-  &md,
-  &normal {
-    margin-bottom: 1rem;
-  }
-
-  &lg,
-  &big {
-    margin-bottom: 1.5rem;
-  }
-
-  &xl,
-  &bigger {
-    margin-bottom: 2rem;
-  }
-
-  &xxl,
-  &biggest {
-    margin-bottom: 2.5rem;
-  }
-
-  &xxxl,
-  &gient {
-    margin-bottom: 3rem;
-  }
-}
-
-// ----------------------------------
-//          (%) MARGIN
-// ----------------------------------
-
-// MARGIN LEFT (%)
-.mar-l-,
-.m-l-,
-.m-left- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-left: #{$percent};
-    }
-  }
-}
-
-// MARGIN RIGHT (%)
-.mar-r-,
-.m-r-,
-.m-right- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-right: #{$percent};
-    }
-  }
-}
-
-// MARGIN TOP (%)
-.mar-t-,
-.m-t-,
-.m-top- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-top: #{$percent};
-    }
-  }
-}
-
-// MARGIN BOTTOM (%)
-.mar-b-,
-.m-b-,
-.m-bottom- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-bottom: #{$percent};
-    }
-  }
-}
-
-// MARGIN TOP-RIGHT (%)
-.mar-tr-,
-.mar-rt-,
-.m-tr-,
-.m-rt- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-top: #{$percent};
-      margin-right: #{$percent};
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM (%)
-.mar-tb-,
-.mar-bt-,
-.m-tb-,
-.m-bt- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-top: #{$percent};
-      margin-bottom: #{$percent};
-    }
-  }
-}
-
-// MARGIN RIGHT-BOTTOM (%)
-.mar-rb-,
-.mar-br-,
-.m-rb-,
-.m-br- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-right: #{$percent};
-      margin-bottom: #{$percent};
-    }
-  }
-}
-
-// MARGIN RIGHT-LEFT (%)
-.mar-rl-,
-.mar-lr-,
-.m-rl-,
-.m-lr- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-right: #{$percent};
-      margin-left: #{$percent};
-    }
-  }
-}
-
-// MARGIN BOTTOM-LEFT (%)
-.mar-bl-,
-.mar-lb-,
-.m-bl-,
-.m-lb- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-bottom: #{$percent};
-      margin-left: #{$percent};
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM-RIGHT (%)
-.mar-trb-,
-.mar-tbr-,
-.mar-brt-,
-.mar-btr-,
-.mar-rtb-,
-.mar-rbt-,
-.m-trb-,
-.m-tbr-,
-.m-brt-,
-.m-btr-,
-.m-rtb-,
-.m-rbt- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-top: #{$percent};
-      margin-bottom: #{$percent};
-      margin-right: #{$percent};
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM-LEFT (%)
-.mar-tlb-,
-.mar-tbl-,
-.mar-blt-,
-.mar-btl-,
-.mar-ltb-,
-.mar-lbt-,
-.m-tlb-,
-.m-tbl-,
-.m-blt-,
-.m-btl-,
-.m-ltb-,
-.m-lbt- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-top: #{$percent};
-      margin-bottom: #{$percent};
-      margin-left: #{$percent};
-    }
-  }
-}
-
-// MARGIN LEFT-RIGHT-TOP (%)
-.mar-trl-,
-.mar-tlr-,
-.mar-lrt-,
-.mar-ltr-,
-.mar-rtl-,
-.mar-rlt-,
-.m-trl-,
-.m-tlr-,
-.m-lrt-,
-.m-ltr-,
-.m-rtl-,
-.m-rlt- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-left: #{$percent};
-      margin-right: #{$percent};
-      margin-top: #{$percent};
-    }
-  }
-}
-
-// MARGIN LEFT-RIGHT-BOTTOM (%)
-.mar-brl-,
-.mar-blr-,
-.mar-lrb-,
-.mar-lbr-,
-.mar-rbl-,
-.mar-rlb-,
-.m-brl-,
-.m-blr-,
-.m-lrb-,
-.m-lbr-,
-.m-rbl-,
-.m-rlb- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin-left: #{$percent};
-      margin-right: #{$percent};
-      margin-bottom: #{$percent};
-    }
-  }
-}
-
-// MARGIN ALL (%)
-.mar-,
-.m- {
-  @for $i from 0 through 150 {
-    $class: if($i < 10, "0#{$i}", "#{$i}");
-    $percent: if($i < 10, "0#{$i}%", "#{$i}%");
-
-    &#{$class} {
-      margin: #{$percent};
-    }
-  }
-}
-
-// ----------------------------------
-//          (REM) MARGIN
-// ----------------------------------
-
-// MARGIN LEFT (REM)
-
-.mar-l--,
-.m-l--,
-.m-left-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-left: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN RIGHT (REM)
-.mar-r--,
-.m-r--,
-.m-right-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-right: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP (REM)
-.mar-t--,
-.m-t--,
-.m-top-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN BOTTOM (REM)
-.mar-b--,
-.m-b--,
-.m-bottom-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-bottom: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-RIGHT (REM)
-.mar-tr--,
-.mar-rt--,
-.m-tr--,
-.m-rt-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: #{$rem}rem;
-        margin-right: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM (REM)
-.mar-tb--,
-.mar-bt--,
-.m-tb--,
-.m-bt-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: #{$rem}rem;
-        margin-bottom: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN RIGHT-BOTTOM (REM)
-.mar-rb--,
-.mar-br--,
-.m-rb--,
-.m-br-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-right: #{$rem}rem;
-        margin-bottom: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN RIGHT-LEFT (REM)
-.mar-rl--,
-.mar-lr--,
-.m-rl--,
-.m-lr-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-right: #{$rem}rem;
-        margin-left: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN BOTTOM-LEFT (REM)
-.mar-bl--,
-.mar-lb--,
-.m-bl--,
-.m-lb-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-bottom: #{$rem}rem;
-        margin-left: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM-RIGHT (REM)
-.mar-trb--,
-.mar-tbr--,
-.mar-brt--,
-.mar-btr--,
-.mar-rtb--,
-.mar-rbt--,
-.m-trb--,
-.m-tbr--,
-.m-brt--,
-.m-btr--,
-.m-rtb--,
-.m-rbt-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: #{$rem}rem;
-        margin-bottom: #{$rem}rem;
-        margin-right: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM-LEFT (REM)
-.mar-tlb--,
-.mar-tbl--,
-.mar-blt--,
-.mar-btl--,
-.mar-ltb--,
-.mar-lbt--,
-.m-tlb--,
-.m-tbl--,
-.m-blt--,
-.m-btl--,
-.m-ltb--,
-.m-lbt-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: #{$rem}rem;
-        margin-bottom: #{$rem}rem;
-        margin-left: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN LEFT-RIGHT-TOP (REM)
-.mar-trl--,
-.mar-tlr--,
-.mar-lrt--,
-.mar-ltr--,
-.mar-rtl--,
-.mar-rlt--,
-.m-trl--,
-.m-tlr--,
-.m-lrt--,
-.m-ltr--,
-.m-rtl--,
-.m-rlt-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-left: #{$rem}rem;
-        margin-right: #{$rem}rem;
-        margin-top: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN LEFT-RIGHT-BOTTOM (REM)
-.mar-brl--,
-.mar-blr--,
-.mar-lrb--,
-.mar-lbr--,
-.mar-rbl--,
-.mar-rlb--,
-.m-brl--,
-.m-blr--,
-.m-lrb--,
-.m-lbr--,
-.m-rbl--,
-.m-rlb-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-left: #{$rem}rem;
-        margin-right: #{$rem}rem;
-        margin-bottom: #{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN ALL (REM)
-
-.mar--,
-.m-- {
-  @for $i from 0 through 30 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin: #{$rem}rem;
-      }
-    }
-  }
+// Multi-Direction Combinations
+$combinations: (
+  'tb': (('m-tb', 'm-bt'), ('top', 'bottom')),
+  'tr': (('m-tr', 'm-rt'), ('top', 'right')),
+  'rl': (('m-rl', 'm-lr'), ('right', 'left')),
+  'trb': (('m-trb', 'm-tbr', 'm-rbt', 'm-rtb', 'm-btr', 'm-brt'), ('top', 'right', 'bottom')),
+  'tlr': (('m-tlr', 'm-trl', 'm-lrt', 'm-ltr', 'm-rtl', 'm-rlt'), ('top', 'left', 'right')),
+  'brl': (('m-brl', 'm-blr', 'm-rlb', 'm-rbl', 'm-lbr', 'm-lrb'), ('bottom', 'right', 'left')),
+  '': (('m', 'm-all'), ('top', 'right', 'bottom', 'left'))
+);
+
+@each $combo, $data in $combinations {
+  $prefixes: nth($data, 1);
+  $props: nth($data, 2);
+  @include generate-margin-rems($prefixes, $props);
+  @include generate-negative-margin-rems($prefixes, $props);
 }
 
 
@@ -792,288 +112,44 @@
 
 
 
+/* 
+  Margin utilities usage:
 
+  Auto margins:
+  <div class="margin-auto">Centered content</div>
+  <div class="mar-auto">Centered content</div>
+  <div class="m-auto">Centered content</div>
 
+  Single direction margins (l/r/t/b):
+  <div class="mar-l-inherit">Left inherit margin</div>
+  <div class="m-r-auto">Right auto margin</div>
+  <div class="m-top-xs">Top 0.25rem margin</div>
+  <div class="mar-b-xl">Bottom 2rem margin</div>
 
-// ----------------------------------
-//    (REM) MARGIN - MINUS VALUES
-// ----------------------------------
+  Percentage margins (0-150%):
+  <div class="mar-t-25">Top 25% margin</div>
+  <div class="m-l-100">Left 100% margin</div>
+  <div class="mar-r-5">Right 5% margin</div>
+  <div class="m-b-75">Bottom 75% margin</div>
 
-// MARGIN LEFT (REM)
+  Rem margins (0-30.9rem):
+  <div class="mar-t--15">Top 1.5rem margin</div>
+  <div class="m-l--209">Left 20.9rem margin</div>
+  <div class="mar-r--30">Right 3rem margin</div>
+  <div class="m-b--105">Bottom 10.5rem margin</div>
 
-.mar-l---,
-.m-l---,
-.m-left--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
+  Negative rem margins (0 to -10.9rem):
+  <div class="mar-t---10">Top -1rem margin</div>
+  <div class="m-l---55">Left -5.5rem margin</div>
+  <div class="mar-r---89">Right -8.9rem margin</div>
+  <div class="m-b---25">Bottom -2.5rem margin</div>
 
-      &#{$class} {
-        margin-left: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN RIGHT (REM)
-.mar-r---,
-.m-r---,
-.m-right--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-right: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP (REM)
-.mar-t---,
-.m-t---,
-.m-top--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN BOTTOM (REM)
-.mar-b---,
-.m-b---,
-.m-bottom--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-bottom: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-RIGHT (REM)
-.mar-tr---,
-.mar-rt---,
-.m-tr---,
-.m-rt--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: -#{$rem}rem;
-        margin-right: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM (REM)
-.mar-tb---,
-.mar-bt---,
-.m-tb---,
-.m-bt--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: -#{$rem}rem;
-        margin-bottom: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN RIGHT-BOTTOM (REM)
-.mar-rb---,
-.mar-br---,
-.m-rb---,
-.m-br--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-right: -#{$rem}rem;
-        margin-bottom: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN RIGHT-LEFT (REM)
-.mar-rl---,
-.mar-lr---,
-.m-rl---,
-.m-lr--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-right: -#{$rem}rem;
-        margin-left: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN BOTTOM-LEFT (REM)
-.mar-bl---,
-.mar-lb---,
-.m-bl---,
-.m-lb--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-bottom: -#{$rem}rem;
-        margin-left: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM-RIGHT (REM)
-.mar-trb---,
-.mar-tbr---,
-.mar-brt---,
-.mar-btr---,
-.mar-rtb---,
-.mar-rbt---,
-.m-trb---,
-.m-tbr---,
-.m-brt---,
-.m-btr---,
-.m-rtb---,
-.m-rbt--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: -#{$rem}rem;
-        margin-bottom: -#{$rem}rem;
-        margin-right: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN TOP-BOTTOM-LEFT (REM)
-.mar-tlb---,
-.mar-tbl---,
-.mar-blt---,
-.mar-btl---,
-.mar-ltb---,
-.mar-lbt---,
-.m-tlb---,
-.m-tbl---,
-.m-blt---,
-.m-btl---,
-.m-ltb---,
-.m-lbt--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-top: -#{$rem}rem;
-        margin-bottom: -#{$rem}rem;
-        margin-left: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN LEFT-RIGHT-TOP (REM)
-.mar-trl---,
-.mar-tlr---,
-.mar-lrt---,
-.mar-ltr---,
-.mar-rtl---,
-.mar-rlt---,
-.m-trl---,
-.m-tlr---,
-.m-lrt---,
-.m-ltr---,
-.m-rtl---,
-.m-rlt--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-left: -#{$rem}rem;
-        margin-right: -#{$rem}rem;
-        margin-top: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN LEFT-RIGHT-BOTTOM (REM)
-.mar-brl---,
-.mar-blr---,
-.mar-lrb---,
-.mar-lbr---,
-.mar-rbl---,
-.mar-rlb---,
-.m-brl---,
-.m-blr---,
-.m-lrb---,
-.m-lbr---,
-.m-rbl---,
-.m-rlb--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin-left: -#{$rem}rem;
-        margin-right: -#{$rem}rem;
-        margin-bottom: -#{$rem}rem;
-      }
-    }
-  }
-}
-
-// MARGIN ALL (REM)
-
-.mar---,
-.m--- {
-  @for $i from 0 through 10 {
-    @for $j from 0 through 9 {
-      $class: #{$i}#{$j};
-      $rem: $i + calc($j / 10);
-
-      &#{$class} {
-        margin: -#{$rem}rem;
-      }
-    }
-  }
-}
+  Multi-direction combinations:
+  <div class="m-tr-50">Top-right 50% margin</div>
+  <div class="mar-tb-10">Top-bottom 10% margin</div>
+  <div class="m-rl--20">Right-left 2rem margin</div>
+  <div class="mar-trb--35">Top-right-bottom 3.5rem margin</div>
+  <div class="m-tlr---15">Top-left-right -1.5rem margin</div>
+  <div class="mar-brl-25">Bottom-right-left 25% margin</div>
+  <div class="m--100">All sides 10rem margin</div>
+*/

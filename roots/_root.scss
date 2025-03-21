@@ -2,8 +2,47 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* Default Scrollbar Styling */
+.scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of the vertical scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar */
+}
+
+/* Scrollbar Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 4px; /* Rounded edges */
+}
+
+/* Scrollbar Thumb */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Medium gray thumb */
+  border-radius: 4px; /* Rounded edges */
+  transition: background 0.2s ease; /* Smooth transition */
+}
+
+/* Thumb on Hover */
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray on hover */
+}
+
+/* Optional: Scrollbar Corner */
+.scrollbar::-webkit-scrollbar-corner {
+  background: #f1f1f1; /* Matches track */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* Makes scrollbar thinner */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color, Track color */
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
 }

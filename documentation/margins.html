@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin Utility Classes Documentation - MastorsCDN</title>
+  <!-- Prism CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <!-- Your External Stylesheet -->
+  <link rel="stylesheet" href="../mastors.css">
+  <style>
+    .intro-text {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .section-desc {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .table-2 td,
+    .table-2 th {
+      vertical-align: middle;
+    }
+
+    .demo-box {
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 100px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-center pad--30 bg-White">
+    <h1>MASTORSCDN MARGIN DOCUMENTATION</h1>
+    <p class="intro-text">Welcome to the MastorsCDN Margin Utility Classes documentation. These classes provide a
+      flexible system for applying margins to HTML elements using consistent naming conventions. Explore the sections
+      below for previews, class names, and usage examples across various margin types including auto, states, fixed
+      sizes, and rem units (positive and negative).</p>
+  </header>
+
+  <table class="table-2 border-all scroll-x">
+    <thead>
+      <tr>
+        <th>Preview</th>
+        <th>Class Name</th>
+        <th>Description</th>
+        <th>HTML Declaration</th>
+        <th>Copy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Auto Margins -->
+      <tr>
+        <td colspan="5" class="b text-center">Auto Margins</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Apply automatic margins to center elements or manage spacing dynamically.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-auto">Auto</div>
+        </td>
+        <td><code>.m-auto, .mar-auto, .margin-auto</code></td>
+        <td>Sets all margins to <code>auto</code>, typically used for centering.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-auto"&gt;Auto&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-auto">Auto</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-l-auto">Left Auto</div>
+        </td>
+        <td><code>.m-l-auto, .mar-l-auto, .m-left-auto</code></td>
+        <td>Sets left margin to <code>auto</code>, useful for right-aligning.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-l-auto"&gt;Left Auto&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-l-auto">Left Auto</div>'>Copy</button></td>
+      </tr>
+
+      <!-- State Margins -->
+      <tr>
+        <td colspan="5" class="b text-center">State Margins</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Use special state values like <code>inherit</code> or <code>auto</code> for margin properties.</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-t-inherit">Inherit Top</div>
+        </td>
+        <td><code>.m-t-inherit, .mar-t-inherit, .m-top-inherit</code></td>
+        <td>Sets top margin to <code>inherit</code> from parent element.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-t-inherit"&gt;Inherit Top&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-t-inherit">Inherit Top</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-r-auto">Auto Right</div>
+        </td>
+        <td><code>.m-r-auto, .mar-r-auto, .m-right-auto</code></td>
+        <td>Sets right margin to <code>auto</code>.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-r-auto"&gt;Auto Right&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-r-auto">Auto Right</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Fixed Size Margins -->
+      <tr>
+        <td colspan="5" class="b text-center">Fixed Size Margins</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Apply predefined margin sizes: <code>xs</code> (0.25rem) and <code>xl</code> (2rem).</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-t-xs">XS Top</div>
+        </td>
+        <td><code>.m-t-xs, .mar-t-xs, .m-top-xs</code></td>
+        <td>Sets top margin to 0.25rem (extra small).</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-t-xs"&gt;XS Top&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-t-xs">XS Top</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-b-xl">XL Bottom</div>
+        </td>
+        <td><code>.m-b-xl, .mar-b-xl, .m-bottom-xl</code></td>
+        <td>Sets bottom margin to 2rem (extra large).</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-b-xl"&gt;XL Bottom&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-b-xl">XL Bottom</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Rem Margins -->
+      <tr>
+        <td colspan="5" class="b text-center">Rem Margins</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Apply precise margins in rem units (0 to 30.9rem) for consistent spacing across devices.</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-t-15">1.5rem Top</div>
+        </td>
+        <td><code>.m-t-15, .mar-t-15, .m-top-15</code></td>
+        <td>Sets top margin to 1.5rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-t-15"&gt;1.5rem Top&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-t-15">1.5rem Top</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-tb-50, m-bt-50">5rem TB</div>
+        </td>
+        <td><code>.m-tb-50, .m-bt-50, .mar-tb-50</code></td>
+        <td>Sets top and bottom margins to 5rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-tb-50"&gt;5rem TB&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-tb-50">5rem TB</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-tr-131, m-rt-131">13.1rem TR</div>
+        </td>
+        <td><code>.m-tr-131, .m-rt-131, .mar-tr-131</code></td>
+        <td>Sets top and right margins to 13.1rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-tr-131"&gt;13.1rem TR&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-tr-131">13.1rem TR</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-trb-35">3.5rem TRB</div>
+        </td>
+        <td><code>.m-trb-35, .m-tbr-35, .m-rbt-35, .m-rtb-35, .m-btr-35, .m-brt-35</code></td>
+        <td>Sets top, right, and bottom margins to 3.5rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-trb-35"&gt;3.5rem TRB&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-trb-35">3.5rem TRB</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-100">10rem All</div>
+        </td>
+        <td><code>.m-100, .m-all-100</code></td>
+        <td>Sets all margins to 10rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-100"&gt;10rem All&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-100">10rem All</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Negative Rem Margins -->
+      <tr>
+        <td colspan="5" class="b text-center">Negative Rem Margins</td>
+      </tr>
+      <tr>
+        <td colspan="5" class="section-desc">Apply negative margins in rem units (0 to -10.9rem) to overlap or reduce spacing.</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-t--20">-2rem Top</div>
+        </td>
+        <td><code>.m-t--20, .mar-t--20, .m-top--20</code></td>
+        <td>Sets top margin to -2rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-t--20"&gt;-2rem Top&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-t--20">-2rem Top</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-rl--55, m-lr--55">-5.5rem RL</div>
+        </td>
+        <td><code>.m-rl--55, .m-lr--55, .mar-rl--55</code></td>
+        <td>Sets right and left margins to -5.5rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-rl--55"&gt;-5.5rem RL&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-rl--55">-5.5rem RL</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-tlr--15">-1.5rem TLR</div>
+        </td>
+        <td><code>.m-tlr--15, .m-trl--15, .m-lrt--15, .m-ltr--15, .m-rtl--15, .m-rlt--15</code></td>
+        <td>Sets top, left, and right margins to -1.5rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-tlr--15"&gt;-1.5rem TLR&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-tlr--15">-1.5rem TLR</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="demo-box m-brl--109">-10.9rem BRL</div>
+        </td>
+        <td><code>.m-brl--109, .m-blr--109, .m-rlb--109, .m-rbl--109, .m-lbr--109, .m-lrb--109</code></td>
+        <td>Sets bottom, right, and left margins to -10.9rem.</td>
+        <td>
+          <pre><code class="language-html">&lt;div class="m-brl--109"&gt;-10.9rem BRL&lt;/div&gt;</code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="m-brl--109">-10.9rem BRL</div>'>Copy</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer class="text-center pad--30">
+    <p>Need more help? Check the <a href="#">MastorsCDN Full Documentation</a> or contact support.</p>
+  </footer>
+
+  <!-- Prism JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <!-- Copy to Clipboard Script -->
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const code = button.getAttribute('data-code');
+        copyToClipboard(code);
+      });
+    });
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+  </script>
+</body>
+
+</html>

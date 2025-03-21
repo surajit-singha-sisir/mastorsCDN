@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Utility Classes Documentation - MastorsCDN</title>
+    <!-- Prism CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <!-- Your External Stylesheet -->
+    <link rel="stylesheet" href="../mastors.css">
+    <style>
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .section-desc {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .table-2 td,
+        .table-2 th {
+            vertical-align: middle;
+        }
+
+        .demo-box {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-center pad--30 bg-White">
+        <h1>MASTORSCDN BUTTON DOCUMENTATION</h1>
+        <p class="intro-text">Welcome to the MastorsCDN Button Utility Classes documentation. These classes provide a
+            versatile system for styling <code>&lt;button&gt;</code> elements with various colors, sizes, and states.
+            Explore
+            the sections below for previews, class names, and usage examples for solid buttons, outline buttons,
+            navigation
+            buttons, sizes, and additional features like links and disabled states.</p>
+    </header>
+
+    <table class="table-2 border-all scroll-x">
+        <thead>
+            <tr>
+                <th>Preview</th>
+                <th>Class Name</th>
+                <th>Description</th>
+                <th>HTML Declaration</th>
+                <th>Copy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Solid Button Styles -->
+            <tr>
+                <td colspan="5" class="b text-center">Solid Button Styles</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply these classes for solid-filled buttons with various thematic
+                    colors.</td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-primary demo-box">Primary</button></td>
+                <td><code>.btn.btn-primary</code></td>
+                <td>Default primary button style.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-primary">Primary</button>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-success demo-box">Success</button></td>
+                <td><code>.btn.btn-success</code></td>
+                <td>Indicates a successful action.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-success">Success</button>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-error demo-box">Error</button></td>
+                <td><code>.btn.btn-error</code></td>
+                <td>Highlights an error state.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-error"&gt;Error&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-error">Error</button>'>Copy</button></td>
+            </tr>
+            <!-- Add more solid styles as needed; abbreviated for brevity -->
+
+            <!-- Outline Button Styles -->
+            <tr>
+                <td colspan="5" class="b text-center">Outline Button Styles</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Use these classes for outlined buttons with thematic border colors.
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-outline-primary demo-box">Primary</button></td>
+                <td><code>.btn.btn-outline-primary</code></td>
+                <td>Primary outline button style.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-outline-primary">Primary</button>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-outline-success demo-box">Success</button></td>
+                <td><code>.btn.btn-outline-success</code></td>
+                <td>Success outline button style.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-outline-success"&gt;Success&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-outline-success">Success</button>'>Copy</button>
+                </td>
+            </tr>
+            <!-- Add more outline styles as needed -->
+
+            <!-- Navigation Button Styles -->
+            <tr>
+                <td colspan="5" class="b text-center">Navigation Button Styles</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Apply these classes for navigation-themed buttons.</td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-nav-primary demo-box">Primary</button></td>
+                <td><code>.btn.btn-nav-primary</code></td>
+                <td>Primary navigation button style.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-nav-primary"&gt;Primary&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-nav-primary">Primary</button>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-nav-dark demo-box">Dark</button></td>
+                <td><code>.btn.btn-nav-dark</code></td>
+                <td>Dark navigation button style.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-nav-dark"&gt;Dark&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-nav-dark">Dark</button>'>Copy</button></td>
+            </tr>
+
+            <!-- Button Sizes -->
+            <tr>
+                <td colspan="5" class="b text-center">Button Sizes</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Modify button sizes with these additional classes.</td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-primary btn-xsm demo-box">XS</button></td>
+                <td><code>.btn.btn-xsm</code></td>
+                <td>Extra small button size.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-primary btn-xsm"&gt;XS&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-primary btn-xsm">XS</button>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-primary btn-sm demo-box">SM</button></td>
+                <td><code>.btn.btn-sm</code></td>
+                <td>Small button size.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-primary btn-sm"&gt;SM&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-primary btn-sm">SM</button>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-primary btn-lg demo-box">LG</button></td>
+                <td><code>.btn.btn-lg</code></td>
+                <td>Large button size.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-primary btn-lg"&gt;LG&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-primary btn-lg">LG</button>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-primary btn-xlg demo-box">XL</button></td>
+                <td><code>.btn.btn-xlg</code></td>
+                <td>Extra large button size.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-primary btn-xlg"&gt;XL&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-primary btn-xlg">XL</button>'>Copy</button></td>
+            </tr>
+
+            <!-- Link and Disabled Buttons -->
+            <tr>
+                <td colspan="5" class="b text-center">Link and Disabled Buttons</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Special button styles for links and disabled states.</td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-link demo-box">Link</button></td>
+                <td><code>.btn.btn-link</code></td>
+                <td>Styled as a link button.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-link">Link</button>'>Copy</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-primary demo-box" disabled>Disabled</button></td>
+                <td><code>.btn.btn-primary[disabled]</code></td>
+                <td>Disabled solid button.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-primary" disabled&gt;Disabled&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-primary" disabled>Disabled</button>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button class="btn btn-link demo-box" disabled>Disabled Link</button></td>
+                <td><code>.btn.btn-link[disabled]</code></td>
+                <td>Disabled link button.</td>
+                <td>
+                    <pre><code class="language-html">&lt;button type="button" class="btn btn-link" disabled&gt;Disabled Link&lt;/button&gt;</code></pre>
+                </td>
+                <td><button class="btn-primary btn btn-sm copy-btn"
+                        data-code='<button type="button" class="btn btn-link" disabled>Disabled Link</button>'>Copy</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer class="text-center pad--30">
+        <p>Need more help? Check the <a href="#">MastorsCDN Full Documentation</a> or contact support.</p>
+    </footer>
+
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Copy to Clipboard Script -->
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const code = button.getAttribute('data-code');
+                copyToClipboard(code);
+            });
+        });
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+
+</html>

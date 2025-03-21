@@ -41,7 +41,7 @@
 // TABLE-2
 table.table-2 {
   width: 100%;
-  border-collapse: separate;
+  border-collapse: collapse;
   border-spacing: 0;
 
   &.scroll-x {
@@ -86,7 +86,8 @@ table.table-2 {
     th {
       border-top: 1px solid #ccc;
     }
-    td, th {
+    td,
+    th {
       border-right: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
 
@@ -106,6 +107,7 @@ table.table-2 {
   }
 
   tr {
+    overflow: hidden;
     transition: background 0.3s ease;
 
     &:last-child td {
@@ -148,12 +150,10 @@ table.table-2 {
   &::-webkit-scrollbar-thumb {
     background: #34495e;
     border-radius: 6px;
-    border: 2px solid #ecf0f1;
     background: linear-gradient(45deg, #34495e, #5d788f);
 
     &:hover {
       background: linear-gradient(45deg, #2c3e50, #4b6580);
-      border: 2px solid #dfe6e9;
     }
 
     &:active {
@@ -164,7 +164,6 @@ table.table-2 {
   @media (max-width: 768px) {
     display: block;
     -webkit-overflow-scrolling: touch;
-    border: 1px solid #34495e;
 
     &.scroll-x {
       white-space: nowrap;
@@ -174,11 +173,6 @@ table.table-2 {
     td {
       padding: 12px;
       font-size: 0.9em;
-    }
-
-    .demo-cell {
-      min-width: 100px;
-      margin: 3px;
     }
   }
 }
