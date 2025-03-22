@@ -1,8 +1,5 @@
-@use "../variables-Fectory/rem-vars" as *;
+
 @forward "scrollbar";
-@forward "column-2-flex";
-
-
 
 // MARGIN VARIABLE
 @forward "margins";
@@ -14,4 +11,5 @@
 
 
 @forward "transforms";
+@forward "trbl";
 

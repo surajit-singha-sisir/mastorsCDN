@@ -1,24 +1,347 @@
 // SCALE
 
-
 .scale- {
-    @for $i from 0 through 2 {
-        @for $j from 0 through 9 {
-            $scale: $i + calc($j / 10);
-            &#{$i}#{$j} {
-                transform: scale(#{$scale});
-            }
-        }
+  @for $i from 0 through 2 {
+    @for $j from 0 through 9 {
+      $scale: $i + calc($j / 10);
+      &#{$i}#{$j} {
+        transform: scale(#{$scale});
+      }
     }
+  }
 }
-
-
-
 
 .rotate- {
-    @for $i from 0 through 360 {
-        &#{$i} {
-            transform: rotate(#{$i}deg);
-        }
+  @for $i from 0 through 360 {
+    &#{$i} {
+      transform: rotate(#{$i}deg);
     }
+  }
 }
+
+.transform-center,
+.transform-centered,
+.abs-centererd,
+.abs-center,
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.transform-center-top,
+.abs-center-top,
+.center-top,
+.transform-top-center,
+.abs-top-center,
+.top-center {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+/* Centering horizontally only */
+.transform-x-center,
+.center-horizontal,
+.abs-center-horizontal,
+.abs-x-center,
+.x-center,
+.transform-center-x,
+.horizontal-center,
+.abs-horizontal-center,
+.abs-center-x,
+.center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Centering vertically only */
+.transform-y-center,
+.center-vertical,
+.abs-center-vertical,
+.abs-y-center,
+.y-center,
+.vertical-center,
+.transform-center-y,
+.abs-vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Bottom centered */
+.transform-center-bottom,
+.abs-center-bottom,
+.center-bottom,
+.transform-bottom-center,
+.abs-bottom-center,
+.bottom-center {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* Left edge centered vertically */
+.transform-left-center,
+.abs-left-center,
+.left-center,
+.transform-center-left,
+.abs-center-left,
+.center-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Right edge centered vertically */
+.transform-right-center,
+.abs-right-center,
+.right-center,
+.transform-center-right,
+.abs-center-right,
+.center-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Fixed position variants */
+.fixed-center,
+.fixed-abs-center,
+.fixed-full-center {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-top-center,
+.fixed-center-top,
+.fixed-abs-top-center {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.fixed-bottom-center,
+.fixed-center-bottom,
+.fixed-abs-bottom-center {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* Corner positioning */
+.abs-top-left,
+.abs-left-top,
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.abs-top-right,
+.abs-right-top,
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.abs-bottom-left,
+.abs-left-bottom,
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.abs-bottom-right,
+.abs-right-bottom,
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Centered with specific offsets */
+.abs-center-offset,
+.abs-offset-center,
+.center-offset {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateY(-20px); /* Slight upward offset */
+}
+
+.abs-center-offset-x,
+.abs-offset-center-x,
+.center-offset-x {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateX(-20px); /* Slight left offset */
+}
+
+/* Quarter positioning (dividing the space into quadrants) */
+.abs-top-left-quarter,
+.abs-quarter-top-left,
+.top-left-quarter {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.abs-top-right-quarter,
+.abs-quarter-top-right,
+.top-right-quarter {
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  transform: translate(50%, -50%);
+}
+
+.abs-bottom-left-quarter,
+.abs-quarter-bottom-left,
+.bottom-left-quarter {
+  position: absolute;
+  left: 25%;
+  bottom: 25%;
+  transform: translate(-50%, 50%);
+}
+
+.abs-bottom-right-quarter,
+.abs-quarter-bottom-right,
+.bottom-right-quarter {
+  position: absolute;
+  right: 25%;
+  bottom: 25%;
+  transform: translate(50%, 50%);
+}
+
+/* Edge-aligned with padding */
+.abs-top-padded,
+.abs-padded-top,
+.top-padded {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.abs-bottom-padded,
+.abs-padded-bottom,
+.bottom-padded {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.abs-left-padded,
+.abs-padded-left,
+.left-padded {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.abs-right-padded,
+.abs-padded-right,
+.right-padded {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Full-width/height with centered content */
+.abs-full-width-center,
+.abs-center-full-width,
+.full-width-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.abs-full-height-center,
+.abs-center-full-height,
+.full-height-center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Diagonal corner-to-corner positioning */
+.abs-diagonal-tl-br,
+.abs-tl-br-diagonal,
+.diagonal-tl-br {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translate(25%, 25%);
+}
+
+.abs-diagonal-tr-bl,
+.abs-tr-bl-diagonal,
+.diagonal-tr-bl {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(-25%, 25%);
+}
+
+/* Centered with maximum dimensions */
+.abs-center-max,
+.abs-max-center,
+.center-max {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Edge-to-edge with offsets */
+.abs-top-edge-offset,
+.abs-edge-top-offset,
+.top-edge-offset {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+}
+
+.abs-bottom-edge-offset,
+.abs-edge-bottom-offset,
+.bottom-edge-offset {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+// <div class="abs-center-max">
+// <div class="abs-top-left-quarter">
+// <div class="abs-full-width-center">
+// <div class="abs-right-padded">

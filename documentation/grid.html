@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid System Documentation</title>
+  <!-- Prism CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <!-- Your External Stylesheet -->
+  <link rel="stylesheet" href="../mastors.css">
+  <style>
+    .section {
+      margin: 40px 0;
+    }
+
+    .preview-container {
+      padding: 20px;
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+      margin: 20px 0;
+    }
+
+    .preview-grid {
+      gap: 1rem;
+    }
+
+    .preview-grid .column {
+      background: #e0e0e0;
+      padding: 20px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      margin-top: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #f5f5f5;
+    }
+
+    .code-block {
+      position: relative;
+      margin: 20px 0;
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .copy-button:hover {
+      background: #555;
+    }
+
+  </style>
+</head>
+
+<body class="res-container m-auto">
+  <h1>Responsive Grid System Documentation</h1>
+
+  <!-- Base Responsive Grid -->
+  <div class="section">
+    <h2>Base Responsive Grid</h2>
+
+    <h3>Preview</h3>
+    <div class="preview-container">
+      <div class="g-res-container preview-grid">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+        <div class="column">Column 4</div>
+        <div class="column">Column 5</div>
+      </div>
+    </div>
+
+    <h3>Class Declaration</h3>
+    <table>
+      <tr>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>.g-res-container</code> or <code>.grid-res-container</code></td>
+        <td>Creates a responsive grid with auto-fill columns (minimum 200px width). Collapses to single column at tablet
+          breakpoint unless modified with break classes.</td>
+      </tr>
+      <tr>
+        <td><code>.column</code></td>
+        <td>Basic grid item spanning 1 column.</td>
+      </tr>
+      <tr>
+        <td><code>.span-[n]</code></td>
+        <td>Spans [n] columns (1-10, e.g., <code>.span-2</code>).</td>
+      </tr>
+    </table>
+
+    <h3>HTML Usage</h3>
+    <div class="code-block">
+      <pre><code class="language-html">&lt;div class="g-res-container"&gt;
+  &lt;div class="column"&gt;Column 1&lt;/div&gt;
+  &lt;div class="column"&gt;Column 2&lt;/div&gt;
+  &lt;div class="column"&gt;Column 3&lt;/div&gt;
+  &lt;div class="column"&gt;Column 4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    </div>
+  </div>
+
+  <!-- 2-Column Grid -->
+  <div class="section">
+    <h2>2-Column Grid</h2>
+
+    <h3>Preview</h3>
+    <div class="preview-container">
+      <div class="g-res-2-col-container preview-grid">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+      </div>
+    </div>
+
+    <h3>Class Declaration</h3>
+    <table>
+      <tr>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>.g-res-2-col-container</code> or <code>.grid-res-2-col-container</code></td>
+        <td>Fixed 2-column grid layout. Collapses to single column at tablet breakpoint unless modified.</td>
+      </tr>
+    </table>
+
+    <h3>HTML Usage</h3>
+    <div class="code-block">
+      <pre><code class="language-html">&lt;div class="g-res-2-col-container"&gt;
+  &lt;div class="column"&gt;Column 1&lt;/div&gt;
+  &lt;div class="column"&gt;Column 2&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    </div>
+  </div>
+
+  <!-- 3-Column Grid -->
+  <div class="section">
+    <h2>3-Column Grid</h2>
+
+    <h3>Preview</h3>
+    <div class="preview-container">
+      <div class="g-res-3-col-container preview-grid">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+      </div>
+    </div>
+
+    <h3>Class Declaration</h3>
+    <table>
+      <tr>
+        <th>Class</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>.g-res-3-col-container</code> or <code>.grid-res-3-col-container</code></td>
+        <td>Fixed 3-column grid layout with equal widths.</td>
+      </tr>
+    </table>
+
+    <h3>HTML Usage</h3>
+    <div class="code-block">
+      <pre><code class="language-html">&lt;div class="g-res-3-col-container"&gt;
+  &lt;div class="column"&gt;Column 1&lt;/div&gt;
+  &lt;div class="column"&gt;Column 2&lt;/div&gt;
+  &lt;div class="column"&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    </div>
+  </div>
+
+  <!-- Breakpoint Modifier Classes -->
+  <div class="section">
+    <h2>Breakpoint Modifier Classes</h2>
+    <p>These classes modify the column count at specific breakpoints. Can be applied to any grid container class.</p>
+
+    <h3>Preview Examples</h3>
+    <div class="preview-container">
+      <h4>3-Column breaking to 2 at Tablet</h4>
+      <div class="g-res-3-col-container break-2-tablet preview-grid">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+      </div>
+    </div>
+    <div class="preview-container">
+      <h4>4-Column breaking to 2 at Mobile-L and 3 at Tablet</h4>
+      <div class="g-res-4-col-container break-2-mobile-l break-3-tablet preview-grid">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+        <div class="column">Column 4</div>
+      </div>
+    </div>
+
+    <h3>Class Declaration</h3>
+    <table>
+      <tr>
+        <th>Class Pattern</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><code>.break-[n]-[breakpoint]</code></td>
+        <td>Changes grid to [n] columns (2-10) at specified breakpoint. Replace [n] with 2-10 and [breakpoint] with:
+          <code>mobile-s</code>, <code>mobile-m</code>, <code>mobile-l</code>, <code>tablet</code>,
+          <code>tablet-l</code>, <code>laptop</code>, <code>laptop-l</code>, <code>desktop</code>,
+          <code>desktop-l</code>, <code>desktop-xl</code>, <code>desktop-xxl</code>, <code>desktop-xxxl</code>
+        </td>
+      </tr>
+      <tr>
+        <td><code>.break-2-tablet</code></td>
+        <td>Example: Sets grid to 2 columns at tablet breakpoint.</td>
+      </tr>
+      <tr>
+        <td><code>.break-3-laptop</code></td>
+        <td>Example: Sets grid to 3 columns at laptop breakpoint.</td>
+      </tr>
+    </table>
+
+    <h3>HTML Usage</h3>
+    <div class="code-block">
+      <pre><code class="language-html">&lt;!-- 3-column breaking to 2 at tablet --&gt;
+&lt;div class="g-res-3-col-container break-2-tablet"&gt;
+  &lt;div class="column"&gt;Column 1&lt;/div&gt;
+  &lt;div class="column"&gt;Column 2&lt;/div&gt;
+  &lt;div class="column"&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- 4-column with multiple breakpoints --&gt;
+&lt;div class="g-res-4-col-container break-2-mobile-l break-3-tablet"&gt;
+  &lt;div class="column"&gt;Column 1&lt;/div&gt;
+  &lt;div class="column"&gt;Column 2&lt;/div&gt;
+  &lt;div class="column"&gt;Column 3&lt;/div&gt;
+  &lt;div class="column"&gt;Column 4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    </div>
+  </div>
+
+  <!-- Other Variants Note -->
+  <div class="section">
+    <h2>Other Grid Variants (4-col to 10-col)</h2>
+    <p>Similar patterns apply for <code>.g-res-[n]-col-container</code> where [n] ranges from 4 to 10.</p>
+
+    <h3>Preview (4-Column Example with Span)</h3>
+    <div class="preview-container">
+      <div class="g-res-4-col-container preview-grid">
+        <div class="column span-2">Span 2 Columns</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+      </div>
+    </div>
+
+    <h3>HTML Usage</h3>
+    <div class="code-block">
+      <pre><code class="language-html">&lt;div class="g-res-4-col-container"&gt;
+  &lt;div class="column span-2"&gt;Span 2 Columns&lt;/div&gt;
+  &lt;div class="column"&gt;Column 2&lt;/div&gt;
+  &lt;div class="column"&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      <button class="copy-button" onclick="copyCode(this)">Copy</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script>
+    function copyCode(button) {
+      const code = button.previousElementSibling.querySelector('code').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        button.textContent = 'Copied!';
+        setTimeout(() => button.textContent = 'Copy', 2000);
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,101 +1,168 @@
 @use "../Media-query/mediaqueries" as *;
 
-$grids: (
-    ('.g-res-container', '.grid-res-container', "repeat(auto-fill, minmax(200px, 1fr))"),
-    ('.g-res-2-col-container', '.grid-res-2-col-container', "repeat(2, 1fr)"),
-    ('.g-res-3-col-container', '.grid-res-3-col-container', "repeat(3, 1fr)"),
-    ('.g-res-4-col-container', '.grid-res-4-col-container', "repeat(4, 1fr)"),
-    ('.g-res-5-col-container', '.grid-res-5-col-container', "repeat(5, 1fr)"),
-    ('.g-res-6-col-container', '.grid-res-6-col-container', "repeat(6, 1fr)"),
-    ('.g-res-7-col-container', '.grid-res-7-col-container', "repeat(7, 1fr)"),
-    ('.g-res-8-col-container', '.grid-res-8-col-container', "repeat(8, 1fr)"),
-    ('.g-res-9-col-container', '.grid-res-9-col-container', "repeat(9, 1fr)"),
-    ('.g-res-10-col-container', '.grid-res-10-col-container', "repeat(10, 1fr)")
+$grid-variants: (
+  "": repeat(auto-fill, minmax(200px, 1fr)), // Base "res" variant
+  "2-col": repeat(2, 1fr),
+  "3-col": repeat(3, 1fr),
+  "4-col": repeat(4, 1fr),
+  "5-col": repeat(5, 1fr),
+  "6-col": repeat(6, 1fr),
+  "7-col": repeat(7, 1fr),
+  "8-col": repeat(8, 1fr),
+  "9-col": repeat(9, 1fr),
+  "10-col": repeat(10, 1fr)
 );
 
-@each $grid in $grids {
-    $grid-1: nth($grid, 1);
-    $grid-2: nth($grid, 2);
-    $varient: nth($grid, 3);
+// Breakpoint mappings
+$breakpoints: (
+  "mobile-s": "mobile-s",
+  "mobile-m": "mobile-m",
+  "mobile-l": "mobile-l",
+  "tablet": "tablet",
+  "tablet-l": "tablet-l",
+  "laptop": "laptop",
+  "laptop-l": "laptop-l",
+  "desktop": "desktop",
+  "desktop-l": "desktop-l",
+  "desktop-xl": "desktop-xl",
+  "desktop-xxl": "desktop-xxl",
+  "desktop-xxxl": "desktop-xxxl"
+);
 
-    #{$grid-1},
-    #{$grid-2} {
-        display: grid;
-        width: 100%;
-        grid-template-columns: #{$varient};
-        grid-template-rows: auto;
+.grid-base {
+  display: grid;
+  width: 100%;
+  row-gap: 1rem;
+  grid-template-rows: auto;
 
-        & [class^="column"] {
-            grid-column: span 1;
-        }
+  & .column {
+    grid-column: span 1;
+  }
 
-        & [class*="span-1"] {
-            grid-column: span 1;
-        }
-
-        & [class*="span-2"] {
-            grid-column: span 2;
-        }
-
-        & [class*="span-3"] {
-            grid-column: span 3;
-        }
-
-        & [class*="span-4"] {
-            grid-column: span 4;
-        }
-
-        & [class*="span-5"] {
-            grid-column: span 5;
-        }
-
-        & [class*="span-6"] {
-            grid-column: span 6;
-        }
-
-        & [class*="span-7"] {
-            grid-column: span 7;
-        }
-
-        & [class*="span-8"] {
-            grid-column: span 8;
-        }
-
-        & [class*="span-9"] {
-            grid-column: span 9;
-        }
-
-        & [class*="span-10"] {
-            grid-column: span 10;
-        }
+  @for $i from 1 through 10 {
+    & .span-#{$i} {
+      grid-column: span $i;
     }
-
-
-    @include tablet {
-        #{$grid-1},
-        #{$grid-2} {
-            grid-template-columns: 1fr !important;
-        }
-    }
-
-    @include mobile-l {
-        #{$grid-1},
-        #{$grid-2} {
-            grid-template-columns: 1fr !important;
-        }
-    }
-
-    @include mobile-m {
-        #{$grid-1},
-        #{$grid-2} {
-            grid-template-columns: 1fr !important;
-        }
-    }
-
-    @include mobile-s {
-        #{$grid-1},
-        #{$grid-2} {
-            grid-template-columns: 1fr !important;
-        }
-    }
+  }
 }
+
+// Helper mixin to apply breakpoint styles
+@mixin apply-breakpoint($bp-name, $col-count) {
+  @if $bp-name == "mobile-s" {
+    @include mobile-s {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "mobile-m" {
+    @include mobile-m {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "mobile-l" {
+    @include mobile-l {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "tablet" {
+    @include tablet {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "tablet-l" {
+    @include tablet-l {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "laptop" {
+    @include laptop {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "laptop-l" {
+    @include laptop-l {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "desktop" {
+    @include desktop {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "desktop-l" {
+    @include desktop-l {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "desktop-xl" {
+    @include desktop-xl {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "desktop-xxl" {
+    @include desktop-xxl {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  } @else if $bp-name == "desktop-xxxl" {
+    @include desktop-xxxl {
+      grid-template-columns: repeat($col-count, 1fr) !important;
+    }
+  }
+}
+
+@each $name, $columns in $grid-variants {
+  @if $name == "" {
+    .g-res-container,
+    .grid-res-container {
+      @extend .grid-base;
+      grid-template-columns: $columns;
+
+      // Default collapse at tablet if no break class specified
+      @include tablet {
+        grid-template-columns: 1fr !important;
+      }
+
+      // Generate break classes for each column count and breakpoint
+      @each $bp-name, $bp-value in $breakpoints {
+        @for $i from 2 through 10 {
+          &.break-#{$i}-#{$bp-name} {
+            @include apply-breakpoint($bp-name, $i);
+          }
+        }
+      }
+    }
+  } @else {
+    .g-res-#{$name}-container,
+    .grid-res-#{$name}-container {
+      @extend .grid-base;
+      grid-template-columns: $columns;
+
+      // Default collapse at tablet if no break class specified
+      @include tablet {
+        grid-template-columns: 1fr !important;
+      }
+
+      // Generate break classes for each column count and breakpoint
+      @each $bp-name, $bp-value in $breakpoints {
+        @for $i from 2 through 10 {
+          &.break-#{$i}-#{$bp-name} {
+            @include apply-breakpoint($bp-name, $i);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 
+<div class="g-res-container">
+  <!-- Basic responsive grid with auto-fill columns min 200px -->
+</div>
+
+<div class="g-res-3-col-container">
+  <!-- Fixed 3-column grid layout -->
+</div>
+
+<div class="g-res-3-col-container break-2-tablet">
+  <!-- 3-column grid that breaks to 2 columns at tablet breakpoint -->
+</div>
+
+<div class="g-res-4-col-container break-2-mobile-l break-3-tablet">
+  <!-- 4-column grid that breaks to 2 columns at mobile-large and 3 columns at tablet -->
+</div>
+
+<div class="g-res-container">
+  <div class="column">Column 1</div>
+  <div class="column span-2">Column 2 spanning 2 columns</div>
+  <div class="column">Column 3</div>
+</div>
+*/

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform Utility Classes Documentation</title>
+  <!-- Prism CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+  <!-- Your External Stylesheet -->
+  <link rel="stylesheet" href="../mastors.css">
+  <style>
+    /* Additional styles for better preview */
+    .relative-box {
+      width: 100px;
+      aspect-ratio: 1 / 1;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      background-color: #a5ff93;
+      position: relative;
+    }
+    .a-box {
+      width: 50px;
+      aspect-ratio: 1;
+      background-color: #c3c7ff;
+      border: 1px solid salmon;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .relative-box span {
+      font-size: 12px;
+      text-align: center;
+    }
+    .table-2 td {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="text-center pad--30 bg-White">MASTORSCDN TRANSFORM DOCUMENTATION</h1>
+  <table class="table-2 border-all scroll-x">
+    <thead>
+      <tr>
+        <th>Preview</th>
+        <th>Class Names</th>
+        <th>HTML Declaration</th>
+        <th>Copy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Scale Classes -->
+      <tr>
+        <td colspan="4" class="b text-center">Scale Transformations</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="scale-10"><div class="a-box">1.0</div></span></div>
+        </td>
+        <td><code>.scale-00</code> to <code>.scale-29</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="scale-XX"&gt;Content&lt;/div></code></pre>
+          <p>(XX ranges from 00 to 29, e.g., 0.0 to 2.9)</p>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="scale-10">Content</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Rotate Classes -->
+      <tr>
+        <td colspan="4" class="b text-center">Rotate Transformations</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="rotate-45">ROTATE-45°</span></div>
+        </td>
+        <td><code>.rotate-0</code> to <code>.rotate-360</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="rotate-XXX"&gt;Content&lt;/div></code></pre>
+          <p>(XXX ranges from 0 to 360 degrees)</p>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="rotate-45">Content</div>'>Copy</button></td>
+      </tr>
+
+      <!-- Positioning Classes with Transforms -->
+      <tr>
+        <td colspan="4" class="b text-center">Positioning with Transforms</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="transform-center">CENTER</span></div>
+        </td>
+        <td><code>.transform-center</code>, <code>.transform-centered</code>, <code>.abs-centered</code>, <code>.abs-center</code>, <code>.centered</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="transform-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="transform-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="transform-center-top a-box"></span></div>
+        </td>
+        <td><code>.transform-center-top</code>, <code>.abs-center-top</code>, <code>.center-top</code>, <code>.transform-top-center</code>, <code>.abs-top-center</code>, <code>.top-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="transform-center-top"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="transform-center-top">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="transform-x-center">X-CENTER</span></div>
+        </td>
+        <td><code>.transform-x-center</code>, <code>.center-horizontal</code>, <code>.abs-center-horizontal</code>, <code>.abs-x-center</code>, <code>.x-center</code>, <code>.transform-center-x</code>, <code>.horizontal-center</code>, <code>.abs-horizontal-center</code>, <code>.abs-center-x</code>, <code>.center-x</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="transform-x-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="transform-x-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="transform-y-center">Y-CENTER</span></div>
+        </td>
+        <td><code>.transform-y-center</code>, <code>.center-vertical</code>, <code>.abs-center-vertical</code>, <code>.abs-y-center</code>, <code>.y-center</code>, <code>.vertical-center</code>, <code>.transform-center-y</code>, <code>.abs-vertical-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="transform-y-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="transform-y-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="transform-center-bottom">BOTTOM</span></div>
+        </td>
+        <td><code>.transform-center-bottom</code>, <code>.abs-center-bottom</code>, <code>.center-bottom</code>, <code>.transform-bottom-center</code>, <code>.abs-bottom-center</code>, <code>.bottom-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="transform-center-bottom"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="transform-center-bottom">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="transform-left-center">LEFT</span></div>
+        </td>
+        <td><code>.transform-left-center</code>, <code>.abs-left-center</code>, <code>.left-center</code>, <code>.transform-center-left</code>, <code>.abs-center-left</code>, <code>.center-left</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="transform-left-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="transform-left-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="transform-right-center">RIGHT</span></div>
+        </td>
+        <td><code>.transform-right-center</code>, <code>.abs-right-center</code>, <code>.right-center</code>, <code>.transform-center-right</code>, <code>.abs-center-right</code>, <code>.center-right</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="transform-right-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="transform-right-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-center">FIXED</span></div>
+        </td>
+        <td><code>.fixed-center</code>, <code>.fixed-abs-center</code>, <code>.fixed-full-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="fixed-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="fixed-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-top-center">TOP</span></div>
+        </td>
+        <td><code>.fixed-top-center</code>, <code>.fixed-center-top</code>, <code>.fixed-abs-top-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="fixed-top-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="fixed-top-center">Content</div>'>Copy</button></td>
+      </tr>
+      
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-bottom-center">BOTTOM</span></div>
+        </td>
+        <td><code>.fixed-bottom-center</code>, <code>.fixed-center-bottom</code>, <code>.fixed-abs-bottom-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="fixed-bottom-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="fixed-bottom-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-top-left">TL</span></div>
+        </td>
+        <td><code>.abs-top-left</code>, <code>.abs-left-top</code>, <code>.top-left</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-top-left"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-top-left">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-top-right">TR</span></div>
+        </td>
+        <td><code>.abs-top-right</code>, <code>.abs-right-top</code>, <code>.top-right</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-top-right"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-top-right">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-bottom-left">BL</span></div>
+        </td>
+        <td><code>.abs-bottom-left</code>, <code>.abs-left-bottom</code>, <code>.bottom-left</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-bottom-left"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-bottom-left">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-bottom-right">BR</span></div>
+        </td>
+        <td><code>.abs-bottom-right</code>, <code>.abs-right-bottom</code>, <code>.bottom-right</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-bottom-right"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-bottom-right">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-center-offset">OFFSET-Y</span></div>
+        </td>
+        <td><code>.abs-center-offset</code>, <code>.abs-offset-center</code>, <code>.center-offset</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-center-offset"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-center-offset">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-center-offset-x">OFFSET-X</span></div>
+        </td>
+        <td><code>.abs-center-offset-x</code>, <code>.abs-offset-center-x</code>, <code>.center-offset-x</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-center-offset-x"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-center-offset-x">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-top-left-quarter">TL-QTR</span></div>
+        </td>
+        <td><code>.abs-top-left-quarter</code>, <code>.abs-quarter-top-left</code>, <code>.top-left-quarter</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-top-left-quarter"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-top-left-quarter">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-top-right-quarter">TR-QTR</span></div>
+        </td>
+        <td><code>.abs-top-right-quarter</code>, <code>.abs-quarter-top-right</code>, <code>.top-right-quarter</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-top-right-quarter"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-top-right-quarter">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-bottom-left-quarter">BL-QTR</span></div>
+        </td>
+        <td><code>.abs-bottom-left-quarter</code>, <code>.abs-quarter-bottom-left</code>, <code>.bottom-left-quarter</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-bottom-left-quarter"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-bottom-left-quarter">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-bottom-right-quarter">BR-QTR</span></div>
+        </td>
+        <td><code>.abs-bottom-right-quarter</code>, <code>.abs-quarter-bottom-right</code>, <code>.bottom-right-quarter</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-bottom-right-quarter"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-bottom-right-quarter">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-top-padded">TOP-PAD</span></div>
+        </td>
+        <td><code>.abs-top-padded</code>, <code>.abs-padded-top</code>, <code>.top-padded</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-top-padded"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-top-padded">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-bottom-padded">BTM-PAD</span></div>
+        </td>
+        <td><code>.abs-bottom-padded</code>, <code>.abs-padded-bottom</code>, <code>.bottom-padded</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-bottom-padded"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-bottom-padded">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-left-padded">LEFT-PAD</span></div>
+        </td>
+        <td><code>.abs-left-padded</code>, <code>.abs-padded-left</code>, <code>.left-padded</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-left-padded"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-left-padded">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-right-padded">RIGHT-PAD</span></div>
+        </td>
+        <td><code>.abs-right-padded</code>, <code>.abs-padded-right</code>, <code>.right-padded</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-right-padded"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-right-padded">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-full-width-center">FULL-W</span></div>
+        </td>
+        <td><code>.abs-full-width-center</code>, <code>.abs-center-full-width</code>, <code>.full-width-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-full-width-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-full-width-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-full-height-center">FULL-H</span></div>
+        </td>
+        <td><code>.abs-full-height-center</code>, <code>.abs-center-full-height</code>, <code>.full-height-center</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-full-height-center"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-full-height-center">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-diagonal-tl-br">TL-BR</span></div>
+        </td>
+        <td><code>.abs-diagonal-tl-br</code>, <code>.abs-tl-br-diagonal</code>, <code>.diagonal-tl-br</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-diagonal-tl-br"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-diagonal-tl-br">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-diagonal-tr-bl">TR-BL</span></div>
+        </td>
+        <td><code>.abs-diagonal-tr-bl</code>, <code>.abs-tr-bl-diagonal</code>, <code>.diagonal-tr-bl</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-diagonal-tr-bl"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-diagonal-tr-bl">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-center-max">MAX</span></div>
+        </td>
+        <td><code>.abs-center-max</code>, <code>.abs-max-center</code>, <code>.center-max</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-center-max"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-center-max">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-top-edge-offset">TOP-EDGE</span></div>
+        </td>
+        <td><code>.abs-top-edge-offset</code>, <code>.abs-edge-top-offset</code>, <code>.top-edge-offset</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-top-edge-offset"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-top-edge-offset">Content</div>'>Copy</button></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="relative-box"><span class="abs-bottom-edge-offset">BTM-EDGE</span></div>
+        </td>
+        <td><code>.abs-bottom-edge-offset</code>, <code>.abs-edge-bottom-offset</code>, <code>.bottom-edge-offset</code></td>
+        <td>
+          <pre><code class="language-html">&ltdiv class="abs-bottom-edge-offset"&gt;Content&lt;/div></code></pre>
+        </td>
+        <td><button class="btn-primary btn btn-sm copy-btn" data-code='<div class="abs-bottom-edge-offset">Content</div>'>Copy</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Prism JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <!-- Copy to Clipboard Script -->
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const code = button.getAttribute('data-code');
+        copyToClipboard(code);
+      });
+    });
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+  </script>
+</body>
+
+</html>

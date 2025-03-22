@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Input Component Documentation - MastorsCDN</title>
+    <!-- Prism CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <!-- Your External Stylesheet with merged SCSS -->
+    <link rel="stylesheet" href="../mastors.css">
+</head>
+
+<body>
+    <header class="text-center pad--30 bg-White">
+        <h1>MASTORSCDN INPUT DOCUMENTATION</h1>
+        <p class="intro-text">Welcome to the MastorsCDN Input Component documentation. This guide covers both standard input types and a modern floating input component with a rising placeholder effect. Explore the sections below for previews, class names, and usage examples.</p>
+    </header>
+
+    <!-- Single Merged Table -->
+    <table class="table-2 border-all scroll-x">
+        <thead>
+            <tr>
+                <th>Preview</th>
+                <th>Type/Class Name</th>
+                <th>Description</th>
+                <th>HTML Declaration</th>
+                <th>Copy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Standard Input Types Section -->
+            <tr>
+                <td colspan="5" class="b text-center">Standard Input Types</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">A collection of styled standard HTML input types with consistent theming and interactive effects.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="text" placeholder="Enter text">
+                    </div>
+                </td>
+                <td><code>input[type="text"]</code></td>
+                <td>Basic text input with border, hover, and focus effects.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="text" placeholder="Enter text"&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="text" placeholder="Enter text">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="color" value="#261cb7">
+                    </div>
+                </td>
+                <td><code>input[type="color"]</code></td>
+                <td>Color picker input with a cursor pointer and consistent height.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="color" value="#261cb7"&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="color" value="#261cb7">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="date">
+                    </div>
+                </td>
+                <td><code>input[type="date"]</code></td>
+                <td>Date picker input with a minimum width for usability.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="date"&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="date">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="range" min="0" max="100" value="50">
+                    </div>
+                </td>
+                <td><code>input[type="range"]</code></td>
+                <td>Range slider with custom track and thumb styling, including hover and focus effects.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="range" min="0" max="100" value="50"&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="range" min="0" max="100" value="50">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="number" value="42" min="0" max="100">
+                    </div>
+                </td>
+                <td><code>input[type="number"]</code></td>
+                <td>Number input with hidden spin buttons for a clean look.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="number" value="42" min="0" max="100"&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="number" value="42" min="0" max="100">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="file">
+                    </div>
+                </td>
+                <td><code>input[type="file"]</code></td>
+                <td>File upload input with a styled button and hover effect.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="file"&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="file">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <textarea placeholder="Enter your message"></textarea>
+                    </div>
+                </td>
+                <td><code>textarea</code></td>
+                <td>Resizable textarea with a minimum height and placeholder styling.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;textarea placeholder="Enter your message"&gt;&lt;/textarea&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<textarea placeholder="Enter your message"></textarea>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="submit" value="Submit">
+                    </div>
+                </td>
+                <td><code>input[type="submit"]</code></td>
+                <td>Submit button with primary color styling and hover effect.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="submit" value="Submit"&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="submit" value="Submit">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <input type="search" placeholder="Search...">
+                    </div>
+                </td>
+                <td><code>input[type="search"]</code></td>
+                <td>Search input with standard styling and focus effect.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;input type="search" placeholder="Search..."&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<input type="search" placeholder="Search...">'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <select>
+                            <option value="">Select an option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select>
+                    </div>
+                </td>
+                <td><code>select</code></td>
+                <td>Dropdown select with custom arrow and focus animation.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;select&gt;
+    &lt;option value=""&gt;Select an option&lt;/option&gt;
+    &lt;option value="1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="2"&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<select><option value="">Select an option</option><option value="1">Option 1</option><option value="2">Option 2</option></select>'>Copy</button>
+                </td>
+            </tr>
+
+            <!-- Base Floating Input -->
+            <tr>
+                <td colspan="5" class="b text-center">Base Floating Input</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">The core floating input component with a rising placeholder effect.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container border-all">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.border-all</code></td>
+                <td>Basic input with 1px border and 6px radius. Placeholder floats up on focus or when filled.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container border-all"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container border-all"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+
+            <!-- Original Variations -->
+            <tr>
+                <td colspan="5" class="b text-center">Original Variations</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Additional modifier classes to customize the appearance of the floating input.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container border-all shadow">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.border-all.shadow</code></td>
+                <td>Adds a subtle box shadow to the base input.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container border-all shadow"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container border-all shadow"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container border-all rounded large">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.border-all.rounded.large</code></td>
+                <td>Increases border radius to 12px and width to 400px.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container border-all rounded large"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container border-all rounded large"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+
+            <!-- Enhanced Variations -->
+            <tr>
+                <td colspan="5" class="b text-center">Enhanced Variations</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="section-desc">Modern, visually enhanced variations with additional effects and animations.</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container outline">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.outline</code></td>
+                <td>Basic input with 2px primary blue border and 8px radius. Features hover animation and glow effect.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container outline"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container outline"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container soft-glow">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.soft-glow</code></td>
+                <td>Soft blue glow effect with subtle border and enhanced shadow on hover.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container soft-glow"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container soft-glow"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container pill">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.pill</code></td>
+                <td>Pill-shaped input with green border and 50px radius. Includes subtle shadow on hover.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container pill"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container pill"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container underline">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.underline</code></td>
+                <td>Minimal underline style with red accent that thickens on hover.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container underline"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container underline"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container floating-box">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.floating-box</code></td>
+                <td>Floating card effect with shadow that deepens on hover.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container floating-box"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container floating-box"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container neon-edge">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.neon-edge</code></td>
+                <td>Eye-catching neon gradient border with blur effect.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container neon-edge"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container neon-edge"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="input-container minimal-accent">
+                            <input type="text" class="input-field" placeholder=" ">
+                            <span class="placeholder-text">Enter your text</span>
+                        </div>
+                    </div>
+                </td>
+                <td><code>.input-container.minimal-accent</code></td>
+                <td>Minimal design with yellow left border and subtle shadow on hover.</td>
+                <td>
+                    <pre><code class="language-html">
+&lt;div class="input-container minimal-accent"&gt;
+    &lt;input type="text" class="input-field" placeholder=" "&gt;
+    &lt;span class="placeholder-text"&gt;Enter your text&lt;/span&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </td>
+                <td>
+                    <button class="btn-primary btn btn-sm copy-btn" data-code='<div class="input-container minimal-accent"><input type="text" class="input-field" placeholder=" "><span class="placeholder-text">Enter your text</span></div>'>Copy</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <!-- Copy Button Script -->
+    <script>
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const code = button.getAttribute('data-code');
+                navigator.clipboard.writeText(code).then(() => {
+                    button.textContent = 'Copied!';
+                    setTimeout(() => button.textContent = 'Copy', 2000);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
