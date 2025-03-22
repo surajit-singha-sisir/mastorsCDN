@@ -17,7 +17,7 @@ git clone https://github.com/surajit-singha-sisir/mastorsCDN.git
 Include the CSS file in your HTML head:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v2.0/mastors.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v2.0/mastors.min.css">
 <script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v2.0/mastors.js"></script>
 ```
 
@@ -25,7 +25,7 @@ Include the CSS file in your HTML head:
 Use the latest version. Include the CSS file link in your HTML head:
 
 ```html
-<link rel="stylesheet" href="https://surajit-singha-sisir.github.io/mastorsCDN/mastors.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@latest/mastors.min.css">
 ```
 
 ### Install with npm
@@ -79,7 +79,7 @@ app.use('/mastorscdn', express.static(path.join(__dirname, 'node_modules/mastors
 ADD to index.html
 ```base
 <!-- MASTORSCDN -->
-<link rel="stylesheet" href="/mastorscdn/mastors.css" /> <!-- MASTORSCDN CORE-->
+<link rel="stylesheet" href="/mastorscdn/mastors.min.css" /> <!-- MASTORSCDN CORE-->
 <link rel="stylesheet" href="/mastorscdn/mastorsIcons/mastorsIcons.css" /> <!-- MASTORSCDN ICONS LIBRARY-->
 <script type="module" src="/mastorscdn/mastors.js"></script> <!-- MASTORSCDN SCRIPT -->
 ```
@@ -102,7 +102,7 @@ After installation, you can include **mastorsCDN** in your project as follows:
 CSS
 Include the CSS file in your HTML head:
 ```base
-<link rel="stylesheet" href="path/to/mastors.css">
+<link rel="stylesheet" href="path/to/mastors.min.css">
 ```
 
 ### JavaScript
@@ -127,7 +127,7 @@ Below is a basic structure of the repository:
 
 ```base
 mastorsCDN/
-├── mastors.css
+├── mastors.min.css
 ├── mastors.js
 └── README.md
 ```
