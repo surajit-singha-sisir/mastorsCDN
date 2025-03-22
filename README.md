@@ -17,7 +17,7 @@ git clone https://github.com/surajit-singha-sisir/mastorsCDN.git
 Include the CSS file in your HTML head:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v2.0/mastors.min.css">
+<link href="https://cdn.jsdelivr.net/npm/mastorscdn@2.0.0.0/mastors.min.css" rel="stylesheet" integrity="sha512-kPc8hRVLpKhkKA09/FLOFXUR6FhfXl1NxHvUClW9NRdAA0tC0Av7m/XK1yTvrgLB13a1PgybphiYncD2ryRlZg==" crossorigin="anonymous">
 <script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v2.0/mastors.js"></script>
 ```
 
@@ -25,31 +25,31 @@ Include the CSS file in your HTML head:
 Use the latest version. Include the CSS file link in your HTML head:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@latest/mastors.min.css">
+<link href="https://cdn.jsdelivr.net/npm/mastorscdn@latest/mastors.min.css" rel="stylesheet" integrity="sha512-kPc8hRVLpKhkKA09/FLOFXUR6FhfXl1NxHvUClW9NRdAA0tC0Av7m/XK1yTvrgLB13a1PgybphiYncD2ryRlZg==" crossorigin="anonymous">
 ```
 
 ### Install with npm
 To install via npm, run:
 ```bash
-npm install mastorscdn@2.0
+npm install mastorscdn@2.0.0
 ```
 
 ### Install with yarn
 To install via yarn, run:
 ```bash
-yarn add mastorscdn@2.0
+yarn add mastorscdn@2.0.0
 ```
 
 ### Install with Composer
 To install via Composer, use:
 ```bash
-composer require surajit-singha-sisir/mastorscdn@2.0
+composer require surajit-singha-sisir/mastorscdn@2.0.0
 ```
 
 ### Install with NuGet
 For CSS:
 ```bash
-Install-Package mastorscdn@2.0
+Install-Package mastorscdn@2.0.0
 ```
 
 ### Install with NuGet
@@ -58,12 +58,12 @@ To install **mastorsCDN** using NuGet, you can use the following commands:
 
 For CSS:
 ```bash
-Install-Package mastorscdn@2.0
+Install-Package mastorscdn@2.0.0
 ```
 
 For SCSS:
 ```bash
-Install-Package mastorscdn@2.0.scss
+Install-Package mastorscdn@2.0.0.scss
 ```
 
 @Latest Version of the Package:
