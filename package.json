@@ -7,7 +7,7 @@
     "sass": "sass --watch mastors.scss mastors.css"
   },
   "name": "mastorscdn",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An Opensource Front-end UI Library",
   "main": "mastors.js",
   "repository": {
