@@ -17,8 +17,8 @@ git clone https://github.com/surajit-singha-sisir/mastorsCDN.git
 Include the CSS file in your HTML head:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.1.01/mastors.css">
-<script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.1.01/mastors.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v2.0/mastors.css">
+<script type="module" src="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v2.0/mastors.js"></script>
 ```
 
 ### Latest Version
@@ -31,25 +31,25 @@ Use the latest version. Include the CSS file link in your HTML head:
 ### Install with npm
 To install via npm, run:
 ```bash
-npm install mastorscdn@1.1.0
+npm install mastorscdn@2.0
 ```
 
 ### Install with yarn
 To install via yarn, run:
 ```bash
-yarn add mastorscdn@1.1.0
+yarn add mastorscdn@2.0
 ```
 
 ### Install with Composer
 To install via Composer, use:
 ```bash
-composer require surajit-singha-sisir/mastorscdn@1.1.0
+composer require surajit-singha-sisir/mastorscdn@2.0
 ```
 
 ### Install with NuGet
 For CSS:
 ```bash
-Install-Package mastorscdn@1.1.0
+Install-Package mastorscdn@2.0
 ```
 
 ### Install with NuGet
@@ -58,12 +58,12 @@ To install **mastorsCDN** using NuGet, you can use the following commands:
 
 For CSS:
 ```bash
-Install-Package mastorscdn@1.1.0
+Install-Package mastorscdn@2.0
 ```
 
 For SCSS:
 ```bash
-Install-Package mastorscdn@1.1.0.scss
+Install-Package mastorscdn@2.0.scss
 ```
 
 @Latest Version of the Package:
@@ -87,7 +87,7 @@ ADD to index.html
 ### ❤️ MastorsCDN icons 🥳
 MastorsCDN also supports icons. You can use the icons on your webpage. For Icon use this stylesheet on the head tag. Most of the icons are added from the **"icomoon.io"** library.
 ```bash
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.1/mastorsIcons/mastorsIcons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/surajit-singha-sisir/mastorsCDN@v1.2/mastorsIcons/mastorsIcons.css">
 ```
 ### How to use Icons
 If I need to use an icon then use ```m-``` icon-name. 
