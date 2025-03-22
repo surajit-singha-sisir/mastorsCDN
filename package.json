@@ -10,7 +10,6 @@
   "version": "1.1.0",
   "description": "An Opensource Front-end Library",
   "main": "mastors.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/surajit-singha-sisir/mastorsCDN.git"
@@ -29,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/surajit-singha-sisir/mastorsCDN/issues"
   },
-  "homepage": "https://github.com/surajit-singha-sisir/mastorsCDN#readme"
+  "homepage": "https://github.com/surajit-singha-sisir/mastorsCDN#readme",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
+  }
 }
