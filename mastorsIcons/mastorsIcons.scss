@@ -2,16 +2,28 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mzom7o');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?mzom7o#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?mzom7o') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?mzom7o') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?mzom7o##{$icomoon-font-family}') format('svg');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff2?mzom7o') format('woff2'),
+       url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?mzom7o') format('woff'),
+       url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?mzom7o') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap; /* Changed from 'block' to 'swap' for better performance */
+  unicode-range: U+0000-FFFF; /* Add explicit unicode range */
 }
 
+/* Fallback for icon class */
+[class^="mastors-"], [class*=" mastors-"] {
+  font-family: '#{$icomoon-font-family}', 'Arial Unicode MS', sans-serif;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga" off;
+}
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;

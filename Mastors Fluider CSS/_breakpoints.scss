@@ -1,0 +1,193 @@
+//styles/breakpoints.scss
+// -------------- BREAKPOINTS -------------- //
+// Modern breakpoint system with mobile-first approach
+// Using em units for better accessibility (respects user font-size preferences)
+
+@use "sass:map";
+@use "sass:list";
+@use "sass:math";
+
+// Breakpoint variables (em units with px equivalents in comments)
+$breakpoints: (
+    // Core breakpoints
+    xs: 0,
+    // 0px
+    sm: 36em,
+    // 576px (576 / 16 = 36)
+    md: 48em,
+    // 768px (768 / 16 = 48)
+    lg: 64em,
+    // 1024px (1024 / 16 = 64)
+    xl: 75em,
+    // 1200px (1200 / 16 = 75)
+    2xl: 96em,
+    // 1536px (1536 / 16 = 96)
+
+    // MASTORSCDN breakpoints
+    mobile: 32.5em,
+    // 520px (520 / 16 = 32.5)
+    tablet: 48em,
+    // 768px (768 / 16 = 48)
+    laptop: 64em,
+    // 1024px (1024 / 16 = 64)
+    desktop: 81.25em,
+    // 1300px (1300 / 16 = 81.25)
+    wide-screen: 96.25em,
+    // 1540px (1540 / 16 = 96.25)
+    ultra: 120em // 1920px (1920 / 16 = 120)
+);
+
+// Main breakpoint mixin with mobile-first (min-width) as default
+@mixin breakpoint($size, $type: 'min', $orientation: null) {
+    $width: map.get($breakpoints, $size);
+
+    @if $width ==null {
+        @error "Breakpoint `#{$size}` not found in $breakpoints map. Available breakpoints: #{map.keys($breakpoints)}";
+    }
+
+    // Handle xs breakpoint (0) - no media query needed
+    @if $width ==0 and $type =='min' {
+        @content;
+    }
+
+    @else {
+        $query: if($type =='max', 'max-width', 'min-width');
+
+        @if $orientation ==portrait or $orientation ==landscape {
+            @media (#{$query}: $width) and (orientation: $orientation) {
+                @content;
+            }
+        }
+
+        @else {
+            @media (#{$query}: $width) {
+                @content;
+            }
+        }
+    }
+}
+
+// Shorthand mixins for common use cases
+@mixin break-up($size) {
+    @include breakpoint($size, 'min') {
+        @content;
+    }
+}
+
+@mixin break-down($size) {
+    @include breakpoint($size, 'max') {
+        @content;
+    }
+}
+
+@mixin break-between($min-size, $max-size) {
+    $min-width: map.get($breakpoints, $min-size);
+    $max-width: map.get($breakpoints, $max-size);
+
+    @if $min-width ==null {
+        @error "Breakpoint `#{$min-size}` not found in $breakpoints map.";
+    }
+
+    @if $max-width ==null {
+        @error "Breakpoint `#{$max-size}` not found in $breakpoints map.";
+    }
+
+    @media (min-width: $min-width) and (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin break-only($size) {
+    $breakpoint-keys: map.keys($breakpoints);
+    $index: list.index($breakpoint-keys, $size);
+
+    @if $index ==null {
+        @error "Breakpoint `#{$size}` not found in $breakpoints map.";
+    }
+
+    $current-width: map.get($breakpoints, $size);
+    $keys-length: list.length($breakpoint-keys);
+
+    @if $index < $keys-length {
+        $next-key: list.nth($breakpoint-keys, $index + 1);
+        $next-width: map.get($breakpoints, $next-key);
+
+        @media (min-width: $current-width) and (max-width: calc(#{$next-width} - 0.0625em)) {
+            // 0.0625em = 1px
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: $current-width) {
+            @content;
+        }
+    }
+}
+
+// Custom media query mixin for specific width (accepts both em and px)
+@mixin custom-breakpoint($width, $type: 'min') {
+    $query: if($type =='max', 'max-width', 'min-width');
+
+    @media (#{$query}: $width) {
+        @content;
+    }
+}
+
+// Utility function to get breakpoint value
+@function get-breakpoint($size) {
+    $width: map.get($breakpoints, $size);
+
+    @if $width ==null {
+        @error "Breakpoint `#{$size}` not found in $breakpoints map.";
+    }
+
+    @return $width;
+}
+
+// --------- USAGE EXAMPLES --------- //
+
+// Mobile-first (default - recommended)
+// @include breakpoint(md) { // 768px+
+//   padding: 2rem;
+// }
+
+// or use shorthand
+// @include break-up(md) { // 768px+
+//   padding: 2rem;
+// }
+
+// Desktop-first (max-width)
+// @include breakpoint(md, 'max') { // 768px and below
+//   padding: 1rem;
+// }
+
+// or use shorthand
+// @include break-down(md) { // 768px and below
+//   padding: 1rem;
+// }
+
+// Between breakpoints
+// @include break-between(md, lg) { // 768px+ to 1024px
+//   padding: 1.5rem;
+// }
+
+// Only specific breakpoint range
+// @include break-only(md) { // 768px+ to 1023px
+//   padding: 1.5rem;
+// }
+
+// With orientation
+// @include breakpoint(md, 'max', landscape) { // 768px and below landscape
+//   flex-direction: row;
+// }
+
+// Custom width with em
+// @include custom-breakpoint(50em) { // 800px+
+//   display: grid;
+// }
+
+// Custom width with px (will work as-is)
+// @include custom-breakpoint(900px) { // 900px+
+//   display: grid;
+// }
